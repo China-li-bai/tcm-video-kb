@@ -195,7 +195,7 @@ def run(ctx: Ctx, **_kw) -> dict:
 
     segs = _load_segments(ctx)
     ctx.state.ensure_step(ctx.video_id, step, vk)
-    ctx.state.claim(ctx.video_id, step, vk, "local")
+    ctx.state.claim(ctx.video_id, step, vk, ctx.worker_id)
     outdir = ctx.outdir(step, vk)
 
     chapters = None

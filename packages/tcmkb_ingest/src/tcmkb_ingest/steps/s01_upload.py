@@ -20,7 +20,7 @@ def run(ctx: Ctx, **_kw) -> dict:
         return {"skipped": True, "version_key": vk}
 
     ctx.state.ensure_step(ctx.video_id, step, vk)
-    ctx.state.claim(ctx.video_id, step, vk, "local")
+    ctx.state.claim(ctx.video_id, step, vk, ctx.worker_id)
     uri = ctx.storage.put_file(key, src)
     outdir = ctx.outdir(step, vk)
     art.atomic_write_json(outdir / "upload.json", {"key": key, "uri": uri, "bytes": m.source_bytes})

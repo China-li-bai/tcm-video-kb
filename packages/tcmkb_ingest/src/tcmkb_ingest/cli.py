@@ -65,6 +65,7 @@ def run_cmd(ctx: click.Context, video_id: str, to_step: str, from_step: str | No
         source_path=source_file,
         series_id=series_id or video_id.split("-")[0],
         title=title or video_id,
+        root=ctx.obj["root"],
     )
     # Compact summary
     summary = {k: ({"skipped": v.get("skipped"), "vk": v.get("version_key"),
@@ -72,6 +73,60 @@ def run_cmd(ctx: click.Context, video_id: str, to_step: str, from_step: str | No
                for k, v in result["steps"].items()}
     click.echo(json.dumps({"video_id": video_id, "to": to_step, "steps": summary},
                           ensure_ascii=False, indent=2))
+
+@main.command("batch")
+@click.option("--manifest", type=click.Path(exists=True, dir_okay=False), default=None,
+              help="CSV (file,series[,video_id,episode,title]) or YAML list / {videos:[...]}")
+@click.option("--dir", "folder", type=click.Path(exists=True, file_okay=False), default=None,
+              help="Folder of media files (use with --series)")
+@click.option("--series", "series_id", default=None,
+              help="series_id for --dir, or default for manifest rows without one")
+@click.option("--glob", "pattern", default=None, help="--dir file pattern (default: media extensions)")
+@click.option("--id-scheme", type=click.Choice(["auto", "episode", "stem"]), default="auto",
+              show_default=True, help="--dir video_id: {series}-{NNN} from filename number, or stem")
+@click.option("--to", "to_step", default="s08", show_default=True)
+@click.option("--from", "from_step", default=None)
+@click.option("--force", is_flag=True, help="Re-run steps even if version_key done")
+@click.option("--from-cache", "from_cache", is_flag=True, help="s04 from asr-bench JSON (no FunASR)")
+@click.option("--cache-dir", default="/workspace/asr-bench/out", show_default=True)
+@click.option("--skip-alt/--no-skip-alt", default=True, show_default=True)
+@click.option("--fail-fast", is_flag=True, help="Stop at first failed video")
+@click.option("--limit", type=int, default=0, help="Only first N items")
+@click.option("--dry-run", is_flag=True, help="Print the resolved items and exit")
+@click.option("--run-id", default=None, help="Report name under data/batch/ (default: timestamp)")
+@click.pass_context
+def batch_cmd(ctx: click.Context, manifest: str | None, folder: str | None, series_id: str | None,
+              pattern: str | None, id_scheme: str, to_step: str, from_step: str | None, force: bool,
+              from_cache: bool, cache_dir: str, skip_alt: bool, fail_fast: bool, limit: int,
+              dry_run: bool, run_id: str | None):
+    """Run s00..--to for many videos with ONE shared ASR model; resumable; continues on failure."""
+    from tcmkb_ingest.batch import items_from_dir, items_from_manifest, run_batch
+    if bool(manifest) == bool(folder):
+        raise click.UsageError("give exactly one of --manifest or --dir")
+    if folder and not series_id:
+        raise click.UsageError("--dir needs --series")
+    items = (items_from_manifest(manifest, default_series=series_id) if manifest
+             else items_from_dir(folder, series_id, pattern=pattern, id_scheme=id_scheme))
+    if limit:
+        items = items[:limit]
+    if dry_run:
+        for it in items:
+            click.echo(f"{it.video_id}\t{it.series_id}\t{it.episode}\t{it.file}")
+        return
+    rep = run_batch(items, to_step=to_step, from_step=from_step, force=force,
+                    from_cache=from_cache, skip_alt=skip_alt, cache_dir=cache_dir,
+                    root=ctx.obj["root"], fail_fast=fail_fast, run_id=run_id)
+    cols = ("video_id", "status", "wall_sec", "audio_sec", "rtf", "n_corrections", "n_chapters",
+            "failed_step", "error")
+    click.echo("\t".join(cols))
+    for r in rep["items"]:
+        click.echo("\t".join("" if r.get(c) is None else str(r.get(c)) for c in cols))
+    click.echo(json.dumps({k: rep[k] for k in ("run_id", "n_items", "n_ok", "n_failed", "wall_sec",
+                                               "audio_sec_ok", "asr_proc_sec_fresh", "model_load_sec",
+                                               "peak_rss_mb", "peak_anon_rss_mb", "report_path")},
+                          ensure_ascii=False))
+    if rep["n_failed"]:
+        sys.exit(2)
 
 @main.command("status")
 @click.option("--video", "video_id", required=True)

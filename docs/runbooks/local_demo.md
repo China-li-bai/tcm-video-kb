@@ -62,12 +62,13 @@ head -40 data/artifacts/zj-demo/lecture.md
 ## 生产 ASR（非 cache）
 
 ```bash
-# 安装 FunASR 到本仓库 venv，或设置 PYTHONPATH 指向 asr-bench venv
-uv pip install 'tcmkb-ingest[asr]'
+uv sync --extra asr      # funasr + torch CPU 进本仓库 .venv；模型复用 ~/.cache/modelscope
 .venv/bin/python -m tcmkb_ingest run --video zj-demo --to s08
+# 多个视频（共享一次模型加载、可续跑、失败不中断）：
+.venv/bin/python -m tcmkb_ingest batch --manifest configs/batches/asr_bench_samples.csv
 ```
 
-`s04` 会读 `lexicon/dist/hotwords/{series}.txt`，调用 SeACo-Paraformer + fsmn-vad + ct-punc。
+`s04` 会读 `lexicon/dist/hotwords/{series}.txt`（每行一个词，最多取 `hotword_max`），调用 SeACo-Paraformer + fsmn-vad + ct-punc，并保存逐 token 时间戳。批量用法、内存和实测 RTF 见 [`batch_asr.md`](batch_asr.md)。
 
 ## 步骤一览
 
@@ -76,7 +77,7 @@ uv pip install 'tcmkb-ingest[asr]'
 | s00_register | sha256 / ffprobe / meta | 必跑 |
 | s01_upload | LocalStorage=`data/r2-mirror` | 拷贝源文件 |
 | s02_media | 播放副本 | wav→m4a（失败则拷贝） |
-| s03_audio | 16k mono wav 分片 | 单 part |
+| s03_audio | 16k mono wav 分片 | ≤20 min 单 part；更长的在静音处切 |
 | s04_asr | SeACo ASR | `--from-cache` 读 asr-bench JSON |
 | s05_asr_alt | SenseVoice | 默认 skip |
 | s06_clean | 句子重建 + t2s + 纠错 | 写 segments.jsonl |
@@ -85,6 +86,6 @@ uv pip install 'tcmkb-ingest[asr]'
 
 ## 故障排查
 
-- `funasr not installed`：加 `--from-cache`，或安装 `[asr]` extra。
+- `funasr not installed`：加 `--from-cache`，或 `uv sync --extra asr`。
 - `no ASR cache`：检查 `--cache-dir`（默认 `/workspace/asr-bench/out`）与 series slug（`zj-demo` → `zj`）。
 - 热词无足三里：确认 `lexicon/pins/zj.txt` 存在后重新 `python -m tcmkb_lexicon build`。

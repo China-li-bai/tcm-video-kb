@@ -95,7 +95,8 @@ _seaco_decode_with_ASF(..., hw_list, nfilter=50, seaco_weight=1.0)
 ## 5. 开放问题
 
 1. **FunASR `AutoModel.generate` 是否暴露 `nfilter` / `seaco_weight`？**  
-   源码 `inference()` 调用 `_seaco_decode_with_ASF` 时未把 kwargs 里的 nfilter 传下去；若上层也不传，则用户无法在不改库的前提下调 k。需要读当前已安装 FunASR 版本或开 issue/PR。
+   源码 `inference()` 调用 `_seaco_decode_with_ASF` 时未把 kwargs 里的 nfilter 传下去；若上层也不传，则用户无法在不改库的前提下调 k。  
+   **2026-10-20 已确认（funasr 1.4.16，本仓库 `.venv`）：不透传**，`inference()` 只传 `hw_list`，`nfilter=50`、`seaco_weight=1.0` 为默认值；`configs/asr.yaml` 中两键仅作记录。
 2. **`.txt` 中 `词 权重` 是否影响 SeACo 路径？**  
    CLAS/部分文档强调权重；SeACo 的 `generate_hotwords_list` 对整行 `split()` 后送 tokenizer——第二段数字可能被当成异常 token。在确认前，本项目**不写权重**。
 3. **长讲座是否应按 chunk（如 20 分钟）重跑 ASF？**  

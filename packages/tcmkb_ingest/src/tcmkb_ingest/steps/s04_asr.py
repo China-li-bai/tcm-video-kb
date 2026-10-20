@@ -1,7 +1,8 @@
 """s04_asr: FunASR SeACo-Paraformer (+ VAD + ct-punc) with hotwords.
 
-Supports --from-cache to ingest existing asr-bench JSON without loading FunASR
-(for local demo when FunASR install is slow / not in the workspace venv).
+Live path: `asr_engine.FunAsrEngine` (one model per process, shared by `batch`),
+per-part checkpoints, real SeACo char/token timestamps (+ part offset).
+--from-cache ingests existing asr-bench JSON without loading FunASR (demo).
 """
 from __future__ import annotations
 import json, pathlib, time
@@ -88,43 +89,81 @@ def _normalize_cache_to_asr_raw(ctx: Ctx, cache: dict[str, Any], series_id: str,
         },
     }
 
-def _run_funasr(ctx: Ctx, wav: pathlib.Path, hotword_file: pathlib.Path) -> dict[str, Any]:
-    """Real FunASR SeACo path (production). Raises if funasr not installed."""
-    try:
-        from funasr import AutoModel
-    except ImportError as e:
-        raise RuntimeError(
-            "funasr not installed in this environment. Use --from-cache for demo, "
-            "or: uv pip install 'tcmkb-ingest[asr]' (or reuse /workspace/asr-bench/venv)."
-        ) from e
+def _run_live(ctx: Ctx, hot_path: pathlib.Path, hotword_set: str,
+              outdir: pathlib.Path) -> dict[str, Any]:
+    """Real FunASR path. One engine per process (ctx.engine or the module cache).
 
-    model_id = ctx.asr.get("model") or (
-        "iic/speech_seaco_paraformer_large_asr_nat-zh-cn-16k-common-vocab8404-pytorch"
-    )
-    vad = ctx.asr.get("vad_model", "fsmn-vad")
-    punc = ctx.asr.get("punc_model", "ct-punc")
-    batch_s = int(ctx.asr.get("batch_size_s", 300))
-    t0 = time.time()
-    m = AutoModel(model=model_id, vad_model=vad, punc_model=punc, disable_update=True)
-    hotword = hotword_file.read_text(encoding="utf-8").replace("\n", " ").strip()
-    # Prefer char timestamps; sentence_timestamp kept for fallback only
-    kw: dict[str, Any] = {"batch_size_s": batch_s, "hotword": hotword}
-    # FunASR versions differ: try output with timestamp
-    r = m.generate(input=str(wav), **kw)
-    dt = time.time() - t0
-    r0 = r[0] if isinstance(r, list) else r
-    text = r0.get("text") or ""
-    tokens: list[dict[str, Any]] = []
-    if "timestamp" in r0 and r0["timestamp"]:
-        tokens = tokens_from_timestamp_pairs(text, r0["timestamp"])
-    elif "sentence_info" in r0 and r0["sentence_info"]:
-        sents = [{"start_ms": x["start"], "end_ms": x["end"], "text": x["text"]} for x in r0["sentence_info"]]
-        _, tokens = synthesize_tokens_from_sentences(sents)
+    Each s03 part is transcribed separately and checkpointed to
+    parts/part_NNN.json, so a crash mid-video resumes at the next part.
+    """
+    from tcmkb_ingest.asr_engine import get_engine, read_hotwords
+    s03 = ctx.active_outdir("s03_audio")
+    if not s03:
+        raise RuntimeError("s03_audio not done")
+    parts = json.loads((s03 / "parts.json").read_text(encoding="utf-8"))["parts"]
+    engine = ctx.engine or get_engine(ctx.asr)
+    hotwords = read_hotwords(hot_path, ctx.asr.get("hotword_max"))
+    was_loaded = getattr(engine, "_m", None) is not None
+    pdir = outdir / "parts"
+    pdir.mkdir(parents=True, exist_ok=True)
+    all_text: list[str] = []
+    all_tokens: list[dict[str, Any]] = []
+    proc_sec = 0.0
+    audio_sec = 0.0
+    reused = 0
+    for pinfo in parts:
+        idx = int(pinfo["part"])
+        offset = float(pinfo.get("offset_s", 0))
+        dur = float(pinfo.get("duration_s") or 0)
+        ck = pdir / f"part_{idx:03d}.json"
+        if ck.exists() and not ctx.force:
+            res = json.loads(ck.read_text(encoding="utf-8"))
+            reused += 1
+        else:
+            wav = s03 / pinfo["path"]
+            r = engine.transcribe(wav, hotwords)
+            res = {"part": idx, "offset_s": offset, "duration_s": dur,
+                   "proc_sec": float(r.get("proc_sec") or 0), "text": r.get("text") or "",
+                   "tokens": [{"t": t["t"], "s": round(float(t["s"]) + offset, 3),
+                               "e": round(float(t["e"]) + offset, 3)} for t in r.get("tokens") or []]}
+            art.atomic_write_json(ck, res)
+            log.info("s04 %s part %d/%d dur=%.0fs proc=%.1fs rtf=%.4f tokens=%d",
+                     ctx.video_id, idx + 1, len(parts), dur, res["proc_sec"],
+                     res["proc_sec"] / dur if dur else 0, len(res["tokens"]))
+        proc_sec += float(res.get("proc_sec") or 0)
+        audio_sec += dur
+        all_text.append(res["text"])
+        all_tokens.extend(res["tokens"])
+    text = "".join(all_text)
+    metrics = {
+        "audio_sec": round(audio_sec, 3),
+        "proc_sec": round(proc_sec, 3),
+        "rtf": round(proc_sec / audio_sec, 5) if audio_sec else None,
+        "n_parts": len(parts),
+        "parts_reused": reused,
+        "n_tokens": len(all_tokens),
+        "n_chars": len(strip_punct(text)),
+        "n_hotwords": len(hotwords),
+        "hotword_sha": art.hash_file(hot_path)[:12] if hot_path.exists() else "",
+        "model_load_sec": (None if was_loaded else round(float(getattr(engine, "load_sec", 0) or 0), 2)),
+    }
     return {
+        "video_id": ctx.video_id,
+        "engine": getattr(engine, "name", "seaco-paraformer"),
+        "model": ctx.asr.get("model", ""),
+        "vad_model": ctx.asr.get("vad_model", ""),
+        "punc_model": ctx.asr.get("punc_model", ""),
+        "model_rev": getattr(engine, "model_rev", ""),
+        "hotword_set": hotword_set,
+        "hotword_file": str(hot_path),
+        "hotwords": hotwords,
+        "from_cache": False,
+        "timestamp_source": "seaco_char_timestamp",
+        "parts": [{"part": p["part"], "offset_s": p["offset_s"], "duration_s": p.get("duration_s")}
+                  for p in parts],
         "text": text,
-        "tokens": tokens,
-        "proc_sec": dt,
-        "model_rev": getattr(m, "model_path", model_id),
+        "tokens": all_tokens,
+        "metrics": metrics,
     }
 
 def run(ctx: Ctx, **_kw) -> dict:
@@ -144,6 +183,12 @@ def run(ctx: Ctx, **_kw) -> dict:
         # Only include hotword content hash when NOT pinned (explicit force path)
         **({} if pin else {"hotword_hash": hot_hash}),
         "from_cache": bool(ctx.from_cache),
+        **({} if ctx.from_cache else {
+            "vad_model": ctx.asr.get("vad_model", ""),
+            "punc_model": ctx.asr.get("punc_model", ""),
+            "batch_size_s": ctx.asr.get("batch_size_s"),
+            "hotword_max": ctx.asr.get("hotword_max"),
+        }),
     }
     up = (m.active_versions or {}).get("s03_audio", "")
     vk = ctx.compute_vk(step, frag, upstream_hash=up)
@@ -153,7 +198,7 @@ def run(ctx: Ctx, **_kw) -> dict:
         return {"skipped": True, "version_key": vk}
 
     ctx.state.ensure_step(ctx.video_id, step, vk)
-    ctx.state.claim(ctx.video_id, step, vk, "local")
+    ctx.state.claim(ctx.video_id, step, vk, ctx.worker_id)
     outdir = ctx.outdir(step, vk)
 
     lex_ver = _lexicon_ver(ctx)
@@ -163,43 +208,7 @@ def run(ctx: Ctx, **_kw) -> dict:
         cache = _load_cache(ctx, series_id)
         asr_raw = _normalize_cache_to_asr_raw(ctx, cache, series_id, hotword_set)
     else:
-        # Locate wav from s03
-        s03 = ctx.active_outdir("s03_audio")
-        if not s03:
-            raise RuntimeError("s03_audio not done")
-        parts = json.loads((s03 / "parts.json").read_text(encoding="utf-8"))
-        all_text = []
-        all_tokens: list[dict[str, Any]] = []
-        t0 = time.time()
-        model_rev = ""
-        for pinfo in parts["parts"]:
-            wav = s03 / pinfo["path"]
-            offset = float(pinfo.get("offset_s", 0))
-            res = _run_funasr(ctx, wav, hot_path)
-            model_rev = str(res.get("model_rev") or "")
-            all_text.append(res["text"])
-            for tok in res["tokens"]:
-                all_tokens.append({
-                    "t": tok["t"],
-                    "s": round(float(tok["s"]) + offset, 3),
-                    "e": round(float(tok["e"]) + offset, 3),
-                })
-        asr_raw = {
-            "video_id": ctx.video_id,
-            "engine": "seaco-paraformer",
-            "model": ctx.asr.get("model", ""),
-            "model_rev": model_rev,
-            "hotword_set": hotword_set,
-            "from_cache": False,
-            "parts": [{"part": p["part"], "offset_s": p["offset_s"]} for p in parts["parts"]],
-            "text": "".join(all_text),
-            "tokens": all_tokens,
-            "metrics": {
-                "proc_sec": time.time() - t0,
-                "n_tokens": len(all_tokens),
-                "n_chars": len(strip_punct("".join(all_text))),
-            },
-        }
+        asr_raw = _run_live(ctx, hot_path, hotword_set, outdir)
 
     # Also write a stable convenience copy at artifacts/{vid}/asr_raw.json via symlink note in success
     art.atomic_write_json(outdir / "asr_raw.json", asr_raw)

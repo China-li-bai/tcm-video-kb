@@ -11,7 +11,15 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-asr = ["funasr>=1.1"]
+# Real ASR (s04). funasr does not declare torch; torch/torchaudio come from the
+# PyTorch CPU index (see [tool.uv.sources] in the workspace root pyproject).
+asr = [
+  "funasr>=1.4",
+  "modelscope>=1.20",
+  "torch>=2.4",
+  "torchaudio>=2.4",
+  "psutil>=5.9",
+]
 
 [project.scripts]
 tcmkb = "tcmkb_ingest.cli:main"

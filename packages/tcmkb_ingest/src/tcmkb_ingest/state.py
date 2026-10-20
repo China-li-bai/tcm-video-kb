@@ -169,6 +169,24 @@ class StateDB:
         )
         self.conn.commit()
 
+    def fail_running(self, video_id: str, step: str, error: str) -> int:
+        """Mark any running/pending row of (video, step) failed (used when a runner raises)."""
+        cur = self.conn.execute(
+            """UPDATE step_run SET status='failed', error=?, finished_at=?, lease_until=NULL
+               WHERE video_id=? AND step=? AND status IN ('running','pending')""",
+            (error[:4000], _now(), video_id, step),
+        )
+        self.conn.commit()
+        return cur.rowcount
+
+    def failed_steps(self, video_id: str | None = None) -> list[dict[str, Any]]:
+        q = "SELECT video_id, step, version_key, attempt, error, finished_at FROM step_run WHERE status='failed'"
+        args: tuple = ()
+        if video_id:
+            q += " AND video_id=?"
+            args = (video_id,)
+        return [dict(r) for r in self.conn.execute(q + " ORDER BY finished_at", args).fetchall()]
+
     @staticmethod
     def _row_to_step(row: sqlite3.Row) -> StepRun:
         d = dict(row)

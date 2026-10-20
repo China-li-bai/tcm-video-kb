@@ -1,0 +1,5 @@
+# asr-bench 10-min samples (Asia/Shanghai 2026-10-20). zj reuses the zj-demo registration (same sha256).
+video_id,file,series,title
+zj-demo,/workspace/asr-bench/wav/zj.wav,zj,针灸大成·足三里补泻 阑尾穴 (sample 10min)
+shl-demo,/workspace/asr-bench/wav/shl.wav,shl,伤寒论·太阳篇 桂枝汤 (sample 10min)
+nj-demo,/workspace/asr-bench/wav/nj.wav,nj,黄帝内经·上古天真论 (sample 10min)

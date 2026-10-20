@@ -25,7 +25,7 @@ def run(ctx: Ctx, **_kw) -> dict:
         return {"skipped": True, "version_key": vk}
 
     ctx.state.ensure_step(ctx.video_id, step, vk)
-    ctx.state.claim(ctx.video_id, step, vk, "local")
+    ctx.state.claim(ctx.video_id, step, vk, ctx.worker_id)
     outdir = ctx.outdir(step, vk)
     play_key = f"play/{ctx.video_id}.m4a"
     audio_key = play_key

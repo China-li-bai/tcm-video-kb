@@ -23,7 +23,7 @@ def run(ctx: Ctx, **_kw) -> dict:
         return {"skipped": True, "version_key": vk, "reason": "disabled"}
 
     # Production path would run SenseVoice; for now mark failed if forced on without cache
-    ctx.state.claim(ctx.video_id, step, vk, "local")
+    ctx.state.claim(ctx.video_id, step, vk, ctx.worker_id)
     outdir = ctx.outdir(step, vk)
     # Try sensevoice cache
     if ctx.from_cache and ctx.cache_dir and m:

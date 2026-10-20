@@ -1,0 +1,48 @@
+{
+  "run_id": "long30",
+  "finished": true,
+  "at": "2026-10-20T10:33:32+08:00",
+  "n_items": 1,
+  "n_ok": 1,
+  "n_failed": 0,
+  "wall_sec": 132.69,
+  "audio_sec_ok": 1800.0,
+  "asr_proc_sec_fresh": 81.0,
+  "model_load_sec": 32.15,
+  "model_loaded": true,
+  "overall_rtf_wall": 0.07371,
+  "peak_rss_mb": 5038.9,
+  "peak_anon_rss_mb": 3794.1,
+  "items": [
+    {
+      "video_id": "zj-001",
+      "series_id": "zj",
+      "file": "/tmp/kblong/media/zj_long_01.wav",
+      "status": "ok",
+      "failed_step": null,
+      "error": null,
+      "wall_sec": 132.68,
+      "audio_sec": 1800.0,
+      "asr_proc_sec": 81.002,
+      "rtf": 0.045,
+      "asr_reused": false,
+      "n_tokens": 7346,
+      "n_segments": 326,
+      "n_corrections": 39,
+      "n_chapters": 8,
+      "steps_run": [
+        "s00_register",
+        "s01_upload",
+        "s02_media",
+        "s03_audio",
+        "s04_asr",
+        "s06_clean",
+        "s07_flag",
+        "s08_chapter"
+      ],
+      "steps_skipped": [
+        "s05_asr_alt"
+      ]
+    }
+  ]
+}

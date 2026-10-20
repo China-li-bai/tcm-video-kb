@@ -24,12 +24,22 @@ uv sync
 .venv/bin/python -m tcmkb_lexicon build
 ```
 
-可选 ASR（生产路径，本机 FunASR）：
+真实 ASR（FunASR SeACo-Paraformer + torch CPU，装进本仓库 `.venv`；模型复用 `~/.cache/modelscope`）：
 
 ```bash
-uv pip install 'tcmkb-ingest[asr]'
-# 或复用 /workspace/asr-bench/venv
+uv sync --extra asr
 ```
+
+## 批量转写（真实 ASR）
+
+```bash
+# 清单 CSV：file,series[,video_id,episode,title]
+.venv/bin/python -m tcmkb_ingest batch --manifest configs/batches/asr_bench_samples.csv
+# 或目录 + 系列
+.venv/bin/python -m tcmkb_ingest batch --dir /path/to/shl --series shl [--dry-run]
+```
+
+一个进程只加载一次模型（懒加载）；按 version_key 续跑（s04 按 20 min 分片做检查点）；单个视频失败会记入 `step_run` 和报告，然后继续下一个；报告写到 `data/batch/<run_id>.json|csv`（每视频 RTF、纠错数、章节数、峰值内存）。实测 RTF ≈0.047（8 vCPU），常驻内存约 3 GB。详见 [`docs/runbooks/batch_asr.md`](docs/runbooks/batch_asr.md)。
 
 ## 快速 Demo（推荐 `--from-cache`）
 
@@ -58,8 +68,9 @@ uv pip install 'tcmkb-ingest[asr]'
 .venv/bin/python -m tcmkb_ingest steps
 .venv/bin/python -m tcmkb_ingest status --video zj-demo
 .venv/bin/python -m tcmkb_ingest run --video zj-demo --to s08 --from-cache
-# 生产 ASR（需 FunASR）：
-.venv/bin/python -m tcmkb_ingest run --video zj-demo --to s08 --no-skip-alt=false
+# 生产 ASR（需 uv sync --extra asr）：
+.venv/bin/python -m tcmkb_ingest run --video zj-demo --to s08
+.venv/bin/python -m tcmkb_ingest batch --manifest configs/batches/asr_bench_samples.csv
 # 等价入口：
 .venv/bin/tcmkb run --video zj-demo --to s08 --from-cache
 ```

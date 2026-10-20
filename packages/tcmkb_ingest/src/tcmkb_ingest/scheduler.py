@@ -1,5 +1,6 @@
 """Run pipeline steps for a video with resume (version_key skip)."""
 from __future__ import annotations
+import pathlib
 from typing import Any
 from tcmkb_ingest.steps import steps_up_to, get_runner, normalize_step, STEP_ORDER
 from tcmkb_ingest.steps.base import Ctx, log
@@ -17,10 +18,18 @@ def run_pipeline(
     series_id: str | None = None,
     episode: int = 0,
     title: str = "",
+    root: pathlib.Path | None = None,
+    engine: Any = None,
 ) -> dict[str, Any]:
+    """Run steps up to `to_step`. Steps whose version_key is already done are skipped.
+
+    On a step exception the step_run row is marked `failed` (error text kept) and
+    the exception is re-raised; `batch` catches it and moves to the next video.
+    """
     to_step = normalize_step(to_step)
     ctx = Ctx.build(
         video_id, force=force, from_cache=from_cache, skip_alt=skip_alt, cache_dir=cache_dir,
+        root=root, engine=engine,
     )
     plan = steps_up_to(to_step)
     if from_step:
@@ -30,16 +39,22 @@ def run_pipeline(
         plan = [s for s in plan if STEP_ORDER.index(s) >= STEP_ORDER.index(from_step)]
 
     results: dict[str, Any] = {}
-    for step in plan:
-        runner = get_runner(step)
-        kw: dict[str, Any] = {}
-        if step == "s00_register":
-            kw.update(source_path=source_path, series_id=series_id, episode=episode, title=title)
-        log.info("=== %s / %s ===", video_id, step)
-        try:
-            results[step] = runner(ctx, **kw)
-        except Exception as e:
-            log.exception("step %s failed: %s", step, e)
-            # ensure failed is recorded if a version was claimed — runner usually does it
-            raise
+    try:
+        for step in plan:
+            runner = get_runner(step)
+            kw: dict[str, Any] = {}
+            if step == "s00_register":
+                kw.update(source_path=source_path, series_id=series_id, episode=episode, title=title)
+            log.info("=== %s / %s ===", video_id, step)
+            try:
+                results[step] = runner(ctx, **kw)
+            except Exception as e:
+                log.exception("step %s failed: %s", step, e)
+                try:
+                    ctx.state.fail_running(video_id, step, f"{type(e).__name__}: {e}")
+                except Exception:  # pragma: no cover - state db broken
+                    pass
+                raise
+    finally:
+        ctx.state.close()
     return {"video_id": video_id, "steps": results}

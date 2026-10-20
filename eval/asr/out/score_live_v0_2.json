@@ -1,0 +1,397 @@
+{
+ "zj": {
+  "bench_hot31+corr_edits": 14,
+  "live_hot50+corr_edits": 12,
+  "bench_hot31": {
+   "win_cer": 0.0593,
+   "S": 18,
+   "D": 3,
+   "I": 6,
+   "N": 455,
+   "hits": {
+    "hot31": "7/7",
+    "extra": "10/15"
+   },
+   "key_counts": {
+    "足三里": 14,
+    "阑尾穴": 1,
+    "胃气": 6
+   }
+  },
+  "live_hot50": {
+   "win_cer": 0.0637,
+   "S": 20,
+   "D": 3,
+   "I": 6,
+   "N": 455,
+   "hits": {
+    "hot31": "7/7",
+    "extra": "10/15"
+   },
+   "key_counts": {
+    "足三里": 13,
+    "上巨虚": 1,
+    "下巨虚": 1,
+    "阑尾穴": 2,
+    "胃气": 6,
+    "黄帝": 1
+   }
+  },
+  "bench_hot31+corr": {
+   "win_cer": 0.0527,
+   "S": 15,
+   "D": 3,
+   "I": 6,
+   "N": 455,
+   "hits": {
+    "hot31": "7/7",
+    "extra": "13/15"
+   },
+   "key_counts": {
+    "足三里": 14,
+    "梁丘": 2,
+    "伏兔": 1,
+    "髀关": 1,
+    "阴市": 1,
+    "上巨虚": 1,
+    "下巨虚": 1,
+    "条口": 1,
+    "阑尾穴": 1,
+    "斜刺": 1,
+    "胃气": 7
+   }
+  },
+  "live_hot50+corr": {
+   "win_cer": 0.0593,
+   "S": 18,
+   "D": 3,
+   "I": 6,
+   "N": 455,
+   "hits": {
+    "hot31": "7/7",
+    "extra": "12/15"
+   },
+   "key_counts": {
+    "足三里": 14,
+    "梁丘": 2,
+    "伏兔": 1,
+    "髀关": 1,
+    "阴市": 1,
+    "上巨虚": 1,
+    "下巨虚": 1,
+    "条口": 1,
+    "阑尾穴": 2,
+    "斜刺": 1,
+    "胃气": 6,
+    "黄帝": 1
+   }
+  },
+  "live_pipeline_s06": {
+   "win_cer": 0.0593,
+   "S": 18,
+   "D": 3,
+   "I": 6,
+   "N": 455,
+   "hits": {
+    "hot31": "7/7",
+    "extra": "12/15"
+   },
+   "key_counts": {
+    "足三里": 14,
+    "梁丘": 2,
+    "伏兔": 1,
+    "髀关": 1,
+    "阴市": 1,
+    "上巨虚": 1,
+    "下巨虚": 1,
+    "条口": 1,
+    "阑尾穴": 2,
+    "斜刺": 1,
+    "胃气": 6,
+    "黄帝": 1
+   }
+  },
+  "live_meta": {
+   "audio_sec": 600.0,
+   "proc_sec": 28.45,
+   "rtf": 0.04742,
+   "n_parts": 1,
+   "parts_reused": 0,
+   "n_tokens": 2465,
+   "n_chars": 2474,
+   "n_hotwords": 50,
+   "hotword_sha": "9bd992cd7215",
+   "model_load_sec": 30.85,
+   "hotword_set": "zj@0.1.0#e466352a",
+   "model_rev": "master|funasr-1.4.16",
+   "s06_segments": 113,
+   "s06_edits": 12,
+   "s08_chapters": 3,
+   "bench_rtf": 0.04829151670138041,
+   "bench_proc_sec": 28.974910020828247
+  },
+  "timestamps": {
+   "n_tokens": 2465,
+   "first_s": 0.05,
+   "last_e": 599.585,
+   "audio_sec": 600.0,
+   "non_monotonic": 0,
+   "end_before_start": 0,
+   "multi_char_tokens": 4
+  }
+ },
+ "shl": {
+  "bench_hot31+corr_edits": 29,
+  "live_hot50+corr_edits": 22,
+  "bench_hot31": {
+   "win_cer": 0.102,
+   "S": 50,
+   "D": 9,
+   "I": 8,
+   "N": 657,
+   "hits": {
+    "hot31": "1/2",
+    "extra": "15/21"
+   },
+   "key_counts": {
+    "桂枝": 13,
+    "桂枝汤": 11,
+    "张仲景": 5,
+    "伤寒": 4,
+    "金匮": 2,
+    "经方": 1,
+    "乌梅丸": 3
+   }
+  },
+  "live_hot50": {
+   "win_cer": 0.0989,
+   "S": 48,
+   "D": 9,
+   "I": 8,
+   "N": 657,
+   "hits": {
+    "hot31": "1/2",
+    "extra": "16/21"
+   },
+   "key_counts": {
+    "桂枝": 12,
+    "桂枝汤": 8,
+    "张仲景": 5,
+    "伤寒": 4,
+    "金匮": 2,
+    "经方": 1,
+    "五苓散": 2,
+    "乌梅丸": 4
+   }
+  },
+  "bench_hot31+corr": {
+   "win_cer": 0.102,
+   "S": 50,
+   "D": 9,
+   "I": 8,
+   "N": 657,
+   "hits": {
+    "hot31": "1/2",
+    "extra": "15/21"
+   },
+   "key_counts": {
+    "桂枝": 14,
+    "桂枝汤": 12,
+    "张仲景": 6,
+    "伤寒": 4,
+    "金匮": 5,
+    "经方": 2,
+    "五苓散": 2,
+    "乌梅丸": 5
+   }
+  },
+  "live_hot50+corr": {
+   "win_cer": 0.0989,
+   "S": 48,
+   "D": 9,
+   "I": 8,
+   "N": 657,
+   "hits": {
+    "hot31": "1/2",
+    "extra": "16/21"
+   },
+   "key_counts": {
+    "桂枝": 12,
+    "桂枝汤": 8,
+    "张仲景": 6,
+    "伤寒": 4,
+    "金匮": 5,
+    "经方": 2,
+    "五苓散": 2,
+    "乌梅丸": 4
+   }
+  },
+  "live_pipeline_s06": {
+   "win_cer": 0.0989,
+   "S": 48,
+   "D": 9,
+   "I": 8,
+   "N": 657,
+   "hits": {
+    "hot31": "1/2",
+    "extra": "16/21"
+   },
+   "key_counts": {
+    "桂枝": 12,
+    "桂枝汤": 8,
+    "张仲景": 6,
+    "伤寒": 4,
+    "金匮": 5,
+    "经方": 2,
+    "五苓散": 2,
+    "乌梅丸": 4
+   }
+  },
+  "live_meta": {
+   "audio_sec": 600.0,
+   "proc_sec": 27.861,
+   "rtf": 0.04643,
+   "n_parts": 1,
+   "parts_reused": 0,
+   "n_tokens": 2528,
+   "n_chars": 2551,
+   "n_hotwords": 50,
+   "hotword_sha": "3c624970ac55",
+   "model_load_sec": null,
+   "hotword_set": "shl@0.1.0#e466352a",
+   "model_rev": "master|funasr-1.4.16",
+   "s06_segments": 116,
+   "s06_edits": 19,
+   "s08_chapters": 2,
+   "bench_rtf": 0.04906405448913574,
+   "bench_proc_sec": 29.438432693481445
+  },
+  "timestamps": {
+   "n_tokens": 2528,
+   "first_s": 0.38,
+   "last_e": 599.375,
+   "audio_sec": 600.0,
+   "non_monotonic": 0,
+   "end_before_start": 0,
+   "multi_char_tokens": 8
+  }
+ },
+ "nj": {
+  "bench_hot31+corr_edits": 9,
+  "live_hot50+corr_edits": 5,
+  "bench_hot31": {
+   "win_cer": 0.1064,
+   "S": 41,
+   "D": 5,
+   "I": 4,
+   "N": 470,
+   "hits": {
+    "hot31": "0/0",
+    "extra": "7/14"
+   },
+   "key_counts": {
+    "岐伯": 2,
+    "上古天真论": 4
+   }
+  },
+  "live_hot50": {
+   "win_cer": 0.0979,
+   "S": 37,
+   "D": 5,
+   "I": 4,
+   "N": 470,
+   "hits": {
+    "hot31": "0/0",
+    "extra": "11/14"
+   },
+   "key_counts": {
+    "岐伯": 3,
+    "黄帝": 2,
+    "上古天真论": 5,
+    "法于阴阳": 1
+   }
+  },
+  "bench_hot31+corr": {
+   "win_cer": 0.0915,
+   "S": 34,
+   "D": 5,
+   "I": 4,
+   "N": 470,
+   "hits": {
+    "hot31": "0/0",
+    "extra": "12/14"
+   },
+   "key_counts": {
+    "岐伯": 2,
+    "黄帝": 3,
+    "上古天真论": 4,
+    "法于阴阳": 1,
+    "和于术数": 1
+   }
+  },
+  "live_hot50+corr": {
+   "win_cer": 0.0915,
+   "S": 34,
+   "D": 5,
+   "I": 4,
+   "N": 470,
+   "hits": {
+    "hot31": "0/0",
+    "extra": "14/14"
+   },
+   "key_counts": {
+    "岐伯": 3,
+    "黄帝": 3,
+    "上古天真论": 5,
+    "法于阴阳": 1,
+    "和于术数": 1
+   }
+  },
+  "live_pipeline_s06": {
+   "win_cer": 0.0915,
+   "S": 34,
+   "D": 5,
+   "I": 4,
+   "N": 470,
+   "hits": {
+    "hot31": "0/0",
+    "extra": "14/14"
+   },
+   "key_counts": {
+    "岐伯": 3,
+    "黄帝": 3,
+    "上古天真论": 5,
+    "法于阴阳": 1,
+    "和于术数": 1
+   }
+  },
+  "live_meta": {
+   "audio_sec": 600.0,
+   "proc_sec": 27.497,
+   "rtf": 0.04583,
+   "n_parts": 1,
+   "parts_reused": 0,
+   "n_tokens": 2361,
+   "n_chars": 2361,
+   "n_hotwords": 50,
+   "hotword_sha": "ee26b6dd8f95",
+   "model_load_sec": null,
+   "hotword_set": "nj@0.1.0#e466352a",
+   "model_rev": "master|funasr-1.4.16",
+   "s06_segments": 113,
+   "s06_edits": 5,
+   "s08_chapters": 2,
+   "bench_rtf": 0.045843596855799355,
+   "bench_proc_sec": 27.506158113479614
+  },
+  "timestamps": {
+   "n_tokens": 2361,
+   "first_s": 0.07,
+   "last_e": 599.805,
+   "audio_sec": 600.0,
+   "non_monotonic": 0,
+   "end_before_start": 0,
+   "multi_char_tokens": 0
+  }
+ }
+}

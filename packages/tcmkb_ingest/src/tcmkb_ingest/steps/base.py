@@ -27,11 +27,14 @@ class Ctx:
     skip_alt: bool = True
     cache_dir: pathlib.Path | None = None
     extras: dict[str, Any] = field(default_factory=dict)
+    # Shared ASR engine (batch: one model load for all videos); None -> module cache
+    engine: Any = None
+    worker_id: str = "local"
 
     @classmethod
     def build(cls, video_id: str, *, force: bool = False, from_cache: bool = False,
               skip_alt: bool = True, cache_dir: str | None = None,
-              root: pathlib.Path | None = None) -> "Ctx":
+              root: pathlib.Path | None = None, engine: Any = None) -> "Ctx":
         root = root or repo_root()
         pipe = load_pipeline_config(root)
         data = root / pipe.get("data_dir", "data")
@@ -46,6 +49,7 @@ class Ctx:
             asr=load_asr_config(root), series=load_series_config(root),
             state=state, storage=storage, artifacts_base=abase,
             force=force, from_cache=from_cache, skip_alt=skip_alt, cache_dir=cd,
+            engine=engine,
         )
 
     def step_cfg(self, step: str) -> dict[str, Any]:

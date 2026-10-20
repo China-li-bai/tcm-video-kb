@@ -9,6 +9,10 @@ dependencies = [
   "tcmkb-ingest",
 ]
 
+[project.optional-dependencies]
+# `uv sync --extra asr` installs FunASR + torch CPU into the workspace .venv
+asr = ["tcmkb-ingest[asr]"]
+
 [tool.uv.workspace]
 members = ["packages/tcmkb_core", "packages/tcmkb_lexicon", "packages/tcmkb_ingest"]
 
@@ -16,6 +20,13 @@ members = ["packages/tcmkb_core", "packages/tcmkb_lexicon", "packages/tcmkb_inge
 tcmkb-core = { workspace = true }
 tcmkb-lexicon = { workspace = true }
 tcmkb-ingest = { workspace = true }
+torch = { index = "pytorch-cpu" }
+torchaudio = { index = "pytorch-cpu" }
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

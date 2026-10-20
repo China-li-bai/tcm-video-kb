@@ -1,0 +1,108 @@
+{
+  "run_id": "live-samples-1",
+  "finished": true,
+  "at": "2026-10-20T10:30:59+08:00",
+  "n_items": 3,
+  "n_ok": 3,
+  "n_failed": 0,
+  "wall_sec": 128.54,
+  "audio_sec_ok": 1800.0,
+  "asr_proc_sec_fresh": 83.81,
+  "model_load_sec": 30.85,
+  "model_loaded": true,
+  "overall_rtf_wall": 0.07141,
+  "peak_rss_mb": 5038.6,
+  "peak_anon_rss_mb": 3677.1,
+  "items": [
+    {
+      "video_id": "zj-demo",
+      "series_id": "zj",
+      "file": "/workspace/asr-bench/wav/zj.wav",
+      "status": "ok",
+      "failed_step": null,
+      "error": null,
+      "wall_sec": 64.13,
+      "audio_sec": 600.0,
+      "asr_proc_sec": 28.45,
+      "rtf": 0.04742,
+      "asr_reused": false,
+      "n_tokens": 2465,
+      "n_segments": 113,
+      "n_corrections": 12,
+      "n_chapters": 3,
+      "steps_run": [
+        "s03_audio",
+        "s04_asr",
+        "s06_clean",
+        "s07_flag",
+        "s08_chapter"
+      ],
+      "steps_skipped": [
+        "s00_register",
+        "s01_upload",
+        "s02_media",
+        "s05_asr_alt"
+      ]
+    },
+    {
+      "video_id": "shl-demo",
+      "series_id": "shl",
+      "file": "/workspace/asr-bench/wav/shl.wav",
+      "status": "ok",
+      "failed_step": null,
+      "error": null,
+      "wall_sec": 30.78,
+      "audio_sec": 600.0,
+      "asr_proc_sec": 27.861,
+      "rtf": 0.04643,
+      "asr_reused": false,
+      "n_tokens": 2528,
+      "n_segments": 116,
+      "n_corrections": 19,
+      "n_chapters": 2,
+      "steps_run": [
+        "s00_register",
+        "s01_upload",
+        "s02_media",
+        "s03_audio",
+        "s04_asr",
+        "s06_clean",
+        "s07_flag",
+        "s08_chapter"
+      ],
+      "steps_skipped": [
+        "s05_asr_alt"
+      ]
+    },
+    {
+      "video_id": "nj-demo",
+      "series_id": "nj",
+      "file": "/workspace/asr-bench/wav/nj.wav",
+      "status": "ok",
+      "failed_step": null,
+      "error": null,
+      "wall_sec": 33.63,
+      "audio_sec": 600.0,
+      "asr_proc_sec": 27.497,
+      "rtf": 0.04583,
+      "asr_reused": false,
+      "n_tokens": 2361,
+      "n_segments": 113,
+      "n_corrections": 5,
+      "n_chapters": 2,
+      "steps_run": [
+        "s00_register",
+        "s01_upload",
+        "s02_media",
+        "s03_audio",
+        "s04_asr",
+        "s06_clean",
+        "s07_flag",
+        "s08_chapter"
+      ],
+      "steps_skipped": [
+        "s05_asr_alt"
+      ]
+    }
+  ]
+}

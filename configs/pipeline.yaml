@@ -7,18 +7,21 @@ r2_mirror: data/r2-mirror
 steps:
   s00_register:
     code_version: "1"
-  s01_upload_r2:
+  s01_upload:            # LocalStorage stub of R2 (data/r2-mirror); no cloud upload
     code_version: "1"
-  s02_playback_copies:
+  s02_media:
     code_version: "1"
     enabled: true
-  s03_extract_audio:
-    code_version: "1"
+  s03_audio:
+    code_version: "2"         # v2: real silence-aware split into parts
     sample_rate: 16000
     channels: 1
-    max_part_s: 1200          # 20 min
+    max_part_s: 1200          # 20 min: bounds s04 memory per part
+    split_search_s: 120       # look for the longest silence in the last 2 min before a boundary
+    silence_noise_db: -35
+    silence_min_s: 0.4
   s04_asr:
-    code_version: "1"
+    code_version: "2"         # v2: live FunASR engine, raw_text-aligned token timestamps, part checkpoints
     # hotword_set is pinned; lexicon hotword rebuild does NOT auto-rerun ASR
     hotword_set_pin: true
   s05_asr_alt:
