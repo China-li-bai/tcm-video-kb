@@ -1,0 +1,16 @@
+# FunASR SeACo-Paraformer settings (see docs/SEACO_HOTWORD_RESEARCH.md)
+engine: seaco-paraformer
+model: iic/speech_seaco_paraformer_large_asr_nat-zh-cn-16k-common-vocab8404-pytorch
+vad_model: fsmn-vad
+punc_model: ct-punc
+batch_size_s: 300
+# ASF / bias (exposed for future FunASR kwargs; defaults match paper)
+nfilter: 50
+seaco_weight: 1.0
+# Hotword file: lexicon/dist/hotwords/{series}.txt — one term per line, no weights
+hotword_max: 50
+
+alt:
+  engine: sensevoice
+  model: iic/SenseVoiceSmall
+  batch_size_s: 60

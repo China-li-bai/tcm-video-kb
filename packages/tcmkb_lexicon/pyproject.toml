@@ -1,0 +1,13 @@
+[project]
+name = "tcmkb-lexicon"
+version = "0.1.0"
+description = "Shared TCM lexicon: validation, build (hotwords / corrections / jieba dict / jsonl), correction engine, dictionary matcher"
+requires-python = ">=3.11"
+dependencies = ["pyyaml>=6", "jsonschema>=4"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

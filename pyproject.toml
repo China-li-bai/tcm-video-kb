@@ -1,0 +1,27 @@
+[project]
+name = "tcm-video-kb"
+version = "0.1.0"
+description = "倪海厦中医讲座视频知识库 — monorepo workspace"
+requires-python = ">=3.11"
+dependencies = [
+  "tcmkb-core",
+  "tcmkb-lexicon",
+  "tcmkb-ingest",
+]
+
+[tool.uv.workspace]
+members = ["packages/tcmkb_core", "packages/tcmkb_lexicon", "packages/tcmkb_ingest"]
+
+[tool.uv.sources]
+tcmkb-core = { workspace = true }
+tcmkb-lexicon = { workspace = true }
+tcmkb-ingest = { workspace = true }
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["packages/tcmkb_core/src", "packages/tcmkb_lexicon/src", "packages/tcmkb_ingest/src"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]

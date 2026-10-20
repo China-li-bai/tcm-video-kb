@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "General (non-entity) correction rule",
+  "type": "object", "additionalProperties": false, "required": ["id", "from", "to"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^corr\\.[a-z0-9_]+$"},
+    "from": {"type": "string", "minLength": 1}, "to": {"type": "string"},
+    "type": {"enum": ["literal", "regex"]},
+    "left": {"type": "string"}, "left_not": {"type": "string"}, "right": {"type": "string"}, "right_not": {"type": "string"},
+    "near_any": {"type": "array", "items": {"type": "string"}}, "window": {"type": "integer", "minimum": 1, "maximum": 60},
+    "scope": {"type": "array", "items": {"type": "string"}}, "evidence": {"type": "string"}, "status": {"enum": ["draft", "reviewed"]}
+  }
+}

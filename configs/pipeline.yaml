@@ -1,0 +1,40 @@
+# Pipeline step versions and knobs (ARCHITECTURE.md §5)
+data_dir: data
+state_db: data/state.sqlite
+artifacts_dir: data/artifacts
+r2_mirror: data/r2-mirror
+
+steps:
+  s00_register:
+    code_version: "1"
+  s01_upload_r2:
+    code_version: "1"
+  s02_playback_copies:
+    code_version: "1"
+    enabled: true
+  s03_extract_audio:
+    code_version: "1"
+    sample_rate: 16000
+    channels: 1
+    max_part_s: 1200          # 20 min
+  s04_asr:
+    code_version: "1"
+    # hotword_set is pinned; lexicon hotword rebuild does NOT auto-rerun ASR
+    hotword_set_pin: true
+  s05_asr_alt:
+    code_version: "1"
+    enabled: false            # demo default: skip
+  s06_clean:
+    code_version: "1"
+    gap_break_s: 1.2
+    max_sentence_s: 40.0
+  s07_flag:
+    code_version: "1"
+    agreement_threshold: 0.75
+  s08_chapter:
+    code_version: "1"
+    mode: heuristic           # heuristic | llm
+    silence_gap_s: 3.0
+    min_chapter_s: 60.0
+    max_chapter_s: 1500.0
+    target_chapter_s: 300.0

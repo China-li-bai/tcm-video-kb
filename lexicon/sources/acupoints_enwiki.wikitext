@@ -1,0 +1,908 @@
+{{Short description|none}}
+{{For|full article concerning acupuncture points and their use|Acupuncture}}
+
+[[File:Chinese meridians.JPG|thumb|right|300px|System of main meridians with acupuncture point locations]]
+This article provides a comprehensive list of acupuncture points, locations on the body used in [[acupuncture]], [[acupressure]], and other treatment systems based on [[Traditional Chinese Medicine|Traditional Chinese Medicine (TCM)]].
+
+== Locations and basis ==
+
+{{main|Meridian (Chinese medicine)}}
+
+More than four hundred acupuncture points have been described, with the majority located on one of the twenty main cutaneous and subcutaneous [[meridian (Chinese medicine)|meridians]], pathways which run throughout the body and according to [[Traditional Chinese Medicine|Traditional Chinese Medicine (TCM)]] transport ''[[qi]]''. Twelve of these major meridians, commonly referred to as "the primary meridians", are bilateral and practitioners{{Who|date=December 2022}} associate them with internal organs. The remaining eight meridians are designated{{By whom|date=December 2022}} as "extraordinary", and are also bilateral except for three, one that encircles the body near the waist, and two that run along the midline of the body. Only those two extraordinary meridians that run along the midline contain their own points, the remaining six comprise points from the aforementioned twelve primary meridians. There are also points that are not located on the fourteen major meridians but do lie in the complete nexus referred to as ''Jīngluò'' ({{lang|zh|經絡}}). Such outliers are often{{Specify|date=December 2022}} referred to as "extra points".<ref name=Deadman2007>Deadman, P, Baker K, Al-Khafaji, M. 2007. A Manual of Acupuncture, 2nd Edition. Journal of Chinese Medicine Publications. {{ISBN|978-0951054659}}.</ref>
+
+There is no anatomical and physiological basis for acupuncture points and meridians.<ref name=Napadow2008>Napadow V, Ahn A, Longhurst J, et al. 2008. [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3155097/ The status and future of acupuncture mechanism research.]  J Altern Complement Med 14(7): 861–869.</ref> In practice, acupuncture points are located{{By whom|date=December 2022}} by a combination of anatomical landmarks, [[palpation]], and feedback from the patient.<ref name=Deadman2007/>
+
+===Twelve Primary Meridians===
+
+{| class="wikitable"
+|-
+! Code !! Chinese name !! Pinyin !! English  !! Korean {{lang|ko| 한글}} !!Vietnamese
+|-
+| LU ||{{lang|zh|手太陰肺經}} || shǒu tàiyīn fèi jīng || Lung || {{lang|ko|수태음폐경}} ||Thủ thái âm phế
+|-
+| LI || {{lang|zh|手陽明大腸經}} || shǒu yángmíng dàcháng jīng || Large Intestine || {{lang|ko|수양명대장경}} ||Thủ dương minh đại trường
+|-
+| ST || {{lang|zh|足陽明胃經}}  || zú yángmíng wèi jīng || Stomach ||  {{lang|ko|족양명위경}}  ||Túc dương minh vị
+|-
+| SP || {{lang|zh|足太陰脾經}}  || zú tàiyīn pí jīng || Spleen || {{lang|ko|족태음비경}} ||Túc thái âm tỳ
+|-
+| HT || {{lang|zh|手少陰心經}} || shǒu shǎo yīn xīnjīng || Heart || {{lang|ko|수소음심경}} ||Thủ thiếu âm tâm
+|-
+| SI || {{lang|zh|手太陽小腸經}}  || shǒu tàiyáng xiǎocháng jīng || Small Intestine || {{lang|ko|수태양소장경}} ||Thủ thái dương tiểu trường
+|-
+| BL || {{lang|zh|足太陽膀胱經}}|| zú tàiyáng pángguāng jīng || Bladder || {{lang|ko|족태양방광경}} ||Túc thái dương bàng quang 
+|-
+| KI || {{lang|zh|足少陰腎經}}  || zú shǎo yīn shèn jīng || Kidney || {{lang|ko|족소음신경}} ||Túc thiếu âm thận
+|-
+| PC || {{lang|zh|手厥陰心包經}}  || shǒu juéyīn xīnbāo jīng || Pericardium || {{lang|ko|수궐음심포경}} ||Thủ quyết âm tâm bào
+|-
+| TE || {{lang|zh|手少陽三焦經}} || shǒu shǎo yángsān jiāo jīng || Triple Energizer || {{lang|ko|수소양삼초경}} ||Thủ thiếu dương tam tiêu 
+|-
+| GB || {{lang|zh|足少陽膽經}}  || zú shǎo yáng dǎn jīng || Gallbladder || {{lang|ko|족소양담경}} ||Túc thiếu dương đởm
+|-
+| LR || {{lang|zh|足厥陰肝經}} || zú juéyīn gān jīng || Liver || {{lang|ko|족궐음간경}} ||Túc quyết âm can
+|}
+
+===Eight Extraordinary Meridians===
+
+The eight extraordinary meridians ({{zh|t=奇經八脈 |s=奇经八脉 |p=qí jīng bā mài}}) are of pivotal importance in the study of [[qigong]], [[tai chi]], and [[Chinese alchemy]].<ref>T'ai Chi Ch'uan and Meditation by Da Liu, pages 35-41 - Routledge and Keegan Paul 1987 {{ISBN|0-14-019217-4}}</ref> Though many are listed, only the Governing Vessel and the Conception Vessel meridians have points not associated with the previous 12 meridians. 
+
+{| class="wikitable"
+|-
+! Code !! Name !! Transliteration !! English !! Korean 한글 !! Pinyin  !!Vietnamese
+|-
+| GV || {{zh|labels=no|t=督脈 |s=督脉}} || Dumai || Governing Vessel || 독맥 || dū mài ||Đốc mạch
+|-
+| CV || {{zh|labels=no|t=任脈 |s=任脉}} || Renmai || Conception Vessel || 임맥 || rén mài||Nhâm mạch 
+|-
+| TV || {{zh|labels=no|t=衝脈 |s=冲脉}} || Chongmai || Thrusting Vessel || 충맥 || chòng mài  ||Xung mạch 
+|-
+| BV || {{zh|labels=no|t=帶脈 |s=带脉}} || Daimai || Belt Vessel || 대맥 || dài mài ||Đới mạch
+|-
+| YinHV || {{zh|labels=no|t=陰蹺脈 |s=陰跷脉}} || Yinqiaomai || Yin Heel Vessel || 음교맥 || yīn qiāo mài ||Âm kiều 
+|-
+| YangHV || {{zh|labels=no|t=陽蹺脈 |s=陽跷脉}} || Yangqiaomai || Yang Heel Vessel || 양교맥 || yáng qiāo mài||Dương kiều
+|-
+| YinLV || {{zh|labels=no|t=陰維脈 |s=陰维脉}} || Yinweimai || Yin Link Vessel || 음유맥 || yīn wéi mài ||Âm duy
+|-
+| YangLV || {{zh|labels=no|t=陽維脈 |s=陽维脉}} || Yangweimai || Yang Link Vessel || 양유맥 || yáng wéi mài ||Dương duy
+|}
+
+== Nomenclature ==
+
+Some acupuncture points have several traditional names, for example ''tài yuān'' ({{lang|zh|太渊}}) and ''gui xin'' ({{lang|zh|鬼心}}) are two names used for the 9th acupuncture point on the lung meridian.{{Cn|date=December 2022}}  The [[World Health Organization|World Health Organization (WHO)]] published ''A Proposed Standard International Acupuncture Nomenclature Report'' in 1991 and [https://www.who.int/publications/i/item/9290611057 2014], listing 361 classical acupuncture points organized according to the fourteen meridians, eight extra meridians, 48 extra points, and scalp acupuncture points,<ref name="WHO1991">Regional Office for the Western Pacific, WHO. 1991. [http://whqlibdoc.who.int/publications/1991/9241544171_eng.pdf A Proposed Standard International Acupuncture Nomenclature Report of a WHO Scientific Group] (pdf). [[World Health Organization]]. Retrieved Sep-05-2014.</ref> and published ''[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2393122/pdf/bullwho00053-0028.pdf Standard Acupuncture Nomenclature]'' in 1993, focused on the 361 classical acupuncture points.<ref>Regional Office for the Western Pacific, WHO. 1993. [https://web.archive.org/web/20140905172427/http://apps.who.int/medicinedocs/documents/s7143e/s7143e.pdf Standard Acupuncture Nomenclature, 2nd ed] (pdf). [[World Health Organization]]. [https://web.archive.org/web/20110228201809/http://www.wpro.who.int/NR/rdonlyres/8DDB198B-B00B-47AB-9BA1-9337CF49C5A5/0/Standard_Acupuncture_Nomenclature_2nd_ed.pdf Archived from the original on 28 February 2011]. Retrieved Sep-05-2014.</ref> Each acupuncture point is identified by the meridian on which it is located and its number in the point sequence on that channel.  For example, ''Lu-9'' identifies the 9th acupuncture point on the lung meridian. The only{{Verify source|date=December 2022}} ambiguity with this unique systemized method is on the urinary bladder meridian, where the outer line of 14 points found on the back near the spine are inserted in one of two ways; following the last point of the inner line along the spine ({{lang|zh|會陽}}) and resuming with the point found in the crease of the buttocks ({{lang|zh|承扶}}), or following the point in the center of the crease of the knee ({{lang|zh|委中}}) and resuming with the point just below that ({{lang|zh|合陽}}), found in the bifurcation of the [[gastrocnemius muscle]].  Although classification of the extra points often tries to utilize a similar shortcut method, where a numbered sequence along an assigned body part is used, there is no commonly agreed-upon system and therefore universal identification of these points relies on the original naming system of [[traditional Chinese characters]].
+
+The tables in this article follow the WHO numbering scheme to identify the acupuncture points of the main channels.  For extra points the tables follow the numbering scheme found in ''A Manual of Acupuncture''.<ref name=Deadman2007/>
+
+==Lung meridian==
+Abbreviated as LU, named {{zh |labels=no |s=手太阴肺经穴|t=手太陰肺經}} "The Lung channel of Hand, Greater Yin". This refers to the meridian starting in the arm, the [[Lung (Chinese medicine)|lung]]'s association with [[Yin and Yang|yin]], and that it is considered more easy to find. 
+{| class="wikitable"
+|-
+! Point !! Name !! Transliteration !! English !! Pinyin !! Korean {{lang|ko| 한글}} !!Vietnamese
+|-
+| LU-1 ||{{lang|zh| 中府 }}|| Zhongfu || Middle Assembly || zhōng fǔ ||{{lang|ko| jung bu 중부 }} ||Trung phủ
+|-
+| LU-2 ||{{lang|zh| 雲門 }}|| Yunmen || Cloud Gate || yún mén ||{{lang|ko| un mun 운문 }} ||Vân môn
+|-
+| LU-3 ||{{lang|zh| 天府 }}|| Tianfu || Upper Arm Assembly || tiān fǔ ||{{lang|ko| cheon bu 천부 }}||Thiên phủ
+|-
+| LU-4 ||{{lang|zh| 俠白 }}|| Xiabai || Supporting the Lung || xiá bái ||{{lang|ko| hyeop baek 협백 }} ||Hiệp bạch
+|-
+| LU-5 ||{{lang|zh| 尺澤 }}|| Chize || Cubit Marsh || chǐ zé ||{{lang|ko| cheok taek 척택 }}||Xích trạch
+|-
+| LU-6 ||{{lang|zh| 孔最 }}|| Kongzui || Collection Hole || kǒng zuì ||{{lang|ko| gong choe 공최 }} ||Khổng tối
+|-
+| LU-7 ||{{lang|zh| 列缺 }}|| Lieque || Interrupted Sequence || liè quē ||{{lang|ko| yeol gyeol 열결 }} ||Liệt khuyết
+|-
+| LU-8 ||{{lang|zh| 經渠 }}|| Jingqu || Channel Ditch || jīng qú ||{{lang|ko| gyeong geo 경거 }} ||Kinh cừ
+|-
+| LU-9 ||{{lang|zh| 太淵 }}|| Taiyuan || Great Deep Pool || tài yuān ||{{lang|ko| tae yeon 태연 }} ||Thái uyên
+|-
+| LU-10 ||{{lang|zh| 魚際 }}|| Yuji || Fish Border || yú jì ||{{lang|ko| eo je 어제 }} ||Ngư tế
+|-
+| LU-11 ||{{lang|zh| 少商 }}|| Shaoshang || Lesser Metal || shào shāng ||{{lang|ko| so sang 소상 }}||Thiếu thương
+|}
+
+==Large intestine meridian==
+Abbreviated as LI or CO (colon), named {{zh |labels=no |s=手阳明大肠经穴|t=手陽明大腸經}} "The Large Intestine channel of Hand, Yang Bright".
+{| class="wikitable"
+|-
+! Point !! Name !! Transliteration !! English !! Pinyin !! Korean {{lang|ko| 한글}}!!Vietnamese
+|-
+| LI-1 ||{{lang|zh| 商陽 }}|| Shangyang || Metal Yang  || shāng yáng ||{{lang|ko| sang yang 상양 }} ||Thương dương
+|-
+| LI-2 ||{{lang|zh| 二間 }}|| Erjian || Second Point || èr jiān ||{{lang|ko| i gan 이간 }}||Nhị gian
+|-
+| LI-3 ||{{lang|zh| 三間 }}|| Sanjian || Third Point || sān jiān ||{{lang|ko| sam gan 삼간 }} ||Tam gian
+|-
+| [[HéGŭ L.I. 4|LI-4]] ||{{lang|zh| 合谷 }}|| He Gu || Junction Valley || hé gǔ ||{{lang|ko| hap gok 합곡 }} ||Hiệp cốc
+|-
+| LI-5 ||{{lang|zh| 陽谿 }}|| Yangxi || Yang Stream || yáng xī ||{{lang|ko| yang gye 양계 }}||Dương khê
+|-
+| LI-6 ||{{lang|zh| 偏歴 }}|| Pianli || Diverging Passage || piān lì ||{{lang|ko| pyeon ryeok 편력 }} ||Thiên lịch
+|-
+| LI-7 ||{{lang|zh| 溫溜 }}|| Wenliu || Warm Flow || wēn liū ||{{lang|ko| ol lyu 온류 }}||Ôn lưu
+|-
+| LI-8 ||{{lang|zh| 下廉 }}|| Xialian || Lower Point at the Border || xià lián ||{{lang|ko| ha ryeom 하렴 }} ||Hạ liêm
+|-
+| LI-9 ||{{lang|zh| 上廉 }}|| Shanglian || Upper Point at the Border || shàng lián ||{{lang|ko| sang nyeom 상렴 }}||Thượng liêm
+|-
+| LI-10 ||{{lang|zh| 手三里 }}|| Shousanli || Arm Three Miles || shǒu sān lǐ ||{{lang|ko| [su] sam ni [수] 삼리 }}||Thủ tam lý
+|-
+| LI-11 ||{{lang|zh| 曲池 }}|| Quchi || Pool at the Bend || qū chí ||{{lang|ko| gok ji 곡지 }}||Khúc trì
+|-
+| LI-12 ||{{lang|zh| 肘髎 }}|| Zhouliao || Elbow Bone Hole || zhǒu liáo ||{{lang|ko| ju ryo 주료 }}||Trữu liêu
+|-
+| LI-13 ||{{lang|zh| 手五里 }}|| Shouwuli || Arm Five Miles || shǒu wǔ lǐ ||{{lang|ko| [su] o ri [수] 오리 }}||(Thủ) ngũ lý
+|-
+| LI-14 ||{{lang|zh| 臂臑 }}|| Binao || Upper Arm || bì nào ||{{lang|ko| bi no 비노 }}||Tí nhu
+|-
+| LI-15 ||{{lang|zh| 肩髃 }}|| Jianyu || Shoulder and Clavicle || jiān yú ||{{lang|ko| gyeon u 견우 }}||Kiên ngung
+|-
+| LI-16 ||{{lang|zh| 巨骨 }}|| Jugu || Large Bone || jù gǔ ||{{lang|ko| geo gol 거골 }}||Ngự cốt
+|-
+| LI-17 ||{{lang|zh| 天鼎 }}|| Tianding || Head's Tripod || tiān dǐng ||{{lang|ko| cheon jeong 천정 }}||Thiên đỉnh
+|-
+| LI-18 ||{{lang|zh| 扶突 }}|| Futu || Beside the Prominence || fú tū ||{{lang|ko| bu dol 부돌 }}||Phù đột
+|-
+| LI-19 ||{{lang|zh| 口禾髎 }}|| Kouheliao || Mouth Grain Hole || kǒu hé liáo ||{{lang|ko| hwa ryo 화료 }}||Hòa liêu
+|-
+| LI-20 ||{{lang|zh| 迎香 }}|| Yingxiang || Receiving Fragrance || yíng xiāng ||{{lang|ko| yeong hyang 영향 }}||Nghênh hương
+|}
+
+==Stomach meridian==
+Abbreviated as ST, named {{zh |labels=no |s=足阳明胃经穴|t=足陽明胃經}} "The Stomach channel of Foot, Yang Bright".
+{| class="wikitable"
+|-
+! Point !! Name !! Transliteration !! English !! Pinyin !! Korean {{lang|ko|한글}} !!Vietnamese!!Alternative names
+|-
+| ST-1 || {{lang|zh|承泣}} || Chengqi || Tears Container || chéng qì || seung eup {{lang|ko|승읍}} ||Thừa  khấp|| 
+|-
+| ST-2 || {{lang|zh|四白}} || Sibai || Four Directions Brightness || sì bái || sa baek {{lang|ko|사백}} ||Tứ bạch|| 
+|-
+| ST-3 || {{lang|zh|巨髎}} || Juliao || Large Bone Hole || jù liáo || geo ryo {{lang|ko|거료}} ||Cự liêu|| 
+|-
+| ST-4 || {{lang|zh|地倉}} || Dicang || Earth Granary || dì cāng || ji chang {{lang|ko|지창}}||Địa  thương|| 
+|-
+| ST-5 || {{lang|zh|大迎}} || Daying || Large Receptacle (Facial Artery) || dà yíng || dae yeong {{lang|ko|대영}}||Đại  nghênh|| 
+|-
+| ST-6 || {{lang|zh|頰車}} || Jiache || Jaw Bone || jiá chē || hyeop geo {{lang|ko|협거}}||Giáp xa|| 
+|-
+| ST-7 || {{lang|zh|下關}} || Xiaguan || Below the Arch || xià guān || ha gwan {{lang|ko|하관}}||Hạ quan|| 
+|-
+| ST-8 || {{lang|zh|頭維}} || Touwei || Head's Corner || tóu wéi || du yu {{lang|ko|두유}}||Đầu duy|| 
+|-
+| ST-9 || {{lang|zh|人迎}} || Renying || Man'sPrognosis (Carotid Artery) || rén yíng || in yeong {{lang|ko|인영}}||Nhân  nghênh|| Tianwuhui (Heaven's Five Meetings)<ref name=Deadman2007/> 
+|-
+| ST-10 || {{lang|zh|水突}} || Shuitu || Liquid Passage || shǔi tū || su dol {{lang|ko|수돌}}||Thủy đột|| 
+|-
+| ST-11 || {{lang|zh|氣舍}} || Qishe || Residence of Breath Qi || qì shè || gi sa {{lang|ko|기사}}||Khí xá|| 
+|-
+| ST-12 || {{lang|zh|缺盆}} || Quepen || Empty Basin || quē pén || gyeol bun {{lang|ko|결분}}||Khuyết  bồn|| 
+|-
+| ST-13 || {{lang|zh|氣戶}} || Qihu || Door of Breath || qì hù || gi ho {{lang|ko|기호}}||Khí hộ|| 
+|-
+| ST-14 || {{lang|zh|庫房}} || Kufang || Breath Storeroom || kù fáng || go bang {{lang|ko|고방}}||Khố phòng|| 
+|-
+| ST-15 || {{lang|zh|屋翳}} || Wuyi || Hiding the Breath || wū yì || ok ye {{lang|ko|옥예}}||Ốc ế|| 
+|-
+| ST-16 || {{lang|zh|膺窗}} || Yingchuang || Breast Window || yìng chuāng || eung chang {{lang|ko|응창}} ||Ưng song|| 
+|-
+| ST-17 || {{lang|zh|乳中}} || Ruzhong || Breast Centre (Nipple) || rǔ zhōng || yu jung {{lang|ko|유중}}||Nhũ trung|| 
+|-
+| ST-18 || {{lang|zh|乳根}} || Rugen || Breast Root || rǔ gēn || yu geun {{lang|ko|유근}}||Nhũ căn|| 
+|-
+| ST-19 || {{lang|zh|不容}} || Burong || Not Contained || bù róng || bul yong {{lang|ko|불용}}||Bất dung|| "Uncontainable" refers to vomiting <ref name=Deadman2007/>
+|-
+| ST-20 || {{lang|zh|承滿}} || Chengman || Receiving Fullness || chéng mǎn || seng man {{lang|ko|승만}}||Thừa mãn|| 
+|-
+| ST-21 || {{lang|zh|梁門}} || Liangmen || Beam Gate || liáng mén || yang mun {{lang|ko|양문}}||Lương môn|| 
+|-
+| ST-22 || {{lang|zh|關門}} || Guanmen || Shutting the Gate || guān mén || gwan mun {{lang|ko|관문}}||Quan môn|| 
+|-
+| ST-23 || {{lang|zh|太乙}} || Taiyi || Great Unity || tài yǐ || tae eul {{lang|ko|태을}} ||Thái ất|| 
+|-
+| ST-24 || {{lang|zh|滑肉門}} || Huaroumen || Chime Gate || huá ròu mén || hwal yung mun {{lang|ko|활육문}}||Hoạt nhục môn|| 
+|-
+| ST-25 || {{lang|zh|天樞}} || Tianshu || Heavenly Pivot || tiān shū || cheon chu {{lang|ko|천추}} ||Thiên xu|| 
+|-
+| ST-26 || {{lang|zh|外陵}} || Wailing || Outer Mound || wài líng || woe neung {{lang|ko|외릉}} ||Ngoại lăng|| 
+|-
+| ST-27 || {{lang|zh|大巨}} || Daju || Great Bulge || dà jù || dae geo {{lang|ko|대거}} ||Đại cự|| 
+|-
+| ST-28 || {{lang|zh|水道}} || Shuidao || Waterway || shuǐ dào || su do {{lang|ko|수도}} ||Thủy đạo|| Left ST 28 = Baomen "Gate of Uterus"; Right ST 28 = Zihu "Child's Door - Sun Si Miao <ref name=Deadman2007/> 
+|-
+| ST-29 || {{lang|zh|歸來 (归来)}} || Guilai || Restoring Position || guī lái || gui rae {{lang|ko|귀래}}||Qui lai|| 
+|-
+| ST-30 || {{lang|zh|氣沖}} || Qichong || Qi Surge || qì chōng || gi chung {{lang|ko|기충}}||Khí xung|| 
+|-
+|ST-31||{{lang|zh|髀關}}||Biguan||Thigh Gate||bì guān||bi gwan {{lang|ko|비관}}||Bễ quan||
+|-
+| ST-32 || {{lang|zh|伏兔}} || Futu || Crouching Rabbit || fú tù || bok to {{lang|ko|복토}}||Phục thỏ|| 
+|-
+| ST-33 || {{lang|zh|陰市}} || Yinshi || Yin Market || yīn shì || eum si {{lang|ko|음시 }}||Âm thị|| 
+|-
+| ST-34 || {{lang|zh|梁丘}} || Liangqiu || Ridge Mound || liáng qīu || yang gu {{lang|ko|양구}}||Lương khâu|| 
+|-
+| ST-35 || {{lang|zh|犢鼻}} || Dubi || Calf's Nose || dú bí || dok bi {{lang|ko|독비}} ||Độc tị|| 
+|-
+| [[Zusanli|ST-36]] || {{lang|zh|足三里}} || Zusanli || Leg Three Miles || zú sān lǐ || [jok] sam ni {{lang|ko|[족] 삼리}}||Túc tam lý|| 
+|-
+| ST-37 || {{lang|zh|上巨虛}} || Shangjuxu || Upper Great Void || shàng jù xū || sang geo heo {{lang|ko|상거허}}||Thượng cự hư|| 
+|-
+| ST-38 || {{lang|zh|條口}} || Tiaokou || Ribbon Opening || tiáo kǒu || jo gu {{lang|ko|조구}}||Điều khẩu|| 
+|-
+| ST-39 || {{lang|zh|下巨虛}} || Xiajuxu || Lower Large Hollow || xià jù xū || ha geo heo {{lang|ko|하거허}}||Hạ cự hư|| 
+|-
+| ST-40 || {{lang|zh|豐隆}} || Fenglong || Abundant Bulge || fēng lóng || pung nyung {{lang|ko|풍륭}} ||Phong long|| 
+|-
+| ST-41 || {{lang|zh|解谿}} || Jiexi || Dividing Cleft || jiě xī || hae gye {{lang|ko|해계}}||Giải khê|| 
+|-
+| ST-42 || {{lang|zh|沖陽}} || Chongyang || Surging Yang || chōng yáng || chung yang {{lang|ko|충양}}||Xung dương|| 
+|-
+| ST-43 || {{lang|zh|陷谷}} || Xiangu || Sunken Valley || xiàn gǔ || ham gok {{lang|ko|함곡}}||Hãm cốc|| 
+|-
+| ST-44 || {{lang|zh|内庭}} || Neiting || Inner Court || nèi tíng || nae jeong {{lang|ko|내정}}||Nội đình|| 
+|-
+| ST-45 || {{lang|zh|厲兌}} || Lidui || Running Point || lì duì || ye tae {{lang|ko|예태}}||Lệ đoài|| 
+|}
+
+==Spleen meridian==
+Abbreviated as SP, named {{zh |labels=no |s=足太阴睥经穴|t=足太陰脾經}} "The Spleen channel of Foot, Greater Yin".
+{| class="wikitable"
+|-
+! Point !! Name !! Transliteration !! English !! Pinyin !! Korean {{lang|ko| 한글}}!! Romaji !!Vietnamese!!Alternative names
+|-
+| SP-1 ||{{lang|zh| 隱白 }}|| Yinbai || Hidden White || yǐn bái ||{{lang|ko| eun baek 은백 }}|| im paku ||Ẩn bạch||'in paku'<ref name="Denmei">{{cite book |last= Denmei |first= S |title= Finding Effective Acupuncture Points |year= 2003 |publisher= Eastland Press }}</ref>
+|-
+| SP-2 ||{{lang|zh| 大都 }}|| Dadu || Great Pool || dà dū ||{{lang|ko| dae do 대도 }}|| dai to ||Đại đô||
+|-
+| SP-3 ||{{lang|zh| 太白 }}|| Taibai || Great White || taì bái ||{{lang|ko| tae baek 태백 }}|| tai haku ||Thái bạch||
+|-
+| SP-4 ||{{lang|zh| 公孫 }}|| Gongsun || Grandfather Grandson || gōng sūn ||{{lang|ko| gong son 공손 }}|| kō son ||Công tôn||
+|-
+| SP-5 ||{{lang|zh| 商丘 }}|| Shangqiu || Metal Mound || shāng qiū ||{{lang|ko| sang gu 상구 }}|| shō kyū ||Thương khâu||
+|-
+| SP-6 ||{{lang|zh| 三陰交 }}|| Sanyinjiao || Three Yin Intersection || sān yīn jiāo ||{{lang|ko| sam eum gyo 삼음교  }}|| san in kō ||Tam âm giao||
+|-
+| SP-7 ||{{lang|zh| 漏谷 }}|| Lougu || Leaking Valley || loù gǔ ||{{lang|ko| nu gok 루곡 }}|| rō koku? ||Lậu cốc||
+|-
+| SP-8 ||{{lang|zh| 地機 }}|| Diji || Earth Cure || dì jī ||{{lang|ko| ji gi 지기 }}|| chi ki ||Địa cơ||
+|-
+| SP-9 ||{{lang|zh| 陰陵泉 }}|| Yinlingquan || Yin Mound Spring || yīn líng qúan ||{{lang|ko| eum neung cheon 음릉천 }}|| in ryō sen ||Âm lăng tuyền||
+|-
+| SP-10 ||{{lang|zh| 血海 }}|| Xuehai || Sea of Blood || xuè hǎi ||{{lang|ko| hyeol hae 혈해  }}|| kek kai ||Huyết hải||
+|-
+| SP-11 ||{{lang|zh| 箕門 }}|| Jimen || Separation Gate || jī mén ||{{lang|ko| gi mun 기문 }}|| ki mon ||Cơ môn||
+|-
+| SP-12 ||{{lang|zh| 衝門 }}|| Chongmen || Surging Gate || chōng mén ||{{lang|ko| chung mun 충문 }}|| shō mon ||Xung môn||
+|-
+| SP-13 ||{{lang|zh| 府舍 }}|| Fushe || Bpwel Abode || fǔ shè ||{{lang|ko| bu sa 부사 }}|| fu sha ||Phủ xá||
+|-
+| SP-14 ||{{lang|zh| 腹結 }}|| Fujie || Abdomen Stagnation || fù jié ||{{lang|ko| bok gyeol 복결 }}|| fuk ketsu ||Phúc kết||
+|-
+| SP-15 ||{{lang|zh| 大横 }}|| Da heng || Great Horizontal || dà héng ||{{lang|ko| dae hoeng 대횡 }}|| dai ō ||Đại hoành||
+|-
+| SP-16 ||{{lang|zh| 腹哀 }}|| Fuai || Abdomen Suffering || fù āi ||{{lang|ko| bok ae 복애 }}|| fuku ai ||Phúc ai||
+|-
+| SP-17 ||{{lang|zh| 食竇 }}|| Shidou || Food Cavity || shí dòu ||{{lang|ko| sik du 식두 }}|| shoku tō ||Thực đậu||
+|-
+| SP-18 ||{{lang|zh| 天谿 }}|| Tianxi || Celestial Cleft || tiān xī ||{{lang|ko| cheon gye 천계 }}|| ten kei ||Thiên khê||
+|-
+| SP-19 ||{{lang|zh| 胸鄉 }}|| Xiongxiang || Chest Village || xiōng xiāng ||{{lang|ko| hyung hyang 흉향 }}|| kyō kyō? ||Hung hương||
+|-
+| SP-20 ||{{lang|zh| 周榮 }}|| Zhourong || Complete Nourishment || zhōu róng ||{{lang|ko| ju yeong 주영 }}|| shū ei ||Chu vinh||
+|-
+| SP-21 ||{{lang|zh| 大包 }}|| Dabao|| Great Embrace || dà bāo ||{{lang|ko| dae po 대포 }}|| tai hō  ||Đại bao||
+|}
+
+==Heart meridian==
+Abbreviated as HE, HT or H, named {{zh |labels=no |s=手少阴心经穴|t=手少陰心經}} "The Heart channel of Hand, Lesser Yin".
+{| class="wikitable"
+|-
+! Point !! Name !! Transliteration !! English !! Pinyin !! Korean {{lang|ko| 한글}}!! Romaji !! Vietnamese !!Alternative names
+|-
+| HE-1 ||{{lang|zh| 極泉 }}|| Jiquan || Highest Spring || jí quán ||{{lang|ko| geuk cheon 극천 }}|| kyoku sen ||  Cực tuyền||
+|-
+| HE-2 ||{{lang|zh| 青靈 }}|| Qingling ||  Green Spirit || qīng líng ||{{lang|ko| cheong nyeong 청령 }}|| sei rei(?) || Thanh linh||
+|-
+| HE-3 ||{{lang|zh| 少海 }}|| Shaohai || Lesser Sea || shào hǎi ||{{lang|ko| so hae 소해 }}|| shō kai || Thiếu hải||
+|-
+| HE-4 ||{{lang|zh| 靈道 }}|| Lingdao || Spirit Path || líng dào ||{{lang|ko| young do 영도 }}|| rei dō? || Linh đạo||
+|-
+| HE-5 ||{{lang|zh| 通里 }}|| Tongli || Inward Connection || tōng lǐ ||{{lang|ko| tong ni 통리 }}|| tsū ri? || Thông lý||
+|-
+| HE-6 ||{{lang|zh| 陰郄 }}|| Yinxi || Yin Cleft || yīn xī ||{{lang|ko| eum geuk 음극 }}|| in geki || Âm khích||
+|-
+| HE-7 ||{{lang|zh| 神門 }}|| Shenmen || Spirit Gate || shén mén ||{{lang|ko| sin mun 신문 }}|| shin mon || Thần môn||
+|-
+| HE-8 ||{{lang|zh| 少府 }}|| Shaofu || Lesser Mansion || shào fǔ ||{{lang|ko| so bu 소부 }}|| shō fu? || Thiếu phủ||
+|-
+| HE-9 ||{{lang|zh| 少沖 }}|| Shaochong ||  Lesser Surge || shào chōng ||{{lang|ko| so chung 소충 }}|| shō shō || Thiếu xung||
+|}
+
+==Small intestine meridian==
+Abbreviated as SI, named {{zh |labels=no |s=手太阳小肠经穴|t=手太陽小腸經}} "The Small Intestine channel of Hand, Greater Yang". 
+{| class="wikitable"
+|-
+! Point !! Name !! Transliteration !! English !! Pinyin !! Korean {{lang|ko| 한글}}!! Romaji !!Vietnamese!!Alternative names
+|-
+| SI-1 ||{{lang|zh| 少澤 }}|| Shaoze || Lesser Marsh || shào zé ||{{lang|ko| so taek 소택 }}|| shō taku ||Thiếu trạch||
+|-
+| SI-2 ||{{lang|zh| 前谷 }}|| Qiangu || Front Valley || qián gǔ ||{{lang|ko| jeon gok 전곡 }}|| zen koku(?) ||Tiền cốc||
+|-
+| SI-3 ||{{lang|zh| 後谿 }}|| Houxi || Back Stream || hòu xī ||{{lang|ko| hu gye 후계 }}|| go kei ||Hậu khê||'kō kei'<ref name="Denmei" />
+|-
+| SI-4 ||{{lang|zh| 腕骨 }}|| Wangu || Wrist Bone || wàn gǔ ||{{lang|ko| wan gol 완골 }}|| wan kotsu(?) ||Uyển cốt||
+|-
+| SI-5 ||{{lang|zh| 陽谷 }}|| Yanggu || Yang Valley || yáng gǔ ||{{lang|ko| yang gok 양곡 }}|| yō koku ||Dương cốc||
+|-
+| SI-6 ||{{lang|zh| 養老 }}|| Yanglao || Support the Aged || yǎng lǎo ||{{lang|ko| yang no 양노 }}|| yō rō ||Dưỡng lão||
+|-
+| SI-7 ||{{lang|zh| 支正 }}|| Zhizheng || Branch of Upright || zhī zhèng ||{{lang|ko| ji jeong 지정 }}|| shi sei(?) ||Chi chính||
+|-
+| SI-8 ||{{lang|zh| 小海 }}|| Xiaohai || Small Sea || xiǎo hǎi ||{{lang|ko| so hae 소해 }}|| shō kai ||Tiểu hải||
+|-
+| SI-9 ||{{lang|zh| 肩貞 }}|| Jianzhen || True Shoulder || jiān zhēn ||{{lang|ko| gyeon jeong 견정 }}|| ken tei ||Kiên trinh||
+|-
+| SI-10 ||{{lang|zh| 臑俞 }}|| Naoshu || Upper arm transporter || nāo shū ||{{lang|ko| no yu(su) 노유(수) }}|| ju yu ||Nhu du||
+|-
+| SI-11 ||{{lang|zh| 天宗 }}|| Tianzong || Heavenly Gathering || tiān zōng ||{{lang|ko| cheon jong 천종 }}|| ten sō ||Thiên tông||
+|-
+| SI-12 ||{{lang|zh| 秉風 }}|| Bingfeng || Grasping the Wind || bǐng fēng ||{{lang|ko| byeong pung 병풍 }}|| hei fū ||Bỉnh phong||
+|-
+| SI-13 ||{{lang|zh| 曲垣 }}|| Quyuan || Crooked Wall || qū yuán ||{{lang|ko| gok won 곡원 }}|| kyo ku en? ||Khúc viên||
+|-
+| SI-14 ||{{lang|zh| 肩外俞 }}|| Jianwaishu || Outer Shoulder Transporter || jiān wài shū ||{{lang|ko| gyeon oe yu 견외유 }}|| ken gai yu(?) ||Kiên ngoại du||
+|-
+| SI-15 ||{{lang|zh| 肩中俞 }}|| Jianzhongshu || Middle Shoulder Transporter || jiān zhōng shū ||{{lang|ko| gyeon jung yu 견중유 }}|| ken chū yu? ||Kiên trung du||
+|-
+| SI-16 ||{{lang|zh| 天窗 }}|| Tianchuang || Heavenly Window || tiān chuāng ||{{lang|ko| cheon chang 천창 }}|| ten sō? ||Thiên song||
+|-
+| SI-17 ||{{lang|zh| 天容 }}|| Tianrong || Heavenly Appearance || tiān róng ||{{lang|ko| cheon yong 천용 }}|| ten yō? ||Thiên dung||
+|-
+| SI-18 ||{{lang|zh| 顴髎 }}|| Quanliao || Cheek Bone Crevice || quán liáo ||{{lang|ko| gwal lyo 관료 }}|| kan ryō ||Quyền liêu||
+|-
+| SI-19 ||{{lang|zh| 聽宮 }}|| Tinggong || Palace of Hearing || tīng gōng ||{{lang|ko| cheong gung 청궁 }}|| chō kyū ||Thính cung||
+|}
+
+==Bladder meridian==
+Abbreviated as BL or UB (urinary bladder), described in Chinese as {{zh |labels=no |s=足太阳膀胱经穴|t=足太陽膀胱經}} "The Bladder channel of Foot, Greater Yang".
+
+An alternative numbering scheme for the "appended part" (beginning with Bl-41 in the list below), which places the outer line along the spine after Bl-35 ({{lang|zh|會陽}}) instead of Bl-40 ({{lang|zh|委中}}), will be noted in the '''''Alternative names''''' column.
+
+{| class="wikitable"
+|-
+! Point !! Name !! Transliteration !! English !! Pinyin !! Korean {{lang|ko| 한글}}!! Romaji !!Vietnamese!!Alternative names
+|-
+| BL-1 ||{{lang|zh| 睛明 }}|| Jingming || Bright Eyes || jīng míng ||{{lang|ko| jeong myeong 정명 }}|| sei mei ||Tình minh||
+|-
+| BL-2 ||{{lang|zh| 攢竹 }}|| Zanzhu || Gathered Bamboo || cuán zhú ||{{lang|ko| chan juk 찬죽 }}|| san chiku ||Toản trúc||
+|-
+| BL-3 ||{{lang|zh| 眉衝 }}|| Meichong || Eyebrows' Ascension || méi chōng ||{{lang|ko| mi chung 미충 }}|| bi shō ||Mi xung||
+|-
+| BL-4 ||{{lang|zh| 曲差 }}|| Quchai || Deviating Curve || qǔ chāi ||{{lang|ko| gok cha 곡차 }}|| kyo kusa? ||Khúc sai||
+|-
+| BL-5 ||{{lang|zh| 五處 }}|| Wuchu || Fifth Position || wǔ chǔ ||{{lang|ko| o cheo 오처 }}|| go sho(?) ||Ngũ xứ||
+|-
+| BL-6 ||{{lang|zh| 承光 }}|| Chengguang || Receiving Light || chéng guāng ||{{lang|ko| seung gwang 승광 }}|| shō kō? ||Thừa quang||
+|-
+| BL-7 ||{{lang|zh| 通天 }}|| Tongtian || Reaching Upward || tōng tiān ||{{lang|ko| tong cheon 통천 }}|| tsū ten ||Thông thiên||
+|-
+| BL-8 ||{{lang|zh| 絡卻 }}|| Luoque || Declining Connection || luò què ||{{lang|ko| nak gak 락각 }}|| rak kyaku? ||Lạc khước||
+|-
+| BL-9 ||{{lang|zh| 玉枕 }}|| Yuzhen || Jade Pillow || yù zhěn ||{{lang|ko| ok chim 옥침 }}|| gyoku chin(?) ||Ngọc chẩm||
+|-
+| BL-10 ||{{lang|zh| 天柱 }}|| Tianzhu || Upper Pillar || tiān zhù ||{{lang|ko| cheon ju 천주 }}|| ten chū ||Thiên trụ||
+|-
+| BL-11 ||{{lang|zh| 大杼 }}|| Dazhu || Great Vertebra || dà zhù ||{{lang|ko| dae jeo 대저 }}|| dai jo ||Đại trữ||
+|-
+| BL-12 ||{{lang|zh| 風門 }}|| Fengmen || Wind Gate || fēng mén ||{{lang|ko| pung mun 풍문 }}|| fū mon ||Phong môn||
+|-
+| BL-13 ||{{lang|zh| 肺俞 }}|| Feishu || Lung Transporter || fèi shū ||{{lang|ko| pye yu 폐유 }}|| hai yu ||Phế du||
+|-
+| BL-14 ||{{lang|zh| 厥陰俞 }}|| Jueyinshu || Absolute yin Transporter || jué yīn shū ||{{lang|ko| gweor eum yu 궐음유 }}|| ketsu in yu ||Quyết âm du||
+|-
+| BL-15 ||{{lang|zh| 心俞 }}|| Xinshu || Heart Transporter || xīn shū ||{{lang|ko| sim yu 심유 }}|| shin yu ||Tâm du||
+|-
+| BL-16 ||{{lang|zh| 督俞 }}|| Dushu || Governor Transporter || dū shū ||{{lang|ko| dok yu 독유 }}|| toku yu ||Đốc du||
+|-
+| BL-17 ||{{lang|zh| 膈俞 }}|| Geshu || Diaphragm Transporter || gé shū ||{{lang|ko| gyeok yu 격유 }}|| kaku yu ||Cách du||
+|-
+| BL-18 ||{{lang|zh| 肝俞 }}|| Ganshu || Liver Transporter || gān shū ||{{lang|ko| gan yu 간유 }}|| kan yu ||Can du||
+|-
+| BL-19 ||{{lang|zh| 膽俞 }}|| Danshu || Gallbladder Transporter || dǎn shū ||{{lang|ko| dam yu 담유 }}|| tan yu ||Đởm du||
+|-
+| BL-20 ||{{lang|zh| 脾俞 }}|| Pishu || Spleen Transporter || pí shū ||{{lang|ko| bi yu 비유 }}|| hi yu ||Tỳ du||
+|-
+| BL-21 ||{{lang|zh| 胃俞 }}|| Weishu || Stomach Transporter || wèi shū ||{{lang|ko| wi yu 위유 }}|| i yu ||Vị du||
+|-
+| BL-22 ||{{lang|zh| 三焦俞 }}|| Sanjiaoshu || Sanjiao Transporter || sān jiāo shū ||{{lang|ko| sam cho yu 삼초유 }}|| san shō yu ||Tam tiêu du||
+|-
+| BL-23 ||{{lang|zh| 腎俞 }}|| Shenshu || Kidney Transporter || shèn shū ||{{lang|ko| sim yu 신유 }}|| jin yu ||Thận du||
+|-
+| BL-24 ||{{lang|zh| 氣海俞 }}|| Qihaishu || Sea of Qi Transporter || qì hǎi shū ||{{lang|ko| gi hae yu 기해유 }}|| kikai yu? ||Khí hải du||
+|-
+| BL-25 ||{{lang|zh| 大腸俞 }}|| Dachangshu || Large Intestine Transporter || dà cháng shū ||{{lang|ko| dae jang yu 대장유 }}|| dai chō yu ||Đại trường du||
+|-
+| BL-26 ||{{lang|zh| 關元俞 }}|| Guanyuanshu || Gate of Origin Transporter || guān yuán shū ||{{lang|ko| gwan won yu 관원유 }}|| kan gen yu? ||Quan nguyên du||
+|-
+| BL-27 ||{{lang|zh| 小腸俞 }}|| Xiaochangshu || Small Intestine Transporter || xiǎo cháng shū ||{{lang|ko| so jang yu 소장유 }}|| shō chō yu ||Tiểu trường du||
+|-
+| BL-28 ||{{lang|zh| 膀胱俞 }}|| Pangguangshu || Bladder Transporter || páng guāng shū ||{{lang|ko| bang wang yu 방광유 }}|| bōkō yu ||Bàng quang du||
+|-
+| BL-29 ||{{lang|zh| 中膂俞 }}|| Zhonglushu || Mid-Spine Transporter || zhōng lǚ shū ||{{lang|ko| jung nyeo nae yu 중려내유 }}|| chū ryo yu? ||Trung lữ du|| {{lang|zh|中膂內俞}} zhōng lǚ nèi shù
+|-
+| BL-30 ||{{lang|zh| 白環俞 }}|| Baihuanshu || White Ring Transporter || bái huán shū ||{{lang|ko| baek hwan yu 백환유 }}|| hak kan yu? ||Bạch hoàn du||
+|-
+| BL-31 ||{{lang|zh| 上髎 }}|| Shangliao || Upper Bone Hole || shàng liáo ||{{lang|ko| sang nyo 상료 }}|| jyō ryō? ||Thượng liêu||
+|-
+| BL-32 ||{{lang|zh| 次髎 }}|| Ciliao || Second Bone Hole || cì liáo ||{{lang|ko| cha ryo 차료 }}|| ji ryō ||Thứ liêu||
+|-
+| BL-33 ||{{lang|zh| 中髎 }}|| Zhongliao || Middle Bone Hole || zhōng liáo ||{{lang|ko| jung nyo 중료 }}|| chū ryō? ||Trung liêu||
+|-
+| BL-34 ||{{lang|zh| 下髎 }}|| Xialiao || Lower Bone Hole || xià liáo ||{{lang|ko| ha ryo 하료 }}|| ge ryō? ||Hạ liêu||
+|-
+| BL-35 ||{{lang|zh| 會陽 }}|| Huiyang || Meeting of Yang || huì yáng ||{{lang|ko| hoe yang 회양 }}|| e yō ||Hội dương||
+|-
+| BL-36 ||{{lang|zh| 承扶 }}|| Chengfu || Hold and Support || chéng fú ||{{lang|ko| seung bu 승부 }}|| sho fu(?) ||Thừa phù|| Bl-50
+|-
+| BL-37 ||{{lang|zh| 殷門 }}|| Yinmen || Hanstring Gate || yīn mén ||{{lang|ko| eun mun 은문 }}|| in mon ||Ân môn|| Bl-51
+|-
+| BL-38 ||{{lang|zh| 浮郄 }}|| Fuxi || Superficial Cleft || fú xī ||{{lang|ko| bu geuk 부극 }}|| fu geki(?) ||Phù khích|| Bl-52
+|-
+| BL-39 ||{{lang|zh| 委陽 }}|| Weiyang || Lateral End of the Crease || wěi yáng ||{{lang|ko| wi yang 위양 }}|| i yō ||Ủy dương|| Bl-53
+|-
+| BL-40 ||{{lang|zh| 委中 }}|| Weizhong || Middle of the Crease || wěi zhōng ||{{lang|ko| wi jung 위중 }}|| i chū ||Ủy trung|| Bl-54
+|-
+| BL-41 ||{{lang|zh| 附分 }}|| Fufen || Outer Branch || fù fēn ||{{lang|ko| bu bun 부분 }}|| fu bun(?) ||Phụ phân|| Bl-36
+|-
+| BL-42 ||{{lang|zh| 魄戶 }}|| Pohu || Door of the Corporeal Soul || pò hù ||{{lang|ko| baek ho 백호 }}|| haku ko ||Phách hộ|| Bl-37
+|-
+| BL-43 ||{{lang|zh| 膏肓俞 }}|| Gaohuangshu || Vital Region Shu || gāo huāng shū ||{{lang|ko| go hwang [yu] 고황[유] }}|| kō kō yu ||Cao hoang du|| Bl-38
+|-
+| BL-44 ||{{lang|zh| 神堂 }}|| Shentang || Spirit Hall || shén táng ||{{lang|ko| sin dang 신당 }}|| shin dō? ||Thần đường|| Bl-39
+|-
+| BL-45 ||{{lang|zh| 譩譆 }}|| Yixi || That Hurt || yì xǐ ||{{lang|ko| ui hoe 의회 }}|| i ki(?) ||Y hy|| Bl-40
+|-
+| BL-46 ||{{lang|zh| 膈關 }}|| Geguan || Diaphragm Gate || gé guān ||{{lang|ko| gyeok gwan 격관 }}|| kaku kan(?) ||Cách quan|| Bl-41
+|-
+| BL-47 ||{{lang|zh| 魂門 }}|| Hunmen || Ethereal Soul Gate || hún mén ||{{lang|ko| hon mun 혼문 }}|| kon mon? ||Hồn môn|| Bl-42
+|-
+| BL-48 ||{{lang|zh| 陽綱 }}|| Yanggang || Linking to Gall Bladder || yáng gāng ||{{lang|ko| yang gang 양강 }}|| yō kō? ||Dương cương|| Bl-43
+|-
+| BL-49 ||{{lang|zh| 意舍 }}|| Yishe || Abode of Thought || yì shě ||{{lang|ko| ui sa 의사 }}|| i sha(?) ||Ý xá|| Bl-44
+|-
+| BL-50 ||{{lang|zh| 胃倉 }}|| Weicang || Stomach Granary || wèi cāng ||{{lang|ko| wi chang 위창 }}|| i sō ||Vị thương|| Bl-45
+|-
+| BL-51 ||{{lang|zh| 肓門 }}|| Huangmen || Vitals Gate || huāng mén ||{{lang|ko| hwang mun 황문 }}|| kō mon? ||Hoang môn|| Bl-46
+|-
+| BL-52 ||{{lang|zh| 志室 }}|| Zhishi || Willpower Room || zhì shì ||{{lang|ko| ji sil 지실 }}|| shi shitsu ||Chí thất|| Bl-47
+|-
+| BL-53 ||{{lang|zh| 胞肓 }}|| Baohuang || Bladder's Vitals || bāo huāng ||{{lang|ko| po hwang 포황 }}|| hō kō ||Bào hoang|| Bl-48
+|-
+| BL-54 ||{{lang|zh| 秩邊 }}|| Zhibian || Lowermost in Order || zhì biān ||{{lang|ko| jil byeon 질변 }}|| chip pen ||Trật biên|| Bl-49
+|-
+| BL-55 ||{{lang|zh| 合陽 }}|| Heyang || Yang Confluence || hé yáng ||{{lang|ko| hap yang 합양 }}|| gō yō? ||Hợp dương||
+|-
+| BL-56 ||{{lang|zh| 承筋 }}|| Chengjin || Sinews Support || chéng jīn ||{{lang|ko| seung geun 승근 }}|| shō kin ||Thừa cân||
+|-
+| BL-57 ||{{lang|zh| 承山 }}|| Chengshan || Mountain Support || chéng shān ||{{lang|ko| seung san 승산 }}|| shō zan ||Thừa sơn||
+|-
+| BL-58 ||{{lang|zh| 飛陽 }}|| Feiyang || Taking Flight || fēi yáng ||{{lang|ko| bi yang 비양 }}|| hi yō ||Phi dương||
+|-
+| BL-59 ||{{lang|zh| 跗陽 }}|| Fuyang || Tarsus Yang || fū yáng ||{{lang|ko| bu yang 부양 }}|| fu yō ||Phụ dương||
+|-
+| BL-60 ||{{zh|labels=no|s=昆侖|t=崑崙 }}<ref name="NollWasser">{{cite book |last1= Lorenzen |first1= U |last2= Noll |first2= A |series= Die Wandlungsphasen der traditionellen chinesischen Medizin |title= Wandlungsphase Wasser |publisher= Müller & Steinicke}}</ref>|| Kunlun || Kunlun Mountains || kūn lún ||{{lang|ko| gol lyun 곤륜 }}|| kon ron ||Côn lôn (luân)||
+|-
+| BL-61 ||{{lang|zh| 僕參 }}|| Pucan || Subservient Visitor || pú cān ||{{lang|ko| bok cham 복참 }}|| boku shin(?) ||Bộc tham||
+|-
+| BL-62 ||{{lang|zh| 申脈 }}|| Shenmai || Extending Vessel || shēn mài ||{{lang|ko| sin maek 신맥 }}|| shim myaku ||Thân mạch||
+|-
+| BL-63 ||{{lang|zh| 金門 }}|| Jinmen || Golden Gate || jīn mén ||{{lang|ko| geum mun 금문 }}|| kim mon ||Kim môn||
+|-
+| BL-64 ||{{lang|zh| 京骨 }}|| Jinggu || Metatarsal Tuberosity || jīng gǔ ||{{lang|ko| gyeong gol 경골 }}|| kei kotsu(?) ||Kinh cốt||
+|-
+| BL-65 ||{{lang|zh| 束骨 }}|| Shugu || Metatarsal Head || shù gǔ ||{{lang|ko| sok gol 속골 }}|| sok kotsu? ||Thúc cốt||
+|-
+| BL-66 ||{{lang|zh| 足通谷 }}|| Zutonggu || Foot Valley Passage || zú tōng gǔ ||{{lang|ko| [jok] tong gok [족]통곡 }}|| ahsi tsū koku? ||Túc thông cốc||
+|-
+| BL-67 ||{{lang|zh| 至陰 }}|| Zhiyin || Reaching Yin || zhì yīn ||{{lang|ko| ji eum 지음 }}|| shi in ||Chí âm||
+|}
+
+==Kidney meridian==
+Abbreviated as KI or K, described in Chinese as {{lang|zh-hans|足少阴肾经穴}} or {{lang|zh-hant|足少陰腎經}} "The Kidney channel of Foot, Lesser Yin".
+{| class="wikitable"
+|-
+! Point !! Name !! Transliteration !! English !! Pinyin !! Korean {{lang|ko| 한글}}!! Romaji !!Vietnamese
+|-
+| KI-1 ||{{lang|zh| 湧泉 }}|| Yong Quan || Bubbling Well || yǒng quán ||{{lang|ko| yong cheon 용천 }}|| yu sen ||Dũng tuyền
+|-
+| KI-2 ||{{lang|zh| 然谷 }}|| Rangu || Blazing Valley || rán gǔ ||{{lang|ko| yeon gok 연곡 }}|| nen koku ||Nhiên cốc
+|-
+| KI-3 ||{{lang|zh| 太谿 }}|| Taixi || Great Stream || taì xī ||{{lang|ko| tae yeon 태계 }}|| tai kei ||Thái khê
+|-
+| KI-4 ||{{lang|zh| 大鐘 }}|| Dazhong || Large Bell || dà zhōng ||{{lang|ko| dae jong 대종 }}|| dai shō? ||Đại chung
+|-
+| KI-5 ||{{lang|zh| 水泉 }}|| Shuiquan || Water Spring || shuǐ quán ||{{lang|ko| su cheon 수천 }}|| sui sen ||Thủy tuyền
+|-
+| KI-6 ||{{lang|zh| 照海 }}|| Zhaohai || Shining Sea || zhào hǎi ||{{lang|ko| joh hae 조해 }}|| shō kai ||Chiếu hải
+|-
+| KI-7 ||{{lang|zh| 復溜 }}|| Fuliu || Continuing Flow || fù liū ||{{lang|ko| bong nyu 복류 }}|| fuku ryū ||Phục lưu
+|-
+| KI-8 ||{{lang|zh| 交信 }}|| Jiaoxin || Intersecting with Spleen || jiāo xìn ||{{lang|ko| gyo sin 교신 }}|| kō shin? ||Giao tín
+|-
+| KI-9 ||{{lang|zh| 築賓 }}|| Zhubin || Strong Knees || zhú bīn ||{{lang|ko| chuk bin 축빈 }}|| chiku hin ||Trúc tân
+|-
+| KI-10 ||{{lang|zh| 陰谷 }}|| Yingu || Yin Valley || yīn gǔ ||{{lang|ko| eum gok 음곡 }}|| in koku ||Âm cốc
+|-
+| KI-11 ||{{lang|zh| 橫骨 }}|| Henggu || Pubic Bone || héng gǔ ||{{lang|ko| hoeng gol 횡골 }}|| ō kotsu ||Hoành cốt
+|-
+| KI-12 ||{{lang|zh| 大赫 }}|| Dahe || Big Plentifulness || dà hè ||{{lang|ko| dae hyeok 대혁 }}|| tai kaku ||Đại hách
+|-
+| KI-13 ||{{lang|zh| 氣穴 }}|| Qixue || Kidney Qi Cave|| qì xué ||{{lang|ko| gi hyeol 기혈 }}|| ki ketsu ||Khí huyệt 
+|-
+| KI-14 ||{{lang|zh| 四滿 }}|| Siman || Fourth for Fullnesses || sì mǎn ||{{lang|ko| sa man 사만 }}|| shi man ||Tứ mãn
+|-
+| KI-15 ||{{lang|zh| 中注 }}|| Zhongzhu || Pouring into the Middle || zhōng zhù ||{{lang|ko| jung ju 중주 }}|| chū chū ||Trung chú
+|-
+| KI-16 ||{{lang|zh| 肓俞 }}|| Huangshu || Vitals Tissues Shu || huāng shū ||{{lang|ko| hwang yu 황유 }}|| kō yu ||Hoang du
+|-
+| KI-17 ||{{lang|zh| 商曲 }}|| Shangqu || Metal Bend || shāng qū ||{{lang|ko| sang gok 상곡 }}|| shō kyoku ||Thương khúc
+|-
+| KI-18 ||{{lang|zh| 石關 }}|| Shiguan || Stone Gate || shí guān ||{{lang|ko| seok gwan 석관 }}|| seki kan ||Thạch quan
+|-
+| KI-19 ||{{lang|zh| 陰都 }}|| Yindu || Yin Metropolis || yīn dū ||{{lang|ko| eum do 음도 }}|| in to ||Âm đô
+|-
+| KI-20 ||{{lang|zh| 腹通谷 }}|| Futonggu || Abdominal Food Passage || fù tōng gǔ ||{{lang|ko| tong gok 통곡 }}|| hara no tsū koku||(Phúc) Thông cốc
+|-
+| KI-21 ||{{lang|zh| 幽門 }}|| Youmen || Hidden Gate || yōu mén ||{{lang|ko| yu mun 유문 }}|| yū mon ||U môn
+|-
+| KI-22 ||{{lang|zh| 步廊 }}|| Bulang || Stepping Upwards || bù láng ||{{lang|ko| bo rang 보랑 }}|| hō ro? ||Bộ lang
+|-
+| K-23 ||{{lang|zh| 神封 }}|| Shenfeng || Spirit Manor || shén fēng ||{{lang|ko| sin bong 신봉 }}|| shim pō ||Thần phong
+|-
+| KI-24 ||{{lang|zh| 靈墟 }}|| Lingxu || Spirit Ruin || líng xū ||{{lang|ko| yeong heo 영허 }}|| rei kyo(?) ||Linh khâu
+|-
+| KI-25 ||{{lang|zh| 神藏 }}|| Shencang || Spirit Storehouse || shén cáng ||{{lang|ko| sin jang 신장 }}|| shin zō ||Thần tàng
+|-
+| KI-26 ||{{lang|zh| 彧中 }}{{efn|Also called {{lang|zh|或中}} huò zhōng, but this is an obvious mistranscription}}|| Yuzhong || Refined Chest || yù zhōng ||{{lang|ko| uk jung 욱중 }}|| waku chū ||Hoắc trung
+|-
+| KI-27 ||{{lang|zh| 俞府 }}|| Shufu || Shu Mansion || shū fǔ ||{{lang|ko| yu bu 유부 }}|| yu fu ||Du phủ
+|}
+
+==Pericardium meridian==
+Abbreviated as PC or P, named {{zh |labels=no |s=手厥阴心包经穴|t=手厥陰心包經}} "The Pericardium channel of Hand, Faint Yin".
+{| class="wikitable"
+|-
+! Point !! Name !! Transliteration !! English !! Pinyin !! Korean {{lang|ko| 한글}}!! Romaji !!Vietnamese!!Alternative names
+|-
+| PC-1 ||{{lang|zh| 天池 }}|| Tianchi || Heavenly Pool || tiān chí ||{{lang|ko| cheon ji 천지 }}|| ten chi ||Thiên trì||
+|-
+| PC-2 ||{{lang|zh| 天泉 }}|| Tianquan || Heavenly Spring || tiān quán ||{{lang|ko| cheon cheon 천천 }}|| ten sen(?) ||Thiên tuyền||
+|-
+| PC-3 ||{{lang|zh| 曲澤 }}|| Quze || Marsh at the Crook || qū zé ||{{lang|ko| gok taek 곡택 }}|| kyoku taku(?) ||Khúc trạch||
+|-
+| PC-4 ||{{lang|zh| 郄門 }}|| Ximen || Xi-Cleft Gate || xī mén ||{{lang|ko| geung mun 극문 }}|| geki mon ||Khích môn||
+|-
+| PC-5 ||{{lang|zh| 間使 }}|| Jianshi || Intermediate Messenger || jiān shǐ ||{{lang|ko| gan sa 간사 }}|| kan shi(?) ||Giản sử||
+|-
+| [[Nei guan|PC-6]] ||{{lang|zh| 內關 }}|| Neiguan || Inner Pass || nèi guān ||{{lang|ko| nae gwan 내관 }}|| nai kan ||Nội quan||
+|-
+| PC-7 ||{{lang|zh| 大陵 }}|| Daling || Great Mound || dà líng ||{{lang|ko| dae reung 대릉 }}|| dai ryō ||Đại lăng||'tai ryō'<ref name="Denmei" />
+|-
+| PC-8 ||{{lang|zh| 勞宮 }}|| Laogong || Palace of Toil || láo gōng ||{{lang|ko| no gung 노궁 }}|| rō kyū ||Lao cung||
+|-
+| PC-9 ||{{lang|zh| 中衝 }}|| Zhongchong || Middle Rushing || zhōng chōng ||{{lang|ko| jung chung 중충 }}|| chū shō ||Trung xung|| 
+|}
+
+==Triple burner meridian==
+Also known as [[San Jiao]], triple-heater, triple-warmer or triple-energizer, abbreviated as TB or SJ or TE and named {{zh |labels=no |s=手少阳三焦经穴|t=手少陽三焦經}} "The Sanjiao channel of Hand, Lesser Yang".
+{| class="wikitable"
+|-
+! Point !! Name !! Transliteration !! English !! Pinyin !! Korean {{lang|ko| 한글}}!! Romaji !!Vietnamese!!Alternative names
+|-
+| TE-1 ||{{lang|zh| 關衝 }}|| Guanchong || Surge Gate || guān chōng ||{{lang|ko| gwan chung 관충 }}|| kan shō ||Quan xung||
+|-
+| TE-2 ||{{lang|zh| 液門 }}|| Yemen || Fluid Gate || yè mén ||{{lang|ko| aeng mun 액문 }}|| eki mon(?) ||DỊch môn||
+|-
+| TE-3 ||{{lang|zh| 中渚 }}|| Zhongzhu || Central Islet || zhōng zhǔ ||{{lang|ko| jung jeo 중저 }}|| chū sho ||Trung chử||
+|-
+| TE-4 ||{{lang|zh| 陽池 }}|| Yangchi || Yang Pool || yáng chí ||{{lang|ko| yang ji 양지 }}|| yō chi? ||Dương trì||
+|-
+| TE-5 ||{{lang|zh| 外關 }}|| Waiguan || Outer Pass || wài guān ||{{lang|ko| oe gwan 외관 }}|| gai kan ||Ngoại quan||
+|-
+| TE-6 ||{{lang|zh| 支溝 }}|| Zhigou || Branch Ditch || zhī gōu ||{{lang|ko| ji gu 지구 }}|| shi kō? ||Chi câu||
+|-
+| TE-7 ||{{lang|zh| 會宗 }}|| Huizong || Convergence and Gathering || huì zōng ||{{lang|ko| hui jung 회종 }}|| e sō ||Hội tông||
+|-
+| TE-8 ||{{lang|zh| 三陽絡 }}|| Sanyangluo || Three Yang Connection || sān yáng luò ||{{lang|ko| sam yang nak 삼양락 }}|| san kyō raku? ||Tam dương lạc||
+|-
+| TE-9 ||{{lang|zh| 四瀆 }}|| Sidu || Four Rivers || sì dú ||{{lang|ko| sa dok 사독 }}|| shi toku ||Tứ độc||
+|-
+| TE-10 ||{{lang|zh| 天井 }}|| Tianjing || Upper Well || tiān jǐng ||{{lang|ko| cheon jeong 천정 }}|| ten sei(?) ||Thiên tỉnh|| TW 10
+|-
+| TE-11 ||{{lang|zh| 清冷淵 }}|| Qinglengyuan || Cooling Deep Pool || qīng lěng yuān ||{{lang|ko| cheong naeng yeon 청랭연 }}|| sei rei en? ||Thanh lãng uyên||
+|-
+| TE-12 ||{{lang|zh| 消濼 }}|| Xiaoluo || Draining Marsh || xiāo luò ||{{lang|ko| so rak 소락 }}|| shō reki? ||Tiêu lạc||
+|-
+| TE-13 ||{{lang|zh| 臑會 }}|| Naohui || Upper Arm Intersection || nào huì ||{{lang|ko| noe hui 뇌회 }}|| ju e ||Nhu hội||
+|-
+| TE-14 ||{{lang|zh| 肩髎 }}|| Jianliao || Shoulder Bone Hole || jiān liáo ||{{lang|ko| gyeol lyo 견료 }}|| ken ryō ||Kiên liêu||
+|-
+| TE-15 ||{{lang|zh| 天髎 }}|| Tianliao || Upper Arm Hole || tiān liáo ||{{lang|ko| cheol lyo 천료 }}|| ten ryō ||Thiên liêu||
+|-
+| TE-16 ||{{lang|zh| 天牖 }}|| Tianyou || Sky Window || tiān yǒu ||{{lang|ko| cheon yong 천용 }}|| ten yū? ||Thiên dũ||
+|-
+| TE-17 ||{{lang|zh| 翳風 }}|| Yifeng || Wind Screen || yì fēng ||{{lang|ko| ye pung 예풍 }}|| ei fū ||Ế phong||
+|-
+| TE-18 ||{{lang|zh| 契脈 }}|| Qimai{{efn|First character means qì/qī (contract/spasm)<ref name=Deadman2007/>}} || Convulsion Vessel || qì mài ||{{lang|ko| gye maek 계맥 }}|| kei myaku(?) ||Khế mạch||
+|-
+| TE-19 ||{{lang|zh| 顱息 }}|| Luxi || Head's Tranquility || lú xī ||{{lang|ko| no sik 노식 }}|| ro soku(?) ||Lư tức||
+|-
+| TE-20 ||{{lang|zh| 角孫 }}|| Jiaosun || Angle Vertex || jiǎo sūn ||{{lang|ko| gak son 각손 }}|| kaku son ||Giác tôn||
+|-
+| TE-21 ||{{lang|zh| 耳門 }}|| Ermen || Ear Gate || ěr mén ||{{lang|ko| i mun 이문 }}|| ji mon(?) ||Nhĩ môn||
+|-
+| TE-22 ||{{lang|zh| 耳和髎 }}|| Erheliao || Ear Harmonising Foramen || ěr hé liáo ||{{lang|ko| hwa ryo 화료 }}|| ji wa ryō?||(Nhĩ) Hòa liêu||
+|-
+| TE-23 ||{{lang|zh| 絲竹空 }}|| Sizhukong || Silken Bamboo Hollow || sī zhú kōng ||{{lang|ko| sa juk gong 사죽공 }}|| shi chiku kū ||Ti trúc không|| 
+|}
+
+==Gallbladder meridian==
+Abbreviated as GB, this meridian is named {{zh|labels=no |s=足少阳胆经穴 |t=足少陽膽經}} "The [[Gallbladder (Chinese Medicine)|Gallbladder]] channel of Foot, Lesser Yang".
+{| class="wikitable"
+|-
+! Point !! Name !! Transliteration !! English !! Pinyin !! Korean {{lang|ko| 한글}}!! Romaji !!Vietnamese
+|-
+| GB-1 ||{{lang|zh| 瞳子髎 }}|| Tongziliao || Pupil Crevice || tóng zǐ liáo ||{{lang|ko| dong ja ryo 동자료 }}|| dō shi ryō ||Đồng tử liêu
+|-
+| GB-2 ||{{lang|zh| 聽會 }}|| Tinghui || Meeting of Hearing || tīng huì ||{{lang|ko| cheong hoe 청회 }}|| chō e ||Thính hội
+|-
+| GB-3 ||{{lang|zh| 上關 }}{{efn|also called {{lang|zh|客主人}} kè zhǔ rén}}|| Shangguan || Above the Joint || shàng guān ||{{lang|ko| sang gwan 상관/gaek ju in 객주인 }}|| kyaku shu jin ||Thượng quan 
+|-
+| GB-4 ||{{lang|zh| 頷厭 }}|| Hanyan || Jaw Serenity || hàn yàn ||{{lang|ko| ha yeom 함염 }}|| gan en ||Hàm yến
+|-
+| GB-5 ||{{lang|zh| 懸顱 }}|| Xuanlu || Suspended Skull || xuán lú ||{{lang|ko| hyeol lo 현로 }}|| ken ro ||Huyền lư
+|-
+| GB-6 ||{{lang|zh| 懸厘 }}|| Xuanli || Suspended Hair/tidbit || xuán lí ||{{lang|ko| hyeol li 현리 }}|| ken ri ||Huyền ly
+|-
+| GB-7 ||{{lang|zh| 曲鬢 }}|| Qubin || Crook of the Temple || qū bìn ||{{lang|ko| gok bin 곡빈 }}|| kyoku bin(?) ||Khúc tân
+|-
+| GB-8 ||{{lang|zh| 率谷 }}|| Shuaigu || Leading Valley || shuài gǔ ||{{lang|ko| sol gok 솔곡 }}|| sok koku? ||Suất cốc
+|-
+| GB-9 ||{{lang|zh| 天沖 }}|| Tianchong || Heavenly Surge || tiān chōng ||{{lang|ko| cheon chung 천충 }}|| ten shō? ||Thiên xung
+|-
+| GB-10 ||{{lang|zh| 浮白 }}|| Fubai || Floating White || fú bái ||{{lang|ko| bu baek 부백 }}|| fu haku(?) ||Phù bạch
+|-
+| GB-11 ||{{lang|zh| 頭竅陰 }}|| Touqiaoyin || Yin Portals of the Head || tóu qiào yīn ||{{lang|ko| [du] gyu eum [두] 규음 }}|| atama kyō in ||Đầu khiếu âm
+|-
+| GB-12 ||{{lang|zh| 完骨 }}|| Wangu || Mastoid Process || wán gǔ ||{{lang|ko| wan gol 완골 }}|| kan kotsu ||Hoàn cốt
+|-
+| GB-13 ||{{lang|zh| 本神 }}|| Benshen || Root of the Spirit || běn shén ||{{lang|ko| bon sin 본신 }}|| hon jin ||Bản thần
+|-
+| GB-14 ||{{lang|zh| 陽白 }}|| Yangbai || Yang White || yáng bái ||{{lang|ko| yang baek 양백 }}|| yō haku ||Dương bạch
+|-
+| GB-15 ||{{lang|zh| 頭臨泣 }}|| Toulinqi || Head on the Verge of Tears || tóu lín qì ||{{lang|ko| [du] im eup [두] 임읍 }}|| atama no rin kyū ||Đầu lâm khấp
+|-
+| GB-16 ||{{lang|zh| 目窗 }}|| Muchuang || Window of the Eye || mù chuāng ||{{lang|ko| mok chang 목창 }}|| moku sō ||Mục song
+|-
+| GB-17 ||{{lang|zh| 正營 }}|| Zhengying || Upright Nutrition || zhèng yíng ||{{lang|ko| jyeong yeong 정영 }}|| shō ei ||Chính dinh
+|-
+| GB-18 ||{{lang|zh| 承靈 }}|| Chengling || Support Spirit || chéng líng ||{{lang|ko| seung nyeong 승령 }}|| shō rei ||Thừa linh
+|-
+| GB-19 ||{{lang|zh| 腦空 }}|| Naokong || Brain Hollow || nǎo kōng ||{{lang|ko| noe gong 뇌공 }}|| nō kū ||Não không
+|-
+| GB-20 ||{{lang|zh| 風池 }}|| Fengchi || Wind Pool || fēng chí ||{{lang|ko| pung ji 풍지 }}|| fū chi ||Phong trì
+|-
+| GB-21 ||{{lang|zh| 肩井 }}|| Jianjing || Shoulder Well || jīan jǐng ||{{lang|ko| gyeon jeong 견정 }}|| ken sei ||Kiên tỉnh
+|-
+| GB-22 ||{{lang|zh| 淵腋 }}|| Yuanye || Armpit Abyss || yuān yè ||{{lang|ko| yeon aek 연액 }}|| en eki(?) ||Uyển dịch
+|-
+| GB-23 ||{{lang|zh| 輒筋 }}|| Zhejin || Flank Sinews || zhé jīn ||{{lang|ko| cheop geun 첩근 }}|| chō kin? ||Triếp cân
+|-
+| GB-24 ||{{lang|zh| 日月 }}|| Riyue || Sun and Moon || rì yuè ||{{lang|ko| il weol 일월 }}|| jitsu getsu ||Nhật nguyệt
+|-
+| GB-25 ||{{lang|zh| 京門 }}|| Jingmen || Capital Gate || jīng mén ||{{lang|ko| gyeong mun 경문 }}|| kei mon ||Kinh môn
+|-
+| GB-26 ||{{lang|zh| 帶脈 }}|| Daimai || Girdling Vessel || dài mài ||{{lang|ko| dae maek 대맥 }}|| tai myaku ||Đới mạch
+|-
+| GB-27 ||{{lang|zh| 五樞 }}|| Wushu || Five Pivots || wǔ shū ||{{lang|ko| o chu 오추 }}|| gō sū ||Ngũ khu
+|-
+| GB-28 ||{{lang|zh| 維道 }}|| Weidao || Linking Path || wéi dào ||{{lang|ko| yu do 유도 }}|| yui dō ||Duy đạo
+|-
+| GB-29 ||{{lang|zh| 居髎 }}|| Juliao || Stationary Crevice || jū liáo ||{{lang|ko| geo ryo 거료 }}|| kyo ryō ||Cự liêu
+|-
+| GB-30 ||{{lang|zh| 環跳 }}|| Huantiao || Jumping Circle || huán tiào ||{{lang|ko| hwan do 환도 }}|| kan chō ||Hoàn khiêu
+|-
+| GB-31 ||{{lang|zh| 風市 }}|| Fengshi || Wind Market || fēng shì ||{{lang|ko| pung si 풍시 }}|| fū shi ||Phong thị
+|-
+| GB-32 ||{{lang|zh| 中瀆 }}|| Zhongdu || Middle Ditch || zhōng dú ||{{lang|ko| jung dok 중독 }}|| chū toku? ||Trung độc
+|-
+| GB-33 ||{{lang|zh| 膝陽關 }}|| Xiyangguan || Knee Yang Gate || xī yáng guān ||{{lang|ko| [seul] yang gwan [슬] 양관 }}|| hiza no yō kan?||(Tất) Dương quan
+|-
+| GB-34 ||{{lang|zh| 陽陵泉 }}|| Yanglingquan || Yang Mound Spring || yáng líng quán ||{{lang|ko| yang neung cheon 양릉천 }}|| yō ryō sen ||Dương lăng tuyền
+|-
+| GB-35 ||{{lang|zh| 陽交 }}|| Yangjiao || Yang Intersection || yáng jiāo ||{{lang|ko| yang gyo 양교 }}|| yō ko ||Dương giao
+|-
+| GB-36 ||{{lang|zh| 外丘 }}|| Waiqiu || Outer Hill || wài qiū ||{{lang|ko| woe gu 외구 }}|| gai kyū ||Ngoại khâu
+|-
+| GB-37 ||{{lang|zh| 光明 }}|| Guangming || Bright Light || guāng míng ||{{lang|ko| gwang myeong 광명 }}|| kō mei? ||Quang minh
+|-
+| GB-38 ||{{lang|zh| 陽輔 }}|| Yangfu || Yang Assistance || yáng fǔ ||{{lang|ko| yang bo 양보 }}|| yō ho ||Dương phụ
+|-
+| GB-39 ||{{lang|zh| 懸鐘 }}{{efn|also called {{lang|zh|絶骨}} jué gǔ}}|| Xuanzhong || Suspended Bell || xuán zhōng ||{{lang|ko| hyeon jong 현종/jeol gol 절골 }}|| ken shō ||Huyền chung
+|-
+| GB-40 ||{{lang|zh| 丘墟 }}|| Qiuxu || Mound of Ruins || qiū xū ||{{lang|ko| gu heo 구허 }}|| kyū kyo ||Khâu khư
+|-
+| GB-41 ||{{lang|zh| 足臨泣 }}|| Zulinqi || Foot on the Verge of Tears || zú lín qì ||{{lang|ko| [jok] im eup [족] 임읍 }}|| ashi no rin kyū ||Túc lâm khấp
+|-
+| GB-42 ||{{lang|zh| 地五會 }}|| Diwuhui || Earth Five Meetings || dì wǔ huì ||{{lang|ko| ji o hoe 지오회 }}|| chi go e(?) ||Địa ngũ hội
+|-
+| GB-43 ||{{lang|zh| 俠谿 }}|| Xiaxi || Clamped Stream || xiá xī ||{{lang|ko| hyeop gye 협계 }}|| kyō kei? ||Hiệp khê
+|-
+| GB-44 ||{{lang|zh| 足竅陰 }}|| Zuqiaoyin || Yin Portals of the Foot || zú qiào yīn ||{{lang|ko| [jok] gyu eum [족] 규음 }}|| ashi no kyō in ||Túc khiếu âm
+|}
+
+==Liver meridian==
+Abbreviated as LR or LV, named {{zh|labels=no |s=足厥阴肝经穴|t=足厥陰肝經}} "The Liver channel of Foot, Faint Yin".
+{| class="wikitable"
+|-
+! Point !! Name !! Transliteration !! Pinyin !!English!! Korean {{lang|ko| 한글}}!! Romaji !!Vietnamese!!Alternative names
+|-
+| LR-1 ||{{lang|zh| 大敦 }}|| Dadun || dà dūn ||Great and Thick||{{lang|ko| dae don 대돈 }}|| tai ton ||Đại đôn||
+|-
+| LR-2 ||{{lang|zh| 行間 }}|| Xingjian || xíng jiān ||Interval Pass||{{lang|ko| haeng gan 행간 }}|| kō kan ||Hành gian||
+|-
+| LR-3 ||{{lang|zh| 太沖 }}|| Taichong || taì chōng ||Supreme Rush||{{lang|ko| tae chung 태충 }}|| tai shō ||Thái xung||
+|-
+| LR-4 ||{{lang|zh| 中封 }}|| Zhongfeng || zhōng fēng ||Middle Margin||{{lang|ko| jung bong 중봉 }}|| chū hō ||Trung phong||
+|-
+| LR-5 ||{{lang|zh| 蠡溝 }}|| Ligou|| lǐ gōu ||Gnawed Channel||{{lang|ko| yeo gu 여구 }}|| rei kō ||Lãi câu||
+|-
+| LR-6 ||{{lang|zh| 中都 }}|| Zhongdu || zhōng dū ||Central Capital||{{lang|ko| jung do 중도 }}|| chū to ||Trung đô||
+|-
+| LR-7 ||{{lang|zh| 膝關 }}|| Xiguan || xī guān ||Knee Pass||{{lang|ko| seul gwan 슬관 }}|| shitsu kan ||Tất quan||
+|-
+| LR-8 ||{{lang|zh| 曲泉 }}|| Ququan || qū quán ||Pool Spring||{{lang|ko| gok cheon 곡천 }}|| kyoku sen ||Khúc tuyền||
+|-
+| LR-9 ||{{lang|zh| 陰包 }}|| Yinbao || yīn bāo ||Yin Wrapping||{{lang|ko| eum bo 음보 }}|| im pō? ||Âm bao||
+|-
+| LR-10 ||{{lang|zh| 足五里 }}|| Zuwuli || zú wǔ li ||Foot Governor of Tears||{{lang|ko| [jok] o ri [족] 오리 }}|| ashi no go ri? ||(Túc) Ngũ lý||
+|-
+| LR-11 ||{{lang|zh| 陰廉 }}|| Yinlian || yīn lián ||Yin Side||{{lang|ko| eum yeom 음염 }}|| in ren(?) ||Âm liêm||
+|-
+| LR-12 ||{{lang|zh| 急脈 }}|| Jimai || jí mài ||Rapid Pulse||{{lang|ko| geum maek 금맥 }}|| kyū myaku? ||Cấp mạch||
+|-
+| LR-13 ||{{lang|zh| 章門 }}|| Zhangmen || zhāng mén ||Gate of the Ordering||{{lang|ko| jang mun 장문 }}|| shō mon ||Chương môn||
+|-
+| LR-14 ||{{lang|zh| 期門 }}|| Qimen|| qí mén ||Cyclic Gate||{{lang|ko| gi mun 기문 }}|| ki mon ||Kỳ môn|| 
+|}
+
+==Governing vessel==
+Also known as Du, abbreviated as GV and named {{zh|labels=no |s=督脉穴|t=督脈}} "The Governing Vessel".
+{| class="wikitable"
+|-
+! Point !! Name !! Transliteration !! Pinyin !!English!! Korean {{lang|ko|한글}} !! Romaji !!Vietnamese!!Alternative names
+|-
+| GV-1 || {{lang|zh|長強}} || Changqiang || cháng qiáng ||Long and Rigid|| jang gang {{lang|ko|장강}} || chō kyō ||Trường cường|| 
+|-
+| GV-2 || {{lang|zh|腰俞}} || Yaoshu || yāo shū ||Low Back Transporter|| yo yu {{lang|ko|요유}} || yō yu? ||Yêu du|| 
+|-
+| GV-3 || {{lang|zh|腰陽關}} || Yaoyangquan || yāo yáng guān ||Low Back Yang Passage|| [yo] yang gwan  {{lang|ko|[요] 양관}} || koshi no yo kan? ||(Yêu) Dương quan|| 
+|-
+| GV-4 || {{lang|zh|命門}} || Mingmen || mìng mén ||Life Gate|| myeong mun {{lang|ko|명문}} || mei mon ||Mệnh môn|| 
+|-
+| GV-5 || {{lang|zh|懸樞}} || Xuanshu || xuán shū ||Suspended Pivot|| hyeon chu {{lang|ko|현추}} || ken sū? ||Huyền khu|| 
+|-
+| GV-6 || {{lang|zh|脊中}} || Jizhong || jì zhōng ||Middle of the Spine|| cheok jung {{lang|ko|척중}} || seki chū? ||Tích trung|| 
+|-
+| GV-7 || {{lang|zh|中樞}} || Zhongshu || zhōng shū ||Central Pivot|| jung chu {{lang|ko|중추}} || chū sū? ||Trung khu|| 
+|-
+| GV-8 || {{lang|zh|筋縮}} || Jinsuo || jīn suō ||Muscle Spasm|| geun chuk {{lang|ko|근축}} || kin shuku(?) ||Cân súc|| 
+|-
+| GV-9 || {{lang|zh|至陽}} || Zhiyang || zhì yáng ||Reaching Yang|| ji yang {{lang|ko|지양}} || shi yō? ||Chí dương|| 
+|-
+| GV-10 || {{lang|zh|靈台}} || Lingtai || líng tái ||Spirit Platform|| yeong dae {{lang|ko|영대}} || rei dai(?) ||Linh đài|| 
+|-
+| GV-11 || {{lang|zh|神道}} || Shendao || shén dào ||Way of the Spirit|| sin do {{lang|ko|신도}} || shin dō ||Thần đạo|| 
+|-
+| GV-12 || {{lang|zh|身柱}} || Shenzhu || shēn zhù ||Body Pillar|| sin ju {{lang|ko|신주}} || shin chū ||Thân trụ|| 
+|-
+| GV-13 || {{lang|zh|陶道}} || Taodao || táo dào ||Way of the Pot|| {{not a typo|do do}} {{lang|ko|도도}} || tō dō? ||Đào đạo|| 
+|-
+| GV-14 || {{lang|zh|大椎}} || Dazhui || dà zhuī ||Great Vertebra|| dae chu {{lang|ko|대추}} || dai tsui ||Đại chùy|| 
+|-
+| GV-15 || {{lang|zh|瘂門 (啞門)}} || Yamen || yǎ mén ||Mutism Gate|| a mun {{lang|ko|아문}} || a mon ||Á môn|| 
+|-
+| GV-16 || {{lang|zh|風府}} || Fengfu || fēng fǔ ||Wind Palace|| pung bu {{lang|ko|풍부}} || fū fu ||Phong phủ|| 
+|-
+| GV-17 || {{lang|zh|腦戶}} || Naohu || nǎo hù ||Brain Door || noe ho {{lang|ko|뇌호}} || nō ko? ||Não hộ|| 
+|-
+| GV-18 || {{lang|zh|強間}} || Qiangjian || qiáng jiān ||Rigid Space|| gang gan {{lang|ko|강간}} || kyō kan? ||Cường gian|| 
+|-
+| GV-19 || {{lang|zh|後頂}} || Houding || hòu dǐng ||Back Vertex|| hu jeong {{lang|ko|후정}} || go chō? ||Hậu đính|| 
+|-
+| GV-20 || {{lang|zh|百會}} || Baihui || bǎi huì ||One Hundred Meetings|| baek hoe {{lang|ko|백회}} || hyaku e ||Bách hội|| 
+|-
+| GV-21 || {{lang|zh|前頂}} || Qianding || qián dǐng ||Front Vertex|| jeon jeong {{lang|ko|전정}} || zen chō? ||Tiền đính|| 
+|-
+| GV-22 || {{lang|zh|囟會}} || Xinhui || xìn huì ||Fontanelle Meeting|| sin hoe {{lang|ko|신회}} || shin e(?) ||Tín hội|| 
+|-
+| GV-23 || {{lang|zh|上星}} || Shangxing || shàng xīng ||Upper Star|| sang seong {{lang|ko|상성}} || jō sei? ||Thượng tinh|| 
+|-
+| GV-24 || {{lang|zh|神庭}} || Shenting || shén tíng ||Spirit Courtyard|| sin jeong {{lang|ko|신정}} || shin tei ||Thần đình|| 
+|-
+| GV-25 || {{lang|zh|素髎}} || Suliao || sù liáo ||Plain Space|| so ryo {{lang|ko|소료}} || so ryō? ||Tố liêu|| 
+|-
+| GV-26 || {{lang|zh|人中}} || Renzhong || rén zhōng ||Middle of the Person|| in jung {{lang|ko|인중}}/su gu {{lang|ko|수구}} || jin chu ||Nhân trung (Thủy câu)|| {{lang|zh|水溝}} shuǐ gōu [Water Pit]
+|-
+| GV-27 || {{lang|zh|兌端}} || Duiduan || duì duān ||End Exchange|| tae don {{lang|ko|태단}} || da tan(?) ||Đoài đoan|| 
+|-
+| GV-28 || {{lang|zh|齦交}} || Yinjiao || yín jiāo ||Gum Union|| eun gyo {{lang|ko|은교}} || gin kō ||Ngân giao|| 
+|}
+
+==Conception vessel==
+Also known as '''Ren''', '''Directing Vessel''', abbreviated as CV and named {{zh|labels=no |s=任脉穴|t=任脈}} "The Conception Vessel".
+{| class="wikitable"
+|-
+! Point !! Name !! Transliteration !! Pinyin !!English!! Korean {{lang|ko| 한글}}!! Romaji !!Vietnamese!!Alternative names
+|-
+| CV-1 ||{{lang|zh| 會陰 }}|| Huiyin || huì yīn ||Yin Meeting||{{lang|ko| hoe eum 회음 }}|| e in ||Hội âm||
+|-
+| CV-2 ||{{lang|zh| 曲骨 }}|| Qugu || qū gǔ ||Crooked Bone||{{lang|ko| gok gol 곡골 }}|| kyok kotsu? ||Khúc cốt||
+|-
+| CV-3 ||{{lang|zh| 中極 }}|| Zhongji || zhōng jí ||Middle Extremity||{{lang|ko| jung geuk 중극 }}|| chū kyoku? ||Trung cực||
+|-
+| CV-4 ||{{lang|zh| 關元 }}|| Guanyuan || guān yuán ||Origin Pass||{{lang|ko| gwan won 관원 }}|| kan gen ||Quan nguyên||
+|-
+| CV-5 ||{{lang|zh| 石門 }}|| Shimen || shí mén ||Stone Gate||{{lang|ko| seong mun 석문 }}|| seki mon(?) ||Thạch môn||
+|-
+| CV-6 ||{{lang|zh| 氣海 }}|| Qihai || qì hǎi ||Sea of Qi||{{lang|ko| gi hae 기해 }}|| ki kai ||Khí hải||
+|-
+| CV-7 ||{{lang|zh| 陰交 }}|| Yinjiao || yīn jiāo ||Yin Intersection||{{lang|ko| eum gyo 음교 }}|| in kō ||Âm giao||
+|-
+| CV-8 ||{{lang|zh| 神闕 }}|| Shenque || shén què ||Spirit Palace||{{lang|ko| sin gwol 신궐 }}|| shin ketsu(?) ||Thần khuyết||
+|-
+| CV-9 ||{{lang|zh| 水分 }}|| Shuifen || shuǐ fēn ||Water Division||{{lang|ko| su bun 수분 }}|| sui bun(?) ||Thủy phân||
+|-
+| CV-10 ||{{lang|zh| 下脘 }}|| Xiawan || xià wǎn [''or'' xià guǎn] ||Lower Epigastrium||{{lang|ko| ha wan 하완 }}|| ge kan ||Hạ quản||
+|-
+| CV-11 ||{{lang|zh| 建里 }}|| Jianli || jiàn lǐ ||Internal Foundation||{{lang|ko| geol li 건리 }}|| ken ri(?) ||Kiến lý|| 健裡 jiàn lǐ
+|-
+| CV-12 ||{{lang|zh| 中脘 }}|| Zhongwan || zhōng wǎn [''or'' zhōng guǎn] ||Middle Epigastrium||{{lang|ko| jung wan 중완 }}|| chū kan ||Trung quản||
+|-
+| CV-13 ||{{lang|zh| 上脘 }}|| Shangwan || shàng wǎn [''or'' shàng guǎn] ||Upper Epigastrium||{{lang|ko| sang wan 상완 }}|| jo kan ||Thượng quản||
+|-
+| CV-14 ||{{lang|zh| 巨闕 }}|| Juque || jù què ||Great Palace||{{lang|ko| geo gwol 거궐 }}|| ko ketsu(?) ||Cự khuyết||
+|-
+| CV-15 ||{{lang|zh| 鳩尾 }}|| Jiuwei || jiū wěi ||Bird Tail||{{lang|ko| gu mi 구미 }}|| kyū bi? ||Cưu vĩ||
+|-
+| CV-16 ||{{lang|zh| 中庭 }}|| Zhongting || zhōng tíng ||Central Courtyard||{{lang|ko| jung jeong 중정 }}|| chū tei? ||Trung đình||
+|-
+| CV-17 ||{{lang|zh| 膻中 }}|| Shanzhong || shān zhōng ||Middle of the Chest||{{lang|ko| dan jung 단중 }}|| dan chū ||Đản trung||
+|-
+| CV-18 ||{{lang|zh| 玉堂 }}|| Yutang || yù táng ||Jade Hall||{{lang|ko| ok dang 옥당 }}|| gyoku dō? ||Ngọc đường||
+|-
+| CV-19 ||{{lang|zh| 紫宮 }}|| Zigong || zǐ gōng ||Violet Palace||{{lang|ko| ja gung 자궁 }}|| shi kyū? ||Tử cung||
+|-
+| CV-20 ||{{lang|zh| 華蓋 }}|| Huagai || huá gài ||Splendid Cover||{{lang|ko| hwa gae 화개 }}|| ko gai? ||Hoa cái||ka gai<ref name="Fukushima">{{cite book |last= Fukushima |first= K |title= Meridian Therapy |edition= 4th |year= 2007 |publisher= Toyo Hari Medical Association }}</ref>
+|-
+| CV-21 ||{{lang|zh| 璇璣 }}|| Xuanji || xuán jī ||Jade Rotator||{{lang|ko| seon gi 선기 }}|| sen ki ||Toàn cơ||
+|-
+| CV-22 ||{{lang|zh| 天突 }}|| Tiantu || tiān tū ||Heaven Projection||{{lang|ko| cheon dol 천돌 }}|| ten totsu ||Thiên đột||
+|-
+| CV-23 ||{{lang|zh| 廉泉 }}|| Lianquan || lián quán ||Lateral Spring||{{lang|ko| yeom cheon 염천 }}|| ren sen ||Liêm tuyền||
+|-
+| CV-24 ||{{lang|zh| 承漿 }}|| Chengjiang || chéng jiāng ||Saliva Container||{{lang|ko| seung jang 승장 }}|| shō shō ||Thừa tương|| 
+|}
+
+==Notes==
+{{notelist}}
+==References==
+{{reflist}}
+
+{{DEFAULTSORT:List of Acupuncture Points}}
+[[Category:Acupuncture|*]]
+[[Category:Medical lists|Acupuncture points]]
+[[Category:Pseudoscience]]

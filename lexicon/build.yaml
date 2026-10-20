@@ -1,0 +1,13 @@
+# lexicon build config (read by `python -m tcmkb_lexicon build`)
+# 热词策略依据：docs/SEACO_HOTWORD_RESEARCH.md（SeACo ASF k=50；v0.1 实测 400 词不优于 31 词）
+min_status: draft          # v0.1: 全部条目仍为 draft；完成人工审核后改为 reviewed
+hotword:
+  # 推荐上限 50–100；默认 50 对齐 FunASR `_seaco_decode_with_ASF(nfilter=50)`。
+  max_per_series: 50
+  min_len: 2               # 与论文训练 l_min=2 一致；单字不进热词
+  max_len: 8               # 与论文训练 l_max=8 一致（SDK 口头 ≤10）
+  series: [shl, jgy, nj, bc, zj, tj]   # 与 configs/series.yaml 一致；另输出 global.txt
+  # 排序（build.py）：pins/{series}.txt 置顶 → 讲座频次（asr-bench/eval 转写）→
+  #   rank = 2*hotword_priority + (0 系列专属 | 1 global)，再 category、词面。
+  # 格式：一行一词、不写权重。pins 见 lexicon/pins/{series}.txt
+  # six_channel / 纠错 from / 1 字词：永不进热词文件。

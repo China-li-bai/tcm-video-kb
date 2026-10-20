@@ -1,0 +1,24 @@
+[project]
+name = "tcmkb-ingest"
+version = "0.1.0"
+description = "Ingest pipeline steps + scheduler + CLI (tcmkb)"
+requires-python = ">=3.11"
+dependencies = [
+  "tcmkb-core",
+  "tcmkb-lexicon",
+  "click>=8",
+  "opencc-python-reimplemented>=0.1.7",
+]
+
+[project.optional-dependencies]
+asr = ["funasr>=1.1"]
+
+[project.scripts]
+tcmkb = "tcmkb_ingest.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

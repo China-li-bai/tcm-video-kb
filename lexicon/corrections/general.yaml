@@ -1,0 +1,25 @@
+# 非实体纠错规则（实体相关的误识写在 entries/*.yaml 的 asr_errors）。
+# 全部来自 /workspace/asr-bench 基准输出（out/*.txt, results.md, ref/UNCERTAIN.md）中实际观察到的误识。
+# 字段同 asr_errors：from/to/type/left/left_not/right/right_not/near_any/window；status: draft
+- {id: corr.sanji, from: 散记, to: 散剂, near_any: [汤剂, 散剂, 丸, 散], window: 10, evidence: "shl paraformer_hot: 一种是散记"}
+- {id: corr.sanji2, from: 散季, to: 散剂, evidence: "shl sensevoice: 散季"}
+- {id: corr.wanju, from: 玩具, to: 丸剂, near_any: [汤剂, 散剂, 丸剂, 乌梅丸, 散], window: 20, evidence: "shl: 还有一种是环境玩具，像乌梅丸"}
+- {id: corr.wanju2, from: "完具|丸具|玩剂", type: regex, to: 丸剂, evidence: "shl paraformer_hot"}
+- {id: corr.tangji, from: 汤吉, to: 汤剂, evidence: "shl paraformer_hot: 汤吉在外吧"}
+- {id: corr.wumei1, from: 物梅, to: 乌梅, evidence: "shl paraformer_hot: 物梅汤"}
+- {id: corr.wumei2, from: 物美, to: 乌梅, near_any: [乌梅, 虫, 酸, 丸], window: 10, evidence: "shl paraformer_hot: 介绍物美 / 物美很酸"}
+- {id: corr.jiu, from: 揪, to: 灸, right: 足三里|穴, evidence: "zj: 常常揪足三里"}
+- {id: corr.xieci, from: 斜持, to: 斜刺, right: "[一二三四五六七八九十0-9]", evidence: "zj: 斜持四十五度"}
+- {id: corr.jingqi, from: 经济, to: 经气, near_any: [针, 转, 补, 泻, 逆向, 顺], window: 6, evidence: "zj: 逆着经济快转"}
+- {id: corr.rushen, from: 乳肾, to: 入肾, evidence: "zj: 黑色的乳肾"}
+- {id: corr.weiqi, from: 无味气, to: 无胃气, evidence: "zj: 无味气啊"}
+- {id: corr.luanchao, from: 囊巢炎, to: 卵巢炎, evidence: "zj: 囊巢炎"}
+- {id: corr.zhigancao, from: 吃甘草, to: 炙甘草, right: "[一二三四五六七八九十]", evidence: "shl: 甘草吃甘草二两"}
+- {id: corr.dulianghen, from: 度量痕, to: 度量衡, evidence: "shl: 度量痕"}
+- {id: corr.mawangdui, from: 马王杯, to: 马王堆, evidence: "shl: 马王杯"}
+- {id: corr.qihuang, from: 其黄, to: 岐黄, right: 之术, evidence: "nj: 那叫其黄之术"}
+- {id: corr.fayuyinyang, from: 法厥阴阳, to: 法于阴阳, evidence: "nj paraformer_hot: 道法厥阴阳（热词「厥阴」误插）"}
+- {id: corr.heyushushu, from: "和于术术|合于束数|合于术数|和于束数", type: regex, to: 和于术数, evidence: "nj: 和于术术 / 合于束数（素问·上古天真论原文：和于术数）"}
+- {id: corr.banbai, from: 半摆而衰, to: 半百而衰, evidence: "nj: 半摆而衰"}
+- {id: corr.qiju, from: 体居无节, to: 起居无节, evidence: "nj: 体居无节（原文：起居无节）"}
+- {id: corr.jingfangjia, from: 金方家, to: 经方家, evidence: "shl: 在金方家认为"}

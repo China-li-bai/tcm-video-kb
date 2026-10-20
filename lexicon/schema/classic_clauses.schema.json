@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Classic text, clause-numbered",
+  "type": "object", "required": ["book_id", "title", "source", "clauses"],
+  "properties": {
+    "book_id": {"type": "string"}, "title": {"type": "string"}, "edition": {"type": "string"}, "numbering": {"type": "string"},
+    "source": {"type": "object", "required": ["ref"]}, "status": {"enum": ["draft", "reviewed"]},
+    "clauses": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["id", "no", "section", "text"],
+      "properties": {"id": {"type": "string", "pattern": "^clause\\.[a-z]+\\.[0-9]{3}$"}, "no": {"type": "integer", "minimum": 1},
+        "section": {"type": "string"}, "text": {"type": "string"}, "text_trad": {"type": "string"},
+        "entities": {"type": "array", "items": {"type": "string"}}}}}
+  }
+}

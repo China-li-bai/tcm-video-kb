@@ -1,0 +1,59 @@
+{
+ "lexicon_ver": "0.1.0#e466352a",
+ "built_at": "2026-10-19T18:35:51+08:00",
+ "min_status": "draft",
+ "entries": 1754,
+ "clauses": 398,
+ "counts": {
+  "acupoint": 408,
+  "classic": 215,
+  "concept": 69,
+  "course_term": 17,
+  "disease": 22,
+  "formula": 234,
+  "herb": 407,
+  "meridian": 22,
+  "method": 33,
+  "person": 28,
+  "pulse": 44,
+  "six_channel": 6,
+  "symptom": 121,
+  "syndrome": 90,
+  "tongue": 3,
+  "zangfu": 35,
+  "clause": 398
+ },
+ "correction_rules": 64,
+ "hotwords": {
+  "global": {
+   "count": 100,
+   "dropped_over_cap": 199
+  },
+  "shl": {
+   "count": 100,
+   "dropped_over_cap": 689
+  },
+  "jgy": {
+   "count": 100,
+   "dropped_over_cap": 704
+  },
+  "nj": {
+   "count": 100,
+   "dropped_over_cap": 274
+  },
+  "bc": {
+   "count": 100,
+   "dropped_over_cap": 530
+  },
+  "zj": {
+   "count": 100,
+   "dropped_over_cap": 590
+  },
+  "tj": {
+   "count": 100,
+   "dropped_over_cap": 206
+  }
+ },
+ "jieba_terms": 2220,
+ "warnings": 13
+}

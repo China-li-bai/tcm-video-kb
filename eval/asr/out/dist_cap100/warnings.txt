@@ -1,0 +1,13 @@
+ambiguous surface 「通天」: acupoint.bl7, classic.ls_tong_tian
+ambiguous surface 「本神」: acupoint.gb13, classic.ls_ben_shen
+ambiguous surface 「带脉」: acupoint.gb26, meridian.bv
+ambiguous surface 「命门」: acupoint.gv4, zangfu.ming_men
+ambiguous surface 「膻中」: acupoint.cv17, zangfu.dan_zhong
+ambiguous surface 「太阳」: acupoint.ex_tai_yang, six_channel.taiyang
+ambiguous surface 「腰痛」: acupoint.ex_yao_tong, symptom.yao_tong
+ambiguous surface 「营气」: classic.ls_ying_qi, concept.ying_qi
+ambiguous surface 「五邪」: classic.ls_wu_xie, concept.wu_xie
+ambiguous surface 「卫气」: classic.ls_wei_qi, concept.wei_qi
+ambiguous surface 「五味」: classic.ls_wu_wei, concept.wu_wei, herb.wu_wei_zi
+ambiguous surface 「贼风」: classic.ls_zei_feng, concept.zei_feng
+ambiguous surface 「寒热」: classic.ls_han_re, concept.han_re, symptom.han_re

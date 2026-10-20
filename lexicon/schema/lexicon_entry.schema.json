@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tcm-video-kb/lexicon_entry.schema.json",
+  "title": "TCM lexicon entry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "term", "category", "status", "sources"],
+  "$defs": {
+    "asr_error": {
+      "type": "object", "additionalProperties": false, "required": ["from"],
+      "properties": {
+        "from": {"type": "string", "minLength": 1, "description": "误识写法（literal 或 regex）"},
+        "to": {"type": "string", "description": "替换为；缺省为条目 term"},
+        "type": {"enum": ["literal", "regex"], "default": "literal"},
+        "left": {"type": "string", "description": "左侧紧邻文本必须匹配的 regex（以匹配点结尾）"},
+        "left_not": {"type": "string", "description": "左侧紧邻文本不得匹配的 regex"},
+        "right": {"type": "string", "description": "右侧紧邻文本必须匹配的 regex（从匹配点开始）"},
+        "right_not": {"type": "string"},
+        "near_any": {"type": "array", "items": {"type": "string"}, "description": "±window 字内须出现其一"},
+        "window": {"type": "integer", "minimum": 1, "maximum": 60, "default": 10},
+        "note": {"type": "string"}
+      }
+    }
+  },
+  "properties": {
+    "id": {"type": "string", "pattern": "^[a-z_]+\\.[a-z0-9_.]+$"},
+    "term": {"type": "string", "minLength": 1, "description": "规范名（简体）"},
+    "category": {"enum": ["formula", "herb", "acupoint", "meridian", "six_channel", "syndrome", "symptom", "pulse", "tongue", "method", "zangfu", "concept", "disease", "classic", "clause", "person", "course_term"]},
+    "aliases": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+    "pinyin": {"type": "string"},
+    "hotword": {"type": "boolean", "default": true},
+    "hotword_scope": {"type": "array", "items": {"type": "string", "pattern": "^[a-z]+$"}, "uniqueItems": true},
+    "hotword_priority": {"type": "integer", "minimum": 1, "maximum": 3, "default": 2, "description": "1=核心 2=系列 3=长尾；热词超上限时按此截断"},
+    "asr_errors": {"type": "array", "items": {"$ref": "#/$defs/asr_error"}},
+    "match_policy": {"enum": ["always", "context", "never"], "default": "always"},
+    "context_any": {"type": "array", "items": {"type": "string"}},
+    "relations": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["pred", "obj"],
+      "properties": {"pred": {"enum": ["composed_of", "on_meridian", "belongs_to", "treats", "indicates", "related"]}, "obj": {"type": "string"}}}},
+    "attrs": {"type": "object"},
+    "sources": {"type": "array", "items": {"type": "object", "required": ["ref"], "additionalProperties": false,
+      "properties": {"ref": {"type": "string"}, "at": {"type": "string"}}}},
+    "status": {"enum": ["draft", "reviewed"]},
+    "notes": {"type": "string"}
+  }
+}
