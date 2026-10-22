@@ -1,0 +1,160 @@
+video_id: shl-007
+window: w08-10
+seg_from: 1008
+seg_to: 1298
+annotator: llm_read
+chapters:
+- key: c07
+  title: 通脉四逆汤：下利清谷脉微欲绝
+  start_seq: 1002
+  summary: 少阴下利清谷、里寒外热、手足厥逆、脉微欲绝，通脉四逆汤：四逆汤加重干姜。太阴寒湿未治传入少阴所致。面赤或腹痛干呕咽痛利止脉不出皆或然证。
+  clauses:
+  - 317
+  topics:
+  - formula.tong_mai_si_ni_tang
+  - formula.si_ni_tang
+- key: c08
+  title: 四逆散：少阴枢机气郁
+  start_seq: 1140
+  summary: 四逆散（柴胡枳实芍药炙甘草）出少阴篇：疏肝利胆管道，治气郁致厥及胆结石胆胀，与四逆汤温阳完全不同路径。加减：咳加五味干姜，悸加桂枝，腹痛加附子，泄利下重加薤白等。
+  clauses:
+  - 318
+  topics:
+  - formula.si_ni_san
+- key: c09
+  title: 急下与痰食：大承气 vs 大黄附子；瓜蒂
+  start_seq: 1233
+  summary: 少阴口燥咽干可急下存阴用大承气；若下利而舌黄有光反是热结旁流/燥屎，亦承气。寒实用大黄附子非承气。饮食入口则吐心中温温欲吐手足寒脉弦迟为胸中实，宜吐不可下。
+  clauses:
+  - 320
+  - 321
+  - 324
+  topics:
+  - formula.da_cheng_qi_tang
+  - formula.da_huang_fu_zi_tang
+entities:
+- id: clause.shl.317
+  seq: 1002
+  surface: 第三代三十一条
+  corrected: 伤寒论第317条
+  note: 讲义331→宋本317
+- id: formula.tong_mai_si_ni_tang
+  seq: 1042
+  surface: 通脉肾逆汤
+  corrected: 通脉四逆汤
+- id: formula.si_ni_tang
+  seq: 1026
+  surface: 四逆汤
+  corrected: 四逆汤
+- id: herb.gan_jiang
+  seq: 1104
+  surface: 干姜
+  corrected: 干姜
+- id: formula.si_ni_san
+  seq: 1140
+  surface: 四逆散
+  corrected: 四逆散
+- id: clause.shl.318
+  seq: 1140
+  surface: 四逆散
+  corrected: 伤寒论第318条
+- id: herb.chai_hu
+  seq: 1141
+  surface: 柴胡
+  corrected: 柴胡
+- id: herb.shao_yao
+  seq: 1141
+  surface: 芍药
+  corrected: 芍药
+- id: clause.shl.320
+  seq: 1233
+  surface: 三百三十四条
+  corrected: 伤寒论第320条
+  note: 讲义334→宋本320
+- id: formula.da_cheng_qi_tang
+  seq: 1246
+  surface: 承气汤
+  corrected: 大承气汤
+- id: formula.da_huang_fu_zi_tang
+  seq: 1265
+  surface: 大黄附子泻心汤
+  corrected: 大黄附子汤
+- id: clause.shl.324
+  seq: 1271
+  surface: 三三八
+  corrected: 伤寒论第324条
+  note: 讲义338→宋本324
+kps:
+- type: formula_composition
+  s: 通脉四逆汤即四逆汤倍干姜；主下利清谷、里寒外热、手足厥逆、脉微欲绝。
+  seq:
+  - 1104
+  - 1104
+  q: 你说我干姜一中就变通来四季汤，干姜减一半，变成四逆汤
+  ents:
+  - formula.tong_mai_si_ni_tang
+  - formula.si_ni_tang
+  - herb.gan_jiang
+  conf: 0.9
+  asr: 通来四季=通脉四逆
+- type: pathomechanism
+  s: 少阴下利清谷多由太阴寒湿未治传入，中焦寒湿盛极；手足厥冷反映胃肠阳气败。
+  seq:
+  - 1009
+  - 1019
+  q: 少阴病是因为太阴病没治好才跑出来的
+  ents:
+  - six_channel.shaoyin
+  - six_channel.taiyin
+  conf: 0.9
+- type: formula_indication
+  s: 四逆散疏肝利胆、开气郁，可治胆结石胆胀；与四逆汤温阳救逆路径完全不同。
+  seq:
+  - 1159
+  - 1159
+  q: 那这治那个四逆散呢变成我们来拿拿来治胆结石胆发炎的时候非常好
+  ents:
+  - formula.si_ni_san
+  conf: 0.9
+- type: formula_composition
+  s: 四逆散：炙甘草、枳实、柴胡、芍药。腹痛加炮附，咽痛去芍加桔梗，泄利下重加薤白。
+  seq:
+  - 1141
+  - 1145
+  q: 用炙甘草籽石，还有还有柴胡跟芍药
+  ents:
+  - formula.si_ni_san
+  - herb.chai_hu
+  - herb.shao_yao
+  conf: 0.85
+  asr: 籽石=枳实
+- type: clause_interpretation
+  s: 第320条：少阴得之二三日口燥咽干者，急下之，宜大承气。寒结则用大黄附子汤，勿混。
+  seq:
+  - 1233
+  - 1265
+  q: 少阴病得之二三日口燥，咽干即下肢
+  ents:
+  - clause.shl.320
+  - formula.da_cheng_qi_tang
+  - formula.da_huang_fu_zi_tang
+  conf: 0.85
+  asr: 下肢=急下
+- type: diagnostic_rule
+  s: 下利不止而气色光鲜、舌苔黄厚者，反是热结旁流/燥屎，当攻下而非涩止。
+  seq:
+  - 1255
+  - 1256
+  q: 下利不止的候候，看到那个气色怎么那么那么那么光鲜
+  ents:
+  - formula.da_cheng_qi_tang
+  conf: 0.85
+- type: clause_interpretation
+  s: 第324条：饮食入口则吐、心中温温欲吐、手足寒、脉弦迟，胸中实（痰食），宜吐不可下。
+  seq:
+  - 1271
+  - 1275
+  q: 饮食入口则吐，心中闷温，就心中就是讲胃哈
+  ents:
+  - clause.shl.324
+  conf: 0.85

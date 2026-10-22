@@ -5,9 +5,10 @@
   "shl-003",
   "shl-004",
   "shl-005",
-  "shl-006"
+  "shl-006",
+  "shl-007"
  ],
- "n_entities": 700,
- "n_knowledge_points": 552,
- "n_chapters": 206
+ "n_entities": 738,
+ "n_knowledge_points": 574,
+ "n_chapters": 215
 }

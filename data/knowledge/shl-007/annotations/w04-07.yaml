@@ -1,0 +1,195 @@
+video_id: shl-007
+window: w04-07
+seg_from: 513
+seg_to: 1007
+annotator: llm_read
+chapters:
+- key: c04
+  title: 附子汤与真武汤
+  start_seq: 544
+  summary: 身体痛骨节痛脉沉者附子汤（重炮附、人参、白术茯苓芍药）：祛寒湿兼扶正。附子汤去人参加生姜即真武。太阴传入少阴之寒湿痛证常用。
+  clauses:
+  - 304
+  - 305
+  topics:
+  - formula.fu_zi_tang
+  - formula.zhen_wu_tang
+- key: c05
+  title: 桃花汤、吴茱萸汤、猪肤汤、半夏散
+  start_seq: 580
+  summary: 下利便脓血腹痛小便不利→桃花汤（赤石脂干姜粳米）。吐而手足逆冷烦躁欲死者吴茱萸汤。下利咽痛胸满心烦→猪肤汤。咽中痛→半夏散及汤（半夏桂枝甘草等分）。
+  clauses:
+  - 306
+  - 309
+  - 310
+  - 313
+  topics:
+  - formula.tao_hua_tang
+  - formula.wu_zhu_yu_tang
+  - formula.zhu_fu_tang
+  - formula.ban_xia_san_ji_tang
+- key: c06
+  title: 白通汤与白通加猪胆汁汤
+  start_seq: 827
+  summary: 少阴下利不止，白通汤：葱白、干姜、生附子。服后利不止厥逆干呕烦→白通加猪胆汁人尿反佐。脉暴出者死，微续者生。
+  clauses:
+  - 314
+  - 315
+  topics:
+  - formula.bai_tong_tang
+  - formula.bai_tong_jia_zhu_dan_zhi_tang
+  - herb.cong_bai
+entities:
+- id: formula.fu_zi_tang
+  seq: 549
+  surface: 附子汤
+  corrected: 附子汤
+- id: clause.shl.304
+  seq: 549
+  surface: 附子汤
+  corrected: 伤寒论第304条
+- id: formula.zhen_wu_tang
+  seq: 554
+  surface: 增午汤
+  corrected: 真武汤
+- id: herb.fu_zi
+  seq: 552
+  surface: 泡附子
+  corrected: 炮附子
+- id: formula.tao_hua_tang
+  seq: 624
+  surface: 桃花汤
+  corrected: 桃花汤
+- id: clause.shl.306
+  seq: 624
+  surface: 桃花汤
+  corrected: 伤寒论第306条
+- id: formula.wu_zhu_yu_tang
+  seq: 637
+  surface: 无足以汤
+  corrected: 吴茱萸汤
+- id: formula.zhu_fu_tang
+  seq: 656
+  surface: 诸敷汤
+  corrected: 猪肤汤
+- id: clause.shl.310
+  seq: 656
+  surface: 三百二十四条
+  corrected: 伤寒论第310条
+  note: 讲义324→宋本310
+- id: formula.ban_xia_san_ji_tang
+  seq: 786
+  surface: 半夏桂枝、甘草治末
+  corrected: 半夏散及汤
+- id: clause.shl.313
+  seq: 784
+  surface: matcher
+  corrected: 伤寒论第313条
+- id: formula.bai_tong_tang
+  seq: 827
+  surface: 白通汤
+  corrected: 白通汤
+- id: herb.cong_bai
+  seq: 831
+  surface: 葱白
+  corrected: 葱白
+- id: formula.bai_tong_jia_zhu_dan_zhi_tang
+  seq: 851
+  surface: 白通汤加猪胆汤
+  corrected: 白通加猪胆汁汤
+- id: clause.shl.315
+  seq: 890
+  surface: 三百二十九条
+  corrected: 伤寒论第315条
+  note: 讲义329→宋本315
+- id: formula.zhen_wu_tang
+  seq: 954
+  surface: 蒸午汤真午汤
+  corrected: 真武汤
+- id: clause.shl.316
+  seq: 951
+  surface: 三百三十条
+  corrected: 伤寒论第316条
+kps:
+- type: formula_composition
+  s: 附子汤重用炮附子，配人参白术茯苓芍药祛寒湿扶正；去人参加生姜即真武汤。
+  seq:
+  - 549
+  - 554
+  q: 你如果把人生换成生姜，就是增午汤
+  ents:
+  - formula.fu_zi_tang
+  - formula.zhen_wu_tang
+  conf: 0.9
+  asr: 人生=人参；增午=真武
+- type: formula_indication
+  s: 桃花汤：下利便脓血、腹痛、小便不利；与大黄附子汤攻下方向相反，一涩一攻。
+  seq:
+  - 613
+  - 626
+  q: 下利不止者便脓血者桃花汤
+  ents:
+  - formula.tao_hua_tang
+  conf: 0.9
+- type: formula_indication
+  s: 少阴吐利手足逆冷烦躁欲死→吴茱萸汤温胃降逆。
+  seq:
+  - 637
+  - 639
+  q: 吐的很重，手脚冰冷、烦躁，欲食者无足以汤组织
+  ents:
+  - formula.wu_zhu_yu_tang
+  conf: 0.85
+  asr: 无足以=吴茱萸；欲食=欲死
+- type: formula_indication
+  s: 少阴下利咽痛胸满心烦→猪肤汤。
+  seq:
+  - 656
+  - 656
+  q: 少阴病病人有夏利，有咽痛、心烦者诸敷汤
+  ents:
+  - formula.zhu_fu_tang
+  - clause.shl.310
+  conf: 0.85
+  asr: 夏利=下利；诸敷=猪肤
+- type: formula_composition
+  s: 半夏散及汤：半夏、桂枝、甘草等分捣散；咽中痛、喉痈可含咽。
+  seq:
+  - 786
+  - 801
+  q: 半夏桂枝、甘草治末哈各等分
+  ents:
+  - formula.ban_xia_san_ji_tang
+  conf: 0.9
+- type: formula_composition
+  s: 白通汤：葱白、干姜、生附子；通表里温肾阳止下利。利不止厥逆干呕烦则加猪胆汁人尿反佐。
+  seq:
+  - 827
+  - 851
+  q: 白通汤葱白好，干姜附子生的生用一枚附子
+  ents:
+  - formula.bai_tong_tang
+  - formula.bai_tong_jia_zhu_dan_zhi_tang
+  - herb.cong_bai
+  conf: 0.95
+- type: diagnostic_rule
+  s: 白通加猪胆汁后：脉暴出者死，微续者生。
+  seq:
+  - 890
+  - 892
+  q: 卖爆粗者死为序者生
+  ents:
+  - formula.bai_tong_jia_zhu_dan_zhi_tang
+  - clause.shl.315
+  conf: 0.8
+  asr: 卖爆粗=脉暴出；为序=微续
+- type: formula_indication
+  s: 第316条真武汤：腹痛、小便不利、四肢沉重、自下利——有水气。腹痛用芍药+炮附；利甚去芍加干姜。
+  seq:
+  - 951
+  - 991
+  q: 蒸午汤真午汤呢，它里面呢跟附子汤很接近
+  ents:
+  - formula.zhen_wu_tang
+  - clause.shl.316
+  conf: 0.85

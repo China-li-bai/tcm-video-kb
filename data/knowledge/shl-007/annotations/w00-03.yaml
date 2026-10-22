@@ -1,0 +1,172 @@
+video_id: shl-007
+window: w00-03
+seg_from: 0
+seg_to: 512
+annotator: llm_read
+chapters:
+- key: c01
+  title: 少阴病总论：心肾水火与禁汗
+  start_seq: 0
+  summary: 少阴属心肾（火水），多由太阴湿盛未治传入。附子可自肾温通血脉达心。少阴里寒湿盛，小便清白无色；禁发汗，误汗则咳而下利。脉微细沉数皆示里寒不可汗。
+  clauses:
+  - 281
+  - 285
+  - 286
+  topics:
+  - six_channel.shaoyin
+  - herb.fu_zi
+- key: c02
+  title: 死证与自愈征：吐利手足逆冷 vs 恶寒蜷卧烦
+  start_seq: 241
+  summary: 吐利而手足逆冷为阴盛死证（不受药食）。下利恶寒蜷卧而烦者，阳气欲回可治。息高者危。
+  clauses:
+  - 292
+  - 295
+  - 299
+  topics:
+  - six_channel.shaoyin
+- key: c03
+  title: 麻黄附子细辛汤与大黄附子汤
+  start_seq: 400
+  summary: 少阴始得之反发热脉沉，麻黄附子细辛汤（2:3:2）利尿祛里湿而不走表。寒实结胸用大黄附子细辛（麻黄换大黄）。二三日无里证麻黄附子甘草汤微发汗。
+  clauses:
+  - 301
+  - 302
+  - 305
+  topics:
+  - formula.ma_huang_xi_xin_fu_zi_tang
+  - formula.da_huang_fu_zi_tang
+  - formula.ma_huang_fu_zi_gan_cao_tang
+entities:
+- id: six_channel.shaoyin
+  seq: 0
+  surface: 少阴病
+  corrected: 少阴
+- id: herb.fu_zi
+  seq: 6
+  surface: 肾附子
+  corrected: 附子
+- id: six_channel.taiyin
+  seq: 9
+  surface: 太阴
+  corrected: 太阴
+- id: clause.shl.281
+  seq: 45
+  surface: 二百九十六页少阴病
+  corrected: 伤寒论第281条附近
+- id: clause.shl.285
+  seq: 178
+  surface: 二九九条少阴病脉细沉数
+  corrected: 伤寒论第285条
+  note: 讲义299→宋本285
+- id: clause.shl.286
+  seq: 190
+  surface: 三百条少阴病脉围不可发寒
+  corrected: 伤寒论第286条
+- id: clause.shl.292
+  seq: 285
+  surface: 三百零六条少阴病吐利手脚不利冷
+  corrected: 伤寒论第292条附近
+- id: clause.shl.301
+  seq: 400
+  surface: 三百一十五少阴病呢刚开始得到你反发热，脉沉者麻黄附子细心汤
+  corrected: 伤寒论第301条
+- id: formula.ma_huang_xi_xin_fu_zi_tang
+  seq: 400
+  surface: 麻黄附子细心汤
+  corrected: 麻黄附子细辛汤
+- id: herb.xi_xin
+  seq: 403
+  surface: 细心
+  corrected: 细辛
+- id: herb.ma_huang
+  seq: 403
+  surface: 麻黄
+  corrected: 麻黄
+- id: formula.da_huang_fu_zi_tang
+  seq: 438
+  surface: 大黄夫子泻心汤
+  corrected: 大黄附子汤
+- id: clause.shl.302
+  seq: 460
+  surface: 麻黄附子甘草汤
+  corrected: 伤寒论第302条
+- id: formula.ma_huang_fu_zi_gan_cao_tang
+  seq: 460
+  surface: 麻黄附子甘草汤
+  corrected: 麻黄附子甘草汤
+kps:
+- type: concept_definition
+  s: 少阴属心肾水火；多由太阴湿盛未治传入。附子自肾温通血脉可达心。
+  seq:
+  - 3
+  - 9
+  q: 病会跑到少阴去，是因为你在脾的时候没有治好，它才会进入少阴
+  ents:
+  - six_channel.shaoyin
+  - six_channel.taiyin
+  - herb.fu_zi
+  conf: 0.9
+- type: diagnostic_rule
+  s: 少阴里寒湿盛，小便清白几乎无色，有别于热证黄赤。
+  seq:
+  - 66
+  - 66
+  q: 所以小便出是摆一个，根本就一点颜色都没有
+  ents:
+  - six_channel.shaoyin
+  conf: 0.85
+- type: contraindication
+  s: 少阴禁发汗；脉微细沉数皆示里寒，误汗则伤津见咳与下利。
+  seq:
+  - 162
+  - 178
+  q: 少阴症出现的时候，因为是理寒湿，绝对不要用汉法
+  ents:
+  - six_channel.shaoyin
+  - clause.shl.285
+  conf: 0.95
+  asr: 理=里；汉=汗
+- type: diagnostic_rule
+  s: 吐利而手足逆冷为阴盛死证（药食不受）；若反发热则尚有生机。
+  seq:
+  - 285
+  - 291
+  q: 病人有吐有下利的时候哈，手脚是冰冷的
+  ents:
+  - six_channel.shaoyin
+  conf: 0.9
+- type: formula_composition
+  s: 麻黄附子细辛汤：麻黄二、炮附三、细辛二；合用则不走表发汗而入里利小便祛湿，兼固阳。
+  seq:
+  - 400
+  - 422
+  q: 麻黄附子细心汤呢，麻黄二钱，如果是麻黄有两钱细心，有两钱泡附子能有三钱
+  ents:
+  - formula.ma_huang_xi_xin_fu_zi_tang
+  - herb.xi_xin
+  - herb.ma_huang
+  - herb.fu_zi
+  conf: 0.95
+  asr: 细心=细辛
+- type: formula_indication
+  s: 大黄附子汤=麻黄附子细辛去麻黄换大黄，治寒实积滞；热实用承气。
+  seq:
+  - 453
+  - 458
+  q: 遇到寒食的时候，我们就要用大黄附子泻心汤热食的时候，我们才会使用到成气汤
+  ents:
+  - formula.da_huang_fu_zi_tang
+  conf: 0.85
+  asr: 寒食=寒实；成气=承气
+- type: clause_interpretation
+  s: 第302条：少阴病得之二三日，麻黄附子甘草汤微发汗；二三日无里证故可汗。麻黄须先煮去沫。
+  seq:
+  - 460
+  - 470
+  q: 麻黄附子甘草汤为发，其汗，以二三日无理证，故为发汗
+  ents:
+  - clause.shl.302
+  - formula.ma_huang_fu_zi_gan_cao_tang
+  conf: 0.9
+  asr: 理证=里证
