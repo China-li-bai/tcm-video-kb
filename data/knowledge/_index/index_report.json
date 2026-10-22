@@ -2,9 +2,10 @@
  "videos": [
   "shl-001",
   "shl-002",
+  "shl-003",
   "shl-006"
  ],
- "n_entities": 533,
- "n_knowledge_points": 444,
- "n_chapters": 158
+ "n_entities": 634,
+ "n_knowledge_points": 499,
+ "n_chapters": 184
 }

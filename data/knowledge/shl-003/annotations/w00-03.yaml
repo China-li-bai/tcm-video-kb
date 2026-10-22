@@ -1,0 +1,248 @@
+video_id: shl-003
+window: w00-03
+seg_from: 0
+seg_to: 518
+annotator: llm_read
+chapters:
+- key: c01
+  title: 第120条附近 太阳当汗而吐：胃虚朝食暮吐
+  start_seq: 0
+  summary: 太阳病恶寒发热本当汗解，未得汗剂而自汗或因误吐/食坏致吐；吐后脾阳回则饥而不能食，示胃气未复。吐过致胃热伤则喜冷食、朝食暮吐为小逆。虚证朝食暮吐用吴茱萸汤（甚则姜改干姜），轻呕用大半夏汤；气逆至食道加旋覆代赭。并批温病防风通圣散「乱枪打鸟」。
+  clauses:
+  - 120
+  topics:
+  - formula.wu_zhu_yu_tang
+  - formula.da_ban_xia_tang
+  - syndrome.tai_yang_bing
+  - method.fa_han
+- key: c01.s1
+  parent: c01
+  title: 吴茱萸汤临床：胃酸反流与粉剂
+  start_seq: 42
+  summary: 虚寒胃酸嘈杂、胃下垂一剂可应；粉剂直达胃中往往优于汤/丸。人工甜食致胃酸宜改饮食。
+  topics:
+  - formula.wu_zhu_yu_tang
+- key: c02
+  title: 第122条 吐法代汗之害；脉数消谷与甘草干姜
+  start_seq: 127
+  summary: 吐太过津伤而大热用白虎加人参；脉数本当消谷却反不饥为吐法伤胃阳，仲景不主张以吐代汗。胃虚冷可甘草干姜汤，或转入吴茱萸汤。
+  clauses:
+  - 122
+  topics:
+  - method.fa_han
+  - formula.gan_cao_gan_jiang_tang
+  - formula.bai_hu_jia_ren_shen_tang
+- key: c03
+  title: 第123条 过经十余日欲吐胸痛：调胃承气
+  start_seq: 178
+  summary: 太阳过经心下温温欲吐、胸中痛、大便反溏、郁郁微烦，予调胃承气清十二指肠段；非柴胡呕。酒客呕用吴茱萸加苍术泽泻，或小柴胡加重半夏预解酒湿。
+  clauses:
+  - 123
+  topics:
+  - formula.diao_wei_cheng_qi_tang
+  - formula.xiao_chai_hu_tang
+- key: c04
+  title: 第124条 发狂少腹硬满：抵当汤
+  start_seq: 257
+  summary: 太阳表仍在而误下，脉沉结、少腹硬满、发狂（异于如狂），小便自利示血不在膀胱而在胞宫/腹腔，抵当汤（水蛭虻虫桃仁大黄）峻逐瘀血，血从大便出。
+  clauses:
+  - 124
+  topics:
+  - formula.di_dang_tang
+  - symptom.fa_kuang
+  - zangfu.pang_guang
+entities:
+- id: clause.shl.120
+  seq: 4
+  surface: 一百三十四太太病
+  corrected: 伤寒论第120条附近
+  note: 讲义134→宋本约120；吐后变证
+- id: formula.da_ban_xia_tang
+  seq: 36
+  surface: 大半虾汤
+  corrected: 大半夏汤
+- id: formula.wu_zhu_yu_tang
+  seq: 43
+  surface: 吴茱妤汤
+  corrected: 吴茱萸汤
+- id: herb.wu_zhu_yu
+  seq: 49
+  surface: 乌助语
+  corrected: 吴茱萸
+- id: formula.xuan_fu_dai_zhe_tang
+  seq: 63
+  surface: 玄浮花，带者是汤
+  corrected: 旋覆代赭汤
+- id: new.formula.防风通圣散
+  seq: 120
+  surface: 防风通圣散
+  corrected: 防风通圣散
+- id: clause.shl.122
+  seq: 129
+  surface: 一百三十六条
+  corrected: 伤寒论第122条
+  note: 讲义136→宋本122
+- id: formula.bai_hu_jia_ren_shen_tang
+  seq: 128
+  surface: 人参白虎汤
+  corrected: 白虎加人参汤
+- id: formula.gan_cao_gan_jiang_tang
+  seq: 169
+  surface: 甘草？干姜汤
+  corrected: 甘草干姜汤
+- id: clause.shl.123
+  seq: 178
+  surface: 一百三十七
+  corrected: 伤寒论第123条
+  note: 讲义137→宋本123
+- id: formula.diao_wei_cheng_qi_tang
+  seq: 186
+  surface: 调胃气，汤汤
+  corrected: 调胃承气汤
+- id: clause.shl.124
+  seq: 257
+  surface: 第一百三十八条
+  corrected: 伤寒论第124条
+  note: 讲义138→宋本124
+- id: formula.di_dang_tang
+  seq: 284
+  surface: 抵当汤
+  corrected: 抵当汤
+- id: herb.shui_zhi
+  seq: 305
+  surface: 水质
+  corrected: 水蛭
+- id: herb.meng_chong
+  seq: 318
+  surface: 盲虫
+  corrected: 虻虫
+- id: herb.tao_ren
+  seq: 326
+  surface: 桃仁
+  corrected: 桃仁
+- id: symptom.fa_kuang
+  seq: 260
+  surface: 发狂
+  corrected: 发狂
+kps:
+- type: clause_interpretation
+  s: 太阳病恶寒发热本当汗解；未得汗剂而吐，或吐后饥而不能食，为胃气未复。
+  seq:
+  - 4
+  - 12
+  q: 本来我们要汗汗剂，用麻麻当或桂子裆葛根汤都可以发汗
+  ents:
+  - syndrome.tai_yang_bing
+  - method.fa_han
+  conf: 0.85
+  asr: 麻麻当=麻黄汤；桂子裆=桂枝汤
+- type: pathomechanism
+  s: 吐后脾阳回则自觉饥，口不能食为胃气仍不足；吐太过伤肠胃则喜冷食、朝食暮吐，属小逆。
+  seq:
+  - 15
+  - 25
+  q: 脾呢主鸡，你有肚子感觉到饿，是脾脏的羊回头了
+  ents:
+  - zangfu.pi
+  - zangfu.wei
+  conf: 0.8
+  asr: 主鸡=主饥；羊=阳
+- type: formula_indication
+  s: 虚证朝食暮吐、胃酸嘈杂用吴茱萸汤，吐甚则生姜改干姜以温中；轻呕用大半夏汤（半夏人参白蜜）。
+  seq:
+  - 36
+  - 61
+  q: 一般来说处方的时候我们是用吴茱妤汤
+  ents:
+  - formula.wu_zhu_yu_tang
+  - formula.da_ban_xia_tang
+  conf: 0.9
+  asr: 吴茱妤=吴茱萸
+- type: clinical_tip
+  s: 气逆冲至食道可于吴茱萸汤上合旋覆代赭；胃下垂虚寒一剂吴茱萸常效。肠胃病粉剂往往优于汤剂。
+  seq:
+  - 62
+  - 105
+  q: 悬浮花带者是汤
+  ents:
+  - formula.xuan_fu_dai_zhe_tang
+  - formula.wu_zhu_yu_tang
+  conf: 0.85
+  asr: 悬浮花带者石=旋覆代赭
+- type: contraindication
+  s: 勿以吐法代汗解表：吐虽可偶得汗，易伤胃阳致脉数不饥；应直接用桂麻葛等发表。
+  seq:
+  - 154
+  - 166
+  q: 所以张仲景说尽量用发表的，不要用吐法来发汗
+  ents:
+  - person.zhang_zhong_jing
+  - method.fa_han
+  conf: 0.9
+- type: formula_indication
+  s: 吐伤胃虚冷、不能食，可用甘草干姜汤（草四姜二）复胃阳，必要时转入吴茱萸汤。
+  seq:
+  - 169
+  - 173
+  q: 我们用什么甘草
+  ents:
+  - formula.gan_cao_gan_jiang_tang
+  - herb.gan_jiang
+  - herb.gan_cao
+  conf: 0.85
+- type: clause_interpretation
+  s: 第123条：过经十余日心下温温欲吐、胸中痛、大便反溏，调胃承气汤清胃下十二指肠段；此呕非柴胡主症。
+  seq:
+  - 178
+  - 217
+  q: 与调胃承气汤这什么意思
+  ents:
+  - clause.shl.123
+  - formula.diao_wei_cheng_qi_tang
+  conf: 0.85
+- type: clinical_tip
+  s: 酒客呕恶可用吴茱萸加苍术泽泻利湿热；无柴胡证而须斗酒时，可于小柴胡加重半夏并加苍术泽泻使酒湿从小便出。
+  seq:
+  - 232
+  - 248
+  q: 吴茱妤汤就是很好的制九克的方子
+  ents:
+  - formula.wu_zhu_yu_tang
+  - formula.xiao_chai_hu_tang
+  - new.herb.苍术
+  conf: 0.8
+  asr: 九克=酒客
+- type: clause_interpretation
+  s: 第124条：表证误下后脉沉结、少腹硬满、其人发狂（已狂非如狂），小便自利，抵当汤峻逐下焦蓄血。
+  seq:
+  - 257
+  - 284
+  q: 其人发狂者
+  ents:
+  - clause.shl.124
+  - formula.di_dang_tang
+  - symptom.fa_kuang
+  conf: 0.9
+- type: formula_composition
+  s: 抵当汤用水蛭（须细小吸血者）、虻虫（牛虻非粪坑虫）、桃仁、大黄，动物药吸血化瘀极峻，瘀血多从大便下。
+  seq:
+  - 305
+  - 328
+  q: 水渍跟盲虫囊抽是吸血的啊
+  ents:
+  - formula.di_dang_tang
+  - herb.shui_zhi
+  - herb.meng_chong
+  - herb.tao_ren
+  conf: 0.85
+  asr: 水质/水渍=水蛭；盲虫=虻虫
+- type: diagnostic_rule
+  s: 少腹硬满而小便自利，示血不在膀胱而在胞宫或腹腔，方可用抵当；小便不利则先别膀胱。
+  seq:
+  - 276
+  - 283
+  q: 小便自闭者
+  ents:
+  - formula.di_dang_tang
+  - zangfu.pang_guang
+  conf: 0.85

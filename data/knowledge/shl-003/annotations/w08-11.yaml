@@ -1,0 +1,136 @@
+video_id: shl-003
+window: w08-11
+seg_from: 1059
+seg_to: 1572
+annotator: llm_read
+chapters:
+- key: c07
+  title: 第138条 小结胸：小陷胸汤
+  start_seq: 1064
+  summary: 小结胸病正在心下，按之则痛，脉浮滑，小陷胸汤（黄连、半夏、瓜蒌实）主之：中焦有热又有痰水。误下后遗症因人而异，或大或小陷胸。
+  clauses:
+  - 138
+  topics:
+  - formula.xiao_xian_xiong_tang
+  - herb.huang_lian
+  - herb.ban_xia
+- key: c08
+  title: 第141条 寒实结胸：三物小白散
+  start_seq: 1269
+  summary: 寒实结胸无热证，三物小白散（桔梗、巴豆、贝母）；肺癌寒痰堵肺、不能平卧而无外热者常用。巴豆六法之一，与大陷胸热实相对。
+  clauses:
+  - 141
+  topics:
+  - formula.san_wu_xiao_bai_san
+  - herb.ba_dou
+- key: c09
+  title: 第143–150条 妇人中风热入血室等
+  start_seq: 1498
+  summary: 强调有表证才用发表。妇人经期外感，邪入血室可见胸胁下满如结胸状而非结胸；柴胡类出入。并及金匮「如见鬼状」类方线索。
+  clauses:
+  - 143
+  - 144
+  - 145
+  topics:
+  - formula.xiao_chai_hu_tang
+  - syndrome.jie_xiong
+entities:
+- id: clause.shl.138
+  seq: 1064
+  surface: 小结，胸正症
+  corrected: 伤寒论第138条小结胸
+  note: 讲义→宋本138
+- id: formula.xiao_xian_xiong_tang
+  seq: 1094
+  surface: 小陷胸汤
+  corrected: 小陷胸汤
+- id: herb.huang_lian
+  seq: 1094
+  surface: 黄连
+  corrected: 黄连
+- id: herb.ban_xia
+  seq: 1094
+  surface: 半夏
+  corrected: 半夏
+- id: clause.shl.141
+  seq: 1275
+  surface: 三物小白散
+  corrected: 伤寒论第141条
+  note: 寒实结胸
+- id: formula.san_wu_xiao_bai_san
+  seq: 1275
+  surface: 三物小白散
+  corrected: 三物小白散
+- id: herb.ba_dou
+  seq: 1328
+  surface: 巴豆
+  corrected: 巴豆
+- id: herb.bei_mu
+  seq: 1330
+  surface: 贝母
+  corrected: 贝母
+- id: herb.jie_geng
+  seq: 1363
+  surface: 桔梗
+  corrected: 桔梗
+- id: clause.shl.143
+  seq: 1521
+  surface: 一百五十八条
+  corrected: 伤寒论相关妇人中风
+  note: 讲义158→宋本约144
+kps:
+- type: diagnostic_rule
+  s: 小结胸：正在心下，按之则痛、不按不痛；大结胸不按亦痛且硬满可下贯少腹。
+  seq:
+  - 1063
+  - 1064
+  q: 小结，胸正症在心下，暗之则痛
+  ents:
+  - formula.xiao_xian_xiong_tang
+  - formula.da_xian_xiong_tang
+  conf: 0.9
+- type: formula_composition
+  s: 小陷胸汤三味：黄连苦寒清热，半夏涤痰开结，瓜蒌实宽胸；中焦有热兼痰水互结。
+  seq:
+  - 1094
+  - 1108
+  q: 小陷胸汤里面像这黄连半夏用生半夏生热好
+  ents:
+  - formula.xiao_xian_xiong_tang
+  - herb.huang_lian
+  - herb.ban_xia
+  conf: 0.9
+- type: clause_interpretation
+  s: 寒实结胸无热象，用三物小白散；与大陷胸之热实相对。肺癌寒痰壅肺不能平卧而无外热者常投。
+  seq:
+  - 1269
+  - 1327
+  q: 只要确定病人是寒食节凶，就可以使用三五小白散
+  ents:
+  - clause.shl.141
+  - formula.san_wu_xiao_bai_san
+  - herb.ba_dou
+  conf: 0.85
+  asr: 寒食节凶=寒实结胸；三五=三物
+- type: formula_composition
+  s: 三物小白散：桔梗、巴豆、贝母；巴豆用法共六种，本方为寒实破结之一。
+  seq:
+  - 1328
+  - 1363
+  q: 巴豆一共有六种
+  ents:
+  - formula.san_wu_xiao_bai_san
+  - herb.ba_dou
+  - herb.bei_mu
+  - herb.jie_geng
+  conf: 0.85
+- type: clinical_tip
+  s: 发表必见表证；妇人经期外感邪入血室，胸胁满如结胸而非结胸，勿误投陷胸。
+  seq:
+  - 1521
+  - 1531
+  q: 造成胸邪好恶，邪下满如结胸状，但是这个不是结胸
+  ents:
+  - syndrome.jie_xiong
+  conf: 0.8
+  asr: 胸邪=血室

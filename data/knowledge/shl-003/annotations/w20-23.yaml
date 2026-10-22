@@ -1,0 +1,156 @@
+video_id: shl-003
+window: w20-23
+seg_from: 2607
+seg_to: 3097
+annotator: llm_read
+chapters:
+- key: c15
+  title: 第155条 附子泻心汤：痞而恶寒汗出
+  start_seq: 2657
+  summary: 胃热痞证又见表虚恶寒汗出，附子泻心汤：三黄仍沸汤浸，炮附子另煮汁兑入。表虚一律顾炮附子；汗与失血同类可同理用附。
+  clauses:
+  - 155
+  topics:
+  - formula.fu_zi_xie_xin_tang
+  - herb.fu_zi
+- key: c16
+  title: 第157条 生姜泻心汤：胃不和雷鸣下利
+  start_seq: 2721
+  summary: 汗解后胃中不和、心下痞硬、干噫食臭、胁下有水气、腹中雷鸣下利，生姜泻心汤。胃不适兼下利、嗳酸即可想到本方；热利另用葛根黄芩黄连汤。
+  clauses:
+  - 157
+  topics:
+  - formula.sheng_jiang_xie_xin_tang
+  - symptom.xia_li
+- key: c17
+  title: 第158条 甘草泻心汤：下利完谷心下痞硬
+  start_seq: 2818
+  summary: 误下后下利日数十行、谷不化、腹中雷鸣、心下痞硬而满、干呕心烦，为胃虚气结，甘草泻心汤重用甘草。虚实可以脉按之有无、苔厚薄辨。下利不止另有桂枝人参汤一路。
+  clauses:
+  - 158
+  topics:
+  - formula.gan_cao_xie_xin_tang
+  - formula.gui_zhi_ren_shen_tang
+entities:
+- id: formula.fu_zi_xie_xin_tang
+  seq: 2657
+  surface: 附子泻心汤
+  corrected: 附子泻心汤
+- id: clause.shl.155
+  seq: 2657
+  surface: 附子泻心汤
+  corrected: 伤寒论第155条
+- id: herb.fu_zi
+  seq: 2632
+  surface: 泡附子
+  corrected: 炮附子
+- id: clause.shl.157
+  seq: 2721
+  surface: 一百七十二页
+  corrected: 伤寒论第157条
+  note: 讲义172→宋本157
+- id: formula.sheng_jiang_xie_xin_tang
+  seq: 2722
+  surface: 生姜泻心汤
+  corrected: 生姜泻心汤
+- id: new.formula.葛根黄芩黄连汤
+  seq: 2772
+  surface: 葛清健汤
+  corrected: 葛根黄芩黄连汤
+- id: clause.shl.158
+  seq: 2818
+  surface: 第一百七十三调变
+  corrected: 伤寒论第158条
+  note: 讲义173→宋本158
+- id: formula.gan_cao_xie_xin_tang
+  seq: 2836
+  surface: 甘草泻心汤
+  corrected: 甘草泻心汤
+- id: formula.gui_zhi_ren_shen_tang
+  seq: 2890
+  surface: 桂枝，人参汤
+  corrected: 桂枝人参汤
+- id: clause.shl.161
+  seq: 3018
+  surface: 第一百七十六条
+  corrected: 伤寒论第161条附近
+  note: 悬饮/十枣线索；讲义176
+- id: formula.shi_zao_tang
+  seq: 3018
+  surface: 悬腹发带者湿悬腹带者失汤
+  corrected: 十枣汤
+  uncertain: true
+kps:
+- type: formula_indication
+  s: 附子泻心汤：心下痞而兼表虚恶寒汗出；三黄沸汤浸，炮附子另煎兑服。
+  seq:
+  - 2657
+  - 2695
+  q: 会有附子泻心汤，一定是病人，除了胃有问题以外兼有表虚
+  ents:
+  - formula.fu_zi_xie_xin_tang
+  - herb.fu_zi
+  conf: 0.9
+- type: herb_property
+  s: 表虚、大汗、失血，仲景多用炮附子顾表阳；心阳欲绝方用生附子，二者不可混。
+  seq:
+  - 2632
+  - 2643
+  q: 我们在有表虚出现的时候，一律使用什泡附子
+  ents:
+  - herb.fu_zi
+  conf: 0.85
+  asr: 什泡=炮
+- type: clause_interpretation
+  s: 第157条：汗后胃不和、心下痞硬、干噫食臭、胁下有水、腹中雷鸣下利，生姜泻心汤。
+  seq:
+  - 2721
+  - 2724
+  q: 负中雷鸣下利者生姜泻心汤
+  ents:
+  - clause.shl.157
+  - formula.sheng_jiang_xie_xin_tang
+  conf: 0.9
+  asr: 负中=腹中
+- type: clinical_tip
+  s: 胃中不适兼下利嗳酸→生姜泻心；热利完谷→葛根黄芩黄连汤。可闻食臭提示胃中停水腐食。
+  seq:
+  - 2770
+  - 2772
+  q: 胃里不不服，伴随着下粒
+  ents:
+  - formula.sheng_jiang_xie_xin_tang
+  - new.formula.葛根黄芩黄连汤
+  conf: 0.85
+- type: clause_interpretation
+  s: 第158条：误下后下利日数十行、完谷不化、雷鸣、心下痞硬满、干呕心烦，甘草泻心汤重用甘草补胃虚气结。
+  seq:
+  - 2818
+  - 2846
+  q: 重用甘草中用甘草的时候就是甘草泻心汤
+  ents:
+  - clause.shl.158
+  - formula.gan_cao_xie_xin_tang
+  conf: 0.9
+- type: diagnostic_rule
+  s: 泻心证虚实：实证脉重按有力、苔厚黄；虚证脉轻按即无、苔薄而微黄。虚痞误下则加重。
+  seq:
+  - 2825
+  - 2835
+  q: 虚实的辩证很重要
+  ents:
+  - formula.gan_cao_xie_xin_tang
+  conf: 0.85
+- type: formula_indication
+  s: 五泻心皆含半夏黄芩黄连；入生姜为生姜泻心，重甘草为甘草泻心，兼表虚加附子，痞而关浮用大黄黄连泻心。
+  seq:
+  - 2846
+  - 2847
+  q: 入生姜的时候呢，生姜泻心汤好，要附子的时候半价的时候啊半价泻心汤
+  ents:
+  - formula.sheng_jiang_xie_xin_tang
+  - formula.gan_cao_xie_xin_tang
+  - formula.fu_zi_xie_xin_tang
+  - formula.ban_xia_xie_xin_tang
+  conf: 0.9
+  asr: 半价=半夏

@@ -1,0 +1,83 @@
+video_id: shl-003
+window: w32-33
+seg_from: 4093
+seg_to: 4347
+annotator: llm_read
+chapters:
+- key: c24
+  title: 炙甘草汤（复脉汤）与脏结方总结
+  start_seq: 4182
+  summary: 炙甘草汤又名复脉汤：桂枝通血达四肢复胸阳，麻子仁微利；脉结代不正皆可用。脏结方用柴胡、白术、茯苓等量，生附与炮附并用：生附救心阳欲绝、温血脉，炮附顾表虚大汗、通三焦；寒湿可夹砂法。临床多用于癌症等虚寒结证。
+  clauses:
+  - 167
+  topics:
+  - formula.zhi_gan_cao_tang
+  - syndrome.zang_jie
+  - herb.fu_zi
+entities:
+- id: formula.zhi_gan_cao_tang
+  seq: 4192
+  surface: 遮甘草汤
+  corrected: 炙甘草汤
+- id: new.formula.复脉汤
+  seq: 4198
+  surface: 覆脉汤
+  corrected: 复脉汤
+- id: syndrome.zang_jie
+  seq: 4281
+  surface: 藏结
+  corrected: 脏结
+- id: herb.chai_hu
+  seq: 4283
+  surface: 柴胡
+  corrected: 柴胡
+- id: herb.bai_zhu
+  seq: 4283
+  surface: 白术
+  corrected: 白术
+- id: herb.fu_ling
+  seq: 4283
+  surface: 茯苓
+  corrected: 茯苓
+- id: herb.fu_zi
+  seq: 4283
+  surface: 生腹跟泡腹
+  corrected: 生附子与炮附子
+- id: clause.shl.167
+  seq: 4281
+  surface: 藏结方
+  corrected: 伤寒论第167条附近
+  note: 脏结无阳证
+kps:
+- type: formula_composition
+  s: 炙甘草汤（复脉汤）：补胸阳与津液，桂枝送血达四末，麻子仁微通肠；脉结代或脉不正皆可。
+  seq:
+  - 4182
+  - 4200
+  q: 这个孜甘草汤又有一个名称叫做覆脉汤
+  ents:
+  - formula.zhi_gan_cao_tang
+  - new.formula.复脉汤
+  conf: 0.9
+  asr: 孜/遮=炙；覆=复
+- type: formula_indication
+  s: 脏结方：柴胡、白术、茯苓等量，生附与炮附并用；多用于虚寒结证、癌症等临床扩展。
+  seq:
+  - 4281
+  - 4345
+  q: 我们做后面出了一个藏结方
+  ents:
+  - syndrome.zang_jie
+  - herb.fu_zi
+  conf: 0.8
+  asr: 藏=脏
+- type: herb_property
+  s: 生附子色黑象心，救心阳欲绝、温血脉经络；炮附子顾表虚大汗、温肾阳、通三焦。两附并用则寒湿夹除。
+  seq:
+  - 4294
+  - 4316
+  q: 参附子呢去里寒好生用在的时机呢是我们发现到病人的心阳不足
+  ents:
+  - herb.fu_zi
+  conf: 0.85
+  asr: 参附=生附

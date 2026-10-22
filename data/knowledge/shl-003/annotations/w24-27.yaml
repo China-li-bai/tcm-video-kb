@@ -1,0 +1,146 @@
+video_id: shl-003
+window: w24-27
+seg_from: 3098
+seg_to: 3701
+annotator: llm_read
+chapters:
+- key: c18
+  title: 第163条 桂枝人参汤：表未解而心下痞
+  start_seq: 3129
+  summary: 外证未除而数下之，协热下利、心下痞硬、表里不解，桂枝人参汤（理中加桂枝）：人参、干姜、白术、甘草、桂枝。与甘草泻心差在偏寒利、表证仍在。
+  clauses:
+  - 163
+  topics:
+  - formula.gui_zhi_ren_shen_tang
+  - formula.li_zhong_wan
+- key: c19
+  title: 白虎汤与白虎加人参汤
+  start_seq: 3376
+  summary: 吐下后表里俱热、大渴汗出恶风、舌上干燥，白虎汤；口燥渴心烦背微恶寒或渴欲饮水无表证，白虎加人参汤。石膏须重用并布包；有表证勿独用白虎。血糖高低见燥渴壮热皆可思白虎证。
+  clauses:
+  - 168
+  - 169
+  - 170
+  topics:
+  - formula.bai_hu_tang
+  - formula.bai_hu_jia_ren_shen_tang
+  - herb.shi_gao
+- key: c20
+  title: 第165条 大柴胡汤
+  start_seq: 3462
+  summary: 发热汗出不解、心下痞硬呕而下利，大柴胡汤：小柴胡证兼大便不利即加大量大黄（燥屎可加芒硝）。
+  clauses:
+  - 165
+  topics:
+  - formula.da_chai_hu_tang
+entities:
+- id: clause.shl.163
+  seq: 3129
+  surface: 一百七十八条
+  corrected: 伤寒论第163条
+  note: 讲义178→宋本163
+- id: formula.gui_zhi_ren_shen_tang
+  seq: 3129
+  surface: 桂枝人参汤
+  corrected: 桂枝人参汤
+- id: formula.li_zhong_wan
+  seq: 3151
+  surface: 人参汤
+  corrected: 理中汤/人参汤
+- id: clause.shl.168
+  seq: 3376
+  surface: 若吐若下后
+  corrected: 伤寒论第168条附近
+- id: formula.bai_hu_tang
+  seq: 3390
+  surface: 白虎汤
+  corrected: 白虎汤
+- id: herb.shi_gao
+  seq: 3427
+  surface: 石膏
+  corrected: 石膏
+- id: formula.bai_hu_jia_ren_shen_tang
+  seq: 3438
+  surface: 白虎家参汤
+  corrected: 白虎加人参汤
+- id: clause.shl.165
+  seq: 3462
+  surface: 一百八十条
+  corrected: 伤寒论第165条
+  note: 讲义180→宋本165
+- id: formula.da_chai_hu_tang
+  seq: 3463
+  surface: 大柴胡汤
+  corrected: 大柴胡汤
+- id: clause.shl.169
+  seq: 3474
+  surface: 一八三寒，一八四
+  corrected: 伤寒论第169–170条附近
+  note: 讲义183–184→白虎加人参
+- id: new.herb.mang_xiao
+  seq: 3468
+  surface: 芒
+  corrected: 芒硝
+kps:
+- type: clause_interpretation
+  s: 第163条：外证未除数下之，协热下利、心下痞硬、表里不解，桂枝人参汤（理中加桂枝）。
+  seq:
+  - 3129
+  - 3151
+  q: 外症未除，而术下之随邪热，下力还有力，下附子心下脾，便表里不节者，桂枝人参汤
+  ents:
+  - clause.shl.163
+  - formula.gui_zhi_ren_shen_tang
+  conf: 0.85
+  asr: 术下=数下；脾=痞
+- type: formula_indication
+  s: 表证尚在又心下痞硬下利：五泻心之外，偏寒虚用桂枝人参汤；纯热痞用大黄黄连泻心。
+  seq:
+  - 3221
+  - 3235
+  q: 还有表症的时候不要去治脾脾有没有好，有五种泻心汤嘛
+  ents:
+  - formula.gui_zhi_ren_shen_tang
+  - formula.da_huang_huang_lian_xie_xin_tang
+  conf: 0.8
+- type: clause_interpretation
+  s: 吐下后七八日不解、热结在里、表里俱热、汗出恶风、大渴舌燥，白虎汤证。
+  seq:
+  - 3376
+  - 3403
+  q: 表里具热食汗恶风，大口而反折，上干燥
+  ents:
+  - formula.bai_hu_tang
+  - clause.shl.168
+  conf: 0.85
+  asr: 大口=大渴；反折=舌
+- type: formula_composition
+  s: 白虎汤重用石膏，粳米调和；石膏须布包煎。有表证时勿独用白虎，可与桂枝合方表里双解。
+  seq:
+  - 3427
+  - 3509
+  q: 因为是白虎，所以我们就石膏石膏要重用
+  ents:
+  - formula.bai_hu_tang
+  - herb.shi_gao
+  conf: 0.9
+- type: clinical_tip
+  s: 白虎证核心是燥渴壮热：血糖高低、冷汗发抖等凡见此象皆可思白虎/加人参；无表证渴欲饮水用白虎加人参。
+  seq:
+  - 3441
+  - 3494
+  q: 渴欲饮水，无表症者，白虎加人参汤
+  ents:
+  - formula.bai_hu_jia_ren_shen_tang
+  - formula.bai_hu_tang
+  conf: 0.85
+- type: formula_indication
+  s: 大柴胡汤：小柴胡证兼大便不利即可用；燥屎结硬可加芒硝。
+  seq:
+  - 3465
+  - 3470
+  q: 有小柴胡汤症，同时兼有一点便秘的象
+  ents:
+  - formula.da_chai_hu_tang
+  - formula.xiao_chai_hu_tang
+  conf: 0.9

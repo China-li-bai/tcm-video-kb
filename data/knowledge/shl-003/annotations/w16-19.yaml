@@ -1,0 +1,91 @@
+video_id: shl-003
+window: w16-19
+seg_from: 2100
+seg_to: 2606
+annotator: llm_read
+chapters:
+- key: c13
+  title: 半夏泻心汤：误下后心下痞
+  start_seq: 2120
+  summary: 本应解表而误下，邪陷肠胃成痞，半夏泻心汤主之。方中半夏、干姜、黄芩、黄连、人参、草、枣；半夏重在去胃周停水。小柴胡疏网膜三焦，泻心则治胃痞。
+  clauses:
+  - 149
+  topics:
+  - formula.ban_xia_xie_xin_tang
+  - herb.ban_xia
+  - herb.huang_lian
+- key: c14
+  title: 第154条 心下痞按之濡：大黄黄连泻心汤
+  start_seq: 2514
+  summary: 脉关浮、心下痞按之濡，关上属胃热，大黄黄连泻心汤；「心」在此多指胃。大黄宜沸汤浸泡取气薄走上部，勿久煎专攻下。
+  clauses:
+  - 154
+  topics:
+  - formula.da_huang_huang_lian_xie_xin_tang
+  - pulse.fu
+entities:
+- id: formula.ban_xia_xie_xin_tang
+  seq: 2183
+  surface: 半夏泻心汤
+  corrected: 半夏泻心汤
+- id: herb.huang_qin
+  seq: 2183
+  surface: 黄形
+  corrected: 黄芩
+- id: herb.huang_lian
+  seq: 2183
+  surface: 黄连
+  corrected: 黄连
+- id: clause.shl.154
+  seq: 2514
+  surface: 大黄、黄连、泻心汤
+  corrected: 伤寒论第154条
+  note: matcher@2513
+- id: formula.da_huang_huang_lian_xie_xin_tang
+  seq: 2514
+  surface: 大黄、黄连、泻心汤
+  corrected: 大黄黄连泻心汤
+kps:
+- type: formula_composition
+  s: 半夏泻心汤以半夏、黄芩、黄连为主（芩三连一），半夏去胃周停水；误下后邪入肠胃成痞用之。
+  seq:
+  - 2183
+  - 2198
+  q: 半夏泻心汤呢好里面的主要半夏、黄形、黄连
+  ents:
+  - formula.ban_xia_xie_xin_tang
+  - herb.ban_xia
+  - herb.huang_lian
+  conf: 0.9
+  asr: 黄形=黄芩
+- type: concept_definition
+  s: 读伤寒「心下」多指胃；泻心汤实泻胃热/痞，勿拘泥心脏。
+  seq:
+  - 2522
+  - 2524
+  q: 你看到心就把它当当成胃，所以心下就胃下
+  ents:
+  - formula.da_huang_huang_lian_xie_xin_tang
+  - zangfu.wei
+  conf: 0.9
+- type: formula_composition
+  s: 大黄黄连泻心汤：大黄二钱、黄连一钱量级；大黄用沸汤浸泡取薄气以上走，久煎则专攻大便。
+  seq:
+  - 2524
+  - 2625
+  q: 大你如果是泡制的泡过水吃了，不会不不不会清的哦，不是大大便哦
+  ents:
+  - formula.da_huang_huang_lian_xie_xin_tang
+  - herb.da_huang
+  conf: 0.85
+- type: diagnostic_rule
+  s: 关脉浮示中焦偏热，合心下痞按之濡，为大黄黄连泻心指征；舌苔黄可助诊。
+  seq:
+  - 2514
+  - 2537
+  q: 其脉关上浮者、大黄、黄连、泻心汤组织
+  ents:
+  - clause.shl.154
+  - pulse.fu
+  - formula.da_huang_huang_lian_xie_xin_tang
+  conf: 0.85

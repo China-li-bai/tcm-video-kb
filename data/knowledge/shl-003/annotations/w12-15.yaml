@@ -1,0 +1,138 @@
+video_id: shl-003
+window: w12-15
+seg_from: 1573
+seg_to: 2099
+annotator: llm_read
+chapters:
+- key: c10
+  title: 妇人热入血室与柴胡桂枝汤
+  start_seq: 1578
+  summary: 经期外感，中风有汗热入血室可见如见鬼状，不必恐慌，小柴胡和解为主，勿再麻桂葛。表半入里用柴胡桂枝汤（两方等量合方），重用柴胡可助桂枝得汗；三焦通女子胞，子宫肿瘤等少阳证亦常以此出入。
+  clauses:
+  - 143
+  - 144
+  - 146
+  topics:
+  - formula.xiao_chai_hu_tang
+  - formula.chai_hu_gui_zhi_tang
+- key: c11
+  title: 柴胡桂枝干姜汤：劳损黏汗
+  start_seq: 1943
+  summary: 服柴胡桂枝干姜得黏汗，示血分有湿得解；临床视为治劳证第一方线索。往来寒热即须用柴胡。
+  clauses:
+  - 147
+  topics:
+  - formula.chai_hu_gui_zhi_gan_jiang_tang
+- key: c12
+  title: 第149条 心下满而痛为结胸；满而不痛为痞
+  start_seq: 2072
+  summary: 伤寒五六日呕而发热，柴胡证仍在者可与柴胡；心下满而硬痛为大结胸用大陷胸，满而不痛为痞用半夏泻心。复述陷胸丸/汤痛向上/下之别。
+  clauses:
+  - 149
+  topics:
+  - formula.ban_xia_xie_xin_tang
+  - formula.da_xian_xiong_tang
+  - syndrome.jie_xiong
+entities:
+- id: formula.xiao_chai_hu_tang
+  seq: 1597
+  surface: 小柴，汤汤
+  corrected: 小柴胡汤
+- id: formula.chai_hu_gui_zhi_tang
+  seq: 1621
+  surface: 柴胡桂枝汤
+  corrected: 柴胡桂枝汤
+- id: clause.shl.146
+  seq: 1621
+  surface: 这个条变
+  corrected: 伤寒论第146条附近
+  note: 柴胡桂枝汤
+- id: formula.chai_hu_gui_zhi_gan_jiang_tang
+  seq: 1943
+  surface: 柴胡桂枝干姜汤
+  corrected: 柴胡桂枝干姜汤
+- id: clause.shl.149
+  seq: 2072
+  surface: 一百六十四条
+  corrected: 伤寒论第149条
+  note: 讲义164→宋本149
+- id: formula.ban_xia_xie_xin_tang
+  seq: 2079
+  surface: 半夏泻心汤
+  corrected: 半夏泻心汤
+- id: formula.da_xian_xiong_tang
+  seq: 2079
+  surface: 大陷胸汤
+  corrected: 大陷胸汤
+kps:
+- type: clinical_tip
+  s: 女子经期感冒：一问经期即可径开小柴胡和解，勿再纠结麻桂葛；热入血室如见鬼状多自解，表邪下陷所致。
+  seq:
+  - 1596
+  - 1597
+  q: 女孩子只要那个一感冒，你问他有没有月经，有就已经结束了
+  ents:
+  - formula.xiao_chai_hu_tang
+  conf: 0.9
+- type: formula_composition
+  s: 柴胡桂枝汤：小柴胡与桂枝汤两方等量合方；表已不在则不用麻黄。重用柴胡可推桂枝得汗，因柴胡在半表半里。
+  seq:
+  - 1633
+  - 1661
+  q: 他把小柴胡汤跟桂枝汤两方并在一起
+  ents:
+  - formula.chai_hu_gui_zhi_tang
+  - formula.xiao_chai_hu_tang
+  - formula.gui_zhi_tang
+  conf: 0.9
+- type: concept_definition
+  s: 三焦通脐下之腑：女子胞、脑、骨髓、心包、胆等皆属三焦网络；故少阳和解可广泛加减。
+  seq:
+  - 1668
+  - 1669
+  q: 包括女人的女子胞、子宫、卵巢，包括我们的脑
+  ents:
+  - zangfu.san_jiao
+  - formula.xiao_chai_hu_tang
+  conf: 0.8
+- type: diagnostic_rule
+  s: 但见往来寒热即须用柴胡；汗出而往来寒热者柴胡证更明确。
+  seq:
+  - 1841
+  - 1843
+  q: 只要有往来寒热，就柴胡一定要用
+  ents:
+  - herb.chai_hu
+  - formula.xiao_chai_hu_tang
+  conf: 0.9
+- type: clinical_tip
+  s: 柴胡桂枝干姜汤后见黏汗，示血分湿邪得解；临床可作为劳证第一方思路。
+  seq:
+  - 1943
+  - 1957
+  q: 实际上是张仲景治劳症的第一方
+  ents:
+  - formula.chai_hu_gui_zhi_gan_jiang_tang
+  conf: 0.8
+- type: clause_interpretation
+  s: 第149条：伤寒呕而发热，柴胡证仍在仍可与柴胡；心下满而硬痛为结胸用大陷胸，满而不痛为痞用半夏泻心。
+  seq:
+  - 2072
+  - 2079
+  q: 满而不痛者为脾，好是财红不中月以半夏泻心汤
+  ents:
+  - clause.shl.149
+  - formula.ban_xia_xie_xin_tang
+  - formula.da_xian_xiong_tang
+  conf: 0.85
+  asr: 脾=痞
+- type: diagnostic_rule
+  s: 结胸痛往上走用大陷胸丸，痛往下贯用大陷胸汤；痞则满而不痛。
+  seq:
+  - 2130
+  - 2131
+  q: 痛往上走的时候，诸位只要问他痛往上走，大陷胸丸
+  ents:
+  - formula.da_xian_xiong_wan
+  - formula.da_xian_xiong_tang
+  conf: 0.9

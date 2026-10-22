@@ -1,0 +1,165 @@
+video_id: shl-003
+window: w28-31
+seg_from: 3702
+seg_to: 4092
+annotator: llm_read
+chapters:
+- key: c21
+  title: 第174–175条 风湿三方：桂枝附子、白术附子、甘草附子
+  start_seq: 3707
+  summary: 伤寒八九日风湿相搏、身体疼烦不能转侧、脉浮虚而涩：桂枝附子汤（桂枝汤去芍加炮附）。若其人大便硬小便自利，去桂加白术。骨节疼烦、汗出短气、恶风不欲去衣、微肿，甘草附子汤——经方治痛风第一方。泡附子走表去寒湿；生附子另有用途。
+  clauses:
+  - 174
+  - 175
+  topics:
+  - formula.gui_zhi_fu_zi_tang
+  - formula.bai_zhu_fu_zi_tang
+  - formula.gan_cao_fu_zi_tang
+  - herb.fu_zi
+- key: c22
+  title: 第176条 表有热里有寒？当为热证白虎
+  start_seq: 3949
+  summary: 脉浮滑为表有热里有寒？讲者强调临床所见纯热用白虎；石膏须一两以上且布包。
+  clauses:
+  - 176
+  topics:
+  - formula.bai_hu_tang
+  - herb.shi_gao
+- key: c23
+  title: 第177–178条 炙甘草汤：脉结代心动悸
+  start_seq: 3982
+  summary: 伤寒脉结代、心动悸，炙甘草汤（又名复脉汤）。结代属阴脉；见美人而悸者非本证。补津液养心脉，麻子仁微通肠。
+  clauses:
+  - 177
+  - 178
+  topics:
+  - formula.zhi_gan_cao_tang
+  - pulse.jie
+  - pulse.dai
+entities:
+- id: clause.shl.174
+  seq: 3708
+  surface: 第一百八十九条
+  corrected: 伤寒论第174条
+  note: 讲义189→宋本174
+- id: formula.gui_zhi_fu_zi_tang
+  seq: 3712
+  surface: 桂枝附子汤
+  corrected: 桂枝附子汤
+- id: formula.bai_zhu_fu_zi_tang
+  seq: 3712
+  surface: 桂枝附子去桂枝加白术汤
+  corrected: 白术附子汤
+- id: herb.fu_zi
+  seq: 3715
+  surface: 泡附子
+  corrected: 炮附子
+- id: clause.shl.175
+  seq: 3866
+  surface: 第一百九十条
+  corrected: 伤寒论第175条
+  note: 讲义190→宋本175
+- id: formula.gan_cao_fu_zi_tang
+  seq: 3876
+  surface: 甘草附子汤
+  corrected: 甘草附子汤
+- id: new.disease.痛风
+  seq: 3866
+  surface: 痛风
+  corrected: 痛风
+- id: clause.shl.176
+  seq: 3949
+  surface: 浮华是表有寒里有热，白虎汤
+  corrected: 伤寒论第176条
+  note: 脉浮滑
+- id: formula.bai_hu_tang
+  seq: 3949
+  surface: 白虎汤
+  corrected: 白虎汤
+- id: clause.shl.177
+  seq: 3982
+  surface: 一百九十二
+  corrected: 伤寒论第177条
+  note: 讲义192→宋本177
+- id: formula.zhi_gan_cao_tang
+  seq: 3984
+  surface: 治甘草汤
+  corrected: 炙甘草汤
+- id: pulse.jie
+  seq: 3982
+  surface: 脉结
+  corrected: 结脉
+- id: pulse.dai
+  seq: 3982
+  surface: 脉带
+  corrected: 代脉
+kps:
+- type: clause_interpretation
+  s: 第174条：伤寒八九日风湿相搏、身体疼烦不能转侧、脉浮虚而涩，桂枝附子汤；大便硬小便自利者去桂加白术。
+  seq:
+  - 3708
+  - 3712
+  q: 涩就是湿的一个脉，就是桂枝附子汤主之若其人大便堂小便治理的桂枝附子去桂枝加白术汤
+  ents:
+  - clause.shl.174
+  - formula.gui_zhi_fu_zi_tang
+  - formula.bai_zhu_fu_zi_tang
+  conf: 0.85
+  asr: 大便堂=大便硬；治理=自利
+- type: formula_composition
+  s: 桂枝附子汤：桂枝汤去芍药加炮附子；风湿游走痛重用炮附。白术附子则去桂加术，湿偏内停。
+  seq:
+  - 3715
+  - 3817
+  q: 他少了一个白勺，没有把白烧拿掉，变成这个泡附子，就是桂枝附子汤
+  ents:
+  - formula.gui_zhi_fu_zi_tang
+  - herb.fu_zi
+  - herb.bai_zhu
+  conf: 0.9
+  asr: 白勺/白烧=白芍
+- type: formula_indication
+  s: 甘草附子汤：经方最有名治痛风方，一剂知；炮附两枚、桂枝白术甘草。痛风红肿痛不必拘尿酸，临床以痛止为验。
+  seq:
+  - 3876
+  - 3892
+  q: 甘草附子汤是精方里面最有名的治痛风的处方一剂就知
+  ents:
+  - formula.gan_cao_fu_zi_tang
+  - new.disease.痛风
+  conf: 0.9
+  asr: 精方=经方
+- type: herb_property
+  s: 肌表寒湿用炮附子；心肾阳虚欲绝用生附子。二者色形功用不同，不可互代。
+  seq:
+  - 3855
+  - 3856
+  q: 泡芙子泡附子子功能生附子有生附子的功能，两个不一样
+  ents:
+  - herb.fu_zi
+  conf: 0.9
+- type: clause_interpretation
+  s: 脉浮滑当属热证，白虎汤主之；石膏须重用（一两以上）并布包。
+  seq:
+  - 3949
+  - 3967
+  q: 浮华是表有寒里有热，白虎汤组织
+  ents:
+  - clause.shl.176
+  - formula.bai_hu_tang
+  - herb.shi_gao
+  conf: 0.8
+  asr: 浮华=浮滑
+- type: clause_interpretation
+  s: 第177条：伤寒脉结代、心动悸，炙甘草汤（复脉汤）；必见结代脉，非情志惊悸。
+  seq:
+  - 3982
+  - 3997
+  q: 伤寒脉结带好动、悸、心动剂，我们用治甘草汤
+  ents:
+  - clause.shl.177
+  - formula.zhi_gan_cao_tang
+  - pulse.jie
+  - pulse.dai
+  conf: 0.9
+  asr: 带=代；治=炙

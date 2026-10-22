@@ -1,0 +1,146 @@
+video_id: shl-003
+window: w04-07
+seg_from: 519
+seg_to: 1058
+annotator: llm_read
+chapters:
+- key: c05
+  title: 第126–129条 脏结与结胸之辨
+  start_seq: 575
+  summary: 脏结与结胸易混：脏结为寒湿久积如黏痰浆糊，成于缓；结胸为热实或水热互结较急。脏结宜祛寒湿从小便出；结胸用陷胸类。心下痞有五种泻心汤，与结胸治法不同。
+  clauses:
+  - 126
+  - 128
+  - 129
+  topics:
+  - syndrome.jie_xiong
+  - formula.da_xian_xiong_tang
+- key: c06
+  title: 第131–135条 大陷胸丸/汤：热实结胸
+  start_seq: 729
+  summary: 结胸项亦强如柔痉状，下之宜大陷胸。丸证痛偏上（胸背龟背类），汤证更峻（大黄芒硝甘遂），痛可自心下贯至少腹；肠梗阻、热痰结胸、水结胸胁按之剧痛皆属。误用麻黄证而攻下可成热实结胸。
+  clauses:
+  - 131
+  - 134
+  - 135
+  topics:
+  - formula.da_xian_xiong_tang
+  - formula.da_xian_xiong_wan
+  - herb.gan_sui
+- key: c06.s1
+  parent: c06
+  title: 大陷胸汤 vs 丸：痛向上/向下
+  start_seq: 900
+  summary: 痛往上走用大陷胸丸，痛往下贯腹用大陷胸汤；舌黄有热为热实。无大热而水结胸胁者亦可陷胸。
+  topics:
+  - formula.da_xian_xiong_tang
+  - formula.da_xian_xiong_wan
+entities:
+- id: clause.shl.126
+  seq: 575
+  surface: 一百四十条呢，脏结
+  corrected: 伤寒论第126条附近脏结
+  note: 讲义140→宋本约126
+- id: new.concept.脏结
+  seq: 586
+  surface: 脏结
+  corrected: 脏结
+- id: syndrome.jie_xiong
+  seq: 591
+  surface: 结胸
+  corrected: 结胸
+- id: clause.shl.131
+  seq: 729
+  surface: 一百四十五条呢结胸
+  corrected: 伤寒论第131条
+  note: 讲义145→宋本131
+- id: formula.da_xian_xiong_tang
+  seq: 729
+  surface: 大陷胸汤
+  corrected: 大陷胸汤
+- id: formula.da_xian_xiong_wan
+  seq: 737
+  surface: 大陷胸丸
+  corrected: 大陷胸丸
+- id: herb.gan_sui
+  seq: 772
+  surface: 甘碎
+  corrected: 甘遂
+- id: new.herb.芒硝
+  seq: 772
+  surface: 芒硝
+  corrected: 芒硝
+- id: herb.da_huang
+  seq: 772
+  surface: 大黄
+  corrected: 大黄
+- id: clause.shl.135
+  seq: 987
+  surface: 大陷胸汤主
+  corrected: 伤寒论第135条
+  note: 心下至少腹硬满
+kps:
+- type: diagnostic_rule
+  s: 脏结与结胸：脏结寒湿缓积、痰黏如浆；结胸多热实或水热互结较急。二者脉证易混，须合病程与寒热辨。
+  seq:
+  - 622
+  - 646
+  q: 病有结胸，有胀结，这个两个症状如何
+  ents:
+  - syndrome.jie_xiong
+  - new.concept.脏结
+  conf: 0.8
+  asr: 胀结=脏结
+- type: treatment_principle
+  s: 心下痞用五种泻心汤；结胸用陷胸类；脏结则祛寒湿从小便出——三者病位治法不同，不可混用。
+  seq:
+  - 702
+  - 728
+  q: 我们有五种泻心汤，都来自品
+  ents:
+  - formula.ban_xia_xie_xin_tang
+  - formula.da_xian_xiong_tang
+  conf: 0.85
+- type: clause_interpretation
+  s: 结胸项亦强如柔痉状者，下之宜大陷胸；大陷胸为太阳篇最峻之剂，远过桂麻葛。
+  seq:
+  - 729
+  - 731
+  q: 结胸者相意，强如柔颈状，下肢则合大陷胸汤汤
+  ents:
+  - clause.shl.131
+  - formula.da_xian_xiong_tang
+  conf: 0.9
+  asr: 相意强如柔颈=项亦强如柔痉；下肢=下之
+- type: formula_composition
+  s: 大陷胸汤：大黄、芒硝、甘遂，攻坚破结；丸剂力势较缓、偏治痛势向上者。
+  seq:
+  - 772
+  - 903
+  q: 大陷胸汤里面的时候我们会用到甘碎啊
+  ents:
+  - formula.da_xian_xiong_tang
+  - herb.gan_sui
+  - herb.da_huang
+  conf: 0.9
+  asr: 甘碎=甘遂
+- type: clinical_tip
+  s: 肠梗阻、肺痈痰热结胸、胸胁水结拒按，皆可按热实结胸用大陷胸，剂量按比例；小儿心下硬满亦然。
+  seq:
+  - 939
+  - 978
+  q: 肠梗阻都是看到我都是大陷胸汤症
+  ents:
+  - formula.da_xian_xiong_tang
+  conf: 0.85
+- type: pathomechanism
+  s: 热实结胸多因当汗而误下，表邪内陷与痰水互结于胸膈；舌黄有热可证。
+  seq:
+  - 943
+  - 947
+  q: 大陷胸汤症呢是用在饿死节凶啊
+  ents:
+  - formula.da_xian_xiong_tang
+  - syndrome.jie_xiong
+  conf: 0.8
+  asr: 饿死节凶=热实结胸
