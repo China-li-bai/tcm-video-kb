@@ -1,0 +1,431 @@
+video_id: shl-001
+window: w24-27
+seg_from: 3128
+seg_to: 3603
+chapters:
+- key: c29
+  title: 第36条 太阳阳明合病，喘而胸满不可下
+  start_seq: 3160
+  summary: 有表证（喘而胸满，病在肺）时即使兼肠胃问题也不可攻下，宜麻黄汤先解表；伤寒误下会成结胸。
+  clauses: [36]
+  topics: [formula.ma_huang_tang, syndrome.he_bing, syndrome.jie_xiong]
+- key: c30
+  title: 第37条 十日已去：胸满胁痛与小柴胡汤
+  start_seq: 3191
+  summary: 太阳病过一候可自愈（肠胃好者）；若胸满胁痛已入少阳用小柴胡汤，脉仍浮、太阳证仍在则仍与麻黄汤——有是证用是药，不拘日数。
+  clauses: [37]
+  topics: [formula.xiao_chai_hu_tang, formula.ma_huang_tang, symptom.xiong_xie_ku_man]
+- key: c31
+  title: 第38条 大青龙汤：表寒里热
+  start_seq: 3221
+  summary: 脉浮紧、发热恶寒、身疼痛、无汗而烦躁用大青龙汤，口诀是表寒里热；脉微弱汗出恶风者误服则厥逆、筋惕肉瞤；本方为疫病而设，即麻黄汤加石膏、生姜、大枣，麻黄三倍于桂枝。
+  clauses: [38]
+  topics: [formula.da_qing_long_tang, herb.ma_huang, herb.shi_gao, symptom.fan_zao]
+- key: c31.s1
+  parent: c31
+  title: 烦躁为辨证要点；误服之变
+  start_seq: 3221
+  summary: 烦躁包括手足躁扰、不能安睡、易怒、坐不住；脉微弱、汗出恶风是桂枝汤证，误用大青龙会厥逆、筋惕肉瞤。
+- key: c31.s2
+  parent: c31
+  title: 表寒里热：大青龙汤的四字诀
+  start_seq: 3248
+  summary: 表寒见恶寒、肌肉痛、脉浮紧、无汗；里热见舌苔黄、口渴、黄痰、烦躁；分不清时问口渴与痰色。
+- key: c31.s3
+  parent: c31
+  title: 疫病与麻桂青龙三方鼎立
+  start_seq: 3266
+  summary: 节气正常时得病用桂枝、麻黄、葛根汤；节气失常（冬行春令）、老幼同病而传染者为疫，用大青龙汤，中医同证同治。
+- key: c31.s4
+  parent: c31
+  title: 组成与剂量：麻杏甘石加桂姜枣
+  start_seq: 3283
+  summary: 汉方剂量看比例，倪师麻黄可开六钱分三碗服；石膏如鸡子大约五钱，高烧可用到一两，咳重加杏仁；石膏寒凉能除烦躁。
+- key: c31.s5
+  parent: c31
+  title: 服法、温粉与方义
+  start_seq: 3321
+  summary: 先煮麻黄，取微汗，一服汗出即停后服；汗多以龙骨牡蛎加糯米粉的温粉扑身；小口慢喝防发表太过；方义是开肺发汗后以杏仁石膏补回津液，把肺内津液整体更换。
+- key: c32
+  title: 第39条 大青龙汤：脉浮缓、身重乍有轻时
+  start_seq: 3382
+  summary: 脉浮缓、身不疼但重、乍有轻时、无少阴证者也可用大青龙汤；可借其发表力排肌肉中累积的湿，用于身重水肿；少阴证以但欲寐为主。
+  clauses: [39]
+  topics: [formula.da_qing_long_tang, symptom.shen_zhong, six_channel.shaoyin]
+- key: c33
+  title: 第40–41条 小青龙汤：表寒里寒，心下有水气
+  start_seq: 3402
+  summary: 伤寒表不解、心下有水气、干呕发热而咳，或渴或利或噎或小便不利、少腹满或喘，用小青龙汤，口诀表寒里寒；夏天发喘多大青龙、冬天受冷发喘多小青龙；服后转渴是寒去欲解。
+  clauses: [40, 41]
+  topics: [formula.xiao_qing_long_tang, herb.wu_wei_zi, herb.xi_xin, herb.gan_jiang, herb.ban_xia]
+- key: c33.s1
+  parent: c33
+  title: 表寒里寒与问饮水寒温
+  start_seq: 3402
+  summary: 恶寒、身痛无汗、脉浮紧兼白痰、不渴为表寒里寒；以病人「想喝」的水温判断里寒里热，要问欲望而非习惯。
+- key: c33.s2
+  parent: c33
+  title: 组成与药解：五味子、半夏、干姜、细辛
+  start_seq: 3454
+  summary: 麻黄、芍药、干姜、细辛、桂枝、五味子、甘草、半夏，除五味子半夏量大外余皆等量；五味子止咳、半夏化痰、干姜温肺寒、细辛去水气；咳嗽喉痒不渴即可用。
+- key: c33.s3
+  parent: c33
+  title: 加减法与条文辨误
+  start_seq: 3505
+  summary: 口渴去半夏加栝楼根（张仲景凡渴不用半夏）；微利去麻黄加荛花；噎加炮附子；小便不利少腹满加茯苓；「喘去麻黄」倪师认为是后人误加。
+- key: c33.s4
+  parent: c33
+  title: 第41条 服汤已渴者，寒去欲解
+  start_seq: 3538
+  summary: 小青龙汤证本不渴，服后转渴是里寒已去；如肾衰病人原本不渴，治疗后能出汗、口渴、胃口开，都是好转之兆。
+- key: c34
+  title: 太阳上篇小结：初病速攻与扶正祛邪
+  start_seq: 3552
+  summary: 初病正强邪浅要迅速攻邪（上工治未病）；病久正弱邪盛要扶正兼攻邪；病末先扶正，张仲景扶正由姜草枣、加芍药、到人参为止；生病更要吃好的食物，身体自愈才是真痊愈。
+  topics: [herb.ren_shen, herb.gan_cao, herb.da_zao, herb.sheng_jiang]
+entities:
+- {id: clause.shl.036, seq: 3160, surface: 第四十条, corrected: 伤寒论第36条, note: 讲义编号第四十条}
+- {id: syndrome.he_bing, seq: 3160, surface: 合璧, corrected: 合病}
+- {id: symptom.xiong_man, seq: 3163, surface: 胸满, corrected: 胸满}
+- {id: syndrome.jie_xiong, seq: 3175, surface: 结胸, corrected: 结胸}
+- {id: clause.shl.037, seq: 3191, surface: 十天已去, corrected: 太阳病十日以去脉浮细而嗜卧者外已解也, note: 讲义编号第四十一条}
+- {id: symptom.xiong_xie_ku_man, seq: 3207, surface: 胸邪邪乐, corrected: 胸胁苦满}
+- {id: formula.xiao_chai_hu_tang, seq: 3205, surface: 小柴胡汤, corrected: 小柴胡汤}
+- {id: clause.shl.038, seq: 3224, surface: 四十二和四十三, corrected: 太阳中风脉浮紧发热恶寒身疼痛不汗出而烦躁者大青龙汤主之, note: 讲义第四十二、四十三条}
+- {id: formula.da_qing_long_tang, seq: 3227, surface: 大陷红汤, corrected: 大青龙汤}
+- {id: formula.da_qing_long_tang, seq: 3264, surface: 大陷胸汤, corrected: 大青龙汤}
+- {id: formula.da_xian_xiong_tang, seq: 3264, surface: 大陷胸汤, reject: true, note: ASR把大青龙汤听成大陷胸汤}
+- {id: formula.da_xian_xiong_tang, seq: 3375, surface: 大陷胸汤, reject: true}
+- {id: formula.da_qing_long_tang, seq: 3375, surface: 大陷胸汤, corrected: 大青龙汤}
+- {id: new.symptom.筋惕肉瞤, seq: 3238, surface: 筋替肉润, corrected: 筋惕肉瞤}
+- {id: new.concept.表寒里热, seq: 3249, surface: 表含里热, corrected: 表寒里热}
+- {id: pulse.mai_fu_jin, seq: 3252, surface: 脉浮紧, corrected: 脉浮紧}
+- {id: new.disease.疫病, seq: 3267, surface: 独意, corrected: 疫病（传染病）}
+- {id: formula.ma_huang_xing_ren_gan_cao_shi_gao_tang, seq: 3298, surface: 麻杏干石, corrected: 麻杏甘石汤}
+- {id: herb.shi_gao, seq: 3300, surface: 石膏像鸡子大, corrected: 石膏, dosage: 如鸡子大≈五钱，高烧用到一两}
+- {id: herb.ma_huang, seq: 3284, surface: 麻可以六千, corrected: 麻黄, dosage: 六钱（分三碗）}
+- {id: herb.long_gu, seq: 3336, surface: 龙骨, corrected: 龙骨}
+- {id: herb.mu_li, seq: 3336, surface: 牡蛎, corrected: 牡蛎}
+- {id: new.method.温粉, seq: 3334, surface: 温粉, corrected: 温粉（龙骨牡蛎粉加糯米粉）}
+- {id: clause.shl.039, seq: 3384, surface: 第四十四条, corrected: 伤寒脉浮缓身不疼但重乍有轻时无少阴证者大青龙汤发之, note: 讲义编号第四十四条}
+- {id: symptom.shen_zhong, seq: 3385, surface: 身重, corrected: 身重}
+- {id: six_channel.shaoyin, seq: 3386, surface: 少阴症, corrected: 少阴}
+- {id: symptom.dan_yu_mei, seq: 3392, surface: 淡郁病, corrected: 但欲寐}
+- {id: clause.shl.040, seq: 3403, surface: 第四十五, corrected: 伤寒表不解心下有水气干呕发热而咳小青龙汤主之, note: 讲义编号第四十五条}
+- {id: formula.xiao_qing_long_tang, seq: 3405, surface: 小青龙汤, corrected: 小青龙汤}
+- {id: symptom.gan_ou, seq: 3404, surface: 肝呕, corrected: 干呕}
+- {id: symptom.shao_fu_man, seq: 3405, surface: 少腹满, corrected: 少腹满}
+- {id: new.concept.表寒里寒, seq: 3411, surface: 表含李涵, corrected: 表寒里寒}
+- {id: herb.wu_wei_zi, seq: 3458, surface: 五味子, corrected: 五味子}
+- {id: herb.xi_xin, seq: 3458, surface: 细心, corrected: 细辛}
+- {id: herb.gan_jiang, seq: 3458, surface: 干姜, corrected: 干姜}
+- {id: herb.ban_xia, seq: 3458, surface: 败价, corrected: 半夏}
+- {id: new.herb.栝楼根, seq: 3511, surface: 瓜蒌根, corrected: 栝楼根（天花粉）}
+- {id: new.herb.荛花, seq: 3518, surface: 圆花, corrected: 荛花, uncertain: true}
+- {id: clause.shl.041, seq: 3539, surface: 第四十六条, corrected: 伤寒心下有水气咳而微喘发热不渴小青龙汤主之, note: 讲义编号第四十六条}
+- {id: new.concept.上工治未病, seq: 3555, surface: 上工治未病, corrected: 上工治未病}
+- {id: zangfu.xin_bao, seq: 3567, surface: 逆传心包, corrected: 心包}
+- {id: herb.xi_jiao, seq: 3566, surface: 西角, corrected: 犀角}
+- {id: herb.ren_shen, seq: 3579, surface: 人参, corrected: 人参}
+kps:
+- type: formula_composition
+  s: 麻黄汤九碗水先煮麻黄去两碗，再煮成两碗半，每次服三分之一，覆取微似汗；不需啜粥，因目的在解肺中之寒而非助胃。
+  seq: [3127, 3136]
+  q: 他是要解肺里面的寒，把它解掉。
+  ents: [formula.ma_huang_tang, method.chuai_zhou]
+  conf: 0.8
+  ch: c28
+- type: contraindication
+  s: 服麻黄汤、桂枝汤期间忌生冷、滑腻、生鱼片与腌制食物。
+  seq: [3137, 3140]
+  q: 好，还有这个这个腌制过的东西不要吃啊。
+  ents: [formula.ma_huang_tang, formula.gui_zhi_tang]
+  conf: 0.85
+  ch: c28
+- type: herb_property
+  s: 倪师认为杏仁并无一般所说的毒性，麻黄汤中杏仁至少与麻黄等量，可略多；并引用以杏仁治肺结核的传闻（个人观点）。
+  seq: [3144, 3154]
+  q: 这个杏能的量基本最基最基本杏仁还麻烦，要等量
+  ents: [herb.xing_ren, formula.ma_huang_tang]
+  conf: 0.55
+  ch: c28
+- type: concept_definition
+  s: 太阳三纲：太阳中风用桂枝汤、太阳伤寒用麻黄汤、太阳温病用葛根汤。
+  seq: [3158, 3158]
+  q: 太阳中风、桂枝汤、太阳伤寒、麻黄汤、太阳温病的时候是葛根汤。
+  ents: [formula.gui_zhi_tang, formula.ma_huang_tang, formula.ge_gen_tang, syndrome.tai_yang_zhong_feng, syndrome.shang_han, syndrome.wen_bing]
+  conf: 0.95
+  ch: c28
+- type: clause_interpretation
+  s: 第36条太阳与阳明合病，喘而胸满（病在肺有寒）不可攻下，宜麻黄汤；伤寒论原则：有表证必先解表，不可攻下。
+  seq: [3160, 3171]
+  q: 当有表症的时候
+  ents: [clause.shl.036, syndrome.he_bing, formula.ma_huang_tang, symptom.chuan, symptom.xiong_man]
+  conf: 0.9
+- type: pathomechanism
+  s: 伤寒证（身痛、恶寒）因便秘误用大承气汤攻下，寒邪内陷可成结胸；食物中毒致下也会出现同样变化。
+  seq: [3173, 3181]
+  q: 那个那个那个寒会结的胸会成为结胸症哦
+  ents: [syndrome.jie_xiong, formula.da_cheng_qi_tang, syndrome.shang_han]
+  conf: 0.8
+- type: concept_definition
+  s: 伤寒论的「伤寒」指一种证候，与西医的伤寒（传染病）不同，不可混为一谈。
+  seq: [3184, 3186]
+  q: 我们这伤寒跟西医讲的伤寒不一样哦
+  ents: [syndrome.shang_han]
+  conf: 0.9
+- type: prognosis
+  s: 太阳病经过一候（六七天）必有变化；肠胃好的人可不药而愈，故平时要顾好肠胃。
+  seq: [3193, 3196]
+  q: 所以随时要保持肠胃，要一定要很好啊。
+  conf: 0.8
+- type: clinical_tip
+  s: 倪师主张桂枝汤调和阴阳、性质平和，平时受点风寒即可服用保养（个人观点）。
+  seq: [3198, 3203]
+  q: 所以平常没事，你就可以吃这桂枝汤啊
+  ents: [formula.gui_zhi_tang]
+  conf: 0.6
+- type: clause_interpretation
+  s: 第37条太阳病十日已去，若胸满胁痛（胸胁苦满）是已入少阳，用小柴胡汤；若脉但浮、太阳证仍在，仍用麻黄汤。
+  seq: [3204, 3219]
+  q: 这时候我们给小柴胡汤。
+  ents: [clause.shl.037, formula.xiao_chai_hu_tang, formula.ma_huang_tang, symptom.xiong_xie_ku_man]
+  conf: 0.85
+- type: treatment_principle
+  s: 有是证用是药：不论过了几天，只要太阳证还在就用太阳方，进入少阳才换方。
+  seq: [3212, 3214]
+  q: 只要还是有证还在的时候，太阳症还在的时候，就用太阳症的药。
+  ents: [six_channel.taiyang, six_channel.shaoyang]
+  conf: 0.9
+- type: diagnostic_rule
+  s: 小柴胡汤证除胸胁苦满外，还会有往来寒热与恶心。
+  seq: [3207, 3208]
+  q: 实际上小孩小柴胡汤呢会有往来寒热，而且恶心哦。
+  ents: [formula.xiao_chai_hu_tang, symptom.xiong_xie_ku_man, symptom.wang_lai_han_re, symptom.e_xin]
+  conf: 0.9
+- type: clause_interpretation
+  s: 第38条脉浮紧、发热恶寒、身疼痛、不汗出而烦躁，用大青龙汤；比麻黄汤证多了烦躁。
+  seq: [3226, 3227]
+  q: 这里多了一个烦躁
+  ents: [clause.shl.038, formula.da_qing_long_tang, symptom.fan_zao, pulse.mai_fu_jin]
+  conf: 0.85
+  asr: 大陷红汤/大兴农场=大青龙汤
+- type: diagnostic_rule
+  s: 烦躁的表现：手足躁扰、睡不好、情绪易怒、来回走动无法安坐，小孩好动、家属抱怨也属之。
+  seq: [3227, 3229]
+  q: 没有办法坐，安静的坐下来，小朋友好动，通通属于烦躁啊。
+  ents: [symptom.fan_zao]
+  conf: 0.8
+- type: contraindication
+  s: 脉微弱、汗出恶风是桂枝汤证，不可服大青龙汤；误服则厥逆、筋惕肉瞤（肌肉跳动），因发表太强伤了已不足的津液。
+  seq: [3232, 3247]
+  q: 若如果说这个脉微弱，汗出恶风者不可服。
+  ents: [formula.da_qing_long_tang, formula.gui_zhi_tang, pulse.mai_wei_ruo, new.symptom.筋惕肉瞤, symptom.jue]
+  conf: 0.85
+- type: diagnostic_rule
+  s: 大青龙汤四字诀「表寒里热」：表寒见恶寒、肌肉痛、脉浮紧、无汗；里热见舌苔黄、咳喘、烦躁、口渴、黄痰。
+  seq: [3248, 3263]
+  q: 好，表含
+  ents: [formula.da_qing_long_tang, new.concept.表寒里热, pulse.mai_fu_jin]
+  conf: 0.9
+- type: concept_definition
+  s: 节气正常时得病用桂枝、麻黄、葛根汤；节气反常（如冬行春令）、老幼同病而传染者为疫，大青龙汤为疫病而设，中医同证同治。
+  seq: [3266, 3275]
+  q: 中医是同症同治好，还是大青隆汤症。
+  ents: [formula.da_qing_long_tang, new.disease.疫病, formula.gui_zhi_tang, formula.ma_huang_tang, formula.ge_gen_tang]
+  conf: 0.8
+- type: clinical_tip
+  s: 原方麻黄六两是比例，倪师可开麻黄六钱：一剂煮三碗，一碗仅两钱，小孩只喝一口，一次煮完也方便。
+  seq: [3283, 3292]
+  q: 诸位看麻黄看黄金比例哦
+  ents: [formula.da_qing_long_tang, herb.ma_huang]
+  conf: 0.75
+- type: formula_composition
+  s: 大青龙汤即麻杏甘石汤加桂枝、生姜、大枣（亦即麻黄汤加石膏、姜、枣），共七味；麻黄约为桂枝三倍。
+  seq: [3296, 3299]
+  q: 大青龙汤的祭汤的方法很简单
+  ents: [formula.da_qing_long_tang, formula.ma_huang_xing_ren_gan_cao_shi_gao_tang, formula.ma_huang_tang, herb.shi_gao]
+  conf: 0.9
+- type: clinical_tip
+  s: 大青龙汤石膏如鸡子大约五钱：咳嗽重多加杏仁，高烧多加石膏，可用到一两。
+  seq: [3300, 3306]
+  q: 病人烧很高的时候，我用石膏多加一点好。
+  ents: [herb.shi_gao, herb.xing_ren, formula.da_qing_long_tang]
+  conf: 0.85
+- type: prognosis
+  s: 病人安静好治，越烦躁越危险；服药后更烦躁（如失眠加重）表示药不对。
+  seq: [3307, 3311]
+  q: 越来越烦躁就越不好治，越危险的时候就越烦躁。
+  ents: [symptom.fan_zao]
+  conf: 0.85
+- type: herb_property
+  s: 石膏寒凉能除烦躁，使情绪平静，故大青龙汤重用石膏。
+  seq: [3312, 3314]
+  q: 那这个石膏呢能够除
+  ents: [herb.shi_gao, symptom.fan_zao]
+  conf: 0.85
+- type: formula_composition
+  s: 大青龙汤先煮麻黄，取微汗；一服汗出即停后服；汗出太多用温粉（龙骨、牡蛎打粉加糯米粉）扑身止汗。
+  seq: [3321, 3338]
+  q: 我上面有写写在上面给大家看龙骨啊，牡蛎。
+  ents: [formula.da_qing_long_tang, new.method.温粉, herb.long_gu, herb.mu_li]
+  conf: 0.85
+- type: concept_definition
+  s: 疫症的判定：节气失常、长幼同时患同样的病即会传染，不必靠化验也能判断。
+  seq: [3329, 3332]
+  q: 就是结气不对，东行春饮好，冬行春宁节气不对
+  ents: [new.disease.疫病]
+  conf: 0.75
+- type: clinical_tip
+  s: 预防大青龙汤发汗太过：先小口喝，感觉要出汗就停，保暖让其微汗；倪师称病人常第一碗后三小时即愈。
+  seq: [3341, 3349]
+  q: 发表发太过，就是慢慢喝大兴隆汤。
+  ents: [formula.da_qing_long_tang]
+  conf: 0.8
+- type: pathomechanism
+  s: 大青龙汤方义：麻桂开肺使汗大出，杏仁石膏随即补回津液，等于把肺内受感染的津液整体换新，不针对特定病菌——此即辨证论治。
+  seq: [3353, 3358]
+  q: 杏仁石膏那寒凉了，能够把精液再补回去哦
+  ents: [formula.da_qing_long_tang, herb.ma_huang, herb.gui_zhi, herb.xing_ren, herb.shi_gao, zangfu.fei]
+  conf: 0.75
+- type: clinical_tip
+  s: 市售大青龙汤科学中药可用，但要核对麻黄约为桂枝三倍的比例；严重时仍以汤剂为佳。
+  seq: [3373, 3379]
+  q: 你看麻黄比桂枝多三倍啊
+  ents: [formula.da_qing_long_tang, herb.ma_huang, herb.gui_zhi]
+  conf: 0.7
+- type: clause_interpretation
+  s: 第39条伤寒脉浮缓、身不疼但重、乍有轻时、无少阴证者，也可用大青龙汤；少阴证以但欲寐（只想睡）为主。
+  seq: [3384, 3394]
+  q: 好，所以大青龙汤你看看，但重有，有时候重有时候轻。
+  ents: [clause.shl.039, formula.da_qing_long_tang, symptom.shen_zhong, symptom.dan_yu_mei, six_channel.shaoyin]
+  conf: 0.85
+- type: formula_indication
+  s: 大青龙汤发表力强，可把肌肉里累积的湿一下排掉，倪师常用于全身沉重、小便不利的水肿，不限于感冒高烧。
+  seq: [3390, 3401]
+  q: 身上的湿很盛的人，我们可以利用大青龙。
+  ents: [formula.da_qing_long_tang, symptom.shen_zhong, symptom.shui_zhong]
+  conf: 0.8
+- type: clause_interpretation
+  s: 第40条伤寒表不解、心下有水气、干呕、发热而咳，或渴、或利、或噎、或小便不利少腹满、或喘，用小青龙汤（或然症不一定都有）。
+  seq: [3403, 3405]
+  q: 新夏有水器，肝呕发热而渴或或。
+  ents: [clause.shl.040, formula.xiao_qing_long_tang, symptom.gan_ou, symptom.shao_fu_man]
+  conf: 0.85
+- type: diagnostic_rule
+  s: 小青龙汤是「表寒里寒」：恶寒、身痛无汗、脉浮紧，咳嗽白痰、口不渴、舌苔白。
+  seq: [3411, 3418]
+  q: 小猪龙汤呢是表含李涵，当你看到表含里寒的时候，就可以开小心浓汤了。
+  ents: [formula.xiao_qing_long_tang, new.concept.表寒里寒]
+  conf: 0.9
+- type: clinical_tip
+  s: 气喘分季节：平时不喘、天热就喘多为大青龙汤证（里热同气相求）；天冷才喘多为小青龙汤证（伏寒遇冷而发）。
+  seq: [3429, 3431]
+  q: 冬天天气一冷开始散小青龙汤好
+  ents: [formula.da_qing_long_tang, formula.xiao_qing_long_tang, symptom.chuan]
+  conf: 0.85
+- type: study_method
+  s: 用科学中药只记方名，久了忘记方义就不会加减；要理解方意，以经方为基础方随证加药（便秘加大黄等）。
+  seq: [3419, 3436]
+  q: 说所以还是方意，还是要了解一下，比较好
+  conf: 0.8
+- type: diagnostic_rule
+  s: 以病人「想喝」的水温判断里寒里热：里热喜冷饮，里寒只想喝热水；要问其欲望，不是问习惯喝什么。
+  seq: [3444, 3452]
+  q: 所以你要问他的欲望是什么？
+  conf: 0.9
+- type: formula_composition
+  s: 小青龙汤八味：麻黄、芍药、干姜、细辛、桂枝、炙甘草各三两，五味子、半夏各半升（量较大）；口诀「麻芍姜辛桂五草半」。
+  seq: [3455, 3475]
+  q: 麻黄白芍、干姜细心桂枝、五味子、甘草败价
+  ents: [formula.xiao_qing_long_tang, herb.ma_huang, herb.shao_yao, herb.gan_jiang, herb.xi_xin, herb.gui_zhi, herb.wu_wei_zi, herb.gan_cao, herb.ban_xia]
+  conf: 0.85
+- type: herb_property
+  s: 五味子兼酸苦甘辛咸五味，主治咳嗽；半夏祛痰，二者合用化痰止咳。
+  seq: [3477, 3482]
+  q: 它主要的功能呢是要治疗咳嗽，咳嗽位非常好用。
+  ents: [herb.wu_wei_zi, herb.ban_xia]
+  conf: 0.85
+- type: herb_property
+  s: 生姜散胃中之寒，干姜温中、温肺，肺中太冷要用干姜。
+  seq: [3484, 3488]
+  q: 生姜是散胃，里面的寒。
+  ents: [herb.sheng_jiang, herb.gan_jiang, zangfu.fei]
+  conf: 0.9
+- type: herb_property
+  s: 细辛并非不能用，它能去水气（量不大的水），配干姜去寒、细辛去水，倪师治咳常用。
+  seq: [3490, 3503]
+  q: 细心呢是非常好用的药
+  ents: [herb.xi_xin, herb.gan_jiang]
+  conf: 0.8
+- type: formula_indication
+  s: 咳嗽厉害、喉咙痒、口不渴，即使无表寒发热，也是标准小青龙汤证；喉痒是水气往上冒。
+  seq: [3496, 3501]
+  q: 喉咙痒就是水气不太太往冒冒好，喉咙里面痒。
+  ents: [formula.xiao_qing_long_tang]
+  conf: 0.85
+- type: contraindication
+  s: 伤寒金匮中凡病人口渴，张仲景一律不用半夏（半夏排水力强，口渴者更渴）；小青龙汤口渴去半夏加栝楼根（止渴，糖尿病口渴常用）。
+  seq: [3507, 3514]
+  q: 张仲景一律不用半下好
+  ents: [herb.ban_xia, new.herb.栝楼根, formula.xiao_qing_long_tang]
+  conf: 0.85
+- type: formula_composition
+  s: 小青龙汤加减：微利去麻黄加荛花（质轻，一两克即可，用于肺中积水）；噎加炮附子；小便不利少腹满加茯苓。
+  seq: [3518, 3521]
+  q: 好，那如果说易者去麻黄加附子
+  ents: [formula.xiao_qing_long_tang, new.herb.荛花, herb.fu_zi, herb.fu_ling]
+  conf: 0.65
+  asr: 圆花=荛花（推定）
+- type: clause_interpretation
+  s: 倪师认为小青龙汤加减中「喘者去麻黄加杏仁」是后人误加：麻黄本治喘，喘时应加杏仁而非去麻黄。
+  seq: [3522, 3526]
+  q: 因麻麻汤汤身是治疗喘的哈
+  ents: [formula.xiao_qing_long_tang, herb.ma_huang, herb.xing_ren, symptom.chuan]
+  conf: 0.7
+- type: clause_interpretation
+  s: 第41条伤寒心下有水气、咳而微喘、发热不渴，小青龙汤主之；服汤后转渴，是里寒已去、病将解。
+  seq: [3539, 3543]
+  q: 吃完药以后口渴了，我想喝水了，好寒去掉了。
+  ents: [clause.shl.041, formula.xiao_qing_long_tang]
+  conf: 0.9
+- type: prognosis
+  s: 本不口渴的病人（如肾衰积水）治疗后能出汗、口渴、胃口恢复，都是病将愈的好现象。
+  seq: [3545, 3551]
+  q: 原来不渴，现在可乐就是里寒去掉了，好渴就出现了。
+  ents: [zangfu.shen]
+  conf: 0.8
+- type: treatment_principle
+  s: 初病正气尚强、邪气尚浅，要迅速攻邪，一剂即除（上工治未病）。
+  seq: [3554, 3557]
+  q: 初刚开始得到病的时候，正气还是强，邪气上减，要迅速的攻掉他
+  ents: [new.concept.上工治未病]
+  conf: 0.85
+- type: prognosis
+  s: 治内科重病时可见病由厥阴→少阴→太阴→少阳→阳明逐步外出，出到阳明即知不会死，表示正在痊愈。
+  seq: [3559, 3561]
+  q: 那个阳明知道他不会死了
+  ents: [six_channel.jueyin, six_channel.shaoyin, six_channel.taiyin, six_channel.shaoyang, six_channel.yangming]
+  conf: 0.7
+- type: clinical_tip
+  s: 倪师批评温病派用犀角、地黄等寒凉药治初起表证，认为反把病逼向深处致逆传心包（个人学派观点）。
+  seq: [3565, 3568]
+  q: 寒凉的药，把病逼到心包去。
+  ents: [herb.xi_jiao, zangfu.xin_bao]
+  conf: 0.55
+- type: treatment_principle
+  s: 病程三阶段：初病速攻；病中邪渐盛正渐弱，扶正与攻邪并用；病末正气消散，先扶正。
+  seq: [3575, 3577]
+  q: 要扶正和宫，两个并用啊并用。
+  conf: 0.85
+- type: treatment_principle
+  s: 张仲景扶正循序：浅者用甘草、大枣、生姜，中者加芍药滋阴，最重才用人参，不用强补滋阴药。
+  seq: [3578, 3580]
+  q: 也不过是用最重的时候，他用了人参好。
+  ents: [herb.gan_cao, herb.da_zao, herb.sheng_jiang, herb.shao_yao, herb.ren_shen]
+  conf: 0.85
+- type: treatment_principle
+  s: 经方观念的痊愈：治好病后靠饮食营养让身体自行恢复；生病时更要吃好的食物，宜自己在家做饭，少吃外食。
+  seq: [3583, 3592]
+  q: 所以当你病的的候，要选择更好的食物才是对的。
+  conf: 0.8

@@ -1,0 +1,26 @@
+# s09_knowledge: knowledge layer over transcripts (docs/KNOWLEDGE.md)
+window_s: 720            # reading window for the annotator (12 min)
+max_mentions_per_entity: 30
+kp_dedupe_ratio: 0.82    # statements in the same chapter with SequenceMatcher ratio >= this merge
+# Surface forms the lexicon does not (yet) carry, used for entity candidates and to
+# normalize annotations. Promote reviewed ones into lexicon/entries/*.yaml (aliases or
+# asr_errors) — editing the lexicon changes s06 version keys, so it is not done mid-batch.
+aliases:
+  白芍: herb.shao_yao
+  白芍药: herb.shao_yao
+  赤芍: herb.shao_yao
+  炮附子: herb.fu_zi
+  生附子: herb.fu_zi
+  饴糖: herb.jiao_yi
+  胶饴: herb.jiao_yi
+  炙甘草: herb.gan_cao
+  红枣: herb.da_zao
+  太阳中风: syndrome.tai_yang_zhong_feng
+# Lexicon hits of these types count only with one of these characters within ±8 chars
+# (e.g. 太白/会阳 are acupoints but in 伤寒 lectures mostly ordinary words).
+context_required:
+  acupoint: [穴, 针, 灸, 扎, 按, 刺, 下针, 寸, 经]
+# Lexicon ids never taken from automatic matching (homographs that are almost always
+# something else in these lectures); annotations may still cite them explicitly.
+exclude_auto:
+  - acupoint.ex_tai_yang     # 太阳 = 太阳经/太阳病, not the extra point

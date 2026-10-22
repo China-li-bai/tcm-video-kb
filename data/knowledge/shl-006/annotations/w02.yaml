@@ -1,0 +1,114 @@
+video_id: shl-006
+window: w02
+seg_from: 258
+seg_to: 363
+chapters:
+- key: c06
+  title: 第279条 桂枝加芍药汤与桂枝加大黄汤
+  start_seq: 272
+  summary: 太阳病误下致腹满时痛属太阴，用桂枝加芍药汤（芍药倍用、不加饴糖）；大实痛用桂枝加大黄汤，大黄量轻；附倪师小儿血癌的临床经验（含其个人对疫苗的看法，非共识）。
+  clauses: [279]
+  topics: [formula.gui_zhi_jia_shao_yao_tang, formula.gui_zhi_jia_da_huang_tang, herb.shao_yao, herb.da_huang]
+- key: c06.s1
+  parent: c06
+  title: 方证与芍药止痛
+  start_seq: 272
+  summary: 腹满时痛用桂枝加芍药汤，芍药倍桂枝；与小建中汤相比不加饴糖，因甘味生湿；白芍治寒水致血行不畅之痛。
+- key: c06.s2
+  parent: c06
+  title: 临床：小儿血癌治验与愈后判断
+  start_seq: 293
+  summary: 倪师以桂枝汤重用芍药加生附子、茯苓治小儿血癌（太阴湿盛、腹胀肢冷）；以睡眠、饮食、二便、手足温及第五胸椎压痛判断好转。其关于疫苗致病的说法为个人观点。
+- key: c06.s3
+  parent: c06
+  title: 桂枝加大黄汤：阴证攻下宜轻
+  start_seq: 323
+  summary: 大实痛用桂枝加大黄汤，大黄与桂枝约一比三，阴证中攻下只轻下。
+- key: c07
+  title: 第280条 脉弱减大黄芍药；太阴以脾为主
+  start_seq: 332
+  summary: 脉弱且续自便利者，大黄、芍药应减量，因胃气弱易动；六经辨证中太阴以脾为主，脾为肺之母，脾复则肺复。
+  clauses: [280]
+  topics: [herb.da_huang, herb.shao_yao, pulse.ruo, zangfu.pi, zangfu.fei]
+entities:
+- {id: clause.shl.279, seq: 272, surface: 二百九十三条, corrected: 伤寒论第279条, note: 讲义编号293}
+- {id: formula.xiao_jian_zhong_tang, seq: 278, surface: 小煎中汤, corrected: 小建中汤}
+- {id: herb.jiao_yi, seq: 279, surface: 胰糖, corrected: 饴糖}
+- {id: herb.shao_yao, seq: 287, surface: 芍药, corrected: 芍药, dosage: 六钱（桂枝三钱时倍用）}
+- {id: herb.gui_zhi, seq: 287, surface: 桂枝, corrected: 桂枝, dosage: 三钱}
+- {id: herb.sheng_jiang, seq: 287, surface: 生姜, corrected: 生姜, dosage: 三片}
+- {id: new.disease.血癌, seq: 293, surface: 雪孩子, corrected: 血癌, uncertain: true}
+- {id: herb.fu_zi, seq: 305, surface: 生腹, corrected: 生附子, dosage: 小儿两钱，成人五六钱}
+- {id: herb.fu_ling, seq: 310, surface: 福灵, corrected: 茯苓}
+- {id: herb.da_huang, seq: 326, surface: 大堂, corrected: 大黄, dosage: 一钱（桂枝三钱）}
+- {id: clause.shl.280, seq: 332, surface: 两百九十四条, corrected: 伤寒论第280条, note: 讲义编号294}
+kps:
+- type: diagnostic_rule
+  s: 问口渴与否及想喝冷水或热水即可辨寒热，电话问诊也能判断。
+  seq: [260, 262]
+  q: 你口渴想喝什么水啊，你就知道寒热如何了。
+  ents: [new.symptom.口渴, concept.han_re]
+  conf: 0.85
+- type: treatment_principle
+  s: 阳证通利大便，阴证通利小便；实脾时（如实脾饮）一定要问病人小便情况。
+  seq: [265, 267]
+  q: 所以在阳症的时候，我们通理大便。
+  ents: [method.li_xiao_bian, new.concept.实脾]
+  conf: 0.85
+  asr: 食脾=实脾；通便便小练=通利小便
+- type: clause_interpretation
+  s: 第279条本太阳病误下，表未解而腹满时痛者属太阴，用桂枝加芍药汤；大实痛、按之更痛者用桂枝加大黄汤。
+  seq: [273, 285]
+  q: 这是桂枝加芍药汤
+  ents: [clause.shl.279, formula.gui_zhi_jia_shao_yao_tang, formula.gui_zhi_jia_da_huang_tang, symptom.fu_man, symptom.fu_tong]
+  conf: 0.9
+- type: formula_composition
+  s: 桂枝加芍药汤：桂枝三钱、芍药加倍为六钱，加炙甘草、生姜三片、大枣，煮取三碗分服；不加饴糖（加饴糖即小建中汤）。
+  seq: [278, 290]
+  q: 芍药就用六钱
+  ents: [formula.gui_zhi_jia_shao_yao_tang, formula.xiao_jian_zhong_tang, herb.gui_zhi, herb.shao_yao, herb.gan_cao, herb.sheng_jiang, herb.da_zao, herb.jiao_yi]
+  conf: 0.85
+- type: herb_property
+  s: 甘味易生湿，太阴本有湿，故桂枝加芍药汤不加饴糖。
+  seq: [291, 292]
+  q: 甜味的东西会深思
+  ents: [herb.jiao_yi]
+  conf: 0.75
+  asr: 深思=生湿；胰糖=饴糖
+- type: herb_property
+  s: 白芍专治腹中寒水累积、血行不畅所致的阵发性疼痛，痛经、肠痛亦可用。
+  seq: [280, 281]
+  q: 女孩子的月经痛你也可以用白芍啊
+  ents: [herb.shao_yao, symptom.fu_tong]
+  conf: 0.85
+- type: clinical_tip
+  s: 倪师治小儿血癌（脾湿盛、腹胀、手脚冰冷、不渴）：桂枝汤重用芍药，加生附子（小儿二钱、成人五六钱）及茯苓利湿，去寒湿以复阳。
+  seq: [304, 311]
+  q: 我用桂汤汤重用芍药
+  ents: [formula.gui_zhi_tang, herb.shao_yao, herb.fu_zi, herb.fu_ling, new.disease.血癌]
+  conf: 0.6
+  asr: 生腹/参附=生附子；白虎汤汤福灵疑为"茯苓"之误识
+- type: diagnostic_rule
+  s: 判断好转：能睡、能吃、二便正常、手脚由冷转热；第五胸椎压痛消失。
+  seq: [312, 314]
+  q: 第五次按下去他不痛就好了。
+  conf: 0.75
+  asr: 第五支/第五针=第五胸椎
+- type: formula_composition
+  s: 桂枝加大黄汤：大黄与桂枝约一比三（如桂枝三钱、大黄一钱）；病在阴脏，攻下只宜轻下，不可用到阳明的重量。
+  seq: [324, 328]
+  q: 桂枝汤里面大黄是一，桂枝是三
+  ents: [formula.gui_zhi_jia_da_huang_tang, herb.da_huang, herb.gui_zhi]
+  conf: 0.85
+- type: clause_interpretation
+  s: 第280条太阴脉弱、续自便利者，若须用大黄、芍药应减量，因胃气弱易被攻动。
+  seq: [332, 343]
+  q: 你可以大黄把它减少，或者芍药减少。
+  ents: [clause.shl.280, herb.da_huang, herb.shao_yao, pulse.ruo, zangfu.wei]
+  conf: 0.9
+- type: pathomechanism
+  s: 六经辨证中太阴以脾为主而不以肺为主；脾为肺之母，治好脾则肺自恢复，肺病另见《金匮》。
+  seq: [345, 360]
+  q: 太阴的候是以脾为主，不以肺为主。
+  ents: [six_channel.taiyin, zangfu.pi, zangfu.fei, classic.jin_gui_yao_lve, concept.liu_jing]
+  conf: 0.85

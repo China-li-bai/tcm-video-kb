@@ -1,0 +1,322 @@
+video_id: shl-001
+window: w00-03
+seg_from: 0
+seg_to: 532
+chapters:
+- key: c01
+  title: 开篇：伤寒的来源、正气病与时疫
+  start_seq: 0
+  summary: 伤寒之名出自《难经》五十八难「伤寒有五」；按节气得病为正气病，节气与气候不合而人人同病为疫病；张仲景据《内经·热论》归纳出六经辨证，经方是上古传下的「绝对处方」。
+  topics: [classic.shang_han_lun, classic.nan_jing, person.zhang_zhong_jing, concept.liu_jing, concept.jing_fang]
+- key: c02
+  title: 六气循环图：十二时辰与六经
+  start_seq: 77
+  summary: 太阳篇约占全书六成；以十二时辰分六气（厥阴、少阴、太阴、少阳、阳明、太阳），气顺行为健康、逆行为病；病由厥阴逐步转回太阳即在痊愈。
+  topics: [concept.liu_jing, six_channel.taiyang, six_channel.jueyin]
+- key: c03
+  title: 太阳病总论：太阳在表与「太阳寒水」
+  start_seq: 137
+  summary: 伤寒条文言简意赅需系统整理；太阳主表，可与手足太阳经相参；八纲辨证中外感初起在表；正常人皮肤摸上去偏凉，即「太阳寒水」，用以隔绝外界、保持体温。
+  topics: [six_channel.taiyang, meridian.bl, meridian.si, concept.biao_li]
+- key: c04
+  title: 张仲景四纲脉：浮、沉、迟、数
+  start_seq: 184
+  summary: 张仲景以浮沉（部位）、迟数（速度）四脉为纲，浮数为阳、沉迟为阴；阳脉转阴为病进、阴脉转阳为病退；正常人不浮不沉不迟不数；开七八十味药的医生是下工。
+  topics: [pulse.fu, pulse.chen, pulse.chi, pulse.shu]
+- key: c05
+  title: 第1条 太阳提纲：脉浮、头项强痛而恶寒
+  start_seq: 274
+  summary: 有病见阳脉为顺；后颈多「风」字穴，最易受风寒；肺主皮毛、心肺主表，寒水停滞、新水不能替换产生压力而头项强痛、恶寒；见太阳证即用太阳药，不论内里何病。
+  clauses: [1]
+  topics: [six_channel.taiyang, pulse.fu, symptom.e_han, zangfu.fei, zangfu.xin]
+- key: c06
+  title: 第2条 太阳中风：发热、汗出、恶风、脉缓
+  start_seq: 368
+  summary: 中风是症状群而非西医的脑中风：汗出、恶风、脉浮缓，发热不高；多因运动出汗后受风或进冷气房；只要有汗、怕风即可判为中风而处方。
+  clauses: [2]
+  topics: [syndrome.zhong_feng, symptom.han_chu, symptom.e_feng, pulse.huan]
+- key: c07
+  title: 第3条 太阳伤寒：恶寒、体痛、呕逆、脉阴阳俱紧
+  start_seq: 406
+  summary: 中风与伤寒唯一区分在有汗无汗（桂枝/麻黄）；「阴阳俱紧」指寸尺脉皆浮紧；伤寒是「伤于寒」不限冬天；体痛来自汗水停于肌表的压力；平素肠胃好、大便通畅的人不易外感。
+  clauses: [3]
+  topics: [syndrome.shang_han, symptom.e_han, symptom.ti_tong, symptom.ou_ni, herb.ma_huang, herb.gui_zhi]
+- key: c07.s1
+  parent: c07
+  title: 有汗无汗：桂枝与麻黄的分界
+  start_seq: 406
+  summary: 第3条发热与否不是重点，恶寒体痛必有；中风有汗用桂枝，伤寒无汗用麻黄。
+- key: c07.s2
+  parent: c07
+  title: 「阴阳俱紧」即寸尺脉
+  start_seq: 420
+  summary: 寸为阳、尺为阴、关居中为界；倪师以两指同时按关上关下，浮而紧即「脉阴阳俱紧」。
+- key: c07.s3
+  parent: c07
+  title: 伤于寒不分季节：南方亦有伤寒
+  start_seq: 436
+  summary: 夏天冷气、游泳、冷藏库工作都可伤寒；驳「南方无伤寒」，并举小青龙汤治失眠之例说明有是证用是药。
+- key: c07.s4
+  parent: c07
+  title: 呕逆与体痛的机理
+  start_seq: 465
+  summary: 呕逆多见于少阳、阳明，太阳伤寒见呕逆提示肠胃较弱；毛孔骤闭使汗停于肌表，体弱者次日体痛，发表使新水替换旧水即止痛。
+- key: c07.s5
+  parent: c07
+  title: 以「虚」为健康：肠胃与排便
+  start_seq: 503
+  summary: 人体应像天空一样清虚灵动，饮食24小时内应排出；便秘多是憋出来的，平素二便正常的人少病。
+entities:
+- {id: classic.nan_jing, seq: 4, surface: 难经, corrected: 难经, note: 难经第五十八难「伤寒有五」}
+- {id: syndrome.wen_bing, seq: 10, surface: 瘟病, corrected: 温病}
+- {id: new.concept.疫病, seq: 34, surface: 意病, corrected: 疫病}
+- {id: new.concept.时疫, seq: 25, surface: 十亿, corrected: 时疫, uncertain: true}
+- {id: classic.huang_di_nei_jing, seq: 39, surface: 黄帝内庭, corrected: 黄帝内经}
+- {id: classic.sw_re_lun, seq: 42, surface: 三十一篇热论, corrected: 素问·热论（第三十一篇）}
+- {id: person.qi_bo, seq: 48, surface: 岐帛, corrected: 岐伯}
+- {id: new.concept.五运六气, seq: 85, surface: 五运六气, corrected: 五运六气}
+- {id: six_channel.shaoyin, seq: 94, surface: 哨音, corrected: 少阴}
+- {id: new.concept.太阳寒水, seq: 171, surface: 太阳寒水, corrected: 太阳寒水}
+- {id: new.concept.八纲辨证, seq: 160, surface: 八纲辩证, corrected: 八纲辨证}
+- {id: pulse.fu, seq: 190, surface: 福, corrected: 浮}
+- {id: pulse.chen, seq: 191, surface: 层, corrected: 沉, uncertain: true}
+- {id: pulse.chi, seq: 198, surface: 池, corrected: 迟}
+- {id: pulse.shu, seq: 198, surface: 数, corrected: 数脉}
+- {id: pulse.se, seq: 228, surface: 色脉, corrected: 涩脉}
+- {id: pulse.wei, seq: 229, surface: 微, corrected: 微脉}
+- {id: acupoint.gb20, seq: 299, surface: 风冷风磁, corrected: 风池, uncertain: true}
+- {id: acupoint.bl12, seq: 299, surface: 风门, corrected: 风门}
+- {id: zangfu.pi_mao, seq: 323, surface: 皮毛, corrected: 皮毛}
+- {id: clause.shl.001, seq: 295, surface: 脉是浮到的那头像强痛恶寒, corrected: 太阳之为病，脉浮，头项强痛而恶寒}
+- {id: new.symptom.头项强痛, seq: 295, surface: 头像强痛, corrected: 头项强痛}
+- {id: clause.shl.002, seq: 368, surface: 第二条, corrected: 伤寒论第2条}
+- {id: clause.shl.003, seq: 406, surface: 第三条, corrected: 伤寒论第3条}
+- {id: pulse.jin, seq: 412, surface: 阴阳脉经紧, corrected: 脉阴阳俱紧}
+- {id: formula.xiao_qing_long_tang, seq: 449, surface: 小青龙当子, corrected: 小青龙汤}
+- {id: new.symptom.失眠, seq: 448, surface: 失眠, corrected: 失眠}
+- {id: new.symptom.便秘, seq: 522, surface: 便秘, corrected: 便秘}
+kps:
+- type: concept_definition
+  s: 「伤寒」之名出自《难经》五十八难：伤寒有五，即中风、伤寒、湿温、热病、温病；此中风是「伤于风」，不是西医的脑中风。
+  seq: [4, 11]
+  q: 这个伤寒呢是来自难经第五十八难。
+  ents: [classic.nan_jing, syndrome.zhong_feng, syndrome.shang_han, syndrome.wen_bing]
+  conf: 0.85
+- type: concept_definition
+  s: 冬主收藏、气候寒冷是「正气」；按节气受寒得病属正气病；冬行春令等气候与节气不合、男女老少同病者为疫病（如SARS），处方不同。
+  seq: [17, 36]
+  q: 不管他是大小是谁，哎，得到的症都一样，这就是所谓的意病
+  ents: [classic.huang_di_nei_jing, new.concept.疫病, new.concept.时疫]
+  conf: 0.8
+  asr: 意病=疫病；十亿=时疫
+- type: concept_definition
+  s: 张仲景依据《黄帝内经·素问·热论》（第31篇）归纳出六经辨证：每一经的病变有对应症状与处方，有规可循，使中医易学。
+  seq: [38, 47]
+  q: 把它归纳起来以后，把它分成六经辨证。
+  ents: [person.zhang_zhong_jing, classic.sw_re_lun, concept.liu_jing, concept.bian_zheng]
+  conf: 0.9
+- type: concept_definition
+  s: 经方并非张仲景所创，可上溯至黄帝、岐伯，是上古传下的「绝对处方」；张仲景是传承与整理者，按六经条理编排，后人不宜随意改方。
+  seq: [48, 54]
+  q: 经方并不是张仲景研究出来的
+  ents: [concept.jing_fang, person.zhang_zhong_jing, person.huang_di, person.qi_bo]
+  conf: 0.85
+- type: study_method
+  s: 学伤寒论要熟练到一听症状就能开出处方的程度；太阳篇约占全书六成以上。
+  seq: [56, 77]
+  q: 整个整个伤寒论就占了百分之六十以上。
+  ents: [classic.shang_han_lun, syndrome.tai_yang_bing]
+  conf: 0.8
+- type: concept_definition
+  s: 一天十二时辰分为六气：厥阴（巳亥）、少阴（子午）、太阴（丑未）、少阳（寅申）、阳明（卯酉）、太阳（辰戌），阴阳是逐渐转换的。
+  seq: [83, 104]
+  q: 十二个时辰里面，我们分六个气，好，分六个气。
+  ents: [new.concept.五运六气, six_channel.jueyin, six_channel.shaoyin, six_channel.taiyin, six_channel.shaoyang, six_channel.yangming, six_channel.taiyang]
+  conf: 0.7
+  asr: 时辰名ASR混乱（筹位=丑未、饮汗生=寅申、某时=卯酉、陈汉旭=辰戌），按六气司天对应补全
+- type: pathomechanism
+  s: 六气顺行为正气、无病；病气则逆行。治疗后病从厥阴依次转出到太阳，表示病在痊愈；反之由阳入阴说明治错了。
+  seq: [109, 113]
+  q: 正气就是说你是无病的状态
+  ents: [concept.zheng_qi, six_channel.jueyin, six_channel.taiyang]
+  conf: 0.8
+- type: concept_definition
+  s: 中医是「健康专家」而非某病专家：伤寒论条文虽多讲病，重心在健康标准，医生必须先知道什么是健康才能判断病已治好。
+  seq: [114, 125]
+  q: 重心在健康的标准哦，健康的标准。
+  ents: [classic.shang_han_lun]
+  conf: 0.85
+- type: study_method
+  s: 张仲景言简意赅，条文要把伤寒、金匮整套读完再整理成系统，否则背了也不会用；倪师的讲解即是整理后的体系。
+  seq: [140, 150]
+  q: 所以说真的要了伤伤金匮呢，要把整套看完以后把它稍微整理一下
+  ents: [person.zhang_zhong_jing, classic.shang_han_lun, classic.jin_gui_yao_lve]
+  conf: 0.8
+- type: concept_definition
+  s: 太阳主表，可与手太阳小肠经、足太阳膀胱经（肩背后部）相参；外感初起病在表，按八纲（阴阳表里虚实寒热）属表证。
+  seq: [152, 163]
+  q: 太阳呢在表诸位在练针灸的时候
+  ents: [six_channel.taiyang, meridian.si, meridian.bl, new.concept.八纲辨证, concept.biao_li]
+  conf: 0.85
+- type: concept_definition
+  s: 太阳为寒水：正常人皮肤摸上去偏凉而手脚温热；这层寒水不断更新，用以隔绝外界、保持体温，皮肤燥热则为病。
+  seq: [165, 181]
+  q: 所以正常人呢皮肤表面上是冰的，叫太阳寒水。
+  ents: [new.concept.太阳寒水, six_channel.taiyang]
+  conf: 0.85
+- type: diagnostic_rule
+  s: 张仲景以浮、沉、迟、数四脉为纲：浮数为阳脉，沉迟为阴脉；浮沉按部位分（轻触即得为浮，重按至骨为沉），迟数按速度分。
+  seq: [188, 221]
+  q: 主张仲景主要的代表了四个脉，
+  ents: [pulse.fu, pulse.chen, pulse.chi, pulse.shu, person.zhang_zhong_jing]
+  conf: 0.9
+- type: diagnostic_rule
+  s: 浮脉的定义：手指轻轻碰到皮肤即摸到脉，不要压。
+  seq: [202, 208]
+  q: 轻轻的摸到皮肤上面就可以摸到脉，就是叫做浮脉
+  ents: [pulse.fu]
+  conf: 0.9
+- type: prognosis
+  s: 初病脉浮大数滑，渐变为涩、微、弱者为阳转阴，表示病在进、越来越重；初病脉沉微弱，渐转浮大数有力者为阴转阳，表示病退。服药后脉越来越微弱即是吃坏了。
+  seq: [224, 252]
+  q: 这几种脉由阴脉变成阳经经就是病退
+  ents: [pulse.fu, pulse.chen, pulse.se, pulse.wei, pulse.ruo]
+  conf: 0.85
+- type: diagnostic_rule
+  s: 正常人的脉不浮不沉、不迟不数：轻摸皮肤摸不到，稍按即得，不必重按至骨。
+  seq: [258, 262]
+  q: 那是在中间也不迟，也不竖，这是正常人。
+  conf: 0.8
+- type: concept_definition
+  s: 张仲景重望闻问切的综合，不强调把脉细分脏腑；只凭把脉说病、一开七八十味药的是下工，不是中医精神。
+  seq: [264, 272]
+  q: 这种是下工，就开处方的时候，一开出来七八十味药
+  ents: [concept.xia_gong, person.zhang_zhong_jing]
+  conf: 0.8
+- type: prognosis
+  s: 张仲景认为阳病不宜见阴脉，有病应见阳脉才是顺证；用对经方后一周内脉象即可改变，配合针灸则感冒可早上服药中午就好。
+  seq: [276, 287]
+  q: 有病呢，一定要看着阳脉。
+  ents: [concept.jing_fang, method.zhen_jiu]
+  conf: 0.7
+- type: diagnostic_rule
+  s: 第1条太阳提纲：脉浮、头项强痛、恶寒，是初得外感的表证。
+  seq: [295, 297]
+  q: 所以脉是浮到的那头像强痛恶寒。
+  ents: [clause.shl.001, pulse.fu, new.symptom.头项强痛, symptom.e_han, syndrome.tai_yang_bing]
+  conf: 0.9
+- type: pathomechanism
+  s: 后颈多以「风」命名的穴位（风池、风门、风府），是最怕风、风寒最易侵入之处；冷气从后颈吹最易重感冒，天冷时缩脖子可防寒。
+  seq: [299, 304]
+  q: 这些穴道你看都是用风字来命名。
+  ents: [acupoint.gb20, acupoint.bl12]
+  conf: 0.85
+- type: clinical_tip
+  s: 热天大汗后脸对冷气吹，次日可致面部中风（口眼歪斜）；张仲景虽不知冷气，但理论相同，经方治面瘫仍然有效——古方今用，环境变而理不变。
+  seq: [306, 319]
+  q: 所以我们我常常还是开经方在治疗那个面部中风很快
+  ents: [concept.jing_fang]
+  conf: 0.8
+- type: pathomechanism
+  s: 肺主皮毛；心肺主表：心搏动产热，肺属寒，二者如引擎与水箱相配以保持恒温。
+  seq: [323, 331]
+  q: 正常人呢肺主皮毛，所以皮肤毛孔呢就是肺脏在管。
+  ents: [zangfu.fei, zangfu.xin, zangfu.pi_mao]
+  conf: 0.85
+- type: pathomechanism
+  s: 受风寒后寒水停滞在表，新水不断供应而旧水排不掉，形成压力而头项强痛，并见恶寒；痛来自压力，不是发炎。
+  seq: [335, 338]
+  q: 当然会痛是来自压力
+  ents: [new.symptom.头项强痛, symptom.e_han, new.concept.太阳寒水]
+  conf: 0.85
+- type: treatment_principle
+  s: 见太阳证（脉浮、头项强痛、恶寒）就给太阳药，不必管内里是肺癌、肝癌等何病——依证不依病名。
+  seq: [342, 346]
+  q: 我不管你如果病人出现这个现象，你就给他太阳正风药就对了。
+  ents: [syndrome.tai_yang_bing]
+  conf: 0.85
+- type: diagnostic_rule
+  s: 望诊可替代问诊：病人穿厚夹克、衣服包得紧即知恶寒；哑巴或小孩可摸脉、看动作判断。
+  seq: [358, 366]
+  q: 一看就知道恶寒嘛
+  ents: [symptom.e_han]
+  conf: 0.8
+- type: clause_interpretation
+  s: 第2条太阳中风：发热、汗出、恶风、脉浮缓；中风是一组症状而非病名，汗是无故自汗，发热不高（高于正常一两度）。
+  seq: [368, 387]
+  q: 有发热、汗出恶风，脉寒者名为中风。
+  ents: [clause.shl.002, syndrome.zhong_feng, symptom.fa_re, symptom.han_chu, symptom.e_feng, pulse.huan, pulse.fu]
+  conf: 0.9
+- type: diagnostic_rule
+  s: 判断中风只需一两个主症：病人说怕风吹、有流汗即可判断为中风；中风、伤寒、温病各有不同处方。
+  seq: [387, 391]
+  q: 流汗你就已经已经可以你家一两个症状。
+  ents: [syndrome.zhong_feng, symptom.han_chu, symptom.e_feng, syndrome.wen_bing]
+  conf: 0.85
+- type: pathomechanism
+  s: 中风多因运动出汗后没保护好，如跑步后进冷气很强的商店，被风一吹就中风。
+  seq: [394, 397]
+  q: 这个病呢一般来说哦就是在运动了以后运动啊和流汗
+  ents: [syndrome.zhong_feng]
+  conf: 0.8
+- type: diagnostic_rule
+  s: 外感先问有无出汗：有汗就排除伤寒，再问怕不怕风，怕风即是中风，可直接处方。
+  seq: [402, 403]
+  q: 流汗有汗就不是伤寒论，你知道就已经把伤痕踢掉了。
+  ents: [syndrome.shang_han, syndrome.zhong_feng, symptom.han_chu]
+  conf: 0.85
+- type: clause_interpretation
+  s: 第3条太阳伤寒：或已发热或未发热（不是重点），必恶寒、体痛、呕逆、脉阴阳俱紧；中风与伤寒唯一区别是有汗（桂枝）与无汗（麻黄）。
+  seq: [407, 411]
+  q: 两个唯一的区分点就是一个有害，一个无害。
+  ents: [clause.shl.003, syndrome.shang_han, symptom.e_han, symptom.ti_tong, symptom.ou_ni, pulse.jin, herb.gui_zhi, herb.ma_huang, symptom.wu_han]
+  conf: 0.9
+  asr: 有害/无害=有汗/无汗
+- type: diagnostic_rule
+  s: 「脉阴阳俱紧」：寸部为阳脉、尺部为阴脉，关在中间为界；倪师用两指同时按关上、关下，寸尺都浮而紧即是。
+  seq: [426, 434]
+  q: 寸的部位就是阳脉，死的部位就是阴脉。
+  ents: [pulse.jin, pulse.fu]
+  conf: 0.8
+  asr: 死的部位=尺的部位
+- type: concept_definition
+  s: 伤寒应理解为「伤于寒」，不限冬天：夏天冷气、游泳、冷藏库工作都可得伤寒；「南方无伤寒」之说不对，倪师在佛罗里达用麻黄最多。
+  seq: [437, 461]
+  q: 所以伤遗寒呢应该是这上里寒比较好
+  ents: [syndrome.shang_han, herb.ma_huang]
+  conf: 0.85
+- type: clinical_tip
+  s: 有是证用是药：麻黄通常令人不眠，但证属小青龙汤的两月失眠病人，服一剂小青龙汤当场睡着。
+  seq: [448, 454]
+  q: 一剂小青龙下去
+  ents: [formula.xiao_qing_long_tang, herb.ma_huang, new.symptom.失眠]
+  conf: 0.85
+- type: diagnostic_rule
+  s: 呕逆一般在病入少阳或阳明才出现；太阳伤寒见呕逆，提示此人肠胃不好，并非人人都有。
+  seq: [466, 469]
+  q: 病进入少阳以后才会出现呕逆的现象
+  ents: [symptom.ou_ni, six_channel.shaoyang, six_channel.yangming]
+  conf: 0.85
+- type: pathomechanism
+  s: 伤寒体痛机理：运动出汗时骤遇冷气或冷水，毛孔瞬间收缩，汗离开汗腺却出不了皮肤，停在肌肉与皮肤之间；体弱者代谢不掉，次日全身如鞭打般痛，发表后新水替换旧水即止痛。
+  seq: [480, 495]
+  q: 那这个汗水呢停在肌肉和皮肤中间啊
+  ents: [symptom.ti_tong, method.fa_biao, zangfu.ji_rou]
+  conf: 0.85
+- type: treatment_principle
+  s: 张仲景经方非常注重肠胃功能；平时保养身体首要把肠胃弄好，肠胃好的人淋雨受风也不易得病。
+  seq: [497, 505]
+  q: 张仲景非常注重肠胃的功能。
+  ents: [person.zhang_zhong_jing, concept.jing_fang]
+  conf: 0.85
+- type: concept_definition
+  s: 健康以「虚」为标准：如天空般清虚灵动，饮食入口24小时内必须排出；虚不是瘦弱，而是新进旧出、不积累。
+  seq: [510, 518]
+  q: 所以健康的人是与虚身体虚为健康
+  conf: 0.85
+- type: clinical_tip
+  s: 便秘多是从小憋出来的；平时每天大便正常的人很少生病，常便秘或下利、肠胃差的人容易中风、伤寒，应在小问题时就调治。
+  seq: [522, 529]
+  q: 就啊秘便秘是练出来的
+  ents: [new.symptom.便秘, symptom.xia_li]
+  conf: 0.8

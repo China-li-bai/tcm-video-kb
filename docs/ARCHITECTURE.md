@@ -179,6 +179,7 @@ flowchart TD
 - **s06 句子重建**：把带标点 `text` 去标点后与 token 序列逐一对齐（英文/数字 token 按词对齐，对不上时用 difflib 局部对齐）；在 `。！？；` 处断句，另在 token 间隔 >1.2s 或句长 >40s 时强制断开；句子 `start_s/end_s` 取首末 token 时间。然后 OpenCC `t2s`，再应用纠错规则（句内替换，**不改时间戳**，记录 `edits`）。
 - **s07**：两路文本字符级对齐，计算每句一致率；`agreement < 0.75` 或句中含词典术语且两路不一致 → `review_flag=true`。
 - **s08 章节**：输入为 `[mm:ss] 句子` 列表；长视频按 40 分钟窗口、5 分钟重叠分段送 LLM，再合并相邻同题章节。输出须满足：时间单调、覆盖全片、边界吸附到句子起点、单章 3–25 分钟。另用经典条文模糊匹配（见 s10）给出“本章讲解第 N 条”的锚点，作为 LLM 的提示和校验。章节默认 `review_status=auto`。
+- **已实现（2026-10）**：`s09_knowledge` 知识层（章节大纲 + 实体 + 知识点 + 跳转引用）先于切块落地，见 [KNOWLEDGE.md](KNOWLEDGE.md)；下文的 s09 切块 / s10 实体规划顺延为 s10 / s11。
 - **s09 切块**：按句聚合，目标 300–600 字（约 1–2.5 分钟），重叠 1–2 句，不跨章节；`section_path = 系列 > 篇 > 讲次 > 章节标题`。
 - **s10 实体**：① Aho-Corasick 匹配 canonical+aliases（遵循 `match_policy`，长词优先，消歧规则见 §7）；② 条文匹配：经典原文切 n-gram，与转写做模糊匹配（相似度 ≥0.8 记为 `clause_match`，倪师常先读原文再讲解）；③ LLM 按章节抽取关系（如 `symptom indicates syndrome`、`formula treats syndrome`、`acupoint on meridian`），必须给出证据句序号；不在词典里的术语进 `candidates.jsonl`。
 - 所有 mention 通过句子序号换算成 `start_s/end_s`。

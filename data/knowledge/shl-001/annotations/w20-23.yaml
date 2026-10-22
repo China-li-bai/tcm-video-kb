@@ -1,0 +1,365 @@
+video_id: shl-001
+window: w20-23
+seg_from: 2599
+seg_to: 3127
+chapters:
+- key: c25.s3
+  parent: c25
+  title: 刚痉与经方的「绝对处方、黄金比例」
+  start_seq: 2601
+  summary: 脑膜炎角弓反张属刚痉，也用葛根汤（柔痉用栝楼桂枝汤）；姜草枣顾护肠胃津液以防汗后便秘；经方组成不可改、比例不可动，剂量依体格增减。
+- key: c25.s4
+  parent: c25
+  title: 葛根汤的比例与临床加减
+  start_seq: 2691
+  summary: 葛根、麻黄、桂芍约四三二，麻黄不可超过葛根；鼻窦炎清涕加白术附子、黄涕加黄芩；痛风用甘草附子汤；水痘一剂透发；术附汤排深部之脓；面部中风葛根加倍。
+- key: c26
+  title: 第32–33条 太阳阳明合病：葛根汤与葛根加半夏汤
+  start_seq: 2805
+  summary: 太阳与阳明合病必自下利，葛根汤升提肠胃之水而止利；素有中焦湿热者用葛根汤会脸红肿，须加祛湿清热利尿药；不下利但呕加生半夏。
+  clauses: [32, 33]
+  topics: [formula.ge_gen_tang, formula.ge_gen_jia_ban_xia_tang, herb.ban_xia, syndrome.he_bing]
+- key: c26.s1
+  parent: c26
+  title: 合病下利用葛根汤
+  start_seq: 2805
+  summary: 三阳可合病；小柴胡汤介于太阳少阳之间、大柴胡汤介于少阳阳明之间；葛根汤把肠胃的水往上提，下利自止。
+- key: c26.s2
+  parent: c26
+  title: 平素湿热者慎用葛根汤
+  start_seq: 2823
+  summary: 舌苔黄湿、爱吃油腻者服葛根汤会把湿热提上脸而红肿，应加白术、黄芩黄连、茯苓，使湿热从小便排出。
+- key: c26.s3
+  parent: c26
+  title: 葛根加半夏汤与生半夏
+  start_seq: 2848
+  summary: 生半夏毒性是使人失声，生姜可解；生半夏是唯一能排脑部积水的药，止呕力强，孕吐也可配姜用；方中生半夏约三钱。
+- key: c27
+  title: 第34条 葛根黄芩黄连汤：表未解之热利
+  start_seq: 2911
+  summary: 本为桂枝汤证误下（或食物中毒）致利遂不止、脉促、喘而汗出，用葛根黄芩黄连汤；热利特征是肛门灼痛、大便很臭；攻下前要摸脉确认无表证。
+  clauses: [34]
+  topics: [formula.ge_gen_huang_qin_huang_lian_tang, herb.huang_qin, herb.huang_lian, herb.ge_gen]
+- key: c28
+  title: 第35条 麻黄汤：太阳伤寒
+  start_seq: 2983
+  summary: 太阳伤寒头痛发热、身疼腰痛骨节痛、恶风、无汗而喘，用麻黄汤；伤寒是被寒所伤，夏天冷气也会得；麻黄发阳不只发汗，配桂枝才能走表，杏仁润肺补津，麻黄汤又名返魂汤。
+  clauses: [35]
+  topics: [formula.ma_huang_tang, herb.ma_huang, herb.xing_ren, syndrome.shang_han]
+- key: c28.s1
+  parent: c28
+  title: 伤寒主症：无汗而喘、身痛
+  start_seq: 2983
+  summary: 夏天躲在车里盖被仍冷、一滴汗都不出是标准麻黄汤证；问汗可知心脏与肠胃功能；毛孔被寒锁住只能靠鼻孔呼吸，故喘；寒使水不行，全身如被鞭打般痛。
+- key: c28.s2
+  parent: c28
+  title: 麻黄剂量与「返魂汤」：经方发阳的观念
+  start_seq: 3019
+  summary: 麻黄质轻，剂量要比桂枝多；麻黄汤又名返魂汤，麻黄的作用是发阳；经方遇阴虚用强阳之药，阳回则阴（津液）自回，身体自愈。
+- key: c28.s3
+  parent: c28
+  title: 麻黄配杏仁、桂枝、炙甘草
+  start_seq: 3065
+  summary: 杏仁色白有油脂入肺，润肺津、排痰；桂枝如马、麻黄如骑者，有桂枝麻黄才走表发汗；无杏仁则肺津不足而高热；杏仁量可稍多于麻黄，麻黄必高于桂枝。
+entities:
+- {id: syndrome.gang_jing, seq: 2601, surface: 刚进, corrected: 刚痉}
+- {id: new.disease.脑膜炎, seq: 2601, surface: 脑膜炎, corrected: 脑膜炎}
+- {id: syndrome.rou_jing, seq: 2605, surface: 柔劲, corrected: 柔痉}
+- {id: new.formula.栝楼桂枝汤, seq: 2606, surface: 桂枝汤加刮螺根, corrected: 栝楼桂枝汤（桂枝汤加栝楼根）}
+- {id: herb.sheng_jiang, seq: 2609, surface: 生姜, corrected: 生姜}
+- {id: herb.da_zao, seq: 2609, surface: 红枣, corrected: 大枣}
+- {id: new.concept.绝对处方, seq: 2624, surface: 绝对处方, corrected: 绝对处方}
+- {id: new.concept.黄金比例, seq: 2629, surface: 黄金比例, corrected: 黄金比例}
+- {id: herb.da_huang, seq: 2628, surface: 大黄, corrected: 大黄}
+- {id: formula.da_qing_long_tang, seq: 2642, surface: 大青龙, corrected: 大青龙汤}
+- {id: new.disease.鼻窦炎, seq: 2699, surface: 鼻窦炎, corrected: 鼻窦炎}
+- {id: herb.bai_zhu, seq: 2702, surface: 白竹, corrected: 白术}
+- {id: herb.fu_zi, seq: 2703, surface: 附子, corrected: 附子}
+- {id: herb.huang_qin, seq: 2714, surface: 黄芩, corrected: 黄芩}
+- {id: new.disease.痛风, seq: 2716, surface: 痛风, corrected: 痛风}
+- {id: formula.gan_cao_fu_zi_tang, seq: 2722, surface: 甘草附子汤, corrected: 甘草附子汤}
+- {id: new.disease.水痘, seq: 2736, surface: 取水痘, corrected: 水痘}
+- {id: new.formula.术附汤, seq: 2774, surface: 素腹汤, corrected: 术附汤（白术、附子）, uncertain: true}
+- {id: formula.pai_nong_tang, seq: 2775, surface: 排脓汤, corrected: 排脓汤}
+- {id: formula.chi_xiao_dou_dang_gui_san, seq: 2791, surface: 赤豆当归神, corrected: 赤小豆当归散, uncertain: true}
+- {id: clause.shl.032, seq: 2805, surface: 太阳和阳明合璧必自下利, corrected: 太阳与阳明合病者必自下利葛根汤主之}
+- {id: syndrome.he_bing, seq: 2805, surface: 合璧, corrected: 合病}
+- {id: symptom.xia_li, seq: 2810, surface: 下利, corrected: 下利}
+- {id: formula.xiao_chai_hu_tang, seq: 2817, surface: 小柴胡, corrected: 小柴胡汤}
+- {id: formula.da_chai_hu_tang, seq: 2817, surface: 大柴胡汤, corrected: 大柴胡汤}
+- {id: herb.huang_lian, seq: 2838, surface: 黄连, corrected: 黄连}
+- {id: herb.fu_ling, seq: 2840, surface: 茯苓, corrected: 茯苓}
+- {id: clause.shl.033, seq: 2848, surface: 不但下利而呕者, corrected: 太阳与阳明合病不下利但呕者葛根加半夏汤主之}
+- {id: herb.ban_xia, seq: 2850, surface: 半夏, corrected: 生半夏, dosage: 约三钱（风干生半夏）}
+- {id: formula.ge_gen_jia_ban_xia_tang, seq: 2904, surface: 葛葛汤汤好加班一下, corrected: 葛根加半夏汤}
+- {id: formula.gan_jiang_ren_shen_ban_xia_wan, seq: 2882, surface: 人参半半干姜汤, corrected: 干姜人参半夏丸}
+- {id: clause.shl.034, seq: 2911, surface: 第三十八条, corrected: 伤寒论第34条, note: 讲义编号第三十八条}
+- {id: formula.ge_gen_huang_qin_huang_lian_tang, seq: 2912, surface: 葛根汤芩黄连汤, corrected: 葛根黄芩黄连汤}
+- {id: new.symptom.热利, seq: 2940, surface: 热力, corrected: 热利}
+- {id: formula.huang_lian_e_jiao_tang, seq: 2967, surface: 黄连阿胶汤, corrected: 黄连阿胶汤}
+- {id: formula.huang_qin_tang, seq: 2967, surface: 黄芩汤, corrected: 黄芩汤}
+- {id: herb.ge_gen, seq: 2970, surface: 葛根, corrected: 葛根, dosage: 五六钱（芩连各三钱）}
+- {id: clause.shl.035, seq: 2983, surface: 第三、三十九条, corrected: 伤寒论第35条, note: 讲义编号第三十九条}
+- {id: formula.ma_huang_tang, seq: 2983, surface: 麻汤汤, corrected: 麻黄汤}
+- {id: symptom.yao_tong, seq: 2983, surface: 腰痛, corrected: 腰痛}
+- {id: symptom.gu_jie_teng_tong, seq: 2983, surface: 骨节痛, corrected: 骨节疼痛}
+- {id: symptom.shen_teng, seq: 2983, surface: 身疼, corrected: 身疼}
+- {id: symptom.dao_han, seq: 3003, surface: 盗汗, corrected: 盗汗}
+- {id: symptom.chuan, seq: 3012, surface: 好喘, corrected: 喘}
+- {id: herb.ma_huang, seq: 3030, surface: 四千, corrected: 麻黄, dosage: 倪师三至四钱，多于桂枝}
+- {id: new.formula.返魂汤, seq: 3036, surface: 返魂汤, corrected: 返魂汤（麻黄汤别名）}
+- {id: herb.xing_ren, seq: 3066, surface: 杏仁, corrected: 杏仁, dosage: 约四五钱，可稍多于麻黄}
+- {id: herb.shi_gao, seq: 3071, surface: 杏仁仁石膏膏, corrected: 石膏}
+kps:
+- type: formula_indication
+  s: 脑膜炎角弓反张属刚痉，张仲景也用葛根汤，得汗则解；柔痉则用桂枝汤加栝楼根。
+  seq: [2601, 2607]
+  q: 那葛根汤是用在肛茎上面啊
+  ents: [syndrome.gang_jing, syndrome.rou_jing, formula.ge_gen_tang, new.disease.脑膜炎, new.formula.栝楼桂枝汤]
+  conf: 0.8
+- type: formula_composition
+  s: 生姜、炙甘草、大枣是补肠胃津液之药：发汗的源头在肠胃，不加它们汗后易便秘；治任何病都要同时顾护肠胃。
+  seq: [2609, 2620]
+  q: 随时我们那个中医治病呢，不管是治什么病，随时在同时在治病的同时一定要顾他的肠胃。
+  ents: [herb.sheng_jiang, herb.gan_cao, herb.da_zao, concept.jin_ye]
+  conf: 0.9
+- type: treatment_principle
+  s: 经方组成是「绝对处方」、比例是「黄金比例」，基本方不可改；可在其上加药（如葛根汤证兼便秘加大黄表里双解）。
+  seq: [2624, 2630]
+  q: 黄金比例不能动不能改，这个比例不要改。
+  ents: [new.concept.绝对处方, new.concept.黄金比例, formula.ge_gen_tang, herb.da_huang]
+  conf: 0.9
+- type: clinical_tip
+  s: 汉制两数不必死算：药材有按容积、有按重量计，重点是比例；依体格大小按比例增减，或同一锅药让小孩喝少一点。
+  seq: [2632, 2645]
+  q: 所以说你要看他的比例最重要，对不对？
+  ents: [new.concept.黄金比例]
+  conf: 0.85
+- type: concept_definition
+  s: 麻黄汤、桂枝汤、葛根汤所治属天地正气所伤之病，不传染；大青龙汤证属疫病会全家传染。
+  seq: [2642, 2649]
+  q: 这个病不会传染的。
+  ents: [formula.ma_huang_tang, formula.gui_zhi_tang, formula.ge_gen_tang, formula.da_qing_long_tang]
+  conf: 0.7
+- type: formula_composition
+  s: 葛根汤七味，先煮麻黄、葛根去沫再下他药，七碗煮三碗、一次一碗，覆取微似汗；有姜草枣，不必啜粥。
+  seq: [2652, 2671]
+  q: 那这个不需要醉粥于如桂枝汤法将其其禁忌
+  ents: [formula.ge_gen_tang, method.chuai_zhou, herb.ma_huang, herb.ge_gen]
+  conf: 0.8
+- type: prognosis
+  s: 葛根汤证救治太慢或误用他药，高烧不退可变脑膜炎（刚痉），仍可用葛根汤；过了六七天则入阳明，需改用阳明方。
+  seq: [2679, 2688]
+  q: 葛根汤汁，还在那边
+  ents: [formula.ge_gen_tang, new.disease.脑膜炎, six_channel.yangming]
+  conf: 0.7
+- type: formula_composition
+  s: 葛根汤的黄金比例是葛根四、麻黄三、桂芍二：麻黄若超过葛根，汗就不限于项背而是全身大汗，失去葛根汤的意义。
+  seq: [2691, 2697]
+  q: 好，所以黄金比例呢就是四三二
+  ents: [formula.ge_gen_tang, herb.ge_gen, herb.ma_huang, herb.gui_zhi, herb.shao_yao]
+  conf: 0.9
+- type: clinical_tip
+  s: 鼻窦炎用葛根汤：清涕属寒湿，加白术祛湿、附子祛寒；黄稠涕属湿热，不用附子而加黄芩等清热药。
+  seq: [2699, 2714]
+  q: 白术去湿
+  ents: [new.disease.鼻窦炎, formula.ge_gen_tang, herb.bai_zhu, herb.fu_zi, herb.huang_qin]
+  conf: 0.85
+- type: formula_indication
+  s: 痛风是表热里寒、风性游走，需祛风（桂枝）、祛湿（白术）、祛寒（炮附子）合炙甘草，即甘草附子汤。
+  seq: [2716, 2722]
+  q: 就经方里面很有名的甘草附子汤，专门治都痛风了
+  ents: [new.disease.痛风, formula.gan_cao_fu_zi_tang, herb.gui_zhi, herb.bai_zhu, herb.fu_zi]
+  conf: 0.8
+- type: formula_indication
+  s: 小儿水痘（倪师认为是胎毒）初起见指缝水泡、微烧，不可用寒凉药闷住；葛根汤一剂全身透发，热退、精神胃口恢复。
+  seq: [2741, 2756]
+  q: 所以我治疗水痘也是一剂好，葛根汤就下线好
+  ents: [new.disease.水痘, formula.ge_gen_tang]
+  conf: 0.75
+- type: clinical_tip
+  s: 面部中风用桂枝加葛根汤时葛根加倍（桂芍三、葛根由四加到六），恢复更快。
+  seq: [2763, 2765]
+  q: 葛格把它变成六好double上去，那脸就去的很快哦。
+  ents: [formula.gui_zhi_jia_ge_gen_tang, herb.ge_gen, new.disease.面部中风]
+  conf: 0.8
+- type: formula_indication
+  s: 白术、附子等量（倪师称术附汤）是排深部脓的好方：化脓表热里寒，祛寒祛湿能把骨边深处的脓逼出；一般用寒凉药反而不好。
+  seq: [2774, 2788]
+  q: 好，白术跟附子等量就可以把这种逼出来哦
+  ents: [new.formula.术附汤, herb.bai_zhu, herb.fu_zi]
+  conf: 0.7
+- type: clinical_tip
+  s: 排脓方各有所主：金匮赤小豆当归散所排为肛门痔疮之脓，与脚上化脓用的方不同，方剂应用必须对位。
+  seq: [2789, 2794]
+  q: 所以一定要知道方剂的应用好
+  ents: [formula.chi_xiao_dou_dang_gui_san, formula.pai_nong_tang]
+  conf: 0.6
+- type: clinical_tip
+  s: 糖尿病足溃烂不收口又见葛根汤证：仍用葛根汤，加术附排脓，白芍加倍使血液回流修补。
+  seq: [2797, 2804]
+  q: 把白芍怎么样加倍嘛
+  ents: [formula.ge_gen_tang, herb.shao_yao, new.formula.术附汤]
+  conf: 0.65
+- type: clause_interpretation
+  s: 第32条太阳与阳明合病必自下利，有项背强几几、无汗恶风兼下利，仍用葛根汤。
+  seq: [2805, 2814]
+  q: 那太阳和阳明合并的时候，一定会有下利的现象。
+  ents: [clause.shl.032, syndrome.he_bing, symptom.xia_li, formula.ge_gen_tang]
+  conf: 0.9
+- type: concept_definition
+  s: 以合病观念理解柴胡剂：小柴胡汤介于太阳与少阳之间，大柴胡汤介于少阳与阳明之间。
+  seq: [2816, 2817]
+  q: 那大柴胡汤是于阳明跟少阳中间的组合帮哦
+  ents: [formula.xiao_chai_hu_tang, formula.da_chai_hu_tang, syndrome.he_bing]
+  conf: 0.75
+- type: pathomechanism
+  s: 葛根汤把肠胃中的水往上提升，本来往下走的水上行，下利就止；中医止利有升提、和解、通利多种法。
+  seq: [2819, 2822]
+  q: 那葛根汤下去以后把肠胃的水提上来，下面就止掉了。
+  ents: [formula.ge_gen_tang, symptom.xia_li]
+  conf: 0.85
+- type: contraindication
+  s: 平素中焦湿热（舌苔黄湿、爱吃油腻、偏胖）者服葛根汤，会把湿热提上脸而红肿；应加白术、黄芩黄连清热祛湿，加茯苓从小便排出。
+  seq: [2827, 2841]
+  q: 好，我对那个葛根汤要小心一点。
+  ents: [formula.ge_gen_tang, herb.bai_zhu, herb.huang_lian, herb.fu_ling]
+  conf: 0.85
+- type: formula_indication
+  s: 第33条太阳阳明合病不下利但呕，用葛根加半夏汤（葛根汤加生半夏，约三钱，与麻黄比例相同）。
+  seq: [2848, 2850]
+  q: 好，加半夏。
+  ents: [clause.shl.033, formula.ge_gen_jia_ban_xia_tang, herb.ban_xia, symptom.ou_tu]
+  conf: 0.9
+- type: herb_property
+  s: 生半夏之毒主要是令人失声（喉咙发不出声），用生姜可解；倪师主张诊所直接用生半夏，认为各种炮制半夏力弱。
+  seq: [2861, 2870]
+  q: 那解败下的毒就要靠生姜啊
+  ents: [herb.ban_xia, herb.sheng_jiang]
+  conf: 0.65
+- type: herb_property
+  s: 倪师认为生半夏是唯一能排脑部积水（至高之水）的药，并强力止呕；孕吐亦可用（如干姜人参半夏丸），配生姜或干姜解其毒。
+  seq: [2871, 2882]
+  q: 最高的水要靠是卖家恶心，要靠审判下。
+  ents: [herb.ban_xia, formula.gan_jiang_ren_shen_ban_xia_wan, herb.gan_jiang]
+  conf: 0.6
+- type: treatment_principle
+  s: 解表的标准是「覆取微似汗」：身上摸着潮潮黏黏、看不到汗水，病出而津液不伤，恰到好处。
+  seq: [2893, 2901]
+  q: 复取为害为士汉，感觉身上有汗，实际上摸又没有汗，那是最标准的
+  ents: [new.concept.微汗]
+  conf: 0.9
+- type: diagnostic_rule
+  s: 用承气汤攻下前要先摸脉确认有无表证：病人可能不知自己有汗、恶风，脉浮就有表证，不可攻下。
+  seq: [2918, 2925]
+  q: 所以我轻摸摸脉脉也是很重要的。
+  ents: [formula.cheng_qi_tang, pulse.fu]
+  conf: 0.85
+- type: clause_interpretation
+  s: 第34条本是桂枝汤证，医反下之（或吃坏食物），利遂不止、脉促、喘而汗出，表未解而邪入肠胃，用葛根黄芩黄连汤。
+  seq: [2928, 2935]
+  q: 这个时候用葛芹莲汤，我我们简单讲就是葛芹莲汤。
+  ents: [clause.shl.034, formula.ge_gen_huang_qin_huang_lian_tang]
+  conf: 0.85
+- type: diagnostic_rule
+  s: 热利的辨认：下利时肛门灼痛、大便很臭；有的会见血。
+  seq: [2942, 2947]
+  q: 你知道还是热力了就已经结束了。
+  ents: [new.symptom.热利, symptom.xia_li]
+  conf: 0.9
+- type: herb_property
+  s: 黄连色黄味厚而苦属土，主清胃；黄芩黄中带青绿，多用于肝胆与小肠湿热；葛芩连汤中二者等量。
+  seq: [2960, 2966]
+  q: 所以黄连是苦味，他只有清理胃里面的东西。
+  ents: [herb.huang_lian, herb.huang_qin, formula.ge_gen_huang_qin_huang_lian_tang]
+  conf: 0.8
+- type: formula_composition
+  s: 葛根黄芩黄连汤中葛根量重（五六钱），芩连各三钱，加甘草；先煮葛根，宜用汤剂。
+  seq: [2969, 2977]
+  q: 葛根的剂量比较重，五六钱
+  ents: [formula.ge_gen_huang_qin_huang_lian_tang, herb.ge_gen, herb.huang_qin, herb.huang_lian, herb.gan_cao]
+  conf: 0.85
+- type: clause_interpretation
+  s: 第35条太阳病头痛、发热、身疼、腰痛、骨节疼痛、恶风、无汗而喘，麻黄汤主之，是太阳伤寒。
+  seq: [2983, 2983]
+  q: 好恶风无汉而传麻汤汤组织哦
+  ents: [clause.shl.035, formula.ma_huang_tang, symptom.yao_tong, symptom.gu_jie_teng_tong, symptom.shen_teng, symptom.wu_han, symptom.chuan]
+  conf: 0.9
+- type: diagnostic_rule
+  s: 伤寒是被寒所伤，不限冬天：夏天躲在车里关窗盖被仍喊冷、一滴汗都不出，是标准麻黄汤证；冷气、下水游泳都可致病。
+  seq: [2988, 2995]
+  q: 这伤寒不是不见得是冬天的寒，而是它桑萸寒。
+  ents: [syndrome.shang_han, formula.ma_huang_tang]
+  conf: 0.9
+- type: diagnostic_rule
+  s: 问汗可知心脏与肠胃功能：心功能好则运动、走路、吃饭才出汗；完全无汗，或静坐也出汗、夜间盗汗，都是心脏有问题。
+  seq: [3002, 3003]
+  q: 问汗的原因是什么？
+  ents: [zangfu.xin, symptom.dao_han]
+  conf: 0.85
+- type: pathomechanism
+  s: 伤寒无汗而喘：寒把全身毛孔锁住，只剩鼻孔呼吸，所以喘；寒使水不能流动，全身骨节痛如被鞭打。
+  seq: [3013, 3016]
+  q: 为什么因为毛孔吸收被锁住了
+  ents: [symptom.chuan, symptom.gu_jie_teng_tong, syndrome.shang_han]
+  conf: 0.85
+- type: clinical_tip
+  s: 麻黄质轻，开两三根根本没有分量；麻黄汤中麻黄剂量要多于桂枝（倪师开三四钱）。
+  seq: [3021, 3030]
+  q: 你看麻黄的剂量是不是比桂枝的剂量多
+  ents: [herb.ma_huang, herb.gui_zhi, formula.ma_huang_tang]
+  conf: 0.85
+- type: herb_property
+  s: 麻黄汤又名返魂汤；麻黄主要作用是把阳气生发起来（发阳），不只是发汗。
+  seq: [3036, 3041]
+  q: 麻黄是把阳气生发起来，发阳
+  ents: [formula.ma_huang_tang, new.formula.返魂汤, herb.ma_huang]
+  conf: 0.85
+- type: treatment_principle
+  s: 经方与时方不同：遇阴虚不直接开补药而用强阳之药，阳回来后阴（津液）自然回来，由身体自行痊愈。
+  seq: [3044, 3053]
+  q: 就是说要把阳回来以后，阴会自己回来
+  ents: [concept.yin_yang, concept.jin_ye]
+  conf: 0.8
+- type: concept_definition
+  s: 看得见的形体（肌肉、脏腑）是阴，其功能与力量（如吸收能力）是阳。
+  seq: [3047, 3049]
+  q: 好，所以s光片看过去的看到阴脏腑的吸收的能力是阳。
+  ents: [concept.yin_yang]
+  conf: 0.8
+- type: herb_property
+  s: 杏仁色白、富油脂而入肺，能滋润肺津并排痰；石膏是石头无油、主去热，麻黄汤中要用杏仁不能用石膏。
+  seq: [3072, 3077]
+  q: 有油脂，那能够入肺，除了蒸润肺的精液以外，同时可以低痰把痰排掉。
+  ents: [herb.xing_ren, herb.shi_gao, zangfu.fei]
+  conf: 0.85
+- type: formula_composition
+  s: 麻黄需借桂枝才能走表发汗（桂枝如马、麻黄如骑者）；只有麻黄配甘草或附子、细辛不会出汗，只是发阳。
+  seq: [3084, 3088]
+  q: 好，那这里我们要借用桂枝麻黄的才可以到表，才可以发汗透发汗。
+  ents: [herb.ma_huang, herb.gui_zhi, formula.ma_huang_tang, formula.ge_gen_tang]
+  conf: 0.85
+- type: formula_composition
+  s: 麻黄入肺开毛孔，汗从肺出会耗肺津，故预先加杏仁补肺津；不加杏仁会燥渴高热，如汽车水箱缺水而过热。
+  seq: [3089, 3097]
+  q: 这候候预先就放下杏人去赌他的，就怕肺的精液不够。
+  ents: [herb.ma_huang, herb.xing_ren, zangfu.fei]
+  conf: 0.85
+- type: formula_composition
+  s: 麻黄汤中杏仁七十枚约二十一克，今用约四五钱，可稍多于麻黄；麻黄必须比桂枝多才是正麻黄汤。
+  seq: [3098, 3101]
+  q: 一点麻麻是桂枝，一定要比桂枝高一点哦，这才是正麻黄汤麻后汤。
+  ents: [formula.ma_huang_tang, herb.xing_ren, herb.ma_huang, herb.gui_zhi]
+  conf: 0.75
+- type: clinical_tip
+  s: 倪师认为危急气息将绝时，重用炙甘草、桂枝强心阳的麻黄汤即可开肺救回，不必用数百克炮附子；单煮麻黄不会发汗，只会让人精神亢奋不睡。
+  seq: [3104, 3111]
+  q: 好，其实你用泡芙子用两两百克三百克，而不需要不需要一记麻黄汤就够了。
+  ents: [formula.ma_huang_tang, herb.ma_huang, herb.fu_zi]
+  conf: 0.55
+- type: study_method
+  s: 经方精神是药简力专：麻黄汤仅四味；善用麻黄者咳嗽气喘类问题都能处理；救急时不必讲究先煮，直接下锅。
+  seq: [3119, 3125]
+  q: 好，你看就是简单的四味药，药检力专就是经方的精神。
+  ents: [formula.ma_huang_tang, herb.ma_huang]
+  conf: 0.8

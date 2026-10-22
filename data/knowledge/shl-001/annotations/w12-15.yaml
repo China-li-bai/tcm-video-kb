@@ -1,0 +1,363 @@
+video_id: shl-001
+window: w12-15
+seg_from: 1593
+seg_to: 2107
+chapters:
+- key: c16
+  title: 第21–22条 桂枝去芍药汤与去芍药加附子汤
+  start_seq: 1615
+  summary: 太阳病误下后脉促胸满，去白芍；凡胸满（心脏病、气喘）张仲景一律不用白芍，腹痛则重用；若再微恶寒，表示里虚，加炮附子温阳。
+  clauses: [21, 22]
+  topics: [formula.gui_zhi_qu_shao_yao_tang, formula.gui_zhi_qu_shao_yao_jia_fu_zi_tang, herb.shao_yao, symptom.xiong_man]
+- key: c17
+  title: 第23条 桂枝麻黄各半汤：寒热如疟与身痒
+  start_seq: 1673
+  summary: 太阳病八九日寒热交替而无恶心仍属太阳，寒热时间相当用桂枝麻黄各半汤；汗到皮下出不来则身痒，小发其汗即愈；麻黄去节先煮去沫；出汗正常与否可判断心脏功能。
+  clauses: [23]
+  topics: [formula.gui_zhi_ma_huang_ge_ban_tang, herb.ma_huang]
+- key: c17.s1
+  parent: c17
+  title: 寒热交替：太阳与少阳的区分
+  start_seq: 1673
+  summary: 脉微缓为欲愈不必治；阴阳俱虚不可再汗吐下；寒热交替加恶心就已入少阳，无恶心仍在太阳。
+- key: c17.s2
+  parent: c17
+  title: 以其不得小汗出，身必痒
+  start_seq: 1704
+  summary: 以吸管喻发表与利尿的关系：毛孔一开小便即出；温性的麻黄桂枝小发其汗，汗出则痒止、小便通。
+- key: c17.s3
+  parent: c17
+  title: 麻黄去节先煮与九碗煮三碗
+  start_seq: 1735
+  summary: 麻黄节止汗、茎发汗，故去节；先煮去上沫；倪师习惯九碗煮三碗，内科病早晚各一碗，表证三小时一碗至汗出。
+- key: c17.s4
+  parent: c17
+  title: 汗为心之液：以汗判断心脏功能
+  start_seq: 1781
+  summary: 治肾病先治心、再治肺；运动后能正常出汗表示心脏功能恢复，汗越多水肿消得越快。
+- key: c18
+  title: 第24条 服桂枝汤反烦：先刺风池风府
+  start_seq: 1813
+  summary: 服桂枝汤后大部分症状好了但仍烦，余邪留在受风处，先针风池、风府再与桂枝汤即愈；平时脖子要遮好避风。
+  clauses: [24]
+  topics: [acupoint.gb20, acupoint.gv16, formula.gui_zhi_tang]
+- key: c19
+  title: 第25条 桂枝二麻黄一汤：热多寒少
+  start_seq: 1835
+  summary: 服桂枝汤后形似疟、一日再发，热多寒少用桂枝二麻黄一汤；桂芍麻约三二一比例，可依寒热比例调整剂量。
+  clauses: [25]
+  topics: [formula.gui_zhi_er_ma_huang_yi_tang]
+- key: c20
+  title: 第26条 转入阳明：白虎加人参汤
+  start_seq: 1871
+  summary: 太阳不愈可入阳明，阳明但热不寒，分经热（白虎）与腑热（承气）；大汗后大烦渴不解、脉洪大用白虎加人参汤，石膏要大剂、棉布包，粳米助水气化止渴，人参用于津液大伤。
+  clauses: [26]
+  topics: [formula.bai_hu_jia_ren_shen_tang, formula.bai_hu_tang, herb.shi_gao, six_channel.yangming]
+- key: c20.s1
+  parent: c20
+  title: 阳明经热与腑热
+  start_seq: 1874
+  summary: 阳明证一派热症无寒：经热大渴喝水不止，用白虎；腑热为肠中燥屎便秘，用承气。
+- key: c20.s2
+  parent: c20
+  title: 白虎加人参汤证：非桂枝汤所致
+  start_seq: 1909
+  summary: 服桂枝汤后出现白虎证，是病程刚好转入阳明，不是桂枝汤开坏；白虎证壮热恶热、踢被子，与发烧盖被怕冷者不同。
+- key: c20.s3
+  parent: c20
+  title: 石膏、知母、粳米、人参的用法
+  start_seq: 1937
+  summary: 石膏黏稠要棉布包煮，倪师起手一两；粳米使水能气化入循环而止渴；只在大汗后大烦渴、津液大伤时加人参。
+- key: c21
+  title: 第27条 桂枝二越婢一汤：无阳不可发汗
+  start_seq: 2000
+  summary: 热多寒少而烦躁、脉微弱是无阳，不可发汗；桂枝汤配麻黄石膏（越婢汤）反能使阳回收；麻黄需配伍才发汗，石膏色白入肺，敛阳除烦，越婢汤治风水水肿。
+  clauses: [27]
+  topics: [formula.gui_zhi_er_yue_bi_yi_tang, formula.yue_bi_tang, herb.shi_gao, herb.ma_huang]
+- key: c22
+  title: 第28条 桂枝去桂加茯苓白术汤
+  start_seq: 2098
+  summary: 服桂枝汤或攻下后仍头项强痛、心下满微痛、小便不利，用桂枝汤去桂加茯苓白术。
+  clauses: [28]
+  topics: [formula.gui_zhi_qu_gui_jia_fu_ling_bai_zhu_tang, herb.fu_ling, herb.bai_zhu]
+entities:
+- {id: clause.shl.021, seq: 1616, surface: 二十五条, corrected: 伤寒论第21条, note: 讲义编号第二十五条（含宋本21、22条）}
+- {id: clause.shl.022, seq: 1617, surface: 去芍药方中加附子汤主治, corrected: 若微恶寒者桂枝去芍药加附子汤主之}
+- {id: formula.gui_zhi_qu_shao_yao_tang, seq: 1616, surface: 桂枝去芍药汤, corrected: 桂枝去芍药汤}
+- {id: formula.gui_zhi_qu_shao_yao_jia_fu_zi_tang, seq: 1662, surface: 桂枝去芍要加附子汤, corrected: 桂枝去芍药加附子汤}
+- {id: symptom.xiong_man, seq: 1621, surface: 胸满, corrected: 胸满}
+- {id: herb.shao_yao, seq: 1621, surface: 白勺, corrected: 白芍}
+- {id: herb.huang_qi, seq: 1667, surface: 黄芪, corrected: 黄芪}
+- {id: clause.shl.023, seq: 1673, surface: 第二十六条, corrected: 伤寒论第23条, note: 讲义编号第二十六条}
+- {id: formula.gui_zhi_ma_huang_ge_ban_tang, seq: 1687, surface: 桂枝麻黄葛根汤, corrected: 桂枝麻黄各半汤}
+- {id: symptom.wang_lai_han_re, seq: 1694, surface: 往来寒热, corrected: 往来寒热（寒热交替）}
+- {id: symptom.e_xin, seq: 1698, surface: 恶心, corrected: 恶心}
+- {id: symptom.shen_yang, seq: 1705, surface: 生壁呀, corrected: 身必痒}
+- {id: new.herb.硫磺, seq: 1716, surface: 硫磺, corrected: 硫磺}
+- {id: herb.ma_huang, seq: 1741, surface: 麻黄一两续节, corrected: 麻黄（去节）}
+- {id: formula.ma_huang_tang, seq: 1750, surface: 麻黄汤, corrected: 麻黄汤}
+- {id: zangfu.shen, seq: 1786, surface: 肾脏病, corrected: 肾}
+- {id: zangfu.xin, seq: 1795, surface: 新业新之业, corrected: 汗为心之液}
+- {id: symptom.shui_zhong, seq: 1804, surface: 水肿, corrected: 水肿}
+- {id: clause.shl.024, seq: 1813, surface: 第二十七个调变, corrected: 伤寒论第24条, note: 讲义编号第二十七条}
+- {id: acupoint.gb20, seq: 1815, surface: 风池, corrected: 风池}
+- {id: acupoint.gv16, seq: 1815, surface: 丰腹, corrected: 风府}
+- {id: symptom.fan_zao, seq: 1814, surface: 烦躁, corrected: 烦}
+- {id: clause.shl.025, seq: 1835, surface: 二十八条, corrected: 伤寒论第25条, note: 讲义编号第二十八条}
+- {id: formula.gui_zhi_er_ma_huang_yi_tang, seq: 1839, surface: 桂枝耳麻黄, corrected: 桂枝二麻黄一汤}
+- {id: clause.shl.026, seq: 1872, surface: 第二十九条, corrected: 伤寒论第26条, note: 讲义编号第二十九条}
+- {id: six_channel.yangming, seq: 1875, surface: 阳明病, corrected: 阳明}
+- {id: formula.bai_hu_tang, seq: 1886, surface: 白虎, corrected: 白虎汤}
+- {id: formula.cheng_qi_tang, seq: 1886, surface: 程序, corrected: 承气汤}
+- {id: formula.bai_hu_jia_ren_shen_tang, seq: 1909, surface: 白虎加子参汤, corrected: 白虎加人参汤}
+- {id: pulse.mai_hong_da, seq: 1917, surface: 脉红辣, corrected: 脉洪大}
+- {id: herb.shi_gao, seq: 1921, surface: 石膏, corrected: 石膏, dosage: 起手一两（棉布包）}
+- {id: symptom.zhan_yu, seq: 1931, surface: 赞语, corrected: 谵语}
+- {id: herb.zhi_mu, seq: 1938, surface: 滋母, corrected: 知母, dosage: 约五钱}
+- {id: herb.jing_mi, seq: 1943, surface: 梗米, corrected: 粳米, dosage: 两三钱}
+- {id: herb.ren_shen, seq: 1957, surface: 人参, corrected: 人参}
+- {id: zangfu.xiao_chang, seq: 1953, surface: 小肠, corrected: 小肠}
+- {id: zangfu.da_chang, seq: 1959, surface: 大肠, corrected: 大肠}
+- {id: zangfu.fei, seq: 1965, surface: 肺, corrected: 肺}
+- {id: clause.shl.027, seq: 2002, surface: 第三十条, corrected: 伤寒论第27条, note: 讲义编号第三十条}
+- {id: pulse.mai_wei_ruo, seq: 2002, surface: 脉为弱者, corrected: 脉微弱}
+- {id: syndrome.wang_yang, seq: 2025, surface: 王洋, corrected: 亡阳}
+- {id: formula.gui_zhi_er_yue_bi_yi_tang, seq: 2027, surface: 桂枝二月杯一汤, corrected: 桂枝二越婢一汤}
+- {id: formula.yue_bi_tang, seq: 2027, surface: 月杯汤, corrected: 越婢汤}
+- {id: syndrome.feng_shui, seq: 2055, surface: 风水, corrected: 风水}
+- {id: classic.huang_di_nei_jing, seq: 2079, surface: 黄帝内经, corrected: 黄帝内经}
+- {id: clause.shl.028, seq: 2098, surface: 三十一条, corrected: 伤寒论第28条, note: 讲义编号第三十一条}
+- {id: symptom.xin_xia_man, seq: 2107, surface: 心脏还是胀满, corrected: 心下满}
+- {id: symptom.xiao_bian_bu_li, seq: 2100, surface: 小便不利, corrected: 小便不利}
+- {id: formula.gui_zhi_qu_gui_jia_fu_ling_bai_zhu_tang, seq: 2107, surface: 桂枝汤去桂加白术茯苓, corrected: 桂枝去桂加茯苓白术汤}
+kps:
+- type: clinical_tip
+  s: 汗止后不要再服桂枝加附子汤：表固得太过也不行，人运动、进食时应能出汗，静止时无汗才是正常。
+  seq: [1593, 1598]
+  q: 好，之所以有汗，我们也是必要有汗。
+  ents: [formula.gui_zhi_jia_fu_zi_tang]
+  conf: 0.85
+  ch: c15
+- type: clinical_tip
+  s: 生长在严寒地区的人毛孔致密，服麻黄汤等发表药可能不出汗而是小便增多，只要病人自觉好转即可，不必强求发汗。
+  seq: [1605, 1608]
+  q: 好，所以有时候不见得是流汗哦，所以每人体质稍微也不太一样。
+  ents: [formula.ma_huang_tang]
+  conf: 0.8
+  ch: c15
+- type: clause_interpretation
+  s: 第21条太阳病下之后脉促胸满，用桂枝去芍药汤；第22条若再微恶寒，用桂枝去芍药加附子汤——同一桂枝汤随证应变。
+  seq: [1616, 1619]
+  q: 好，就是同样桂枝汤在应变。
+  ents: [clause.shl.021, clause.shl.022, formula.gui_zhi_qu_shao_yao_tang, formula.gui_zhi_qu_shao_yao_jia_fu_zi_tang]
+  conf: 0.9
+- type: contraindication
+  s: 从伤寒到金匮，凡见胸满（气不过、胸口胀满、心口刺痛）张仲景都去白芍；故心脏病、气喘不用白芍，反之腹痛要重用白芍。
+  seq: [1621, 1638]
+  q: 胸满的时候一律不用白烧。
+  ents: [herb.shao_yao, symptom.xiong_man]
+  conf: 0.9
+- type: pathomechanism
+  s: 白芍酸苦属阴，作用如静脉回流；胸满时去白芍可使回心血流减缓，让心脏得到喘息。
+  seq: [1630, 1633]
+  q: 血流回心脏的速度就会减缓下来，就会让心脏得到喘息。
+  ents: [herb.shao_yao, zangfu.xin]
+  conf: 0.7
+- type: herb_property
+  s: 处方写芍药时临床用白芍即可，白芍、赤芍差别不必过分计较。
+  seq: [1627, 1629]
+  q: 实际上我们用白芍。
+  ents: [herb.shao_yao]
+  conf: 0.7
+- type: pathomechanism
+  s: 攻下后出现微恶寒是里虚、阳气被伤，加炮附子把里阳温回来；一服恶寒止即停。
+  seq: [1641, 1646]
+  q: 好，把这个里面的阳好，温回来啊，温回来。
+  ents: [herb.fu_zi, symptom.e_han]
+  conf: 0.85
+- type: herb_property
+  s: 温病表虚可用黄芪固表，但经方急需收表时用炮附子，黄芪作用较慢。
+  seq: [1666, 1667]
+  q: 金汤不是黄芪太慢了，泡芙子一下去就好了
+  ents: [herb.huang_qi, herb.fu_zi]
+  conf: 0.7
+- type: prognosis
+  s: 第23条太阳病八九日如疟状寒热，脉微缓者为阳气胃气回复、欲自愈，不要去治；脉微而恶寒为阴阳俱虚，不可再汗吐下。
+  seq: [1679, 1683]
+  q: 这个时候病人要自己痊愈了，你不要去治疗它。
+  ents: [clause.shl.023]
+  conf: 0.8
+- type: diagnostic_rule
+  s: 寒热交替（往来寒热）若伴恶心，病已入少阳；没有恶心则一律按太阳证处理。
+  seq: [1698, 1702]
+  q: 所以如果说病人有忽冷忽热，但是没有恶心，你一律在太阳症里面处理它。
+  ents: [symptom.wang_lai_han_re, symptom.e_xin, six_channel.shaoyang, six_channel.taiyang]
+  conf: 0.95
+- type: formula_indication
+  s: 太阳病寒热交替一天两三次、冷与热时间差不多相等，用桂枝麻黄各半汤，即桂枝汤与麻黄汤各取一半合方。
+  seq: [1695, 1703]
+  q: 寒也是一个小时，这就是桂枝麻黄各半汤。
+  ents: [formula.gui_zhi_ma_huang_ge_ban_tang, formula.gui_zhi_tang, formula.ma_huang_tang]
+  conf: 0.9
+- type: pathomechanism
+  s: 发表与利尿相通（吸管按住水不下、放开则出）：毛孔一开小便就排出，故水肿可用温热药发汗来利水。
+  seq: [1708, 1712]
+  q: 你发表一发表的时候，毛孔一开开小便就排出来了。
+  ents: [symptom.shui_zhong, method.fa_han]
+  conf: 0.8
+- type: diagnostic_rule
+  s: 以其不得小汗出身必痒：汗已到皮下却出不来，全身发痒而皮肤无病变；用桂枝麻黄各半汤小发其汗即可。
+  seq: [1728, 1733]
+  q: 停在皮肤下面的时候，这个时候皮肤就全身就会痒。
+  ents: [symptom.shen_yang, formula.gui_zhi_ma_huang_ge_ban_tang]
+  conf: 0.9
+- type: herb_property
+  s: 麻黄节能止汗、茎能发汗，故用麻黄要去节；张仲景用麻黄必先煮，去上沫后再下其他药。
+  seq: [1744, 1755]
+  q: 麻黄的节能功能是止汗。
+  ents: [herb.ma_huang]
+  conf: 0.9
+- type: formula_composition
+  s: 桂枝麻黄各半汤即桂枝汤加麻黄、杏仁，麻黄与桂枝等量；麻黄、杏仁、桂枝、甘草四味为麻黄汤。
+  seq: [1748, 1753]
+  q: 所谓各半，就是麻烦，按桂枝的剂量相等。
+  ents: [formula.gui_zhi_ma_huang_ge_ban_tang, formula.ma_huang_tang, herb.ma_huang, herb.xing_ren]
+  conf: 0.85
+- type: clinical_tip
+  s: 倪师常用九碗水煮成三碗：省时且药力强；内科病早晚各一碗、第三碗隔天喝；表证三小时一碗，至出汗即停。
+  seq: [1759, 1768]
+  q: 我最常用的是好九晚主持三碗
+  conf: 0.85
+- type: clinical_tip
+  s: 服三碗仍无汗代表剂量太轻，应加重；倪师桂枝白芍常开五钱，因出汗太多还可加炮附子补救。
+  seq: [1769, 1774]
+  q: 喝完三碗一点汗都没有，代表剂量太重，太轻了
+  ents: [herb.gui_zhi, herb.shao_yao, herb.fu_zi]
+  conf: 0.8
+- type: treatment_principle
+  s: 依五行相生，治肾（水）病要先治心（火）、再治肺（金），肾功能才逐渐恢复；如同肝病先实脾。
+  seq: [1786, 1794]
+  q: 我们知道肾脏，我们先去治心脏，好，再去治肺脏
+  ents: [zangfu.shen, zangfu.xin, zangfu.fei, concept.wu_xing]
+  conf: 0.75
+- type: diagnostic_rule
+  s: 汗为心之液：可从病人运动后能否正常出汗判断心脏功能；肾病患者运动不出汗表示心脏未恢复，一旦能出汗水肿就消得快。
+  seq: [1795, 1804]
+  q: 所以当心脏功能很好的时候，我们可以从病人排汗的正常与否来决定心脏功能好不好
+  ents: [zangfu.xin, zangfu.shen, symptom.shui_zhong]
+  conf: 0.85
+- type: acupoint_usage
+  s: 第24条服桂枝汤反烦不解，余邪停在当初受风处，先针风池、风府，再给桂枝汤即愈。
+  seq: [1813, 1815]
+  q: 这个时候我们用针灸吃它的风池丰腹，回头再给桂枝汤好，它就好了。
+  ents: [clause.shl.024, acupoint.gb20, acupoint.gv16, formula.gui_zhi_tang]
+  conf: 0.9
+- type: clinical_tip
+  s: 风池、风府是风邪入侵之处，风大时脖子要遮好。
+  seq: [1832, 1834]
+  q: 好哦，脖子要盖好
+  ents: [acupoint.gb20, acupoint.gv16]
+  conf: 0.85
+- type: formula_indication
+  s: 第25条寒热如疟、热多寒少（冷十分钟、热一两小时），用桂枝二麻黄一汤；热越多，麻黄减、桂枝增。
+  seq: [1840, 1848]
+  q: 一定病人是热多寒少。
+  ents: [clause.shl.025, formula.gui_zhi_er_ma_huang_yi_tang]
+  conf: 0.9
+- type: formula_composition
+  s: 桂枝二麻黄一汤中桂枝、白芍、麻黄约三比二比一（如桂三钱、芍二钱、麻黄一钱）；麻黄剂中麻黄均先煮。
+  seq: [1860, 1870]
+  q: 一前就三二一的比例好，三二一的比例好
+  ents: [formula.gui_zhi_er_ma_huang_yi_tang, herb.gui_zhi, herb.shao_yao, herb.ma_huang]
+  conf: 0.8
+- type: pathomechanism
+  s: 太阳不愈可逆传阳明（或少阳），阳明证但热不寒，分经热（大渴、喝水不止，白虎汤）与腑热（燥屎便秘，承气汤）。
+  seq: [1875, 1902]
+  q: 基本上的大原则就是淡热不寒。
+  ents: [six_channel.yangming, formula.bai_hu_tang, formula.cheng_qi_tang, syndrome.yang_ming_bing]
+  conf: 0.9
+- type: clause_interpretation
+  s: 第26条服桂枝汤大汗出后大烦渴不解、脉洪大，用白虎加人参汤；这是病程刚好转入阳明，不是桂枝汤开错。
+  seq: [1909, 1913]
+  q: 并不是说你医生开帮开坏了
+  ents: [clause.shl.026, formula.bai_hu_jia_ren_shen_tang, pulse.mai_hong_da]
+  conf: 0.85
+- type: diagnostic_rule
+  s: 白虎汤证是壮热恶热、踢被子、要喝冷水；全身烫却盖着被子怕冷者不是白虎证；高热谵语时看动作即可判断。
+  seq: [1924, 1932]
+  q: 所谓恶热就撞热的，把被子都踢掉
+  ents: [formula.bai_hu_tang, symptom.zhan_yu]
+  conf: 0.9
+- type: clinical_tip
+  s: 白虎汤石膏要大剂，倪师起手一两（三五钱只够漱口），并用棉布包煮，否则汤汁黏稠。
+  seq: [1921, 1942]
+  q: 好石膏我起价就是一两
+  ents: [herb.shi_gao, formula.bai_hu_tang]
+  conf: 0.85
+- type: pathomechanism
+  s: 中医认为水靠小肠之火从大肠气化上至肺、皮肤和喉咙成为津液；白虎汤加粳米是让水随食物进入循环，单纯喝水无法止渴。
+  seq: [1949, 1970]
+  q: 这个水才能够止渴。
+  ents: [herb.jing_mi, zangfu.xiao_chang, zangfu.da_chang, zangfu.fei, concept.jin_ye]
+  conf: 0.75
+- type: formula_indication
+  s: 人参只在津液大伤（大汗后大烦渴不解）时加；单纯高热恶热、不恶寒、大便正常，白虎汤一剂即可退烧，不需人参。
+  seq: [1976, 1985]
+  q: 光是白汤汤一剂下去，就可以把这个烧退掉。
+  ents: [herb.ren_shen, formula.bai_hu_tang, formula.bai_hu_jia_ren_shen_tang]
+  conf: 0.85
+- type: formula_composition
+  s: 倪师白虎汤常用量：石膏一两、知母约五钱、炙甘草两三钱、粳米两三钱（不可多放以免煮成干饭），煮米熟取汤。
+  seq: [1988, 1994]
+  q: 你看它煮米熟汤，盛去残渣，喝的是汤汁
+  ents: [formula.bai_hu_tang, herb.shi_gao, herb.zhi_mu, herb.gan_cao, herb.jing_mi]
+  conf: 0.75
+- type: clause_interpretation
+  s: 第27条太阳病发热恶寒、热多寒少、烦躁而脉微弱，此为无阳，不可发汗，用桂枝二越婢一汤。
+  seq: [2002, 2032]
+  q: 这是无阳眼，不可以再发汗了。
+  ents: [clause.shl.027, formula.gui_zhi_er_yue_bi_yi_tang, pulse.mai_wei_ruo, syndrome.wang_yang]
+  conf: 0.85
+- type: prognosis
+  s: 病中最怕烦躁：临终前常手足躁扰不宁、神志不清；烦躁加脉微弱表示阳不断外散。
+  seq: [2008, 2014]
+  q: 生病，最怕就是烦躁
+  ents: [symptom.fan_zao, pulse.mai_wei_ruo]
+  conf: 0.8
+- type: concept_definition
+  s: 阳的作用在固护阴：体表无阳则不断失水出汗；故用炮附子固阳则汗止。
+  seq: [2020, 2024]
+  q: 所以阳的目的要顾到阴好这个阴阳的平衡。
+  ents: [concept.yin_yang, herb.fu_zi]
+  conf: 0.85
+- type: formula_composition
+  s: 越婢汤（金匮治风水全身水肿）由麻黄、石膏、炙甘草、生姜、大枣五味组成；倪师用之服后微汗、大量小便排出而水肿消。
+  seq: [2027, 2057]
+  q: 这五味药就叫做月杯汤。
+  ents: [formula.yue_bi_tang, syndrome.feng_shui, herb.ma_huang, herb.shi_gao, symptom.shui_zhong]
+  conf: 0.85
+- type: herb_property
+  s: 麻黄不只发汗，需配伍：配桂枝汤则发汗更多，单用并不出汗；配石膏反而使阳气回收；从太阳到厥阴都用得到麻黄。
+  seq: [2034, 2048]
+  q: 所以麻红必须要有别的东西配合在一起，它才有办法去发汗
+  ents: [herb.ma_huang, herb.shi_gao, formula.gui_zhi_tang]
+  conf: 0.8
+- type: herb_property
+  s: 石膏色白入肺，肺在胸阳之所，石膏虽寒凉却能敛阳使阳回头，并能除烦（肺藏魄、主静）。
+  seq: [2070, 2093]
+  q: 实际上石膏可以念阳，把阳收敛起来。
+  ents: [herb.shi_gao, zangfu.fei, symptom.fan_zao]
+  conf: 0.75
+  asr: 念阳=敛阳
+- type: concept_definition
+  s: 「心下」指胃脘部位（肋骨下、肚脐上），不是心脏。
+  seq: [2100, 2105]
+  q: 一般来说心下指的是胃的地方。
+  ents: [symptom.xin_xia_man]
+  conf: 0.9
+- type: clause_interpretation
+  s: 第28条服桂枝汤或攻下后仍头项强痛、心下满微痛、小便不利，用桂枝汤去桂加茯苓白术。
+  seq: [2098, 2107]
+  q: 小便不利哦，桂枝汤去桂加白术茯苓。
+  ents: [clause.shl.028, formula.gui_zhi_qu_gui_jia_fu_ling_bai_zhu_tang, symptom.xin_xia_man, symptom.xiao_bian_bu_li]
+  conf: 0.9

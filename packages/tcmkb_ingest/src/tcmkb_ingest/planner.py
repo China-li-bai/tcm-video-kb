@@ -13,7 +13,7 @@ re-fetch reference. Purged items are never re-planned and their s00..s05 are
 skipped by the scheduler; `refetch` re-downloads from the URL and re-enables them.
 """
 from __future__ import annotations
-import datetime, json, os, pathlib, shutil, subprocess, time
+import datetime, json, os, pathlib, re, shutil, subprocess, time
 from dataclasses import dataclass, field, asdict
 from typing import Any, Callable, Iterable
 
@@ -168,27 +168,125 @@ def plan_batch(candidates: Iterable[MediaEntry], b: Budget, free_bytes: int
 
 
 # ------------------------------------------------------------------ purge
+# Purge may only ever delete an item's *own* heavy media. Everything is resolved and
+# checked against a per-item allowlist; anything else (repo dirs such as eval/asr/out,
+# lexicon/, configs/, a source file outside data/media/<series>/, git-tracked files, an
+# empty/odd video_id that would widen a glob) is refused and logged, never deleted.
+_SAFE_ID = re.compile(r"^[A-Za-z0-9][A-Za-z0-9_-]*(?:\.[A-Za-z0-9_-]+)*$")
+_MEDIA_EXT = (".m4a", ".mp4", ".wav", ".mp3", ".webm", ".opus", ".aac", ".flac", ".part")
+
+
+class UnsafePurgePath(RuntimeError):
+    pass
+
+
+def _inside(p: pathlib.Path, base: pathlib.Path) -> bool:
+    """p strictly inside base (both resolved, without following p's final symlink)."""
+    try:
+        rp = p.parent.resolve() / p.name
+        rb = base.resolve()
+    except OSError:
+        return False
+    return rp != rb and rb in rp.parents
+
+
+def _git_tracked_under(root: pathlib.Path, p: pathlib.Path) -> list[str]:
+    """Git-tracked files at/under p (empty when not a git checkout)."""
+    if not (root / ".git").exists():
+        return []
+    try:
+        rel = (p.parent.resolve() / p.name).relative_to(root.resolve())
+    except ValueError:
+        return []
+    try:
+        r = subprocess.run(["git", "-C", str(root), "ls-files", "-z", "--", str(rel)],
+                           capture_output=True, timeout=30)
+    except (OSError, subprocess.SubprocessError):
+        return []
+    return [x for x in r.stdout.decode("utf-8", "replace").split("\0") if x]
+
+
+def purge_roots(root: pathlib.Path, artifacts_base: pathlib.Path, video_id: str,
+                series_id: str | None) -> dict[str, pathlib.Path]:
+    pipe = load_pipeline_config(root)
+    mirror = root / (pipe.get("r2_mirror") or "data/r2-mirror")
+    out = {"artifacts": artifacts_base / video_id, "mirror": mirror}
+    if series_id and _SAFE_ID.match(series_id):
+        out["media"] = media_dir(root, series_id)
+    return out
+
+
+def check_purge_path(root: pathlib.Path, p: pathlib.Path, video_id: str,
+                     roots: dict[str, pathlib.Path]) -> str:
+    """Return the allowlist rule that permits deleting p, or raise UnsafePurgePath."""
+    if not _SAFE_ID.match(video_id or ""):
+        raise UnsafePurgePath(f"unsafe video_id {video_id!r}")
+    rp = p.parent.resolve() / p.name
+    rr = root.resolve()
+    if rp == rr or rp in rr.parents:
+        raise UnsafePurgePath(f"{p} is the repo root or above it")
+    media, arts, mirror = roots.get("media"), roots["artifacts"], roots["mirror"]
+    rule = None
+    if media is not None and _inside(p, media) and rp.parent == media.resolve() \
+            and rp.name.startswith(video_id + ".") and not p.is_dir():
+        rule = "media_source"                      # data/media/<series>/<id>.<ext>
+    elif _inside(p, arts):
+        rel = rp.relative_to(arts.resolve()).parts
+        if len(rel) == 3 and rel[0] == "s03_audio" and rel[2] == "audio":
+            rule = "wav_parts"                     # data/artifacts/<id>/s03_audio/<vk>/audio
+        elif len(rel) == 3 and rel[0] == "s04_asr" and rel[2] == "parts":
+            rule = "asr_checkpoints"               # data/artifacts/<id>/s04_asr/<vk>/parts
+        elif len(rel) == 3 and rel[0] == "s02_media" and rp.suffix.lower() in _MEDIA_EXT and not p.is_dir():
+            rule = "media_copy"
+        elif len(rel) == 3 and rel[0] == "s01_upload" and rel[2].startswith("source.") and not p.is_dir():
+            rule = "upload_copy"
+    elif _inside(p, mirror):
+        rel = rp.relative_to(mirror.resolve()).parts
+        if len(rel) == 2 and rel[0] in ("source", "play") and rel[1].startswith(video_id + "."):
+            rule = "mirror_media"
+        elif len(rel) == 2 and rel[0] == "artifacts" and rel[1] == video_id:
+            rule = "mirror_artifacts"
+    if rule is None:
+        raise UnsafePurgePath(f"{p} is outside {video_id}'s heavy-media allowlist")
+    tracked = _git_tracked_under(root, p)
+    if tracked:
+        raise UnsafePurgePath(f"{p} contains git-tracked files (e.g. {tracked[0]})")
+    return rule
+
+
 def heavy_paths(root: pathlib.Path, artifacts_base: pathlib.Path, video_id: str,
-                source_path: str | None, keep_source: bool = False) -> list[pathlib.Path]:
-    """Every heavy file/dir of one item: source audio, wav parts, play/source copies, checkpoints."""
+                source_path: str | None, keep_source: bool = False, series_id: str | None = None,
+                refused: list[dict[str, str]] | None = None) -> list[pathlib.Path]:
+    """Heavy files/dirs of one item that pass `check_purge_path`; refusals go to `refused`."""
+    if not _SAFE_ID.match(video_id or ""):
+        raise UnsafePurgePath(f"unsafe video_id {video_id!r}")
+    if series_id is None:
+        series_id = video_id.split("-", 1)[0] if "-" in video_id else None
+    roots = purge_roots(root, artifacts_base, video_id, series_id)
     out: list[pathlib.Path] = []
     if source_path and not keep_source:
         out.append(pathlib.Path(source_path))
-    d = artifacts_base / video_id
+    d = roots["artifacts"]
     out += sorted(d.glob("s03_audio/*/audio"))                    # wav parts (all versions)
     out += sorted(d.glob("s04_asr/*/parts"))                      # per-part ASR checkpoints
-    out += [p for p in d.glob("s02_media/*/*") if p.suffix.lower() in (".m4a", ".mp4", ".wav", ".mp3")]
+    out += [p for p in d.glob("s02_media/*/*") if p.suffix.lower() in _MEDIA_EXT]
     out += [p for p in d.glob("s01_upload/*/source.*")]
-    mirror = root / (load_pipeline_config(root).get("r2_mirror") or "data/r2-mirror")
+    mirror = roots["mirror"]
     out += sorted(mirror.glob(f"source/{video_id}.*")) + sorted(mirror.glob(f"play/{video_id}.*"))
-    if (mirror / "artifacts" / video_id).exists():
-        out.append(mirror / "artifacts" / video_id)
+    out.append(mirror / "artifacts" / video_id)
     seen, uniq = set(), []
     for p in out:
-        if p.exists() or p.is_symlink():
-            if str(p) not in seen:
-                seen.add(str(p))
-                uniq.append(p)
+        if not (p.exists() or p.is_symlink()) or str(p) in seen:
+            continue
+        seen.add(str(p))
+        try:
+            check_purge_path(root, p, video_id, roots)
+        except UnsafePurgePath as ex:
+            log.warning("purge %s: REFUSED %s", video_id, ex)
+            if refused is not None:
+                refused.append({"path": str(p), "reason": str(ex)})
+            continue
+        uniq.append(p)
     return uniq
 
 
@@ -205,17 +303,22 @@ def purge_item(root: pathlib.Path, db: StateDB, artifacts_base: pathlib.Path, e:
     if not m:
         raise RuntimeError(f"{video_id} not registered")
     src = (m.meta or {}).get("source") or (e.source() if e else {}) or {}
-    paths = heavy_paths(root, artifacts_base, video_id, m.source_path, keep_source=keep_source)
+    refused: list[dict[str, str]] = []
+    paths = heavy_paths(root, artifacts_base, video_id, m.source_path, keep_source=keep_source,
+                        series_id=m.series_id, refused=refused)
     files = [{"path": str(p), "bytes": _size(p)} for p in paths]
     freed = sum(f["bytes"] for f in files)
     rec = {"video_id": video_id, "series_id": m.series_id, "episode": m.episode, "title": m.title,
            "youtube_id": src.get("youtube_id"), "source_url": src.get("url"),
            "source_path": m.source_path, "source_sha256": m.source_sha256,
            "source_bytes": m.source_bytes, "duration_s": m.duration_s,
-           "bytes_freed": freed, "files": files, "verify": verify, "batch_id": batch_id}
+           "bytes_freed": freed, "files": files, "refused": refused, "verify": verify,
+           "batch_id": batch_id}
     if dry_run:
         return {**rec, "dry_run": True}
+    roots = purge_roots(root, artifacts_base, video_id, m.series_id)
     for p in paths:
+        check_purge_path(root, p, video_id, roots)        # re-check right before deleting
         if p.is_dir() and not p.is_symlink():
             shutil.rmtree(p, ignore_errors=True)
         else:

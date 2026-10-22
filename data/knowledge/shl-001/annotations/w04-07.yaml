@@ -1,0 +1,363 @@
+video_id: shl-001
+window: w04-07
+seg_from: 533
+seg_to: 1083
+chapters:
+- key: c08
+  title: 第4–5条 传与不传
+  start_seq: 533
+  summary: 表病入里只有两条路：入阳明则止（阳明无死证），入少阳才会进入三阴；六七天脉不变为不传，脉急数、欲吐、烦躁为传；传经主因是伤心——情志不佳或抗生素伤心。
+  clauses: [4, 5]
+  topics: [six_channel.yangming, six_channel.shaoyang, zangfu.xin, symptom.fan_zao]
+- key: c08.s1
+  parent: c08
+  title: 第4条 脉静为不传；传经与心
+  start_seq: 533
+  summary: 伤寒"一日"指约六七天；脉仍浮缓/浮紧为不传，脉数急为传；生气吵架或服抗生素伤心，病就会传；舌为心之苗，抗生素后舌现地图状凹洞。
+- key: c08.s2
+  parent: c08
+  title: 第5条 欲吐、烦躁为传；烦躁的定义
+  start_seq: 606
+  summary: 阳明但热不寒、少阳往来寒热；欲吐是入少阳、烦躁是入阳明；烦躁含情志不宁、动作不停、睡不安等，含义很广；太阳表证处方对证常一剂即愈。
+- key: c09
+  title: 第6条 温病与风温
+  start_seq: 634
+  summary: 太阳病有中风、伤寒、温病三类，各有其方；冬伤于寒、春必病温，发热而渴不恶寒为温病；风温是自汗不止、身灼热的脱津状态，误汗、误下、误火都会使津液更伤。
+  clauses: [6]
+  topics: [syndrome.wen_bing, syndrome.feng_wen, concept.jin_ye]
+- key: c09.s1
+  parent: c09
+  title: 温病：冬伤于寒，春必病温
+  start_seq: 634
+  summary: 发热而渴、不恶寒为温病，源于冬季伏寒到春阳发时外发；按节气，霜降后受寒至夏至前发的热病属温病，夏至后为暑热、湿热；张仲景不是没有温病方。
+- key: c09.s2
+  parent: c09
+  title: 风温：自汗出、身灼热
+  start_seq: 683
+  summary: 汗流不止而身热称风温，多因发汗药太重，或伤寒自愈中又劳动出汗再感；医生要能收能放。
+- key: c09.s3
+  parent: c09
+  title: 风温为病及误汗、误下、误火
+  start_seq: 710
+  summary: 风温为津液流失：脉阴阳俱浮、汗出、身重、多眠、鼻鼾、语言难出；误汗则小便不利，误下则失溲直视，误火则发黄、惊痫瘈疭；津液来自食物之水，验血不验水。
+- key: c10
+  title: 第7–11条 愈期、欲解时与寒热真假
+  start_seq: 789
+  summary: 发于阳七日愈、发于阴六日愈实为足六天；太阳病传阳明前先针足三里；太阳病欲解于巳至未，中午胃口恢复即愈；身大热反欲衣为真寒假热，张仲景只辨寒热虚实不讲阴虚，病中不进补。
+  clauses: [7, 8, 9, 10, 11]
+  topics: [acupoint.st36, six_channel.yangming, concept.yin_xu]
+- key: c10.s1
+  parent: c10
+  title: 第7条 发于阳七日愈、发于阴六日愈
+  start_seq: 789
+  summary: 有热恶寒发于阳（白天得病）、无热恶寒发于阴（夜里得病），起算点不同，实际都是足六天；经方对证当天或次日中午即愈。
+- key: c10.s2
+  parent: c10
+  title: 第8条 针足阳明，使经不传
+  start_seq: 827
+  summary: 太阳病传经先入阳明，得病当天就扎足三里即可阻断，不必等到第六天。
+- key: c10.s3
+  parent: c10
+  title: 第9–10条 欲解时与表解不了了
+  start_seq: 845
+  summary: 阳病愈于中午（巳至未）、阴病愈于半夜，以胃口恢复为证据；中风表解后余症不了了，约十二天可愈。
+- key: c10.s4
+  parent: c10
+  title: 第11条 真寒假热；伤寒不谈阴虚
+  start_seq: 878
+  summary: 身大热反欲衣为外热内寒（真寒假热），反之为真热假寒，治真者可略假者；张仲景只分寒热虚实，补法仅甘草、大枣、白芍、人参，病中不进补，与温病派不同。
+- key: c11
+  title: 第12条 桂枝汤：太阳中风主方
+  start_seq: 928
+  summary: 太阳中风阳浮阴弱、啬啬恶寒、淅淅恶风、翕翕发热、鼻鸣干呕，桂枝汤主之；桂枝汤调和阴阳，伤寒金匮六成方由其加减；并讲汤、散、丸剂型选择与汉代剂量考证。
+  clauses: [12]
+  topics: [formula.gui_zhi_tang, syndrome.tai_yang_zhong_feng]
+- key: c11.s1
+  parent: c11
+  title: 条文：阳浮阴弱、鼻鸣干呕
+  start_seq: 928
+  summary: 寸浮尺弱，阳浮者热自发、阴弱者汗自出，断续恶寒恶风、微热、鼻塞流涕；桂枝汤为调和阴阳第一方，非张仲景发明。
+- key: c11.s2
+  parent: c11
+  title: 汤、散、丸：剂型与煎法
+  start_seq: 949
+  summary: 汤者荡也，取其迅捷，发表用大火短煎取其气，攻下用小火久煎取其质；散剂用于久病、四肢游走之痹；丸剂缓而专，用于肿块、胃弱及乌梅丸驱虫。
+- key: c11.s3
+  parent: c11
+  title: 桂枝汤原方与汉代剂量考证
+  start_seq: 1042
+  summary: 原方桂枝三两、芍药三两、炙甘草二两、生姜三两、大枣十二枚；汉制剂量不能直接照开，倪师依清代陆九芝外曾祖王朴庄的考证换算。
+entities:
+- {id: clause.shl.004, seq: 533, surface: 第四条, corrected: 伤寒论第4条}
+- {id: syndrome.yang_ming_bing, seq: 545, surface: 阳明篇, corrected: 阳明病}
+- {id: new.concept.抗生素伤心, seq: 585, surface: 抗生素, corrected: 抗生素}
+- {id: new.tongue.地图舌, seq: 588, surface: 地图蛇, corrected: 地图舌}
+- {id: clause.shl.005, seq: 606, surface: 第五条, corrected: 伤寒论第5条}
+- {id: symptom.wang_lai_han_re, seq: 611, surface: 往来寒热, corrected: 往来寒热}
+- {id: clause.shl.006, seq: 634, surface: 第六条, corrected: 伤寒论第6条, note: 倪师讲义把第6条拆为第六、七、八条}
+- {id: formula.da_qing_long_tang, seq: 674, surface: 大青龙, corrected: 大青龙汤}
+- {id: syndrome.feng_wen, seq: 683, surface: 风温, corrected: 风温}
+- {id: new.symptom.身灼热, seq: 683, surface: 身灼热, corrected: 身灼热}
+- {id: formula.gui_zhi_jia_shao_yao_sheng_jiang_ge_yi_liang_ren_shen_san_liang_xin_jia_tang, seq: 718, surface: 新加汤, corrected: 桂枝新加汤}
+- {id: symptom.shen_zhong, seq: 713, surface: 身重, corrected: 身重}
+- {id: new.symptom.多眠睡, seq: 713, surface: 多连睡, corrected: 多眠睡}
+- {id: symptom.shi_sou, seq: 755, surface: 小便失禁, corrected: 失溲}
+- {id: new.symptom.惊痫瘈疭, seq: 773, surface: 新疆, corrected: 惊痫瘈疭, uncertain: true}
+- {id: clause.shl.007, seq: 789, surface: 第九条, corrected: 伤寒论第7条, note: 讲义编号第九条}
+- {id: clause.shl.008, seq: 827, surface: 第四条, corrected: 伤寒论第8条, uncertain: true, note: 讲义编号应为第十条，ASR作第四条}
+- {id: acupoint.st36, seq: 837, surface: 足三里穴, corrected: 足三里}
+- {id: clause.shl.009, seq: 845, surface: 第十一条, corrected: 伤寒论第9条}
+- {id: clause.shl.010, seq: 872, surface: 表血如果表示解了, corrected: 风家表解而不了了者十二日愈}
+- {id: clause.shl.011, seq: 878, surface: 第十三和第十四, corrected: 伤寒论第11条}
+- {id: new.pattern.真寒假热, seq: 886, surface: 真寒假热, corrected: 真寒假热}
+- {id: new.pattern.真热假寒, seq: 889, surface: 真热, corrected: 真热假寒}
+- {id: clause.shl.012, seq: 928, surface: 第十五条, corrected: 伤寒论第12条, note: 讲义编号第十五条}
+- {id: symptom.bi_ming, seq: 936, surface: 鼻子呼吸不是很顺畅, corrected: 鼻鸣}
+- {id: new.concept.汤剂, seq: 950, surface: 汤剂, corrected: 汤剂}
+- {id: new.concept.散剂, seq: 950, surface: 散剂, corrected: 散剂}
+- {id: new.concept.丸剂, seq: 951, surface: 丸剂, corrected: 丸剂}
+- {id: formula.wu_ling_san, seq: 950, surface: 五苓散, corrected: 五苓散}
+- {id: formula.di_dang_tang, seq: 982, surface: 抵当汤, corrected: 抵当汤}
+- {id: formula.da_cheng_qi_tang, seq: 978, surface: 大成气汤, corrected: 大承气汤}
+- {id: herb.gui_zhi, seq: 1045, surface: 三两去皮, corrected: 桂枝, dosage: 三两（去皮）}
+- {id: herb.shao_yao, seq: 1045, surface: 白白如说三两, corrected: 芍药, dosage: 三两}
+- {id: herb.gan_cao, seq: 1045, surface: 制甘草二了, corrected: 炙甘草, dosage: 二两}
+- {id: herb.sheng_jiang, seq: 1045, surface: 生姜三两切, corrected: 生姜, dosage: 三两（切）}
+- {id: herb.da_zao, seq: 1045, surface: 大枣十二枚, corrected: 大枣, dosage: 十二枚}
+- {id: new.person.陆九芝, seq: 1057, surface: 怒久之, corrected: 陆九芝}
+- {id: new.person.王朴庄, seq: 1063, surface: 王蒲庄, corrected: 王朴庄, uncertain: true}
+- {id: new.person.傅青主, seq: 1076, surface: 父亲主, corrected: 傅青主, uncertain: true}
+- {id: new.person.陈士铎, seq: 1078, surface: 陈世铎, corrected: 陈士铎}
+kps:
+- type: pathomechanism
+  s: 表病入里只有两种可能：入阳明或入少阳；入阳明就到此为止，入少阳才可能再传太阴、少阴、厥阴。
+  seq: [539, 557]
+  q: 所以如果没有进没有进入阳明跑了少阳的话，就会有阴症的出现。
+  ents: [six_channel.yangming, six_channel.shaoyang, six_channel.taiyin, six_channel.shaoyin, six_channel.jueyin]
+  conf: 0.85
+- type: prognosis
+  s: 阳明无死证：病到阳明不再深入，如长年便秘者也不会因此致死；死证出在厥阴。
+  seq: [545, 555]
+  q: 阳明又是无死症哦
+  ents: [syndrome.yang_ming_bing, new.symptom.便秘]
+  conf: 0.85
+- type: clause_interpretation
+  s: 第4条"伤寒一日"指约六七天（一个经的周期）；脉若静（浮缓、浮紧不变）为不传，脉数急为传入里。
+  seq: [567, 575]
+  q: 这里一日一日呢是六天到七天
+  ents: [clause.shl.004, pulse.fu, pulse.shu]
+  conf: 0.8
+- type: pathomechanism
+  s: 病传经的主因是伤心：一是情志（感冒时生气吵架病就传），二是心脏功能受损；心情开朗病就不传。
+  seq: [576, 583]
+  q: 绝大多数病传经的传经的原因就是心脏。
+  ents: [zangfu.xin]
+  conf: 0.8
+- type: contraindication
+  s: 倪师反对外感用抗生素：认为抗生素先伤心，次日舌现地图状凹洞（舌为心之苗），心伤反使病传（倪师个人观点）。
+  seq: [584, 593]
+  q: 因为抗生素一下去以后，第一个伤热就是心脏。
+  ents: [new.concept.抗生素伤心, new.tongue.地图舌, zangfu.xin]
+  conf: 0.7
+- type: concept_definition
+  s: 心为君主之官，不受病（少听说心脏癌）；经方治好心，连情志也会变好。
+  seq: [597, 601]
+  q: 心脏不会受病啊，信君主之官
+  ents: [zangfu.xin, concept.jing_fang]
+  conf: 0.7
+- type: clause_interpretation
+  s: 第5条伤寒二三日不见阳明、少阳证为不传；欲吐表示入少阳（往来寒热、呕），烦躁表示入阳明（但热不寒）。
+  seq: [608, 616]
+  q: 好，如果补欲吐，若烦躁者为传言有欲吐，就是讲的是进入少阳。
+  ents: [clause.shl.005, symptom.wang_lai_han_re, symptom.fan_zao, six_channel.shaoyang, six_channel.yangming, symptom.ou_tu]
+  conf: 0.85
+- type: concept_definition
+  s: 烦躁含义很广：情绪烦乱摔东西、睡不安稳、手脚躁动、小孩好动跑来跑去、梦游，凡动作与情志静不下来都叫烦躁。
+  seq: [617, 621]
+  q: 所以烦躁的地域很广。
+  ents: [symptom.fan_zao]
+  conf: 0.85
+- type: treatment_principle
+  s: 伤寒条文分得细，是要医生一发现病将传就用经方截断；太阳表证处方对证常一剂即愈，有时三碗只喝第一碗就好，余药不必再喝。
+  seq: [628, 633]
+  q: 真的一剂，你处处方对的时候一剂就好了。
+  ents: [concept.jing_fang]
+  conf: 0.85
+- type: clause_interpretation
+  s: 第6条太阳病发热而渴、不恶寒者为温病；太阳病有中风、伤寒、温病三种，各有处方，张仲景并非没有温病方。
+  seq: [636, 641]
+  q: 好好，这太太病呢发热而咳着不恶寒，好为温病
+  ents: [clause.shl.006, syndrome.wen_bing, syndrome.zhong_feng, syndrome.shang_han]
+  conf: 0.9
+- type: pathomechanism
+  s: 温病源于"冬伤于寒，春必病温"：冬季受寒伏于肌肉，春天阳气升发时外发；温病派认为温病与伤寒无关是不对的。
+  seq: [639, 645]
+  q: 冬伤于寒春，病必温。
+  ents: [syndrome.wen_bing, syndrome.shang_han]
+  conf: 0.85
+- type: concept_definition
+  s: 按节气界定：霜降后受寒，到次年夏至前发出的热病为温病；夏至后的是暑热、湿热，不属温病。
+  seq: [649, 663]
+  q: 在夏至以后就看不到温病了。
+  ents: [syndrome.wen_bing]
+  conf: 0.8
+- type: clinical_tip
+  s: 暖冬节气不正易生疫病；倪师举台南十八岁学生感冒致死为例，认为是不会用大青龙汤。
+  seq: [671, 675]
+  q: 因为不会用大青龙嘛，然后就死掉了。
+  ents: [formula.da_qing_long_tang, new.concept.疫病]
+  conf: 0.7
+- type: clause_interpretation
+  s: 第6条风温：发汗后自汗不止、身灼热；常因医生发表药开得太重，或伤寒自愈过程中又劳动出汗再受风所致，医生要能收能放。
+  seq: [683, 709]
+  q: 若自汗出身灼热者，名为风温。
+  ents: [clause.shl.006, syndrome.feng_wen, new.symptom.身灼热, method.fa_han]
+  conf: 0.85
+- type: pathomechanism
+  s: 风温为病是津液不断流失：脉阴阳俱浮、汗出、身重、多眠睡、鼻鼾、语言难出，都是血中水分与肺津不足的表现；可用桂枝新加汤、人参补津液。
+  seq: [710, 729]
+  q: 都这些都是津液不足的现象。
+  ents: [syndrome.feng_wen, concept.jin_ye, symptom.shen_zhong, new.symptom.多眠睡, herb.ren_shen, formula.gui_zhi_jia_shao_yao_sheng_jiang_ge_yi_liang_ren_shen_san_liang_xin_jia_tang]
+  conf: 0.85
+- type: contraindication
+  s: 风温误作太阳中风再开桂枝汤发汗，津液更伤而小便不利，因汗与小便同源。
+  seq: [730, 736]
+  q: 因为汗它是同源。
+  ents: [formula.gui_zhi_tang, symptom.xiao_bian_bu_li, syndrome.feng_wen]
+  conf: 0.85
+- type: contraindication
+  s: 风温津亏时若误用攻下，肠中食物之水（津液源头）被泻掉，导致小便失禁滴漏、两眼直视，伤及厥阴肝血。
+  seq: [738, 762]
+  q: 水的源头也没了，病人呢很惨了
+  ents: [symptom.shi_sou, method.xia_fa, six_channel.jueyin, zangfu.gan]
+  conf: 0.8
+- type: pathomechanism
+  s: 津液来源：饮入之水在胃中气化，食物中的水在小肠泌别后进入血液循环。
+  seq: [744, 747]
+  q: 食物里面的水都是到小肠里面细化出来。
+  ents: [concept.jin_ye, zangfu.xiao_chang, zangfu.wei]
+  conf: 0.8
+- type: concept_definition
+  s: 中医处方不应看验血报告（如胆固醇高就开药）：验血不验水，血中水分多少会影响指数。
+  seq: [748, 754]
+  q: 所以我们处方的时候，我们不能看液举报告。
+  conf: 0.75
+- type: contraindication
+  s: 风温误火（如北方睡热炕烘烤）使津液更失：皮肤发黄（失水贫血之黄，非肝胆之黄），甚则惊痫、抽搐；应让病人远离火源。
+  seq: [764, 781]
+  q: 有的时候它不是它是贫血的黄好是血不够的黄。
+  ents: [symptom.fa_huang, new.symptom.惊痫瘈疭, syndrome.feng_wen]
+  conf: 0.8
+- type: clause_interpretation
+  s: 第7条发热恶寒者发于阳（白天得病），无热恶寒者发于阴（夜里得病）；七日愈与六日愈只是起算点不同，实际都是足六天的自然病程。
+  seq: [789, 816]
+  q: 实际上都是十足的六天足六天。
+  ents: [clause.shl.007, symptom.fa_re, symptom.e_han]
+  conf: 0.85
+- type: prognosis
+  s: 经方对证：上午服药中午前就好；下午才服药，要到隔天中午才好，因中午阴阳交替、药力使阴阳平衡。
+  seq: [817, 823]
+  q: 如果你是在中午以前喝的，早上就吃的经方，中午以前就会好。
+  ents: [concept.jing_fang]
+  conf: 0.8
+- type: acupoint_usage
+  s: 第8条太阳病欲作再经者针足阳明：传经第一站是阳明，得病当天就扎足三里，使经不传，不必等六天。
+  seq: [829, 844]
+  q: 当天就把他扎了足。
+  ents: [clause.shl.008, acupoint.st36, meridian.st, six_channel.yangming]
+  conf: 0.85
+- type: prognosis
+  s: 第9条太阳病欲解时从巳至未：所有阳病在中午恢复，以中午胃口恢复为感冒痊愈的绝对证据；痊愈后剩下的汤药不必再喝。
+  seq: [846, 856]
+  q: 中午的胃口就好了，你就好。
+  ents: [clause.shl.009]
+  conf: 0.85
+- type: prognosis
+  s: 阴病恢复在半夜：治肝癌、肺癌等时，病人说半夜饿醒想吃东西就是好转标准，倪师常以此问诊。
+  seq: [857, 863]
+  q: 所有的阳病恢复的时候，都是在中午因病恢复的时候是在半夜。
+  conf: 0.8
+- type: clause_interpretation
+  s: 第10条风家表解而不了了者十二日愈：中风已不恶风、不出汗，只剩轻微不适，约十二天自愈。
+  seq: [872, 874]
+  q: 可是还一点点不了了，就是还有一点点不舒服的症状。
+  ents: [clause.shl.010, syndrome.zhong_feng]
+  conf: 0.8
+- type: diagnostic_rule
+  s: 第11条身大热反欲得衣者，热在皮肤、寒在骨髓，为真寒假热；身大寒反不欲近衣者为真热假寒；治时可略去假象，直接治其真。
+  seq: [879, 892]
+  q: 真寒假热。
+  ents: [clause.shl.011, new.pattern.真寒假热, new.pattern.真热假寒]
+  conf: 0.85
+- type: treatment_principle
+  s: 上热下寒等寒热并存时，祛热药与祛寒药要同时用。
+  seq: [894, 895]
+  q: 因为我们这样子写就告诉你祛热和祛寒要同时用
+  conf: 0.8
+- type: concept_definition
+  s: 伤寒金匮从不谈阴虚，只分寒热、虚实（阴盛、阳盛）；"人人阴虚、开滋阴药"是温病派的做法。
+  seq: [900, 911]
+  q: 所以伤寒经脉你们看不到阴虚。
+  ents: [concept.yin_xu, classic.shang_han_lun, classic.jin_gui_yao_lve]
+  conf: 0.85
+- type: treatment_principle
+  s: 张仲景的补法层次：小补用甘草，中补加大枣、白芍，大补用人参；病时用治病药，健康时才吃补药。
+  seq: [916, 922]
+  q: 大补的时候给你加人参，它就结束了他的补阴的药就是这样子。
+  ents: [herb.gan_cao, herb.da_zao, herb.shao_yao, herb.ren_shen]
+  conf: 0.85
+- type: clause_interpretation
+  s: 第12条太阳中风：寸脉浮、尺脉弱，阳浮者热自发、阴弱者汗自出；啬啬恶寒、淅淅恶风、翕翕发热（断续微热）、鼻鸣干呕，桂枝汤主之。
+  seq: [929, 936]
+  q: 阳浮阴弱，寸脉是浮到了阴脉。
+  ents: [clause.shl.012, formula.gui_zhi_tang, syndrome.tai_yang_zhong_feng, symptom.e_han, symptom.e_feng, symptom.bi_ming, symptom.gan_ou]
+  conf: 0.9
+- type: formula_indication
+  s: 桂枝汤是调和阴阳第一方，伤寒到金匮六成以上的处方是桂枝汤加减；方出上古，张仲景把它归到太阳中风。
+  seq: [937, 948]
+  q: 大概百分之六十以上的处方都是桂枝汤
+  ents: [formula.gui_zhi_tang, syndrome.tai_yang_zhong_feng]
+  conf: 0.85
+- type: treatment_principle
+  s: 汤者荡也，取其迅捷：同样五味药，桂枝丸服后久不发汗，桂枝汤很快发汗；邪重、虚羸枯瘦、润泽皮肤、增益气血、阴阳失衡都用汤剂。
+  seq: [954, 1002]
+  q: 所以汤取它的迅捷速度很快。
+  ents: [new.concept.汤剂, formula.gui_zhi_tang]
+  conf: 0.85
+- type: formula_composition
+  s: 煎法看目的：发表药全程大火、15–20分钟煮完，取其"气"以发散；攻下药（如大承气汤）小火久煎，取其"质"厚重以攻下。
+  seq: [967, 981]
+  q: 所以中药所有发表的药，你的目的要发表，就像大火去煮。
+  ents: [method.fa_biao, formula.da_cheng_qi_tang]
+  conf: 0.85
+- type: treatment_principle
+  s: 散剂用于久病，以及在四肢、表里游走不定的风湿痹症（如五苓散类）。
+  seq: [1003, 1009]
+  q: 这种我们都是用散记
+  ents: [new.concept.散剂, formula.wu_ling_san]
+  conf: 0.75
+- type: treatment_principle
+  s: 丸剂药性缓而力量专一：用于破积聚、肿块肿瘤，或胃口差者缓攻；要集中打一点用丸，要全身扩散用汤。
+  seq: [1011, 1027]
+  q: 药性比较缓，但是它力量非常的专一
+  ents: [new.concept.丸剂]
+  conf: 0.85
+- type: formula_composition
+  s: 乌梅丸驱虫要做成丸：方中干姜、黄连等极苦极辣，乌梅需先醋泡两天，煎汤难以入口，做丸才能直达肠道诱虫吃药。
+  seq: [1030, 1040]
+  q: 所以把它做成丸剂好，那够直接攻那个定点丸。
+  ents: [formula.wu_mei_wan, herb.wu_mei, herb.gan_jiang, herb.huang_lian]
+  conf: 0.8
+- type: formula_composition
+  s: 桂枝汤原方（汉制）：桂枝三两去皮、芍药三两、炙甘草二两、生姜三两切、大枣十二枚；汉代剂量不能直接照开。
+  seq: [1045, 1047]
+  q: 生姜三两切大枣十二枚
+  ents: [formula.gui_zhi_tang, herb.gui_zhi, herb.shao_yao, herb.gan_cao, herb.sheng_jiang, herb.da_zao]
+  conf: 0.9
+- type: concept_definition
+  s: 伤寒论剂量换算依据清代经方家陆九芝之外曾祖王朴庄（乾隆末嘉庆年间名医）的汉制度量考证；今人"一钱=5克"或"3.6克"说法不一。
+  seq: [1054, 1071]
+  q: 很多人大部人跟我讲，我们是一钱是五克。
+  ents: [new.person.陆九芝, new.person.王朴庄]
+  conf: 0.65
+  asr: 怒久之/鹿九芝=陆九芝；王蒲庄推定为王朴庄

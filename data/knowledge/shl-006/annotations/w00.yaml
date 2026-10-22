@@ -1,0 +1,123 @@
+video_id: shl-006
+window: w00
+seg_from: 0
+seg_to: 123
+chapters:
+- key: c01
+  title: 太阴篇导论：三阴传变与"一幅图"
+  start_seq: 0
+  summary: 倪师用"一幅图"串起六经传变：病由太阳膀胱、少阳三焦入太阴脾，再深入心肾，至厥阴肝决生死；并提出阴极阳回的观点，作为读三阴篇的总纲。
+  topics: [six_channel.taiyin, six_channel.shaoyin, six_channel.jueyin, zangfu.pi]
+- key: c01.s1
+  parent: c01
+  title: 传变路线与"病时不服补药"
+  start_seq: 0
+  summary: 三阳失治即入阴经，影响气血；张仲景气虚用人参、血虚用白芍，从不用当归，强调病时吃治病药而非补药。
+- key: c01.s2
+  parent: c01
+  title: 脾主湿与"人体不是银行"的代谢观
+  start_seq: 39
+  summary: 脾主湿；饮食一半营养一半残渣，只进不出会在体内积聚成阴、成实；思伤脾、忧伤肺，外感加内伤更难治。
+- key: c01.s3
+  parent: c01
+  title: 三阴的层次：阴之初、阴之中、阴之尽
+  start_seq: 72
+  summary: 太阴为阴之初、少阴为阴之中、厥阴为阴之尽；三阴多寒证，至厥阴阴极阳回，可见寒热错杂。
+- key: c02
+  title: 第273条 太阴提纲：腹满而吐、食不下
+  start_seq: 89
+  summary: 讲太阴病提纲证：脾主腹主湿，湿盛则腹满、脾大压胃而吐、食不下；腹满并非燥屎，误用承气攻下反致胸下结硬。
+  clauses: [273]
+  topics: [six_channel.taiyin, symptom.fu_man, zangfu.pi]
+entities:
+- {id: six_channel.yangming, seq: 2, surface: 如明, corrected: 阳明}
+- {id: six_channel.taiyin, seq: 13, surface: 太硬, corrected: 太阴}
+- {id: zangfu.pi, seq: 18, surface: 皮脏, corrected: 脾脏}
+- {id: herb.shao_yao, seq: 23, surface: 白芍, corrected: 白芍, note: 倪师以白芍当经方芍药}
+- {id: new.formula.四物汤, seq: 27, surface: 四物汤, corrected: 四物汤}
+- {id: new.formula.八珍汤, seq: 27, surface: 八珍汤, corrected: 八珍汤}
+- {id: six_channel.shaoyin, seq: 34, surface: 噪音, corrected: 少阴, uncertain: true}
+- {id: zangfu.pi, seq: 61, surface: 皮, corrected: 脾}
+- {id: six_channel.shaoyang, seq: 65, surface: 邵阳, corrected: 少阳}
+- {id: six_channel.shaoyin, seq: 74, surface: 哨阴, corrected: 少阴}
+- {id: six_channel.jueyin, seq: 75, surface: 厥音, corrected: 厥阴}
+- {id: clause.shl.273, seq: 90, surface: 第两百八十七条, corrected: 伤寒论第273条, note: 倪师讲义编号287，对应宋本273}
+- {id: new.symptom.食不下, seq: 91, surface: 食不下, corrected: 食不下}
+- {id: new.symptom.胸下结硬, seq: 92, surface: 胸下结边, corrected: 胸下结硬}
+- {id: formula.diao_wei_cheng_qi_tang, seq: 119, surface: 调胃陈解, corrected: 调胃承气汤}
+kps:
+- type: pathomechanism
+  s: 外邪由太阳（膀胱）入少阳（三焦，半表半里），再入太阴脾；三阴失治深入心肾，最后到肝（厥阴）决生死。
+  seq: [15, 36]
+  q: 如果是进入半表半里就入三焦，三焦是少阳病。
+  ents: [six_channel.taiyang, six_channel.shaoyang, six_channel.taiyin, zangfu.pang_guang, zangfu.san_jiao, zangfu.pi, six_channel.jueyin]
+  conf: 0.85
+- type: treatment_principle
+  s: 张仲景病中不用补药：气虚用人参，血虚用白芍（酸收），不用当归；四物汤、八珍汤等补药只宜无病时强身。
+  seq: [22, 28]
+  q: 生病的时候不要吃补药
+  ents: [person.zhang_zhong_jing, herb.ren_shen, herb.shao_yao, herb.dang_gui, new.formula.四物汤, new.formula.八珍汤]
+  conf: 0.85
+- type: pathomechanism
+  s: 依《内经》，脾主湿，身上的湿由脾管理。
+  seq: [39, 40]
+  q: 我们讲脾主湿
+  ents: [zangfu.pi, classic.huang_di_nei_jing]
+  conf: 0.9
+- type: concept_definition
+  s: 新陈代谢是"一半营养、一半残渣"：吃进去的必须排出来，只存不排会在体内积聚，阴证时积成实。
+  seq: [44, 56]
+  q: 一半是营养，一半是残渣。
+  conf: 0.8
+- type: pathomechanism
+  s: 情志致病：思伤脾、忧伤肺；外感入里再加内伤情志，雪上加霜，非常难治。
+  seq: [61, 70]
+  q: 外因内感外来的原进入，对不对？
+  ents: [zangfu.pi, zangfu.fei]
+  conf: 0.75
+  asr: 原文"施伤体/撕太深/u肽过"为"思伤脾/思太甚/忧太过"的误识
+- type: concept_definition
+  s: 太阴为阴之初，少阴为阴之中，厥阴为阴之尽；三阴病多见寒证，到厥阴可见热证回复、寒热错杂。
+  seq: [72, 78]
+  q: 所以会看到寒热并结的现象。
+  ents: [six_channel.taiyin, six_channel.shaoyin, six_channel.jueyin]
+  conf: 0.85
+  asr: 优势英之粗=阴之初；哨阴=少阴；厥音=厥阴；阴之境=阴之尽
+- type: pathomechanism
+  s: 阴极生阳、阳极生阴：病到厥阴阴尽时阳气会回头，如太极图般圆形旋转，并非阴尽即死。
+  seq: [79, 86]
+  q: 所以我们阴极阴到了极限呢会升。
+  ents: [six_channel.jueyin, concept.yin_yang]
+  conf: 0.85
+- type: clause_interpretation
+  s: 第273条太阴提纲：腹满而吐、食不下、自利益甚、时腹自痛；若误下，必胸下结硬。
+  seq: [90, 93]
+  q: 太阴之为病，腹满而吐食不下。
+  ents: [clause.shl.273, syndrome.tai_yin_bing, symptom.fu_man, new.symptom.食不下, symptom.zi_li, new.symptom.胸下结硬]
+  conf: 0.9
+  asr: 倪师称"第两百八十七条"（讲义编号），即宋本第273条
+- type: diagnostic_rule
+  s: 脾主腹、主湿：见病人腹部肿大即知脾功能失常、湿盛；脾肿大顶到胃，则吐、吃不下。
+  seq: [96, 105]
+  q: 脾主属腹，那脾又主湿
+  ents: [zangfu.pi, zangfu.wei, symptom.fu_man]
+  conf: 0.85
+- type: pathomechanism
+  s: 脾喜燥恶湿：脾管湿但不喜湿盛，湿太盛则脾功能出问题。
+  seq: [100, 101]
+  q: 脾脏呢喜欢干燥，不喜欢湿
+  ents: [zangfu.pi]
+  conf: 0.9
+- type: diagnostic_rule
+  s: 问诊辨脾胰：问饿不饿（属脾），问吃东西有无味道（如同嚼蜡提示"甜肉"即胰有问题）。
+  seq: [108, 116]
+  q: 我是如同嚼蜡，吃东西没有味道
+  ents: [zangfu.pi]
+  conf: 0.6
+  asr: 甜肉/宜脏/仪脏=胰脏
+- type: contraindication
+  s: 太阴腹满内无燥屎，若误认为阳明而用小承气汤、调胃承气汤攻下，寒凉药使病更重，出现胸下结硬、腹痛。
+  seq: [118, 121]
+  q: 你攻下了以后，因为功下的药都是寒凉的药啊
+  ents: [formula.xiao_cheng_qi_tang, formula.diao_wei_cheng_qi_tang, symptom.fu_man, new.symptom.胸下结硬]
+  conf: 0.85

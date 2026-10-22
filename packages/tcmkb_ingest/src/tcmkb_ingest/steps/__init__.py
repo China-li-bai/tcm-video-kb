@@ -1,4 +1,4 @@
-"""Pipeline steps s00 … s08."""
+"""Pipeline steps s00 … s09 (s09_knowledge is opt-in: default plans stop at s08)."""
 from __future__ import annotations
 from typing import Callable
 
@@ -12,6 +12,7 @@ STEP_ORDER = [
     "s06_clean",
     "s07_flag",
     "s08_chapter",
+    "s09_knowledge",
 ]
 
 # Short aliases accepted by CLI (--to s08, --from s04)
@@ -25,6 +26,7 @@ ALIASES = {
     "s06": "s06_clean",
     "s07": "s07_flag",
     "s08": "s08_chapter",
+    "s09": "s09_knowledge",
 }
 
 def normalize_step(name: str) -> str:
@@ -41,7 +43,7 @@ def get_runner(step: str) -> Callable:
     step = normalize_step(step)
     from . import (
         s00_register, s01_upload, s02_media, s03_audio,
-        s04_asr, s05_asr_alt, s06_clean, s07_flag, s08_chapter,
+        s04_asr, s05_asr_alt, s06_clean, s07_flag, s08_chapter, s09_knowledge,
     )
     return {
         "s00_register": s00_register.run,
@@ -53,4 +55,5 @@ def get_runner(step: str) -> Callable:
         "s06_clean": s06_clean.run,
         "s07_flag": s07_flag.run,
         "s08_chapter": s08_chapter.run,
+        "s09_knowledge": s09_knowledge.run,
     }[step]

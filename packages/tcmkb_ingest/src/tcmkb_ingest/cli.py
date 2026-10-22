@@ -231,6 +231,55 @@ def refetch_cmd(ctx: click.Context, video_id: str, print_only: bool):
     from tcmkb_ingest.planner import refetch
     click.echo(json.dumps(refetch(ctx.obj["root"], video_id, run=not print_only), ensure_ascii=False))
 
+@main.command("knowledge-prep")
+@click.option("--video", "video_ids", multiple=True, required=True)
+@click.pass_context
+def knowledge_prep_cmd(ctx: click.Context, video_ids: tuple[str, ...]):
+    """Write reading windows (data/knowledge/<id>/_work/windows) for annotation. No DB writes."""
+    from tcmkb_ingest.knowledge.build import load_config
+    from tcmkb_ingest.knowledge.prep import prepare
+    cfg = load_config(ctx.obj["root"])
+    for v in video_ids:
+        rep = prepare(ctx.obj["root"], v, float(cfg.get("window_s", 720)))
+        click.echo(json.dumps({"video_id": v, "windows": len(rep.get("windows", []))}, ensure_ascii=False))
+
+@main.command("knowledge-build")
+@click.option("--video", "video_ids", multiple=True, help="video ids (default: every annotated episode)")
+@click.option("--no-strict", is_flag=True, help="Write outputs even when validation finds errors")
+@click.option("--index/--no-index", default=True, show_default=True, help="Refresh data/knowledge/_index")
+@click.pass_context
+def knowledge_build_cmd(ctx: click.Context, video_ids: tuple[str, ...], no_strict: bool, index: bool):
+    """Validate annotations and write chapters/entities/knowledge points/outline. No DB writes."""
+    from tcmkb_ingest.knowledge.build import build, KnowledgeBuildError
+    from tcmkb_ingest.knowledge.export import build_index
+    root = ctx.obj["root"]
+    kroot = root / "data" / "knowledge"
+    vids = list(video_ids) or sorted(d.name for d in kroot.iterdir()
+                                     if d.is_dir() and any((d / "annotations").glob("*.yaml")))
+    failed = False
+    for v in vids:
+        try:
+            rep = build(root, v, strict=not no_strict)
+            click.echo(json.dumps({k: rep[k] for k in ("video_id", "n_chapters", "n_sections", "n_entities",
+                                                        "n_knowledge_points")} | {"errors": len(rep["errors"])},
+                                  ensure_ascii=False))
+        except KnowledgeBuildError as e:
+            failed = True
+            click.echo(f"{v}: {len(e.errors)} error(s)", err=True)
+            for line in e.errors[:50]:
+                click.echo(f"  {line}", err=True)
+    if index:
+        click.echo(json.dumps(build_index(root), ensure_ascii=False))
+    if failed:
+        sys.exit(1)
+
+@main.command("knowledge-index")
+@click.pass_context
+def knowledge_index_cmd(ctx: click.Context):
+    """Rebuild data/knowledge/_index/{entities,knowledge_points,chapters}.csv."""
+    from tcmkb_ingest.knowledge.export import build_index
+    click.echo(json.dumps(build_index(ctx.obj["root"]), ensure_ascii=False))
+
 @main.command("steps")
 def steps_cmd():
     """List known pipeline steps."""

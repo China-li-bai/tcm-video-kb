@@ -1,0 +1,339 @@
+video_id: shl-001
+window: w08-11
+seg_from: 1084
+seg_to: 1592
+chapters:
+- key: c11.s4
+  parent: c11
+  title: 煎服法与"一升"的估算
+  start_seq: 1104
+  summary: 汉代的"微火"实为滚火；生姜只需两三片、大枣掰开；"一升"按"六勺七抄"估约今五钱的量。
+- key: c11.s5
+  parent: c11
+  title: 桂枝汤的阴阳与姜草枣
+  start_seq: 1130
+  summary: 桂枝辛甘发散为阳，白芍酸苦涌泄为阴，等量以对应动脉静脉等长；阳虚加桂、阴虚重芍；单用桂芍发汗太强伤津，故加大枣护胃液、生姜开胃、炙甘草解食毒并强心；同证异病，辨证论治。
+- key: c11.s6
+  parent: c11
+  title: 啜粥、微汗与服药禁忌
+  start_seq: 1215
+  summary: 服后啜热稀粥助药力，最好的汗是似有似无的微汗；汗出病愈即停后服，未愈隔两三小时再服；剂量随体格增减；汗后不可当风、近火，以次日中午胃口恢复为愈。
+- key: c12
+  title: 第13–14条 桂枝汤证与桂枝加葛根汤
+  start_seq: 1295
+  summary: 汗出、恶风是中风主症，头痛与否皆可用桂枝汤；项背强几几加葛根，葛根如藤蔓能升水至顶、生津化脓，剂量须大于桂枝，用于面部中风与头面肌肉麻痹；治炎症要清热兼祛湿。
+  clauses: [13, 14]
+  topics: [formula.gui_zhi_tang, formula.gui_zhi_jia_ge_gen_tang, herb.ge_gen]
+- key: c12.s1
+  parent: c12
+  title: 第13条 汗出恶风即可用桂枝汤
+  start_seq: 1295
+  summary: 太阳中风必有汗出、恶风，头痛有无都可用桂枝汤；伤寒则无汗。
+- key: c12.s2
+  parent: c12
+  title: 第14条 桂枝加葛根汤：葛根升津、量大于桂枝
+  start_seq: 1300
+  summary: 项背强几几、汗出恶风，桂枝汤加葛根；葛根升提津液、化脓，剂量要高于桂枝白芍；不需啜粥，只求后脑局部出汗；大火快煮取其气，治面瘫效佳。
+- key: c12.s3
+  parent: c12
+  title: 炎症观：清热必兼祛湿
+  start_seq: 1380
+  summary: 桂枝汤为基础方可引药到身体各部；脓必有湿热，抗生素只杀菌不改环境易复发，中医清热（黄芩、黄连）加祛湿（白术等）改变环境。
+- key: c13
+  title: 第15–16条 表里先后、坏病与桂枝本为解肌
+  start_seq: 1413
+  summary: 表里同病原则上先解表后攻里，久不大便可表里同治；误下后气上冲者表邪仍在，可再与桂枝汤；汗吐下温针后不解为坏病，观其脉证随证治之；脉浮紧、发热无汗者不可与桂枝汤。
+  clauses: [15, 16]
+  topics: [formula.gui_zhi_tang, syndrome.huai_bing, method.jie_ji, method.xia_fa]
+- key: c13.s1
+  parent: c13
+  title: 第15条 先表后里；误下后气上冲
+  start_seq: 1413
+  summary: 表证兼便秘先发汗后攻下，一周未便可同开；误下后病人觉气往上冲，说明表邪未陷，仍可用桂枝汤。
+- key: c13.s2
+  parent: c13
+  title: 第16条 汗吐下三法与坏病；桂枝本为解肌
+  start_seq: 1454
+  summary: 病在表用汗法、在上膈用吐法、堵在下焦用下法；三法用尽仍不愈为坏病，须观其脉证；桂枝汤解肌，脉浮紧无汗属麻黄汤证，不可与之；误下致表邪内陷可成结胸、痞证。
+- key: c14
+  title: 第17–19条 桂枝汤禁忌：酒客、喘家、吐家
+  start_seq: 1505
+  summary: 酒客胃已伤，服桂枝汤则呕；喘家有桂枝汤证加厚朴、杏仁；常呕吐者服桂枝辛散可致胃出血、吐脓血；太阳病本无吐，有吐已属少阳。
+  clauses: [17, 18, 19]
+  topics: [formula.gui_zhi_tang, formula.gui_zhi_jia_hou_po_xing_zi_tang, herb.hou_po, herb.xing_ren]
+- key: c15
+  title: 第20条 桂枝加附子汤：发汗遂漏不止
+  start_seq: 1550
+  summary: 发汗太过致汗漏不止、恶风、小便难、四肢微急难以屈伸，用桂枝汤加炮附子固表；炮附子毒小、一枚约三钱，与桂枝汤同用才能到肌表四肢收汗。
+  clauses: [20]
+  topics: [formula.gui_zhi_jia_fu_zi_tang, herb.fu_zi]
+entities:
+- {id: herb.sheng_jiang, seq: 1099, surface: 生加两片三片, corrected: 生姜, dosage: 两三片（今用）}
+- {id: herb.da_zao, seq: 1101, surface: 大早十二没屁, corrected: 大枣, dosage: 十二枚（掰开）}
+- {id: herb.gui_zhi, seq: 1093, surface: 二点三前, corrected: 桂枝, dosage: 汉制三两≈今2.3钱，倪师开三钱}
+- {id: herb.shao_yao, seq: 1133, surface: 白蛇, corrected: 白芍}
+- {id: classic.shen_nong_ben_cao_jing, seq: 1130, surface: 神农本草经, corrected: 神农本草经}
+- {id: formula.shi_zao_tang, seq: 1166, surface: 石藻汤, corrected: 十枣汤}
+- {id: method.chuai_zhou, seq: 1232, surface: 喝一个稀饭, corrected: 啜粥}
+- {id: new.concept.微汗, seq: 1246, surface: 一点点为害, corrected: 微似有汗}
+- {id: clause.shl.013, seq: 1295, surface: 第十六条, corrected: 伤寒论第13条, note: 讲义编号第十六条}
+- {id: clause.shl.014, seq: 1300, surface: 项背强鸡肌, corrected: 太阳病项背强几几反汗出恶风}
+- {id: new.symptom.项背强几几, seq: 1300, surface: 项背强鸡肌, corrected: 项背强几几}
+- {id: formula.gui_zhi_jia_ge_gen_tang, seq: 1301, surface: 桂枝呢加葛根汤, corrected: 桂枝加葛根汤}
+- {id: herb.ge_gen, seq: 1320, surface: 葛根, corrected: 葛根, dosage: 四至六钱（大于桂枝三钱）}
+- {id: new.disease.面部中风, seq: 1327, surface: 面部中风, corrected: 面部中风（面瘫）}
+- {id: formula.chai_hu_tang, seq: 1377, surface: 柴胡汤, corrected: 柴胡汤}
+- {id: herb.zhi_mu, seq: 1405, surface: 知母, corrected: 知母}
+- {id: clause.shl.015, seq: 1413, surface: 第十八条, corrected: 伤寒论第15条, note: 讲义编号第十八条}
+- {id: new.method.汗法, seq: 1459, surface: 下汗法, corrected: 汗法}
+- {id: new.method.吐法, seq: 1459, surface: 吐法, corrected: 吐法}
+- {id: clause.shl.016, seq: 1454, surface: 第十九条, corrected: 伤寒论第16条, note: 讲义第十九、二十条}
+- {id: syndrome.huai_bing, seq: 1467, surface: 坏病, corrected: 坏病}
+- {id: method.jie_ji, seq: 1481, surface: 解鸡, corrected: 解肌}
+- {id: formula.ma_huang_tang, seq: 1487, surface: 麻黄汤, corrected: 麻黄汤}
+- {id: formula.xie_xin_tang, seq: 1503, surface: 泻心汤, corrected: 泻心汤}
+- {id: clause.shl.017, seq: 1510, surface: 若酒克病, corrected: 若酒客病不可与桂枝汤}
+- {id: new.concept.酒客, seq: 1511, surface: 酒克, corrected: 酒客}
+- {id: new.herb.苍术, seq: 1515, surface: 苍竹, corrected: 苍术}
+- {id: herb.ze_xie, seq: 1516, surface: 泽泻, corrected: 泽泻}
+- {id: clause.shl.018, seq: 1523, surface: 第二十二条如果传家作, corrected: 喘家作桂枝汤加厚朴杏子佳}
+- {id: formula.gui_zhi_jia_hou_po_xing_zi_tang, seq: 1523, surface: 桂枝汤后补杏仁, corrected: 桂枝加厚朴杏子汤}
+- {id: herb.hou_po, seq: 1528, surface: 厚补, corrected: 厚朴}
+- {id: herb.xing_ren, seq: 1529, surface: 杏仁, corrected: 杏仁}
+- {id: clause.shl.019, seq: 1538, surface: 凡吐家, corrected: 凡服桂枝汤吐者其后必吐脓血}
+- {id: new.symptom.吐脓血, seq: 1545, surface: 吐龙血, corrected: 吐脓血}
+- {id: clause.shl.020, seq: 1550, surface: 第二十四条, corrected: 伤寒论第20条, note: 讲义编号第二十四条}
+- {id: new.symptom.漏汗不止, seq: 1553, surface: 水肉不止, corrected: 遂漏不止}
+- {id: new.symptom.四肢微急, seq: 1554, surface: 危疾难以屈伸, corrected: 四肢微急，难以屈伸}
+- {id: formula.gui_zhi_jia_fu_zi_tang, seq: 1566, surface: 桂枝加附子汤, corrected: 桂枝加附子汤}
+- {id: herb.fu_zi, seq: 1573, surface: 一枚的附子, corrected: 炮附子, dosage: 一枚≈三钱（炮）；生附子一枚至少五钱}
+- {id: formula.shen_qi_wan, seq: 1585, surface: 桂妇八丸, corrected: 桂附八味丸（肾气丸）, uncertain: true}
+kps:
+- type: formula_composition
+  s: 汉制八两约合今六钱；桂枝汤桂枝三两约今2.3钱，倪师实际开三钱，芍药、炙甘草按比例；生姜不可开三两，两三片即可。
+  seq: [1084, 1100]
+  q: 所以如果现在是桂枝三两的时候，差不多是二点三
+  ents: [formula.gui_zhi_tang, herb.gui_zhi, herb.shao_yao, herb.gan_cao, herb.sheng_jiang]
+  conf: 0.75
+- type: formula_composition
+  s: 大枣要"擘"：把枣打扁让肉露出即可，不必用刀切。
+  seq: [1101, 1102]
+  q: 就把它打扁就好了，好，让它肉露出来。
+  ents: [herb.da_zao]
+  conf: 0.85
+- type: formula_composition
+  s: 汉代条件下"微火"实际是滚火；"一升"约为"六勺七抄"（把药抖松后取六勺），约合今五钱的量。
+  seq: [1105, 1124]
+  q: 所以现在来说一生用我们的剂量来的的哈，大概是五千的量啊
+  conf: 0.6
+  asr: 一生=一升；六勺七草=六勺七抄（推定）
+- type: herb_property
+  s: 依《神农本草经》：桂枝辛甘发散为阳药，白芍酸苦涌泄为阴药；桂枝汤中二者等量以调和阴阳。
+  seq: [1130, 1139]
+  q: 所以桂枝是阳药，白芍是阴药，这是肯定的
+  ents: [herb.gui_zhi, herb.shao_yao, classic.shen_nong_ben_cao_jing, concept.yin_yang]
+  conf: 0.9
+- type: pathomechanism
+  s: 桂枝对应动脉（阳）、白芍对应静脉（阴），动静脉等长，故桂芍等量；阳虚加重桂枝，阴不足加重白芍（如建中汤重用芍药）。
+  seq: [1140, 1148]
+  q: 当阳虚的时候，
+  ents: [herb.gui_zhi, herb.shao_yao, formula.xiao_jian_zhong_tang]
+  conf: 0.75
+- type: treatment_principle
+  s: 桂枝汤为调和阴阳的基础方，稍加减即可应对不同时机与症状；医生只要掌握阴阳，诊断与用药都能调回常态。
+  seq: [1150, 1154]
+  q: 那当个医生呢，你只要知道阴阳就可以做很好的医生。
+  ents: [formula.gui_zhi_tang, concept.yin_yang]
+  conf: 0.85
+- type: contraindication
+  s: 只用桂枝、白芍两味发汗力太强：汗后感冒虽好，但伤及肠胃津液，可致三天不大便；人的汗水来自肠胃。
+  seq: [1157, 1163]
+  q: 可是我三天没有大便好，为什么？
+  ents: [herb.gui_zhi, herb.shao_yao, concept.jin_ye]
+  conf: 0.85
+- type: herb_property
+  s: 大枣煮后黏如胃液、外红内黄（火生土），能补胃液；如十枣汤攻水时用大枣护胃，攻邪同时不伤正气。
+  seq: [1164, 1169]
+  q: 所以我在公的同时要把它补回来
+  ents: [herb.da_zao, formula.shi_zao_tang]
+  conf: 0.85
+- type: herb_property
+  s: 桂枝汤用生姜不用干姜：生姜辛辣发散，可刺激胃。
+  seq: [1172, 1175]
+  q: 那这是生姜，不是用干姜。
+  ents: [herb.sheng_jiang, herb.gan_jiang]
+  conf: 0.8
+- type: herb_property
+  s: 甘草解百毒，指解食物之毒：病中肠内宿食坏死产毒，甘草可防发炎；生甘草作用在肠胃，炙甘草强心，张仲景用法方向不同。
+  seq: [1176, 1190]
+  q: 当用生甘草的时候，那只是对肠胃用到枝甘草的时候，一定是对心脏
+  ents: [herb.gan_cao]
+  conf: 0.85
+- type: treatment_principle
+  s: 同病异治、异病同治：病人自称肠胃炎，但常无故出汗、怕风，即太阳中风，给桂枝汤后感冒与肠胃都好——中医辨证论治，把中风当症状而非病名。
+  seq: [1208, 1214]
+  q: 好，不同的病，同样的药，这里中医中医，所以中医是辩证论治。
+  ents: [formula.gui_zhi_tang, syndrome.tai_yang_zhong_feng, concept.bian_zheng]
+  conf: 0.9
+- type: formula_composition
+  s: 服桂枝汤后啜热稀粥约一小碗，借谷气（属土）充实胃中津液以助发汗；番薯与白米等量煮粥最能养脾胃。
+  seq: [1232, 1244]
+  q: 吃完桂枝汤以后，为什么要去喝一个稀饭？
+  ents: [method.chuai_zhou, formula.gui_zhi_tang]
+  conf: 0.85
+- type: treatment_principle
+  s: 最好的汗是微汗：身上摸着湿湿的又像没汗，邪排出而津液不伤；大汗淋漓太过反而病不除。
+  seq: [1246, 1249]
+  q: 最好的流汗呢是一点点为害
+  ents: [new.concept.微汗, method.fa_han]
+  conf: 0.9
+- type: formula_composition
+  s: 服法：一剂煮三碗，汗出病愈即停后服；未愈隔两三小时再服一碗并啜粥，半日（十二小时）内可服完三次。
+  seq: [1250, 1260]
+  q: 病好了，停后服就不要不要禁忌啊。
+  ents: [formula.gui_zhi_tang]
+  conf: 0.85
+- type: clinical_tip
+  s: 剂量随体格增减：百公斤壮汉桂枝可开五钱，瘦人一两钱，小孩减半或给大人汤药一小口；应用之妙存乎一心。
+  seq: [1262, 1271]
+  q: 所以说当这个应用之妙，存乎一心的不要那么死板板的
+  ents: [herb.gui_zhi]
+  conf: 0.85
+- type: contraindication
+  s: 发汗后不可当风、不可近火；汗后开窗吹冷风，太阳中风会转成太阳伤寒；须等次日中午胃口恢复、不再出汗不恶风才算痊愈。
+  seq: [1279, 1288]
+  q: 但是汗出以后，流汗以后不可以当风，哦也不可以靠火。
+  ents: [syndrome.tai_yang_zhong_feng, syndrome.shang_han]
+  conf: 0.9
+- type: clause_interpretation
+  s: 第13条太阳病头痛、发热、汗出、恶风，桂枝汤主之；汗出、恶风是主症，头痛有无都可用。
+  seq: [1295, 1298]
+  q: 像一定有汗出，这是主教的症状，是汗出和恶风。
+  ents: [clause.shl.013, formula.gui_zhi_tang, symptom.han_chu, symptom.e_feng, symptom.tou_tong, symptom.fa_re]
+  conf: 0.9
+- type: clause_interpretation
+  s: 第14条太阳病项背强几几、反汗出恶风，用桂枝加葛根汤，即桂枝汤加一味葛根（不是葛根汤）。
+  seq: [1300, 1301]
+  q: 里面加了一味药，多加一味药葛根。
+  ents: [clause.shl.014, formula.gui_zhi_jia_ge_gen_tang, herb.ge_gen, new.symptom.项背强几几, formula.ge_gen_tang]
+  conf: 0.9
+- type: herb_property
+  s: 葛根如藤蔓攀附大树，能把地下水吸到树顶，故能升津液、把新水提上去；《本草》言其能化脓、去痈肿。
+  seq: [1303, 1314]
+  q: 葛根葛根汤能够把这水新的水提上去，把旧的嘴排出来。
+  ents: [herb.ge_gen, classic.shen_nong_ben_cao_jing]
+  conf: 0.85
+- type: formula_composition
+  s: 桂枝加葛根汤中葛根剂量必须高于桂枝、白芍（如桂芍各三钱，葛根四至六钱），否则药力到不了皮肤。
+  seq: [1316, 1321]
+  q: 因直葛根的剂量一定要高于桂枝白透的计量。
+  ents: [formula.gui_zhi_jia_ge_gen_tang, herb.ge_gen, herb.gui_zhi, herb.shao_yao]
+  conf: 0.9
+- type: formula_indication
+  s: 桂枝加葛根汤治面部中风（吹冷气、车窗风致口眼歪斜）一两剂即效；也治头面肌肉麻木与化脓痈肿，但葛根药性上行，脚麻用不到。
+  seq: [1327, 1336]
+  q: 葛根的药性是往上升，所如果你脚麻，你你葛根就吃不到
+  ents: [formula.gui_zhi_jia_ge_gen_tang, herb.ge_gen, new.disease.面部中风]
+  conf: 0.85
+- type: formula_composition
+  s: 桂枝加葛根汤七碗水煮三碗，不需啜粥，因只要后脑膀胱经局部出汗；要大火快煮取药之气以达头面。
+  seq: [1351, 1368]
+  q: 那这个处方它不需要醉粥。
+  ents: [formula.gui_zhi_jia_ge_gen_tang, method.chuai_zhou, meridian.bl]
+  conf: 0.85
+- type: clinical_tip
+  s: 实际处方凭师承经验：倪师桂枝常开到五钱，因一剂分三次服，每次实际不到二钱；三小时未改善再服第二碗。
+  seq: [1343, 1346]
+  q: 我常常是开到桂枝，开到五千，为什么看它体格大小好？
+  ents: [herb.gui_zhi]
+  conf: 0.8
+- type: treatment_principle
+  s: 治炎症要清热兼祛湿：脓必有湿热，抗生素只能杀菌而不改湿热环境，故会复发；中医用黄芩、黄连清热，白术、知母等祛湿，改变环境（游泳池放水之喻）。
+  seq: [1386, 1405]
+  q: 所以我们中医在治疗炎症的时候，除了去热的话我们会去湿。
+  ents: [herb.huang_qin, herb.huang_lian, herb.bai_zhu, herb.zhi_mu]
+  conf: 0.8
+- type: treatment_principle
+  s: 表里同病（如外感兼便秘）原则上先解表后攻里；但一周未大便可表里药同开，或开两包药依序服。
+  seq: [1421, 1433]
+  q: 那大原则的，应该先解表再公里。
+  ents: [method.xia_fa, method.fa_biao, new.symptom.便秘]
+  conf: 0.9
+- type: clause_interpretation
+  s: 第15条太阳病误下后其气上冲者，表邪未陷，仍可用桂枝汤；不上冲者不可再与，要随证处理。
+  seq: [1438, 1448]
+  q: 所以还是继续可以用，如果没有上冲的
+  ents: [clause.shl.015, formula.gui_zhi_tang]
+  conf: 0.85
+- type: treatment_principle
+  s: 经方三大治法：病在表用汗法，病在上膈（宿食、痰多）用吐法，病堵在下焦用下法（承气汤类）。
+  seq: [1458, 1466]
+  q: 当病在表的时候，病在表的时候，我们都是用汗法。
+  ents: [new.method.汗法, new.method.吐法, method.xia_fa, formula.cheng_qi_tang]
+  conf: 0.9
+- type: clause_interpretation
+  s: 第16条汗吐下温针都用过仍不解为坏病，桂枝汤已不中与；要观其脉证、知犯何逆、随证治之，并提示病人另有内在问题（金匮杂病）。
+  seq: [1467, 1479]
+  q: 好，当有别的问题在里面的时候
+  ents: [clause.shl.016, syndrome.huai_bing, formula.gui_zhi_tang]
+  conf: 0.85
+- type: contraindication
+  s: 第16条桂枝本为解肌：脉浮紧、发热、汗不出者是麻黄汤证，不可与桂枝汤；用桂枝汤必须有汗、脉浮缓。
+  seq: [1481, 1488]
+  q: 若其人脉浮颈发热，汗不出者不可预言。
+  ents: [clause.shl.016, formula.gui_zhi_tang, formula.ma_huang_tang, method.jie_ji, pulse.jin, pulse.huan]
+  conf: 0.9
+- type: pathomechanism
+  s: 表证误下（或食物中毒自利）会使表邪下陷，可成结胸（大小陷胸汤）、心下痞（五泻心汤）等变证。
+  seq: [1492, 1503]
+  q: 好像心下脾，我们后面有五种泻心汤
+  ents: [formula.da_xian_xiong_tang, formula.xiao_xian_xiong_tang, formula.xie_xin_tang]
+  conf: 0.75
+- type: contraindication
+  s: 第17条酒客不可与桂枝汤：长期喝酒已伤胃，服桂枝汤会呕；加解酒药也不行。苍术配泽泻（祛湿利尿）是解酒好方。
+  seq: [1510, 1521]
+  q: 所以有喜喜欢喝酒的人呢，最好不要使用桂枝
+  ents: [clause.shl.017, formula.gui_zhi_tang, new.concept.酒客, new.herb.苍术, herb.ze_xie]
+  conf: 0.85
+- type: formula_indication
+  s: 第18条喘家作，桂枝汤加厚朴、杏子佳：有桂枝汤证（汗出恶风）兼咳嗽或平时轻微气喘者用之，见效快。
+  seq: [1523, 1533]
+  q: 只要是桂枝汤症，太阳中风的症状，加上有咳嗽
+  ents: [clause.shl.018, formula.gui_zhi_jia_hou_po_xing_zi_tang, disease.ke_sou, symptom.chuan]
+  conf: 0.9
+- type: herb_property
+  s: 厚朴能降气、宽胸，杏仁能滋润肺津，合用对咳喘有帮助。
+  seq: [1528, 1530]
+  q: 那杏仁呢能够滋润肺的津液好
+  ents: [herb.hou_po, herb.xing_ren]
+  conf: 0.9
+- type: contraindication
+  s: 第19条吐家禁用桂枝汤：常呕吐、胃不好者服桂枝辛香发散，胃中血管可破裂而吐脓血；酒客、喘家（无桂枝证）、吐家均为桂枝汤禁忌。
+  seq: [1538, 1546]
+  q: 酒客船家兔家啊，都不可以有桂枝汤哦。
+  ents: [clause.shl.019, formula.gui_zhi_tang, new.symptom.吐脓血]
+  conf: 0.85
+- type: diagnostic_rule
+  s: 太阳病（中风、伤寒、温病）本无呕吐；出现呕吐已入少阳，不再是单纯太阳表证。
+  seq: [1547, 1549]
+  q: 有吐就到少阳病才会有吐好
+  ents: [symptom.ou_tu, six_channel.shaoyang, syndrome.tai_yang_bing]
+  conf: 0.85
+- type: clause_interpretation
+  s: 第20条发汗太过遂漏不止、恶风、小便难（汗尿同源）、四肢微急难以屈伸（肌肉津液丧失），用桂枝加附子汤弥补。
+  seq: [1552, 1564]
+  q: 因为汗尿是同源，你汗流出来很多小便自然会变少。
+  ents: [clause.shl.020, formula.gui_zhi_jia_fu_zi_tang, new.symptom.漏汗不止, new.symptom.四肢微急]
+  conf: 0.9
+- type: herb_property
+  s: 附子炮制后毒性很小（加热减毒），一枚约三钱；生附子含津液重，一枚至少五钱；炮附子用于固表止汗。
+  seq: [1568, 1578]
+  q: 那泡制过以后，附子就没什么毒了。
+  ents: [herb.fu_zi, new.method.固表]
+  conf: 0.85
+- type: formula_composition
+  s: 炮附子单用无效，要与桂枝汤同用：桂枝汤解肌振奋皮阳，带炮附子到肌肉四肢固表收汗；同一药在不同方中药性不同（如肾气丸）。
+  seq: [1581, 1586]
+  q: 桂枝汤是解积的，能够让皮阳振奋起来。
+  ents: [herb.fu_zi, formula.gui_zhi_tang, formula.gui_zhi_jia_fu_zi_tang, formula.shen_qi_wan]
+  conf: 0.8

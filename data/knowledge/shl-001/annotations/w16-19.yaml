@@ -1,0 +1,326 @@
+video_id: shl-001
+window: w16-19
+seg_from: 2108
+seg_to: 2598
+chapters:
+- key: c23
+  title: 第29条 误汗之救逆：甘草干姜汤、芍药甘草汤、调胃承气汤、四逆汤
+  start_seq: 2147
+  summary: 伤寒脉浮、自汗、小便数、微恶寒而误与桂枝汤，出现厥、咽干、烦躁吐逆：先以甘草干姜汤复心肺之阳，足温后以芍药甘草汤复津液使脚伸；胃气不和谵语用调胃承气汤；重发汗加烧针致四逆者用四逆汤。
+  clauses: [29]
+  topics: [formula.gan_cao_gan_jiang_tang, formula.shao_yao_gan_cao_tang, formula.diao_wei_cheng_qi_tang, formula.si_ni_tang]
+- key: c23.s1
+  parent: c23
+  title: 甘草干姜汤：复心肺之阳
+  start_seq: 2147
+  summary: 误汗伤津致咽干、烦躁、吐逆，干姜温肺阳、炙甘草强心阳，心肺强则居中的脾也强（泻南补北之理）。
+- key: c23.s2
+  parent: c23
+  title: 芍药甘草汤与「足温者无心脏病」
+  start_seq: 2182
+  summary: 健康人头面凉、手足温；阳复足温后用芍药甘草汤补津液使脚伸展；脚冷是心力不足、寒凝成瘀的根源，以手足冷到何处判断病进病退，冷过肘膝即四逆。
+- key: c23.s3
+  parent: c23
+  title: 胃气不和谵语：调胃承气汤与腹诊
+  start_seq: 2304
+  summary: 不该发汗而误汗，胃中食物失水干结、胃不和、谵语；腹诊中脘到神阙一带压痛，少少与调胃承气汤。
+- key: c23.s4
+  parent: c23
+  title: 剂量与瞑眩：芍药甘草汤治静脉曲张
+  start_seq: 2333
+  summary: 甘草干姜汤炙甘草倍于干姜，芍药甘草汤二味等量；剂量要足，倪师用白芍、炙甘草各一两一剂消退静脉瘤；对症时常出现头晕的瞑眩反应。
+- key: c23.s5
+  parent: c23
+  title: 调胃承气汤煎法：酒洗大黄、芒硝后下
+  start_seq: 2369
+  summary: 大黄酒洗使药力停在胃，不直冲大肠；芒硝软坚不可久煮，冲服或关火前放入；大承气有芒硝、小承气无。
+- key: c23.s6
+  parent: c23
+  title: 四逆汤与生附子
+  start_seq: 2430
+  summary: 重发汗再加烧针，阳脱津亡、手足冷过肘膝用四逆汤；救逆用生附子，生附子治里寒、炮附子治表虚；生附子要棉布包煮以免纤维刺喉致咳。
+- key: c24
+  title: 第30条 证象阳旦：脉浮大与救误
+  start_seq: 2508
+  summary: 证似桂枝汤而越服越坏，手足厥冷、咽干、脚挛急、谵语；寸口脉浮而大为重阳之脉，阳太盛易亡阳，依前条次第以甘草干姜汤、芍药甘草汤、调胃承气汤救之。
+  clauses: [30]
+  topics: [formula.gan_cao_gan_jiang_tang, formula.shao_yao_gan_cao_tang, formula.diao_wei_cheng_qi_tang, pulse.mai_fu_da]
+- key: c25
+  title: 第31条 葛根汤：项背强几几、无汗恶风（温病主方）
+  start_seq: 2544
+  summary: 太阳病分中风、伤寒、温病；葛根汤是张仲景治温病的主力方，常见于出汗后受寒的孩子与劳力者；由桂枝汤加麻黄（无汗）、葛根（引药至项背）组成。
+  clauses: [31]
+  topics: [formula.ge_gen_tang, syndrome.wen_bing, herb.ge_gen, herb.ma_huang]
+- key: c25.s1
+  parent: c25
+  title: 太阳病三纲与温病
+  start_seq: 2544
+  summary: 温病派误以为伤寒论不治温病，其实葛根汤就是温病主方；温病是一种病症，与南北地域无关。
+- key: c25.s2
+  parent: c25
+  title: 葛根汤的适应人群与组成
+  start_seq: 2560
+  summary: 汗出后受寒（冬伤于寒）多属葛根汤证；一开始恶风就服可在表即愈；无汗加麻黄，项背为膀胱经最高处，用葛根把药力带到项背排寒。
+entities:
+- {id: herb.bai_zhu, seq: 2109, surface: 白族, corrected: 白术}
+- {id: herb.fu_ling, seq: 2124, surface: 福苓, corrected: 茯苓}
+- {id: new.concept.风寒湿, seq: 2111, surface: 疯寒湿, corrected: 风寒湿}
+- {id: new.tongue.苔厚, seq: 2119, surface: 舌苔的苔很厚, corrected: 苔厚}
+- {id: clause.shl.029, seq: 2147, surface: 伤寒脉浮滞汗出小便数, corrected: 伤寒脉浮自汗出小便数心烦微恶寒脚挛急, note: 讲义第三十二、三十三条}
+- {id: formula.gan_cao_gan_jiang_tang, seq: 2161, surface: 甘草干姜汤, corrected: 甘草干姜汤}
+- {id: herb.gan_jiang, seq: 2164, surface: 干姜, corrected: 干姜}
+- {id: herb.gan_cao, seq: 2167, surface: 栀芝甘草, corrected: 炙甘草, dosage: 可加至五六钱至一两}
+- {id: classic.nan_jing, seq: 2173, surface: 烂经, corrected: 难经}
+- {id: symptom.jiao_luan_ji, seq: 2177, surface: 脚挛急抽筋, corrected: 脚挛急}
+- {id: formula.shao_yao_gan_cao_tang, seq: 2182, surface: 少老甘草汤, corrected: 芍药甘草汤}
+- {id: formula.diao_wei_cheng_qi_tang, seq: 2182, surface: 调胃承气汤, corrected: 调胃承气汤}
+- {id: herb.shao_yao, seq: 2203, surface: 芍药, corrected: 白芍, dosage: 五钱不够，用到一两}
+- {id: new.disease.静脉曲张, seq: 2201, surface: 脚生静脉, corrected: 下肢静脉曲张（静脉瘤）}
+- {id: symptom.shou_zu_jue_leng, seq: 2263, surface: 手脚冰冷, corrected: 手足厥冷}
+- {id: formula.si_ni_tang, seq: 2264, surface: 势逆, corrected: 四逆（汤）}
+- {id: formula.shao_yao_gan_cao_fu_zi_tang, seq: 2292, surface: 芍了甘草附子汤, corrected: 芍药甘草附子汤}
+- {id: herb.mu_dan_pi, seq: 2294, surface: 丹皮, corrected: 丹皮}
+- {id: new.herb.三七, seq: 2294, surface: 三三七, corrected: 三七}
+- {id: symptom.zhan_yu, seq: 2318, surface: 粘雨, corrected: 谵语}
+- {id: acupoint.cv12, seq: 2323, surface: 中皖穴, corrected: 中脘}
+- {id: acupoint.cv8, seq: 2324, surface: 神阙, corrected: 神阙}
+- {id: acupoint.cv10, seq: 2322, surface: 下腕, corrected: 下脘}
+- {id: new.concept.瞑眩, seq: 2346, surface: 药不敏炫, corrected: 药不瞑眩，厥疾不瘳}
+- {id: formula.da_qing_long_tang, seq: 2355, surface: 大青龙汤, corrected: 大青龙汤}
+- {id: herb.da_huang, seq: 2375, surface: 大黄四千, corrected: 大黄, dosage: 四钱（酒洗）}
+- {id: herb.xiao_shi, seq: 2376, surface: 狼枭两千, corrected: 芒硝, dosage: 两钱（生用，后下或冲服）, note: 词典以芒硝为硝石别名}
+- {id: formula.xiao_cheng_qi_tang, seq: 2417, surface: 小尘器, corrected: 小承气汤}
+- {id: formula.da_cheng_qi_tang, seq: 2418, surface: 大尘器, corrected: 大承气汤}
+- {id: method.shao_zhen, seq: 2433, surface: 烧针, corrected: 烧针}
+- {id: herb.fu_zi, seq: 2445, surface: 附子一枚生用去皮破八片, corrected: 生附子, dosage: 一枚：鲜约五钱、干约三钱}
+- {id: clause.shl.030, seq: 2508, surface: 第三十四条, corrected: 伤寒论第30条, note: 讲义编号第三十四条}
+- {id: new.concept.阳旦, seq: 2510, surface: 阳弹, corrected: 阳旦（桂枝汤别名）}
+- {id: pulse.cun_kou, seq: 2518, surface: 寸口卖福的, corrected: 寸口脉浮}
+- {id: pulse.mai_fu_da, seq: 2523, surface: 寸脉是浮而且大, corrected: 脉浮大}
+- {id: syndrome.wang_yang, seq: 2532, surface: 亡阳, corrected: 亡阳}
+- {id: syndrome.zhong_feng, seq: 2547, surface: 中风, corrected: 中风}
+- {id: syndrome.shang_han, seq: 2547, surface: 上海, corrected: 伤寒}
+- {id: syndrome.wen_bing, seq: 2547, surface: 温病, corrected: 温病}
+- {id: formula.ge_gen_tang, seq: 2549, surface: 葛根汤, corrected: 葛根汤}
+- {id: clause.shl.031, seq: 2560, surface: 第三十五老便, corrected: 太阳病项背强几几无汗恶风葛根汤主之, note: 讲义编号第三十五条}
+- {id: symptom.xiang_bei_qiang, seq: 2561, surface: 相背强积极, corrected: 项背强几几}
+- {id: symptom.wu_han, seq: 2561, surface: 无汗, corrected: 无汗}
+- {id: meridian.bl, seq: 2597, surface: 膀胱经, corrected: 膀胱经}
+kps:
+- type: herb_property
+  s: 白术祛湿；辨证时分辨风、寒、湿，才能在处方中配上祛风、祛寒、祛湿之药同时治好。
+  seq: [2109, 2113]
+  q: 好，我们为什么要知道这个有诗的原因就在帮助我们处方上面。
+  ents: [herb.bai_zhu, new.concept.风寒湿]
+  conf: 0.8
+  ch: c22
+- type: diagnostic_rule
+  s: 素有中焦湿盛的人：舌苔厚、肚子较大、大便黏稠；这类人服桂枝汤后可出现心下满微痛、小便不利。
+  seq: [2114, 2122]
+  q: 舌苔拿出来看的时候，舌苔的苔很厚。
+  ents: [new.tongue.苔厚, symptom.xin_xia_man, symptom.xiao_bian_bu_li]
+  conf: 0.85
+  ch: c22
+- type: formula_composition
+  s: 桂枝去桂加茯苓白术汤：白术祛湿、茯苓利水，使湿从小便排出；胃中微痛去桂枝（桂枝对胃不好），白术茯苓等量，小便利则愈。
+  seq: [2123, 2138]
+  q: 所祛湿跟利水的药，两个加在一起才有办法把这个思从好小便倒掉
+  ents: [formula.gui_zhi_qu_gui_jia_fu_ling_bai_zhu_tang, herb.bai_zhu, herb.fu_ling, herb.gui_zhi]
+  conf: 0.85
+  ch: c22
+- type: treatment_principle
+  s: 桂枝汤加减规律：胸满去白芍，心下满（胃不适）去桂枝。
+  seq: [2141, 2143]
+  q: 那白芍拿掉是有胸满的时候，我们要把白芍抽掉
+  ents: [formula.gui_zhi_tang, herb.shao_yao, herb.gui_zhi, symptom.xiong_man, symptom.xin_xia_man]
+  conf: 0.9
+  ch: c22
+- type: clause_interpretation
+  s: 第29条伤寒脉浮、自汗出、小便数、心烦、微恶寒，不是桂枝汤证；误用桂枝汤发汗后出现咽中干、烦躁、吐逆，是津液与胸阳不足。
+  seq: [2147, 2160]
+  q: 好，肺里面的胸阳不够了，胸阳不够了。
+  ents: [clause.shl.029, formula.gui_zhi_tang]
+  conf: 0.85
+- type: formula_composition
+  s: 甘草干姜汤：干姜温热强肺阳，炙甘草（蜜炙后味厚入心）强心阳；炙甘草剂量大于干姜（四两比二两），越重强心越有力。
+  seq: [2163, 2170]
+  q: 他能够把肺阳肺阳强起来。
+  ents: [formula.gan_cao_gan_jiang_tang, herb.gan_jiang, herb.gan_cao]
+  conf: 0.9
+- type: pathomechanism
+  s: 心肺之阳强起来，居中的脾功能也随之增强，这是《难经》泻南补北的思路；甘草干姜汤专救误汗致厥。
+  seq: [2171, 2176]
+  q: 当我们在强心强肺的时候，脾脏的功能会强起来。
+  ents: [formula.gan_cao_gan_jiang_tang, classic.nan_jing, zangfu.xin, zangfu.fei, zangfu.pi]
+  conf: 0.7
+- type: diagnostic_rule
+  s: 健康标准：一年四季头面凉、手脚温；检查时一手握病人掌心、一手按额头，额凉掌热为常，额热手冷为病态。
+  seq: [2184, 2192]
+  q: 额头是冷的，手掌是热的常态
+  conf: 0.9
+- type: formula_indication
+  s: 甘草干姜汤服后足温表示阳复；此时用芍药甘草汤补肌肉血脉的津液，脚挛急就能伸展。
+  seq: [2193, 2198]
+  q: 当你用了甘草甘姜汤回来以后，脚热起来了，代表阳恢复了。
+  ents: [formula.gan_cao_gan_jiang_tang, formula.shao_yao_gan_cao_tang, symptom.jiao_luan_ji, herb.shao_yao]
+  conf: 0.9
+- type: pathomechanism
+  s: 脚冷是瘀血的主因：心脏搏动力量不足，热到不了离心最远的脚；寒使液体凝成固体，如冬天河流结冰。
+  seq: [2223, 2236]
+  q: 这个冷的是造成淤血块的主因
+  ents: [zangfu.xin]
+  conf: 0.75
+- type: diagnostic_rule
+  s: 判断用药对错的简单标准：服药后手脚变热是对的，越吃越冷就要换方。
+  seq: [2243, 2244]
+  q: 好，你吃下去以后，手脚开始热对了是对的。
+  conf: 0.9
+- type: treatment_principle
+  s: 芍药甘草汤重用炙甘草使心热起来，白芍使血循环回流，热到了脚就能化掉瘀血——经方以温热活血化瘀，不必另加三七、丹皮等。
+  seq: [2246, 2252]
+  q: 好，所以中医活血化瘀是这样来的
+  ents: [formula.shao_yao_gan_cao_tang, herb.gan_cao, herb.shao_yao, herb.mu_dan_pi, new.herb.三七]
+  conf: 0.75
+- type: concept_definition
+  s: 手足厥冷与四逆之别：冷在手指到手腕、脚趾到脚踝是手足冰冷；冷到手肘、膝盖才叫四逆，表示病势危重。
+  seq: [2263, 2270]
+  q: 那如果是四逆的话，就代表说已经到手肘了当。
+  ents: [symptom.shou_zu_jue_leng, formula.si_ni_tang, symptom.jue]
+  conf: 0.9
+- type: prognosis
+  s: 让病人自己观察手脚冷的范围：服药后冷的范围往下缩是进步，可借此预防心脏病（倪师个人观点，认为心电图常要发作时才查得到）。
+  seq: [2271, 2274]
+  q: 这样就可以预防心脏病啊。
+  conf: 0.6
+- type: clinical_tip
+  s: 倪师常说「足温者没有心脏病」，并认为脚温需靠中药调理。
+  seq: [2298, 2300]
+  q: 足温者没有心脏病
+  conf: 0.65
+- type: diagnostic_rule
+  s: 误汗使胃中食物失水干结，胃气不和、谵语；腹诊中脘到神阙一带压痛，少少与调胃承气汤，把肠胃清一下即可。
+  seq: [2318, 2328]
+  q: 好，到神阙
+  ents: [formula.diao_wei_cheng_qi_tang, symptom.zhan_yu, acupoint.cv12, acupoint.cv8]
+  conf: 0.85
+- type: formula_composition
+  s: 甘草干姜汤炙甘草四两、干姜二两；芍药甘草汤芍药、炙甘草等量。
+  seq: [2333, 2334]
+  q: 所以枝甘草的剂量好会大于干姜的泡
+  ents: [formula.gan_cao_gan_jiang_tang, formula.shao_yao_gan_cao_tang]
+  conf: 0.9
+- type: formula_indication
+  s: 芍药甘草汤能使下肢静脉血回流，可治产后静脉瘤；倪师案例：白芍、炙甘草各八钱无效，加至各一两，一剂静脉瘤消去九成。
+  seq: [2335, 2362]
+  q: 刚开始呢我们白芍呢八钱
+  ents: [formula.shao_yao_gan_cao_tang, new.disease.静脉曲张, herb.shao_yao, herb.gan_cao]
+  conf: 0.75
+- type: clinical_tip
+  s: 处方对但剂量不够看不到效果；经方对症时病人服药后常出现头晕（瞑眩），这是药中病的表现。
+  seq: [2350, 2357]
+  q: 只要是对症
+  ents: [new.concept.瞑眩]
+  conf: 0.75
+- type: formula_composition
+  s: 调胃承气汤倪师常用炙甘草二钱、大黄四钱、芒硝二钱；大黄酒洗使药力停在胃部，不会一下冲到大肠。
+  seq: [2373, 2388]
+  q: 中药里面在神农甘草剂里面开宗明医。
+  ents: [formula.diao_wei_cheng_qi_tang, herb.da_huang, herb.xiao_shi, herb.gan_cao]
+  conf: 0.75
+- type: herb_property
+  s: 芒硝软坚，专治大便燥硬排不出；不可与大黄甘草同煮太久，应冲服（最快）或在汤将沸时放入后关火。
+  seq: [2392, 2416]
+  q: 所以盲销能够软煎。
+  ents: [herb.xiao_shi]
+  conf: 0.85
+  asr: 盲销/囊硝/狼枭=芒硝；软煎=软坚
+- type: formula_composition
+  s: 大承气汤有芒硝、小承气汤没有；大承气证误开小承气，会想解便却排不出。
+  seq: [2417, 2421]
+  q: 好，就这个大尘器有盲硝。
+  ents: [formula.da_cheng_qi_tang, formula.xiao_cheng_qi_tang, herb.xiao_shi]
+  conf: 0.85
+- type: clause_interpretation
+  s: 第29条末：重发汗又加烧针，津液丧失、手足冷过肘膝，用四逆汤。
+  seq: [2439, 2441]
+  q: 发完汗就给他给人家那个烧针，就呢精液丧失太多精赛了就是四逆汤。
+  ents: [clause.shl.029, formula.si_ni_tang, method.shao_zhen]
+  conf: 0.85
+- type: formula_composition
+  s: 四逆汤：炙甘草、干姜、生附子一枚（去皮破八片）；救逆时附子要生用，近代畏毒只用一片是不够的。
+  seq: [2445, 2450]
+  q: 真正的我们在救逆的时候，附子是生用。
+  ents: [formula.si_ni_tang, herb.fu_zi, herb.gan_jiang, herb.gan_cao]
+  conf: 0.85
+- type: clinical_tip
+  s: 生附子用后咳嗽不止多因其纤维浮在汤面黏喉，并非毒性；用棉布包煮即可避免。
+  seq: [2463, 2470]
+  q: 实际上原因是因为生附子里面好纤维很多。
+  ents: [herb.fu_zi]
+  conf: 0.8
+- type: herb_property
+  s: 生附子治里寒、回阳救逆（失血怕冷等）；炮附子治表虚、毛孔开汗不止；生附子不走表。
+  seq: [2472, 2483]
+  q: 好，专制呢表虚
+  ents: [herb.fu_zi]
+  conf: 0.85
+- type: clinical_tip
+  s: 服生附子剂后嘴唇舌头发麻是轻微中毒反应，但对需要的病人是补药（倪师个人经验，须专业指导）。
+  seq: [2493, 2497]
+  q: 但那当你病人需要的时候，你这个毒是补药。
+  ents: [herb.fu_zi]
+  conf: 0.55
+- type: concept_definition
+  s: 四逆汤又称回阳汤，用生附子把里寒中的阳救回。
+  seq: [2502, 2505]
+  q: 这个参附子呢四逆汤呢我们又可以称为回阳和回阳汤。
+  ents: [formula.si_ni_tang, herb.fu_zi]
+  conf: 0.8
+- type: clause_interpretation
+  s: 第30条证象阳旦（似桂枝汤证），按法服桂枝汤反加重：厥逆、咽中干、脚挛急、谵语；半夜阳气回而两足温，是阳复之兆。
+  seq: [2510, 2516]
+  q: 喉咙里面肝代表说津液都受伤了
+  ents: [clause.shl.030, new.concept.阳旦, symptom.jiao_luan_ji, symptom.zhan_yu]
+  conf: 0.8
+- type: diagnostic_rule
+  s: 以浮沉迟数为四纲脉；寸口脉浮而大属重阳之脉，阳太盛需迅速处理，否则会亡阳。
+  seq: [2519, 2532]
+  q: 太过会亡阳
+  ents: [pulse.cun_kou, pulse.mai_fu_da, pulse.fu, syndrome.wang_yang]
+  conf: 0.8
+- type: treatment_principle
+  s: 误治后的恢复有两种：阳气自行恢复，或用药（甘草干姜汤、芍药甘草汤、调胃承气汤）协助恢复。
+  seq: [2537, 2541]
+  q: 一种是你用药物去协助它，让它恢复回来。
+  ents: [formula.gan_cao_gan_jiang_tang, formula.shao_yao_gan_cao_tang, formula.diao_wei_cheng_qi_tang]
+  conf: 0.8
+- type: concept_definition
+  s: 太阳病分中风、伤寒、温病三类；葛根汤是张仲景治温病的主方，温病是一种病症，与南方北方无关。
+  seq: [2545, 2555]
+  q: 反正温病就是这个温病一个症状，好用葛根汤来治疗它。
+  ents: [syndrome.zhong_feng, syndrome.shang_han, syndrome.wen_bing, formula.ge_gen_tang]
+  conf: 0.85
+- type: formula_indication
+  s: 第31条太阳病项背强几几、无汗恶风，葛根汤主之；最常见于在外跑跳流汗后受寒感冒的小孩。
+  seq: [2560, 2570]
+  q: 这个绝大多数都是属于葛根汤汁好葛根汤子
+  ents: [clause.shl.031, formula.ge_gen_tang, symptom.xiang_bei_qiang, symptom.wu_han, symptom.e_feng]
+  conf: 0.9
+- type: pathomechanism
+  s: 劳力者流汗后受寒（冬伤于寒），到夏至以前发作即为温病，葛根汤是最好的主方。
+  seq: [2575, 2579]
+  q: 那葛根汤呢是温病的最好了。
+  ents: [syndrome.wen_bing, formula.ge_gen_tang]
+  conf: 0.75
+- type: formula_composition
+  s: 葛根汤来自桂枝汤（桂芍等量加炙甘草、生姜、大枣）：因无汗加麻黄，项背是膀胱经最高处，加葛根把麻黄桂枝的药力带到项背排寒。
+  seq: [2583, 2598]
+  q: 所以葛根汤是来自桂枝汤。
+  ents: [formula.ge_gen_tang, formula.gui_zhi_tang, herb.ma_huang, herb.ge_gen, meridian.bl]
+  conf: 0.9
+- type: treatment_principle
+  s: 一开始感觉恶风就服葛根汤，病还在表即治好，所谓「履霜坚冰至」，早治是最高明的医生。
+  seq: [2586, 2592]
+  q: 那根本才碰到你那边就就好好这是最高明的医生。
+  ents: [formula.ge_gen_tang, symptom.e_feng]
+  conf: 0.8

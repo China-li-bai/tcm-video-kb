@@ -1,0 +1,163 @@
+video_id: shl-006
+window: w01
+seg_from: 124
+seg_to: 257
+chapters:
+- key: c03
+  title: 第274–276条 太阴中风、欲解时与脉浮可汗
+  start_seq: 124
+  summary: 太阴中风四肢烦疼，因脾主四肢肌肉、湿盛使新旧津液不能更替；阴脉由涩转长为欲愈；太阴脉浮可用桂枝汤发汗，湿盛加白术、茯苓。
+  clauses: [274, 275, 276]
+  topics: [six_channel.taiyin, formula.gui_zhi_tang, herb.bai_zhu, herb.fu_ling]
+- key: c04
+  title: 第277条 自利不渴属太阴，当温之（四逆辈）
+  start_seq: 167
+  summary: 下利而不渴是太阴湿盛、脏有寒；寒湿在里当温中，四逆汤类可用；并讲附子与干姜、生姜的配伍用意及祛湿药按部位选择。
+  clauses: [277]
+  topics: [formula.si_ni_tang, herb.fu_zi, herb.gan_jiang, herb.sheng_jiang, syndrome.han_shi]
+- key: c04.s1
+  parent: c04
+  title: 下利不渴辨阴证；附子固表
+  start_seq: 167
+  summary: 下利口渴属阳证，下利不渴属阴病脏寒；炮附子固阳固表，可治汗出及二便失禁。
+- key: c04.s2
+  parent: c04
+  title: 附子配生姜、干姜的用意
+  start_seq: 198
+  summary: 炮附子配生姜以去水，生附子配干姜以救逆；水犯心脏时干姜、生姜同用以速排水；经方药性源自《胎胪药录》。
+- key: c05
+  title: 第278条 系在太阴：手足自温、发黄与脾家实
+  start_seq: 233
+  summary: 手足自温表示肠胃功能尚在；太阴湿盛当发黄，小便自利则不发黄，因此治阴证必须利小便；脾家实时暴烦下利会自止，腐秽自去。
+  clauses: [278]
+  topics: [symptom.fa_huang, method.li_xiao_bian, symptom.xiao_bian_zi_li]
+entities:
+- {id: clause.shl.274, seq: 124, surface: 两百八十八条, corrected: 伤寒论第274条, note: 讲义编号288}
+- {id: new.symptom.四肢烦疼, seq: 124, surface: 四肢烦腾, corrected: 四肢烦疼}
+- {id: pulse.se, seq: 146, surface: 涩, corrected: 涩脉}
+- {id: herb.bai_zhu, seq: 151, surface: 白族, corrected: 白术}
+- {id: herb.gui_zhi, seq: 154, surface: 桂枝, corrected: 桂枝, dosage: 三钱}
+- {id: herb.shao_yao, seq: 154, surface: 白烧, corrected: 白芍, dosage: 三钱}
+- {id: herb.bai_zhu, seq: 154, surface: 白术, corrected: 白术, dosage: 三钱}
+- {id: herb.fu_ling, seq: 154, surface: 茯苓, corrected: 茯苓, dosage: 三钱}
+- {id: clause.shl.275, seq: 155, surface: 欲解释从害到走时, corrected: 太阴病欲解时从亥至丑上, uncertain: true}
+- {id: clause.shl.276, seq: 163, surface: 二百九十, corrected: 伤寒论第276条, note: 讲义编号290}
+- {id: clause.shl.277, seq: 167, surface: 两百九十一条, corrected: 伤寒论第277条, note: 讲义编号291}
+- {id: new.symptom.口渴, seq: 169, surface: 口渴, corrected: 口渴}
+- {id: herb.fu_zi, seq: 191, surface: 泡腹子, corrected: 炮附子}
+- {id: new.method.固表, seq: 197, surface: 顾表, corrected: 固表}
+- {id: new.method.温中, seq: 202, surface: 温中, corrected: 温中}
+- {id: herb.fu_zi, seq: 221, surface: 剖附子, corrected: 炮附子, dosage: 一枚}
+- {id: new.book.胎胪药录, seq: 211, surface: 开炉药露, corrected: 胎胪药录, uncertain: true, note: 《伤寒论·序》所列"胎胪药录"}
+- {id: classic.shen_nong_ben_cao_jing, seq: 212, surface: 神农本草, corrected: 神农本草经}
+- {id: clause.shl.278, seq: 233, surface: 第二百九十二条, corrected: 伤寒论第278条, note: 讲义编号292}
+- {id: new.concept.实脾, seq: 245, surface: 食皮, corrected: 实脾}
+- {id: new.concept.脾家实, seq: 252, surface: 脾夹实, corrected: 脾家实}
+kps:
+- type: clause_interpretation
+  s: 第274条太阴中风四肢烦疼：脾主四肢、主肌肉，湿盛黏滞使新津液无法替换旧津液，故四肢烦疼。
+  seq: [124, 141]
+  q: 因为呢脾除了主父主食以外，脾又主四肢
+  ents: [clause.shl.274, new.symptom.四肢烦疼, zangfu.pi, zangfu.ji_rou]
+  conf: 0.85
+- type: clinical_tip
+  s: 久不运动肌肉易酸痛；运动出汗后补充水分，新津液替换旧津液，酸痛即去，运动对脾很好。
+  seq: [135, 138]
+  q: 新的精液把旧的精液补回去了，酸痛就去掉。
+  ents: [zangfu.pi, zangfu.ji_rou]
+  conf: 0.7
+  asr: 精液=津液
+- type: diagnostic_rule
+  s: 第274条脉象：病入阴经时脉越摸越小；若阳脉渐回、阴脉由涩转长，表示阳气回头、将要自愈。
+  seq: [142, 146]
+  q: 如果越越摸脉越小，
+  ents: [clause.shl.274, pulse.se]
+  conf: 0.75
+- type: formula_indication
+  s: 第276条太阴病脉浮可发汗，用桂枝汤；因里湿盛，加白术、茯苓（等量）更稳妥。
+  seq: [147, 154]
+  q: 可以开桂枝汤，加什么白术、茯苓。
+  ents: [clause.shl.276, formula.gui_zhi_tang, herb.bai_zhu, herb.fu_ling, pulse.fu, method.fa_han]
+  conf: 0.9
+- type: herb_property
+  s: 茯苓偏于利尿，白术偏于祛湿；在肌肉层的湿，二者一般开等量。
+  seq: [151, 152]
+  q: 茯苓呢比较是利尿，白术呢比较是祛湿。
+  ents: [herb.fu_ling, herb.bai_zhu]
+  conf: 0.9
+- type: formula_composition
+  s: 太阴兼太阳中风用桂枝汤加术苓：桂枝三钱、白芍三钱，加生姜、甘草、大枣，再加白术三钱、茯苓三钱。
+  seq: [154, 154]
+  q: 白术三前茯苓三钱绝对可以把它治好
+  ents: [formula.gui_zhi_tang, herb.gui_zhi, herb.shao_yao, herb.sheng_jiang, herb.gan_cao, herb.da_zao, herb.bai_zhu, herb.fu_ling]
+  conf: 0.85
+  asr: 三前=三钱；白烧=白芍；参姜刚到=生姜甘草
+- type: prognosis
+  s: 第275条太阴欲解时（亥至丑）：病人半夜饿醒能吃、腹满减、小便增多、不再吐，表示太阴病正在恢复。
+  seq: [155, 161]
+  q: 我的肚子很饿，醒过来吃东西好
+  ents: [clause.shl.275, syndrome.tai_yin_bing, symptom.fu_man]
+  conf: 0.7
+  asr: 害到走=亥至丑；止午=子丑（ASR 混乱）
+- type: clause_interpretation
+  s: 第277条自利不渴属太阴：太阴湿盛所以下利而不渴；有燥才渴，属阳明。
+  seq: [167, 173]
+  q: 有下利，但是他没有口渴，为什么不口渴？
+  ents: [clause.shl.277, symptom.zi_li, new.symptom.口渴, six_channel.taiyin, six_channel.yangming]
+  conf: 0.9
+- type: diagnostic_rule
+  s: 拉肚子而口渴属阳证，一般不死人；拉了还不口渴是阴病，因脏中有寒。
+  seq: [180, 186]
+  q: 拉了半天还不口渴，你什么病呢？
+  ents: [symptom.xia_li, new.symptom.口渴]
+  conf: 0.9
+- type: herb_property
+  s: 炮附子固阳固表：阳虚固表力不足导致汗多、二便失禁，皆可用炮附子。
+  seq: [187, 197]
+  q: 所以腹剖腹子就是固阳好顾表。
+  ents: [herb.fu_zi, new.method.固表]
+  conf: 0.75
+  asr: 泡腹子/剖腹子=炮附子；顾表=固表
+- type: treatment_principle
+  s: 第277条"当温之，宜服四逆辈"：里有寒湿，治以温中，四逆汤类方均可用。
+  seq: [200, 202]
+  q: 就是四逆汤你都可以用哦
+  ents: [clause.shl.277, formula.si_ni_tang, syndrome.han_shi, new.method.温中]
+  conf: 0.9
+- type: herb_property
+  s: 附子配伍用意：炮附子配生姜用于去水；生附子配干姜用于救逆（心衰、里寒恶寒）；水犯心脏时干姜、生姜同用以加速排水。
+  seq: [214, 224]
+  q: 当你用泡腹子跟生姜的时候，这两个是去水
+  ents: [herb.fu_zi, herb.sheng_jiang, herb.gan_jiang, zangfu.xin]
+  conf: 0.8
+- type: concept_definition
+  s: 经方早于张仲景而存在，并非其发明；经方药性依据已失传的《胎胪药录》（源自神农本草）。
+  seq: [211, 213]
+  q: 经方呢是张仲景之前就有的东西，不是张仲景发明的
+  ents: [concept.jing_fang, person.zhang_zhong_jing, new.book.胎胪药录, classic.shen_nong_ben_cao_jing]
+  conf: 0.65
+  asr: 开炉药露/开鲁药录推定为"胎胪药录"
+- type: herb_property
+  s: 祛湿药要按部位选：白术祛湿、炮附子驱寒；肛门痔疮流脓黏稠不用白术，可选赤小豆等。
+  seq: [228, 232]
+  q: 那樟木你就不会用白术啊。
+  ents: [herb.bai_zhu, herb.fu_zi, herb.chi_xiao_dou]
+  conf: 0.65
+- type: clause_interpretation
+  s: 第278条手足自温者系在太阴：手脚温表示肠胃功能尚在；太阴湿盛当发黄，若小便自利，湿有出路则不发黄。
+  seq: [234, 242]
+  q: 手脚是温温的，代表肠胃的功能还是有
+  ents: [clause.shl.278, symptom.fa_huang, symptom.xiao_bian_zi_li, pulse.huan]
+  conf: 0.9
+- type: treatment_principle
+  s: 治太阴、治阴证一定要利小便：小便保持通畅就不会发黄、病情不会恶化（肝硬化、阴黄亦然）；实脾是利小便而非利大便。
+  seq: [243, 246]
+  q: 治太阴治阴症，要一定要利小便
+  ents: [method.li_xiao_bian, symptom.fa_huang, new.concept.实脾]
+  conf: 0.9
+- type: prognosis
+  s: 第278条脾家实：脾功能强时，即使暴烦下利一日十余次也会自止，腐秽自去；以小便是否通利判断。
+  seq: [248, 257]
+  q: 即使是你下力，一天之下一定会自己止掉。
+  ents: [clause.shl.278, new.concept.脾家实, symptom.xia_li]
+  conf: 0.8
