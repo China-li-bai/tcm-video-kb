@@ -1,0 +1,195 @@
+video_id: zj-052
+window: w00-02
+seg_from: 0
+seg_to: 184
+annotator: llm_read
+chapters:
+- key: c01
+  title: 丘墟原穴与商丘透刺
+  start_seq: 0
+  summary: 丘墟在跗骨交接缝，为胆经原穴，主眼疾不分虚实；踝扭伤可商丘透丘墟，从两筋下方穿，一寸半针即可。绝骨可透向三阴交。
+  clauses: []
+  topics:
+  - acupoint.gb40
+  - acupoint.sp5
+  - acupoint.gb39
+- key: c02
+  title: 足临泣本穴与地五会
+  start_seq: 56
+  summary: 足临泣（ASR灵气）为胆经本穴属木，治带脉样环腰痛、眼科及乳房硬块；地五会昔因动脉少针，今细针可用，常用于乳岩/乳房结块。
+  clauses: []
+  topics:
+  - acupoint.gb41
+  - acupoint.gb42
+  - meridian.gb
+- key: c03
+  title: 侠溪母穴与窍阴井穴
+  start_seq: 81
+  summary: 侠溪为母穴，虚证及对侧偏头痛可取；窍阴为胆经井穴/末穴，在四趾外侧，异于五趾至阴。眼外眦痛取窍阴，下睑责厉兑。井穴多用五分针或放血，少灸。
+  clauses: []
+  topics:
+  - acupoint.gb43
+  - acupoint.gb44
+  - acupoint.bl67
+- key: c04
+  title: 胆经尽而入肝经
+  start_seq: 126
+  summary: 窍阴经足底络至大趾侧交肝经隐白一带；胆经流注子时（23–1时），其后入肝。强调熟经络与流注助辨证；下堂讲肝经。
+  clauses: []
+  topics:
+  - meridian.gb
+  - meridian.lr
+  - acupoint.gb44
+entities:
+- id: acupoint.gb40
+  seq: 19
+  surface: 丘墟
+  corrected: 丘墟
+- id: acupoint.sp5
+  seq: 23
+  surface: 商丘
+  corrected: 商丘
+- id: acupoint.gb39
+  seq: 4
+  surface: 绝骨
+  corrected: 悬钟
+- id: acupoint.sp6
+  seq: 4
+  surface: 三阴交
+  corrected: 三阴交
+- id: acupoint.bl64
+  seq: 15
+  surface: 京骨
+  corrected: 京骨
+- id: zangfu.san_jiao
+  seq: 38
+  surface: 三焦
+  corrected: 三焦
+- id: acupoint.gb41
+  seq: 57
+  surface: 灵气
+  corrected: 足临泣
+- id: acupoint.gb42
+  seq: 69
+  surface: 第五会
+  corrected: 地五会
+- id: acupoint.gb43
+  seq: 117
+  surface: 侠溪
+  corrected: 侠溪
+- id: acupoint.gb44
+  seq: 82
+  surface: 窍阴
+  corrected: 足窍阴
+- id: acupoint.bl67
+  seq: 81
+  surface: 至阴
+  corrected: 至阴
+- id: meridian.gb
+  seq: 30
+  surface: 胆经
+  corrected: 足少阳胆经
+- id: meridian.lr
+  seq: 128
+  surface: 肝净
+  corrected: 足厥阴肝经
+- id: zangfu.dan
+  seq: 34
+  surface: 胆
+  corrected: 胆
+- id: acupoint.st45
+  seq: 144
+  surface: 厉兑
+  corrected: 厉兑
+kps:
+- type: acupoint_usage
+  s: 丘墟取跗骨交接缝，为胆经原穴，眼疾可取不分虚实。
+  seq:
+  - 19
+  - 34
+  q: 他是元穴
+  ents:
+  - acupoint.gb40
+  conf: 0.95
+  asr: 元穴=原穴
+- type: acupoint_usage
+  s: 踝扭伤可商丘透丘墟：屈踝，自两筋下方穿透，约一寸半针。
+  seq:
+  - 23
+  - 28
+  q: 商丘透丘墟
+  ents:
+  - acupoint.sp5
+  - acupoint.gb40
+  conf: 0.95
+- type: clinical_tip
+  s: 腰如皮带横圈痛，属带脉样，取足临泣常可即时止痛。
+  seq:
+  - 64
+  - 65
+  q: 像皮带一样下灵气
+  ents:
+  - acupoint.gb41
+  conf: 0.9
+  asr: 灵气=足临泣
+- type: concept_definition
+  s: 足临泣属木，为胆经本穴；治带脉病、眼科及胆经所过之乳房结块。
+  seq:
+  - 87
+  - 94
+  q: 灵气呢又是胆经的本血
+  ents:
+  - acupoint.gb41
+  - meridian.gb
+  conf: 0.9
+  asr: 本血=本穴
+- type: clinical_tip
+  s: 地五会昔因动脉少针，今细针可用；常用于乳岩/乳房硬块，因胆经过胸乳。
+  seq:
+  - 105
+  - 107
+  q: 治疗乳癌的一个乳房硬块
+  ents:
+  - acupoint.gb42
+  - meridian.gb
+  conf: 0.9
+  asr: 第五会=地五会
+- type: acupoint_usage
+  s: 侠溪为母穴，虚证取之；偏头痛可刺对侧侠溪。
+  seq:
+  - 117
+  - 132
+  q: 侠溪穴是母穴
+  ents:
+  - acupoint.gb43
+  conf: 0.95
+- type: concept_definition
+  s: 足窍阴为胆经井穴、末穴，在第四趾外侧；第五趾外侧为膀胱经至阴，勿混。
+  seq:
+  - 82
+  - 138
+  q: 窍阴穴就是胆经的最后一个穴道
+  ents:
+  - acupoint.gb44
+  - acupoint.bl67
+  conf: 0.95
+- type: clinical_tip
+  s: 眼外眦痛取窍阴；眼下痛责胃经厉兑，非窍阴/至阴。井穴多用五分针或放血，少灸。
+  seq:
+  - 142
+  - 153
+  q: 阴穴是井穴
+  ents:
+  - acupoint.gb44
+  - acupoint.st45
+  conf: 0.9
+- type: clinical_tip
+  s: 胆经子时（23–1时）流注，其后入肝经；胆石症常半夜发作。熟经络与流注利辨证。
+  seq:
+  - 97
+  - 166
+  q: 晚上十一点到一点是胆经
+  ents:
+  - meridian.gb
+  - meridian.lr
+  conf: 0.9
