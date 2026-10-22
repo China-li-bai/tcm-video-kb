@@ -1,0 +1,129 @@
+video_id: nj-005
+window: w00-02
+seg_from: 0
+seg_to: 386
+annotator: llm_read
+chapters:
+- key: c01
+  title: 膈分清浊与三焦水道
+  start_seq: 0
+  summary: 横膈分清浊，清气升肺、浊气下行；三焦原生于脾、布周身以利水道。水宜化为气，冷水当化气或排；治水可用栀子豉汤一类方。
+  clauses: []
+  topics:
+  - zangfu.san_jiao
+  - zangfu.pi
+  - formula.zhi_zi_shi_tang
+- key: c02
+  title: 六经辨证与俞穴泻阳
+  start_seq: 34
+  summary: 太阳独盛则阳气上壅、四肢反冷；三阳传变入少阳半表半里方可入里。经方六经辨证本于内经；阳过旺可取俞穴泻之。中医治症、同证同治，不拘西医病名。
+  clauses: []
+  topics:
+  - concept.liu_jing
+  - classic.huang_di_nei_jing
+- key: c03
+  title: 藏气法时·五味与肝病忌风
+  start_seq: 155
+  summary: 肝主春急则甘缓，心缓则酸收，脾湿则苦燥，肺气上逆宜苦降，肾燥则咸润；咸能软坚。病遇相生时节则愈、相克则凶；肝病忌当风。
+  clauses: []
+  topics:
+  - concept.wu_wei
+  - zangfu.gan
+  - concept.wu_xing
+entities:
+- id: zangfu.san_jiao
+  seq: 13
+  surface: 三焦
+  corrected: 三焦
+- id: zangfu.pi
+  seq: 17
+  surface: 脾脏
+  corrected: 脾
+- id: formula.zhi_zi_shi_tang
+  seq: 26
+  surface: 栀子脾汤
+  corrected: 栀子豉汤
+- id: concept.liu_jing
+  seq: 94
+  surface: 六经辨证
+  corrected: 六经辨证
+- id: classic.huang_di_nei_jing
+  seq: 96
+  surface: 黄帝内经
+  corrected: 黄帝内经
+- id: six_channel.yangming
+  seq: 139
+  surface: 阳明
+  corrected: 阳明
+- id: zangfu.gan
+  seq: 177
+  surface: 肝
+  corrected: 肝
+- id: concept.wu_wei
+  seq: 228
+  surface: 苦、甘辛咸
+  corrected: 五味
+- id: concept.wu_xing
+  seq: 244
+  surface: 金克木
+  corrected: 五行
+- id: zangfu.fei
+  seq: 211
+  surface: 肺
+  corrected: 肺
+- id: zangfu.xin
+  seq: 190
+  surface: 心
+  corrected: 心
+- id: zangfu.shen
+  seq: 215
+  surface: 肾
+  corrected: 肾
+- id: acupoint.lr3
+  seq: 86
+  surface: 太冲穴
+  corrected: 太冲
+kps:
+- type: concept_definition
+  s: 横膈为分清浊之所：清气升入肺，浊气下行从二便出。
+  seq: [6, 7]
+  q: 分清浊的地方
+  ents: [zangfu.fei]
+  conf: 0.95
+- type: pathomechanism
+  s: 三焦原生于脾，网膜布脏腑之间以利水道；身中水宜热气化，冷水当化气或排出。
+  seq: [13, 17]
+  q: 原生于脾
+  ents: [zangfu.san_jiao, zangfu.pi]
+  conf: 0.9
+- type: clinical_tip
+  s: 出水类问题可用栀子豉汤一类治水方（ASR作栀子脾汤）。
+  seq: [26]
+  q: 栀子脾汤
+  ents: [formula.zhi_zi_shi_tang]
+  conf: 0.8
+  asr: 栀子脾汤=栀子豉汤
+- type: concept_definition
+  s: 经方六经辨证本于黄帝内经；中医治症、同证同治，不拘西医病名。
+  seq: [96, 120]
+  q: 六经辩证就是来自黄帝内经
+  ents: [concept.liu_jing, classic.huang_di_nei_jing]
+  conf: 0.95
+- type: diagnostic_rule
+  s: 阳明为纯热、但热不寒，脉大而浮；太阳尚有寒，少阳寒热往来。
+  seq: [139, 143]
+  q: 阳明是纯热症
+  ents: [six_channel.yangming]
+  conf: 0.9
+- type: herb_property
+  s: 藏气法时五味：肝急甘缓、心缓酸收、脾湿苦燥、肺逆苦降、肾燥咸润；咸能软坚。
+  seq: [177, 222]
+  q: 咸能软坚
+  ents: [concept.wu_wei, zangfu.gan, zangfu.xin, zangfu.pi, zangfu.fei, zangfu.shen]
+  conf: 0.9
+- type: prognosis
+  s: 病遇相生时节易愈、相克时节加重；肝病忌当风，宜安居避风。
+  seq: [243, 251]
+  q: 相生的季节痊愈
+  ents: [zangfu.gan, concept.wu_xing]
+  conf: 0.95

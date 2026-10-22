@@ -1,0 +1,91 @@
+[
+ {
+  "chapter_id": "nj-005.c01",
+  "video_id": "nj-005",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "膈分清浊与三焦水道",
+  "summary": "横膈分清浊，清气升肺、浊气下行；三焦原生于脾、布周身以利水道。水宜化为气，冷水当化气或排；治水可用栀子豉汤一类方。",
+  "start_s": 0.21,
+  "end_s": 175.455,
+  "seg_from": 0,
+  "seg_to": 33,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "zangfu.san_jiao",
+   "zangfu.pi",
+   "formula.zhi_zi_shi_tang"
+  ],
+  "citation": {
+   "youtube_id": "2AGKauCZ_bk",
+   "url": "https://www.youtube.com/watch?v=2AGKauCZ_bk&t=0s",
+   "series": "nj",
+   "episode": 5,
+   "title": "05 倪海厦精讲《黄帝内经》高清字幕完整版",
+   "start_s": 0.21,
+   "end_s": 175.46
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "nj-005.c02",
+  "video_id": "nj-005",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "六经辨证与俞穴泻阳",
+  "summary": "太阳独盛则阳气上壅、四肢反冷；三阳传变入少阳半表半里方可入里。经方六经辨证本于内经；阳过旺可取俞穴泻之。中医治症、同证同治，不拘西医病名。",
+  "start_s": 176.99,
+  "end_s": 849.995,
+  "seg_from": 34,
+  "seg_to": 154,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "concept.liu_jing",
+   "classic.huang_di_nei_jing"
+  ],
+  "citation": {
+   "youtube_id": "2AGKauCZ_bk",
+   "url": "https://www.youtube.com/watch?v=2AGKauCZ_bk&t=176s",
+   "series": "nj",
+   "episode": 5,
+   "title": "05 倪海厦精讲《黄帝内经》高清字幕完整版",
+   "start_s": 176.99,
+   "end_s": 850.0
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "nj-005.c03",
+  "video_id": "nj-005",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "藏气法时·五味与肝病忌风",
+  "summary": "肝主春急则甘缓，心缓则酸收，脾湿则苦燥，肺气上逆宜苦降，肾燥则咸润；咸能软坚。病遇相生时节则愈、相克则凶；肝病忌当风。",
+  "start_s": 850.73,
+  "end_s": 13989.863,
+  "seg_from": 155,
+  "seg_to": 2445,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "concept.wu_wei",
+   "zangfu.gan",
+   "concept.wu_xing"
+  ],
+  "citation": {
+   "youtube_id": "2AGKauCZ_bk",
+   "url": "https://www.youtube.com/watch?v=2AGKauCZ_bk&t=850s",
+   "series": "nj",
+   "episode": 5,
+   "title": "05 倪海厦精讲《黄帝内经》高清字幕完整版",
+   "start_s": 850.73,
+   "end_s": 13989.86
+  },
+  "review_status": "llm_read"
+ }
+]

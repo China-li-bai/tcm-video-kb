@@ -1,0 +1,42 @@
+# 05 倪海厦精讲《黄帝内经》高清字幕完整版
+
+- 视频：https://www.youtube.com/watch?v=2AGKauCZ_bk&t=0s　系列 `nj` 第 5 集　时长 3:53:13
+- 章节 3，小节 0，知识点 7，实体 162（schema `knowledge/1`，由转写阅读生成，ASR 有误差，引用前请点链接核对）
+
+## 章节目录
+
+- [00:00](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=0s) **c01 膈分清浊与三焦水道** — 横膈分清浊，清气升肺、浊气下行；三焦原生于脾、布周身以利水道。水宜化为气，冷水当化气或排；治水可用栀子豉汤一类方。
+- [02:56](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=176s) **c02 六经辨证与俞穴泻阳** — 太阳独盛则阳气上壅、四肢反冷；三阳传变入少阳半表半里方可入里。经方六经辨证本于内经；阳过旺可取俞穴泻之。中医治症、同证同治，不拘西医病名。
+- [14:10](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=850s) **c03 藏气法时·五味与肝病忌风** — 肝主春急则甘缓，心缓则酸收，脾湿则苦燥，肺气上逆宜苦降，肾燥则咸润；咸能软坚。病遇相生时节则愈、相克则凶；肝病忌当风。
+
+## 知识点（按章节）
+
+### c01 膈分清浊与三焦水道
+- [00:30](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=30s) 〔概念定义〕横膈为分清浊之所：清气升入肺，浊气下行从二便出。　<sub>nj-005.kp0001 · 「分清浊的地方」 · 置信 0.95</sub>
+- [01:11](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=71s) 〔病机传变〕三焦原生于脾，网膜布脏腑之间以利水道；身中水宜热气化，冷水当化气或排出。　<sub>nj-005.kp0002 · 「原生于脾」 · 置信 0.90</sub>
+- [02:21](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=141s) 〔临床经验〕出水类问题可用栀子豉汤一类治水方（ASR作栀子脾汤）。　<sub>nj-005.kp0003 · 「栀子脾汤」 · 置信 0.80</sub>
+
+### c02 六经辨证与俞穴泻阳
+- [09:02](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=542s) 〔概念定义〕经方六经辨证本于黄帝内经；中医治症、同证同治，不拘西医病名。　<sub>nj-005.kp0004 · 「六经辩证就是来自黄帝内经」 · 置信 0.95</sub>
+- [12:39](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=759s) 〔辨证要点〕阳明为纯热、但热不寒，脉大而浮；太阳尚有寒，少阳寒热往来。　<sub>nj-005.kp0005 · 「阳明是纯热症」 · 置信 0.90</sub>
+
+### c03 藏气法时·五味与肝病忌风
+- [16:12](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=972s) 〔药性用药〕藏气法时五味：肝急甘缓、心缓酸收、脾湿苦燥、肺逆苦降、肾燥咸润；咸能软坚。　<sub>nj-005.kp0006 · 「咸能软坚」 · 置信 0.90</sub>
+- [22:17](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=1337s) 〔预后〕病遇相生时节易愈、相克时节加重；肝病忌当风，宜安居避风。　<sub>nj-005.kp0007 · 「相生的季节痊愈」 · 置信 0.95</sub>
+
+## 实体索引（前 10 个提及最多的类型内条目）
+
+- **方剂**（4）：[大承气汤](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=3699s)×2、[承气汤](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=12615s)×1、[桂枝汤](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=9291s)×1、[栀子豉汤](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=141s)×1
+- **中药**（16）：[栀子](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=141s)×4、[黄连](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=2446s)×3、[盐](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=1908s)×3、[葱](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=3332s)×2、[大黄](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=13910s)×2、[桂](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=985s)×2、[生姜](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=4482s)×2、[大枣](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=3261s)×1、[葵子](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=1482s)×1、[曲](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=4786s)×1
+- **症状**（17）：[头痛](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=2657s)×12、[发狂](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=4412s)×4、[少气](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=3025s)×4、[下利](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=6452s)×3、[消渴](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=11258s)×3、[不仁](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=4428s)×2、[发热](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=11011s)×2、[汗出](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=3002s)×2、[水肿](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=10885s)×2、[鼻塞](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=12196s)×1
+- **证候**（9）：[风湿](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=692s)×5、[温病](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=5239s)×4、[伤寒](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=5239s)×2、[表证](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=8206s)×1、[寒湿](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=12247s)×1、[阳明病](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=13499s)×1、[阳明证](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=12639s)×1、[阴阳毒](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=372s)×1、[中风](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=7470s)×1
+- **病名**（3）：[癫痫](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=11195s)×6、[霍乱](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=12033s)×2、[咳嗽](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=3666s)×1
+- **六经**（6）：[阳明](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=229s)×18、[太阴](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=354s)×9、[少阳](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=247s)×7、[厥阴](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=469s)×5、[少阴](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=807s)×5、[太阳](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=176s)×3
+- **经络**（11）：[足少阴肾经](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=2927s)×10、[足厥阴肝经](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=2598s)×9、[手太阴肺经](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=5120s)×9、[足太阴脾经](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=2919s)×6、[手少阴心经](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=1050s)×4、[足阳明胃经](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=11569s)×4、[足少阳胆经](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=2651s)×3、[手阳明大肠经](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=1162s)×3、[十二经脉](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=5305s)×3、[手太阳小肠经](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=1050s)×3
+- **穴位**（16）：[太溪](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=5108s)×4、[太冲](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=481s)×3、[中脘](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=12392s)×1、[阳陵泉](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=11941s)×1、[神门](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=5108s)×1、[气穴](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=276s)×1、[合谷](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=5148s)×1、[中府](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=10097s)×1、[云门](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=10097s)×1、[天府](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=10097s)×1
+- **脉象**（6）：[滑脉](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=10114s)×4、[浮脉](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=729s)×3、[实脉](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=10410s)×3、[虚脉](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=10433s)×3、[寸口](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=8454s)×2、[动脉](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=2325s)×1
+- **治法**（6）：[针灸](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=2825s)×35、[补泻](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=3215s)×8、[发汗](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=3922s)×6、[导引](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=6577s)×4、[发表](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=3945s)×2、[解表](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=13341s)×1
+- **人物**（5）：[岐伯](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=879s)×16、[黄帝](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=2946s)×9、[张仲景](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=732s)×8、[神农](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=6323s)×2、[孙思邈](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=11511s)×1
+- **典籍**（10）：[黄帝内经](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=542s)×32、[难经](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=265s)×5、[素问](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=3103s)×4、[金匮要略](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=161s)×3、[伤寒论](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=738s)×3、[脉经](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=8331s)×2、[灵枢](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=6573s)×1、[神农本草经](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=13957s)×1、[宣明五气篇](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=3575s)×1、[阳明脉解](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=13457s)×1
+- **脏腑**（22）：[五脏](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=354s)×26、[小肠](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=10745s)×14、[肌肉](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=2853s)×13、[骨](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=692s)×11、[筋](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=972s)×8、[三焦](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=71s)×8、[胆](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=2621s)×6、[六腑](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=12308s)×6、[大肠](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=1162s)×5、[髓](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=692s)×5
+- **概念**（31）：[阴阳](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=126s)×36、[经络](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=334s)×28、[阳气](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=195s)×18、[虚实](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=2604s)×15、[阳虚](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=10410s)×11、[本草](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=985s)×10、[表里](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=213s)×10、[精气](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=16s)×10、[六经](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=532s)×10、[气虚](https://www.youtube.com/watch?v=2AGKauCZ_bk&t=3032s)×10
