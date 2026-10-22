@@ -1,0 +1,90 @@
+[
+ {
+  "chapter_id": "nj-006.c01",
+  "video_id": "nj-006",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "热论·伤寒温病与六日传变",
+  "summary": "热病皆伤寒之类；温病源于伤寒。一日巨阳→六日厥阴传变；两感于寒则危。未满三日在阳可汗解，满三日入里可利二便。",
+  "start_s": 0.21,
+  "end_s": 762.68,
+  "seg_from": 0,
+  "seg_to": 130,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "syndrome.shang_han",
+   "syndrome.wen_bing",
+   "concept.liu_jing"
+  ],
+  "citation": {
+   "youtube_id": "-Xa3_qsCF3Q",
+   "url": "https://www.youtube.com/watch?v=-Xa3_qsCF3Q&t=0s",
+   "series": "nj",
+   "episode": 6,
+   "title": "06 倪海厦精讲《黄帝内经》高清字幕完整版",
+   "start_s": 0.21,
+   "end_s": 762.68
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "nj-006.c02",
+  "video_id": "nj-006",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "病衰日程与复热禁忌",
+  "summary": "不两感者自七日巨阳病衰起逐日消退。热病初愈忌肉食，防遗热复燃；治当辨脏与十二经脉。",
+  "start_s": 762.68,
+  "end_s": 1445.182,
+  "seg_from": 131,
+  "seg_to": 248,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "concept.liang_gan",
+   "syndrome.wen_bing"
+  ],
+  "citation": {
+   "youtube_id": "-Xa3_qsCF3Q",
+   "url": "https://www.youtube.com/watch?v=-Xa3_qsCF3Q&t=762s",
+   "series": "nj",
+   "episode": 6,
+   "title": "06 倪海厦精讲《黄帝内经》高清字幕完整版",
+   "start_s": 762.68,
+   "end_s": 1445.18
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "nj-006.c03",
+  "video_id": "nj-006",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "八纲辨便秘寒热与五脏热",
+  "summary": "便秘属实，须分寒实热实；问小便黄白、腹痛与否以别寒热。继述肝心肺脾肾热的日辰与针刺要点。",
+  "start_s": 1446.377,
+  "end_s": 13652.036,
+  "seg_from": 249,
+  "seg_to": 2328,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "concept.yin_yang",
+   "zangfu.gan"
+  ],
+  "citation": {
+   "youtube_id": "-Xa3_qsCF3Q",
+   "url": "https://www.youtube.com/watch?v=-Xa3_qsCF3Q&t=1446s",
+   "series": "nj",
+   "episode": 6,
+   "title": "06 倪海厦精讲《黄帝内经》高清字幕完整版",
+   "start_s": 1446.38,
+   "end_s": 13652.04
+  },
+  "review_status": "llm_read"
+ }
+]

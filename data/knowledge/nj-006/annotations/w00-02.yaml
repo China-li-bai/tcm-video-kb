@@ -1,0 +1,104 @@
+video_id: nj-006
+window: w00-02
+seg_from: 0
+seg_to: 384
+annotator: llm_read
+chapters:
+- key: c01
+  title: 热论·伤寒温病与六日传变
+  start_seq: 0
+  summary: 热病皆伤寒之类；温病源于伤寒。一日巨阳→六日厥阴传变；两感于寒则危。未满三日在阳可汗解，满三日入里可利二便。
+  clauses: []
+  topics:
+  - syndrome.shang_han
+  - syndrome.wen_bing
+  - concept.liu_jing
+- key: c02
+  title: 病衰日程与复热禁忌
+  start_seq: 131
+  summary: 不两感者自七日巨阳病衰起逐日消退。热病初愈忌肉食，防遗热复燃；治当辨脏与十二经脉。
+  clauses: []
+  topics:
+  - concept.liang_gan
+  - syndrome.wen_bing
+- key: c03
+  title: 八纲辨便秘寒热与五脏热
+  start_seq: 249
+  summary: 便秘属实，须分寒实热实；问小便黄白、腹痛与否以别寒热。继述肝心肺脾肾热的日辰与针刺要点。
+  clauses: []
+  topics:
+  - concept.yin_yang
+  - zangfu.gan
+entities:
+- id: classic.huang_di_nei_jing
+  seq: 5
+  surface: 黄帝内经
+  corrected: 黄帝内经
+- id: syndrome.shang_han
+  seq: 6
+  surface: 伤寒
+  corrected: 伤寒
+- id: syndrome.wen_bing
+  seq: 16
+  surface: 温病
+  corrected: 温病
+- id: concept.liu_jing
+  seq: 12
+  surface: 巨阳
+  corrected: 太阳
+- id: concept.liang_gan
+  seq: 132
+  surface: 两感
+  corrected: 两感
+- id: six_channel.taiyang
+  seq: 135
+  surface: 巨阳
+  corrected: 太阳
+- id: method.fa_han
+  seq: 150
+  surface: 焊解
+  corrected: 汗解
+- id: classic.shang_han_lun
+  seq: 34
+  surface: 伤寒论
+  corrected: 伤寒论
+- id: zangfu.gan
+  seq: 269
+  surface: 肝
+  corrected: 肝
+- id: formula.bai_hu_tang
+  seq: 88
+  surface: 白虎汤
+  corrected: 白虎汤
+kps:
+- type: concept_definition
+  s: 凡热病皆伤寒之类；温病由伤寒而来，初起当识伤寒本源。
+  seq: [6, 15]
+  q: 皆伤寒之类
+  ents: [syndrome.shang_han, syndrome.wen_bing]
+  conf: 0.95
+- type: pathomechanism
+  s: 伤寒按日传变：一日巨阳（太阳）至六日厥阴；表寒未解又感外寒为两感，较危。
+  seq: [132, 135]
+  q: 巨阳病衰
+  ents: [concept.liang_gan, six_channel.taiyang]
+  conf: 0.9
+- type: treatment_principle
+  s: 未满三日病在阳可汗解；满三日入里可宣泄、利二便。
+  seq: [150, 151]
+  q: 可以焊解
+  ents: [method.fa_han]
+  conf: 0.85
+  asr: 焊解=汗解
+- type: contraindication
+  s: 热病初愈忌肉食，多食易遗热复燃。
+  seq: [164]
+  q: 不可以吃肉
+  ents: [syndrome.wen_bing]
+  conf: 0.95
+- type: diagnostic_rule
+  s: 便秘属实，须分寒热；小便黄多为热，白多为寒；热则腹痛、寒则多不痛。
+  seq: [250, 265]
+  q: 八纲来辩证
+  ents: [concept.yin_yang]
+  conf: 0.9
