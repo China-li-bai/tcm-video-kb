@@ -1,0 +1,62 @@
+[
+ {
+  "chapter_id": "zj-013.c01",
+  "video_id": "zj-013",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "百会与头顶部穴",
+  "summary": "脑户等穴禁灸（易伤咽声），宜针。后顶、前顶为百会辅助。百会为大穴，治头痛、癫疾等。头针在头皮与颅骨间斜刺，不入颅。扁鹊子母补泻等手法传统。",
+  "start_s": 0.57,
+  "end_s": 1016.415,
+  "seg_from": 0,
+  "seg_to": 185,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.gv20",
+   "acupoint.gv17",
+   "person.bian_que"
+  ],
+  "citation": {
+   "youtube_id": "2_xv0PSgnGA",
+   "url": "https://www.youtube.com/watch?v=2_xv0PSgnGA&t=0s",
+   "series": "zj",
+   "episode": 13,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 13",
+   "start_s": 0.57,
+   "end_s": 1016.41
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-013.c02",
+  "video_id": "zj-013",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "素髎、人中、龈交",
+  "summary": "素髎在鼻尖正中。人中（水沟）近取治面肿等。龈交为督脉终点，治牙龈肿烂、牙周病效佳，口内不便灸。头部穴多治神志病，可近取查阅功能。",
+  "start_s": 1017.81,
+  "end_s": 1830.311,
+  "seg_from": 186,
+  "seg_to": 334,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.gv25",
+   "acupoint.gv26",
+   "acupoint.gv28"
+  ],
+  "citation": {
+   "youtube_id": "2_xv0PSgnGA",
+   "url": "https://www.youtube.com/watch?v=2_xv0PSgnGA&t=1017s",
+   "series": "zj",
+   "episode": 13,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 13",
+   "start_s": 1017.81,
+   "end_s": 1830.31
+  },
+  "review_status": "llm_read"
+ }
+]

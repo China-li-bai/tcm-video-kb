@@ -1,0 +1,113 @@
+video_id: zj-013
+window: w00-02
+seg_from: 0
+seg_to: 334
+annotator: llm_read
+chapters:
+- key: c01
+  title: 百会与头顶部穴
+  start_seq: 1
+  summary: 脑户等穴禁灸（易伤咽声），宜针。后顶、前顶为百会辅助。百会为大穴，治头痛、癫疾等。头针在头皮与颅骨间斜刺，不入颅。扁鹊子母补泻等手法传统。
+  clauses: []
+  topics:
+  - acupoint.gv20
+  - acupoint.gv17
+  - person.bian_que
+- key: c02
+  title: 素髎、人中、龈交
+  start_seq: 186
+  summary: 素髎在鼻尖正中。人中（水沟）近取治面肿等。龈交为督脉终点，治牙龈肿烂、牙周病效佳，口内不便灸。头部穴多治神志病，可近取查阅功能。
+  clauses: []
+  topics:
+  - acupoint.gv25
+  - acupoint.gv26
+  - acupoint.gv28
+entities:
+- id: acupoint.gv17
+  seq: 1
+  surface: 脑护
+  corrected: 脑户
+- id: acupoint.gv20
+  seq: 51
+  surface: 百会
+  corrected: 百会
+- id: acupoint.gv19
+  seq: 18
+  surface: 后顶
+  corrected: 后顶
+- id: acupoint.gv21
+  seq: 36
+  surface: 前顶
+  corrected: 前顶
+- id: person.bian_que
+  seq: 67
+  surface: 扁鹊
+  corrected: 扁鹊
+- id: acupoint.gv25
+  seq: 186
+  surface: 塑料穴
+  corrected: 素髎
+- id: acupoint.gv26
+  seq: 210
+  surface: 人中
+  corrected: 水沟
+- id: acupoint.gv28
+  seq: 235
+  surface: 督脉最后的穴道
+  corrected: 龈交
+- id: symptom.tou_tong
+  seq: 31
+  surface: 头痛
+  corrected: 头痛
+kps:
+- type: contraindication
+  s: 脑户等头后穴禁灸（易致咽伤失音），宜用针。
+  seq:
+  - 1
+  - 2
+  q: 脑户和那个就这些这些这些这几个穴道通通是不揪的
+  ents:
+  - acupoint.gv17
+  conf: 0.9
+  asr: 不揪=不灸
+- type: acupoint_usage
+  s: 百会为大穴，治头痛、癫疾等；前后顶辅助其功能。
+  seq:
+  - 28
+  - 65
+  q: 后顶呢和前底啊这些血道都是百汇的辅助穴
+  ents:
+  - acupoint.gv20
+  - acupoint.gv19
+  - acupoint.gv21
+  conf: 0.9
+  asr: 前底=前顶；百汇=百会
+- type: clinical_tip
+  s: 头针在头皮与颅骨之间斜刺，不刺入颅腔。
+  seq:
+  - 112
+  - 112
+  q: 扎头针是在头皮和头骨，没有人扎进去的
+  ents:
+  - method.zhen_jiu
+  conf: 0.9
+- type: acupoint_usage
+  s: 素髎在鼻尖正中；龈交治牙龈肿烂、牙周病，口内不便灸。
+  seq:
+  - 186
+  - 236
+  q: 鼻子正中央那个鼻头的地方就是塑料穴
+  ents:
+  - acupoint.gv25
+  - acupoint.gv28
+  conf: 0.9
+  asr: 塑料=素髎
+- type: treatment_principle
+  s: 头部穴多治神志精神病；近部取穴时可查书补功能，诸穴主治常相近。
+  seq:
+  - 177
+  - 182
+  q: 脑部的穴道，头部的穴道大部分都是治精神方面的疾病的
+  ents:
+  - meridian.gv
+  conf: 0.85
