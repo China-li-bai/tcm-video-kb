@@ -1,0 +1,96 @@
+video_id: zj-008
+window: w00-01
+seg_from: 0
+seg_to: 260
+annotator: llm_read
+chapters:
+- key: c01
+  title: 关元：小肠募与灸养
+  start_seq: 0
+  summary: 关元为小肠募穴、气之归藏处；虚损常灸关元但火勿过斜以免烫伤。中极为膀胱募（脐下4寸），治癃闭、转胞等。
+  clauses: []
+  topics:
+  - acupoint.cv4
+  - acupoint.cv3
+  - concept.mu_xue
+- key: c02
+  title: 石门三焦募与孕妇禁忌
+  start_seq: 143
+  summary: 石门为三焦募穴。强调孕妇禁忌：不当刺激可致落胎，绝不可学作堕胎用。募穴须熟练：膀胱募中极、小肠募关元、三焦募石门，可互参近治。
+  clauses: []
+  topics:
+  - acupoint.cv5
+  - concept.mu_xue
+entities:
+- id: acupoint.cv4
+  seq: 0
+  surface: 关元
+  corrected: 关元
+- id: zangfu.xiao_chang
+  seq: 4
+  surface: 小肠
+  corrected: 小肠
+- id: concept.mu_xue
+  seq: 4
+  surface: 墓穴
+  corrected: 募穴
+- id: acupoint.cv3
+  seq: 135
+  surface: 中极穴
+  corrected: 中极
+- id: zangfu.pang_guang
+  seq: 135
+  surface: 膀胱
+  corrected: 膀胱
+- id: acupoint.cv5
+  seq: 185
+  surface: 石门穴
+  corrected: 石门
+- id: zangfu.san_jiao
+  seq: 185
+  surface: 三焦
+  corrected: 三焦
+kps:
+- type: acupoint_usage
+  s: 关元为小肠募穴，气所归藏；虚证可灸，但艾火勿过斜以防烫伤。
+  seq:
+  - 4
+  - 128
+  q: 小肠的墓穴，是气降下去的成累积的地方
+  ents:
+  - acupoint.cv4
+  - concept.mu_xue
+  - zangfu.xiao_chang
+  conf: 0.9
+  asr: 墓=募
+- type: acupoint_usage
+  s: 中极脐下4寸为膀胱募，足三阴与任脉交会；治转胞、癃闭等。
+  seq:
+  - 135
+  - 139
+  q: 脐下四寸膀胱的目穴，足三阴，还有任脉的交汇
+  ents:
+  - acupoint.cv3
+  - concept.mu_xue
+  conf: 0.95
+  asr: 目=募
+- type: contraindication
+  s: 孕妇腹部任脉穴刺激可致落胎——须知禁忌，绝不可用作堕胎。
+  seq:
+  - 143
+  - 143
+  q: 这会让你的落胎，那你不能学去帮他打胎专用哈
+  ents:
+  - meridian.cv
+  conf: 0.95
+- type: concept_definition
+  s: 募穴定位须熟：膀胱募中极、小肠募关元、三焦募石门。
+  seq:
+  - 185
+  - 186
+  q: 石门穴就是三焦的墓穴
+  ents:
+  - acupoint.cv5
+  - concept.mu_xue
+  - zangfu.san_jiao
+  conf: 0.95

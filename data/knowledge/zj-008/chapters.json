@@ -1,0 +1,61 @@
+[
+ {
+  "chapter_id": "zj-008.c01",
+  "video_id": "zj-008",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "关元：小肠募与灸养",
+  "summary": "关元为小肠募穴、气之归藏处；虚损常灸关元但火勿过斜以免烫伤。中极为膀胱募（脐下4寸），治癃闭、转胞等。",
+  "start_s": 0.11,
+  "end_s": 801.65,
+  "seg_from": 0,
+  "seg_to": 142,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.cv4",
+   "acupoint.cv3",
+   "concept.mu_xue"
+  ],
+  "citation": {
+   "youtube_id": "AEA5l6ymoO4",
+   "url": "https://www.youtube.com/watch?v=AEA5l6ymoO4&t=0s",
+   "series": "zj",
+   "episode": 8,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 08",
+   "start_s": 0.11,
+   "end_s": 801.65
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-008.c02",
+  "video_id": "zj-008",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "石门三焦募与孕妇禁忌",
+  "summary": "石门为三焦募穴。强调孕妇禁忌：不当刺激可致落胎，绝不可学作堕胎用。募穴须熟练：膀胱募中极、小肠募关元、三焦募石门，可互参近治。",
+  "start_s": 801.65,
+  "end_s": 1448.527,
+  "seg_from": 143,
+  "seg_to": 260,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.cv5",
+   "concept.mu_xue"
+  ],
+  "citation": {
+   "youtube_id": "AEA5l6ymoO4",
+   "url": "https://www.youtube.com/watch?v=AEA5l6ymoO4&t=801s",
+   "series": "zj",
+   "episode": 8,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 08",
+   "start_s": 801.65,
+   "end_s": 1448.53
+  },
+  "review_status": "llm_read"
+ }
+]
