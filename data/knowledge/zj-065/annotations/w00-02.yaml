@@ -1,0 +1,115 @@
+video_id: zj-065
+window: w00-02
+seg_from: 0
+seg_to: 345
+annotator: llm_read
+chapters:
+- key: c01
+  title: 面瘫地仓透颊车
+  start_seq: 0
+  summary: 面瘫（面部中风）健侧取合谷，主取地仓透颊车（沿皮透刺，勿穿出），平补平泻；可配太阳。半身中风流涎可单取地仓。汗出受风为常见诱因，须防再中。
+  clauses: []
+  topics:
+  - acupoint.st4
+  - acupoint.st6
+  - acupoint.li4
+- key: c02
+  title: 金津玉液与咽痛
+  start_seq: 135
+  summary: 舌强不语可于金津、玉液三棱放血，不宜久留针或灸。咽痛可列缺配照海，或天突局部；心经原络郄亦可参。
+  clauses: []
+  topics:
+  - acupoint.ex_jin_jin
+  - acupoint.ex_yu_ye
+  - acupoint.lu7
+  - acupoint.ki6
+entities:
+- id: acupoint.st4
+  seq: 47
+  surface: 地仓
+  corrected: 地仓
+- id: acupoint.st6
+  seq: 59
+  surface: 假车
+  corrected: 颊车
+- id: acupoint.li4
+  seq: 40
+  surface: 颌骨
+  corrected: 合谷
+- id: acupoint.ex_tai_yang
+  seq: 45
+  surface: 太阳
+  corrected: 太阳
+- id: acupoint.ex_jin_jin
+  seq: 144
+  surface: 金津
+  corrected: 金津
+- id: acupoint.ex_yu_ye
+  seq: 144
+  surface: 玉液
+  corrected: 玉液
+- id: acupoint.lu7
+  seq: 201
+  surface: 裂缺
+  corrected: 列缺
+- id: acupoint.ki6
+  seq: 205
+  surface: 造海
+  corrected: 照海
+- id: syndrome.zhong_feng
+  seq: 13
+  surface: 中风
+  corrected: 中风
+kps:
+- type: acupoint_usage
+  s: 面瘫健侧合谷，地仓沿皮透向颊车，平补平泻；勿追求针尖穿出。
+  seq:
+  - 42
+  - 69
+  q: 地苍透夹舌
+  ents:
+  - acupoint.st4
+  - acupoint.st6
+  - acupoint.li4
+  conf: 0.95
+  asr: 地苍=地仓；夹舌/假车=颊车；颌骨=合谷
+- type: clinical_tip
+  s: 半身中风流涎可单取地仓；面瘫则必须地仓透颊车。
+  seq:
+  - 58
+  - 59
+  q: 地仓能够拖到假车
+  ents:
+  - acupoint.st4
+  - acupoint.st6
+  conf: 0.9
+- type: acupoint_usage
+  s: 舌强不语于金津、玉液三棱点刺放血；不宜留针或灸。
+  seq:
+  - 142
+  - 146
+  q: 金津和玉液
+  ents:
+  - acupoint.ex_jin_jin
+  - acupoint.ex_yu_ye
+  conf: 0.95
+- type: acupoint_usage
+  s: 咽痛可取列缺、照海，针入常可迅速止痛。
+  seq:
+  - 205
+  - 205
+  q: 喉咙就不痛了
+  ents:
+  - acupoint.lu7
+  - acupoint.ki6
+  conf: 0.9
+  asr: 裂缺=列缺；造海=照海
+- type: clinical_tip
+  s: 部分皮肤疹不必梅花针，热水浴令汗出即可；汗出受风可致面瘫，须防再发。
+  seq:
+  - 90
+  - 124
+  q: 梅花针给，他打不需要
+  ents:
+  - syndrome.zhong_feng
+  conf: 0.85

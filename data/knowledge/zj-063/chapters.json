@@ -1,0 +1,90 @@
+[
+ {
+  "chapter_id": "zj-063.c01",
+  "video_id": "zj-063",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "主客俞募与会郄",
+  "summary": "表里主客：大肠病可取大肠原配肺络。俞募法背部/胸前取穴；寒虚宜灸。中脘为腑会兼胃募，章门为脏会；痛甚用会郄配伍。",
+  "start_s": 0.17,
+  "end_s": 467.75,
+  "seg_from": 0,
+  "seg_to": 85,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.cv12",
+   "acupoint.lr13",
+   "concept.luo_xue"
+  ],
+  "citation": {
+   "youtube_id": "AKnl9NPWkP0",
+   "url": "https://www.youtube.com/watch?v=AKnl9NPWkP0&t=0s",
+   "series": "zj",
+   "episode": 63,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 63",
+   "start_s": 0.17,
+   "end_s": 467.75
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-063.c02",
+  "video_id": "zj-063",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "九针与锋针放血",
+  "summary": "介绍九针原图与用法；锋针（三棱）锐利，四肢末梢及背腰放血；员利针等治酸痛。",
+  "start_s": 468.91,
+  "end_s": 1083.245,
+  "seg_from": 86,
+  "seg_to": 194,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "method.zhen_jiu"
+  ],
+  "citation": {
+   "youtube_id": "AKnl9NPWkP0",
+   "url": "https://www.youtube.com/watch?v=AKnl9NPWkP0&t=468s",
+   "series": "zj",
+   "episode": 63,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 63",
+   "start_s": 468.91,
+   "end_s": 1083.24
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-063.c03",
+  "video_id": "zj-063",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "温针与头痛取穴",
+  "summary": "温针应用；头痛可取百会、涌泉等，配合补泻。",
+  "start_s": 1085.516,
+  "end_s": 1851.716,
+  "seg_from": 195,
+  "seg_to": 336,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "method.wen_zhen",
+   "acupoint.gv20",
+   "acupoint.ki1"
+  ],
+  "citation": {
+   "youtube_id": "AKnl9NPWkP0",
+   "url": "https://www.youtube.com/watch?v=AKnl9NPWkP0&t=1085s",
+   "series": "zj",
+   "episode": 63,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 63",
+   "start_s": 1085.52,
+   "end_s": 1851.72
+  },
+  "review_status": "llm_read"
+ }
+]

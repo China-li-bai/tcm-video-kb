@@ -1,0 +1,132 @@
+video_id: zj-066
+window: w00-02
+seg_from: 0
+seg_to: 329
+annotator: llm_read
+chapters:
+- key: c01
+  title: 癫痫人中鸠尾神门
+  start_seq: 0
+  summary: 发作时急取人中，可配鸠尾、涌泉、神门等；中医责痰迷心窍。平时可灸相关穴。另述主生治疗（五行生克取穴变通）。
+  clauses: []
+  topics:
+  - acupoint.gv26
+  - acupoint.cv15
+  - disease.dian_xian
+- key: c02
+  title: 中府云门与妇科调经
+  start_seq: 91
+  summary: 中府可透云门；肺经郄孔最止痛。妇人调经要穴地机、三阴交。咳嗽可隔姜/隔蒜灸肺俞类。
+  clauses: []
+  topics:
+  - acupoint.lu1
+  - acupoint.lu2
+  - acupoint.sp8
+  - acupoint.sp6
+- key: c03
+  title: 膏肓与大包
+  start_seq: 146
+  summary: 详述膏肓定位与灸法；大包等络穴应用。关元等腹穴收束。
+  clauses: []
+  topics:
+  - acupoint.bl43
+  - acupoint.sp21
+  - acupoint.cv4
+entities:
+- id: method.zhen_jiu
+  seq: 0
+  surface: 治疗
+  corrected: 针灸
+- id: disease.dian_xian
+  seq: 15
+  surface: 癫痫
+  corrected: 癫痫
+- id: acupoint.gv26
+  seq: 56
+  surface: 人中
+  corrected: 人中
+- id: acupoint.cv15
+  seq: 38
+  surface: 九尾
+  corrected: 鸠尾
+- id: acupoint.ht7
+  seq: 41
+  surface: 神门
+  corrected: 神门
+- id: acupoint.ki1
+  seq: 38
+  surface: 有泉
+  corrected: 涌泉
+- id: acupoint.lu1
+  seq: 91
+  surface: 中府
+  corrected: 中府
+- id: acupoint.lu2
+  seq: 91
+  surface: 云门
+  corrected: 云门
+- id: acupoint.sp8
+  seq: 106
+  surface: 地基
+  corrected: 地机
+- id: acupoint.sp6
+  seq: 106
+  surface: 三阴交
+  corrected: 三阴交
+- id: acupoint.bl43
+  seq: 146
+  surface: 膏肓
+  corrected: 膏肓
+- id: acupoint.sp21
+  seq: 260
+  surface: 大包
+  corrected: 大包
+- id: acupoint.cv4
+  seq: 299
+  surface: 关元
+  corrected: 关元
+kps:
+- type: acupoint_usage
+  s: 癫痫发作急取人中，可配鸠尾、涌泉、神门；责痰迷心窍。
+  seq:
+  - 56
+  - 58
+  q: 人中是很重要的哦
+  ents:
+  - acupoint.gv26
+  - disease.dian_xian
+  - acupoint.cv15
+  conf: 0.95
+  asr: 九尾=鸠尾
+- type: clinical_tip
+  s: 中医认为癫痫为痰迷心窍；活血化瘀刺法后可见黑便为瘀去之象。
+  seq:
+  - 58
+  - 62
+  q: 痰迷心窍哦
+  ents:
+  - disease.dian_xian
+  conf: 0.9
+- type: acupoint_usage
+  s: 中府常透向云门；妇人调经取地机、三阴交。
+  seq:
+  - 91
+  - 106
+  q: 三阴交、地基
+  ents:
+  - acupoint.lu1
+  - acupoint.lu2
+  - acupoint.sp8
+  - acupoint.sp6
+  conf: 0.9
+  asr: 地基=地机
+- type: clinical_tip
+  s: 主生治疗：本经穴不便取时，可按五行生克改取他经止/补穴。
+  seq:
+  - 0
+  - 2
+  q: 这叫做主身治疗
+  ents:
+  - method.zhen_jiu
+  conf: 0.85
+  asr: 主身=主生

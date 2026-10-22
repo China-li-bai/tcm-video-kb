@@ -1,0 +1,114 @@
+video_id: zj-063
+window: w00-02
+seg_from: 0
+seg_to: 336
+annotator: llm_read
+chapters:
+- key: c01
+  title: 主客俞募与会郄
+  start_seq: 0
+  summary: 表里主客：大肠病可取大肠原配肺络。俞募法背部/胸前取穴；寒虚宜灸。中脘为腑会兼胃募，章门为脏会；痛甚用会郄配伍。
+  clauses: []
+  topics:
+  - acupoint.cv12
+  - acupoint.lr13
+  - concept.luo_xue
+- key: c02
+  title: 九针与锋针放血
+  start_seq: 86
+  summary: 介绍九针原图与用法；锋针（三棱）锐利，四肢末梢及背腰放血；员利针等治酸痛。
+  clauses: []
+  topics:
+  - method.zhen_jiu
+- key: c03
+  title: 温针与头痛取穴
+  start_seq: 195
+  summary: 温针应用；头痛可取百会、涌泉等，配合补泻。
+  clauses: []
+  topics:
+  - method.wen_zhen
+  - acupoint.gv20
+  - acupoint.ki1
+entities:
+- id: meridian.li
+  seq: 3
+  surface: 大肠经
+  corrected: 手阳明大肠经
+- id: meridian.lu
+  seq: 4
+  surface: 肺经
+  corrected: 手太阴肺经
+- id: concept.luo_xue
+  seq: 4
+  surface: 络穴
+  corrected: 络穴
+- id: acupoint.lu1
+  seq: 18
+  surface: 中府
+  corrected: 中府
+- id: acupoint.cv12
+  seq: 72
+  surface: 中晚
+  corrected: 中脘
+- id: acupoint.lr13
+  seq: 85
+  surface: 章门
+  corrected: 章门
+- id: method.zhen_jiu
+  seq: 35
+  surface: 灸
+  corrected: 灸
+- id: method.wen_zhen
+  seq: 195
+  surface: 温针
+  corrected: 温针
+- id: acupoint.gv20
+  seq: 275
+  surface: 百会
+  corrected: 百会
+- id: acupoint.ki1
+  seq: 281
+  surface: 涌泉
+  corrected: 涌泉
+kps:
+- type: clinical_tip
+  s: 主客法：大肠病可取大肠原配肺经络穴。
+  seq:
+  - 4
+  - 4
+  q: 肺经的络穴
+  ents:
+  - meridian.li
+  - meridian.lu
+  - concept.luo_xue
+  conf: 0.9
+- type: concept_definition
+  s: 脏会章门、腑会中脘；痛甚时常会郄同用，称会郄治疗法。
+  seq:
+  - 74
+  - 83
+  q: 会吸治疗法
+  ents:
+  - acupoint.lr13
+  - acupoint.cv12
+  conf: 0.9
+  asr: 会吸=会郄；中丸=中脘；脏门=章门
+- type: clinical_tip
+  s: 寒虚俞募证宜灸，灸力可胜针；毒蛇咬伤、破伤风等亦重灸。
+  seq:
+  - 35
+  - 37
+  q: 用灸的方法比真还好
+  ents:
+  - method.zhen_jiu
+  conf: 0.85
+  asr: 真=针
+- type: clinical_tip
+  s: 锋针（三棱）于四肢末梢及背部放血；并述九针用法时机。
+  seq:
+  - 114
+  - 127
+  q: 在我们的四肢末梢放血
+  ents:
+  - method.zhen_jiu
+  conf: 0.9

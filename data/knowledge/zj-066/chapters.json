@@ -1,0 +1,93 @@
+[
+ {
+  "chapter_id": "zj-066.c01",
+  "video_id": "zj-066",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "癫痫人中鸠尾神门",
+  "summary": "发作时急取人中，可配鸠尾、涌泉、神门等；中医责痰迷心窍。平时可灸相关穴。另述主生治疗（五行生克取穴变通）。",
+  "start_s": 0.7,
+  "end_s": 476.35,
+  "seg_from": 0,
+  "seg_to": 90,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.gv26",
+   "acupoint.cv15",
+   "disease.dian_xian"
+  ],
+  "citation": {
+   "youtube_id": "xyjaZydy1as",
+   "url": "https://www.youtube.com/watch?v=xyjaZydy1as&t=0s",
+   "series": "zj",
+   "episode": 66,
+   "title": "Ni Hai-Hsia \"Human Record\" \"Acupuncture\" Complete 90-Episode Series: Acupuncture 66",
+   "start_s": 0.7,
+   "end_s": 476.35
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-066.c02",
+  "video_id": "zj-066",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "中府云门与妇科调经",
+  "summary": "中府可透云门；肺经郄孔最止痛。妇人调经要穴地机、三阴交。咳嗽可隔姜/隔蒜灸肺俞类。",
+  "start_s": 476.35,
+  "end_s": 772.175,
+  "seg_from": 91,
+  "seg_to": 145,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.lu1",
+   "acupoint.lu2",
+   "acupoint.sp8",
+   "acupoint.sp6"
+  ],
+  "citation": {
+   "youtube_id": "xyjaZydy1as",
+   "url": "https://www.youtube.com/watch?v=xyjaZydy1as&t=476s",
+   "series": "zj",
+   "episode": 66,
+   "title": "Ni Hai-Hsia \"Human Record\" \"Acupuncture\" Complete 90-Episode Series: Acupuncture 66",
+   "start_s": 476.35,
+   "end_s": 772.17
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-066.c03",
+  "video_id": "zj-066",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "膏肓与大包",
+  "summary": "详述膏肓定位与灸法；大包等络穴应用。关元等腹穴收束。",
+  "start_s": 775.87,
+  "end_s": 1745.267,
+  "seg_from": 146,
+  "seg_to": 329,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.bl43",
+   "acupoint.sp21",
+   "acupoint.cv4"
+  ],
+  "citation": {
+   "youtube_id": "xyjaZydy1as",
+   "url": "https://www.youtube.com/watch?v=xyjaZydy1as&t=775s",
+   "series": "zj",
+   "episode": 66,
+   "title": "Ni Hai-Hsia \"Human Record\" \"Acupuncture\" Complete 90-Episode Series: Acupuncture 66",
+   "start_s": 775.87,
+   "end_s": 1745.27
+  },
+  "review_status": "llm_read"
+ }
+]

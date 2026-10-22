@@ -1,0 +1,63 @@
+[
+ {
+  "chapter_id": "zj-065.c01",
+  "video_id": "zj-065",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "面瘫地仓透颊车",
+  "summary": "面瘫（面部中风）健侧取合谷，主取地仓透颊车（沿皮透刺，勿穿出），平补平泻；可配太阳。半身中风流涎可单取地仓。汗出受风为常见诱因，须防再中。",
+  "start_s": 0.49,
+  "end_s": 766.43,
+  "seg_from": 0,
+  "seg_to": 134,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.st4",
+   "acupoint.st6",
+   "acupoint.li4"
+  ],
+  "citation": {
+   "youtube_id": "cAJNxa5sdIk",
+   "url": "https://www.youtube.com/watch?v=cAJNxa5sdIk&t=0s",
+   "series": "zj",
+   "episode": 65,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 65",
+   "start_s": 0.49,
+   "end_s": 766.43
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-065.c02",
+  "video_id": "zj-065",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "金津玉液与咽痛",
+  "summary": "舌强不语可于金津、玉液三棱放血，不宜久留针或灸。咽痛可列缺配照海，或天突局部；心经原络郄亦可参。",
+  "start_s": 766.43,
+  "end_s": 1846.382,
+  "seg_from": 135,
+  "seg_to": 345,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.ex_jin_jin",
+   "acupoint.ex_yu_ye",
+   "acupoint.lu7",
+   "acupoint.ki6"
+  ],
+  "citation": {
+   "youtube_id": "cAJNxa5sdIk",
+   "url": "https://www.youtube.com/watch?v=cAJNxa5sdIk&t=766s",
+   "series": "zj",
+   "episode": 65,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 65",
+   "start_s": 766.43,
+   "end_s": 1846.38
+  },
+  "review_status": "llm_read"
+ }
+]
