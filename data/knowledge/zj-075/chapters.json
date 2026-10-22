@@ -1,0 +1,60 @@
+[
+ {
+  "chapter_id": "zj-075.c01",
+  "video_id": "zj-075",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "回阳九针",
+  "summary": "回阳九针用于将将气绝者“从阴拔回阳”；穴须极准。经验上多不必满九针，约第六针即可见呼吸恢复，九针后约可维持半小时量级（师承经验）。",
+  "start_s": 0.33,
+  "end_s": 318.535,
+  "seg_from": 0,
+  "seg_to": 68,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "new.method.hui_yang_jiu_zhen"
+  ],
+  "citation": {
+   "youtube_id": "2qzebvyaQXc",
+   "url": "https://www.youtube.com/watch?v=2qzebvyaQXc&t=0s",
+   "series": "zj",
+   "episode": 75,
+   "title": "Ni Hai-Hsia \"Human Record\" Acupuncture Series: 90 Episodes, Episode 75",
+   "start_s": 0.33,
+   "end_s": 318.54
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-075.c02",
+  "video_id": "zj-075",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "十三鬼穴须按序",
+  "summary": "十三鬼穴用于神志异常/“鬼附”等难释之症，必须按顺序下针，不可乱序；人中为起始（男左女右捻向有别），兼及隐白等。临床罕用、慎用。",
+  "start_s": 319.5,
+  "end_s": 1795.311,
+  "seg_from": 69,
+  "seg_to": 330,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "new.method.shi_san_gui_xue",
+   "acupoint.gv26",
+   "acupoint.sp1"
+  ],
+  "citation": {
+   "youtube_id": "2qzebvyaQXc",
+   "url": "https://www.youtube.com/watch?v=2qzebvyaQXc&t=319s",
+   "series": "zj",
+   "episode": 75,
+   "title": "Ni Hai-Hsia \"Human Record\" Acupuncture Series: 90 Episodes, Episode 75",
+   "start_s": 319.5,
+   "end_s": 1795.31
+  },
+  "review_status": "llm_read"
+ }
+]

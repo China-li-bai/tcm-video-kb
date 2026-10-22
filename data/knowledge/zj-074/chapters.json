@@ -1,0 +1,59 @@
+[
+ {
+  "chapter_id": "zj-074.c01",
+  "video_id": "zj-074",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "耳针概说与耳尖放血",
+  "summary": "耳与全身相应，按耳可代体针（如便秘）。耳尖放血可解酒醒神。耳针形如图钉，消毒后埋入压痛/阿是点，胶布固定。",
+  "start_s": 1.36,
+  "end_s": 487.775,
+  "seg_from": 0,
+  "seg_to": 93,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "new.method.er_zhen",
+   "new.acupoint.er_jian"
+  ],
+  "citation": {
+   "youtube_id": "Sep8j1ugNdk",
+   "url": "https://www.youtube.com/watch?v=Sep8j1ugNdk&t=1s",
+   "series": "zj",
+   "episode": 74,
+   "title": "Ni Hai-Hsia's \"Human纪\" (Human Annals) - Acupuncture, 90-Episode Series: Acupuncture 74",
+   "start_s": 1.36,
+   "end_s": 487.77
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-074.c02",
+  "video_id": "zj-074",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "耳针埋针六日",
+  "summary": "坐骨神经痛等可在耳廓相应区探针找压痛点埋耳针，埋对时常当场痛减；一般埋约六天，保持干燥，取针后勿立即复压查痛。",
+  "start_s": 489.01,
+  "end_s": 1801.472,
+  "seg_from": 94,
+  "seg_to": 342,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "new.method.er_zhen"
+  ],
+  "citation": {
+   "youtube_id": "Sep8j1ugNdk",
+   "url": "https://www.youtube.com/watch?v=Sep8j1ugNdk&t=489s",
+   "series": "zj",
+   "episode": 74,
+   "title": "Ni Hai-Hsia's \"Human纪\" (Human Annals) - Acupuncture, 90-Episode Series: Acupuncture 74",
+   "start_s": 489.01,
+   "end_s": 1801.47
+  },
+  "review_status": "llm_read"
+ }
+]

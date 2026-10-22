@@ -1,0 +1,74 @@
+video_id: zj-075
+window: w00-02
+seg_from: 0
+seg_to: 330
+annotator: llm_read
+chapters:
+- key: c01
+  title: 回阳九针
+  start_seq: 0
+  summary: 回阳九针用于将将气绝者“从阴拔回阳”；穴须极准。经验上多不必满九针，约第六针即可见呼吸恢复，九针后约可维持半小时量级（师承经验）。
+  clauses: []
+  topics:
+  - new.method.hui_yang_jiu_zhen
+- key: c02
+  title: 十三鬼穴须按序
+  start_seq: 69
+  summary: 十三鬼穴用于神志异常/“鬼附”等难释之症，必须按顺序下针，不可乱序；人中为起始（男左女右捻向有别），兼及隐白等。临床罕用、慎用。
+  clauses: []
+  topics:
+  - new.method.shi_san_gui_xue
+  - acupoint.gv26
+  - acupoint.sp1
+entities:
+- id: new.method.hui_yang_jiu_zhen
+  seq: 7
+  surface: 回阳
+  corrected: 回阳九针
+- id: new.method.shi_san_gui_xue
+  seq: 69
+  surface: 十三鬼穴
+  corrected: 十三鬼穴
+- id: acupoint.gv26
+  seq: 71
+  surface: 人中
+  corrected: 人中
+- id: acupoint.sp1
+  seq: 71
+  surface: 隐白
+  corrected: 隐白
+- id: acupoint.gv20
+  seq: 53
+  surface: 百会
+  corrected: 百会
+kps:
+- type: clinical_tip
+  s: 回阳九针救急将绝；穴须极准。约第六针可见呼吸，九针后约可维持半小时（师承经验）。
+  seq:
+  - 7
+  - 27
+  q: 从阴间拔回阳间
+  ents:
+  - new.method.hui_yang_jiu_zhen
+  conf: 0.9
+  asr: 回养=回阳
+- type: clinical_tip
+  s: 十三鬼穴须严格按顺序下针，不可跳序；用于神志异常等难释之症，慎用。
+  seq:
+  - 69
+  - 70
+  q: 必须要按照顺序下
+  ents:
+  - new.method.shi_san_gui_xue
+  conf: 0.95
+  asr: 十散尾穴=十三鬼穴
+- type: acupoint_usage
+  s: 十三鬼穴起始为人中，次及隐白等；单穴人中男左女右捻向有别。
+  seq:
+  - 71
+  - 73
+  q: 人中先下人中
+  ents:
+  - acupoint.gv26
+  - acupoint.sp1
+  conf: 0.9

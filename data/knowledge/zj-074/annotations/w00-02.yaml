@@ -1,0 +1,69 @@
+video_id: zj-074
+window: w00-02
+seg_from: 0
+seg_to: 342
+annotator: llm_read
+chapters:
+- key: c01
+  title: 耳针概说与耳尖放血
+  start_seq: 0
+  summary: 耳与全身相应，按耳可代体针（如便秘）。耳尖放血可解酒醒神。耳针形如图钉，消毒后埋入压痛/阿是点，胶布固定。
+  clauses: []
+  topics:
+  - new.method.er_zhen
+  - new.acupoint.er_jian
+- key: c02
+  title: 耳针埋针六日
+  start_seq: 94
+  summary: 坐骨神经痛等可在耳廓相应区探针找压痛点埋耳针，埋对时常当场痛减；一般埋约六天，保持干燥，取针后勿立即复压查痛。
+  clauses: []
+  topics:
+  - new.method.er_zhen
+entities:
+- id: new.method.er_zhen
+  seq: 66
+  surface: 耳针
+  corrected: 耳针
+- id: new.acupoint.er_jian
+  seq: 79
+  surface: 耳尖
+  corrected: 耳尖
+- id: acupoint.sp4
+  seq: 47
+  surface: 公孙
+  corrected: 公孙
+- id: new.concept.a_shi
+  seq: 144
+  surface: 阿四
+  corrected: 阿是
+kps:
+- type: clinical_tip
+  s: 耳与全身相应；便秘等可每日按耳助通便，亦可代部分体针。
+  seq:
+  - 47
+  - 48
+  q: 每天按大便就正常了
+  ents:
+  - new.method.er_zhen
+  conf: 0.85
+- type: acupoint_usage
+  s: 耳尖（打耳洞处）放血挤出数滴可解酒醒神。
+  seq:
+  - 79
+  - 79
+  q: 挤两滴血酒就醒过来
+  ents:
+  - new.acupoint.er_jian
+  conf: 0.9
+  asr: 耳机=耳尖
+- type: clinical_tip
+  s: 耳针于压痛/阿是点消毒埋入，一般埋约六天，保持干燥；埋准可当场止痛。
+  seq:
+  - 113
+  - 114
+  q: 埋六天
+  ents:
+  - new.method.er_zhen
+  - new.concept.a_shi
+  conf: 0.95
+  asr: 阿四=阿是；买六天=埋六天
