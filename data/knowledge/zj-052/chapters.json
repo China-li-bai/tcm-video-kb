@@ -1,0 +1,122 @@
+[
+ {
+  "chapter_id": "zj-052.c01",
+  "video_id": "zj-052",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "丘墟原穴与商丘透刺",
+  "summary": "丘墟在跗骨交接缝，为胆经原穴，主眼疾不分虚实；踝扭伤可商丘透丘墟，从两筋下方穿，一寸半针即可。绝骨可透向三阴交。",
+  "start_s": 0.36,
+  "end_s": 316.095,
+  "seg_from": 0,
+  "seg_to": 55,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.gb40",
+   "acupoint.sp5",
+   "acupoint.gb39"
+  ],
+  "citation": {
+   "youtube_id": "sxeOOuiZJt0",
+   "url": "https://www.youtube.com/watch?v=sxeOOuiZJt0&t=0s",
+   "series": "zj",
+   "episode": 52,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 52",
+   "start_s": 0.36,
+   "end_s": 316.1
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-052.c02",
+  "video_id": "zj-052",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "足临泣本穴与地五会",
+  "summary": "足临泣（ASR灵气）为胆经本穴属木，治带脉样环腰痛、眼科及乳房硬块；地五会昔因动脉少针，今细针可用，常用于乳岩/乳房结块。",
+  "start_s": 317.63,
+  "end_s": 459.225,
+  "seg_from": 56,
+  "seg_to": 80,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.gb41",
+   "acupoint.gb42",
+   "meridian.gb"
+  ],
+  "citation": {
+   "youtube_id": "sxeOOuiZJt0",
+   "url": "https://www.youtube.com/watch?v=sxeOOuiZJt0&t=317s",
+   "series": "zj",
+   "episode": 52,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 52",
+   "start_s": 317.63,
+   "end_s": 459.23
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-052.c03",
+  "video_id": "zj-052",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "侠溪母穴与窍阴井穴",
+  "summary": "侠溪为母穴，虚证及对侧偏头痛可取；窍阴为胆经井穴/末穴，在四趾外侧，异于五趾至阴。眼外眦痛取窍阴，下睑责厉兑。井穴多用五分针或放血，少灸。",
+  "start_s": 461.88,
+  "end_s": 707.775,
+  "seg_from": 81,
+  "seg_to": 125,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.gb43",
+   "acupoint.gb44",
+   "acupoint.bl67"
+  ],
+  "citation": {
+   "youtube_id": "sxeOOuiZJt0",
+   "url": "https://www.youtube.com/watch?v=sxeOOuiZJt0&t=461s",
+   "series": "zj",
+   "episode": 52,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 52",
+   "start_s": 461.88,
+   "end_s": 707.77
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-052.c04",
+  "video_id": "zj-052",
+  "level": 1,
+  "parent_id": null,
+  "seq": 4,
+  "title": "胆经尽而入肝经",
+  "summary": "窍阴经足底络至大趾侧交肝经隐白一带；胆经流注子时（23–1时），其后入肝。强调熟经络与流注助辨证；下堂讲肝经。",
+  "start_s": 711.54,
+  "end_s": 1032.815,
+  "seg_from": 126,
+  "seg_to": 184,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "meridian.gb",
+   "meridian.lr",
+   "acupoint.gb44"
+  ],
+  "citation": {
+   "youtube_id": "sxeOOuiZJt0",
+   "url": "https://www.youtube.com/watch?v=sxeOOuiZJt0&t=711s",
+   "series": "zj",
+   "episode": 52,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 52",
+   "start_s": 711.54,
+   "end_s": 1032.82
+  },
+  "review_status": "llm_read"
+ }
+]
