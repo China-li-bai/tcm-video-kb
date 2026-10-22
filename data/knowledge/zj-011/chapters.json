@@ -1,0 +1,61 @@
+[
+ {
+  "chapter_id": "zj-011.c01",
+  "video_id": "zj-011",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "膻中、玉堂与天突",
+  "summary": "先定天突与鸠尾两端再折量中间穴。膻中在两乳连线中点，气会，治气病、咳嗽、心痛。玉堂、华盖等多为膻中辅助，临床少用。心脏病常用天突、膻中（心募鸠尾口述混）、关元（小肠募）三穴。",
+  "start_s": 0.21,
+  "end_s": 791.665,
+  "seg_from": 0,
+  "seg_to": 137,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.cv17",
+   "acupoint.cv22",
+   "acupoint.cv15",
+   "acupoint.cv4"
+  ],
+  "citation": {
+   "youtube_id": "U3cEczrIZfQ",
+   "url": "https://www.youtube.com/watch?v=U3cEczrIZfQ&t=0s",
+   "series": "zj",
+   "episode": 11,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 11",
+   "start_s": 0.21,
+   "end_s": 791.66
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-011.c02",
+  "video_id": "zj-011",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "廉泉：中风舌喑构音",
+  "summary": "廉泉针向舌根/舌尖方向，治中风舌强、流涎、失语；任脉之会，多用针少用灸。属近部取穴。",
+  "start_s": 792.59,
+  "end_s": 1882.357,
+  "seg_from": 138,
+  "seg_to": 341,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.cv23"
+  ],
+  "citation": {
+   "youtube_id": "U3cEczrIZfQ",
+   "url": "https://www.youtube.com/watch?v=U3cEczrIZfQ&t=792s",
+   "series": "zj",
+   "episode": 11,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 11",
+   "start_s": 792.59,
+   "end_s": 1882.36
+  },
+  "review_status": "llm_read"
+ }
+]

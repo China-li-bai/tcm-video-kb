@@ -1,0 +1,98 @@
+video_id: zj-011
+window: w00-02
+seg_from: 0
+seg_to: 341
+annotator: llm_read
+chapters:
+- key: c01
+  title: 膻中、玉堂与天突
+  start_seq: 3
+  summary: 先定天突与鸠尾两端再折量中间穴。膻中在两乳连线中点，气会，治气病、咳嗽、心痛。玉堂、华盖等多为膻中辅助，临床少用。心脏病常用天突、膻中（心募鸠尾口述混）、关元（小肠募）三穴。
+  clauses: []
+  topics:
+  - acupoint.cv17
+  - acupoint.cv22
+  - acupoint.cv15
+  - acupoint.cv4
+- key: c02
+  title: 廉泉：中风舌喑构音
+  start_seq: 138
+  summary: 廉泉针向舌根/舌尖方向，治中风舌强、流涎、失语；任脉之会，多用针少用灸。属近部取穴。
+  clauses: []
+  topics:
+  - acupoint.cv23
+entities:
+- id: acupoint.cv17
+  seq: 22
+  surface: 痰中
+  corrected: 膻中
+- id: acupoint.cv22
+  seq: 7
+  surface: 天突
+  corrected: 天突
+- id: acupoint.cv15
+  seq: 16
+  surface: 九尾
+  corrected: 鸠尾
+- id: acupoint.cv18
+  seq: 3
+  surface: 玉堂
+  corrected: 玉堂
+- id: acupoint.cv4
+  seq: 76
+  surface: 关元
+  corrected: 关元
+- id: disease.xin_tong
+  seq: 77
+  surface: 心痛
+  corrected: 心痛
+- id: acupoint.cv23
+  seq: 144
+  surface: 连泉穴
+  corrected: 廉泉
+- id: disease.ke_sou
+  seq: 44
+  surface: 咳嗽
+  corrected: 咳嗽
+kps:
+- type: acupoint_usage
+  s: 膻中：两乳连线中点，气会；治气逆、咳嗽、心胸痛。
+  seq:
+  - 22
+  - 45
+  q: 两两乳头的，中间的一点叫痰中
+  ents:
+  - acupoint.cv17
+  conf: 0.95
+  asr: 痰中=膻中
+- type: clinical_tip
+  s: 胸部穴先定天突与鸠尾两端，再折量中间（玉堂、华盖等）；辅助穴临床少用。
+  seq:
+  - 16
+  - 68
+  q: 但是先找到天突，再找到九尾这两个穴道
+  ents:
+  - acupoint.cv22
+  - acupoint.cv15
+  conf: 0.85
+  asr: 九尾=鸠尾
+- type: acupoint_usage
+  s: 心痛常用组合：天突、膻中/鸠尾（心募）、关元（小肠募，心与小肠表里）。
+  seq:
+  - 77
+  - 89
+  q: 这三个穴道我们下完针，以后病人的心痛基本上都去掉
+  ents:
+  - acupoint.cv22
+  - acupoint.cv4
+  - disease.xin_tong
+  conf: 0.85
+- type: acupoint_usage
+  s: 廉泉针向舌根，治中风舌强、构音不能、流涎；多用针少灸。
+  seq:
+  - 138
+  - 161
+  q: 真下去的时候，从这边是对着舌尖
+  ents:
+  - acupoint.cv23
+  conf: 0.9
