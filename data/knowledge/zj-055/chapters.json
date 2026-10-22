@@ -1,0 +1,91 @@
+[
+ {
+  "chapter_id": "zj-055.c01",
+  "video_id": "zj-055",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "太冲行间妇科与对刺",
+  "summary": "太冲治恶露不止、血崩、阴痛等；效不显可上下同经加行间。太冲与颌骨（合谷）可对侧对称刺，不拘补泻寒热。便血须辨石淋/肾瘤/肝癌排浊等。",
+  "start_s": 0.21,
+  "end_s": 252.515,
+  "seg_from": 0,
+  "seg_to": 44,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.lr3",
+   "acupoint.lr2",
+   "acupoint.li4"
+  ],
+  "citation": {
+   "youtube_id": "0x3HxE1jkzE",
+   "url": "https://www.youtube.com/watch?v=0x3HxE1jkzE&t=0s",
+   "series": "zj",
+   "episode": 55,
+   "title": "Ni Hai-hsia: \"Humanity\" - \"Acupuncture\" (90-Episode Series) - Acupuncture 55",
+   "start_s": 0.21,
+   "end_s": 252.51
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-055.c02",
+  "video_id": "zj-055",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "中封蠡沟中都",
+  "summary": "中封在解溪内侧商丘相对处，用较少；蠡沟（ASR李沟）内踝上五寸，为肝经络穴，虚实皆可，主疝/挺纵与皮肤痒等；中都内踝上七寸，产后恶露常用。",
+  "start_s": 253.22,
+  "end_s": 515.225,
+  "seg_from": 45,
+  "seg_to": 83,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.lr4",
+   "acupoint.lr5",
+   "acupoint.lr6"
+  ],
+  "citation": {
+   "youtube_id": "0x3HxE1jkzE",
+   "url": "https://www.youtube.com/watch?v=0x3HxE1jkzE&t=253s",
+   "series": "zj",
+   "episode": 55,
+   "title": "Ni Hai-hsia: \"Humanity\" - \"Acupuncture\" (90-Episode Series) - Acupuncture 55",
+   "start_s": 253.22,
+   "end_s": 515.23
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-055.c03",
+  "video_id": "zj-055",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "膝关阴包与腹灸",
+  "summary": "膝关在膝内侧，膝痛重时常加；阴包在曲泉上约三寸，主小便不利。近腹腔穴多灸（如隔姜），因动脉密布。",
+  "start_s": 517.2,
+  "end_s": 1709.415,
+  "seg_from": 84,
+  "seg_to": 299,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.lr7",
+   "acupoint.lr9"
+  ],
+  "citation": {
+   "youtube_id": "0x3HxE1jkzE",
+   "url": "https://www.youtube.com/watch?v=0x3HxE1jkzE&t=517s",
+   "series": "zj",
+   "episode": 55,
+   "title": "Ni Hai-hsia: \"Humanity\" - \"Acupuncture\" (90-Episode Series) - Acupuncture 55",
+   "start_s": 517.2,
+   "end_s": 1709.41
+  },
+  "review_status": "llm_read"
+ }
+]

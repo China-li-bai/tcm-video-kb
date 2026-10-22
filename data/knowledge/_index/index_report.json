@@ -53,9 +53,11 @@
   "zj-049",
   "zj-050",
   "zj-051",
-  "zj-052"
+  "zj-052",
+  "zj-054",
+  "zj-055"
  ],
- "n_entities": 1040,
- "n_knowledge_points": 860,
- "n_chapters": 327
+ "n_entities": 1045,
+ "n_knowledge_points": 873,
+ "n_chapters": 334
 }

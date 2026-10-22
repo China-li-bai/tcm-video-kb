@@ -1,0 +1,149 @@
+video_id: zj-055
+window: w00-02
+seg_from: 0
+seg_to: 299
+annotator: llm_read
+chapters:
+- key: c01
+  title: 太冲行间妇科与对刺
+  start_seq: 0
+  summary: 太冲治恶露不止、血崩、阴痛等；效不显可上下同经加行间。太冲与颌骨（合谷）可对侧对称刺，不拘补泻寒热。便血须辨石淋/肾瘤/肝癌排浊等。
+  clauses: []
+  topics:
+  - acupoint.lr3
+  - acupoint.lr2
+  - acupoint.li4
+- key: c02
+  title: 中封蠡沟中都
+  start_seq: 45
+  summary: 中封在解溪内侧商丘相对处，用较少；蠡沟（ASR李沟）内踝上五寸，为肝经络穴，虚实皆可，主疝/挺纵与皮肤痒等；中都内踝上七寸，产后恶露常用。
+  clauses: []
+  topics:
+  - acupoint.lr4
+  - acupoint.lr5
+  - acupoint.lr6
+- key: c03
+  title: 膝关阴包与腹灸
+  start_seq: 84
+  summary: 膝关在膝内侧，膝痛重时常加；阴包在曲泉上约三寸，主小便不利。近腹腔穴多灸（如隔姜），因动脉密布。
+  clauses: []
+  topics:
+  - acupoint.lr7
+  - acupoint.lr9
+entities:
+- id: acupoint.lr3
+  seq: 5
+  surface: 太冲
+  corrected: 太冲
+- id: acupoint.lr2
+  seq: 6
+  surface: 行间
+  corrected: 行间
+- id: acupoint.li4
+  seq: 25
+  surface: 颌骨
+  corrected: 合谷
+- id: acupoint.lr4
+  seq: 45
+  surface: 中封
+  corrected: 中封
+- id: acupoint.lr5
+  seq: 62
+  surface: 李沟
+  corrected: 蠡沟
+- id: acupoint.lr6
+  seq: 81
+  surface: 中都
+  corrected: 中都
+- id: acupoint.lr7
+  seq: 90
+  surface: 膝关
+  corrected: 膝关
+- id: acupoint.lr9
+  seq: 125
+  surface: 阴猫
+  corrected: 阴包
+- id: meridian.lr
+  seq: 16
+  surface: 肝经
+  corrected: 足厥阴肝经
+- id: acupoint.lr1
+  seq: 50
+  surface: 大吨
+  corrected: 大敦
+- id: concept.luo_xue
+  seq: 62
+  surface: 落穴
+  corrected: 络穴
+kps:
+- type: acupoint_usage
+  s: 太冲治妇人恶露不止、血崩及男子疝痛阴痛；效差可同经上下加行间。
+  seq:
+  - 5
+  - 7
+  q: 恶露不止血崩
+  ents:
+  - acupoint.lr3
+  - acupoint.lr2
+  conf: 0.95
+- type: clinical_tip
+  s: 太冲与合谷可左右对侧对称刺，不拘补泻虚实寒热。
+  seq:
+  - 25
+  - 25
+  q: 无所谓补泻啊
+  ents:
+  - acupoint.lr3
+  - acupoint.li4
+  conf: 0.85
+  asr: 颌骨=合谷
+- type: acupoint_usage
+  s: 蠡沟为肝经络穴，内踝上五寸，虚实皆可；肝实证挺纵、虚证皮肤痒等可取络穴或郄穴。
+  seq:
+  - 62
+  - 69
+  q: 李沟穴是肝经的这个落穴
+  ents:
+  - acupoint.lr5
+  - concept.luo_xue
+  conf: 0.9
+  asr: 李沟=蠡沟；落穴=络穴
+- type: clinical_tip
+  s: 中都在中封上两寸（内踝上七寸），妇人产后恶露常用。
+  seq:
+  - 79
+  - 82
+  q: 就是中都内鲁上七寸
+  ents:
+  - acupoint.lr6
+  conf: 0.9
+  asr: 内鲁=内踝
+- type: acupoint_usage
+  s: 膝关在膝内侧上约五分，膝痛重时常加针加重。
+  seq:
+  - 90
+  - 96
+  q: 这个穴道就是膝关
+  ents:
+  - acupoint.lr7
+  conf: 0.95
+- type: acupoint_usage
+  s: 阴包约在曲泉上三寸（或膝关上四寸），主小便不利。
+  seq:
+  - 125
+  - 127
+  q: 就是的阴猫
+  ents:
+  - acupoint.lr9
+  conf: 0.85
+  asr: 阴猫=阴包
+- type: clinical_tip
+  s: 近腹腔穴多隔姜灸，因动脉密布，慎深刺。
+  seq:
+  - 214
+  - 215
+  q: 隔了生姜去救好
+  ents:
+  - meridian.lr
+  conf: 0.85
+  asr: 救=灸

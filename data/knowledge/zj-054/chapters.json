@@ -1,0 +1,119 @@
+[
+ {
+  "chapter_id": "zj-054.c01",
+  "video_id": "zj-054",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "肝经流注与肝藏象",
+  "summary": "胆经尽于窍阴后，丑时（1–3点）入肝经起于大趾侧。肝色青属木，开窍于目，主筋；面现青气、易怒、抽筋癫痫等多责肝。嘘字功可泻肝浊。肝病失眠常丑时醒。",
+  "start_s": 27.22,
+  "end_s": 1058.41,
+  "seg_from": 0,
+  "seg_to": 188,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "meridian.lr",
+   "zangfu.gan",
+   "concept.wu_xing"
+  ],
+  "citation": {
+   "youtube_id": "z0K4mScuDaA",
+   "url": "https://www.youtube.com/watch?v=z0K4mScuDaA&t=27s",
+   "series": "zj",
+   "episode": 54,
+   "title": "Ni Hai-hsia \"Human Constitution\" \"Acupuncture\" Complete 90-Episode Series: Acupuncture 54",
+   "start_s": 27.22,
+   "end_s": 1058.41
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-054.c02",
+  "video_id": "zj-054",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "大敦井木本穴",
+  "summary": "大敦在拇趾外侧（两趾间为肝、内侧隐白属脾），为井穴属木，即肝经本穴，虚实皆可取；针宜短小。",
+  "start_s": 1058.71,
+  "end_s": 1510.199,
+  "seg_from": 189,
+  "seg_to": 269,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.lr1",
+   "acupoint.sp1"
+  ],
+  "citation": {
+   "youtube_id": "z0K4mScuDaA",
+   "url": "https://www.youtube.com/watch?v=z0K4mScuDaA&t=1058s",
+   "series": "zj",
+   "episode": 54,
+   "title": "Ni Hai-hsia \"Human Constitution\" \"Acupuncture\" Complete 90-Episode Series: Acupuncture 54",
+   "start_s": 1058.71,
+   "end_s": 1510.2
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-054.c03",
+  "video_id": "zj-054",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "行间荥火与太冲",
+  "summary": "行间在一二跖骨交接后方，荥火穴，实热/急性肝炎黄疸等多取；太冲继上为肝经要穴。失眠丑时亦可取行间或太冲。",
+  "start_s": 1511.419,
+  "end_s": 1701.854,
+  "seg_from": 270,
+  "seg_to": 305,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.lr2",
+   "acupoint.lr3"
+  ],
+  "citation": {
+   "youtube_id": "z0K4mScuDaA",
+   "url": "https://www.youtube.com/watch?v=z0K4mScuDaA&t=1511s",
+   "series": "zj",
+   "episode": 54,
+   "title": "Ni Hai-hsia \"Human Constitution\" \"Acupuncture\" Complete 90-Episode Series: Acupuncture 54",
+   "start_s": 1511.42,
+   "end_s": 1701.85
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-054.c04",
+  "video_id": "zj-054",
+  "level": 1,
+  "parent_id": null,
+  "seq": 4,
+  "title": "开四关合谷太冲",
+  "summary": "左右合谷与太冲合称四关；合谷主气、太冲主血，同针则气血兼顾。脚部可诊太冲脉，另有冲阳等脉。",
+  "start_s": 1703.009,
+  "end_s": 1869.084,
+  "seg_from": 306,
+  "seg_to": 341,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.li4",
+   "acupoint.lr3"
+  ],
+  "citation": {
+   "youtube_id": "z0K4mScuDaA",
+   "url": "https://www.youtube.com/watch?v=z0K4mScuDaA&t=1703s",
+   "series": "zj",
+   "episode": 54,
+   "title": "Ni Hai-hsia \"Human Constitution\" \"Acupuncture\" Complete 90-Episode Series: Acupuncture 54",
+   "start_s": 1703.01,
+   "end_s": 1869.08
+  },
+  "review_status": "llm_read"
+ }
+]

@@ -1,0 +1,143 @@
+video_id: zj-054
+window: w00-02
+seg_from: 0
+seg_to: 341
+annotator: llm_read
+chapters:
+- key: c01
+  title: 肝经流注与肝藏象
+  start_seq: 0
+  summary: 胆经尽于窍阴后，丑时（1–3点）入肝经起于大趾侧。肝色青属木，开窍于目，主筋；面现青气、易怒、抽筋癫痫等多责肝。嘘字功可泻肝浊。肝病失眠常丑时醒。
+  clauses: []
+  topics:
+  - meridian.lr
+  - zangfu.gan
+  - concept.wu_xing
+- key: c02
+  title: 大敦井木本穴
+  start_seq: 189
+  summary: 大敦在拇趾外侧（两趾间为肝、内侧隐白属脾），为井穴属木，即肝经本穴，虚实皆可取；针宜短小。
+  clauses: []
+  topics:
+  - acupoint.lr1
+  - acupoint.sp1
+- key: c03
+  title: 行间荥火与太冲
+  start_seq: 270
+  summary: 行间在一二跖骨交接后方，荥火穴，实热/急性肝炎黄疸等多取；太冲继上为肝经要穴。失眠丑时亦可取行间或太冲。
+  clauses: []
+  topics:
+  - acupoint.lr2
+  - acupoint.lr3
+- key: c04
+  title: 开四关合谷太冲
+  start_seq: 306
+  summary: 左右合谷与太冲合称四关；合谷主气、太冲主血，同针则气血兼顾。脚部可诊太冲脉，另有冲阳等脉。
+  clauses: []
+  topics:
+  - acupoint.li4
+  - acupoint.lr3
+entities:
+- id: meridian.lr
+  seq: 6
+  surface: 肝经
+  corrected: 足厥阴肝经
+- id: meridian.gb
+  seq: 4
+  surface: 胆经
+  corrected: 足少阳胆经
+- id: zangfu.gan
+  seq: 45
+  surface: 肝
+  corrected: 肝
+- id: concept.wu_xing
+  seq: 45
+  surface: 青色
+  corrected: 五行
+- id: acupoint.lr1
+  seq: 190
+  surface: 大墩
+  corrected: 大敦
+- id: acupoint.sp1
+  seq: 190
+  surface: 隐白
+  corrected: 隐白
+- id: acupoint.lr2
+  seq: 272
+  surface: 行间
+  corrected: 行间
+- id: acupoint.lr3
+  seq: 286
+  surface: 太冲
+  corrected: 太冲
+- id: acupoint.li4
+  seq: 308
+  surface: 合谷
+  corrected: 合谷
+- id: acupoint.st42
+  seq: 340
+  surface: 冲阳
+  corrected: 冲阳
+- id: zangfu.jin
+  seq: 8
+  surface: 筋
+  corrected: 筋
+kps:
+- type: concept_definition
+  s: 丑时（半夜1–3点）气血入肝经；肝属木色青，开窍于目、主筋。
+  seq:
+  - 14
+  - 45
+  q: 半夜一点到三点就进入肝经
+  ents:
+  - meridian.lr
+  - zangfu.gan
+  conf: 0.95
+- type: clinical_tip
+  s: 嘘字功：手轻覆肝区，吸气后口发「嘘」排肝浊；勿过度致肝气过旺。
+  seq:
+  - 106
+  - 107
+  q: 嘴巴发嘘
+  ents:
+  - zangfu.gan
+  conf: 0.9
+- type: clinical_tip
+  s: 肝病常丑时醒；治后醒来时刻后移以至通宵可睡，为好转之征。
+  seq:
+  - 137
+  - 139
+  q: 他本来是一点半才能睡觉
+  ents:
+  - zangfu.gan
+  conf: 0.85
+- type: concept_definition
+  s: 大敦为肝经井穴属木，即本穴，虚实皆可用；拇趾外侧取之，内侧为隐白。
+  seq:
+  - 190
+  - 265
+  q: 叫大墩靠
+  ents:
+  - acupoint.lr1
+  - acupoint.sp1
+  conf: 0.9
+  asr: 大墩/大灯=大敦
+- type: acupoint_usage
+  s: 行间在一二跖骨交接后方，荥火穴；急性肝炎、黄疸等实热可取。
+  seq:
+  - 272
+  - 290
+  q: 行间都可以治疗
+  ents:
+  - acupoint.lr2
+  conf: 0.95
+- type: acupoint_usage
+  s: 开四关：左右合谷配太冲；合谷主气、太冲主血，同针气血兼顾。
+  seq:
+  - 309
+  - 314
+  q: 我们叫做开四关
+  ents:
+  - acupoint.li4
+  - acupoint.lr3
+  conf: 0.95
