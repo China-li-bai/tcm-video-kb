@@ -1,0 +1,114 @@
+video_id: zj-038
+window: w00-02
+seg_from: 0
+seg_to: 334
+annotator: llm_read
+chapters:
+- key: c01
+  title: 腰背辨经与下背俞
+  start_seq: 0
+  summary: 腰痛正中属督脉，两旁开一寸半属膀胱经。肾俞等近取可针可灸。第十七椎旁关元俞、第十九椎旁膀胱俞等近取治腰痛、二便及妇科；腰骶段可直刺约一寸半，可隔姜灸。
+  clauses: []
+  topics:
+  - meridian.bl
+  - meridian.gv
+  - acupoint.bl23
+  - acupoint.bl28
+- key: c02
+  title: 白环俞与八髎
+  start_seq: 117
+  summary: 白环俞在第二十一椎旁近尾骨。八髎为全身最小穴之一，在督脉与膀胱俞之间；上髎等可灸助孕，主阴部病及腰以下麻痛。
+  clauses: []
+  topics:
+  - acupoint.bl30
+  - acupoint.bl31
+entities:
+- id: acupoint.bl23
+  seq: 32
+  surface: 肾疏
+  corrected: 肾俞
+- id: meridian.bl
+  seq: 52
+  surface: 膀胱经
+  corrected: 足太阳膀胱经
+- id: meridian.gv
+  seq: 53
+  surface: 督脉
+  corrected: 督脉
+- id: acupoint.bl26
+  seq: 78
+  surface: 关元
+  corrected: 关元俞
+- id: acupoint.bl28
+  seq: 94
+  surface: 膀胱雨
+  corrected: 膀胱俞
+- id: acupoint.bl30
+  seq: 117
+  surface: 白环鱼
+  corrected: 白环俞
+- id: acupoint.bl31
+  seq: 131
+  surface: 上疗
+  corrected: 上髎
+- id: new.concept.八髎
+  seq: 122
+  surface: 八疗
+  corrected: 八髎
+- id: acupoint.bl43
+  seq: 260
+  surface: 膏肓穴
+  corrected: 膏肓
+kps:
+- type: clinical_tip
+  s: 腰痛正中为督脉，旁开约一寸半为膀胱经；须辨经选穴。
+  seq:
+  - 52
+  - 53
+  q: 痛在中间，你知道啊这是督脉啊
+  ents:
+  - meridian.gv
+  - meridian.bl
+  conf: 0.95
+  asr: 东麦=督脉
+- type: acupoint_usage
+  s: 肾俞为近取要穴，腰痛可针可灸。
+  seq:
+  - 32
+  - 33
+  q: 进取穴多人就是肾疏，这一痛，用灸蛙统统可以
+  ents:
+  - acupoint.bl23
+  conf: 0.85
+  asr: 肾疏=肾俞；灸蛙=灸哇
+- type: acupoint_usage
+  s: 膀胱俞在第十九椎旁，近取治腰痛、小便不利及妇科病。
+  seq:
+  - 94
+  - 95
+  q: 第十九这一下呢就是膀胱膀胱雨
+  ents:
+  - acupoint.bl28
+  conf: 0.9
+  asr: 膀胱雨/影=膀胱俞
+- type: acupoint_usage
+  s: 白环俞近尾椎；八髎穴小，在督脉与膀胱俞线之间。上髎等可灸助孕，主阴部及腰以下病。
+  seq:
+  - 122
+  - 146
+  q: 八疗穴位是全身上下最最小的穴道
+  ents:
+  - new.concept.八髎
+  - acupoint.bl31
+  - acupoint.bl30
+  conf: 0.9
+  asr: 八疗/刺疗=八髎；上疗=上髎；白环鱼=白环俞
+- type: clinical_tip
+  s: 腰骶膀胱经穴可直刺约一寸半（勿仅刺浅），亦可隔姜灸。
+  seq:
+  - 86
+  - 86
+  q: 要下到一寸半的地方下进去啊，那灸也可以
+  ents:
+  - meridian.bl
+  conf: 0.85
