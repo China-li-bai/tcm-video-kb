@@ -1,0 +1,122 @@
+[
+ {
+  "chapter_id": "zj-056.c01",
+  "video_id": "zj-056",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "期门肝募与热入血室",
+  "summary": "期门为肝募，胸胁苦满、胁下痛、肝痛可针；针后可圈穴嘱患者自灸。经期感寒邪可循血入胞为热入血室。",
+  "start_s": 0.41,
+  "end_s": 146.505,
+  "seg_from": 0,
+  "seg_to": 32,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.lr14",
+   "zangfu.gan"
+  ],
+  "citation": {
+   "youtube_id": "pnhGt1678cY",
+   "url": "https://www.youtube.com/watch?v=pnhGt1678cY&t=0s",
+   "series": "zj",
+   "episode": 56,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 56",
+   "start_s": 0.41,
+   "end_s": 146.5
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-056.c02",
+  "video_id": "zj-056",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "十五络总论",
+  "summary": "十二经各有络穴，加任脉络鸠尾、督脉络长强、脾之大络大包，合十五络。外邪由络→经→腑；经络根于肾。络穴虚实皆可用。",
+  "start_s": 146.68,
+  "end_s": 587.745,
+  "seg_from": 33,
+  "seg_to": 124,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "concept.luo_xue",
+   "zangfu.shen",
+   "acupoint.cv15"
+  ],
+  "citation": {
+   "youtube_id": "pnhGt1678cY",
+   "url": "https://www.youtube.com/watch?v=pnhGt1678cY&t=146s",
+   "series": "zj",
+   "episode": 56,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 56",
+   "start_s": 146.68,
+   "end_s": 587.75
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-056.c03",
+  "video_id": "zj-056",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "诸经络穴举要",
+  "summary": "列缺（肺）、通里（心）、内关（心包，心痛）、支正（小肠）、偏历（大肠）、外关（三焦）、飞扬（膀胱）、丰隆（胃）、公孙（脾，主冲脉治胃肠）、蠡沟（肝）等。",
+  "start_s": 590.62,
+  "end_s": 1379.814,
+  "seg_from": 125,
+  "seg_to": 257,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.lu7",
+   "acupoint.pc6",
+   "acupoint.sp4",
+   "acupoint.st40"
+  ],
+  "citation": {
+   "youtube_id": "pnhGt1678cY",
+   "url": "https://www.youtube.com/watch?v=pnhGt1678cY&t=590s",
+   "series": "zj",
+   "episode": 56,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 56",
+   "start_s": 590.62,
+   "end_s": 1379.81
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-056.c04",
+  "video_id": "zj-056",
+  "level": 1,
+  "parent_id": null,
+  "seq": 4,
+  "title": "奇经与交会穴",
+  "summary": "冲脉公孙所主，可治喘咳心痛；督脉后溪、任脉列缺。带脉足临泣所主，病在腰周；阳跷申脉、阴跷照海等。",
+  "start_s": 1381.279,
+  "end_s": 1902.984,
+  "seg_from": 258,
+  "seg_to": 334,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "meridian.tv",
+   "acupoint.gb41",
+   "acupoint.sp4"
+  ],
+  "citation": {
+   "youtube_id": "pnhGt1678cY",
+   "url": "https://www.youtube.com/watch?v=pnhGt1678cY&t=1381s",
+   "series": "zj",
+   "episode": 56,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 56",
+   "start_s": 1381.28,
+   "end_s": 1902.98
+  },
+  "review_status": "llm_read"
+ }
+]

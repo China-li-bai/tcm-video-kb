@@ -1,0 +1,191 @@
+video_id: zj-056
+window: w00-02
+seg_from: 0
+seg_to: 334
+annotator: llm_read
+chapters:
+- key: c01
+  title: 期门肝募与热入血室
+  start_seq: 0
+  summary: 期门为肝募，胸胁苦满、胁下痛、肝痛可针；针后可圈穴嘱患者自灸。经期感寒邪可循血入胞为热入血室。
+  clauses: []
+  topics:
+  - acupoint.lr14
+  - zangfu.gan
+- key: c02
+  title: 十五络总论
+  start_seq: 33
+  summary: 十二经各有络穴，加任脉络鸠尾、督脉络长强、脾之大络大包，合十五络。外邪由络→经→腑；经络根于肾。络穴虚实皆可用。
+  clauses: []
+  topics:
+  - concept.luo_xue
+  - zangfu.shen
+  - acupoint.cv15
+- key: c03
+  title: 诸经络穴举要
+  start_seq: 125
+  summary: 列缺（肺）、通里（心）、内关（心包，心痛）、支正（小肠）、偏历（大肠）、外关（三焦）、飞扬（膀胱）、丰隆（胃）、公孙（脾，主冲脉治胃肠）、蠡沟（肝）等。
+  clauses: []
+  topics:
+  - acupoint.lu7
+  - acupoint.pc6
+  - acupoint.sp4
+  - acupoint.st40
+- key: c04
+  title: 奇经与交会穴
+  start_seq: 258
+  summary: 冲脉公孙所主，可治喘咳心痛；督脉后溪、任脉列缺。带脉足临泣所主，病在腰周；阳跷申脉、阴跷照海等。
+  clauses: []
+  topics:
+  - meridian.tv
+  - acupoint.gb41
+  - acupoint.sp4
+entities:
+- id: acupoint.lr14
+  seq: 4
+  surface: 奇门
+  corrected: 期门
+- id: zangfu.gan
+  seq: 4
+  surface: 肝
+  corrected: 肝
+- id: concept.luo_xue
+  seq: 34
+  surface: 络穴
+  corrected: 络穴
+- id: zangfu.shen
+  seq: 42
+  surface: 肾脏
+  corrected: 肾
+- id: acupoint.cv15
+  seq: 97
+  surface: 九尾
+  corrected: 鸠尾
+- id: acupoint.gv1
+  seq: 99
+  surface: 长强
+  corrected: 长强
+- id: acupoint.sp21
+  seq: 99
+  surface: 大包
+  corrected: 大包
+- id: acupoint.lu7
+  seq: 125
+  surface: 列缺
+  corrected: 列缺
+- id: acupoint.ht5
+  seq: 136
+  surface: 通里
+  corrected: 通里
+- id: acupoint.pc6
+  seq: 141
+  surface: 内关
+  corrected: 内关
+- id: acupoint.si7
+  seq: 144
+  surface: 支正
+  corrected: 支正
+- id: acupoint.li6
+  seq: 146
+  surface: 偏历
+  corrected: 偏历
+- id: acupoint.te5
+  seq: 146
+  surface: 外观
+  corrected: 外关
+- id: acupoint.bl58
+  seq: 149
+  surface: 飞扬
+  corrected: 飞扬
+- id: acupoint.st40
+  seq: 151
+  surface: 丰隆
+  corrected: 丰隆
+- id: acupoint.sp4
+  seq: 152
+  surface: 公孙
+  corrected: 公孙
+- id: acupoint.lr5
+  seq: 153
+  surface: 泥沟
+  corrected: 蠡沟
+- id: meridian.tv
+  seq: 152
+  surface: 冲脉
+  corrected: 冲脉
+- id: acupoint.gb41
+  seq: 273
+  surface: 灵气
+  corrected: 足临泣
+- id: meridian.bv
+  seq: 272
+  surface: 带脉
+  corrected: 带脉
+kps:
+- type: acupoint_usage
+  s: 期门为肝募，胸胁苦满、胁痛、肝痛可针；针后圈穴嘱自灸。
+  seq:
+  - 4
+  - 8
+  q: 进取穴本来就是肝的目穴
+  ents:
+  - acupoint.lr14
+  - zangfu.gan
+  conf: 0.95
+  asr: 奇门/进取=期门；目穴=募穴
+- type: concept_definition
+  s: 十五络：十二经络穴加任脉络鸠尾、督脉络长强、脾之大络大包。
+  seq:
+  - 95
+  - 99
+  q: 这就是我们的十五络
+  ents:
+  - concept.luo_xue
+  - acupoint.cv15
+  - acupoint.gv1
+  - acupoint.sp21
+  conf: 0.95
+  asr: 九尾=鸠尾
+- type: clinical_tip
+  s: 外邪先伤络，再传经、腑；经络总根于肾。络穴不论虚实皆可取。
+  seq:
+  - 42
+  - 128
+  q: 手太阴的别落是列缺
+  ents:
+  - zangfu.shen
+  - acupoint.lu7
+  - concept.luo_xue
+  conf: 0.9
+- type: acupoint_usage
+  s: 公孙为脾经络穴、主冲脉；肠痛腹痛恶心胃痛等胃肠症皆可用。
+  seq:
+  - 152
+  - 152
+  q: 通通可以用公孙穴
+  ents:
+  - acupoint.sp4
+  - meridian.tv
+  conf: 0.95
+- type: clinical_tip
+  s: 内关为心包络穴，主心痛胸痛；丰隆为胃络，飞扬为膀胱络。
+  seq:
+  - 141
+  - 151
+  q: 厥阴的别落是内关内关穴
+  ents:
+  - acupoint.pc6
+  - acupoint.st40
+  - acupoint.bl58
+  conf: 0.9
+- type: acupoint_usage
+  s: 带脉由足临泣所主；带脉病可取足临泣。冲脉公孙、督脉后溪、任脉列缺。
+  seq:
+  - 273
+  - 279
+  q: 灵气在管脚的灵气穴
+  ents:
+  - acupoint.gb41
+  - meridian.bv
+  conf: 0.9
+  asr: 灵气=足临泣

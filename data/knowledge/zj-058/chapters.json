@@ -1,0 +1,117 @@
+[
+ {
+  "chapter_id": "zj-058.c01",
+  "video_id": "zj-058",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "纯阳九数与导气六数",
+  "summary": "胃经穴（足三里、上巨虚、梁丘等）可行纯阳术（九数）补；泻则同行六数导气收回。提插留针，泻时出针不按孔。",
+  "start_s": 0.07,
+  "end_s": 251.105,
+  "seg_from": 0,
+  "seg_to": 49,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.st36",
+   "method.bu_xie"
+  ],
+  "citation": {
+   "youtube_id": "jDcQGFng2-Y",
+   "url": "https://www.youtube.com/watch?v=jDcQGFng2-Y&t=0s",
+   "series": "zj",
+   "episode": 58,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 58",
+   "start_s": 0.07,
+   "end_s": 251.1
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-058.c02",
+  "video_id": "zj-058",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "烧针术治瘤痣",
+  "summary": "良性脂肪瘤、黑痣等可用烧针：麻油蘸针烧灼刺入；化脓用较粗针。可三针会刺或八点围刺加燃针（左右捻）。常用28号，示教可用32号。",
+  "start_s": 252.67,
+  "end_s": 1084.675,
+  "seg_from": 50,
+  "seg_to": 193,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "method.shao_zhen"
+  ],
+  "citation": {
+   "youtube_id": "jDcQGFng2-Y",
+   "url": "https://www.youtube.com/watch?v=jDcQGFng2-Y&t=252s",
+   "series": "zj",
+   "episode": 58,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 58",
+   "start_s": 252.67,
+   "end_s": 1084.67
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-058.c03",
+  "video_id": "zj-058",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "冲阳运气与梁丘",
+  "summary": "加重时取胃经原穴冲阳或络穴；泻用阴数六，酸麻后可偏向病所（如对乳房）导气。梁丘为胃郄，可同法。",
+  "start_s": 1085.809,
+  "end_s": 1636.364,
+  "seg_from": 194,
+  "seg_to": 278,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.st42",
+   "acupoint.st34",
+   "method.bu_xie"
+  ],
+  "citation": {
+   "youtube_id": "jDcQGFng2-Y",
+   "url": "https://www.youtube.com/watch?v=jDcQGFng2-Y&t=1085s",
+   "series": "zj",
+   "episode": 58,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 58",
+   "start_s": 1085.81,
+   "end_s": 1636.36
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-058.c04",
+  "video_id": "zj-058",
+  "level": 1,
+  "parent_id": null,
+  "seq": 4,
+  "title": "丰隆治痰",
+  "summary": "丰隆在外踝上八寸胫腓骨间中点，为治痰要穴；亦言可助丰胸。取穴脚宜放平。",
+  "start_s": 1636.749,
+  "end_s": 1878.234,
+  "seg_from": 279,
+  "seg_to": 322,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.st40"
+  ],
+  "citation": {
+   "youtube_id": "jDcQGFng2-Y",
+   "url": "https://www.youtube.com/watch?v=jDcQGFng2-Y&t=1636s",
+   "series": "zj",
+   "episode": 58,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 58",
+   "start_s": 1636.75,
+   "end_s": 1878.23
+  },
+  "review_status": "llm_read"
+ }
+]

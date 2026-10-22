@@ -1,0 +1,119 @@
+video_id: zj-058
+window: w00-02
+seg_from: 0
+seg_to: 322
+annotator: llm_read
+chapters:
+- key: c01
+  title: 纯阳九数与导气六数
+  start_seq: 0
+  summary: 胃经穴（足三里、上巨虚、梁丘等）可行纯阳术（九数）补；泻则同行六数导气收回。提插留针，泻时出针不按孔。
+  clauses: []
+  topics:
+  - acupoint.st36
+  - method.bu_xie
+- key: c02
+  title: 烧针术治瘤痣
+  start_seq: 50
+  summary: 良性脂肪瘤、黑痣等可用烧针：麻油蘸针烧灼刺入；化脓用较粗针。可三针会刺或八点围刺加燃针（左右捻）。常用28号，示教可用32号。
+  clauses: []
+  topics:
+  - method.shao_zhen
+- key: c03
+  title: 冲阳运气与梁丘
+  start_seq: 194
+  summary: 加重时取胃经原穴冲阳或络穴；泻用阴数六，酸麻后可偏向病所（如对乳房）导气。梁丘为胃郄，可同法。
+  clauses: []
+  topics:
+  - acupoint.st42
+  - acupoint.st34
+  - method.bu_xie
+- key: c04
+  title: 丰隆治痰
+  start_seq: 279
+  summary: 丰隆在外踝上八寸胫腓骨间中点，为治痰要穴；亦言可助丰胸。取穴脚宜放平。
+  clauses: []
+  topics:
+  - acupoint.st40
+entities:
+- id: acupoint.st36
+  seq: 1
+  surface: 足三里
+  corrected: 足三里
+- id: acupoint.st37
+  seq: 1
+  surface: 上巨虚
+  corrected: 上巨虚
+- id: acupoint.st34
+  seq: 1
+  surface: 梁丘
+  corrected: 梁丘
+- id: method.bu_xie
+  seq: 4
+  surface: 纯阳
+  corrected: 补泻
+- id: method.shao_zhen
+  seq: 56
+  surface: 烧针
+  corrected: 烧针
+- id: acupoint.st42
+  seq: 194
+  surface: 冲阳
+  corrected: 冲阳
+- id: acupoint.st40
+  seq: 279
+  surface: 丰隆
+  corrected: 丰隆
+- id: meridian.st
+  seq: 0
+  surface: 足阳明胃经
+  corrected: 足阳明胃经
+kps:
+- type: acupoint_usage
+  s: 胃经穴可行纯阳术九数以为补；泻则同行六数导气，提后留针，泻取出针不按孔。
+  seq:
+  - 1
+  - 24
+  q: 行纯阳的术
+  ents:
+  - acupoint.st36
+  - method.bu_xie
+  conf: 0.9
+- type: clinical_tip
+  s: 良性脂肪瘤、黑痣等可用烧针灼刺；化脓灶用较粗烧针。
+  seq:
+  - 56
+  - 69
+  q: 我们用烧针
+  ents:
+  - method.shao_zhen
+  conf: 0.95
+- type: clinical_tip
+  s: 烧针可三向会刺，或八点围刺并燃针左右捻转；宜有助手助烧。
+  seq:
+  - 87
+  - 105
+  q: 这是所谓的烧针术
+  ents:
+  - method.shao_zhen
+  conf: 0.9
+- type: acupoint_usage
+  s: 症重可取胃原冲阳；泻用六数，得气后针尖偏向病所导气（运气法）。
+  seq:
+  - 194
+  - 215
+  q: 下针冲阳
+  ents:
+  - acupoint.st42
+  - method.bu_xie
+  conf: 0.9
+- type: acupoint_usage
+  s: 丰隆在外踝上、胫腓骨间中点，为治痰名穴。
+  seq:
+  - 287
+  - 289
+  q: 治痰的明穴
+  ents:
+  - acupoint.st40
+  conf: 0.95
+  asr: 明穴=名穴
