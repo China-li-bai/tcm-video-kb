@@ -1,0 +1,60 @@
+[
+ {
+  "chapter_id": "zj-042.c01",
+  "video_id": "zj-042",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "涌泉然谷",
+  "summary": "涌泉为肾经井/子穴，泻井当泻荥。然谷为荥，急救脑震荡：局部隆起处刺络放血常可苏醒；可配公孙止呕。亦为足心近取。",
+  "start_s": 1.71,
+  "end_s": 303.78,
+  "seg_from": 0,
+  "seg_to": 61,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.ki1",
+   "acupoint.ki2"
+  ],
+  "citation": {
+   "youtube_id": "Uw4P_J74Rhs",
+   "url": "https://www.youtube.com/watch?v=Uw4P_J74Rhs&t=1s",
+   "series": "zj",
+   "episode": 42,
+   "title": "Ni Hai-sha \"Human Record\": Acupuncture, 90-Episode Complete Series - Acupuncture 42",
+   "start_s": 1.71,
+   "end_s": 303.78
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-042.c02",
+  "video_id": "zj-042",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "太溪与肾结石阿是",
+  "summary": "太溪在内踝高点与跟腱间，候肾气；与冲阳脉并见则可救。肾结石可在肾经压痛阿是处下针，常感结石移动而痛减。",
+  "start_s": 305.24,
+  "end_s": 1751.633,
+  "seg_from": 62,
+  "seg_to": 319,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.ki3",
+   "meridian.ki"
+  ],
+  "citation": {
+   "youtube_id": "Uw4P_J74Rhs",
+   "url": "https://www.youtube.com/watch?v=Uw4P_J74Rhs&t=305s",
+   "series": "zj",
+   "episode": 42,
+   "title": "Ni Hai-sha \"Human Record\": Acupuncture, 90-Episode Complete Series - Acupuncture 42",
+   "start_s": 305.24,
+   "end_s": 1751.63
+  },
+  "review_status": "llm_read"
+ }
+]

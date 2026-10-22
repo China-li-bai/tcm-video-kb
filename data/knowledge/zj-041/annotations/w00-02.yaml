@@ -1,0 +1,101 @@
+video_id: zj-041
+window: w00-02
+seg_from: 0
+seg_to: 342
+annotator: llm_read
+chapters:
+- key: c01
+  title: 束骨通谷至阴
+  start_seq: 0
+  summary: 束骨治膀胱经实证（疮疡红肿等）及经络病。通谷为荥属水，与膀胱水经同属故为本穴。至阴为井、补穴，痛甚常以委中代补；特殊主治胎位不正（灸/针小针）。膀胱申时（15–17时）开。
+  clauses: []
+  topics:
+  - acupoint.bl65
+  - acupoint.bl66
+  - acupoint.bl67
+- key: c02
+  title: 转入肾与骨
+  start_seq: 55
+  summary: 骨病责肾；为足少阴肾经各论铺垫。
+  clauses: []
+  topics:
+  - zangfu.shen
+  - meridian.ki
+entities:
+- id: acupoint.bl65
+  seq: 0
+  surface: 肃骨穴
+  corrected: 束骨
+- id: acupoint.bl66
+  seq: 4
+  surface: 通谷穴
+  corrected: 通谷
+- id: meridian.bl
+  seq: 0
+  surface: 膀胱经
+  corrected: 足太阳膀胱经
+- id: acupoint.bl67
+  seq: 26
+  surface: 至阴
+  corrected: 至阴
+- id: acupoint.bl40
+  seq: 34
+  surface: 伪中
+  corrected: 委中
+- id: zangfu.shen
+  seq: 56
+  surface: 肾
+  corrected: 肾
+- id: meridian.ki
+  seq: 55
+  surface: 肾
+  corrected: 足少阴肾经
+- id: concept.zi_wu_liu_zhu
+  seq: 45
+  surface: 三点到五点
+  corrected: 申时流注（15–17时）
+kps:
+- type: acupoint_usage
+  s: 束骨治膀胱经实症（可见疮疡红肿等）及经络病。
+  seq:
+  - 0
+  - 1
+  q: 都可以用肃骨穴来下针
+  ents:
+  - acupoint.bl65
+  - meridian.bl
+  conf: 0.9
+  asr: 肃骨/树骨=束骨
+- type: concept_definition
+  s: 通谷为膀胱荥穴属水，与膀胱水经同属，故为本穴。
+  seq:
+  - 4
+  - 8
+  q: 通谷穴呢就是膀胱经的什么本穴
+  ents:
+  - acupoint.bl66
+  - meridian.bl
+  conf: 0.95
+  asr: 容穴=荥穴
+- type: acupoint_usage
+  s: 至阴为井、补穴，痛甚常以委中代补井；特殊主治胎位不正（用一寸小针即可）。
+  seq:
+  - 34
+  - 38
+  q: 特殊的治症，就是胎位不正
+  ents:
+  - acupoint.bl67
+  - acupoint.bl40
+  conf: 0.95
+  asr: 伪中=委中；资金/自营=至阴
+- type: concept_definition
+  s: 膀胱经申时开，约下午三点至五点。骨病当思肾。
+  seq:
+  - 45
+  - 56
+  q: 任何的骨头骨病，我们就要想到肾
+  ents:
+  - meridian.bl
+  - zangfu.shen
+  - concept.zi_wu_liu_zhu
+  conf: 0.9

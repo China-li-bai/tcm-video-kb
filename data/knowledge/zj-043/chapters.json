@@ -1,0 +1,60 @@
+[
+ {
+  "chapter_id": "zj-043.c01",
+  "video_id": "zj-043",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "阴谷为本穴",
+  "summary": "阴谷在腘内侧两筋间对骨，为肾经合穴属水，与肾水同属故为本穴；得气即出水气，不必强求补泻。亦可泻肝/大肠/肺之实（水克火、水侮等灵活用）。",
+  "start_s": 0.13,
+  "end_s": 437.58,
+  "seg_from": 0,
+  "seg_to": 79,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.ki10",
+   "meridian.ki"
+  ],
+  "citation": {
+   "youtube_id": "6hYSqrST1NI",
+   "url": "https://www.youtube.com/watch?v=6hYSqrST1NI&t=0s",
+   "series": "zj",
+   "episode": 43,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 43",
+   "start_s": 0.13,
+   "end_s": 437.58
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-043.c02",
+  "video_id": "zj-043",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "入腹横骨",
+  "summary": "过合穴后入腹；横骨在耻骨上。曲骨可针勿贴骨。穴为工具，当役穴而非役于穴。",
+  "start_s": 441.68,
+  "end_s": 735.655,
+  "seg_from": 80,
+  "seg_to": 132,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.ki11",
+   "acupoint.cv2"
+  ],
+  "citation": {
+   "youtube_id": "6hYSqrST1NI",
+   "url": "https://www.youtube.com/watch?v=6hYSqrST1NI&t=441s",
+   "series": "zj",
+   "episode": 43,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 43",
+   "start_s": 441.68,
+   "end_s": 735.65
+  },
+  "review_status": "llm_read"
+ }
+]

@@ -1,0 +1,61 @@
+[
+ {
+  "chapter_id": "zj-041.c01",
+  "video_id": "zj-041",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "束骨通谷至阴",
+  "summary": "束骨治膀胱经实证（疮疡红肿等）及经络病。通谷为荥属水，与膀胱水经同属故为本穴。至阴为井、补穴，痛甚常以委中代补；特殊主治胎位不正（灸/针小针）。膀胱申时（15–17时）开。",
+  "start_s": 0.05,
+  "end_s": 300.015,
+  "seg_from": 0,
+  "seg_to": 54,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.bl65",
+   "acupoint.bl66",
+   "acupoint.bl67"
+  ],
+  "citation": {
+   "youtube_id": "XYv0BTmUpvc",
+   "url": "https://www.youtube.com/watch?v=XYv0BTmUpvc&t=0s",
+   "series": "zj",
+   "episode": 41,
+   "title": "Ni Hai-hsia \"Humanity Series\" - \"Acupuncture\" (90 Episodes Total): Acupuncture 41",
+   "start_s": 0.05,
+   "end_s": 300.01
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-041.c02",
+  "video_id": "zj-041",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "转入肾与骨",
+  "summary": "骨病责肾；为足少阴肾经各论铺垫。",
+  "start_s": 301.76,
+  "end_s": 1828.595,
+  "seg_from": 55,
+  "seg_to": 342,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "zangfu.shen",
+   "meridian.ki"
+  ],
+  "citation": {
+   "youtube_id": "XYv0BTmUpvc",
+   "url": "https://www.youtube.com/watch?v=XYv0BTmUpvc&t=301s",
+   "series": "zj",
+   "episode": 41,
+   "title": "Ni Hai-hsia \"Humanity Series\" - \"Acupuncture\" (90 Episodes Total): Acupuncture 41",
+   "start_s": 301.76,
+   "end_s": 1828.6
+  },
+  "review_status": "llm_read"
+ }
+]

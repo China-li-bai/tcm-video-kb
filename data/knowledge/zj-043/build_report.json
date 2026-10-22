@@ -1,0 +1,30 @@
+{
+ "schema": "knowledge/1",
+ "video_id": "zj-043",
+ "youtube_id": "6hYSqrST1NI",
+ "windows": [
+  "w00-01"
+ ],
+ "annotations_sha256": "d478f0506c86e6de",
+ "n_segments": 133,
+ "n_chapters": 2,
+ "n_sections": 0,
+ "n_entities": 31,
+ "entities_by_type": {
+  "herb": 1,
+  "meridian": 7,
+  "acupoint": 15,
+  "method": 2,
+  "zangfu": 3,
+  "concept": 3
+ },
+ "n_new_entities": 0,
+ "n_knowledge_points": 4,
+ "kp_by_type": {
+  "study_method": 1,
+  "concept_definition": 1,
+  "clinical_tip": 1,
+  "acupoint_usage": 1
+ },
+ "errors": []
+}

@@ -1,0 +1,95 @@
+video_id: zj-042
+window: w00-02
+seg_from: 0
+seg_to: 319
+annotator: llm_read
+chapters:
+- key: c01
+  title: 涌泉然谷
+  start_seq: 0
+  summary: 涌泉为肾经井/子穴，泻井当泻荥。然谷为荥，急救脑震荡：局部隆起处刺络放血常可苏醒；可配公孙止呕。亦为足心近取。
+  clauses: []
+  topics:
+  - acupoint.ki1
+  - acupoint.ki2
+- key: c02
+  title: 太溪与肾结石阿是
+  start_seq: 62
+  summary: 太溪在内踝高点与跟腱间，候肾气；与冲阳脉并见则可救。肾结石可在肾经压痛阿是处下针，常感结石移动而痛减。
+  clauses: []
+  topics:
+  - acupoint.ki3
+  - meridian.ki
+entities:
+- id: acupoint.ki1
+  seq: 24
+  surface: 泳泉
+  corrected: 涌泉
+- id: meridian.ki
+  seq: 42
+  surface: 肾经
+  corrected: 足少阴肾经
+- id: acupoint.ki2
+  seq: 43
+  surface: 染骨穴
+  corrected: 然谷
+- id: acupoint.sp4
+  seq: 51
+  surface: 公孙
+  corrected: 公孙
+- id: acupoint.ki3
+  seq: 62
+  surface: 太溪穴
+  corrected: 太溪
+- id: acupoint.st42
+  seq: 69
+  surface: 冲阳
+  corrected: 冲阳
+- id: zangfu.shen
+  seq: 70
+  surface: 肾气
+  corrected: 肾
+kps:
+- type: acupoint_usage
+  s: 涌泉为肾经井且为子穴；泻井当泻荥（然谷）。
+  seq:
+  - 42
+  - 43
+  q: 要谢颈当泄宗
+  ents:
+  - acupoint.ki1
+  - acupoint.ki2
+  - meridian.ki
+  conf: 0.85
+  asr: 谢颈当泄宗=泻井当泻荥；染骨/软骨/阑谷=然谷
+- type: acupoint_usage
+  s: 然谷刺络放血为脑震荡急救要法；局部可隆起，放血后神清、止呕，可配公孙。
+  seq:
+  - 44
+  - 51
+  q: 染谷放血是很有名的一个急救的大学
+  ents:
+  - acupoint.ki2
+  - acupoint.sp4
+  conf: 0.95
+- type: clinical_tip
+  s: 太溪在内踝高骨与大筋正中；太溪脉与冲阳脉在则肾气/胃气尚存可救，瞳孔散大且太溪绝则难救。
+  seq:
+  - 62
+  - 70
+  q: 内踝的高骨跟后面的大经呢正中间，这叫太溪穴
+  ents:
+  - acupoint.ki3
+  - acupoint.st42
+  - zangfu.shen
+  conf: 0.95
+  asr: 太息/泰新=太溪
+- type: clinical_tip
+  s: 肾经压痛点可助诊肾结石；阿是下针常感移动而痛止。
+  seq:
+  - 79
+  - 99
+  q: 找到压痛点的时候，就是有肾结石
+  ents:
+  - meridian.ki
+  conf: 0.9

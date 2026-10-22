@@ -1,0 +1,93 @@
+video_id: zj-043
+window: w00-01
+seg_from: 0
+seg_to: 132
+annotator: llm_read
+chapters:
+- key: c01
+  title: 阴谷为本穴
+  start_seq: 0
+  summary: 阴谷在腘内侧两筋间对骨，为肾经合穴属水，与肾水同属故为本穴；得气即出水气，不必强求补泻。亦可泻肝/大肠/肺之实（水克火、水侮等灵活用）。
+  clauses: []
+  topics:
+  - acupoint.ki10
+  - meridian.ki
+- key: c02
+  title: 入腹横骨
+  start_seq: 80
+  summary: 过合穴后入腹；横骨在耻骨上。曲骨可针勿贴骨。穴为工具，当役穴而非役于穴。
+  clauses: []
+  topics:
+  - acupoint.ki11
+  - acupoint.cv2
+entities:
+- id: acupoint.cv7
+  seq: 0
+  surface: 阴交
+  corrected: 阴交
+- id: acupoint.sp10
+  seq: 0
+  surface: 血海
+  corrected: 血海
+- id: acupoint.ki10
+  seq: 15
+  surface: 阴骨穴
+  corrected: 阴谷
+- id: meridian.ki
+  seq: 19
+  surface: 肾经
+  corrected: 足少阴肾经
+- id: acupoint.ki11
+  seq: 81
+  surface: 横骨穴
+  corrected: 横骨
+- id: acupoint.cv2
+  seq: 86
+  surface: 曲骨
+  corrected: 曲骨
+- id: method.bu_xie
+  seq: 49
+  surface: 补泻
+  corrected: 补泻
+kps:
+- type: study_method
+  s: 穴为工具，当役使穴道，勿被书上穴名奴役；先立观念再选穴。
+  seq:
+  - 9
+  - 10
+  q: 穴道是给你的工具，你要奴役这个穴道
+  ents:
+  - meridian.ki
+  conf: 0.9
+- type: concept_definition
+  s: 阴谷为肾经合穴属水，与肾水同属，为本穴；两筋间对骨取之。
+  seq:
+  - 15
+  - 19
+  q: 阴骨就是肾经的什么本穴
+  ents:
+  - acupoint.ki10
+  - meridian.ki
+  conf: 0.95
+  asr: 阴骨=阴谷；河穴=合穴
+- type: clinical_tip
+  s: 本穴得气即可出水气之性，平补平泻即可，不必强求补泻手法。
+  seq:
+  - 49
+  - 49
+  q: 无所谓，补泻平不平泻，你只要扎到针，引到气
+  ents:
+  - acupoint.ki10
+  - method.bu_xie
+  conf: 0.9
+- type: acupoint_usage
+  s: 阴谷之上入腹为横骨；曲骨可针，勿刺到耻骨面。
+  seq:
+  - 81
+  - 86
+  q: 硬骨在上面呢就是我们的横骨穴
+  ents:
+  - acupoint.ki11
+  - acupoint.cv2
+  conf: 0.85
+  asr: 硬骨=阴谷
