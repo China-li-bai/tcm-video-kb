@@ -1,0 +1,128 @@
+video_id: zj-014
+window: w00-02
+seg_from: 0
+seg_to: 326
+annotator: llm_read
+chapters:
+- key: c01
+  title: 肺脏概说与忧能伤肺
+  start_seq: 0
+  summary: 针灸或处方正确而咳未愈时，须察情志；忧能伤肺，喜能胜忧。肺主声为哭，变则为咳。并演示呼吸吐浊以练肺。
+  clauses: []
+  topics:
+  - zangfu.fei
+  - disease.ke_sou
+- key: c02
+  title: 手太阴肺经总论
+  start_seq: 94
+  summary: 手太阴肺经十一穴，起于少商。流注寅时（三点至五点）；此时易醒提示肺系病变。肺主皮毛，正常肺脉为浮脉。
+  clauses: []
+  topics:
+  - meridian.lu
+  - pulse.fu
+  - concept.zi_wu_liu_zhu
+entities:
+- id: zangfu.fei
+  seq: 6
+  surface: 肺
+  corrected: 肺
+- id: disease.ke_sou
+  seq: 0
+  surface: 咳嗽
+  corrected: 咳嗽
+- id: meridian.lu
+  seq: 94
+  surface: 手太阴肺经
+  corrected: 手太阴肺经
+- id: acupoint.lu11
+  seq: 95
+  surface: 少伤
+  corrected: 少商
+- id: zangfu.pi_mao
+  seq: 185
+  surface: 皮毛
+  corrected: 皮毛
+- id: pulse.fu
+  seq: 196
+  surface: 福脉
+  corrected: 浮脉
+- id: herb.ren_shen
+  seq: 205
+  surface: 人参
+  corrected: 人参
+- id: new.formula.独参汤
+  seq: 205
+  surface: 独参汤
+  corrected: 独参汤
+- id: concept.zi_wu_liu_zhu
+  seq: 171
+  surface: 三点钟开始到五点钟
+  corrected: 寅时流注（3–5时）
+- id: method.zhen_jiu
+  seq: 0
+  surface: 针灸
+  corrected: 针灸
+kps:
+- type: clinical_tip
+  s: 处方或取穴正确而咳仍不愈时，须察忧愁等情志因素，家事所扰则较难治。
+  seq:
+  - 0
+  - 1
+  q: 那病人咳嗽还没好，那再一看满脸忧愁
+  ents:
+  - disease.ke_sou
+  conf: 0.9
+- type: concept_definition
+  s: 肺在声为哭；变动为咳；志为忧。忧能伤肺，喜能胜忧。
+  seq:
+  - 81
+  - 82
+  q: 要忧能伤肺，喜能胜忧
+  ents:
+  - zangfu.fei
+  conf: 0.95
+- type: concept_definition
+  s: 手太阴肺经经穴歌载十一穴，起于少商。
+  seq:
+  - 94
+  - 95
+  q: 他有十一个穴道，那我们会一个的介绍
+  ents:
+  - meridian.lu
+  - acupoint.lu11
+  conf: 0.9
+  asr: 少伤=少商
+- type: concept_definition
+  s: 肺经流注寅时，约三点至五点；此时易醒提示肺已有病变。
+  seq:
+  - 171
+  - 172
+  q: 三点钟开始到五点钟
+  ents:
+  - meridian.lu
+  - concept.zi_wu_liu_zhu
+  conf: 0.9
+  asr: 饮食=寅时（ASR）
+- type: concept_definition
+  s: 肺主皮毛；正常肺脉为浮脉（如秋令轻取即得）。
+  seq:
+  - 185
+  - 196
+  q: 正常的肺脉是浮脉
+  ents:
+  - zangfu.fei
+  - zangfu.pi_mao
+  - pulse.fu
+  conf: 0.95
+  asr: 福脉=浮脉
+- type: clinical_tip
+  s: 大虚需峻补气时可用独参汤（大剂人参）。
+  seq:
+  - 205
+  - 207
+  q: 我们叫独参汤哦
+  ents:
+  - herb.ren_shen
+  - new.formula.独参汤
+  conf: 0.85
+  asr: 大忌=大剂

@@ -1,0 +1,61 @@
+[
+ {
+  "chapter_id": "zj-014.c01",
+  "video_id": "zj-014",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "肺脏概说与忧能伤肺",
+  "summary": "针灸或处方正确而咳未愈时，须察情志；忧能伤肺，喜能胜忧。肺主声为哭，变则为咳。并演示呼吸吐浊以练肺。",
+  "start_s": 0.15,
+  "end_s": 580.045,
+  "seg_from": 0,
+  "seg_to": 93,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "zangfu.fei",
+   "disease.ke_sou"
+  ],
+  "citation": {
+   "youtube_id": "cA2x-mawXGg",
+   "url": "https://www.youtube.com/watch?v=cA2x-mawXGg&t=0s",
+   "series": "zj",
+   "episode": 14,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 14",
+   "start_s": 0.15,
+   "end_s": 580.04
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-014.c02",
+  "video_id": "zj-014",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "手太阴肺经总论",
+  "summary": "手太阴肺经十一穴，起于少商。流注寅时（三点至五点）；此时易醒提示肺系病变。肺主皮毛，正常肺脉为浮脉。",
+  "start_s": 584.51,
+  "end_s": 1797.018,
+  "seg_from": 94,
+  "seg_to": 326,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "meridian.lu",
+   "pulse.fu",
+   "concept.zi_wu_liu_zhu"
+  ],
+  "citation": {
+   "youtube_id": "cA2x-mawXGg",
+   "url": "https://www.youtube.com/watch?v=cA2x-mawXGg&t=584s",
+   "series": "zj",
+   "episode": 14,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 14",
+   "start_s": 584.51,
+   "end_s": 1797.02
+  },
+  "review_status": "llm_read"
+ }
+]
