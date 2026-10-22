@@ -1,0 +1,60 @@
+[
+ {
+  "chapter_id": "nj-003.c01",
+  "video_id": "nj-003",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "卧则血归于肝",
+  "summary": "人卧血归于肝，肝藏魂，故能寐；血不归肝则失眠或肝有积。目得血而能视，视力问题多从肝治。",
+  "start_s": 0.21,
+  "end_s": 306.915,
+  "seg_from": 0,
+  "seg_to": 56,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "zangfu.gan"
+  ],
+  "citation": {
+   "youtube_id": "709xGKzTxuI",
+   "url": "https://www.youtube.com/watch?v=709xGKzTxuI&t=0s",
+   "series": "nj",
+   "episode": 3,
+   "title": "03 倪海厦精讲《黄帝内经》高清字幕完整版",
+   "start_s": 0.21,
+   "end_s": 306.92
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "nj-003.c02",
+  "video_id": "nj-003",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "心肾水火与心包",
+  "summary": "血源于水、奉心化赤；肾水制心火则心动能持久。心外包以心包清水护之。心恶热喜寒；肝为风木恶风。",
+  "start_s": 307.97,
+  "end_s": 13691.469,
+  "seg_from": 57,
+  "seg_to": 2409,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "zangfu.xin",
+   "zangfu.shen",
+   "zangfu.xin_bao"
+  ],
+  "citation": {
+   "youtube_id": "709xGKzTxuI",
+   "url": "https://www.youtube.com/watch?v=709xGKzTxuI&t=307s",
+   "series": "nj",
+   "episode": 3,
+   "title": "03 倪海厦精讲《黄帝内经》高清字幕完整版",
+   "start_s": 307.97,
+   "end_s": 13691.47
+  },
+  "review_status": "llm_read"
+ }
+]

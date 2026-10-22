@@ -1,0 +1,83 @@
+video_id: nj-003
+window: w00-02
+seg_from: 0
+seg_to: 400
+annotator: llm_read
+chapters:
+- key: c01
+  title: 卧则血归于肝
+  start_seq: 0
+  summary: 人卧血归于肝，肝藏魂，故能寐；血不归肝则失眠或肝有积。目得血而能视，视力问题多从肝治。
+  clauses: []
+  topics:
+  - zangfu.gan
+- key: c02
+  title: 心肾水火与心包
+  start_seq: 57
+  summary: 血源于水、奉心化赤；肾水制心火则心动能持久。心外包以心包清水护之。心恶热喜寒；肝为风木恶风。
+  clauses: []
+  topics:
+  - zangfu.xin
+  - zangfu.shen
+  - zangfu.xin_bao
+entities:
+- id: zangfu.gan
+  seq: 27
+  surface: 肝脏
+  corrected: 肝
+- id: zangfu.xin
+  seq: 57
+  surface: 心脏
+  corrected: 心
+- id: zangfu.shen
+  seq: 58
+  surface: 肾水
+  corrected: 肾
+- id: zangfu.xin_bao
+  seq: 63
+  surface: 心包
+  corrected: 心包
+- id: classic.huang_di_nei_jing
+  seq: 33
+  surface: 黄帝内经
+  corrected: 黄帝内经
+kps:
+- type: clinical_tip
+  s: 卧则血归于肝、魂随之而能寐；血不归肝则失眠。
+  seq:
+  - 27
+  - 35
+  q: 血呢晚上回到肝脏里去
+  ents:
+  - zangfu.gan
+  conf: 0.95
+- type: clinical_tip
+  s: 肝受血而能视；视力问题宜从肝治。
+  seq:
+  - 50
+  - 51
+  q: 从肝脏下手
+  ents:
+  - zangfu.gan
+  conf: 0.95
+- type: clinical_tip
+  s: 肾水制心火则心动能持久；心外包心包清水护之。
+  seq:
+  - 58
+  - 63
+  q: 肾水来控制它
+  ents:
+  - zangfu.shen
+  - zangfu.xin
+  - zangfu.xin_bao
+  conf: 0.9
+- type: clinical_tip
+  s: 心恶热喜寒；肝为风木恶风。
+  seq:
+  - 83
+  - 94
+  q: 心是恶热
+  ents:
+  - zangfu.xin
+  - zangfu.gan
+  conf: 0.9
