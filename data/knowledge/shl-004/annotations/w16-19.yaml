@@ -1,0 +1,161 @@
+video_id: shl-004
+window: w16-19
+seg_from: 2033
+seg_to: 2559
+annotator: llm_read
+chapters:
+- key: c13
+  title: 阳明兼表：有汗桂枝、无汗麻黄，先表后里
+  start_seq: 2072
+  summary: 阳明有汗开桂枝（方中姜草枣护津）勿用麻黄；无汗而喘仍麻黄汤先解表。纵属阳明，表未解不可下，先汗后攻。
+  clauses:
+  - 234
+  - 235
+  - 236
+  topics:
+  - formula.gui_zhi_tang
+  - formula.ma_huang_tang
+- key: c14
+  title: 茵陈蒿汤与抵当汤
+  start_seq: 2160
+  summary: 瘀热在里发黄，茵陈蒿汤：茵陈栀子等量大黄减半，茵陈先煎。瘀血发热、如狂、少腹硬满，抵当汤（水蛭虻虫）为活血第二主方；轻者桃核承气。
+  clauses:
+  - 236
+  - 237
+  - 124
+  topics:
+  - formula.yin_chen_hao_tang
+  - formula.di_dang_tang
+  - formula.tao_he_cheng_qi_tang
+- key: c15
+  title: 吴茱萸汤与五苓散在阳明篇
+  start_seq: 2381
+  summary: 食谷欲呕属阳明，吴茱萸汤主胃虚寒（朝食暮吐之虚证）。五苓散用于小便不利而渴、大便正常者；与猪苓汤鉴别：五苓偏表水热证/瘟疫利尿，猪苓偏结石血淋。
+  clauses:
+  - 243
+  - 71
+  topics:
+  - formula.wu_zhu_yu_tang
+  - formula.wu_ling_san
+  - formula.zhu_ling_tang
+entities:
+- id: formula.gui_zhi_tang
+  seq: 2075
+  surface: 桂枝汤
+  corrected: 桂枝汤
+- id: formula.ma_huang_tang
+  seq: 2087
+  surface: 麻黄汤
+  corrected: 麻黄汤
+- id: formula.yin_chen_hao_tang
+  seq: 2160
+  surface: 阴橙膏
+  corrected: 茵陈蒿汤
+- id: herb.yin_chen_hao
+  seq: 2160
+  surface: 阴橙老
+  corrected: 茵陈
+- id: herb.zhi_zi
+  seq: 2160
+  surface: 栀子
+  corrected: 栀子
+- id: herb.da_huang
+  seq: 2160
+  surface: 大黄
+  corrected: 大黄
+- id: formula.di_dang_tang
+  seq: 2207
+  surface: 抵当汤
+  corrected: 抵当汤
+- id: formula.tao_he_cheng_qi_tang
+  seq: 2252
+  surface: 桃核承气汤
+  corrected: 桃核承气汤
+- id: formula.wu_zhu_yu_tang
+  seq: 2381
+  surface: 吴中妤汤
+  corrected: 吴茱萸汤
+- id: formula.da_huang_gan_cao_tang
+  seq: 2389
+  surface: 大黄甘草汤
+  corrected: 大黄甘草汤
+- id: formula.wu_ling_san
+  seq: 2441
+  surface: 五苓散
+  corrected: 五苓散
+- id: formula.zhu_ling_tang
+  seq: 2471
+  surface: 猪苓汤
+  corrected: 猪苓汤
+- id: formula.ma_zi_ren_wan
+  seq: 2542
+  surface: 麻麻仁丸
+  corrected: 麻子仁丸
+- id: syndrome.pi_yue
+  seq: 2542
+  surface: 脾微约
+  corrected: 脾约
+kps:
+- type: treatment_principle
+  s: 阳明有汗用桂枝汤（姜草枣护津），勿用麻黄；无汗而喘用麻黄汤先解表。有表证必先解表再攻里。
+  seq:
+  - 2075
+  - 2093
+  q: 只要有汗，你开桂枝汤，你即使开的很重，都不会丧失津液
+  ents:
+  - formula.gui_zhi_tang
+  - formula.ma_huang_tang
+  conf: 0.9
+- type: formula_composition
+  s: 茵陈蒿汤：茵陈与栀子等量，大黄减半；茵陈先煎去湿，栀子清上焦热，大黄利下焦湿热。
+  seq:
+  - 2160
+  - 2167
+  q: 我们的阴橙膏跟栀子呢是等量，比如说四钱四钱大黄两钱
+  ents:
+  - formula.yin_chen_hao_tang
+  - herb.yin_chen_hao
+  - herb.zhi_zi
+  conf: 0.9
+  asr: 阴橙膏=茵陈蒿
+- type: formula_indication
+  s: 抵当汤治下焦蓄血/瘀血（水蛭虻虫），为仲景活血化瘀第二主方；症见如狂、少腹硬满。轻证用桃核承气。
+  seq:
+  - 2207
+  - 2266
+  q: 抵当就是绝对唯一处方没有第二个主方
+  ents:
+  - formula.di_dang_tang
+  - formula.tao_he_cheng_qi_tang
+  conf: 0.9
+- type: formula_indication
+  s: 吴茱萸汤主胃虚寒朝食暮吐；宿食吐用大黄甘草汤。二者虚实不同。
+  seq:
+  - 2388
+  - 2389
+  q: 有果，是正虚症的时候无猪咀汤
+  ents:
+  - formula.wu_zhu_yu_tang
+  - formula.da_huang_gan_cao_tang
+  conf: 0.8
+  asr: 无猪咀=吴茱萸
+- type: diagnostic_rule
+  s: 五苓散：大便正常而小便不利口渴；表水热证/瘟疫利尿。猪苓汤：结石血淋小便痛。津伤甚者勿再利。
+  seq:
+  - 2473
+  - 2510
+  q: 如果大便很正常，大便是正常小便不利，而渴才会用到五苓散
+  ents:
+  - formula.wu_ling_san
+  - formula.zhu_ling_tang
+  conf: 0.9
+- type: clause_interpretation
+  s: 跌阳脉浮而涩，浮则胃气强涩则小便数，浮涩相搏大便则硬，其脾为约，麻子仁丸主之。
+  seq:
+  - 2542
+  - 2542
+  q: 大便者呢g脾微约好，麻麻仁丸组织
+  ents:
+  - syndrome.pi_yue
+  - formula.ma_zi_ren_wan
+  conf: 0.85

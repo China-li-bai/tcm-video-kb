@@ -1,0 +1,186 @@
+video_id: shl-004
+window: w08-11
+seg_from: 1016
+seg_to: 1503
+annotator: llm_read
+chapters:
+- key: c08
+  title: 大承气辨证：舌黑干、能食/不能食、得下止后服
+  start_seq: 1037
+  summary: 确定大承气证则唯一主方。舌黑而干为燥实，黑而润为极寒勿误下。能食用小承气，不能食用大承气。大便一通即停后服。脉虚难治不可再攻。
+  clauses:
+  - 212
+  - 214
+  - 215
+  - 220
+  topics:
+  - formula.da_cheng_qi_tang
+  - formula.xiao_cheng_qi_tang
+- key: c09
+  title: 三阳合病与白虎；手足濈然汗出→大承气
+  start_seq: 1274
+  summary: 三阳合病但见少阳证用小柴胡。额上汗出手足濈然汗出者白虎；手足汗多定属阳明燥实则大承气。
+  clauses:
+  - 219
+  - 220
+  topics:
+  - formula.bai_hu_tang
+  - formula.xiao_chai_hu_tang
+  - formula.da_cheng_qi_tang
+- key: c10
+  title: 栀子豉、白虎加人参、猪苓汤、四逆汤
+  start_seq: 1338
+  summary: 阳明心中懊憹栀子豉汤清上焦虚热；渴欲饮水口干舌燥白虎加人参。脉浮发热渴欲饮水小便不利猪苓汤（滑石攻坚结石、阿胶止血）。表热里寒下利清谷四逆汤；胃中虚冷饮水则哕。
+  clauses:
+  - 221
+  - 222
+  - 223
+  - 225
+  - 228
+  topics:
+  - formula.zhi_zi_shi_tang
+  - formula.zhu_ling_tang
+  - formula.si_ni_tang
+  - formula.bai_hu_jia_ren_shen_tang
+entities:
+- id: formula.da_cheng_qi_tang
+  seq: 1037
+  surface: 大承气汤
+  corrected: 大承气汤
+- id: formula.xiao_cheng_qi_tang
+  seq: 1183
+  surface: 小承气汤
+  corrected: 小承气汤
+- id: formula.fu_ling_si_ni_tang
+  seq: 1068
+  surface: 茯苓茯苓四逆汤
+  corrected: 茯苓四逆汤
+- id: formula.bai_hu_tang
+  seq: 1296
+  surface: 白虎汤
+  corrected: 白虎汤
+- id: formula.xiao_chai_hu_tang
+  seq: 1305
+  surface: 小柴胡汤
+  corrected: 小柴胡汤
+- id: clause.shl.221
+  seq: 1338
+  surface: 两百四十条阳明病心中懊聋
+  corrected: 伤寒论第221条
+  note: 讲义240→宋本221
+- id: formula.zhi_zi_shi_tang
+  seq: 1340
+  surface: 栀子豉汤
+  corrected: 栀子豉汤
+- id: formula.bai_hu_jia_ren_shen_tang
+  seq: 1347
+  surface: 白虎加人参汤
+  corrected: 白虎加人参汤
+- id: formula.zhu_ling_tang
+  seq: 1352
+  surface: 猪苓汤
+  corrected: 猪苓汤
+- id: formula.wu_ling_san
+  seq: 1357
+  surface: 五苓散
+  corrected: 五苓散
+- id: clause.shl.225
+  seq: 1438
+  surface: 二百四十二条
+  corrected: 伤寒论第225条
+  note: 讲义242→宋本225
+- id: formula.si_ni_tang
+  seq: 1438
+  surface: 四逆汤
+  corrected: 四逆汤
+kps:
+- type: diagnostic_rule
+  s: 大承气舌苔黑而干；极寒舌黑而润有津。前硬后溏示内有寒湿，勿妄投大承气。
+  seq:
+  - 1053
+  - 1063
+  q: 那大承气汤那个黑呢根本就干掉了，一看就干掉了
+  ents:
+  - formula.da_cheng_qi_tang
+  conf: 0.9
+- type: clinical_tip
+  s: 若本当大承气而误用小承气，则大便不出唯频矢气——提示应改大承气。
+  seq:
+  - 1050
+  - 1050
+  q: 你开成小神器，小神器这下去大便没出来，一直在放屁
+  ents:
+  - formula.da_cheng_qi_tang
+  - formula.xiao_cheng_qi_tang
+  conf: 0.9
+  asr: 小神器=小承气
+- type: treatment_principle
+  s: 大承气得下即止后服，勿尽剂；一通即停。
+  seq:
+  - 1156
+  - 1156
+  q: 大承气汤正呢，你大便一通出来可以停掉
+  ents:
+  - formula.da_cheng_qi_tang
+  conf: 0.95
+- type: diagnostic_rule
+  s: 同有潮热谵语：不能食→大承气；能食→小承气。
+  seq:
+  - 1220
+  - 1226
+  q: 如果不能吃东西，大神器如果可以吃东西，就是只是大片小承气汤汤
+  ents:
+  - formula.da_cheng_qi_tang
+  - formula.xiao_cheng_qi_tang
+  conf: 0.85
+  asr: 大神器=大承气
+- type: contraindication
+  s: 承气攻下后大便仍不出，不可再攻，脉虚为难治；再攻则更虚。
+  seq:
+  - 1203
+  - 1214
+  q: 以虚者为难治，不可再给他承气汤
+  ents:
+  - formula.da_cheng_qi_tang
+  conf: 0.9
+- type: formula_indication
+  s: 手足濈然汗出而阳明燥实已定→大承气；额上汗出手足濈然汗出而气喘→白虎。
+  seq:
+  - 1291
+  - 1313
+  q: 手脚汗出很多的时候，实症里面确定是阳明燥实造成的，手脚汗多，这个时候就开大承气汤
+  ents:
+  - formula.da_cheng_qi_tang
+  - formula.bai_hu_tang
+  conf: 0.9
+- type: formula_indication
+  s: 栀子豉汤清胃/上焦虚热，多用于病后懊憹、失眠调理；口干舌燥大渴→白虎加人参。
+  seq:
+  - 1340
+  - 1347
+  q: 栀子汤个药呢专门去胃里面的虚热啊，上焦的虚热
+  ents:
+  - formula.zhi_zi_shi_tang
+  - formula.bai_hu_jia_ren_shen_tang
+  conf: 0.9
+- type: formula_composition
+  s: 猪苓汤：猪苓泽泻茯苓阿胶滑石等量。五苓去桂术加阿胶滑石即成；主小便痛、结石、血淋。滑石攻坚，阿胶止血。
+  seq:
+  - 1352
+  - 1366
+  q: 把桂枝、白术拿掉，阿胶跟滑石就变成猪苓汤
+  ents:
+  - formula.zhu_ling_tang
+  - formula.wu_ling_san
+  conf: 0.95
+- type: clause_interpretation
+  s: 第225条：脉浮而迟、表热里寒、下利清谷，四逆汤。胃中虚冷不能食、饮水则哕，亦属里寒。
+  seq:
+  - 1438
+  - 1440
+  q: 表热里寒，下令清毒者，四逆汤
+  ents:
+  - clause.shl.225
+  - formula.si_ni_tang
+  conf: 0.85
+  asr: 清毒=清谷

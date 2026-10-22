@@ -1,0 +1,77 @@
+video_id: shl-004
+window: w12-15
+seg_from: 1504
+seg_to: 2032
+annotator: llm_read
+chapters:
+- key: c11
+  title: 过经乃可下；纯阳明方可攻
+  start_seq: 1571
+  summary: 第235/212意：汗出为风，谵语为胃中燥屎，大承气须过经乃可下——先尽太阳少阳，纯阳明证全具再攻，勿急。胸胁满则非纯阳明，宜小柴胡。
+  clauses:
+  - 212
+  - 235
+  topics:
+  - formula.da_cheng_qi_tang
+  - formula.xiao_chai_hu_tang
+- key: c12
+  title: 阳明不治与呃逆：茯苓四逆加减
+  start_seq: 1675
+  summary: 诸药不效之危证，仲景示不治。呃逆无气可用茯苓四逆加减；有元气打嗝勿妄断死证。
+  clauses: []
+  topics:
+  - formula.fu_ling_si_ni_tang
+entities:
+- id: clause.shl.212
+  seq: 1572
+  surface: 二三五条
+  corrected: 伤寒论第212条附近
+  note: 过经乃可下；讲义号混
+- id: formula.da_cheng_qi_tang
+  seq: 1572
+  surface: 大承气汤
+  corrected: 大承气汤
+- id: formula.xiao_chai_hu_tang
+  seq: 1492
+  surface: 小柴胡汤
+  corrected: 小柴胡汤
+- id: formula.fu_ling_si_ni_tang
+  seq: 1957
+  surface: 茯苓四逆汤
+  corrected: 茯苓四逆汤
+- id: six_channel.yangming
+  seq: 1578
+  surface: 阳明证
+  corrected: 阳明
+kps:
+- type: treatment_principle
+  s: 大承气必过经乃可下：太阳少阳表证先解，纯阳明证具备后再攻，勿过急。
+  seq:
+  - 1572
+  - 1578
+  q: 我们出现大承气汤一定要过经乃可下什么叫过筋
+  ents:
+  - formula.da_cheng_qi_tang
+  - six_channel.yangming
+  conf: 0.9
+  asr: 过筋=过经
+- type: diagnostic_rule
+  s: 阳明发潮热而大便溏、渴、胸胁满不虚→小柴胡，非承气；承气须百分之百纯阳明。
+  seq:
+  - 1492
+  - 1493
+  q: 胸险满而不虚者，这是小柴胡汤
+  ents:
+  - formula.xiao_chai_hu_tang
+  - formula.da_cheng_qi_tang
+  conf: 0.85
+  asr: 胸险=胸胁
+- type: clinical_tip
+  s: 呃逆无气、元气将脱，可用茯苓四逆汤加减；勿与可治之打嗝混。
+  seq:
+  - 1957
+  - 1958
+  q: 这时候用茯苓四逆汤的加减
+  ents:
+  - formula.fu_ling_si_ni_tang
+  conf: 0.8

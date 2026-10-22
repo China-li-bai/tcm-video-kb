@@ -1,0 +1,174 @@
+video_id: shl-004
+window: w04-07
+seg_from: 490
+seg_to: 1015
+annotator: llm_read
+chapters:
+- key: c05
+  title: 第199–207条 潮热、不可攻与调胃承气
+  start_seq: 499
+  summary: 阳明脉浮紧必潮热；口燥但欲漱水不欲咽者必衄。有表证兼便秘须先解表再攻，防下陷成结胸。不吐不下心烦者调胃承气汤：酒洗大黄+炙甘草+芒硝，炙甘草缓大黄芒硝使停于十二指肠段。
+  clauses:
+  - 199
+  - 201
+  - 207
+  topics:
+  - formula.diao_wei_cheng_qi_tang
+  - herb.xiao_shi
+  - herb.da_huang
+- key: c06
+  title: 三承气与大黄诸方定位
+  start_seq: 660
+  summary: 大黄甘草汤治食已即吐（实证）；小承气解小肠燥实主排气；大承气攻大肠燥屎。脾约用麻子仁丸。芒硝攻坚积聚肿瘤亦可；芒硝后下勿久煮。
+  clauses:
+  - 208
+  - 209
+  topics:
+  - formula.xiao_cheng_qi_tang
+  - formula.da_cheng_qi_tang
+  - formula.ma_zi_ren_wan
+  - formula.da_huang_gan_cao_tang
+- key: c07
+  title: 经热白虎 vs 腑实承气
+  start_seq: 997
+  summary: 阳明潮热日晡：经热用白虎（石膏），腑实腐热用承气（大黄芒硝）。确定大承气证则唯一处方，勿犹豫。
+  clauses:
+  - 212
+  - 219
+  topics:
+  - formula.bai_hu_tang
+  - formula.da_cheng_qi_tang
+entities:
+- id: clause.shl.201
+  seq: 509
+  surface: 二百一十七页呢脉阳明病脉浮紧者必潮热
+  corrected: 伤寒论第201条
+  note: 讲义217→宋本201
+- id: clause.shl.207
+  seq: 598
+  surface: 二百二十三阳明病呢不吐不下，心烦者可以调胃承气汤
+  corrected: 伤寒论第207条
+  note: 讲义223→宋本207
+- id: formula.diao_wei_cheng_qi_tang
+  seq: 598
+  surface: 调胃承气汤
+  corrected: 调胃承气汤
+- id: herb.da_huang
+  seq: 614
+  surface: 大黄
+  corrected: 大黄
+- id: herb.xiao_shi
+  seq: 614
+  surface: 囊硝
+  corrected: 芒硝
+- id: formula.da_huang_gan_cao_tang
+  seq: 660
+  surface: 大黄甘草汤
+  corrected: 大黄甘草汤
+- id: formula.xiao_cheng_qi_tang
+  seq: 700
+  surface: 小承气汤
+  corrected: 小承气汤
+- id: formula.da_cheng_qi_tang
+  seq: 718
+  surface: 大承气汤
+  corrected: 大承气汤
+- id: formula.ma_zi_ren_wan
+  seq: 841
+  surface: 麻子仁完
+  corrected: 麻子仁丸
+- id: syndrome.pi_yue
+  seq: 848
+  surface: 皮约
+  corrected: 脾约
+- id: formula.bai_hu_tang
+  seq: 1009
+  surface: 白虎汤
+  corrected: 白虎汤
+- id: herb.shi_gao
+  seq: 1010
+  surface: 石膏
+  corrected: 石膏
+kps:
+- type: diagnostic_rule
+  s: 阳明脉浮紧者必潮热，发于日晡黄昏；但浮者必盗汗。潮热如潮水阵阵。
+  seq:
+  - 509
+  - 515
+  q: 脉浮紧者必潮热好发作，有时但浮者必知汗出
+  ents:
+  - clause.shl.201
+  - six_channel.yangming
+  conf: 0.9
+- type: contraindication
+  s: 虽有阳明便秘，表证未解须先解表再攻；否则表邪下陷可成结胸。
+  seq:
+  - 553
+  - 554
+  q: 虽然人有阳明病好，就是有便秘要去攻他大便，要把表症先去掉
+  ents:
+  - six_channel.yangming
+  - formula.da_cheng_qi_tang
+  conf: 0.9
+- type: clause_interpretation
+  s: 第207条：阳明病不吐不下心烦，调胃承气汤。病机在十二指肠段梗结。
+  seq:
+  - 598
+  - 610
+  q: 不吐不下，心烦者可以调胃承气汤
+  ents:
+  - clause.shl.207
+  - formula.diao_wei_cheng_qi_tang
+  conf: 0.95
+- type: formula_composition
+  s: 调胃承气：酒洗大黄、炙甘草、芒硝。炙甘草缓大黄芒硝速度，使药力停于中焦十二指肠段；芒硝后下冲化，勿久煮。
+  seq:
+  - 611
+  - 619
+  q: 那个用炙甘草，然后用大黄，还有囊硝
+  ents:
+  - formula.diao_wei_cheng_qi_tang
+  - herb.da_huang
+  - herb.xiao_shi
+  conf: 0.95
+  asr: 囊硝=芒硝
+- type: formula_indication
+  s: 小承气：燥实堵在小肠，主症排气多；大承气：燥屎在大肠，气亦难通，粪如长鞭不断。
+  seq:
+  - 700
+  - 740
+  q: 小承气汤呢是解阳明的燥实，大便是堵在小肠里面
+  ents:
+  - formula.xiao_cheng_qi_tang
+  - formula.da_cheng_qi_tang
+  conf: 0.9
+- type: formula_indication
+  s: 大黄甘草汤：食已即吐之实证（宿食）；虚证朝食暮吐另属吴茱萸等。
+  seq:
+  - 673
+  - 678
+  q: 去上班回到家里面，晚上咦烧饼油条吐出来
+  ents:
+  - formula.da_huang_gan_cao_tang
+  conf: 0.85
+- type: herb_property
+  s: 芒硝不唯软坚燥屎，亦可攻坚积聚、肿瘤、脓疡、积水；宜后下，久煮则仅如盐无攻下力。
+  seq:
+  - 915
+  - 923
+  q: 盲硝不单单是攻坚硬的大便，盲硝攻肿块积聚
+  ents:
+  - herb.xiao_shi
+  conf: 0.9
+  asr: 盲硝=芒硝
+- type: diagnostic_rule
+  s: 阳明经热→白虎（石膏）；腑实腐热→承气（大黄芒硝）。潮热壮热属白虎线索；小便浓黄、矢气多为承气。
+  seq:
+  - 1005
+  - 1010
+  q: 所以阳明呢我们讲的就是白虎和陈气啊
+  ents:
+  - formula.bai_hu_tang
+  - formula.da_cheng_qi_tang
+  conf: 0.9
+  asr: 陈气=承气

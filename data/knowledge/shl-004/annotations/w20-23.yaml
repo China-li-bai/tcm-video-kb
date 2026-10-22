@@ -1,0 +1,190 @@
+video_id: shl-004
+window: w20-23
+seg_from: 2560
+seg_to: 2996
+annotator: llm_read
+chapters:
+- key: c16
+  title: 麻子仁丸：脾约润下
+  start_seq: 2556
+  summary: 麻子仁丸=小承气加麻仁芍药杏仁，润肠缓下，宜老人气血虚便秘。可芒硝水送服攻坚。比例麻仁重。
+  clauses:
+  - 247
+  topics:
+  - formula.ma_zi_ren_wan
+  - syndrome.pi_yue
+- key: c17
+  title: 调胃/小承气时机与大承气急下
+  start_seq: 2628
+  summary: 太阳三日不解蒸蒸发热属胃，调胃承气。吐下汗后小便少大便硬，小承气；五六日不大便则大承气。急下存阴：汗多津伤快，十天不大便小便黄径用大承气。
+  clauses:
+  - 248
+  - 250
+  - 252
+  - 253
+  topics:
+  - formula.diao_wei_cheng_qi_tang
+  - formula.xiao_cheng_qi_tang
+  - formula.da_cheng_qi_tang
+- key: c18
+  title: 发黄三方：栀子柏皮、茵陈蒿、麻黄连轺赤小豆
+  start_seq: 2801
+  summary: 伤寒发黄：有表无汗用麻黄连轺赤小豆；有汗湿热在里用茵陈蒿；无表无里实仅瘀热用栀子柏皮汤（眼科洗剂亦可）。麻黄等量杏仁，可发阳、消水肿、治疮。
+  clauses:
+  - 261
+  - 262
+  topics:
+  - formula.zhi_zi_bo_pi_tang
+  - formula.yin_chen_hao_tang
+  - formula.ma_huang_lian_yao_chi_xiao_dou_tang
+  - herb.ma_huang
+entities:
+- id: formula.ma_zi_ren_wan
+  seq: 2556
+  surface: 麻子人玩
+  corrected: 麻子仁丸
+- id: herb.ma_zi_ren
+  seq: 2556
+  surface: 麻子人
+  corrected: 麻子仁
+- id: formula.xiao_cheng_qi_tang
+  seq: 2610
+  surface: 小承气汤
+  corrected: 小承气汤
+- id: clause.shl.248
+  seq: 2628
+  surface: 调胃承气汤
+  corrected: 伤寒论第248条
+- id: formula.diao_wei_cheng_qi_tang
+  seq: 2628
+  surface: 调胃承气汤
+  corrected: 调胃承气汤
+- id: clause.shl.250
+  seq: 2642
+  surface: 二百六十五条
+  corrected: 伤寒论第250条
+  note: 讲义265→宋本250
+- id: formula.da_cheng_qi_tang
+  seq: 2664
+  surface: 大承气汤
+  corrected: 大承气汤
+- id: clause.shl.252
+  seq: 2705
+  surface: 极下之
+  corrected: 伤寒论第252条
+  note: 急下
+- id: formula.zhi_zi_bo_pi_tang
+  seq: 2861
+  surface: 栀子薄汤
+  corrected: 栀子柏皮汤
+- id: herb.zhi_zi
+  seq: 2862
+  surface: 栀子
+  corrected: 栀子
+- id: herb.huang_bai
+  seq: 2862
+  surface: 黄渤
+  corrected: 黄柏
+- id: formula.ma_huang_lian_yao_chi_xiao_dou_tang
+  seq: 2888
+  surface: 麻黄连翘好，赤小豆
+  corrected: 麻黄连轺赤小豆汤
+- id: formula.yin_chen_hao_tang
+  seq: 2889
+  surface: 印衬膏
+  corrected: 茵陈蒿汤
+- id: clause.shl.262
+  seq: 2918
+  surface: 麻黄、连翘赤小豆汤
+  corrected: 伤寒论第262条
+- id: herb.ma_huang
+  seq: 2924
+  surface: 麻黄
+  corrected: 麻黄
+- id: new.formula.麻杏薏甘汤
+  seq: 2977
+  surface: 麻杏薏甘汤
+  corrected: 麻杏薏甘汤
+kps:
+- type: formula_composition
+  s: 麻子仁丸：小承气（大黄厚朴枳实）加麻仁、芍药、杏仁润肠；老人气血虚便秘首选，缓下不伤正。
+  seq:
+  - 2559
+  - 2610
+  q: 小承气汤，再加上麻仁，芍药跟杏仁都是滋润的药
+  ents:
+  - formula.ma_zi_ren_wan
+  - formula.xiao_cheng_qi_tang
+  conf: 0.95
+- type: clinical_tip
+  s: 燥屎坚者可用少量芒硝水送麻子仁丸，润下中兼软坚。
+  seq:
+  - 2624
+  - 2624
+  q: 半钱的芒硝放到那个碗里面，用水冲下去，化掉以后用这个水来推麻子仁丸
+  ents:
+  - formula.ma_zi_ren_wan
+  - herb.xiao_shi
+  conf: 0.85
+- type: clause_interpretation
+  s: 第248条：太阳病三日发汗不解蒸蒸发热属胃，调胃承气汤。
+  seq:
+  - 2628
+  - 2631
+  q: 三日发汗不解，真蒸发热者属胃炎，调胃承气汤
+  ents:
+  - clause.shl.248
+  - formula.diao_wei_cheng_qi_tang
+  conf: 0.9
+  asr: 真蒸=蒸蒸；胃炎=胃
+- type: diagnostic_rule
+  s: 吐下汗后小便少大便硬→小承气；五六日仍不大便→大承气。纯燥实无兼证用大承气；兼湿痰用利小便配合。
+  seq:
+  - 2642
+  - 2674
+  q: 要用大承气汤哦
+  ents:
+  - formula.xiao_cheng_qi_tang
+  - formula.da_cheng_qi_tang
+  conf: 0.85
+- type: treatment_principle
+  s: 大承气急下存阴：汗多则津伤快；十天不大便小便黄，不必再辨调胃/小承，径用大承气。
+  seq:
+  - 2705
+  - 2721
+  q: 十天不大便小变黄已经讲完了，你管他什么怎么调胃承气汤大小神器都不要去考虑大承气汤
+  ents:
+  - formula.da_cheng_qi_tang
+  conf: 0.9
+- type: formula_indication
+  s: 发黄三方：无汗有表→麻黄连轺赤小豆；有汗湿热在里→茵陈蒿；无表无里实仅瘀热→栀子柏皮。
+  seq:
+  - 2888
+  - 2889
+  q: 病人没有汗，完全不流汗，有表症的时候是麻黄连翘好，赤小豆
+  ents:
+  - formula.ma_huang_lian_yao_chi_xiao_dou_tang
+  - formula.yin_chen_hao_tang
+  - formula.zhi_zi_bo_pi_tang
+  conf: 0.95
+- type: formula_composition
+  s: 栀子柏皮汤：栀子、炙甘草、黄柏；栀子清上焦热，黄柏清下焦热。可作眼科洗剂。
+  seq:
+  - 2861
+  - 2864
+  q: 栀子薄汤汤呢它的处方哦，栀子好，中间是一个哦炙甘草，好再来是黄渤
+  ents:
+  - formula.zhi_zi_bo_pi_tang
+  - herb.zhi_zi
+  - herb.huang_bai
+  conf: 0.9
+  asr: 薄=柏；黄渤=黄柏
+- type: herb_property
+  s: 麻黄不唯发汗：能发阳、消水肿、治疮陷；剂量与杏仁等量则安。少阴阳明篇仍可用麻黄。
+  seq:
+  - 2924
+  - 2945
+  q: 麻黄的剂量跟那个杏仁的量是相等的啊，就不会有问题
+  ents:
+  - herb.ma_huang
+  conf: 0.9

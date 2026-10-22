@@ -1,0 +1,185 @@
+video_id: shl-004
+window: w00-03
+seg_from: 0
+seg_to: 489
+annotator: llm_read
+chapters:
+- key: c01
+  title: 阳明篇开篇：肠胃防线与胃气
+  start_seq: 1
+  summary: 太阳篇以炙甘草汤收束，转入阳明专论肠胃。太阳战败或发汗太过可成阳明；阳明为第二道防线，病至此无所复传。胃气宜护：常食七八分饱。建议参阅《灵枢》肠胃、平人绝谷等篇。
+  clauses: []
+  topics:
+  - six_channel.yangming
+  - zangfu.wei
+- key: c02
+  title: 第179–180条 太阳/正阳/少阳阳明与胃家实
+  start_seq: 81
+  summary: 太阳阳明者，发汗利小便已，胃中燥烦实大便难，脾约；正阳阳明者，胃家实；少阳阳明者，发汗利小便，胃中燥烦实大便难。阳明之为病，胃家实是也——胃家含胃、十二指肠、小肠、大肠。
+  clauses:
+  - 179
+  - 180
+  topics:
+  - six_channel.yangming
+  - syndrome.pi_yue
+  - clause.shl.180
+- key: c03
+  title: 第181–187条 转属阳明：津伤与外证
+  start_seq: 146
+  summary: 问何以转属阳明：汗多/小便多→胃中干燥。外证身热汗自出不恶寒反恶热，为纯热。得之一日不发热而恶寒者，尚有表；阳明居中土万物所归无所复传，虽恶寒二日自止。
+  clauses:
+  - 181
+  - 182
+  - 183
+  - 184
+  - 187
+  topics:
+  - six_channel.yangming
+- key: c04
+  title: 第189–191条 攻下须确正阳明；能食中风不能食中寒
+  start_seq: 283
+  summary: 阳明中风口苦咽干腹满微喘发热恶寒脉浮紧，若下之则胃中空虚客气动膈——有表勿下。阳明病若能食为中风，不能食为中寒；攻下必待确认正阳明燥实。
+  clauses:
+  - 189
+  - 190
+  - 191
+  topics:
+  - six_channel.yangming
+  - formula.da_cheng_qi_tang
+entities:
+- id: six_channel.yangming
+  seq: 1
+  surface: 阳明篇
+  corrected: 阳明
+- id: formula.zhi_gan_cao_tang
+  seq: 3
+  surface: 炙甘草汤
+  corrected: 炙甘草汤
+- id: clause.shl.179
+  seq: 81
+  surface: 一百九十四条
+  corrected: 伤寒论第179条
+  note: 讲义194→宋本179，offset≈+15
+- id: syndrome.pi_yue
+  seq: 83
+  surface: 脾约
+  corrected: 脾约
+- id: clause.shl.180
+  seq: 110
+  surface: 一百九十五阳明之为病
+  corrected: 伤寒论第180条
+- id: zangfu.wei
+  seq: 107
+  surface: 胃
+  corrected: 胃
+- id: clause.shl.183
+  seq: 168
+  surface: 一百九十八
+  corrected: 伤寒论第183条
+  note: 讲义198→宋本183
+- id: clause.shl.184
+  seq: 178
+  surface: 一百九十九条
+  corrected: 伤寒论第184条
+- id: clause.shl.189
+  seq: 283
+  surface: 二百零四条
+  corrected: 伤寒论第189条
+  note: 讲义204→宋本189
+- id: clause.shl.190
+  seq: 287
+  surface: 二百零五
+  corrected: 伤寒论第190条
+- id: clause.shl.191
+  seq: 309
+  surface: 若能食名为中风，不能食名为中寒
+  corrected: 伤寒论第191条
+kps:
+- type: concept_definition
+  s: 阳明病专论肠胃；太阳战败或发汗太过可传入，阳明为第二道防线，病至此无所复传。
+  seq:
+  - 32
+  - 43
+  q: 所以说当你阳太没没好的的候进入阳明症，阳阳病不会传经就到此为止
+  ents:
+  - six_channel.yangming
+  conf: 0.85
+  asr: 阳太=太阳；阳阳=阳明
+- type: clinical_tip
+  s: 护胃气：平常吃七八分饱，病时五分饱，勿十分饱，使胃气自能运化。
+  seq:
+  - 62
+  - 62
+  q: 平常吃七八分饱，不要吃十分饱
+  ents:
+  - zangfu.wei
+  conf: 0.9
+- type: clause_interpretation
+  s: 第179条三阳明：太阳阳明多因发汗利小便成脾约；正阳阳明胃家实；少阳阳明发汗利小便胃中燥大便难。
+  seq:
+  - 81
+  - 91
+  q: 这个太阳阳明者发汗皮曰是
+  ents:
+  - clause.shl.179
+  - syndrome.pi_yue
+  conf: 0.8
+  asr: 皮曰=脾约
+- type: clause_interpretation
+  s: 第180条：阳明之为病，胃家实是也。胃家含胃、十二指肠、小肠、大肠。
+  seq:
+  - 107
+  - 110
+  q: 就是胃中有讲的胃不单单是胃，阳明呢包含的胃、十二指肠、小肠、大肠都在内
+  ents:
+  - clause.shl.180
+  - six_channel.yangming
+  conf: 0.95
+- type: pathomechanism
+  s: 转属阳明多因津液受伤：发汗过多或小便过多，胃中干燥而成燥实。
+  seq:
+  - 150
+  - 156
+  q: 你发汗了以后，津液发了散太多，汗流太多，小便多多成胃中干燥
+  ents:
+  - six_channel.yangming
+  conf: 0.9
+- type: concept_definition
+  s: 阳明居中土，万物所归，无所复传；虽初恶寒，二日自止。病到阳明即停。
+  seq:
+  - 180
+  - 184
+  q: 杨明呢是居中图，也万物所归，无所复传
+  ents:
+  - clause.shl.184
+  - six_channel.yangming
+  conf: 0.9
+  asr: 杨明=阳明；中图=中土
+- type: diagnostic_rule
+  s: 阳明病若能食为中风（胃热在），不能食为中寒（胃冷）；攻下必确认为正阳明燥实。
+  seq:
+  - 309
+  - 310
+  q: 阳明病，若能食名为中风，不能食名为中寒
+  ents:
+  - clause.shl.191
+  conf: 0.95
+- type: contraindication
+  s: 虽见腹满咽干似阳明，若兼表寒或未纯里实，不可攻下；先解表，再攻里。
+  seq:
+  - 289
+  - 308
+  q: 你一定要看清楚，它是纯阳明
+  ents:
+  - six_channel.yangming
+  - formula.da_cheng_qi_tang
+  conf: 0.9
+- type: clinical_tip
+  s: 阳明潮热多在申酉（黄昏）时段；散步一阵热上即提示阳明热，当问大便。
+  seq:
+  - 381
+  - 387
+  q: 就是每次黄昏的时候哈，在夕阳西下的时候
+  ents:
+  - six_channel.yangming
+  conf: 0.85
