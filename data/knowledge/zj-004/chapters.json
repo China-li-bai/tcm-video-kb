@@ -1,0 +1,91 @@
+[
+ {
+  "chapter_id": "zj-004.c01",
+  "video_id": "zj-004",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "留针、出针与晕针",
+  "summary": "留针一般20–30分钟，中风可更久。十四岁以下多单刺不留针。出针宜垂直缓慢，近皮停数秒可免出血。宜卧位施针；站坐易晕针。晕针则卧平、松衣、通风，可针人中，勿过度惊吓处理。",
+  "start_s": 0.41,
+  "end_s": 439.32,
+  "seg_from": 0,
+  "seg_to": 78,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "method.zhen_jiu",
+   "acupoint.gv26",
+   "method.bu_xie"
+  ],
+  "citation": {
+   "youtube_id": "fShKSE-oYZ4",
+   "url": "https://www.youtube.com/watch?v=fShKSE-oYZ4&t=0s",
+   "series": "zj",
+   "episode": 4,
+   "title": "Ni Hai-hsia \"Human Records\" \"Acupuncture\" Complete 90 Episodes - Acupuncture 04",
+   "start_s": 0.41,
+   "end_s": 439.32
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-004.c02",
+  "video_id": "zj-004",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "针具规格与透刺",
+  "summary": "常用32号一寸半毫针；手足浅部用一寸；硬结/肿胀可用28号。三寸针用于透穴，腕踝痛头痛可立竿见影。介绍九针、火针、放血针；防断针须留针柄于外。",
+  "start_s": 440.74,
+  "end_s": 917.285,
+  "seg_from": 79,
+  "seg_to": 166,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "method.zhen_jiu",
+   "new.book.针灸大成"
+  ],
+  "citation": {
+   "youtube_id": "fShKSE-oYZ4",
+   "url": "https://www.youtube.com/watch?v=fShKSE-oYZ4&t=440s",
+   "series": "zj",
+   "episode": 4,
+   "title": "Ni Hai-hsia \"Human Records\" \"Acupuncture\" Complete 90 Episodes - Acupuncture 04",
+   "start_s": 440.74,
+   "end_s": 917.28
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-004.c03",
+  "video_id": "zj-004",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "干支五行与脏腑阴阳",
+  "summary": "天干配脏腑（甲胆乙肝…）取五行属性：木火土金水，脏阴腑阳。肺为水箱散热、心为引擎之喻，说明肺降热防上逆。为后文经络五行穴性铺垫。",
+  "start_s": 973.18,
+  "end_s": 1879.534,
+  "seg_from": 167,
+  "seg_to": 333,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "concept.wu_xing",
+   "concept.yin_yang",
+   "zangfu.fei"
+  ],
+  "citation": {
+   "youtube_id": "fShKSE-oYZ4",
+   "url": "https://www.youtube.com/watch?v=fShKSE-oYZ4&t=973s",
+   "series": "zj",
+   "episode": 4,
+   "title": "Ni Hai-hsia \"Human Records\" \"Acupuncture\" Complete 90 Episodes - Acupuncture 04",
+   "start_s": 973.18,
+   "end_s": 1879.53
+  },
+  "review_status": "llm_read"
+ }
+]

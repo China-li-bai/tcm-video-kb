@@ -9,9 +9,10 @@
   "shl-007",
   "shl-008",
   "zj-002",
-  "zj-003"
+  "zj-003",
+  "zj-004"
  ],
- "n_entities": 773,
- "n_knowledge_points": 608,
- "n_chapters": 230
+ "n_entities": 777,
+ "n_knowledge_points": 615,
+ "n_chapters": 233
 }

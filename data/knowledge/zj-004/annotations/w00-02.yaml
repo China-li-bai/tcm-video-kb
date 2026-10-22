@@ -1,0 +1,147 @@
+video_id: zj-004
+window: w00-02
+seg_from: 0
+seg_to: 333
+annotator: llm_read
+chapters:
+- key: c01
+  title: 留针、出针与晕针
+  start_seq: 19
+  summary: 留针一般20–30分钟，中风可更久。十四岁以下多单刺不留针。出针宜垂直缓慢，近皮停数秒可免出血。宜卧位施针；站坐易晕针。晕针则卧平、松衣、通风，可针人中，勿过度惊吓处理。
+  clauses: []
+  topics:
+  - method.zhen_jiu
+  - acupoint.gv26
+  - method.bu_xie
+- key: c02
+  title: 针具规格与透刺
+  start_seq: 79
+  summary: 常用32号一寸半毫针；手足浅部用一寸；硬结/肿胀可用28号。三寸针用于透穴，腕踝痛头痛可立竿见影。介绍九针、火针、放血针；防断针须留针柄于外。
+  clauses: []
+  topics:
+  - method.zhen_jiu
+  - new.book.针灸大成
+- key: c03
+  title: 干支五行与脏腑阴阳
+  start_seq: 167
+  summary: 天干配脏腑（甲胆乙肝…）取五行属性：木火土金水，脏阴腑阳。肺为水箱散热、心为引擎之喻，说明肺降热防上逆。为后文经络五行穴性铺垫。
+  clauses: []
+  topics:
+  - concept.wu_xing
+  - concept.yin_yang
+  - zangfu.fei
+entities:
+- id: method.bu_xie
+  seq: 20
+  surface: 补泻
+  corrected: 补泻
+- id: method.zhen_jiu
+  seq: 48
+  surface: 针灸
+  corrected: 针灸
+- id: acupoint.gv26
+  seq: 66
+  surface: 人中
+  corrected: 水沟
+- id: new.concept.晕针
+  seq: 48
+  surface: 晕针
+  corrected: 晕针
+- id: new.method.单刺
+  seq: 39
+  surface: 单刺
+  corrected: 单刺
+- id: new.method.透穴
+  seq: 97
+  surface: 透穴
+  corrected: 透穴
+- id: new.book.针灸大成
+  seq: 118
+  surface: 针灸大成
+  corrected: 针灸大成
+- id: concept.wu_xing
+  seq: 182
+  surface: 五行
+  corrected: 五行
+- id: concept.yin_yang
+  seq: 192
+  surface: 阴阳
+  corrected: 阴阳
+- id: zangfu.fei
+  seq: 274
+  surface: 肺
+  corrected: 肺
+- id: zangfu.xin
+  seq: 280
+  surface: 心脏
+  corrected: 心
+kps:
+- type: clinical_tip
+  s: 留针通常20–30分钟；中风可留40–60分钟甚至更久。
+  seq:
+  - 19
+  - 21
+  q: 这上面要留二十分钟
+  ents:
+  - method.zhen_jiu
+  conf: 0.9
+- type: contraindication
+  s: 十四岁以下儿童宜单刺（针入即出），不留针。
+  seq:
+  - 42
+  - 44
+  q: 十四岁十四岁以下全部采单词不留针
+  ents:
+  - new.method.单刺
+  conf: 0.9
+  asr: 单词=单刺
+- type: clinical_tip
+  s: 出针垂直缓慢，近皮毛孔停三四秒，可减少出血。
+  seq:
+  - 26
+  - 27
+  q: 除了皮肤毛孔的啃的时候停一下
+  ents:
+  - method.zhen_jiu
+  conf: 0.85
+  asr: 啃≈处
+- type: contraindication
+  s: 尽量卧位施针；站立、久坐易晕针。晕针则平卧松衣通风，可刺人中，勿过度折腾。
+  seq:
+  - 48
+  - 68
+  q: 我们就针灸呢下身以后常常会有一种现象，我们称为晕针
+  ents:
+  - new.concept.晕针
+  - acupoint.gv26
+  conf: 0.9
+- type: clinical_tip
+  s: 常用32号×1.5寸毫针；手足用1寸；硬结肿胀改28号。三寸针可做透刺。
+  seq:
+  - 91
+  - 97
+  q: 这是我们用的最多的一寸半
+  ents:
+  - method.zhen_jiu
+  - new.method.透穴
+  conf: 0.9
+- type: concept_definition
+  s: 天干配脏腑取五行：甲胆乙肝为木，丙小肠丁心为火等；脏为阴、腑为阳。
+  seq:
+  - 167
+  - 216
+  q: 甲胆乙肝丙小肠，丙小肠丁心无味己脾
+  ents:
+  - concept.wu_xing
+  - concept.yin_yang
+  conf: 0.85
+- type: pathomechanism
+  s: 肺如水箱、心如引擎：肺主肃降散热，使心火不上逆；非仅司呼吸氧气。
+  seq:
+  - 274
+  - 284
+  q: 这个肺就是水箱
+  ents:
+  - zangfu.fei
+  - zangfu.xin
+  conf: 0.85
