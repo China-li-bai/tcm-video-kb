@@ -1,0 +1,63 @@
+[
+ {
+  "chapter_id": "zj-016.c01",
+  "video_id": "zj-016",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "鱼际少商与扁桃放血",
+  "summary": "久咳属虚可针太渊。鱼际为荥穴属火。少商为肺经井穴，常点刺放血，属十三鬼穴之一，治小儿扁桃体炎效著；放血后可配列缺利咽。时证按甲乙经可针太渊（腧穴）。",
+  "start_s": 0.07,
+  "end_s": 570.69,
+  "seg_from": 0,
+  "seg_to": 98,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.lu9",
+   "acupoint.lu10",
+   "acupoint.lu11"
+  ],
+  "citation": {
+   "youtube_id": "Bm4C22zxyD4",
+   "url": "https://www.youtube.com/watch?v=Bm4C22zxyD4&t=0s",
+   "series": "zj",
+   "episode": 16,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 16",
+   "start_s": 0.07,
+   "end_s": 570.69
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-016.c02",
+  "video_id": "zj-016",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "大肠经开篇与商阳二间合谷",
+  "summary": "大肠者传导之官；辰时（5–7时）流注。肺与大肠表里。腹属阳，揉腹宜顺时针。商阳为大肠井穴，二间为荥（水），合谷为原穴虚实皆可治；病在大肠经时可取肺经络穴列缺。",
+  "start_s": 570.69,
+  "end_s": 1795.442,
+  "seg_from": 99,
+  "seg_to": 325,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "meridian.li",
+   "zangfu.da_chang",
+   "acupoint.li4",
+   "concept.biao_li"
+  ],
+  "citation": {
+   "youtube_id": "Bm4C22zxyD4",
+   "url": "https://www.youtube.com/watch?v=Bm4C22zxyD4&t=570s",
+   "series": "zj",
+   "episode": 16,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 16",
+   "start_s": 570.69,
+   "end_s": 1795.44
+  },
+  "review_status": "llm_read"
+ }
+]
