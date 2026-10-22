@@ -31,8 +31,11 @@ if [[ "${FORCE_REFETCH:-0}" != "1" && -f "$MEDIA/_purged_ids.txt" ]] && grep -qx
   exit 0
 fi
 
-YT=(--js-runtimes deno -f 'bestaudio[ext=m4a]/bestaudio' --no-playlist
-    --retries 10 --fragment-retries 15 --continue)
+# Prefer android progressive formats when SABR/bot checks strip pure-audio URLs.
+YT=(--js-runtimes deno
+    --extractor-args 'youtube:player_client=android,web'
+    -f 'bestaudio[ext=m4a]/bestaudio/18/best[height<=360]'
+    --no-playlist --retries 10 --fragment-retries 15 --continue)
 
 finalize() {
   local src="$1"
