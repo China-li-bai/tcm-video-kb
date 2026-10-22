@@ -1,0 +1,125 @@
+video_id: zj-030
+window: w00-02
+seg_from: 0
+seg_to: 339
+annotator: llm_read
+chapters:
+- key: c01
+  title: 极泉青灵少海
+  start_seq: 0
+  summary: 手少阴心经起于极泉，平常少针少灸。青灵在肘上三寸，少用。少海为合穴属水；井穴少冲属木为母，虚证常补合穴少海，井穴不宜强行捻转补泻。
+  clauses: []
+  topics:
+  - meridian.ht
+  - acupoint.ht1
+  - acupoint.ht3
+- key: c02
+  title: 灵道通里阴郄神门少府少冲
+  start_seq: 129
+  summary: 灵道为经穴。神门为输/子穴，治心烦易怒、神志不宁、见鬼妄笑等心实；针向掌少府方向顺经。少府为荥，亦名手解，心脏病急救要穴。少冲为井，补泻多改在少海。
+  clauses: []
+  topics:
+  - acupoint.ht7
+  - acupoint.ht8
+  - acupoint.ht9
+entities:
+- id: meridian.ht
+  seq: 9
+  surface: 心经
+  corrected: 手少阴心经
+- id: acupoint.ht1
+  seq: 38
+  surface: 集权
+  corrected: 极泉
+- id: acupoint.ht2
+  seq: 56
+  surface: 清陵
+  corrected: 青灵
+- id: acupoint.ht3
+  seq: 81
+  surface: 少海
+  corrected: 少海
+- id: acupoint.ht9
+  seq: 81
+  surface: 绍冲
+  corrected: 少冲
+- id: acupoint.ht4
+  seq: 162
+  surface: 灵道
+  corrected: 灵道
+- id: acupoint.ht5
+  seq: 203
+  surface: 通里
+  corrected: 通里
+- id: acupoint.ht6
+  seq: 203
+  surface: 阴吸
+  corrected: 阴郄
+- id: acupoint.ht7
+  seq: 198
+  surface: 神门穴
+  corrected: 神门
+- id: acupoint.ht8
+  seq: 174
+  surface: 少府穴
+  corrected: 少府
+- id: zangfu.xin
+  seq: 72
+  surface: 心脏
+  corrected: 心
+- id: method.bu_xie
+  seq: 74
+  surface: 补泻
+  corrected: 补泻
+kps:
+- type: contraindication
+  s: 极泉平常不下针、不灸（腋窝部位不便）。
+  seq:
+  - 47
+  - 47
+  q: 集拳不会下针的，也不会去揪哦
+  ents:
+  - acupoint.ht1
+  conf: 0.9
+  asr: 集拳/极拳=极泉；揪=灸
+- type: concept_definition
+  s: 心经阴经五输为木火土金水；少海为合属水。少冲井属木，木生火故为母穴；虚证补合穴少海，勿在井穴上强做补泻。
+  seq:
+  - 66
+  - 91
+  q: 上海穴就是心经的什么补泻
+  ents:
+  - acupoint.ht3
+  - acupoint.ht9
+  - meridian.ht
+  conf: 0.85
+  asr: 上海=少海；颈穴/紧穴=井穴
+- type: acupoint_usage
+  s: 神门治心烦易怒、心神不守、妄见妄笑等；为子穴，心实证可泻。针尖向掌少府方向顺心经刺入。
+  seq:
+  - 199
+  - 212
+  q: 下神门神门，就是那哦好，让他神定下来
+  ents:
+  - acupoint.ht7
+  - zangfu.xin
+  conf: 0.95
+- type: acupoint_usage
+  s: 少府在握拳小指端所指处（相对劳宫）；为心脏病急救大穴，又名手解。
+  seq:
+  - 174
+  - 255
+  q: 少府穴呢是心脏病的急救大穴
+  ents:
+  - acupoint.ht8
+  - zangfu.xin
+  conf: 0.95
+- type: clinical_tip
+  s: 心气太过或不足皆可致不寐；虚实当辨。
+  seq:
+  - 93
+  - 93
+  q: 心气太过，也不能睡觉，心气不足
+  ents:
+  - zangfu.xin
+  conf: 0.85

@@ -1,0 +1,133 @@
+video_id: zj-031
+window: w00-02
+seg_from: 0
+seg_to: 326
+annotator: llm_read
+chapters:
+- key: c01
+  title: 心与小肠表里及少泽前谷
+  start_seq: 0
+  summary: 心移热于小肠，二者表里。少泽为小肠井穴，常点刺放血。前谷为荥（水），握拳横纹头取之；治乳汁不足，亦可用于未时（13–15时）精神不振，穴较痛。
+  clauses: []
+  topics:
+  - zangfu.xin
+  - zangfu.xiao_chang
+  - acupoint.si1
+  - acupoint.si2
+- key: c02
+  title: 后溪养老
+  start_seq: 126
+  summary: 后溪为输穴，通督脉，亦为小肠母穴，治督脉/脊痛及小肠虚证、肩痛。养老为郄，翻腕显骨缝取穴，浅刺半寸；治目不明、白内障、近视；养老透间使治肘不能拧巾。
+  clauses: []
+  topics:
+  - acupoint.si3
+  - acupoint.si6
+  - meridian.gv
+entities:
+- id: zangfu.xin
+  seq: 21
+  surface: 心脏
+  corrected: 心
+- id: zangfu.xiao_chang
+  seq: 21
+  surface: 小肠
+  corrected: 小肠
+- id: concept.biao_li
+  seq: 21
+  surface: 表里
+  corrected: 表里
+- id: acupoint.si1
+  seq: 98
+  surface: 少则穴
+  corrected: 少泽
+- id: acupoint.si2
+  seq: 108
+  surface: 前谷穴
+  corrected: 前谷
+- id: acupoint.si3
+  seq: 126
+  surface: 后溪
+  corrected: 后溪
+- id: meridian.gv
+  seq: 143
+  surface: 督脉
+  corrected: 督脉
+- id: meridian.si
+  seq: 150
+  surface: 小肠经
+  corrected: 手太阳小肠经
+- id: acupoint.si4
+  seq: 178
+  surface: 顽骨
+  corrected: 腕骨
+- id: acupoint.si5
+  seq: 204
+  surface: 阳谷穴
+  corrected: 阳谷
+- id: acupoint.si6
+  seq: 219
+  surface: 养老
+  corrected: 养老
+- id: new.method.点刺放血
+  seq: 105
+  surface: 放血
+  corrected: 点刺放血
+- id: acupoint.pc5
+  seq: 242
+  surface: 见识
+  corrected: 间使
+kps:
+- type: concept_definition
+  s: 心移热于小肠，心与小肠互为表里。
+  seq:
+  - 21
+  - 21
+  q: 心跟小肠两个字表里经好是表里
+  ents:
+  - zangfu.xin
+  - zangfu.xiao_chang
+  - concept.biao_li
+  conf: 0.95
+- type: acupoint_usage
+  s: 少泽为小肠井穴，平常多点刺放血。
+  seq:
+  - 98
+  - 105
+  q: 少则穴，它是井穴
+  ents:
+  - acupoint.si1
+  - new.method.点刺放血
+  conf: 0.9
+  asr: 少则=少泽；颈穴=井穴
+- type: acupoint_usage
+  s: 前谷在握拳横纹头，为荥属水；治乳汁不足，未时精神差亦可取（较痛）。
+  seq:
+  - 117
+  - 136
+  q: 恒纹头就是我们的前谷穴
+  ents:
+  - acupoint.si2
+  conf: 0.95
+  asr: 恒纹=横纹
+- type: acupoint_usage
+  s: 后溪通督脉，又为小肠输穴/母穴；脊痛配督脉穴，小肠虚证及肩痛常取后溪。
+  seq:
+  - 143
+  - 161
+  q: 后溪穴呢是主督脉，身上的督脉呢是后溪在管
+  ents:
+  - acupoint.si3
+  - meridian.gv
+  - meridian.si
+  conf: 0.95
+- type: acupoint_usage
+  s: 养老须翻腕显骨缝取穴，浅刺约半寸；治目不明、白内障、近视。养老透间使治肘不能拧毛巾。
+  seq:
+  - 224
+  - 242
+  q: 眼科的穴道养老穴很有名
+  ents:
+  - acupoint.si6
+  - acupoint.pc5
+  conf: 0.95
+  asr: 见识/见死=间使

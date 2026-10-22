@@ -1,0 +1,111 @@
+video_id: zj-029
+window: w00-02
+seg_from: 0
+seg_to: 358
+annotator: llm_read
+chapters:
+- key: c01
+  title: 胸旁脾经穴与乳房硬块取经
+  start_seq: 0
+  summary: 天溪等胸旁穴宜旁开约五分刺入肋间隙，勿直对肋骨。乳房硬块须辨所在经络（脾/胃/心包/心/肺）取穴，无单一特效穴。云门—中府属肺线，周荣—胸乡属脾线。初期硬块灸优于针，可教患者自灸按摩。
+  clauses: []
+  topics:
+  - acupoint.sp18
+  - meridian.sp
+  - acupoint.sp20
+- key: c02
+  title: 大包为大络
+  start_seq: 82
+  summary: 大包在腋下约六寸（极泉下六寸），为脾之大络，统诸阴经阳经络脉，虚实皆可治；亦用于手挛不能握等。
+  clauses: []
+  topics:
+  - acupoint.sp21
+  - concept.luo_xue
+entities:
+- id: acupoint.sp18
+  seq: 4
+  surface: 天溪
+  corrected: 天溪
+- id: meridian.sp
+  seq: 10
+  surface: 足太阴脾经
+  corrected: 足太阴脾经
+- id: acupoint.st17
+  seq: 10
+  surface: 乳中穴
+  corrected: 乳中
+- id: acupoint.lu2
+  seq: 53
+  surface: 云门穴
+  corrected: 云门
+- id: acupoint.lu1
+  seq: 54
+  surface: 中牟
+  corrected: 中府
+- id: acupoint.sp20
+  seq: 56
+  surface: 周荣穴
+  corrected: 周荣
+- id: acupoint.sp19
+  seq: 58
+  surface: 胸香
+  corrected: 胸乡
+- id: acupoint.sp21
+  seq: 93
+  surface: 大包穴
+  corrected: 大包
+- id: acupoint.ht1
+  seq: 93
+  surface: 极拳
+  corrected: 极泉
+- id: concept.luo_xue
+  seq: 99
+  surface: 络
+  corrected: 络穴
+- id: meridian.lu
+  seq: 63
+  surface: 肺经
+  corrected: 手太阴肺经
+kps:
+- type: clinical_tip
+  s: 天溪等肋间穴：在穴旁约五分刺入肋间隙，勿正对骨面直刺；亦可透刺。
+  seq:
+  - 4
+  - 5
+  q: 靠过来的五分的地方下针
+  ents:
+  - acupoint.sp18
+  conf: 0.9
+- type: treatment_principle
+  s: 乳房硬块无单一特效穴，须视所在经络（脾/胃等）选经取穴。
+  seq:
+  - 10
+  - 16
+  q: 没有说乳癌一个特效穴位，有要看你在哪条路
+  ents:
+  - meridian.sp
+  conf: 0.95
+- type: clinical_tip
+  s: 硬块在云门—中府一线取肺经；在周荣—胸乡一线取脾经。初期硬块灸优于针。
+  seq:
+  - 63
+  - 65
+  q: 初期的硬块出来的时候，灸比针好灸
+  ents:
+  - meridian.lu
+  - meridian.sp
+  - acupoint.sp20
+  conf: 0.9
+  asr: 周融=周荣；胸腔/胸香=胸乡
+- type: acupoint_usage
+  s: 大包约在极泉下六寸，为脾之大络，统诸经络，虚实皆可；亦治手挛不能握拳等。
+  seq:
+  - 93
+  - 162
+  q: 从极拳下六寸，就是我们的大包穴
+  ents:
+  - acupoint.sp21
+  - acupoint.ht1
+  - concept.luo_xue
+  conf: 0.95
+  asr: 极拳=极泉

@@ -1,0 +1,61 @@
+[
+ {
+  "chapter_id": "zj-029.c01",
+  "video_id": "zj-029",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "胸旁脾经穴与乳房硬块取经",
+  "summary": "天溪等胸旁穴宜旁开约五分刺入肋间隙，勿直对肋骨。乳房硬块须辨所在经络（脾/胃/心包/心/肺）取穴，无单一特效穴。云门—中府属肺线，周荣—胸乡属脾线。初期硬块灸优于针，可教患者自灸按摩。",
+  "start_s": 0.05,
+  "end_s": 420.405,
+  "seg_from": 0,
+  "seg_to": 81,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.sp18",
+   "meridian.sp",
+   "acupoint.sp20"
+  ],
+  "citation": {
+   "youtube_id": "CG2Dmx-XOFM",
+   "url": "https://www.youtube.com/watch?v=CG2Dmx-XOFM&t=0s",
+   "series": "zj",
+   "episode": 29,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 29",
+   "start_s": 0.05,
+   "end_s": 420.4
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-029.c02",
+  "video_id": "zj-029",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "大包为大络",
+  "summary": "大包在腋下约六寸（极泉下六寸），为脾之大络，统诸阴经阳经络脉，虚实皆可治；亦用于手挛不能握等。",
+  "start_s": 421.99,
+  "end_s": 1937.957,
+  "seg_from": 82,
+  "seg_to": 358,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.sp21",
+   "concept.luo_xue"
+  ],
+  "citation": {
+   "youtube_id": "CG2Dmx-XOFM",
+   "url": "https://www.youtube.com/watch?v=CG2Dmx-XOFM&t=421s",
+   "series": "zj",
+   "episode": 29,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 29",
+   "start_s": 421.99,
+   "end_s": 1937.96
+  },
+  "review_status": "llm_read"
+ }
+]

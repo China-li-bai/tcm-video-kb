@@ -1,0 +1,63 @@
+[
+ {
+  "chapter_id": "zj-031.c01",
+  "video_id": "zj-031",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "心与小肠表里及少泽前谷",
+  "summary": "心移热于小肠，二者表里。少泽为小肠井穴，常点刺放血。前谷为荥（水），握拳横纹头取之；治乳汁不足，亦可用于未时（13–15时）精神不振，穴较痛。",
+  "start_s": 0.11,
+  "end_s": 686.385,
+  "seg_from": 0,
+  "seg_to": 125,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "zangfu.xin",
+   "zangfu.xiao_chang",
+   "acupoint.si1",
+   "acupoint.si2"
+  ],
+  "citation": {
+   "youtube_id": "cYoIZLoUziQ",
+   "url": "https://www.youtube.com/watch?v=cYoIZLoUziQ&t=0s",
+   "series": "zj",
+   "episode": 31,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 31",
+   "start_s": 0.11,
+   "end_s": 686.38
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-031.c02",
+  "video_id": "zj-031",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "后溪养老",
+  "summary": "后溪为输穴，通督脉，亦为小肠母穴，治督脉/脊痛及小肠虚证、肩痛。养老为郄，翻腕显骨缝取穴，浅刺半寸；治目不明、白内障、近视；养老透间使治肘不能拧巾。",
+  "start_s": 686.74,
+  "end_s": 1797.593,
+  "seg_from": 126,
+  "seg_to": 326,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.si3",
+   "acupoint.si6",
+   "meridian.gv"
+  ],
+  "citation": {
+   "youtube_id": "cYoIZLoUziQ",
+   "url": "https://www.youtube.com/watch?v=cYoIZLoUziQ&t=686s",
+   "series": "zj",
+   "episode": 31,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 31",
+   "start_s": 686.74,
+   "end_s": 1797.59
+  },
+  "review_status": "llm_read"
+ }
+]

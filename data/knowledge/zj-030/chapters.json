@@ -1,0 +1,62 @@
+[
+ {
+  "chapter_id": "zj-030.c01",
+  "video_id": "zj-030",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "极泉青灵少海",
+  "summary": "手少阴心经起于极泉，平常少针少灸。青灵在肘上三寸，少用。少海为合穴属水；井穴少冲属木为母，虚证常补合穴少海，井穴不宜强行捻转补泻。",
+  "start_s": 0.05,
+  "end_s": 657.255,
+  "seg_from": 0,
+  "seg_to": 128,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "meridian.ht",
+   "acupoint.ht1",
+   "acupoint.ht3"
+  ],
+  "citation": {
+   "youtube_id": "6nM0WY6HE0g",
+   "url": "https://www.youtube.com/watch?v=6nM0WY6HE0g&t=0s",
+   "series": "zj",
+   "episode": 30,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 30",
+   "start_s": 0.05,
+   "end_s": 657.25
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-030.c02",
+  "video_id": "zj-030",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "灵道通里阴郄神门少府少冲",
+  "summary": "灵道为经穴。神门为输/子穴，治心烦易怒、神志不宁、见鬼妄笑等心实；针向掌少府方向顺经。少府为荥，亦名手解，心脏病急救要穴。少冲为井，补泻多改在少海。",
+  "start_s": 658.55,
+  "end_s": 1727.212,
+  "seg_from": 129,
+  "seg_to": 339,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.ht7",
+   "acupoint.ht8",
+   "acupoint.ht9"
+  ],
+  "citation": {
+   "youtube_id": "6nM0WY6HE0g",
+   "url": "https://www.youtube.com/watch?v=6nM0WY6HE0g&t=658s",
+   "series": "zj",
+   "episode": 30,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 30",
+   "start_s": 658.55,
+   "end_s": 1727.21
+  },
+  "review_status": "llm_read"
+ }
+]
