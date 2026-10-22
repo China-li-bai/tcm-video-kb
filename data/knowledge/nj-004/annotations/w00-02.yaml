@@ -1,0 +1,94 @@
+video_id: nj-004
+window: w00-02
+seg_from: 0
+seg_to: 400
+annotator: llm_read
+chapters:
+- key: c01
+  title: 寸口分候心小肠
+  start_seq: 0
+  summary: 寸口三指：偏骨侧候心，偏筋侧候小肠。舌为心之表。心脉洪长为阳亢；心脉软散主消渴类。
+  clauses: []
+  topics:
+  - zangfu.xin
+  - zangfu.xiao_chang
+  - symptom.xiao_ke
+- key: c02
+  title: 肺肝脉与发汗伤筋
+  start_seq: 48
+  summary: 肺脉外侧候肺；实积可咳血吐血，软而不急为肺虚。过汗伤筋中津液可致痉。肝脉搏坚而长；肝色青不宜外露。
+  clauses: []
+  topics:
+  - zangfu.fei
+  - zangfu.gan
+  - method.fa_han
+entities:
+- id: zangfu.xin
+  seq: 15
+  surface: 心脏
+  corrected: 心
+- id: zangfu.xiao_chang
+  seq: 15
+  surface: 小肠
+  corrected: 小肠
+- id: symptom.xiao_ke
+  seq: 44
+  surface: 消渴
+  corrected: 消渴
+- id: zangfu.fei
+  seq: 48
+  surface: 肺
+  corrected: 肺
+- id: zangfu.gan
+  seq: 73
+  surface: 肝脏
+  corrected: 肝
+- id: method.fa_han
+  seq: 64
+  surface: 发汗
+  corrected: 发汗
+- id: classic.huang_di_nei_jing
+  seq: 169
+  surface: 黄帝内经
+  corrected: 黄帝内经
+kps:
+- type: clinical_tip
+  s: 寸口偏骨侧候心、偏筋侧候小肠；舌为心之表。
+  seq:
+  - 15
+  - 41
+  q: 舌为心表
+  ents:
+  - zangfu.xin
+  - zangfu.xiao_chang
+  conf: 0.95
+- type: clinical_tip
+  s: 心脉软而散走可主消渴（类糖尿病）之象。
+  seq:
+  - 44
+  - 46
+  q: 就是消渴
+  ents:
+  - zangfu.xin
+  - symptom.xiao_ke
+  conf: 0.9
+- type: contraindication
+  s: 过汗伤筋中津液，可致抽筋/痉；汗药须慎。
+  seq:
+  - 64
+  - 68
+  q: 病人就会抽筋
+  ents:
+  - method.fa_han
+  conf: 0.9
+- type: clinical_tip
+  s: 肝脉搏坚而长；肺脉太过主内有积（咳血等），软而不急主肺虚。
+  seq:
+  - 55
+  - 74
+  q: 肝脉搏尖而长
+  ents:
+  - zangfu.gan
+  - zangfu.fei
+  conf: 0.85
+  asr: 搏尖=搏坚

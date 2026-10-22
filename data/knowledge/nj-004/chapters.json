@@ -1,0 +1,62 @@
+[
+ {
+  "chapter_id": "nj-004.c01",
+  "video_id": "nj-004",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "寸口分候心小肠",
+  "summary": "寸口三指：偏骨侧候心，偏筋侧候小肠。舌为心之表。心脉洪长为阳亢；心脉软散主消渴类。",
+  "start_s": 0.21,
+  "end_s": 251.77,
+  "seg_from": 0,
+  "seg_to": 47,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "zangfu.xin",
+   "zangfu.xiao_chang",
+   "symptom.xiao_ke"
+  ],
+  "citation": {
+   "youtube_id": "fdFJMQdvk3k",
+   "url": "https://www.youtube.com/watch?v=fdFJMQdvk3k&t=0s",
+   "series": "nj",
+   "episode": 4,
+   "title": "04 倪海厦精讲《黄帝内经》高清字幕完整版",
+   "start_s": 0.21,
+   "end_s": 251.77
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "nj-004.c02",
+  "video_id": "nj-004",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "肺肝脉与发汗伤筋",
+  "summary": "肺脉外侧候肺；实积可咳血吐血，软而不急为肺虚。过汗伤筋中津液可致痉。肝脉搏坚而长；肝色青不宜外露。",
+  "start_s": 256.55,
+  "end_s": 13699.253,
+  "seg_from": 48,
+  "seg_to": 2416,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "zangfu.fei",
+   "zangfu.gan",
+   "method.fa_han"
+  ],
+  "citation": {
+   "youtube_id": "fdFJMQdvk3k",
+   "url": "https://www.youtube.com/watch?v=fdFJMQdvk3k&t=256s",
+   "series": "nj",
+   "episode": 4,
+   "title": "04 倪海厦精讲《黄帝内经》高清字幕完整版",
+   "start_s": 256.55,
+   "end_s": 13699.25
+  },
+  "review_status": "llm_read"
+ }
+]
