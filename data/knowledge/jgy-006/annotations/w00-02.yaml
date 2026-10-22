@@ -1,0 +1,89 @@
+video_id: jgy-006
+window: w00-02
+seg_from: 0
+seg_to: 403
+annotator: llm_read
+chapters:
+- key: c01
+  title: 中风历节·气血两虚致中风
+  start_seq: 0
+  summary: 金匮第五篇中风历节。中风本于气血两虚，非西医高血压叙事；预防用黄芪益气，微祛风用防风独活，补血当归，气虚用人参/党参视胃气。
+  clauses: []
+  topics:
+  - syndrome.zhong_feng
+  - herb.huang_qi
+- key: c02
+  title: 面部中风·汗后受风与桂枝加葛根
+  start_seq: 138
+  summary: 汗出当风/对冷气可致面瘫；久病两侧同治。肌肉受风用桂枝汤解肌，加葛根升津。
+  clauses: []
+  topics:
+  - syndrome.zhong_feng
+  - formula.gui_zhi_tang
+  - herb.ge_gen
+- key: c03
+  title: 虚寒中风与抵当类如狂
+  start_seq: 264
+  summary: 迟缓为寒虚，中风多气血两虚。汗出受冷可成麻黄类证；篇中夹杂抵当汤治如狂脉浮，按序讲读即可。
+  clauses: []
+  topics:
+  - syndrome.zhong_feng
+  - formula.di_dang_tang
+entities:
+- id: syndrome.zhong_feng
+  seq: 1
+  surface: 中风
+  corrected: 中风
+- id: syndrome.li_jie
+  seq: 1
+  surface: 力竭
+  corrected: 历节
+- id: herb.huang_qi
+  seq: 22
+  surface: 黄芪
+  corrected: 黄芪
+- id: formula.gui_zhi_tang
+  seq: 150
+  surface: 桂枝汤
+  corrected: 桂枝汤
+- id: herb.ge_gen
+  seq: 151
+  surface: 葛根
+  corrected: 葛根
+- id: formula.di_dang_tang
+  seq: 282
+  surface: 找起抵黄汤
+  corrected: 抵当汤
+kps:
+- type: pathomechanism
+  s: 中风本于气血两虚，预防处方由此出；勿用西医高血压解释。
+  seq: [13, 20]
+  q: 气血两虚
+  ents: [syndrome.zhong_feng]
+  conf: 0.95
+  asr: 力竭=历节
+- type: formula_indication
+  s: 气虚用黄芪（或党参），微风用防风独活，不宜过用桂枝大发汗；血虚当归。
+  seq: [22]
+  q: 黄芪
+  ents: [herb.huang_qi, syndrome.zhong_feng]
+  conf: 0.9
+- type: clinical_tip
+  s: 大汗后对冷气侧吹可致面歪；面瘫属风寒客肌肉。
+  seq: [148]
+  q: 对着冷气
+  ents: [syndrome.zhong_feng]
+  conf: 0.9
+- type: formula_indication
+  s: 面部肌肉中风用桂枝汤解肌，加葛根提升肌肉津液。
+  seq: [150, 151]
+  q: 桂枝汤
+  ents: [formula.gui_zhi_tang, herb.ge_gen]
+  conf: 0.9
+  asr: 解鸡=解肌
+- type: diagnostic_rule
+  s: 迟缓为寒虚，中风多属气血两虚。
+  seq: [264, 265]
+  q: 得到中风的都是气血
+  ents: [syndrome.zhong_feng]
+  conf: 0.85
