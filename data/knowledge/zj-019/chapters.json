@@ -1,0 +1,63 @@
+[
+ {
+  "chapter_id": "zj-019.c01",
+  "video_id": "zj-019",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "面口合谷收与曲池手三里",
+  "summary": "歌诀“面口合谷收”：面口病取合谷；面部透针前先针对侧合谷可减痛（类麻醉）。曲池主肩痛、皮肤痒；下两寸为手三里，又名扭伤穴，治急性腰扭伤、落枕，针后令患者活动患处。",
+  "start_s": 11.24,
+  "end_s": 423.445,
+  "seg_from": 0,
+  "seg_to": 72,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.li4",
+   "acupoint.li11",
+   "acupoint.li10"
+  ],
+  "citation": {
+   "youtube_id": "OfgWKd6YErA",
+   "url": "https://www.youtube.com/watch?v=OfgWKd6YErA&t=11s",
+   "series": "zj",
+   "episode": 19,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 19",
+   "start_s": 11.24,
+   "end_s": 423.44
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-019.c02",
+  "video_id": "zj-019",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "臂臑肩髃与禾髎迎香",
+  "summary": "五里深处有大动脉，一般禁针。臂臑为多经交会。手挛急可合谷透后溪。禾髎在人中旁主鼻病；迎香为大肠经末穴，治鼻不闻香臭、鼻窦炎，宜透刺勿直深刺，面部只针不灸。",
+  "start_s": 428.17,
+  "end_s": 1860.355,
+  "seg_from": 73,
+  "seg_to": 343,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.li13",
+   "acupoint.li14",
+   "acupoint.li19",
+   "acupoint.li20"
+  ],
+  "citation": {
+   "youtube_id": "OfgWKd6YErA",
+   "url": "https://www.youtube.com/watch?v=OfgWKd6YErA&t=428s",
+   "series": "zj",
+   "episode": 19,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 19",
+   "start_s": 428.17,
+   "end_s": 1860.36
+  },
+  "review_status": "llm_read"
+ }
+]

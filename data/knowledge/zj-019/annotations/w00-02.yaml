@@ -1,0 +1,179 @@
+video_id: zj-019
+window: w00-02
+seg_from: 0
+seg_to: 343
+annotator: llm_read
+chapters:
+- key: c01
+  title: 面口合谷收与曲池手三里
+  start_seq: 0
+  summary: 歌诀“面口合谷收”：面口病取合谷；面部透针前先针对侧合谷可减痛（类麻醉）。曲池主肩痛、皮肤痒；下两寸为手三里，又名扭伤穴，治急性腰扭伤、落枕，针后令患者活动患处。
+  clauses: []
+  topics:
+  - acupoint.li4
+  - acupoint.li11
+  - acupoint.li10
+- key: c02
+  title: 臂臑肩髃与禾髎迎香
+  start_seq: 73
+  summary: 五里深处有大动脉，一般禁针。臂臑为多经交会。手挛急可合谷透后溪。禾髎在人中旁主鼻病；迎香为大肠经末穴，治鼻不闻香臭、鼻窦炎，宜透刺勿直深刺，面部只针不灸。
+  clauses: []
+  topics:
+  - acupoint.li13
+  - acupoint.li14
+  - acupoint.li19
+  - acupoint.li20
+entities:
+- id: acupoint.li4
+  seq: 0
+  surface: 合谷
+  corrected: 合谷
+- id: acupoint.li11
+  seq: 17
+  surface: 曲池穴
+  corrected: 曲池
+- id: acupoint.li10
+  seq: 18
+  surface: 手三里
+  corrected: 手三里
+- id: new.acupoint.扭伤穴
+  seq: 19
+  surface: 扭伤穴
+  corrected: 扭伤穴（手三里别名）
+- id: acupoint.ex_lao_zhen
+  seq: 25
+  surface: 落枕
+  corrected: 落枕（穴/症）
+- id: acupoint.li5
+  seq: 56
+  surface: 阳溪穴
+  corrected: 阳溪
+- id: acupoint.li13
+  seq: 73
+  surface: 五里穴
+  corrected: 手五里
+- id: acupoint.li14
+  seq: 87
+  surface: 壁刀穴
+  corrected: 臂臑
+- id: acupoint.li15
+  seq: 90
+  surface: 监狱煎盂穴
+  corrected: 肩髃
+- id: acupoint.si3
+  seq: 96
+  surface: 后溪穴
+  corrected: 后溪
+- id: acupoint.li19
+  seq: 184
+  surface: 合疗
+  corrected: 禾髎
+- id: acupoint.li20
+  seq: 189
+  surface: 迎香穴
+  corrected: 迎香
+- id: meridian.li
+  seq: 191
+  surface: 大肠经
+  corrected: 手阳明大肠经
+- id: method.zhen_jiu
+  seq: 222
+  surface: 下针，不揪
+  corrected: 针而不灸
+kps:
+- type: acupoint_usage
+  s: 面口合谷收：面部、口部病可取合谷；面瘫等常取合谷。
+  seq:
+  - 1
+  - 4
+  q: 面部的病，口部的病都可以在颌骨上下针
+  ents:
+  - acupoint.li4
+  conf: 0.95
+  asr: 颌骨=合谷
+- type: clinical_tip
+  s: 面部透针较痛时，先针对侧合谷再透刺，痛感可明显减轻。
+  seq:
+  - 7
+  - 15
+  q: 先下颌骨，下完颌骨以后再去透
+  ents:
+  - acupoint.li4
+  conf: 0.9
+  asr: 颌骨=合谷
+- type: acupoint_usage
+  s: 曲池用途广，肩痛、皮肤痒等常取；其下两寸为手三里。
+  seq:
+  - 17
+  - 18
+  q: 肩膀痛啊、皮肤痒啊都在曲子上下症
+  ents:
+  - acupoint.li11
+  - acupoint.li10
+  conf: 0.95
+  asr: 曲子/曲直=曲池
+- type: acupoint_usage
+  s: 手三里又称扭伤穴，治急性腰扭伤、落枕；针后令患者活动患处至松解再出针。
+  seq:
+  - 19
+  - 25
+  q: 扭伤穴针下去，针下去以后一边脸左右
+  ents:
+  - acupoint.li10
+  - new.acupoint.扭伤穴
+  - acupoint.ex_lao_zhen
+  conf: 0.9
+  asr: 一边脸左右=令活动
+- type: contraindication
+  s: 手五里深处有大动脉，一般禁针，知位置即可。
+  seq:
+  - 73
+  - 74
+  q: 因为里面有大动脉，好，我们竞争
+  ents:
+  - acupoint.li13
+  conf: 0.9
+  asr: 竞争=禁针
+- type: acupoint_usage
+  s: 手挛握难伸时，可自合谷透向后溪（三寸针），常可使之开伸。
+  seq:
+  - 96
+  - 103
+  q: 从颌骨一路透到后期
+  ents:
+  - acupoint.li4
+  - acupoint.si3
+  conf: 0.85
+  asr: 颌骨=合谷；后期=后溪
+- type: acupoint_usage
+  s: 禾髎在鼻孔下唇上中线旁，主鼻病；迎香在鼻旁开五分，为大肠经末穴，治鼻不闻香臭。
+  seq:
+  - 184
+  - 192
+  q: 鼻子鼻旁开五分，这个穴道我们叫做迎香穴
+  ents:
+  - acupoint.li19
+  - acupoint.li20
+  - meridian.li
+  conf: 0.95
+  asr: 合疗=禾髎；银香/营香=迎香
+- type: clinical_tip
+  s: 迎香治鼻塞、鼻窦炎宜透刺（勿直深刺无效）；可先针对侧合谷。面部穴只针不灸。
+  seq:
+  - 207
+  - 222
+  q: 脸上呢都是下针，不揪好
+  ents:
+  - acupoint.li20
+  - acupoint.li4
+  conf: 0.95
+  asr: 不揪=不灸
+- type: concept_definition
+  s: 手之阳经自四肢末梢走向躯干，足之阳经自躯干走向四肢末梢；可以穴序记经气流向。
+  seq:
+  - 241
+  - 243
+  q: 手上的阳是由四四末梢往身上走
+  ents:
+  - meridian.li
+  conf: 0.9
