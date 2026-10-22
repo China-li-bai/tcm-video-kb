@@ -1,0 +1,78 @@
+video_id: zj-077
+window: w00-02
+seg_from: 0
+seg_to: 310
+annotator: llm_read
+chapters:
+- key: c01
+  title: 定喘与补泻手法
+  start_seq: 0
+  summary: 定喘在大椎旁开约五分，直刺宜浅（约五分，胖者可寸）。补泻：迎随捻转已够，提插更强，呼吸补泻更强；灸补元气甚速，可教病人自灸。
+  clauses: []
+  topics:
+  - acupoint.ex_ding_chuan
+  - acupoint.gv14
+  - method.bu_xie
+- key: c02
+  title: 表里经与子母选择
+  start_seq: 15
+  summary: 一经实证可取表里经（如肺实取大肠二间）或络穴转输；子母补泻与本穴可互换选用。
+  clauses: []
+  topics:
+  - acupoint.li2
+  - meridian.lu
+entities:
+- id: acupoint.ex_ding_chuan
+  seq: 0
+  surface: 定喘
+  corrected: 定喘
+- id: acupoint.gv14
+  seq: 0
+  surface: 大椎
+  corrected: 大椎
+- id: method.bu_xie
+  seq: 23
+  surface: 补泻
+  corrected: 补泻
+- id: acupoint.li2
+  seq: 16
+  surface: 二间
+  corrected: 二间
+- id: acupoint.lu7
+  seq: 17
+  surface: 列
+  corrected: 列缺
+- id: acupoint.li6
+  seq: 17
+  surface: 偏历
+  corrected: 偏历
+kps:
+- type: acupoint_usage
+  s: 定喘在大椎旁开约五分，直刺宜浅（约五分）。
+  seq:
+  - 0
+  - 1
+  q: 大椎外开五分是定喘穴
+  ents:
+  - acupoint.ex_ding_chuan
+  - acupoint.gv14
+  conf: 0.95
+- type: clinical_tip
+  s: 一般补泻用迎随捻转即可；提插更强，呼吸补泻更强。灸补元气甚速。
+  seq:
+  - 23
+  - 28
+  q: 灸补元气非常快速
+  ents:
+  - method.bu_xie
+  conf: 0.9
+  asr: 营髓=迎随；连转=捻转；插体=提插；灸比真=灸比针
+- type: clinical_tip
+  s: 肺经实证可取表里大肠二间，或经络穴（列缺/偏历）转输。
+  seq:
+  - 16
+  - 18
+  q: 下二间可不可
+  ents:
+  - acupoint.li2
+  conf: 0.85

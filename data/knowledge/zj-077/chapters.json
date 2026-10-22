@@ -1,0 +1,61 @@
+[
+ {
+  "chapter_id": "zj-077.c01",
+  "video_id": "zj-077",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "定喘与补泻手法",
+  "summary": "定喘在大椎旁开约五分，直刺宜浅（约五分，胖者可寸）。补泻：迎随捻转已够，提插更强，呼吸补泻更强；灸补元气甚速，可教病人自灸。",
+  "start_s": 0.15,
+  "end_s": 80.265,
+  "seg_from": 0,
+  "seg_to": 14,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.ex_ding_chuan",
+   "acupoint.gv14",
+   "method.bu_xie"
+  ],
+  "citation": {
+   "youtube_id": "g4eXW0Reeqc",
+   "url": "https://www.youtube.com/watch?v=g4eXW0Reeqc&t=0s",
+   "series": "zj",
+   "episode": 77,
+   "title": "Ni Hai-Hsia \"The Human Record\" - Acupuncture, Episode 77 (Full 90-Episode Series)",
+   "start_s": 0.15,
+   "end_s": 80.27
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-077.c02",
+  "video_id": "zj-077",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "表里经与子母选择",
+  "summary": "一经实证可取表里经（如肺实取大肠二间）或络穴转输；子母补泻与本穴可互换选用。",
+  "start_s": 82.69,
+  "end_s": 1767.22,
+  "seg_from": 15,
+  "seg_to": 310,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.li2",
+   "meridian.lu"
+  ],
+  "citation": {
+   "youtube_id": "g4eXW0Reeqc",
+   "url": "https://www.youtube.com/watch?v=g4eXW0Reeqc&t=82s",
+   "series": "zj",
+   "episode": 77,
+   "title": "Ni Hai-Hsia \"The Human Record\" - Acupuncture, Episode 77 (Full 90-Episode Series)",
+   "start_s": 82.69,
+   "end_s": 1767.22
+  },
+  "review_status": "llm_read"
+ }
+]

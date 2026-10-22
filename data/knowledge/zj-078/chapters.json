@@ -1,0 +1,31 @@
+[
+ {
+  "chapter_id": "zj-078.c01",
+  "video_id": "zj-078",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "失眠神门复溜",
+  "summary": "短集收束：失眠可针神门，补肾经复溜泻神门以交心肾；亦可取心俞。预告下堂《内经》针法。",
+  "start_s": 0.63,
+  "end_s": 491.965,
+  "seg_from": 0,
+  "seg_to": 83,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.ht7",
+   "acupoint.ki7"
+  ],
+  "citation": {
+   "youtube_id": "T2OAg15L_Z4",
+   "url": "https://www.youtube.com/watch?v=T2OAg15L_Z4&t=0s",
+   "series": "zj",
+   "episode": 78,
+   "title": "Ni Hai-hsia: \"Humanity Series\" - Acupuncture, Episode 78 of 90",
+   "start_s": 0.63,
+   "end_s": 491.96
+  },
+  "review_status": "llm_read"
+ }
+]

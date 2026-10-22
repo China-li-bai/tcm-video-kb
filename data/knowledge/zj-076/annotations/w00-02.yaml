@@ -1,0 +1,84 @@
+video_id: zj-076
+window: w00-02
+seg_from: 0
+seg_to: 307
+annotator: llm_read
+chapters:
+- key: c01
+  title: 结石对侧取穴与关节
+  start_seq: 0
+  summary: 肾结石等压痛多在对侧太溪区取穴；环跳/膝部脱位或松动可用局部加强针（如膝五针）稳固关节。
+  clauses: []
+  topics:
+  - acupoint.ki3
+  - acupoint.gb30
+- key: c02
+  title: 虚实补泻与膏肓
+  start_seq: 66
+  summary: 八纲虚实指导子母/本穴/原穴补泻；久痛多虚。补可灸膏肓、足三里、中脘及心俞等；有形为实、无形为虚，虚实可兼顾。
+  clauses: []
+  topics:
+  - acupoint.bl43
+  - acupoint.st36
+  - method.bu_xie
+entities:
+- id: acupoint.ki3
+  seq: 9
+  surface: 太西
+  corrected: 太溪
+- id: acupoint.gb30
+  seq: 47
+  surface: 环跳
+  corrected: 环跳
+- id: acupoint.bl43
+  seq: 82
+  surface: 膏肓
+  corrected: 膏肓
+- id: acupoint.st36
+  seq: 82
+  surface: 足三里
+  corrected: 足三里
+- id: acupoint.cv12
+  seq: 82
+  surface: 中皖
+  corrected: 中脘
+- id: acupoint.bl15
+  seq: 83
+  surface: 新书
+  corrected: 心俞
+- id: method.bu_xie
+  seq: 59
+  surface: 补泻
+  corrected: 补泻
+kps:
+- type: clinical_tip
+  s: 肾结石等压痛多取对侧太溪区下针，亦查同侧。
+  seq:
+  - 9
+  - 9
+  q: 压痛点直接下针
+  ents:
+  - acupoint.ki3
+  conf: 0.9
+  asr: 太西=太溪
+- type: clinical_tip
+  s: 虚实依八纲；久痛多虚。补可灸膏肓、足三里、中脘及心俞等。
+  seq:
+  - 67
+  - 83
+  q: 灸膏肓
+  ents:
+  - acupoint.bl43
+  - acupoint.st36
+  - method.bu_xie
+  conf: 0.9
+  asr: 中皖=中脘；新书=心俞
+- type: clinical_tip
+  s: 关节松动/脱位可加强环跳或膝周穴以稳固。
+  seq:
+  - 63
+  - 64
+  q: 用膝五针去加针
+  ents:
+  - acupoint.gb30
+  conf: 0.85

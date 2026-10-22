@@ -1,0 +1,61 @@
+[
+ {
+  "chapter_id": "zj-076.c01",
+  "video_id": "zj-076",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "结石对侧取穴与关节",
+  "summary": "肾结石等压痛多在对侧太溪区取穴；环跳/膝部脱位或松动可用局部加强针（如膝五针）稳固关节。",
+  "start_s": 1.97,
+  "end_s": 344.795,
+  "seg_from": 0,
+  "seg_to": 65,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.ki3",
+   "acupoint.gb30"
+  ],
+  "citation": {
+   "youtube_id": "159Ip9XVMoo",
+   "url": "https://www.youtube.com/watch?v=159Ip9XVMoo&t=1s",
+   "series": "zj",
+   "episode": 76,
+   "title": "Ni Hai-sha \"Human Record\": Acupuncture, 90-Episode Complete Series - Acupuncture 76",
+   "start_s": 1.97,
+   "end_s": 344.8
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-076.c02",
+  "video_id": "zj-076",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "虚实补泻与膏肓",
+  "summary": "八纲虚实指导子母/本穴/原穴补泻；久痛多虚。补可灸膏肓、足三里、中脘及心俞等；有形为实、无形为虚，虚实可兼顾。",
+  "start_s": 345.25,
+  "end_s": 1810.701,
+  "seg_from": 66,
+  "seg_to": 307,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.bl43",
+   "acupoint.st36",
+   "method.bu_xie"
+  ],
+  "citation": {
+   "youtube_id": "159Ip9XVMoo",
+   "url": "https://www.youtube.com/watch?v=159Ip9XVMoo&t=345s",
+   "series": "zj",
+   "episode": 76,
+   "title": "Ni Hai-sha \"Human Record\": Acupuncture, 90-Episode Complete Series - Acupuncture 76",
+   "start_s": 345.25,
+   "end_s": 1810.7
+  },
+  "review_status": "llm_read"
+ }
+]
