@@ -1,0 +1,62 @@
+[
+ {
+  "chapter_id": "zj-049.c01",
+  "video_id": "zj-049",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "胆与心包推动胆汁",
+  "summary": "肝如香水瓶、胆如喷头；胆汁受心包/心搏节律推动阵喷入肠助消化。胆木生小肠火。切胆后总管可积石。胆病见呕恶、事物倒逆等；治宜强心清胆疏肝。面部穴少灸（易起泡留疤）。",
+  "start_s": 0.11,
+  "end_s": 692.985,
+  "seg_from": 0,
+  "seg_to": 126,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "zangfu.dan",
+   "zangfu.xin_bao",
+   "zangfu.gan"
+  ],
+  "citation": {
+   "youtube_id": "cdn4Us0pTxQ",
+   "url": "https://www.youtube.com/watch?v=cdn4Us0pTxQ&t=0s",
+   "series": "zj",
+   "episode": 49,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 49",
+   "start_s": 0.11,
+   "end_s": 692.99
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-049.c02",
+  "video_id": "zj-049",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "听会阳白入胆经",
+  "summary": "目内眦睛明属膀胱；白睛湿热辨阳明与胆经。耳门、听宫、听会皆张口取穴。阳白可沿皮刺向眉中，主额头痛。",
+  "start_s": 694.59,
+  "end_s": 1782.246,
+  "seg_from": 127,
+  "seg_to": 322,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.gb2",
+   "acupoint.gb14",
+   "meridian.gb"
+  ],
+  "citation": {
+   "youtube_id": "cdn4Us0pTxQ",
+   "url": "https://www.youtube.com/watch?v=cdn4Us0pTxQ&t=694s",
+   "series": "zj",
+   "episode": 49,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 49",
+   "start_s": 694.59,
+   "end_s": 1782.25
+  },
+  "review_status": "llm_read"
+ }
+]

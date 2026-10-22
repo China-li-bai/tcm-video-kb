@@ -1,0 +1,122 @@
+video_id: zj-049
+window: w00-02
+seg_from: 0
+seg_to: 322
+annotator: llm_read
+chapters:
+- key: c01
+  title: 胆与心包推动胆汁
+  start_seq: 0
+  summary: 肝如香水瓶、胆如喷头；胆汁受心包/心搏节律推动阵喷入肠助消化。胆木生小肠火。切胆后总管可积石。胆病见呕恶、事物倒逆等；治宜强心清胆疏肝。面部穴少灸（易起泡留疤）。
+  clauses: []
+  topics:
+  - zangfu.dan
+  - zangfu.xin_bao
+  - zangfu.gan
+- key: c02
+  title: 听会阳白入胆经
+  start_seq: 127
+  summary: 目内眦睛明属膀胱；白睛湿热辨阳明与胆经。耳门、听宫、听会皆张口取穴。阳白可沿皮刺向眉中，主额头痛。
+  clauses: []
+  topics:
+  - acupoint.gb2
+  - acupoint.gb14
+  - meridian.gb
+entities:
+- id: zangfu.dan
+  seq: 49
+  surface: 胆
+  corrected: 胆
+- id: zangfu.gan
+  seq: 50
+  surface: 肝
+  corrected: 肝
+- id: zangfu.xin_bao
+  seq: 64
+  surface: 心包
+  corrected: 心包
+- id: zangfu.xin
+  seq: 64
+  surface: 心脏
+  corrected: 心
+- id: meridian.gb
+  seq: 2
+  surface: 胆经
+  corrected: 足少阳胆经
+- id: acupoint.bl1
+  seq: 127
+  surface: 金明穴
+  corrected: 睛明
+- id: acupoint.te21
+  seq: 168
+  surface: 耳门
+  corrected: 耳门
+- id: acupoint.si19
+  seq: 168
+  surface: 听功
+  corrected: 听宫
+- id: acupoint.gb2
+  seq: 168
+  surface: 听会
+  corrected: 听会
+- id: acupoint.gb14
+  seq: 315
+  surface: 阳白
+  corrected: 阳白
+- id: method.zhen_jiu
+  seq: 0
+  surface: 禁灸
+  corrected: 灸
+kps:
+- type: contraindication
+  s: 面部穴少灸，易起水泡或留疤。
+  seq:
+  - 0
+  - 158
+  q: 是禁灸，你要灸个水水泡
+  ents:
+  - method.zhen_jiu
+  conf: 0.9
+- type: concept_definition
+  s: 肝如瓶、胆如喷头；心包推动使胆汁阵发性喷出，速率应心跳；胆木助小肠火。
+  seq:
+  - 59
+  - 69
+  q: 这个香水瓶就是肝脏，喷头就是胆
+  ents:
+  - zangfu.gan
+  - zangfu.dan
+  - zangfu.xin_bao
+  conf: 0.95
+- type: clinical_tip
+  s: 切胆后总胆管仍可积石；胆病常伴呕恶、食物倒逆感。
+  seq:
+  - 79
+  - 106
+  q: 清净之官元情境好是中正，主官决断
+  ents:
+  - zangfu.dan
+  conf: 0.85
+  asr: ASR杂；中正之官
+- type: clinical_tip
+  s: 耳门、听宫、听会均须张口取穴再下针。
+  seq:
+  - 168
+  - 168
+  q: 耳门听功听会三个穴道都是张口张口取穴
+  ents:
+  - acupoint.te21
+  - acupoint.si19
+  - acupoint.gb2
+  conf: 0.95
+  asr: 听功=听宫
+- type: acupoint_usage
+  s: 阳白可提皮自穴刺向眉中；额痛在阳白处可取之。
+  seq:
+  - 315
+  - 321
+  q: 针从阳白刺进去，刺到眉毛的中间
+  ents:
+  - acupoint.gb14
+  conf: 0.9
+  asr: 凉白/羊白=阳白
