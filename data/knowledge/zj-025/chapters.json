@@ -1,0 +1,62 @@
+[
+ {
+  "chapter_id": "zj-025.c01",
+  "video_id": "zj-025",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "脾概说与隐白大都",
+  "summary": "黄入脾；思虑伤脾则味觉差。隐白为脾经井穴（阴经木火土金水），刺激强，可治气虚下陷等；灸三毛（大趾）治失眠效著。大都为荥穴属火，直刺。",
+  "start_s": 0.09,
+  "end_s": 1136.085,
+  "seg_from": 0,
+  "seg_to": 229,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "zangfu.pi",
+   "acupoint.sp1",
+   "acupoint.sp2"
+  ],
+  "citation": {
+   "youtube_id": "PQ3MHojvV2s",
+   "url": "https://www.youtube.com/watch?v=PQ3MHojvV2s&t=0s",
+   "series": "zj",
+   "episode": 25,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 25",
+   "start_s": 0.09,
+   "end_s": 1136.09
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-025.c02",
+  "video_id": "zj-025",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "太白与公孙",
+  "summary": "太白在大骨后骨缝下，为脾经输穴，直刺。公孙为络穴，用途广；配内关治诸胃病，效捷；通冲脉（列缺通任脉）。孕吐恶心可用公孙（或足三里）。",
+  "start_s": 1137.891,
+  "end_s": 1780.971,
+  "seg_from": 230,
+  "seg_to": 354,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.sp3",
+   "acupoint.sp4",
+   "acupoint.pc6"
+  ],
+  "citation": {
+   "youtube_id": "PQ3MHojvV2s",
+   "url": "https://www.youtube.com/watch?v=PQ3MHojvV2s&t=1137s",
+   "series": "zj",
+   "episode": 25,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 25",
+   "start_s": 1137.89,
+   "end_s": 1780.97
+  },
+  "review_status": "llm_read"
+ }
+]

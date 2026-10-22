@@ -1,0 +1,156 @@
+video_id: zj-025
+window: w00-02
+seg_from: 0
+seg_to: 354
+annotator: llm_read
+chapters:
+- key: c01
+  title: 脾概说与隐白大都
+  start_seq: 0
+  summary: 黄入脾；思虑伤脾则味觉差。隐白为脾经井穴（阴经木火土金水），刺激强，可治气虚下陷等；灸三毛（大趾）治失眠效著。大都为荥穴属火，直刺。
+  clauses: []
+  topics:
+  - zangfu.pi
+  - acupoint.sp1
+  - acupoint.sp2
+- key: c02
+  title: 太白与公孙
+  start_seq: 230
+  summary: 太白在大骨后骨缝下，为脾经输穴，直刺。公孙为络穴，用途广；配内关治诸胃病，效捷；通冲脉（列缺通任脉）。孕吐恶心可用公孙（或足三里）。
+  clauses: []
+  topics:
+  - acupoint.sp3
+  - acupoint.sp4
+  - acupoint.pc6
+entities:
+- id: zangfu.pi
+  seq: 1
+  surface: 脾脏
+  corrected: 脾
+- id: acupoint.sp1
+  seq: 91
+  surface: 隐白
+  corrected: 隐白
+- id: meridian.sp
+  seq: 107
+  surface: 脾经
+  corrected: 足太阴脾经
+- id: new.acupoint.三毛
+  seq: 129
+  surface: 三毛
+  corrected: 三毛（大趾背奇穴）
+- id: acupoint.sp2
+  seq: 163
+  surface: 大都
+  corrected: 大都
+- id: acupoint.sp3
+  seq: 230
+  surface: 太白穴
+  corrected: 太白
+- id: concept.shu_xue
+  seq: 236
+  surface: 淤穴
+  corrected: 输穴
+- id: acupoint.sp4
+  seq: 270
+  surface: 公孙穴
+  corrected: 公孙
+- id: concept.luo_xue
+  seq: 339
+  surface: 落穴
+  corrected: 络穴
+- id: acupoint.pc6
+  seq: 294
+  surface: 内关
+  corrected: 内关
+- id: meridian.tv
+  seq: 314
+  surface: 崇拜
+  corrected: 冲脉
+- id: acupoint.lu7
+  seq: 314
+  surface: 列缺
+  corrected: 列缺
+- id: meridian.cv
+  seq: 314
+  surface: 任脉
+  corrected: 任脉
+- id: acupoint.st36
+  seq: 327
+  surface: 足三里
+  corrected: 足三里
+kps:
+- type: concept_definition
+  s: 思虑过重可伤脾；脾主味觉，脾伤则味觉减退。
+  seq:
+  - 52
+  - 53
+  q: 思虑很重，脾脏会受伤
+  ents:
+  - zangfu.pi
+  conf: 0.9
+  asr: 伤贫=伤脾
+- type: acupoint_usage
+  s: 隐白在足大趾甲旁，为脾经井穴；井穴刺激强，可用于气陷等。
+  seq:
+  - 91
+  - 108
+  q: 第一个穴隐白是井穴
+  ents:
+  - acupoint.sp1
+  - meridian.sp
+  conf: 0.95
+- type: acupoint_usage
+  s: 灸大趾三毛可治失眠，有人灸中即睡。
+  seq:
+  - 129
+  - 132
+  q: 灸三毛是嘛的专门治疗失眠
+  ents:
+  - new.acupoint.三毛
+  conf: 0.85
+  asr: 鸠三毛=灸三毛
+- type: concept_definition
+  s: 大都为脾经荥穴，阴经荥属火，火生土故为母穴一类用法。
+  seq:
+  - 163
+  - 168
+  q: 溶器是属是属于火火生土嘛
+  ents:
+  - acupoint.sp2
+  conf: 0.85
+  asr: 溶器=荥穴；皮筋=脾经
+- type: acupoint_usage
+  s: 太白在第一跖骨后下方骨缝，直刺；为脾经输穴。
+  seq:
+  - 230
+  - 236
+  q: 太白穴呢就是脾经的淤穴
+  ents:
+  - acupoint.sp3
+  - concept.shu_xue
+  conf: 0.95
+  asr: 淤穴=输穴
+- type: acupoint_usage
+  s: 公孙配内关治诸胃病，效常立竿见影；公孙为脾经络穴，通冲脉。
+  seq:
+  - 294
+  - 339
+  q: 公孙穴配上内关
+  ents:
+  - acupoint.sp4
+  - acupoint.pc6
+  - concept.luo_xue
+  - meridian.tv
+  conf: 0.95
+  asr: 崇拜=冲脉；落穴=络穴
+- type: clinical_tip
+  s: 妊娠恶心呕吐可用公孙或足三里。
+  seq:
+  - 325
+  - 327
+  q: 妇女怀孕了，恶心啊，吐不啊
+  ents:
+  - acupoint.sp4
+  - acupoint.st36
+  conf: 0.9
