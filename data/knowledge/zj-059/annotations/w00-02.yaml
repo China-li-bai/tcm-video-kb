@@ -1,0 +1,112 @@
+video_id: zj-059
+window: w00-02
+seg_from: 0
+seg_to: 345
+annotator: llm_read
+chapters:
+- key: c01
+  title: 本穴与子母补泻
+  start_seq: 0
+  summary: 本穴=该经五行属性相同之穴（如胆木→足临泣、脾土→太白）。本穴可泻所克经之实、补所生经之虚。五门：本穴子母补泻、两穴合化五行等变化。
+  clauses: []
+  topics:
+  - acupoint.gb41
+  - acupoint.sp3
+  - concept.wu_xing
+- key: c02
+  title: 行间二间合化生水
+  start_seq: 134
+  summary: 肝荥行间与大肠荥二间同留可合化生水，补膀胱虚；本穴补泻不必苍龟探穴等复杂手法，左右捻转即可。盔甲限制时取远端手足穴。
+  clauses: []
+  topics:
+  - acupoint.lr2
+  - acupoint.li2
+- key: c03
+  title: 青龙摆尾与白虎摇头
+  start_seq: 185
+  summary: 《针灸大成》载青龙摆尾、赤凤摇头、龙虎交战、龙虎升降。得气后行青龙摆尾；白虎摇头针尾呈方出。井荥等指趾端穴不必摆尾摇头。
+  clauses: []
+  topics:
+  - method.bu_xie
+entities:
+- id: acupoint.gb41
+  seq: 32
+  surface: 灵气
+  corrected: 足临泣
+- id: acupoint.sp3
+  seq: 33
+  surface: 太白
+  corrected: 太白
+- id: concept.wu_xing
+  seq: 7
+  surface: 五行
+  corrected: 五行
+- id: acupoint.lr2
+  seq: 150
+  surface: 行间
+  corrected: 行间
+- id: acupoint.li2
+  seq: 150
+  surface: 二间
+  corrected: 二间
+- id: acupoint.st36
+  seq: 129
+  surface: 足三里
+  corrected: 足三里
+- id: method.bu_xie
+  seq: 102
+  surface: 补泻
+  corrected: 补泻
+- id: meridian.si
+  seq: 62
+  surface: 小肠经
+  corrected: 手太阳小肠经
+- id: meridian.bl
+  seq: 67
+  surface: 膀胱经
+  corrected: 足太阳膀胱经
+kps:
+- type: concept_definition
+  s: 本穴为与该经五行属性相同之穴；如胆木取足临泣，脾土取太白。
+  seq:
+  - 32
+  - 33
+  q: 脾经是太白穴
+  ents:
+  - acupoint.sp3
+  - acupoint.gb41
+  - concept.wu_xing
+  conf: 0.95
+  asr: 灵气=足临泣
+- type: clinical_tip
+  s: 本穴可泻所克经之实、补所生经之虚（如足临泣泻小肠实、补小肠虚等）；并可做子母补泻。
+  seq:
+  - 66
+  - 102
+  q: 可以做子母金的补泻
+  ents:
+  - acupoint.gb41
+  - method.bu_xie
+  conf: 0.9
+- type: clinical_tip
+  s: 太白强土可配足三里开胃；行间与二间同留可合化生水，补膀胱久虚。
+  seq:
+  - 129
+  - 171
+  q: 脾经的太白强土了
+  ents:
+  - acupoint.sp3
+  - acupoint.st36
+  - acupoint.lr2
+  - acupoint.li2
+  conf: 0.9
+- type: clinical_tip
+  s: 《大成》手法含青龙摆尾、赤凤摇头、龙虎交战/升降；本穴补泻得气后左右捻即可，不必苍龟探穴。
+  seq:
+  - 185
+  - 224
+  q: 青龙摆尾哦
+  ents:
+  - method.bu_xie
+  conf: 0.9
+  asr: 青龙白尾=青龙摆尾

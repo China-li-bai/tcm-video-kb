@@ -1,0 +1,94 @@
+video_id: zj-062
+window: w00-02
+seg_from: 0
+seg_to: 327
+annotator: llm_read
+chapters:
+- key: c01
+  title: 五脏交经与青龙摆尾
+  start_seq: 0
+  summary: 五脏交经在本穴上用青龙摆尾加强补泻，使经气达脏（如胆本足临泣木生火以强心）。平补平泻引气不足时加摆尾。亦可在三阴交等穴加强以止经痛。
+  clauses: []
+  topics:
+  - method.bu_xie
+  - acupoint.gb41
+  - acupoint.sp6
+- key: c02
+  title: 通关交经与赤凤摇头
+  start_seq: 34
+  summary: 通关交经用于关节受伤/脱臼后气不过；对侧取穴效不足时加强。通关多用赤凤摇头（泻法）。隔经补泻先治母经以止传变。
+  clauses: []
+  topics:
+  - method.bu_xie
+- key: c03
+  title: 呼吸补泻
+  start_seq: 55
+  summary: 呼吸补泻最常用且力强，宜肉厚处。补：吸气时插/推；泻则相反。临床可不强求鼻口细则，重在得气与补泻方向。
+  clauses: []
+  topics:
+  - method.bu_xie
+  - acupoint.st36
+entities:
+- id: method.bu_xie
+  seq: 9
+  surface: 补泻
+  corrected: 补泻
+- id: acupoint.gb41
+  seq: 4
+  surface: 灵气
+  corrected: 足临泣
+- id: acupoint.sp6
+  seq: 27
+  surface: 三阴交
+  corrected: 三阴交
+- id: acupoint.st36
+  seq: 73
+  surface: 足三里
+  corrected: 足三里
+- id: meridian.gb
+  seq: 4
+  surface: 胆经
+  corrected: 足少阳胆经
+kps:
+- type: concept_definition
+  s: 本穴=与该经五行属性相同之穴；胆木本穴为足临泣。
+  seq:
+  - 3
+  - 4
+  q: 我们叫做本穴
+  ents:
+  - acupoint.gb41
+  - meridian.gb
+  conf: 0.95
+  asr: 灵气=足临泣
+- type: acupoint_usage
+  s: 五脏交经：在本穴上用青龙摆尾加强补泻，使气达脏；三阴交可行之以止经痛。
+  seq:
+  - 22
+  - 28
+  q: 用七龙摆尾来做他的补泻
+  ents:
+  - method.bu_xie
+  - acupoint.sp6
+  conf: 0.9
+  asr: 七龙=青龙
+- type: clinical_tip
+  s: 通关交经用于关节伤后气不过；加强时用赤凤摇头（泻法）。
+  seq:
+  - 39
+  - 41
+  q: 刺凤摇头
+  ents:
+  - method.bu_xie
+  conf: 0.9
+  asr: 刺凤=赤凤
+- type: clinical_tip
+  s: 呼吸补泻最强常用，宜肉多处；补泻与吸呼配合，方向相反。
+  seq:
+  - 55
+  - 102
+  q: 最强的呼吸补泻
+  ents:
+  - method.bu_xie
+  - acupoint.st36
+  conf: 0.95

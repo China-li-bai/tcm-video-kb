@@ -1,0 +1,27 @@
+{
+ "schema": "knowledge/1",
+ "video_id": "zj-060",
+ "youtube_id": "C4BwItP6JHA",
+ "windows": [
+  "w00-01"
+ ],
+ "annotations_sha256": "394e1faa97526018",
+ "n_segments": 72,
+ "n_chapters": 1,
+ "n_sections": 0,
+ "n_entities": 8,
+ "entities_by_type": {
+  "herb": 1,
+  "symptom": 1,
+  "pattern": 1,
+  "acupoint": 1,
+  "method": 3,
+  "concept": 1
+ },
+ "n_new_entities": 0,
+ "n_knowledge_points": 3,
+ "kp_by_type": {
+  "clinical_tip": 3
+ },
+ "errors": []
+}

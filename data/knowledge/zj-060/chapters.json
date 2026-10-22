@@ -1,0 +1,31 @@
+[
+ {
+  "chapter_id": "zj-060.c01",
+  "video_id": "zj-060",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "龙虎交战与龙虎升降",
+  "summary": "龙虎交战以捻转法为主，三部（天人本）各一补一泻，专于剧痛、外伤镇痛。龙虎升降（旧称龙虎脱臼）用插提法使气过关节阻塞。可与烧山火之天部九数纯阳相参。",
+  "start_s": 0.42,
+  "end_s": 399.415,
+  "seg_from": 0,
+  "seg_to": 71,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "method.bu_xie",
+   "method.dao_yin"
+  ],
+  "citation": {
+   "youtube_id": "C4BwItP6JHA",
+   "url": "https://www.youtube.com/watch?v=C4BwItP6JHA&t=0s",
+   "series": "zj",
+   "episode": 60,
+   "title": "Ni Hai-sha \"Human Discipline\" \"Acupuncture\" Complete 90-Episode Series: Acupuncture 60",
+   "start_s": 0.42,
+   "end_s": 399.42
+  },
+  "review_status": "llm_read"
+ }
+]

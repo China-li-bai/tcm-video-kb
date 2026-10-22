@@ -1,0 +1,56 @@
+video_id: zj-060
+window: w00-01
+seg_from: 0
+seg_to: 71
+annotator: llm_read
+chapters:
+- key: c01
+  title: 龙虎交战与龙虎升降
+  start_seq: 0
+  summary: 龙虎交战以捻转法为主，三部（天人本）各一补一泻，专于剧痛、外伤镇痛。龙虎升降（旧称龙虎脱臼）用插提法使气过关节阻塞。可与烧山火之天部九数纯阳相参。
+  clauses: []
+  topics:
+  - method.bu_xie
+  - method.dao_yin
+entities:
+- id: method.bu_xie
+  seq: 0
+  surface: 补
+  corrected: 补泻
+- id: method.dao_yin
+  seq: 49
+  surface: 导引
+  corrected: 导引
+- id: acupoint.st36
+  seq: 45
+  surface: 足三里
+  corrected: 足三里
+kps:
+- type: clinical_tip
+  s: 龙虎交战以捻转行三部一补一泻，为强力止痛手法，外伤剧痛可用。
+  seq:
+  - 6
+  - 16
+  q: 龙虎交战
+  ents:
+  - method.bu_xie
+  conf: 0.95
+- type: clinical_tip
+  s: 龙虎升降用插提使气通过关节阻塞；旧名龙虎脱臼。
+  seq:
+  - 22
+  - 29
+  q: 龙虎升降的方法让气过去
+  ents:
+  - method.bu_xie
+  conf: 0.9
+- type: clinical_tip
+  s: 纯阳九数即烧山火仅做天部一步；强补后气冲胸可用六数泻法导引回气。
+  seq:
+  - 37
+  - 49
+  q: 烧山火的一步天部
+  ents:
+  - method.bu_xie
+  - method.dao_yin
+  conf: 0.9

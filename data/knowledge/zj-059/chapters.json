@@ -1,0 +1,89 @@
+[
+ {
+  "chapter_id": "zj-059.c01",
+  "video_id": "zj-059",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "本穴与子母补泻",
+  "summary": "本穴=该经五行属性相同之穴（如胆木→足临泣、脾土→太白）。本穴可泻所克经之实、补所生经之虚。五门：本穴子母补泻、两穴合化五行等变化。",
+  "start_s": 0.07,
+  "end_s": 621.87,
+  "seg_from": 0,
+  "seg_to": 133,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.gb41",
+   "acupoint.sp3",
+   "concept.wu_xing"
+  ],
+  "citation": {
+   "youtube_id": "AMzlxxtD1yE",
+   "url": "https://www.youtube.com/watch?v=AMzlxxtD1yE&t=0s",
+   "series": "zj",
+   "episode": 59,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 59",
+   "start_s": 0.07,
+   "end_s": 621.87
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-059.c02",
+  "video_id": "zj-059",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "行间二间合化生水",
+  "summary": "肝荥行间与大肠荥二间同留可合化生水，补膀胱虚；本穴补泻不必苍龟探穴等复杂手法，左右捻转即可。盔甲限制时取远端手足穴。",
+  "start_s": 623.09,
+  "end_s": 889.415,
+  "seg_from": 134,
+  "seg_to": 184,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.lr2",
+   "acupoint.li2"
+  ],
+  "citation": {
+   "youtube_id": "AMzlxxtD1yE",
+   "url": "https://www.youtube.com/watch?v=AMzlxxtD1yE&t=623s",
+   "series": "zj",
+   "episode": 59,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 59",
+   "start_s": 623.09,
+   "end_s": 889.41
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-059.c03",
+  "video_id": "zj-059",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "青龙摆尾与白虎摇头",
+  "summary": "《针灸大成》载青龙摆尾、赤凤摇头、龙虎交战、龙虎升降。得气后行青龙摆尾；白虎摇头针尾呈方出。井荥等指趾端穴不必摆尾摇头。",
+  "start_s": 891.15,
+  "end_s": 1714.634,
+  "seg_from": 185,
+  "seg_to": 345,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "method.bu_xie"
+  ],
+  "citation": {
+   "youtube_id": "AMzlxxtD1yE",
+   "url": "https://www.youtube.com/watch?v=AMzlxxtD1yE&t=891s",
+   "series": "zj",
+   "episode": 59,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 59",
+   "start_s": 891.15,
+   "end_s": 1714.63
+  },
+  "review_status": "llm_read"
+ }
+]

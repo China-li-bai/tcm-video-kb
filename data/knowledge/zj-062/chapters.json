@@ -1,0 +1,89 @@
+[
+ {
+  "chapter_id": "zj-062.c01",
+  "video_id": "zj-062",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "五脏交经与青龙摆尾",
+  "summary": "五脏交经在本穴上用青龙摆尾加强补泻，使经气达脏（如胆本足临泣木生火以强心）。平补平泻引气不足时加摆尾。亦可在三阴交等穴加强以止经痛。",
+  "start_s": 18.35,
+  "end_s": 222.765,
+  "seg_from": 0,
+  "seg_to": 33,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "method.bu_xie",
+   "acupoint.gb41",
+   "acupoint.sp6"
+  ],
+  "citation": {
+   "youtube_id": "fZ_mjY7H7Cc",
+   "url": "https://www.youtube.com/watch?v=fZ_mjY7H7Cc&t=18s",
+   "series": "zj",
+   "episode": 62,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 62",
+   "start_s": 18.35,
+   "end_s": 222.76
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-062.c02",
+  "video_id": "zj-062",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "通关交经与赤凤摇头",
+  "summary": "通关交经用于关节受伤/脱臼后气不过；对侧取穴效不足时加强。通关多用赤凤摇头（泻法）。隔经补泻先治母经以止传变。",
+  "start_s": 226.49,
+  "end_s": 362.135,
+  "seg_from": 34,
+  "seg_to": 54,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "method.bu_xie"
+  ],
+  "citation": {
+   "youtube_id": "fZ_mjY7H7Cc",
+   "url": "https://www.youtube.com/watch?v=fZ_mjY7H7Cc&t=226s",
+   "series": "zj",
+   "episode": 62,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 62",
+   "start_s": 226.49,
+   "end_s": 362.13
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-062.c03",
+  "video_id": "zj-062",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "呼吸补泻",
+  "summary": "呼吸补泻最常用且力强，宜肉厚处。补：吸气时插/推；泻则相反。临床可不强求鼻口细则，重在得气与补泻方向。",
+  "start_s": 364.62,
+  "end_s": 1876.343,
+  "seg_from": 55,
+  "seg_to": 327,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "method.bu_xie",
+   "acupoint.st36"
+  ],
+  "citation": {
+   "youtube_id": "fZ_mjY7H7Cc",
+   "url": "https://www.youtube.com/watch?v=fZ_mjY7H7Cc&t=364s",
+   "series": "zj",
+   "episode": 62,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 62",
+   "start_s": 364.62,
+   "end_s": 1876.34
+  },
+  "review_status": "llm_read"
+ }
+]
