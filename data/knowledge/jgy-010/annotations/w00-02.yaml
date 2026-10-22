@@ -1,0 +1,93 @@
+video_id: jgy-010
+window: w00-02
+seg_from: 0
+seg_to: 370
+annotator: llm_read
+chapters:
+- key: c01
+  title: 胸痹心痛概说·瓜蒌薤白与人参汤
+  start_seq: 0
+  summary: 金匮第九篇胸痹心痛短气。经方可速治心脏病。实证胸痹用瓜蒌薤白白酒/半夏及枳实薤白桂枝汤；虚证胸闷用人参汤（理中类），肠胃致胸闷需辨虚实。
+  clauses: []
+  topics:
+  - syndrome.xiong_bi
+  - formula.gua_lou_xie_bai_bai_jiu_tang
+  - formula.ren_shen_tang
+- key: c02
+  title: 茯苓杏仁甘草汤·缓痛气塞
+  start_seq: 126
+  summary: 胸中气塞短气缓痛用茯苓杏仁甘草汤；与麻杏石甘等肺方鉴别。虚实胸闷剂量可等量人参甘草活用。
+  clauses: []
+  topics:
+  - formula.fu_ling_xing_ren_gan_cao_tang
+- key: c03
+  title: 心包炎感·桂枝生姜枳实与乌头
+  start_seq: 250
+  summary: 心中痞、心悬似心包炎用桂枝生姜枳实汤行胸阳利水。心痛剧者乌头赤石脂丸；乌头/乌梅传抄之辨。
+  clauses: []
+  topics:
+  - formula.gui_zhi_sheng_jiang_zhi_shi_tang
+  - formula.wu_tou_chi_shi_zhi_wan
+entities:
+- id: syndrome.xiong_bi
+  seq: 1
+  surface: 胸体
+  corrected: 胸痹
+- id: formula.gua_lou_xie_bai_bai_jiu_tang
+  seq: 39
+  surface: 白酒
+  corrected: 瓜蒌薤白白酒汤
+- id: formula.zhi_shi_xie_bai_gui_zhi_tang
+  seq: 65
+  surface: 子石蟹、白桂枝汤
+  corrected: 枳实薤白桂枝汤
+- id: formula.ren_shen_tang
+  seq: 65
+  surface: 人参汤
+  corrected: 人参汤
+- id: formula.fu_ling_xing_ren_gan_cao_tang
+  seq: 143
+  surface: 茯苓杏仁甘草汤
+  corrected: 茯苓杏仁甘草汤
+- id: formula.gui_zhi_sheng_jiang_zhi_shi_tang
+  seq: 262
+  surface: 桂枝生姜子食汤
+  corrected: 桂枝生姜枳实汤
+- id: formula.wu_tou_chi_shi_zhi_wan
+  seq: 303
+  surface: 乌头自治丸
+  corrected: 乌头赤石脂丸
+kps:
+- type: clinical_tip
+  s: 金匮胸痹篇通达则诸心脏病可治；经方取效可极快。
+  seq: [2]
+  q: 心脏病都可以治
+  ents: [syndrome.xiong_bi]
+  conf: 0.9
+  asr: 胸体=胸痹
+- type: formula_indication
+  s: 胸痹实证用瓜蒌薤白类及枳实薤白桂枝汤；虚证胸闷用人参汤。
+  seq: [65]
+  q: 人参汤
+  ents: [formula.ren_shen_tang, formula.zhi_shi_xie_bai_gui_zhi_tang]
+  conf: 0.85
+  asr: 子石蟹白=枳实薤白
+- type: formula_indication
+  s: 胸中气塞短气缓痛，茯苓杏仁甘草汤。
+  seq: [143]
+  q: 茯苓杏仁甘草汤
+  ents: [formula.fu_ling_xing_ren_gan_cao_tang, syndrome.xiong_bi]
+  conf: 0.95
+- type: formula_indication
+  s: 心中痞、心如悬（类心包炎）用桂枝生姜枳实汤行胸阳、生姜枳实利水。
+  seq: [262]
+  q: 桂枝生姜子食汤
+  ents: [formula.gui_zhi_sheng_jiang_zhi_shi_tang]
+  conf: 0.9
+  asr: 子食=枳实
+- type: clinical_tip
+  s: 剧痛可拟乌头赤石脂丸；乌头与乌梅有传抄之争，仍当据证。
+  seq: [303]
+  q: 乌头
+  ents: [formula.wu_tou_chi_shi_zhi_wan]
+  conf: 0.8
