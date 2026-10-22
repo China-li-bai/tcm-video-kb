@@ -1,0 +1,90 @@
+[
+ {
+  "chapter_id": "zj-064.c01",
+  "video_id": "zj-064",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "头脑病·百会涌泉导引与绝骨诊脑",
+  "summary": "膀胱经后头痛粗痛取束骨、酸痛取委中。脑瘤痉挛取全蝎蜈蚣末；针用百会配涌泉上下导引。绝骨（悬钟）压痛提示脑病，虚实皆可见，命门等参辨。",
+  "start_s": 0.05,
+  "end_s": 769.915,
+  "seg_from": 0,
+  "seg_to": 146,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.gv20",
+   "acupoint.ki1",
+   "acupoint.gb39"
+  ],
+  "citation": {
+   "youtube_id": "I-l5R0TbgMo",
+   "url": "https://www.youtube.com/watch?v=I-l5R0TbgMo&t=0s",
+   "series": "zj",
+   "episode": 64,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 64",
+   "start_s": 0.05,
+   "end_s": 769.91
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-064.c02",
+  "video_id": "zj-064",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "鼻病迎香与头面配穴",
+  "summary": "鼻鼽鼻窦炎息肉等常见，迎香透内迎香；眼科可配肝经原合等。风池等头面穴活用。",
+  "start_s": 773.7,
+  "end_s": 1440.522,
+  "seg_from": 147,
+  "seg_to": 262,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.li20",
+   "acupoint.gb20"
+  ],
+  "citation": {
+   "youtube_id": "I-l5R0TbgMo",
+   "url": "https://www.youtube.com/watch?v=I-l5R0TbgMo&t=773s",
+   "series": "zj",
+   "episode": 64,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 64",
+   "start_s": 773.7,
+   "end_s": 1440.52
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-064.c03",
+  "video_id": "zj-064",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "耳病与支沟飞虎",
+  "summary": "耳门听会等轮换取穴免结硬。实证耳聋可配外关；支沟（飞虎）通三焦阳气，表里脏腑得力。",
+  "start_s": 1441.957,
+  "end_s": 1766.792,
+  "seg_from": 263,
+  "seg_to": 319,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.te6",
+   "acupoint.te5"
+  ],
+  "citation": {
+   "youtube_id": "I-l5R0TbgMo",
+   "url": "https://www.youtube.com/watch?v=I-l5R0TbgMo&t=1441s",
+   "series": "zj",
+   "episode": 64,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 64",
+   "start_s": 1441.96,
+   "end_s": 1766.79
+  },
+  "review_status": "llm_read"
+ }
+]

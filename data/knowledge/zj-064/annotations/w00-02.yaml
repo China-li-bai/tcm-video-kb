@@ -1,0 +1,98 @@
+video_id: zj-064
+window: w00-02
+seg_from: 0
+seg_to: 319
+annotator: llm_read
+chapters:
+- key: c01
+  title: 头脑病·百会涌泉导引与绝骨诊脑
+  start_seq: 0
+  summary: 膀胱经后头痛粗痛取束骨、酸痛取委中。脑瘤痉挛取全蝎蜈蚣末；针用百会配涌泉上下导引。绝骨（悬钟）压痛提示脑病，虚实皆可见，命门等参辨。
+  clauses: []
+  topics:
+  - acupoint.gv20
+  - acupoint.ki1
+  - acupoint.gb39
+- key: c02
+  title: 鼻病迎香与头面配穴
+  start_seq: 147
+  summary: 鼻鼽鼻窦炎息肉等常见，迎香透内迎香；眼科可配肝经原合等。风池等头面穴活用。
+  clauses: []
+  topics:
+  - acupoint.li20
+  - acupoint.gb20
+- key: c03
+  title: 耳病与支沟飞虎
+  start_seq: 263
+  summary: 耳门听会等轮换取穴免结硬。实证耳聋可配外关；支沟（飞虎）通三焦阳气，表里脏腑得力。
+  clauses: []
+  topics:
+  - acupoint.te6
+  - acupoint.te5
+entities:
+- id: acupoint.bl65
+  seq: 2
+  surface: 束骨
+  corrected: 束骨
+- id: herb.wu_gong
+  seq: 14
+  surface: 蜈蚣
+  corrected: 蜈蚣
+- id: acupoint.gv20
+  seq: 23
+  surface: 百汇
+  corrected: 百会
+- id: acupoint.ki1
+  seq: 23
+  surface: 涌泉
+  corrected: 涌泉
+- id: acupoint.gb39
+  seq: 36
+  surface: 绝骨
+  corrected: 绝骨
+- id: acupoint.gv4
+  seq: 43
+  surface: 命门
+  corrected: 命门
+- id: acupoint.li20
+  seq: 153
+  surface: 营香
+  corrected: 迎香
+- id: acupoint.te6
+  seq: 273
+  surface: 支沟
+  corrected: 支沟
+kps:
+- type: formula_indication
+  s: 脑瘤痉挛抽搐可用全蝎、蜈蚣研粉入囊；针取百会配涌泉上下导引。
+  seq: [14, 23]
+  q: 蜈蚣
+  ents: [herb.wu_gong, acupoint.gv20, acupoint.ki1]
+  conf: 0.9
+  asr: 全歇=全蝎；百汇=百会
+- type: diagnostic_rule
+  s: 绝骨压痛提示脑部有病；脑萎缩为虚、脑内有物为实，穴上皆可有压痛。
+  seq: [36, 38]
+  q: 绝骨
+  ents: [acupoint.gb39]
+  conf: 0.9
+  asr: 厥骨/结骨=绝骨；湿疹=实证
+- type: clinical_tip
+  s: 百会与涌泉为一对导引：上导百会、下引涌泉。
+  seq: [24]
+  q: 导引
+  ents: [acupoint.gv20, acupoint.ki1]
+  conf: 0.95
+- type: clinical_tip
+  s: 鼻息肉等问题可针迎香（透内迎香）。
+  seq: [153]
+  q: 营香
+  ents: [acupoint.li20]
+  conf: 0.85
+  asr: 营香/银香=迎香
+- type: clinical_tip
+  s: 支沟又名飞虎，属三焦，通阳气、舒筋活络，耳聋实证可配外关。
+  seq: [273]
+  q: 支沟
+  ents: [acupoint.te6]
+  conf: 0.9
