@@ -1,0 +1,40 @@
+{
+ "schema": "knowledge/1",
+ "video_id": "jgy-011",
+ "youtube_id": "9fhn6KVoHFM",
+ "windows": [
+  "w00-02"
+ ],
+ "annotations_sha256": "1eb7a14a0596167b",
+ "n_segments": 976,
+ "n_chapters": 3,
+ "n_sections": 0,
+ "n_entities": 129,
+ "entities_by_type": {
+  "formula": 30,
+  "herb": 33,
+  "symptom": 18,
+  "pattern": 3,
+  "disease": 1,
+  "six_channel": 2,
+  "meridian": 1,
+  "acupoint": 2,
+  "pulse": 5,
+  "method": 3,
+  "person": 1,
+  "book": 4,
+  "zangfu": 13,
+  "concept": 13
+ },
+ "n_new_entities": 4,
+ "n_knowledge_points": 17,
+ "kp_by_type": {
+  "clinical_tip": 4,
+  "formula_indication": 6,
+  "diagnostic_rule": 3,
+  "pathomechanism": 1,
+  "formula_composition": 2,
+  "contraindication": 1
+ },
+ "errors": []
+}

@@ -1,0 +1,93 @@
+[
+ {
+  "chapter_id": "jgy-011.c01",
+  "video_id": "jgy-011",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "腹满虚实辨·温药与攻下",
+  "summary": "金匮第十篇腹满寒疝宿食。腹满分虚实：按之不痛为虚当温药（理中类）；按之痛或舌苔黄为实可攻下（大柴胡/承气）。触诊取天枢；时胀时止属虚寒，持续胀属实。",
+  "start_s": 3.58,
+  "end_s": 681.815,
+  "seg_from": 0,
+  "seg_to": 119,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "symptom.fu_man",
+   "concept.xu_shi",
+   "formula.li_zhong_wan"
+  ],
+  "citation": {
+   "youtube_id": "9fhn6KVoHFM",
+   "url": "https://www.youtube.com/watch?v=9fhn6KVoHFM&t=3s",
+   "series": "jgy",
+   "episode": 11,
+   "title": "倪海廈《金匱要略》細分版： 10腹滿寒疝氣宿食病",
+   "start_s": 3.58,
+   "end_s": 681.82
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-011.c02",
+  "video_id": "jgy-011",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "胸中寒实·三物小白散与误下泻心",
+  "summary": "胸中寒实下利不止为死证；三物小白散（贝母桔梗巴豆，巴豆量三重）破寒结。绕脐痛属风冷勿妄承气；误下心下痞用泻心汤类补救。厚朴七物汤治太阳阳明合病腹满发热脉浮数。",
+  "start_s": 682.78,
+  "end_s": 1579.195,
+  "seg_from": 120,
+  "seg_to": 277,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "formula.san_wu_xiao_bai_san",
+   "formula.xie_xin_tang",
+   "new.formula.hou_pu_qi_wu_tang"
+  ],
+  "citation": {
+   "youtube_id": "9fhn6KVoHFM",
+   "url": "https://www.youtube.com/watch?v=9fhn6KVoHFM&t=682s",
+   "series": "jgy",
+   "episode": 11,
+   "title": "倪海廈《金匱要略》細分版： 10腹滿寒疝氣宿食病",
+   "start_s": 682.78,
+   "end_s": 1579.19
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-011.c03",
+  "video_id": "jgy-011",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "寒疝雷鸣·附子粳米与厚朴三物",
+  "summary": "腹寒剧痛雷鸣切痛（肠套叠感）用附子粳米汤温中降逆。痛而闭用厚朴三物汤（重厚朴枳实）；满而不痛便秘用小承气；不大便无矢气用大承气。厚朴三物与小承气之辨在痛否与药量配伍。",
+  "start_s": 1580.56,
+  "end_s": 5451.176,
+  "seg_from": 278,
+  "seg_to": 975,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "new.formula.fu_zi_geng_mi_tang",
+   "new.formula.hou_pu_san_wu_tang",
+   "formula.xiao_cheng_qi_tang",
+   "formula.da_cheng_qi_tang"
+  ],
+  "citation": {
+   "youtube_id": "9fhn6KVoHFM",
+   "url": "https://www.youtube.com/watch?v=9fhn6KVoHFM&t=1580s",
+   "series": "jgy",
+   "episode": 11,
+   "title": "倪海廈《金匱要略》細分版： 10腹滿寒疝氣宿食病",
+   "start_s": 1580.56,
+   "end_s": 5451.18
+  },
+  "review_status": "llm_read"
+ }
+]

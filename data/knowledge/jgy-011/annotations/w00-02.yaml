@@ -1,0 +1,218 @@
+video_id: jgy-011
+window: w00-02
+seg_from: 0
+seg_to: 381
+annotator: llm_read
+chapters:
+- key: c01
+  title: 腹满虚实辨·温药与攻下
+  start_seq: 0
+  summary: 金匮第十篇腹满寒疝宿食。腹满分虚实：按之不痛为虚当温药（理中类）；按之痛或舌苔黄为实可攻下（大柴胡/承气）。触诊取天枢；时胀时止属虚寒，持续胀属实。
+  clauses: []
+  topics:
+  - symptom.fu_man
+  - concept.xu_shi
+  - formula.li_zhong_wan
+- key: c02
+  title: 胸中寒实·三物小白散与误下泻心
+  start_seq: 120
+  summary: 胸中寒实下利不止为死证；三物小白散（贝母桔梗巴豆，巴豆量三重）破寒结。绕脐痛属风冷勿妄承气；误下心下痞用泻心汤类补救。厚朴七物汤治太阳阳明合病腹满发热脉浮数。
+  clauses: []
+  topics:
+  - formula.san_wu_xiao_bai_san
+  - formula.xie_xin_tang
+  - new.formula.hou_pu_qi_wu_tang
+- key: c03
+  title: 寒疝雷鸣·附子粳米与厚朴三物
+  start_seq: 278
+  summary: 腹寒剧痛雷鸣切痛（肠套叠感）用附子粳米汤温中降逆。痛而闭用厚朴三物汤（重厚朴枳实）；满而不痛便秘用小承气；不大便无矢气用大承气。厚朴三物与小承气之辨在痛否与药量配伍。
+  clauses: []
+  topics:
+  - new.formula.fu_zi_geng_mi_tang
+  - new.formula.hou_pu_san_wu_tang
+  - formula.xiao_cheng_qi_tang
+  - formula.da_cheng_qi_tang
+entities:
+- id: symptom.fu_man
+  seq: 0
+  surface: 腹满
+  corrected: 腹满
+- id: new.formula.sheng_jiang_ban_xia_ren_shen_gan_cao_tang
+  seq: 13
+  surface: 生姜半夏人参甘草汤
+  corrected: 生姜半夏人参甘草汤
+- id: concept.xu_shi
+  seq: 37
+  surface: 虚实
+  corrected: 虚实
+- id: acupoint.st25
+  seq: 39
+  surface: 天枢
+  corrected: 天枢
+- id: formula.da_chai_hu_tang
+  seq: 59
+  surface: 大柴胡汤
+  corrected: 大柴胡汤
+- id: formula.da_cheng_qi_tang
+  seq: 59
+  surface: 大承绩汤
+  corrected: 大承气汤
+- id: formula.xiao_cheng_qi_tang
+  seq: 59
+  surface: 小成绩汤
+  corrected: 小承气汤
+- id: formula.li_zhong_wan
+  seq: 33
+  surface: 里中汤
+  corrected: 理中汤
+- id: formula.san_wu_xiao_bai_san
+  seq: 129
+  surface: 三孔小白伞
+  corrected: 三物小白散
+- id: herb.ba_dou
+  seq: 130
+  surface: 巴豆
+  corrected: 巴豆
+- id: formula.xie_xin_tang
+  seq: 213
+  surface: 泻心汤
+  corrected: 泻心汤
+- id: formula.gui_zhi_jia_gui_tang
+  seq: 218
+  surface: 桂枝加桂汤
+  corrected: 桂枝加桂汤
+- id: new.formula.hou_pu_qi_wu_tang
+  seq: 221
+  surface: 喝谷去补肠
+  corrected: 厚朴七物汤
+- id: formula.gui_zhi_tang
+  seq: 228
+  surface: 桂枝汤
+  corrected: 桂枝汤
+- id: new.formula.fu_zi_geng_mi_tang
+  seq: 291
+  surface: 附子汤
+  corrected: 附子粳米汤
+- id: herb.ban_xia
+  seq: 301
+  surface: 半夏
+  corrected: 半夏
+- id: new.formula.hou_pu_san_wu_tang
+  seq: 347
+  surface: 厚补三物汤
+  corrected: 厚朴三物汤
+- id: herb.da_huang
+  seq: 348
+  surface: 大黄
+  corrected: 大黄
+kps:
+- type: clinical_tip
+  s: 金匮第十篇分腹满、寒疝、宿食三纲；腹满须先辨虚实。
+  seq: [0]
+  q: 腹满
+  ents: [symptom.fu_man]
+  conf: 0.95
+  asr: 寒散=寒疝；肃食=宿食
+- type: formula_indication
+  s: 单纯气胀可用生姜半夏人参甘草汤消气滞。
+  seq: [13]
+  q: 生姜半夏人参
+  ents: [new.formula.sheng_jiang_ban_xia_ren_shen_gan_cao_tang, symptom.fu_man]
+  conf: 0.85
+- type: diagnostic_rule
+  s: 腹满按之不痛为虚，当温药；按之痛或苔黄为实，可攻下。
+  seq: [35]
+  q: 按之，不痛为虚
+  ents: [symptom.fu_man, concept.xu_shi]
+  conf: 0.95
+- type: clinical_tip
+  s: 腹诊虚实取天枢等穴：按之舒适属虚，拒按剧痛属实。
+  seq: [39]
+  q: 天枢
+  ents: [acupoint.st25, concept.xu_shi]
+  conf: 0.9
+- type: pathomechanism
+  s: 腹满时胀时止属虚寒当温；持续胀满属实（燥屎等）。
+  seq: [97]
+  q: 时好时坏
+  ents: [symptom.fu_man, concept.xu_shi]
+  conf: 0.9
+- type: formula_indication
+  s: 虚寒腹满当温药，如理中类（人参白术茯苓甘草姜）。
+  seq: [33]
+  q: 里中汤
+  ents: [formula.li_zhong_wan, symptom.fu_man]
+  conf: 0.85
+  asr: 里中=理中
+- type: clinical_tip
+  s: 病者萎黄躁而不渴，胸中寒实又下利不止，阴阳两竭为死证。
+  seq: [120]
+  q: 寒食
+  ents: [symptom.fu_man]
+  conf: 0.85
+  asr: 寒食=寒实
+- type: formula_indication
+  s: 胸中寒实结胸用三物小白散；组成贝母、桔梗、巴豆。
+  seq: [129]
+  q: 贝母、桔梗
+  ents: [formula.san_wu_xiao_bai_san, herb.ba_dou]
+  conf: 0.95
+  asr: 三孔小白伞=三物小白散
+- type: formula_composition
+  s: 三物小白散剂量巴豆三重、余药各一（三三一），误用极险。
+  seq: [143]
+  q: 巴豆三
+  ents: [formula.san_wu_xiao_bai_san, herb.ba_dou]
+  conf: 0.9
+- type: contraindication
+  s: 绕脐痛属风冷、腑气不行时勿妄投承气；误下致心下痞可用泻心汤类补救。
+  seq: [213]
+  q: 五个泻心汤
+  ents: [formula.xie_xin_tang, formula.xiao_cheng_qi_tang]
+  conf: 0.85
+- type: formula_indication
+  s: 腹满发热十余日脉浮而数、饮食如故，厚朴七物汤（桂枝汤去芍加厚朴枳实大黄）。
+  seq: [221]
+  q: 腹满
+  ents: [new.formula.hou_pu_qi_wu_tang, formula.gui_zhi_tang, symptom.fu_man]
+  conf: 0.85
+  asr: 喝谷去补肠=厚朴七物汤；素=数
+- type: formula_composition
+  s: 厚朴七物去厚朴枳实大黄余桂枝生姜甘草大枣，即桂枝汤去芍；因腹满无腹痛故去白芍。
+  seq: [228]
+  q: 桂枝汤
+  ents: [new.formula.hou_pu_qi_wu_tang, formula.gui_zhi_tang]
+  conf: 0.9
+- type: formula_indication
+  s: 腹寒雷鸣切痛（剧痛如肠套叠）用附子粳米汤温中降逆止呕。
+  seq: [291]
+  q: 附子汤
+  ents: [new.formula.fu_zi_geng_mi_tang]
+  conf: 0.9
+  asr: 附子汤/父子汤米汤=附子粳米汤；雷鸣切痛
+- type: clinical_tip
+  s: 雷鸣切痛属寒痛，非必肿瘤；附子粳米汤常一剂知、二剂已。
+  seq: [285]
+  q: 雷鸣切痛
+  ents: [new.formula.fu_zi_geng_mi_tang, symptom.fu_man]
+  conf: 0.85
+- type: diagnostic_rule
+  s: 小承气：满而不痛之便秘；厚朴三物：痛而闭，重用厚朴；大/小承气以有无矢气辨大肠/小肠燥结。
+  seq: [347]
+  q: 三物汤
+  ents: [new.formula.hou_pu_san_wu_tang, formula.xiao_cheng_qi_tang]
+  conf: 0.95
+  asr: 厚补/后补/厚普=厚朴
+- type: diagnostic_rule
+  s: 小承气证多矢气（燥结在小肠、大肠空）；大承气证连屁亦无（燥结已入大肠）。
+  seq: [362]
+  q: 大承气汤
+  ents: [formula.xiao_cheng_qi_tang, formula.da_cheng_qi_tang]
+  conf: 0.95
+- type: formula_indication
+  s: 痛而闭者厚朴三物汤；满而不痛便秘者小承气汤。
+  seq: [364]
+  q: 痛而闭着
+  ents: [new.formula.hou_pu_san_wu_tang, formula.xiao_cheng_qi_tang]
+  conf: 0.95
+  asr: 闭着=闭者
