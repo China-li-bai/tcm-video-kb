@@ -66,9 +66,12 @@
   "zj-066",
   "zj-067",
   "zj-068",
-  "zj-069"
+  "zj-069",
+  "zj-071",
+  "zj-072",
+  "zj-073"
  ],
- "n_entities": 1054,
- "n_knowledge_points": 917,
- "n_chapters": 363
+ "n_entities": 1058,
+ "n_knowledge_points": 926,
+ "n_chapters": 369
 }

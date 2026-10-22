@@ -1,0 +1,86 @@
+video_id: zj-071
+window: w00-02
+seg_from: 0
+seg_to: 328
+annotator: llm_read
+chapters:
+- key: c01
+  title: 腹痛便秘支沟照海
+  start_seq: 0
+  summary: 腹痛辨因（瘀/寒等）；小肠募关元。便秘名穴支沟（散津，又称飞虎）配照海，寒热皆可用；寒秘可灸天枢、关元、中脘、足三里促蠕动。
+  clauses: []
+  topics:
+  - acupoint.te6
+  - acupoint.ki6
+  - acupoint.cv4
+- key: c02
+  title: 阑尾穴与四花灸
+  start_seq: 69
+  summary: 急慢性阑尾炎在阑尾穴多有压痛点，可针；寒症可灸天枢关元中脘。兼及瘰疬/甲状腺可用周围灸法思路。
+  clauses: []
+  topics:
+  - acupoint.ex_lan_wei
+  - acupoint.st25
+entities:
+- id: acupoint.te6
+  seq: 57
+  surface: 支沟
+  corrected: 支沟
+- id: acupoint.ki6
+  seq: 57
+  surface: 灶海
+  corrected: 照海
+- id: acupoint.ex_lan_wei
+  seq: 83
+  surface: 阑尾穴
+  corrected: 阑尾穴
+- id: acupoint.st25
+  seq: 69
+  surface: 天书
+  corrected: 天枢
+- id: acupoint.cv4
+  seq: 69
+  surface: 官元
+  corrected: 关元
+- id: acupoint.cv12
+  seq: 69
+  surface: 中晚
+  corrected: 中脘
+- id: acupoint.sp3
+  seq: 61
+  surface: 太白
+  corrected: 太白
+kps:
+- type: acupoint_usage
+  s: 便秘名配：支沟（散津/飞虎）+照海，寒热皆可用。
+  seq:
+  - 57
+  - 59
+  q: 支沟跟灶海是很有名的
+  ents:
+  - acupoint.te6
+  - acupoint.ki6
+  conf: 0.95
+  asr: 灶海/造海=照海；非腑/飞虎=支沟别名；知沟=支沟
+- type: acupoint_usage
+  s: 寒秘可灸天枢、关元、中脘（及足三里）促肠蠕动。
+  seq:
+  - 69
+  - 71
+  q: 灸他的天书
+  ents:
+  - acupoint.st25
+  - acupoint.cv4
+  - acupoint.cv12
+  conf: 0.9
+  asr: 天书=天枢；官元=关元；中晚=中脘
+- type: clinical_tip
+  s: 急慢性阑尾炎多在阑尾穴得压痛点，可针阑尾穴。
+  seq:
+  - 83
+  - 89
+  q: 阑尾穴一定会找到牙痛点
+  ents:
+  - acupoint.ex_lan_wei
+  conf: 0.9
+  asr: 牙痛点=压痛点

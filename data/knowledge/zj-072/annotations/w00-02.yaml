@@ -1,0 +1,87 @@
+video_id: zj-072
+window: w00-02
+seg_from: 0
+seg_to: 342
+annotator: llm_read
+chapters:
+- key: c01
+  title: 妇科痛经三阴交血海
+  start_seq: 0
+  summary: 助孕常灸三阴交、关元、中极。痛经：三阴交、血海为名穴，针后痛可顿减；隐白止崩漏/月经不止。白带可取中极。
+  clauses: []
+  topics:
+  - acupoint.sp6
+  - acupoint.sp10
+  - acupoint.sp1
+  - acupoint.cv3
+- key: c02
+  title: 合谷三阴交安胎堕胎
+  start_seq: 227
+  summary: 补合谷泻三阴交可堕胎；泻合谷泻三阴交可安胎。吐血不止忌足三里，可取中脘、内关。
+  clauses: []
+  topics:
+  - acupoint.li4
+  - acupoint.sp6
+entities:
+- id: acupoint.sp6
+  seq: 57
+  surface: 三阴交
+  corrected: 三阴交
+- id: acupoint.sp10
+  seq: 57
+  surface: 血海
+  corrected: 血海
+- id: acupoint.sp1
+  seq: 96
+  surface: 隐白
+  corrected: 隐白
+- id: acupoint.cv3
+  seq: 25
+  surface: 中极
+  corrected: 中极
+- id: acupoint.cv4
+  seq: 25
+  surface: 关元
+  corrected: 关元
+- id: acupoint.li4
+  seq: 227
+  surface: 合谷
+  corrected: 合谷
+- id: acupoint.cv12
+  seq: 88
+  surface: 中脘
+  corrected: 中脘
+- id: acupoint.pc6
+  seq: 88
+  surface: 内关
+  corrected: 内关
+kps:
+- type: acupoint_usage
+  s: 痛经名穴三阴交、血海；针后痛常顿减。
+  seq:
+  - 57
+  - 63
+  q: 三阴交跟血海是我们非常有名的止痛经的大穴
+  ents:
+  - acupoint.sp6
+  - acupoint.sp10
+  conf: 0.95
+- type: acupoint_usage
+  s: 隐白为止崩漏/月经不止常用大穴，常一针见效。
+  seq:
+  - 92
+  - 96
+  q: 隐白穴是我们止月经下穴不止最常用的一个大穴
+  ents:
+  - acupoint.sp1
+  conf: 0.95
+- type: contraindication
+  s: 补合谷泻三阴交可堕胎；泻合谷泻三阴交可安胎（须慎用）。
+  seq:
+  - 227
+  - 237
+  q: 泻合谷泻三阴交会安胎
+  ents:
+  - acupoint.li4
+  - acupoint.sp6
+  conf: 0.95

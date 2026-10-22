@@ -1,0 +1,62 @@
+[
+ {
+  "chapter_id": "zj-072.c01",
+  "video_id": "zj-072",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "妇科痛经三阴交血海",
+  "summary": "助孕常灸三阴交、关元、中极。痛经：三阴交、血海为名穴，针后痛可顿减；隐白止崩漏/月经不止。白带可取中极。",
+  "start_s": 0.05,
+  "end_s": 1170.252,
+  "seg_from": 0,
+  "seg_to": 226,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.sp6",
+   "acupoint.sp10",
+   "acupoint.sp1",
+   "acupoint.cv3"
+  ],
+  "citation": {
+   "youtube_id": "y-NDOWp_6O8",
+   "url": "https://www.youtube.com/watch?v=y-NDOWp_6O8&t=0s",
+   "series": "zj",
+   "episode": 72,
+   "title": "Ni Hai-hsia: \"Human Chronicles\" - Acupuncture (90-Episode Series) - Episode 72",
+   "start_s": 0.05,
+   "end_s": 1170.25
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-072.c02",
+  "video_id": "zj-072",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "合谷三阴交安胎堕胎",
+  "summary": "补合谷泻三阴交可堕胎；泻合谷泻三阴交可安胎。吐血不止忌足三里，可取中脘、内关。",
+  "start_s": 1170.252,
+  "end_s": 1698.397,
+  "seg_from": 227,
+  "seg_to": 342,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.li4",
+   "acupoint.sp6"
+  ],
+  "citation": {
+   "youtube_id": "y-NDOWp_6O8",
+   "url": "https://www.youtube.com/watch?v=y-NDOWp_6O8&t=1170s",
+   "series": "zj",
+   "episode": 72,
+   "title": "Ni Hai-hsia: \"Human Chronicles\" - Acupuncture (90-Episode Series) - Episode 72",
+   "start_s": 1170.25,
+   "end_s": 1698.4
+  },
+  "review_status": "llm_read"
+ }
+]

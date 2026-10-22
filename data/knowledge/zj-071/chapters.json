@@ -1,0 +1,61 @@
+[
+ {
+  "chapter_id": "zj-071.c01",
+  "video_id": "zj-071",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "腹痛便秘支沟照海",
+  "summary": "腹痛辨因（瘀/寒等）；小肠募关元。便秘名穴支沟（散津，又称飞虎）配照海，寒热皆可用；寒秘可灸天枢、关元、中脘、足三里促蠕动。",
+  "start_s": 22.0,
+  "end_s": 371.575,
+  "seg_from": 0,
+  "seg_to": 68,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.te6",
+   "acupoint.ki6",
+   "acupoint.cv4"
+  ],
+  "citation": {
+   "youtube_id": "AuVHFR0z_y4",
+   "url": "https://www.youtube.com/watch?v=AuVHFR0z_y4&t=22s",
+   "series": "zj",
+   "episode": 71,
+   "title": "Ni Hai-sha \"Human Record\": Acupuncture, 90-Episode Complete Series - Acupuncture 71",
+   "start_s": 22.0,
+   "end_s": 371.57
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-071.c02",
+  "video_id": "zj-071",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "阑尾穴与四花灸",
+  "summary": "急慢性阑尾炎在阑尾穴多有压痛点，可针；寒症可灸天枢关元中脘。兼及瘰疬/甲状腺可用周围灸法思路。",
+  "start_s": 373.63,
+  "end_s": 1874.197,
+  "seg_from": 69,
+  "seg_to": 328,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.ex_lan_wei",
+   "acupoint.st25"
+  ],
+  "citation": {
+   "youtube_id": "AuVHFR0z_y4",
+   "url": "https://www.youtube.com/watch?v=AuVHFR0z_y4&t=373s",
+   "series": "zj",
+   "episode": 71,
+   "title": "Ni Hai-sha \"Human Record\": Acupuncture, 90-Episode Complete Series - Acupuncture 71",
+   "start_s": 373.63,
+   "end_s": 1874.2
+  },
+  "review_status": "llm_read"
+ }
+]

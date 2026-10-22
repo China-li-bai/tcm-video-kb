@@ -1,0 +1,63 @@
+[
+ {
+  "chapter_id": "zj-073.c01",
+  "video_id": "zj-073",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "灵龟八法总说",
+  "summary": "介绍灵龟八法（ASR临归/零归）出自后天八卦，配子午流注，多用于急症；勿取代正经取穴。兼及回阳九针、十三鬼穴预告。缺趾时取该经末穴止血。",
+  "start_s": 0.25,
+  "end_s": 458.13,
+  "seg_from": 0,
+  "seg_to": 71,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "new.method.ling_gui_ba_fa",
+   "acupoint.sp4",
+   "acupoint.pc6"
+  ],
+  "citation": {
+   "youtube_id": "Xflt8s3Orlk",
+   "url": "https://www.youtube.com/watch?v=Xflt8s3Orlk&t=0s",
+   "series": "zj",
+   "episode": 73,
+   "title": "Ni Hai-sha \"Human Constitution\" \"Acupuncture\" Complete 90-Episode Series: Acupuncture 73",
+   "start_s": 0.25,
+   "end_s": 458.13
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-073.c02",
+  "video_id": "zj-073",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "八脉交会配对",
+  "summary": "八法穴分四组：如公孙-内关（冲脉/阴维）、后溪-申脉、列缺-照海等；先开穴后配穴。按时辰干支查盘取穴。",
+  "start_s": 460.03,
+  "end_s": 1855.103,
+  "seg_from": 72,
+  "seg_to": 340,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.si3",
+   "acupoint.sp4",
+   "acupoint.pc6",
+   "acupoint.lu7"
+  ],
+  "citation": {
+   "youtube_id": "Xflt8s3Orlk",
+   "url": "https://www.youtube.com/watch?v=Xflt8s3Orlk&t=460s",
+   "series": "zj",
+   "episode": 73,
+   "title": "Ni Hai-sha \"Human Constitution\" \"Acupuncture\" Complete 90-Episode Series: Acupuncture 73",
+   "start_s": 460.03,
+   "end_s": 1855.1
+  },
+  "review_status": "llm_read"
+ }
+]

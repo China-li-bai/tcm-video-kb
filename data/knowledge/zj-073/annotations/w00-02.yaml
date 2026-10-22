@@ -1,0 +1,87 @@
+video_id: zj-073
+window: w00-02
+seg_from: 0
+seg_to: 340
+annotator: llm_read
+chapters:
+- key: c01
+  title: 灵龟八法总说
+  start_seq: 0
+  summary: 介绍灵龟八法（ASR临归/零归）出自后天八卦，配子午流注，多用于急症；勿取代正经取穴。兼及回阳九针、十三鬼穴预告。缺趾时取该经末穴止血。
+  clauses: []
+  topics:
+  - new.method.ling_gui_ba_fa
+  - acupoint.sp4
+  - acupoint.pc6
+- key: c02
+  title: 八脉交会配对
+  start_seq: 72
+  summary: 八法穴分四组：如公孙-内关（冲脉/阴维）、后溪-申脉、列缺-照海等；先开穴后配穴。按时辰干支查盘取穴。
+  clauses: []
+  topics:
+  - acupoint.si3
+  - acupoint.sp4
+  - acupoint.pc6
+  - acupoint.lu7
+entities:
+- id: new.method.ling_gui_ba_fa
+  seq: 18
+  surface: 临归八法
+  corrected: 灵龟八法
+- id: acupoint.sp4
+  seq: 73
+  surface: 公孙
+  corrected: 公孙
+- id: acupoint.pc6
+  seq: 73
+  surface: 内关
+  corrected: 内关
+- id: acupoint.si3
+  seq: 72
+  surface: 后溪
+  corrected: 后溪
+- id: acupoint.bl62
+  seq: 167
+  surface: 身脉
+  corrected: 申脉
+- id: acupoint.lu7
+  seq: 253
+  surface: 列缺
+  corrected: 列缺
+- id: acupoint.sp3
+  seq: 5
+  surface: 太白
+  corrected: 太白
+kps:
+- type: clinical_tip
+  s: 灵龟八法本于易经后天卦，多用于急症；勿只学八法而废正经取穴。
+  seq:
+  - 18
+  - 28
+  q: 临归八法就是从易经的八卦来的
+  ents:
+  - new.method.ling_gui_ba_fa
+  conf: 0.9
+  asr: 临归/零归/名归=灵龟；植物留住=子午流注
+- type: acupoint_usage
+  s: 八脉交会配对例：公孙配内关（冲/阴维）；后溪配申脉等，先开后配。
+  seq:
+  - 72
+  - 167
+  q: 后溪跟身脉是一组
+  ents:
+  - acupoint.sp4
+  - acupoint.pc6
+  - acupoint.si3
+  - acupoint.bl62
+  conf: 0.9
+  asr: 身脉=申脉；灵气=照海；外观=外关
+- type: clinical_tip
+  s: 趾/穴缺失时取该经末穴可止血（如脾经取太白）。
+  seq:
+  - 3
+  - 5
+  q: 下太白
+  ents:
+  - acupoint.sp3
+  conf: 0.85
