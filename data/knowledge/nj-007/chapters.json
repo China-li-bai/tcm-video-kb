@@ -1,0 +1,89 @@
+[
+ {
+  "chapter_id": "nj-007.c01",
+  "video_id": "nj-007",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "情志伤脏·悲恐与肺肾升降",
+  "summary": "膈上为阳膈下为阴；内则阳降阴升故头凉足温。悲伤肺致上焦不通、营卫不散；恐伤肾使肺气不降、下焦胀。",
+  "start_s": 0.21,
+  "end_s": 725.935,
+  "seg_from": 0,
+  "seg_to": 114,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "zangfu.fei",
+   "zangfu.shen",
+   "concept.ying_wei"
+  ],
+  "citation": {
+   "youtube_id": "90CD-7gBaig",
+   "url": "https://www.youtube.com/watch?v=90CD-7gBaig&t=0s",
+   "series": "nj",
+   "episode": 7,
+   "title": "07 倪海厦精讲《黄帝内经》高清字幕完整版",
+   "start_s": 0.21,
+   "end_s": 725.93
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "nj-007.c02",
+  "video_id": "nj-007",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "血枯与饮食不节复发",
+  "summary": "病愈后饮食不节（如食肉）易复发。胸胁支满、先闻腥臭、吐血目眩属血枯；内经第二方用乌贼骨。",
+  "start_s": 726.27,
+  "end_s": 1459.762,
+  "seg_from": 115,
+  "seg_to": 256,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "new.disease.xue_ku"
+  ],
+  "citation": {
+   "youtube_id": "90CD-7gBaig",
+   "url": "https://www.youtube.com/watch?v=90CD-7gBaig&t=726s",
+   "series": "nj",
+   "episode": 7,
+   "title": "07 倪海厦精讲《黄帝内经》高清字幕完整版",
+   "start_s": 726.27,
+   "end_s": 1459.76
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "nj-007.c03",
+  "video_id": "nj-007",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "热中消中忌芳草金石与四海",
+  "summary": "热中消中者多富贵，不可服芳草金石类悍药，须心平气和。人身有气海、水谷之海、十二经之海、髓海谓之四海。",
+  "start_s": 1461.107,
+  "end_s": 14246.946,
+  "seg_from": 257,
+  "seg_to": 2485,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "new.pattern.re_zhong_xiao_zhong",
+   "new.concept.si_hai"
+  ],
+  "citation": {
+   "youtube_id": "90CD-7gBaig",
+   "url": "https://www.youtube.com/watch?v=90CD-7gBaig&t=1461s",
+   "series": "nj",
+   "episode": 7,
+   "title": "07 倪海厦精讲《黄帝内经》高清字幕完整版",
+   "start_s": 1461.11,
+   "end_s": 14246.95
+  },
+  "review_status": "llm_read"
+ }
+]

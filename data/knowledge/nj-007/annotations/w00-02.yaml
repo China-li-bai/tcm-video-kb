@@ -1,0 +1,109 @@
+video_id: nj-007
+window: w00-02
+seg_from: 0
+seg_to: 380
+annotator: llm_read
+chapters:
+- key: c01
+  title: 情志伤脏·悲恐与肺肾升降
+  start_seq: 0
+  summary: 膈上为阳膈下为阴；内则阳降阴升故头凉足温。悲伤肺致上焦不通、营卫不散；恐伤肾使肺气不降、下焦胀。
+  clauses: []
+  topics:
+  - zangfu.fei
+  - zangfu.shen
+  - concept.ying_wei
+- key: c02
+  title: 血枯与饮食不节复发
+  start_seq: 115
+  summary: 病愈后饮食不节（如食肉）易复发。胸胁支满、先闻腥臭、吐血目眩属血枯；内经第二方用乌贼骨。
+  clauses: []
+  topics:
+  - new.disease.xue_ku
+- key: c03
+  title: 热中消中忌芳草金石与四海
+  start_seq: 257
+  summary: 热中消中者多富贵，不可服芳草金石类悍药，须心平气和。人身有气海、水谷之海、十二经之海、髓海谓之四海。
+  clauses: []
+  topics:
+  - new.pattern.re_zhong_xiao_zhong
+  - new.concept.si_hai
+entities:
+- id: zangfu.fei
+  seq: 8
+  surface: 肺
+  corrected: 肺
+- id: zangfu.shen
+  seq: 22
+  surface: 肾脏
+  corrected: 肾
+- id: concept.ying_wei
+  seq: 17
+  surface: 营卫
+  corrected: 营卫
+- id: concept.yin_yang
+  seq: 9
+  surface: 阴阳
+  corrected: 阴阳
+- id: new.disease.xue_ku
+  seq: 129
+  surface: 血枯
+  corrected: 血枯
+- id: classic.huang_di_nei_jing
+  seq: 152
+  surface: 黄帝内经
+  corrected: 黄帝内经
+- id: new.pattern.re_zhong_xiao_zhong
+  seq: 259
+  surface: 热中消中
+  corrected: 热中消中
+- id: new.concept.si_hai
+  seq: 332
+  surface: 四个海
+  corrected: 四海
+- id: zangfu.shang_jiao
+  seq: 12
+  surface: 上焦
+  corrected: 上焦
+- id: zangfu.xia_jiao
+  seq: 22
+  surface: 下焦
+  corrected: 下焦
+kps:
+- type: concept_definition
+  s: 胸膈以上为阳、以下为阴；体内则阳降阴升，故头宜凉、足宜温。
+  seq: [9, 10]
+  q: 上面是阳，下面是阴
+  ents: [concept.yin_yang]
+  conf: 0.95
+- type: pathomechanism
+  s: 悲伤肺则上焦不通、营卫不散、胸中阳热积；恐伤肾则肺气不降、下焦胀而气不行。
+  seq: [17, 33]
+  q: 营卫不散
+  ents: [zangfu.fei, zangfu.shen, concept.ying_wei]
+  conf: 0.9
+- type: contraindication
+  s: 病愈后饮食不节（尤其食肉）易使余热或旧病复发。
+  seq: [115, 117]
+  q: 饮食不节
+  ents: []
+  conf: 0.95
+- type: clinical_tip
+  s: 胸胁支满、发病前先闻腥臭、吐血目眩等属血枯；内经第二方用乌贼骨。
+  seq: [129, 152]
+  q: 血枯
+  ents: [new.disease.xue_ku, classic.huang_di_nei_jing]
+  conf: 0.85
+  asr: 血窟=血枯
+- type: contraindication
+  s: 热中消中者体内本热，不可再服芳草金石等悍热药；用药须病人心平气和。
+  seq: [259, 267]
+  q: 热中消中
+  ents: [new.pattern.re_zhong_xiao_zhong]
+  conf: 0.9
+- type: concept_definition
+  s: 人身四海：气海（颈）、水谷之海、十二经之海、脑髓之海。
+  seq: [291, 332]
+  q: 统称为四个海
+  ents: [new.concept.si_hai]
+  conf: 0.95
