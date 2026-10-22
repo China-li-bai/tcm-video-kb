@@ -1,0 +1,158 @@
+video_id: zj-005
+window: w00-02
+seg_from: 0
+seg_to: 331
+annotator: llm_read
+chapters:
+- key: c01
+  title: 肺与大肠表里：气化生津
+  start_seq: 0
+  summary: 大肠环绕小肠，小肠火蒸腾使残渣之水气化，经肠壁上归于肺——此为肺与大肠相表里的气化解读。膀胱尿液亦需气化至一定容量才有尿意。
+  clauses: []
+  topics:
+  - zangfu.da_chang
+  - zangfu.fei
+  - concept.biao_li
+- key: c02
+  title: 子午流注时辰与病机
+  start_seq: 92
+  summary: 十二时辰配十二经：如大肠卯时（5–7）当有大便；肝经丑时（1–3）当深睡。时辰颠倒（夜不寐昼嗜睡）示病进。可用按时取穴之时间针法。
+  clauses: []
+  topics:
+  - new.concept.子午流注
+  - zangfu.gan
+  - zangfu.da_chang
+- key: c03
+  title: 五输穴：阴井木阳井金；原络
+  start_seq: 228
+  summary: 十二正经各有井荥输经合；阴经井为木，阳经井属性不同。阳经多原穴，阴经无原而有络穴横向联络。井穴（如厉兑）反应迅速，实热可刺；色病多取荥。手不过肘足不过膝取五输。
+  clauses: []
+  topics:
+  - new.concept.五输穴
+  - acupoint.st45
+  - concept.jing_luo
+entities:
+- id: zangfu.da_chang
+  seq: 0
+  surface: 大肠
+  corrected: 大肠
+- id: zangfu.xiao_chang
+  seq: 5
+  surface: 小肠
+  corrected: 小肠
+- id: zangfu.fei
+  seq: 7
+  surface: 肺
+  corrected: 肺
+- id: concept.biao_li
+  seq: 7
+  surface: 表里
+  corrected: 表里
+- id: zangfu.pang_guang
+  seq: 36
+  surface: 膀胱
+  corrected: 膀胱
+- id: concept.yin_yang
+  seq: 56
+  surface: 阴阳
+  corrected: 阴阳
+- id: concept.wu_xing
+  seq: 56
+  surface: 五行
+  corrected: 五行
+- id: zangfu.gan
+  seq: 126
+  surface: 肝脏
+  corrected: 肝
+- id: new.concept.子午流注
+  seq: 166
+  surface: 大肠是开早上五点七点
+  corrected: 子午流注
+- id: concept.jing_luo
+  seq: 228
+  surface: 经络
+  corrected: 经络
+- id: new.concept.五输穴
+  seq: 255
+  surface: 景穴
+  corrected: 五输（井荥输经合）
+- id: concept.yuan_xue
+  seq: 270
+  surface: 圆穴
+  corrected: 原穴
+- id: concept.luo_xue
+  seq: 268
+  surface: 落选
+  corrected: 络穴
+- id: acupoint.st45
+  seq: 285
+  surface: 立对
+  corrected: 厉兑
+- id: meridian.st
+  seq: 285
+  surface: 足阳明的胃经
+  corrected: 足阳明胃经
+kps:
+- type: pathomechanism
+  s: 肺与大肠表里：小肠火蒸腾使大肠残渣之水气化，上归于肺成肺津。
+  seq:
+  - 5
+  - 9
+  q: 那大肠和肺是表里啊，我刚刚不是讲了吗
+  ents:
+  - zangfu.da_chang
+  - zangfu.fei
+  - concept.biao_li
+  conf: 0.9
+- type: concept_definition
+  s: 子午流注：十二时辰配十二经气血当旺。大肠卯时（5–7点）当大便；肝经丑时（1–3点）当深睡。
+  seq:
+  - 166
+  - 167
+  q: 大肠是开早上五点七点
+  ents:
+  - new.concept.子午流注
+  - zangfu.da_chang
+  conf: 0.95
+- type: clinical_tip
+  s: 丑时（1–3点）反复醒来提示肝经/肝脏问题；治后能一觉到天亮为好转。
+  seq:
+  - 136
+  - 180
+  q: 晚上一点到三点是肝经气血留住的时候
+  ents:
+  - zangfu.gan
+  - new.concept.子午流注
+  conf: 0.85
+  asr: 留住=流注
+- type: concept_definition
+  s: 五输穴：阴经井属木；阳经另有原穴，阴经以络穴横向联络表里经。
+  seq:
+  - 255
+  - 273
+  q: 阴经任何的阴经，它的景穴通通是木
+  ents:
+  - new.concept.五输穴
+  - concept.yuan_xue
+  conf: 0.9
+  asr: 景穴=井穴
+- type: acupoint_usage
+  s: 井穴如厉兑反应快，可用于急症/实热；色见病色者多取荥穴。
+  seq:
+  - 285
+  - 318
+  q: 足阳明的胃经的经穴，我们叫立对
+  ents:
+  - acupoint.st45
+  - meridian.st
+  conf: 0.85
+  asr: 立对=厉兑；经穴此处实指井
+- type: treatment_principle
+  s: 五输取穴范围：手不过肘、足不过膝。
+  seq:
+  - 331
+  - 331
+  q: 当手不过肘足不过膝的时候，我们会用到这些
+  ents:
+  - new.concept.五输穴
+  conf: 0.9
