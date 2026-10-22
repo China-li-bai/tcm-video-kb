@@ -225,7 +225,7 @@ kps:
 - type: diagnostic_rule
   s: 大青龙汤四字诀「表寒里热」：表寒见恶寒、肌肉痛、脉浮紧、无汗；里热见舌苔黄、咳喘、烦躁、口渴、黄痰。
   seq: [3248, 3263]
-  q: 好，表含
+  q: 里热就是大青龙，我们用表里寒热来形容
   ents: [formula.da_qing_long_tang, new.concept.表寒里热, pulse.mai_fu_jin]
   conf: 0.9
 - type: concept_definition
