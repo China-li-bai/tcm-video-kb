@@ -1,0 +1,63 @@
+[
+ {
+  "chapter_id": "zj-010.c01",
+  "video_id": "zj-010",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "神阙、水分与中脘定位",
+  "summary": "神阙易找。水分在脐上一寸，司水液分清；中脘取胸剑联合至脐中点，为腑会、胃之募，统治胃腑病。下脘在神阙与中脘中点，为胃下口/小肠上口际。",
+  "start_s": 17.2,
+  "end_s": 1189.941,
+  "seg_from": 0,
+  "seg_to": 228,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.cv8",
+   "acupoint.cv9",
+   "acupoint.cv12",
+   "acupoint.cv10"
+  ],
+  "citation": {
+   "youtube_id": "3uFJobrKy48",
+   "url": "https://www.youtube.com/watch?v=3uFJobrKy48&t=17s",
+   "series": "zj",
+   "episode": 10,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 10",
+   "start_s": 17.2,
+   "end_s": 1189.94
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-010.c02",
+  "video_id": "zj-010",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "梅花灸与补泻入门",
+  "summary": "胃癌等可用中脘为中心上下左右各一寸梅花形隔姜灸。上脘、下脘辅助中脘。简介提插补泻及九进九出、苍龟探穴等手法名目，后文展开。",
+  "start_s": 1196.186,
+  "end_s": 1855.211,
+  "seg_from": 229,
+  "seg_to": 349,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.cv12",
+   "acupoint.cv13",
+   "method.bu_xie"
+  ],
+  "citation": {
+   "youtube_id": "3uFJobrKy48",
+   "url": "https://www.youtube.com/watch?v=3uFJobrKy48&t=1196s",
+   "series": "zj",
+   "episode": 10,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 10",
+   "start_s": 1196.19,
+   "end_s": 1855.21
+  },
+  "review_status": "llm_read"
+ }
+]

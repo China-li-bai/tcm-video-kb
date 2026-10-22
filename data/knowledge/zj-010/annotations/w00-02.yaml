@@ -1,0 +1,110 @@
+video_id: zj-010
+window: w00-02
+seg_from: 0
+seg_to: 349
+annotator: llm_read
+chapters:
+- key: c01
+  title: 神阙、水分与中脘定位
+  start_seq: 2
+  summary: 神阙易找。水分在脐上一寸，司水液分清；中脘取胸剑联合至脐中点，为腑会、胃之募，统治胃腑病。下脘在神阙与中脘中点，为胃下口/小肠上口际。
+  clauses: []
+  topics:
+  - acupoint.cv8
+  - acupoint.cv9
+  - acupoint.cv12
+  - acupoint.cv10
+- key: c02
+  title: 梅花灸与补泻入门
+  start_seq: 229
+  summary: 胃癌等可用中脘为中心上下左右各一寸梅花形隔姜灸。上脘、下脘辅助中脘。简介提插补泻及九进九出、苍龟探穴等手法名目，后文展开。
+  clauses: []
+  topics:
+  - acupoint.cv12
+  - acupoint.cv13
+  - method.bu_xie
+entities:
+- id: acupoint.cv8
+  seq: 2
+  surface: 神穴
+  corrected: 神阙
+- id: acupoint.cv9
+  seq: 26
+  surface: 水分
+  corrected: 水分
+- id: acupoint.cv12
+  seq: 30
+  surface: 中脘穴
+  corrected: 中脘
+- id: acupoint.cv10
+  seq: 137
+  surface: 下脘
+  corrected: 下脘
+- id: zangfu.wei
+  seq: 176
+  surface: 胃
+  corrected: 胃
+- id: acupoint.cv13
+  seq: 236
+  surface: 上脘穴
+  corrected: 上脘
+- id: method.bu_xie
+  seq: 262
+  surface: 补泻
+  corrected: 补泻
+- id: new.method.梅花灸
+  seq: 230
+  surface: 梅花灸
+  corrected: 梅花灸
+kps:
+- type: acupoint_usage
+  s: 中脘：胸剑联合至脐连线中点；腑会，统治胃与六腑病，易取。
+  seq:
+  - 30
+  - 176
+  q: 从这个背骨到这边找正中间，就是我们的中脘穴
+  ents:
+  - acupoint.cv12
+  - zangfu.wei
+  conf: 0.9
+  asr: 背骨≈胸骨/剑突口述
+- type: pathomechanism
+  s: 水分主分水液：气化失常则水不分而下趋，可见腹泻、水肿。
+  seq:
+  - 80
+  - 110
+  q: 水分穴都是很好的灸的地呃，灸的地方
+  ents:
+  - acupoint.cv9
+  conf: 0.85
+- type: acupoint_usage
+  s: 下脘在神阙与中脘正中，太阴任脉之会，近胃下口。
+  seq:
+  - 137
+  - 138
+  q: 下脘刚好就在神阙跟中脘的正中间下脘穴
+  ents:
+  - acupoint.cv10
+  - acupoint.cv8
+  - acupoint.cv12
+  conf: 0.95
+- type: clinical_tip
+  s: 梅花灸：以中脘为中，上下左右各一寸隔姜艾灸五处，辅助上脘下脘。
+  seq:
+  - 229
+  - 236
+  q: 成为一个梅花型
+  ents:
+  - new.method.梅花灸
+  - acupoint.cv12
+  - acupoint.cv13
+  conf: 0.9
+- type: study_method
+  s: 补泻手法有提插、九进九出、苍龟探穴等名目，宜先掌握基本再学花法。
+  seq:
+  - 262
+  - 281
+  q: 介绍一个最简单基的补泻的手法
+  ents:
+  - method.bu_xie
+  conf: 0.8
