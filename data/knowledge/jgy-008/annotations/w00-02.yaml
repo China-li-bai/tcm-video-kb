@@ -1,0 +1,85 @@
+video_id: jgy-008
+window: w00-02
+seg_from: 0
+seg_to: 406
+annotator: llm_read
+chapters:
+- key: c01
+  title: 肺痿成因·津伤与误滋阴
+  start_seq: 0
+  summary: 金匮第七篇肺痿肺痈咳嗽上气。肺痿为肺叶萎；多因汗吐消渴便难下利等津液亡失，肺与大肠表里。寸口数、咳吐浊唾为热痿；误以温病阴虚法治咳可造肺痿。
+  clauses: []
+  topics:
+  - syndrome.fei_wei
+  - concept.jin_ye
+- key: c02
+  title: 肺中冷·甘草干姜汤
+  start_seq: 130
+  summary: 吐涎沫清稀非浓痰、不渴、小便数属肺中冷，甘草干姜汤温之；口燥渴则属消渴分上中下三消。
+  clauses: []
+  topics:
+  - formula.gan_cao_gan_jiang_tang
+  - syndrome.fei_wei
+- key: c03
+  title: 肺痈咳嗽上气与麦门冬汤
+  start_seq: 272
+  summary: 肺气肿等久咳方有麻黄类、泽漆汤等；篇后麦门冬汤治火逆上气等。
+  clauses: []
+  topics:
+  - formula.mai_men_dong_tang
+  - formula.ma_huang_tang
+entities:
+- id: syndrome.fei_wei
+  seq: 7
+  surface: 肺萎
+  corrected: 肺痿
+- id: concept.jin_ye
+  seq: 10
+  surface: 津液
+  corrected: 津液
+- id: formula.gan_cao_gan_jiang_tang
+  seq: 141
+  surface: 甘草汤姜汤
+  corrected: 甘草干姜汤
+- id: formula.mai_men_dong_tang
+  seq: 393
+  surface: 麦门冬汤
+  corrected: 麦门冬汤
+- id: syndrome.fei_yong
+  seq: 1
+  surface: 肺龙阳
+  corrected: 肺痈
+kps:
+- type: pathomechanism
+  s: 肺痿多因汗吐消渴便难攻下等亡津，肺与大肠表里相及。
+  seq: [10, 12]
+  q: 津液
+  ents: [syndrome.fei_wei, concept.jin_ye]
+  conf: 0.9
+  asr: 肺萎=肺痿
+- type: diagnostic_rule
+  s: 寸口数、咳、口中浊唾沫为肺痿热证。
+  seq: [21]
+  q: 肺痿
+  ents: [syndrome.fei_wei]
+  conf: 0.85
+  asr: 灼破研末=浊唾涎沫
+- type: contraindication
+  s: 咳嗽误作阴虚滥滋阴可造成肺痿，勿滥用滋阴。
+  seq: [30]
+  q: 造成肺萎
+  ents: [syndrome.fei_wei]
+  conf: 0.95
+- type: formula_indication
+  s: 吐涎沫清白不渴小便数属肺中冷，甘草干姜汤温之。
+  seq: [138, 141]
+  q: 肺家的寒症
+  ents: [formula.gan_cao_gan_jiang_tang, syndrome.fei_wei]
+  conf: 0.9
+  asr: 甘草汤姜汤=甘草干姜汤
+- type: formula_indication
+  s: 篇中另有麦门冬汤等治咳逆上气火逆类证。
+  seq: [393]
+  q: 麦门冬汤
+  ents: [formula.mai_men_dong_tang]
+  conf: 0.85

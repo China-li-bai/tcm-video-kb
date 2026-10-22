@@ -7,6 +7,7 @@
   "jgy-005",
   "jgy-006",
   "jgy-007",
+  "jgy-008",
   "nj-001",
   "nj-002",
   "nj-003",
@@ -104,7 +105,7 @@
   "zj-089",
   "zj-090"
  ],
- "n_entities": 1161,
- "n_knowledge_points": 1066,
- "n_chapters": 448
+ "n_entities": 1170,
+ "n_knowledge_points": 1071,
+ "n_chapters": 451
 }
