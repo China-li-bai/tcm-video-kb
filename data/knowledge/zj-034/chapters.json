@@ -1,0 +1,60 @@
+[
+ {
+  "chapter_id": "zj-034.c01",
+  "video_id": "zj-034",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "郄穴治骨伤与背俞针法",
+  "summary": "郄穴可消炎止痛；骨伤可取大杼等并配相关经络郄穴。背俞治疗引气即可，膀胱经背俞约三十度斜刺成排。骨病多责肾所主。",
+  "start_s": 1.88,
+  "end_s": 803.7,
+  "seg_from": 0,
+  "seg_to": 144,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.bl11",
+   "meridian.bl"
+  ],
+  "citation": {
+   "youtube_id": "u0YbzbA4C8E",
+   "url": "https://www.youtube.com/watch?v=u0YbzbA4C8E&t=1s",
+   "series": "zj",
+   "episode": 34,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 34",
+   "start_s": 1.88,
+   "end_s": 803.7
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-034.c02",
+  "video_id": "zj-034",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "风门",
+  "summary": "风门可治风邪所致诸症（背、四肢等）。颈部风府等为风邪易入之处。",
+  "start_s": 805.46,
+  "end_s": 1414.246,
+  "seg_from": 145,
+  "seg_to": 265,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.bl12",
+   "acupoint.gv16"
+  ],
+  "citation": {
+   "youtube_id": "u0YbzbA4C8E",
+   "url": "https://www.youtube.com/watch?v=u0YbzbA4C8E&t=805s",
+   "series": "zj",
+   "episode": 34,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 34",
+   "start_s": 805.46,
+   "end_s": 1414.25
+  },
+  "review_status": "llm_read"
+ }
+]

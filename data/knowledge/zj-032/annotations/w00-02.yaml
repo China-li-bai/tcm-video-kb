@@ -1,0 +1,102 @@
+video_id: zj-032
+window: w00-02
+seg_from: 0
+seg_to: 345
+annotator: llm_read
+chapters:
+- key: c01
+  title: 支正与小海
+  start_seq: 0
+  summary: 支正为小肠经络穴。小海为合穴、子穴，浅刺即可；小肠实证可取。肩痛乱扎无效时，常因未取小海等本经穴。
+  clauses: []
+  topics:
+  - acupoint.si7
+  - acupoint.si8
+  - meridian.si
+- key: c02
+  title: 肩胛痛辨经
+  start_seq: 92
+  summary: 肩胛骨后方痛属小肠经，前方大肠，中间三焦。肩井属胆经，下针勿过深（下即肺尖）。超过肩井后约三寸多属小肠经。
+  clauses: []
+  topics:
+  - meridian.si
+  - meridian.li
+  - acupoint.gb21
+entities:
+- id: acupoint.si7
+  seq: 20
+  surface: 支正穴
+  corrected: 支正
+- id: concept.luo_xue
+  seq: 19
+  surface: 络穴
+  corrected: 络穴
+- id: acupoint.si8
+  seq: 34
+  surface: 小海
+  corrected: 小海
+- id: meridian.si
+  seq: 19
+  surface: 小肠经
+  corrected: 手太阳小肠经
+- id: meridian.li
+  seq: 101
+  surface: 大肠经
+  corrected: 手阳明大肠经
+- id: meridian.te
+  seq: 101
+  surface: 三焦经
+  corrected: 手少阳三焦经
+- id: acupoint.gb21
+  seq: 108
+  surface: 肩颈
+  corrected: 肩井
+- id: acupoint.li15
+  seq: 57
+  surface: 煎尾穴
+  corrected: 肩髃
+kps:
+- type: acupoint_usage
+  s: 支正为小肠经络穴。
+  seq:
+  - 19
+  - 20
+  q: 这是支正穴
+  ents:
+  - acupoint.si7
+  - concept.luo_xue
+  - meridian.si
+  conf: 0.95
+  asr: 执政/滋症=支正
+- type: acupoint_usage
+  s: 小海为小肠合穴、子穴，浅刺一寸即可；小肠实症可取。肩痛久治不效时须查是否未取本经穴如小海。
+  seq:
+  - 34
+  - 75
+  q: 小肠君的实症通通才可以在这里治疗
+  ents:
+  - acupoint.si8
+  - meridian.si
+  conf: 0.9
+  asr: 子血=子穴；小孩/小海鲜=小海
+- type: clinical_tip
+  s: 肩胛后方痛属小肠经，前方大肠经，中间三焦经；勿乱扎治肩诸穴。
+  seq:
+  - 101
+  - 123
+  q: 肩胛骨后面产生的痛，全部属属于小肠经
+  ents:
+  - meridian.si
+  - meridian.li
+  - meridian.te
+  conf: 0.95
+- type: contraindication
+  s: 肩井在肩峰最高处，可针但勿过深，其下为肺尖，深刺有气胸之虞。
+  seq:
+  - 110
+  - 111
+  q: 下身太深的话就肺虚肿
+  ents:
+  - acupoint.gb21
+  conf: 0.9
+  asr: 肩颈=肩井；肺虚肿=气胸/肺伤

@@ -1,0 +1,102 @@
+video_id: zj-034
+window: w00-02
+seg_from: 0
+seg_to: 265
+annotator: llm_read
+chapters:
+- key: c01
+  title: 郄穴治骨伤与背俞针法
+  start_seq: 0
+  summary: 郄穴可消炎止痛；骨伤可取大杼等并配相关经络郄穴。背俞治疗引气即可，膀胱经背俞约三十度斜刺成排。骨病多责肾所主。
+  clauses: []
+  topics:
+  - acupoint.bl11
+  - meridian.bl
+- key: c02
+  title: 风门
+  start_seq: 145
+  summary: 风门可治风邪所致诸症（背、四肢等）。颈部风府等为风邪易入之处。
+  clauses: []
+  topics:
+  - acupoint.bl12
+  - acupoint.gv16
+entities:
+- id: new.concept.郄穴
+  seq: 1
+  surface: 溪穴
+  corrected: 郄穴
+- id: acupoint.bl11
+  seq: 6
+  surface: 大枢
+  corrected: 大杼
+- id: acupoint.gv14
+  seq: 6
+  surface: 大椎
+  corrected: 大椎
+- id: acupoint.li7
+  seq: 6
+  surface: 温流
+  corrected: 温溜
+- id: acupoint.lu6
+  seq: 6
+  surface: 吸穴
+  corrected: 孔最
+- id: meridian.bl
+  seq: 104
+  surface: 膀胱经
+  corrected: 足太阳膀胱经
+- id: acupoint.bl12
+  seq: 145
+  surface: 风门
+  corrected: 风门
+- id: acupoint.gv16
+  seq: 147
+  surface: 风腑
+  corrected: 风府
+- id: acupoint.gv12
+  seq: 131
+  surface: 深柱
+  corrected: 身柱
+- id: zangfu.shen
+  seq: 17
+  surface: 肾脏
+  corrected: 肾
+kps:
+- type: treatment_principle
+  s: 郄穴擅消炎止痛；骨伤可取大杼等，并配相关经郄（如大肠温溜、肺孔最）。
+  seq:
+  - 1
+  - 6
+  q: 扎溪穴的时候就是消炎
+  ents:
+  - new.concept.郄穴
+  - acupoint.bl11
+  conf: 0.9
+  asr: 溪穴=郄穴；大枢=大杼
+- type: concept_definition
+  s: 全身之骨为肾所主。
+  seq:
+  - 17
+  - 17
+  q: 全身的骨呢是肾脏在管
+  ents:
+  - zangfu.shen
+  conf: 0.95
+- type: clinical_tip
+  s: 膀胱经背俞斜刺约三十度，成排整齐；背俞治疗以得气为度，不必强求补泻。
+  seq:
+  - 102
+  - 104
+  q: 三十度下，待会我会demo给你们看
+  ents:
+  - meridian.bl
+  conf: 0.9
+- type: acupoint_usage
+  s: 风邪所致背及四肢诸症可取风门。
+  seq:
+  - 200
+  - 202
+  q: 可以在风门上治
+  ents:
+  - acupoint.bl12
+  conf: 0.9

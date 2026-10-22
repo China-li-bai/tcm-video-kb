@@ -1,0 +1,113 @@
+video_id: zj-033
+window: w00-02
+seg_from: 0
+seg_to: 333
+annotator: llm_read
+chapters:
+- key: c01
+  title: 膀胱二次气化与中极
+  start_seq: 0
+  summary: 膀胱水贴小肠受热而二次气化；气化不足则尿冷、遗尿，治宜助小肠之火并灸中极（膀胱募）等使水气化。
+  clauses: []
+  topics:
+  - zangfu.pang_guang
+  - zangfu.xiao_chang
+  - acupoint.cv3
+- key: c02
+  title: 睛明与头面部膀胱经穴
+  start_seq: 102
+  summary: 睛明在内眦，须轻推眼球向外，直进直出以免出血；治青光眼、白内障等目疾。通天可治鼻塞不闻香臭。天柱常用，揉之提神；头皮穴不宜灸（烧发）。
+  clauses: []
+  topics:
+  - acupoint.bl1
+  - acupoint.bl7
+  - acupoint.bl10
+entities:
+- id: zangfu.pang_guang
+  seq: 0
+  surface: 膀胱
+  corrected: 膀胱
+- id: zangfu.xiao_chang
+  seq: 0
+  surface: 小肠
+  corrected: 小肠
+- id: acupoint.cv3
+  seq: 58
+  surface: 中极
+  corrected: 中极
+- id: concept.mu_xue
+  seq: 74
+  surface: 墓穴
+  corrected: 募穴
+- id: acupoint.cv4
+  seq: 74
+  surface: 关元
+  corrected: 关元
+- id: acupoint.bl1
+  seq: 102
+  surface: 金明穴
+  corrected: 睛明
+- id: acupoint.bl7
+  seq: 211
+  surface: 通天
+  corrected: 通天
+- id: acupoint.bl10
+  seq: 253
+  surface: 天柱
+  corrected: 天柱
+- id: meridian.bl
+  seq: 68
+  surface: 膀胱经
+  corrected: 足太阳膀胱经
+kps:
+- type: concept_definition
+  s: 水入膀胱后贴小肠而二次气化；气化之清上归肝，浊留为尿。
+  seq:
+  - 0
+  - 2
+  q: 膀胱水到了膀胱以后，是第二次气化
+  ents:
+  - zangfu.pang_guang
+  - zangfu.xiao_chang
+  conf: 0.95
+- type: treatment_principle
+  s: 遗尿、小便无力多因小肠火不足、膀胱水不化；治宜助火气化，灸中极（膀胱募）等。
+  seq:
+  - 30
+  - 74
+  q: 中极是膀胱经的墓穴
+  ents:
+  - acupoint.cv3
+  - concept.mu_xue
+  - zangfu.xiao_chang
+  conf: 0.95
+  asr: 墓穴=募穴；纠=灸
+- type: acupoint_usage
+  s: 睛明须轻推眼球，在眶缘与眼球间直进直出，免伤血管出血；治目糊、青光眼、白内障等。
+  seq:
+  - 107
+  - 124
+  q: 把眼珠子搬开来
+  ents:
+  - acupoint.bl1
+  conf: 0.95
+  asr: 金明/精灵/京门=睛明
+- type: acupoint_usage
+  s: 通天可治鼻窦炎、鼻塞不闻香臭；可先合谷、迎香再取通天。
+  seq:
+  - 212
+  - 213
+  q: 鼻窦炎通塞好，就不闻香臭下通天针
+  ents:
+  - acupoint.bl7
+  conf: 0.9
+- type: acupoint_usage
+  s: 天柱常用，揉之可提神；头部有发处不宜灸，免烧发。
+  seq:
+  - 282
+  - 288
+  q: 揉揉了天柱越柔精神越好
+  ents:
+  - acupoint.bl10
+  conf: 0.9
+  asr: 柔=揉

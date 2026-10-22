@@ -1,0 +1,62 @@
+[
+ {
+  "chapter_id": "zj-033.c01",
+  "video_id": "zj-033",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "膀胱二次气化与中极",
+  "summary": "膀胱水贴小肠受热而二次气化；气化不足则尿冷、遗尿，治宜助小肠之火并灸中极（膀胱募）等使水气化。",
+  "start_s": 0.07,
+  "end_s": 558.015,
+  "seg_from": 0,
+  "seg_to": 101,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "zangfu.pang_guang",
+   "zangfu.xiao_chang",
+   "acupoint.cv3"
+  ],
+  "citation": {
+   "youtube_id": "Z6_3ofY4-jE",
+   "url": "https://www.youtube.com/watch?v=Z6_3ofY4-jE&t=0s",
+   "series": "zj",
+   "episode": 33,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 33",
+   "start_s": 0.07,
+   "end_s": 558.01
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-033.c02",
+  "video_id": "zj-033",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "睛明与头面部膀胱经穴",
+  "summary": "睛明在内眦，须轻推眼球向外，直进直出以免出血；治青光眼、白内障等目疾。通天可治鼻塞不闻香臭。天柱常用，揉之提神；头皮穴不宜灸（烧发）。",
+  "start_s": 559.87,
+  "end_s": 1858.875,
+  "seg_from": 102,
+  "seg_to": 333,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.bl1",
+   "acupoint.bl7",
+   "acupoint.bl10"
+  ],
+  "citation": {
+   "youtube_id": "Z6_3ofY4-jE",
+   "url": "https://www.youtube.com/watch?v=Z6_3ofY4-jE&t=559s",
+   "series": "zj",
+   "episode": 33,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 33",
+   "start_s": 559.87,
+   "end_s": 1858.88
+  },
+  "review_status": "llm_read"
+ }
+]
