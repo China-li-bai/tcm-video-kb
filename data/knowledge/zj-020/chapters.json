@@ -1,0 +1,64 @@
+[
+ {
+  "chapter_id": "zj-020.c01",
+  "video_id": "zj-020",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "足阳明胃经总说与头维下关",
+  "summary": "五脏六腑之气出自胃。足阳明胃经四十五穴，多气多血。头维在神庭旁开，为足阳明与少阳之会。下关主中耳炎流脓、下颌脱臼复位，面部痛可配对侧合谷。",
+  "start_s": 0.46,
+  "end_s": 434.865,
+  "seg_from": 0,
+  "seg_to": 89,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "meridian.st",
+   "zangfu.wei",
+   "acupoint.st7",
+   "acupoint.st8"
+  ],
+  "citation": {
+   "youtube_id": "NOEhIxpi4Pw",
+   "url": "https://www.youtube.com/watch?v=NOEhIxpi4Pw&t=0s",
+   "series": "zj",
+   "episode": 20,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 20",
+   "start_s": 0.46,
+   "end_s": 434.87
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-020.c02",
+  "video_id": "zj-020",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "地仓颊车四白与胸腹段",
+  "summary": "口眼歪斜名方为地仓透颊车（嘴角旁开约五分进针）。四白在眶下约一寸。面部青春痘多循胃经。人迎可候胃气。胸部胃经穴宜斜刺，勿直刺过深。",
+  "start_s": 437.29,
+  "end_s": 1769.404,
+  "seg_from": 90,
+  "seg_to": 327,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.st4",
+   "acupoint.st6",
+   "acupoint.st2",
+   "acupoint.st9"
+  ],
+  "citation": {
+   "youtube_id": "NOEhIxpi4Pw",
+   "url": "https://www.youtube.com/watch?v=NOEhIxpi4Pw&t=437s",
+   "series": "zj",
+   "episode": 20,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 20",
+   "start_s": 437.29,
+   "end_s": 1769.4
+  },
+  "review_status": "llm_read"
+ }
+]

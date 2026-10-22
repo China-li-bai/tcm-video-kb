@@ -1,0 +1,178 @@
+video_id: zj-020
+window: w00-02
+seg_from: 0
+seg_to: 327
+annotator: llm_read
+chapters:
+- key: c01
+  title: 足阳明胃经总说与头维下关
+  start_seq: 0
+  summary: 五脏六腑之气出自胃。足阳明胃经四十五穴，多气多血。头维在神庭旁开，为足阳明与少阳之会。下关主中耳炎流脓、下颌脱臼复位，面部痛可配对侧合谷。
+  clauses: []
+  topics:
+  - meridian.st
+  - zangfu.wei
+  - acupoint.st7
+  - acupoint.st8
+- key: c02
+  title: 地仓颊车四白与胸腹段
+  start_seq: 90
+  summary: 口眼歪斜名方为地仓透颊车（嘴角旁开约五分进针）。四白在眶下约一寸。面部青春痘多循胃经。人迎可候胃气。胸部胃经穴宜斜刺，勿直刺过深。
+  clauses: []
+  topics:
+  - acupoint.st4
+  - acupoint.st6
+  - acupoint.st2
+  - acupoint.st9
+entities:
+- id: zangfu.wei
+  seq: 1
+  surface: 胃
+  corrected: 胃
+- id: meridian.st
+  seq: 5
+  surface: 足万面胃经
+  corrected: 足阳明胃经
+- id: acupoint.gv24
+  seq: 38
+  surface: 神庭
+  corrected: 神庭
+- id: acupoint.st8
+  seq: 40
+  surface: 头尾
+  corrected: 头维
+- id: acupoint.st7
+  seq: 43
+  surface: 下关
+  corrected: 下关
+- id: acupoint.st6
+  seq: 90
+  surface: 夹车
+  corrected: 颊车
+- id: acupoint.st4
+  seq: 90
+  surface: 地仓
+  corrected: 地仓
+- id: acupoint.li4
+  seq: 81
+  surface: 合谷
+  corrected: 合谷
+- id: acupoint.st2
+  seq: 148
+  surface: 四白
+  corrected: 四白
+- id: acupoint.st1
+  seq: 217
+  surface: 成气
+  corrected: 承泣
+- id: acupoint.st9
+  seq: 225
+  surface: 人影
+  corrected: 人迎
+- id: acupoint.st12
+  seq: 241
+  surface: 缺盆
+  corrected: 缺盆
+- id: new.disease.中耳炎
+  seq: 61
+  surface: 中耳炎
+  corrected: 中耳炎
+- id: new.disease.口眼歪斜
+  seq: 90
+  surface: 口口，歪眼斜
+  corrected: 口眼歪斜
+kps:
+- type: concept_definition
+  s: 五脏六腑之气皆出自胃；有胃气则有生化之源。
+  seq:
+  - 1
+  - 2
+  q: 五脏六腑的气通通出自胃
+  ents:
+  - zangfu.wei
+  conf: 0.95
+- type: concept_definition
+  s: 足阳明胃经凡四十五穴，属多气多血之经。
+  seq:
+  - 5
+  - 9
+  q: 足万面胃经，有四十五个穴道
+  ents:
+  - meridian.st
+  conf: 0.95
+  asr: 万面=阳明
+- type: acupoint_usage
+  s: 头维在神庭旁开（额角发际）；为足阳明与少阳二脉之会。
+  seq:
+  - 38
+  - 41
+  q: 头尾穴呢是足阳明，汉族少阳的二脉之慧
+  ents:
+  - acupoint.st8
+  - acupoint.gv24
+  conf: 0.85
+  asr: 头尾=头维；汉族=与足；慧=会
+- type: acupoint_usage
+  s: 下关主中耳炎流脓、下颌/牙齿脱臼；复位时以下关为主，面痛可配对侧合谷。
+  seq:
+  - 56
+  - 81
+  q: 主要质证呢就是中耳炎耳朵里面化脓发炎
+  ents:
+  - acupoint.st7
+  - new.disease.中耳炎
+  - acupoint.li4
+  conf: 0.9
+  asr: 质证=主治
+- type: acupoint_usage
+  s: 口眼歪斜常用地仓透颊车：自嘴角旁开约五分进针透向颊车；可先下合谷再透。
+  seq:
+  - 90
+  - 103
+  q: 地仓透夹车
+  ents:
+  - acupoint.st4
+  - acupoint.st6
+  - new.disease.口眼歪斜
+  conf: 0.95
+  asr: 夹车/甲车/假车=颊车；中封=中风
+- type: acupoint_usage
+  s: 地仓透颊车亦治牙关不开、口噤、面部肿等。
+  seq:
+  - 114
+  - 114
+  q: 口歪，口歪眼斜都可以
+  ents:
+  - acupoint.st4
+  - acupoint.st6
+  conf: 0.9
+- type: acupoint_usage
+  s: 四白在眶下缘下一寸（非自瞳孔直量之误取）。
+  seq:
+  - 148
+  - 148
+  q: 眼眶这边下来，一寸的地方就四白
+  ents:
+  - acupoint.st2
+  conf: 0.9
+- type: clinical_tip
+  s: 面部痤疮常循胃经分布；胃气盛者易发。
+  seq:
+  - 205
+  - 207
+  q: 生青春痘了以后，你看都在胃经上面
+  ents:
+  - meridian.st
+  - zangfu.wei
+  conf: 0.85
+- type: clinical_tip
+  s: 人迎可候胃气（有脉则胃气存）；胸部胃经穴（乳周至缺盆）宜斜刺约五分，勿直刺。
+  seq:
+  - 225
+  - 251
+  q: 人一脉有的话，胃气就有
+  ents:
+  - acupoint.st9
+  - meridian.st
+  conf: 0.9
+  asr: 人影/人赢/人一=人迎
