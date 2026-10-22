@@ -1,0 +1,101 @@
+video_id: zj-047
+window: w00-02
+seg_from: 0
+seg_to: 353
+annotator: llm_read
+chapters:
+- key: c01
+  title: 关冲中渚阳池
+  start_seq: 0
+  summary: 关冲为三焦井，在无名指外侧甲旁。中渚为输属木，夏至至冬至间为母穴，治三焦虚及眼科等。阳池可透对侧大陵；腕部多汗一般不灸。
+  clauses: []
+  topics:
+  - acupoint.te1
+  - acupoint.te3
+  - acupoint.te4
+- key: c02
+  title: 外关透内关
+  start_seq: 76
+  summary: 外关对内关。高热时可外关得气后透向内关（通关过节类手法），疏通阳气，不必分补泻。
+  clauses: []
+  topics:
+  - acupoint.te5
+  - acupoint.pc6
+entities:
+- id: acupoint.te1
+  seq: 15
+  surface: 关冲穴
+  corrected: 关冲
+- id: meridian.te
+  seq: 16
+  surface: 三焦
+  corrected: 手少阳三焦经
+- id: acupoint.te2
+  seq: 24
+  surface: 叶门穴
+  corrected: 液门
+- id: acupoint.te3
+  seq: 31
+  surface: 中渚穴
+  corrected: 中渚
+- id: acupoint.te4
+  seq: 61
+  surface: 阳池穴
+  corrected: 阳池
+- id: acupoint.pc7
+  seq: 61
+  surface: 大林穴
+  corrected: 大陵
+- id: acupoint.te5
+  seq: 76
+  surface: 外观
+  corrected: 外关
+- id: acupoint.pc6
+  seq: 76
+  surface: 内关
+  corrected: 内关
+kps:
+- type: acupoint_usage
+  s: 关冲在无名指外侧甲旁，为三焦井穴。
+  seq:
+  - 15
+  - 16
+  q: 关冲穴呢是三焦俞的景穴
+  ents:
+  - acupoint.te1
+  - meridian.te
+  conf: 0.9
+  asr: 景穴/紧=井穴；三焦俞=三焦经
+- type: acupoint_usage
+  s: 中渚在掌骨间，为输属木；夏至至冬至间为三焦母穴，虚证可取；亦用于眼科。
+  seq:
+  - 31
+  - 45
+  q: 它是三焦三焦经的什么母穴
+  ents:
+  - acupoint.te3
+  - meridian.te
+  conf: 0.9
+  asr: 中主/中阻=中渚；鱼=输
+- type: clinical_tip
+  s: 阳池可透对掌大陵；腕部多汗处一般不灸。对侧阳池可治对侧踝解溪处痛（对称）。
+  seq:
+  - 61
+  - 67
+  q: 可以透到大梁雀对面的大林穴
+  ents:
+  - acupoint.te4
+  - acupoint.pc7
+  conf: 0.85
+  asr: 大林/大梁=大陵；阳脂=阳池
+- type: clinical_tip
+  s: 高热时可外关得气后透针至内关，疏阳退热，不必拘补泻。
+  seq:
+  - 84
+  - 86
+  q: 高烧的时候，你在外观上下针
+  ents:
+  - acupoint.te5
+  - acupoint.pc6
+  conf: 0.95
+  asr: 外观=外关

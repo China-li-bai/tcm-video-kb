@@ -1,0 +1,62 @@
+[
+ {
+  "chapter_id": "zj-046.c01",
+  "video_id": "zj-046",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "郄门与内关",
+  "summary": "郄门为心包郄，腕横纹上五寸两筋间，擅镇痛。内关在腕上二寸，为大穴、络穴；治呕（晕车、孕吐、伤食）、心胸痛、气喘等，常配公孙。",
+  "start_s": 0.09,
+  "end_s": 857.725,
+  "seg_from": 0,
+  "seg_to": 166,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.pc4",
+   "acupoint.pc6",
+   "acupoint.sp4"
+  ],
+  "citation": {
+   "youtube_id": "hn-vhrdJybA",
+   "url": "https://www.youtube.com/watch?v=hn-vhrdJybA&t=0s",
+   "series": "zj",
+   "episode": 46,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 46",
+   "start_s": 0.09,
+   "end_s": 857.73
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-046.c02",
+  "video_id": "zj-046",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "大陵劳宫中冲",
+  "summary": "大陵对掌向心刺，治手麻。劳宫在掌心三四掌骨间，急救常用。中冲为心包井，在中指端。",
+  "start_s": 858.95,
+  "end_s": 1766.143,
+  "seg_from": 167,
+  "seg_to": 330,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.pc7",
+   "acupoint.pc8",
+   "acupoint.pc9"
+  ],
+  "citation": {
+   "youtube_id": "hn-vhrdJybA",
+   "url": "https://www.youtube.com/watch?v=hn-vhrdJybA&t=858s",
+   "series": "zj",
+   "episode": 46,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 46",
+   "start_s": 858.95,
+   "end_s": 1766.14
+  },
+  "review_status": "llm_read"
+ }
+]

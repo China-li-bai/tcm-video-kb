@@ -1,0 +1,61 @@
+[
+ {
+  "chapter_id": "zj-047.c01",
+  "video_id": "zj-047",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "关冲中渚阳池",
+  "summary": "关冲为三焦井，在无名指外侧甲旁。中渚为输属木，夏至至冬至间为母穴，治三焦虚及眼科等。阳池可透对侧大陵；腕部多汗一般不灸。",
+  "start_s": 0.88,
+  "end_s": 401.485,
+  "seg_from": 0,
+  "seg_to": 75,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.te1",
+   "acupoint.te3",
+   "acupoint.te4"
+  ],
+  "citation": {
+   "youtube_id": "V1XViySdzgY",
+   "url": "https://www.youtube.com/watch?v=V1XViySdzgY&t=0s",
+   "series": "zj",
+   "episode": 47,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 47",
+   "start_s": 0.88,
+   "end_s": 401.49
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-047.c02",
+  "video_id": "zj-047",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "外关透内关",
+  "summary": "外关对内关。高热时可外关得气后透向内关（通关过节类手法），疏通阳气，不必分补泻。",
+  "start_s": 403.5,
+  "end_s": 1822.068,
+  "seg_from": 76,
+  "seg_to": 353,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.te5",
+   "acupoint.pc6"
+  ],
+  "citation": {
+   "youtube_id": "V1XViySdzgY",
+   "url": "https://www.youtube.com/watch?v=V1XViySdzgY&t=403s",
+   "series": "zj",
+   "episode": 47,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 47",
+   "start_s": 403.5,
+   "end_s": 1822.07
+  },
+  "review_status": "llm_read"
+ }
+]

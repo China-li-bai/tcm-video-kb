@@ -1,0 +1,102 @@
+video_id: zj-046
+window: w00-02
+seg_from: 0
+seg_to: 330
+annotator: llm_read
+chapters:
+- key: c01
+  title: 郄门与内关
+  start_seq: 0
+  summary: 郄门为心包郄，腕横纹上五寸两筋间，擅镇痛。内关在腕上二寸，为大穴、络穴；治呕（晕车、孕吐、伤食）、心胸痛、气喘等，常配公孙。
+  clauses: []
+  topics:
+  - acupoint.pc4
+  - acupoint.pc6
+  - acupoint.sp4
+- key: c02
+  title: 大陵劳宫中冲
+  start_seq: 167
+  summary: 大陵对掌向心刺，治手麻。劳宫在掌心三四掌骨间，急救常用。中冲为心包井，在中指端。
+  clauses: []
+  topics:
+  - acupoint.pc7
+  - acupoint.pc8
+  - acupoint.pc9
+entities:
+- id: acupoint.pc4
+  seq: 7
+  surface: 西门穴
+  corrected: 郄门
+- id: meridian.pc
+  seq: 7
+  surface: 心包经
+  corrected: 手厥阴心包经
+- id: new.concept.郄穴
+  seq: 7
+  surface: 溪穴
+  corrected: 郄穴
+- id: acupoint.pc6
+  seq: 60
+  surface: 内关
+  corrected: 内关
+- id: acupoint.sp4
+  seq: 130
+  surface: 公孙
+  corrected: 公孙
+- id: concept.luo_xue
+  seq: 145
+  surface: 络穴
+  corrected: 络穴
+- id: acupoint.pc7
+  seq: 167
+  surface: 大灵穴
+  corrected: 大陵
+- id: acupoint.pc8
+  seq: 210
+  surface: 劳宫
+  corrected: 劳宫
+- id: acupoint.pc9
+  seq: 228
+  surface: 中冲
+  corrected: 中冲
+- id: symptom.ou_tu
+  seq: 110
+  surface: 呕吐
+  corrected: 呕吐
+kps:
+- type: acupoint_usage
+  s: 郄门为心包郄穴，腕上五寸两筋间，擅止痛。
+  seq:
+  - 7
+  - 48
+  q: 西门穴是心包经的溪穴
+  ents:
+  - acupoint.pc4
+  - new.concept.郄穴
+  - meridian.pc
+  conf: 0.95
+  asr: 西门=郄门；溪穴=郄穴
+- type: acupoint_usage
+  s: 内关在腕横纹上二寸，络穴大穴；治呕（晕车、孕吐等）、心胸痛、咳喘，常配公孙。
+  seq:
+  - 104
+  - 145
+  q: 内关穴呢是络穴，是心包经的络穴
+  ents:
+  - acupoint.pc6
+  - concept.luo_xue
+  - acupoint.sp4
+  - symptom.ou_tu
+  conf: 0.95
+- type: acupoint_usage
+  s: 大陵向掌心方向刺，可治手麻；劳宫在掌心，急救常用；中冲为心包井穴在中指端。
+  seq:
+  - 168
+  - 228
+  q: 中冲中冲穴就是从这边呢直达中指
+  ents:
+  - acupoint.pc7
+  - acupoint.pc8
+  - acupoint.pc9
+  conf: 0.9
+  asr: 大灵/大龄/大林=大陵
