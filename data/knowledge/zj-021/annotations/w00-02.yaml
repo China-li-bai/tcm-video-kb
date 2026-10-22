@@ -1,0 +1,170 @@
+video_id: zj-021
+window: w00-02
+seg_from: 0
+seg_to: 364
+annotator: llm_read
+chapters:
+- key: c01
+  title: 乳与月经·乳腺症取穴
+  start_seq: 0
+  summary: 中医谓奶水与月经同源、心所主；阳明胃经与冲脉相关。乳腺硬块初期可按所过经络取穴并局部灸；乳中一般不下针，乳根在乳房下缘可针，亦用于丰胸美容；丰隆亦可丰胸。
+  clauses: []
+  topics:
+  - acupoint.st17
+  - acupoint.st18
+  - acupoint.st40
+  - meridian.st
+- key: c02
+  title: 不容承满与天枢神阙身柱
+  start_seq: 243
+  summary: 乳根下为不容（巨阙外开两寸），治食入难容、胃胀。巨阙为心募。神阙灸可治肠鸣腹泻，常配天枢。身柱等灸有助小儿开胃长高。
+  clauses: []
+  topics:
+  - acupoint.st19
+  - acupoint.cv14
+  - acupoint.st25
+  - acupoint.cv8
+  - acupoint.gv12
+entities:
+- id: acupoint.st40
+  seq: 1
+  surface: 丰隆穴
+  corrected: 丰隆
+- id: zangfu.xin
+  seq: 38
+  surface: 心脏
+  corrected: 心
+- id: meridian.st
+  seq: 44
+  surface: 阳明味精
+  corrected: 足阳明胃经
+- id: meridian.tv
+  seq: 44
+  surface: 冲脉
+  corrected: 冲脉
+- id: acupoint.st17
+  seq: 69
+  surface: 乳中
+  corrected: 乳中
+- id: acupoint.st18
+  seq: 204
+  surface: 乳根
+  corrected: 乳根
+- id: method.zhen_jiu
+  seq: 111
+  surface: 灸
+  corrected: 针灸
+- id: acupoint.st19
+  seq: 243
+  surface: 不容
+  corrected: 不容
+- id: acupoint.st20
+  seq: 268
+  surface: 陈满
+  corrected: 承满
+- id: acupoint.cv14
+  seq: 247
+  surface: 巨缺
+  corrected: 巨阙
+- id: concept.mu_xue
+  seq: 247
+  surface: 墓穴
+  corrected: 募穴
+- id: acupoint.cv12
+  seq: 245
+  surface: 中皖
+  corrected: 中脘
+- id: acupoint.cv8
+  seq: 286
+  surface: 神缺
+  corrected: 神阙
+- id: acupoint.st25
+  seq: 286
+  surface: 天枢穴
+  corrected: 天枢
+- id: acupoint.gv12
+  seq: 291
+  surface: 身柱
+  corrected: 身柱
+- id: classic.zhen_jiu_da_cheng
+  seq: 140
+  surface: 针灸大成
+  corrected: 针灸大成
+- id: acupoint.cv17
+  seq: 232
+  surface: 痰中穴
+  corrected: 膻中
+kps:
+- type: acupoint_usage
+  s: 丰隆等足阳明穴可用于丰胸；脚部穴道系统学完亦可用于针灸美容。
+  seq:
+  - 1
+  - 2
+  q: 丰隆穴也可以丰胸
+  ents:
+  - acupoint.st40
+  - meridian.st
+  conf: 0.85
+- type: concept_definition
+  s: 中医认为奶水与月经相关，此系统由心所主；阳明与冲脉下行胞宫，月经来潮则胸胀渐消。
+  seq:
+  - 38
+  - 44
+  q: 奶水就是月经，而这个系统呢是心脏在管
+  ents:
+  - zangfu.xin
+  - meridian.st
+  - meridian.tv
+  conf: 0.9
+  asr: 味精=胃经；冲卖=冲脉
+- type: treatment_principle
+  s: 乳腺硬块初期可按所过经络取穴消散，局部硬结处加灸，早期效佳。
+  seq:
+  - 111
+  - 189
+  q: 有硬块的地方灸，这是最初期的百分之百为好
+  ents:
+  - method.zhen_jiu
+  conf: 0.9
+- type: contraindication
+  s: 乳中一般不下针；旁开穴可针。乳根在乳房下缘，常用于美容及局部治疗。
+  seq:
+  - 209
+  - 216
+  q: 乳中呢就是不要下乳中旁边都可以下
+  ents:
+  - acupoint.st17
+  - acupoint.st18
+  conf: 0.95
+- type: acupoint_usage
+  s: 不容在巨阙外开两寸；名示“食入不容”，治胃胀食不下。巨阙为心募。
+  seq:
+  - 247
+  - 249
+  q: 从巨缺外开两寸就是不容
+  ents:
+  - acupoint.st19
+  - acupoint.cv14
+  - concept.mu_xue
+  conf: 0.95
+  asr: 巨缺=巨阙；墓穴=募穴
+- type: acupoint_usage
+  s: 神阙久灸可治肠鸣腹泻，常配合天枢；针、灸皆可。
+  seq:
+  - 286
+  - 288
+  q: 肠明腹泻，还有我们可以配合天枢穴
+  ents:
+  - acupoint.cv8
+  - acupoint.st25
+  conf: 0.9
+  asr: 神缺=神阙；肠明=肠鸣
+- type: clinical_tip
+  s: 小儿可灸身柱等以助长高；配合开胃之灸则纳增、形体壮。
+  seq:
+  - 291
+  - 295
+  q: 再灸给他灸身柱啊，小孩子人高马大
+  ents:
+  - acupoint.gv12
+  conf: 0.85

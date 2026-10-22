@@ -1,0 +1,65 @@
+[
+ {
+  "chapter_id": "zj-021.c01",
+  "video_id": "zj-021",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "乳与月经·乳腺症取穴",
+  "summary": "中医谓奶水与月经同源、心所主；阳明胃经与冲脉相关。乳腺硬块初期可按所过经络取穴并局部灸；乳中一般不下针，乳根在乳房下缘可针，亦用于丰胸美容；丰隆亦可丰胸。",
+  "start_s": 0.13,
+  "end_s": 1339.755,
+  "seg_from": 0,
+  "seg_to": 242,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.st17",
+   "acupoint.st18",
+   "acupoint.st40",
+   "meridian.st"
+  ],
+  "citation": {
+   "youtube_id": "HG6dvbRlGXc",
+   "url": "https://www.youtube.com/watch?v=HG6dvbRlGXc&t=0s",
+   "series": "zj",
+   "episode": 21,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 21",
+   "start_s": 0.13,
+   "end_s": 1339.76
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-021.c02",
+  "video_id": "zj-021",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "不容承满与天枢神阙身柱",
+  "summary": "乳根下为不容（巨阙外开两寸），治食入难容、胃胀。巨阙为心募。神阙灸可治肠鸣腹泻，常配天枢。身柱等灸有助小儿开胃长高。",
+  "start_s": 1341.26,
+  "end_s": 1920.265,
+  "seg_from": 243,
+  "seg_to": 364,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.st19",
+   "acupoint.cv14",
+   "acupoint.st25",
+   "acupoint.cv8",
+   "acupoint.gv12"
+  ],
+  "citation": {
+   "youtube_id": "HG6dvbRlGXc",
+   "url": "https://www.youtube.com/watch?v=HG6dvbRlGXc&t=1341s",
+   "series": "zj",
+   "episode": 21,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 21",
+   "start_s": 1341.26,
+   "end_s": 1920.27
+  },
+  "review_status": "llm_read"
+ }
+]
