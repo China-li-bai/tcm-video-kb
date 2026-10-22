@@ -1,0 +1,61 @@
+[
+ {
+  "chapter_id": "zj-089.c01",
+  "video_id": "zj-089",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "拨云见日与震颤",
+  "summary": "易筋续讲：拨云见日旨在通手三阴三阳；放松时震颤可由中府传至面舌眼。",
+  "start_s": 0.15,
+  "end_s": 490.45,
+  "seg_from": 0,
+  "seg_to": 76,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "new.method.yi_jin_jing",
+   "acupoint.lu1"
+  ],
+  "citation": {
+   "youtube_id": "fxkJ0hInsGE",
+   "url": "https://www.youtube.com/watch?v=fxkJ0hInsGE&t=0s",
+   "series": "zj",
+   "episode": 89,
+   "title": "Ni Hai-hsia \"Humanity Records\" \"Acupuncture\" Complete 90-Episode Series: Acupuncture 89",
+   "start_s": 0.15,
+   "end_s": 490.45
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-089.c02",
+  "video_id": "zj-089",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "丹田呼吸与奇经势",
+  "summary": "马步震动时意守丹田（脐下）；吸呼皆归丹田，戒纯胸式。练功时后溪/列缺关联奇经八脉；青龙探爪等势通任督。",
+  "start_s": 490.45,
+  "end_s": 1196.795,
+  "seg_from": 77,
+  "seg_to": 191,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "zangfu.dan_tian",
+   "acupoint.si3",
+   "acupoint.lu7"
+  ],
+  "citation": {
+   "youtube_id": "fxkJ0hInsGE",
+   "url": "https://www.youtube.com/watch?v=fxkJ0hInsGE&t=490s",
+   "series": "zj",
+   "episode": 89,
+   "title": "Ni Hai-hsia \"Humanity Records\" \"Acupuncture\" Complete 90-Episode Series: Acupuncture 89",
+   "start_s": 490.45,
+   "end_s": 1196.8
+  },
+  "review_status": "llm_read"
+ }
+]

@@ -1,0 +1,79 @@
+video_id: zj-089
+window: w00-01
+seg_from: 0
+seg_to: 191
+annotator: llm_read
+chapters:
+- key: c01
+  title: 拨云见日与震颤
+  start_seq: 0
+  summary: 易筋续讲：拨云见日旨在通手三阴三阳；放松时震颤可由中府传至面舌眼。
+  clauses: []
+  topics:
+  - new.method.yi_jin_jing
+  - acupoint.lu1
+- key: c02
+  title: 丹田呼吸与奇经势
+  start_seq: 77
+  summary: 马步震动时意守丹田（脐下）；吸呼皆归丹田，戒纯胸式。练功时后溪/列缺关联奇经八脉；青龙探爪等势通任督。
+  clauses: []
+  topics:
+  - zangfu.dan_tian
+  - acupoint.si3
+  - acupoint.lu7
+entities:
+- id: new.method.yi_jin_jing
+  seq: 6
+  surface: 益菌菌
+  corrected: 易筋经
+- id: acupoint.lu1
+  seq: 39
+  surface: 中府
+  corrected: 中府
+- id: zangfu.dan_tian
+  seq: 77
+  surface: 丹田
+  corrected: 丹田
+- id: acupoint.si3
+  seq: 169
+  surface: 后溪
+  corrected: 后溪
+- id: acupoint.lu7
+  seq: 169
+  surface: 列缺
+  corrected: 列缺
+- id: acupoint.st34
+  seq: 168
+  surface: 梁丘
+  corrected: 梁丘
+kps:
+- type: clinical_tip
+  s: 拨云见日势旨在通畅手三阴三阳循环。
+  seq:
+  - 6
+  - 7
+  q: 手三阳手三阴呢，它能够循环的非常的好
+  ents:
+  - new.method.yi_jin_jing
+  conf: 0.85
+  asr: 益菌菌=易筋经
+- type: clinical_tip
+  s: 马步震动意守丹田；吸呼归丹田，戒纯胸式呼吸。
+  seq:
+  - 77
+  - 102
+  q: 从丹田丹田的部位
+  ents:
+  - zangfu.dan_tian
+  conf: 0.9
+- type: clinical_tip
+  s: 练功势中后溪/列缺与奇经八脉相关；梁丘等亦涉阴阳跷。
+  seq:
+  - 168
+  - 169
+  q: 插后溪号就金融开款
+  ents:
+  - acupoint.si3
+  - acupoint.lu7
+  conf: 0.8
+  asr: 金融=筋脉/经脉（ASR噪声）

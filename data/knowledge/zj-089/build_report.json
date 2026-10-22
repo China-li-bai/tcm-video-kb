@@ -1,0 +1,25 @@
+{
+ "schema": "knowledge/1",
+ "video_id": "zj-089",
+ "youtube_id": "fxkJ0hInsGE",
+ "windows": [
+  "w00-01"
+ ],
+ "annotations_sha256": "5c330403c1469da8",
+ "n_segments": 192,
+ "n_chapters": 2,
+ "n_sections": 0,
+ "n_entities": 13,
+ "entities_by_type": {
+  "acupoint": 4,
+  "method": 2,
+  "zangfu": 4,
+  "concept": 3
+ },
+ "n_new_entities": 1,
+ "n_knowledge_points": 3,
+ "kp_by_type": {
+  "clinical_tip": 3
+ },
+ "errors": []
+}

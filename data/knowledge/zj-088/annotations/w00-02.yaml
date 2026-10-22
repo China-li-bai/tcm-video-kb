@@ -1,0 +1,80 @@
+video_id: zj-088
+window: w00-02
+seg_from: 0
+seg_to: 301
+annotator: llm_read
+chapters:
+- key: c01
+  title: 放血与曲池合谷
+  start_seq: 0
+  summary: 放血宜适度、可分次；配合针灸可少用药。曲池、合谷同用可止痛消炎。
+  clauses: []
+  topics:
+  - acupoint.li11
+  - acupoint.li4
+- key: c02
+  title: 易筋经与夹脊气行
+  start_seq: 70
+  summary: 介绍易筋经动作与经络气血。华佗夹脊针感气行；后溪配足三里等可导气。足底含三阴三阳，踮足相关。
+  clauses: []
+  topics:
+  - new.method.yi_jin_jing
+  - acupoint.si3
+  - acupoint.st36
+entities:
+- id: acupoint.li11
+  seq: 59
+  surface: 曲齿
+  corrected: 曲池
+- id: acupoint.li4
+  seq: 59
+  surface: 合谷
+  corrected: 合谷
+- id: new.method.yi_jin_jing
+  seq: 70
+  surface: 易筋经
+  corrected: 易筋经
+- id: acupoint.ex_hua_tuo_jia_ji
+  seq: 77
+  surface: 华佗夹击
+  corrected: 华佗夹脊
+- id: acupoint.si3
+  seq: 80
+  surface: 后溪
+  corrected: 后溪
+- id: acupoint.st36
+  seq: 80
+  surface: 足三里
+  corrected: 足三里
+kps:
+- type: acupoint_usage
+  s: 曲池配合谷可止痛并助消炎。
+  seq:
+  - 59
+  - 59
+  q: 是曲齿，是一个合谷
+  ents:
+  - acupoint.li11
+  - acupoint.li4
+  conf: 0.9
+  asr: 曲齿=曲池
+- type: clinical_tip
+  s: 放血宜适度分次；配针灸可减少用药。
+  seq:
+  - 4
+  - 54
+  q: 一个礼拜十天
+  ents:
+  - acupoint.li4
+  conf: 0.85
+- type: clinical_tip
+  s: 易筋经促经络气血；夹脊针感气行；后溪等可导气。
+  seq:
+  - 70
+  - 80
+  q: 很好的易筋经的动作
+  ents:
+  - new.method.yi_jin_jing
+  - acupoint.si3
+  conf: 0.85
+  asr: 华佗夹击=华佗夹脊
