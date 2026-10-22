@@ -1,0 +1,89 @@
+[
+ {
+  "chapter_id": "nj-008.c01",
+  "video_id": "nj-008",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "酒风与奇病论胎九月喑",
+  "summary": "身热懈惰、汗出恶风短气为酒风，方用泽泻等解酒。孕至九月突然失音，乃胞络受压，非病，分娩自愈。",
+  "start_s": 0.21,
+  "end_s": 723.2,
+  "seg_from": 0,
+  "seg_to": 114,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "new.disease.jiu_feng",
+   "herb.ze_xie"
+  ],
+  "citation": {
+   "youtube_id": "RgoDwTXW5Os",
+   "url": "https://www.youtube.com/watch?v=RgoDwTXW5Os&t=0s",
+   "series": "nj",
+   "episode": 8,
+   "title": "08 倪海厦精讲《黄帝内经》高清字幕完整版",
+   "start_s": 0.21,
+   "end_s": 723.2
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "nj-008.c02",
+  "video_id": "nj-008",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "诊脉久病与寒入头痛消渴",
+  "summary": "尺脉数盛为诊（久病伤经）。面见青黑主痛、白主寒。大寒犯头久而不去可入骨致多年头痛。甘味太过中满气溢可转为消渴。",
+  "start_s": 724.18,
+  "end_s": 1717.183,
+  "seg_from": 115,
+  "seg_to": 303,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "symptom.tou_tong",
+   "symptom.xiao_ke"
+  ],
+  "citation": {
+   "youtube_id": "RgoDwTXW5Os",
+   "url": "https://www.youtube.com/watch?v=RgoDwTXW5Os&t=724s",
+   "series": "nj",
+   "episode": 8,
+   "title": "08 倪海厦精讲《黄帝内经》高清字幕完整版",
+   "start_s": 724.18,
+   "end_s": 1717.18
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "nj-008.c03",
+  "video_id": "nj-008",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "口苦属胆与先天癫痫",
+  "summary": "口苦当思肝胆。另述生而癫痫等奇病；过食肥甘与消渴病机再申。",
+  "start_s": 1718.718,
+  "end_s": 13680.152,
+  "seg_from": 304,
+  "seg_to": 2432,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "zangfu.dan",
+   "disease.dian_xian"
+  ],
+  "citation": {
+   "youtube_id": "RgoDwTXW5Os",
+   "url": "https://www.youtube.com/watch?v=RgoDwTXW5Os&t=1718s",
+   "series": "nj",
+   "episode": 8,
+   "title": "08 倪海厦精讲《黄帝内经》高清字幕完整版",
+   "start_s": 1718.72,
+   "end_s": 13680.15
+  },
+  "review_status": "llm_read"
+ }
+]

@@ -1,0 +1,107 @@
+video_id: nj-008
+window: w00-02
+seg_from: 0
+seg_to: 379
+annotator: llm_read
+chapters:
+- key: c01
+  title: 酒风与奇病论胎九月喑
+  start_seq: 0
+  summary: 身热懈惰、汗出恶风短气为酒风，方用泽泻等解酒。孕至九月突然失音，乃胞络受压，非病，分娩自愈。
+  clauses: []
+  topics:
+  - new.disease.jiu_feng
+  - herb.ze_xie
+- key: c02
+  title: 诊脉久病与寒入头痛消渴
+  start_seq: 115
+  summary: 尺脉数盛为诊（久病伤经）。面见青黑主痛、白主寒。大寒犯头久而不去可入骨致多年头痛。甘味太过中满气溢可转为消渴。
+  clauses: []
+  topics:
+  - symptom.tou_tong
+  - symptom.xiao_ke
+- key: c03
+  title: 口苦属胆与先天癫痫
+  start_seq: 304
+  summary: 口苦当思肝胆。另述生而癫痫等奇病；过食肥甘与消渴病机再申。
+  clauses: []
+  topics:
+  - zangfu.dan
+  - disease.dian_xian
+entities:
+- id: new.disease.jiu_feng
+  seq: 5
+  surface: 酒疯
+  corrected: 酒风
+- id: herb.ze_xie
+  seq: 7
+  surface: 泽泻
+  corrected: 泽泻
+- id: classic.huang_di_nei_jing
+  seq: 24
+  surface: 黄帝内经
+  corrected: 黄帝内经
+- id: symptom.tou_tong
+  seq: 148
+  surface: 头痛
+  corrected: 头痛
+- id: symptom.xiao_ke
+  seq: 220
+  surface: 消渴
+  corrected: 消渴
+- id: zangfu.dan
+  seq: 304
+  surface: 肝胆
+  corrected: 胆
+- id: disease.dian_xian
+  seq: 360
+  surface: 癫痫
+  corrected: 癫痫
+- id: pulse.chi
+  seq: 119
+  surface: 齿
+  corrected: 尺
+kps:
+- type: clinical_tip
+  s: 身热懈惰、汗出恶风、气短属酒风；泽泻等可解酒。
+  seq: [5, 12]
+  q: 酒疯
+  ents: [new.disease.jiu_feng, herb.ze_xie]
+  conf: 0.85
+  asr: 酒疯=酒风
+- type: clinical_tip
+  s: 孕九月突然失音为胞络受胎压，非病，分娩后自愈，不必妄治。
+  seq: [27, 34]
+  q: 不是病
+  ents: []
+  conf: 0.95
+- type: diagnostic_rule
+  s: 中医「诊」字多指久病；尺脉本沉缓而反数盛，病多在下腹久伤于经。
+  seq: [123, 125]
+  q: 就是久病
+  ents: []
+  conf: 0.9
+- type: diagnostic_rule
+  s: 望色：青黑主痛，白主寒；寒痛同见则祛寒与止痛同用。
+  seq: [138, 139]
+  q: 青色黑色是不是痛症
+  ents: []
+  conf: 0.9
+- type: pathomechanism
+  s: 大寒犯头久不去可深入骨髓，致头痛经年不愈。
+  seq: [149]
+  q: 大寒
+  ents: [symptom.tou_tong]
+  conf: 0.9
+- type: pathomechanism
+  s: 甘味太过令人中满、气上溢，过腻可转为消渴。
+  seq: [213, 220]
+  q: 甘蔗令人中满
+  ents: [symptom.xiao_ke]
+  conf: 0.95
+- type: clinical_tip
+  s: 口苦当联想肝胆为病。
+  seq: [304]
+  q: 口苦
+  ents: [zangfu.dan]
+  conf: 0.95
