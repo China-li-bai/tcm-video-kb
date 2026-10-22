@@ -1,0 +1,62 @@
+[
+ {
+  "chapter_id": "zj-012.c01",
+  "video_id": "zj-012",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "命门、腰阳关与筋缩",
+  "summary": "督脉穴多在棘突下。命门治角弓反张、下腰痛；腰阳关亦主腰痛。筋缩在肝俞水平后方，治抽筋、癫狂，可针可灸。第十一椎处注意事项见口述。",
+  "start_s": 0.38,
+  "end_s": 851.99,
+  "seg_from": 0,
+  "seg_to": 152,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.gv4",
+   "meridian.gv"
+  ],
+  "citation": {
+   "youtube_id": "h6200X18oEg",
+   "url": "https://www.youtube.com/watch?v=h6200X18oEg&t=0s",
+   "series": "zj",
+   "episode": 12,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 12",
+   "start_s": 0.38,
+   "end_s": 851.99
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-012.c02",
+  "video_id": "zj-012",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "灵台、神道、身柱、大椎",
+  "summary": "灵台可助诊断（如压痛与血证相关之临床经验）。神道压痛提示心脏病。身柱护脊要穴。大椎在活动颈椎与不动胸椎交界。督脉为诸阳之会，穴常应内脏；临床针多取旁开膀胱经。",
+  "start_s": 853.23,
+  "end_s": 1764.983,
+  "seg_from": 153,
+  "seg_to": 313,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.gv10",
+   "acupoint.gv11",
+   "acupoint.gv12",
+   "acupoint.gv14"
+  ],
+  "citation": {
+   "youtube_id": "h6200X18oEg",
+   "url": "https://www.youtube.com/watch?v=h6200X18oEg&t=853s",
+   "series": "zj",
+   "episode": 12,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 12",
+   "start_s": 853.23,
+   "end_s": 1764.98
+  },
+  "review_status": "llm_read"
+ }
+]

@@ -1,0 +1,111 @@
+video_id: zj-012
+window: w00-02
+seg_from: 0
+seg_to: 313
+annotator: llm_read
+chapters:
+- key: c01
+  title: 命门、腰阳关与筋缩
+  start_seq: 0
+  summary: 督脉穴多在棘突下。命门治角弓反张、下腰痛；腰阳关亦主腰痛。筋缩在肝俞水平后方，治抽筋、癫狂，可针可灸。第十一椎处注意事项见口述。
+  clauses: []
+  topics:
+  - acupoint.gv4
+  - meridian.gv
+- key: c02
+  title: 灵台、神道、身柱、大椎
+  start_seq: 153
+  summary: 灵台可助诊断（如压痛与血证相关之临床经验）。神道压痛提示心脏病。身柱护脊要穴。大椎在活动颈椎与不动胸椎交界。督脉为诸阳之会，穴常应内脏；临床针多取旁开膀胱经。
+  clauses: []
+  topics:
+  - acupoint.gv10
+  - acupoint.gv11
+  - acupoint.gv12
+  - acupoint.gv14
+entities:
+- id: acupoint.gv4
+  seq: 0
+  surface: 命门
+  corrected: 命门
+- id: acupoint.cv1
+  seq: 12
+  surface: 会阴
+  corrected: 会阴
+- id: meridian.gv
+  seq: 38
+  surface: 督脉
+  corrected: 督脉
+- id: acupoint.gv8
+  seq: 80
+  surface: 经缩
+  corrected: 筋缩
+- id: disease.dian_xian
+  seq: 83
+  surface: 癫痫
+  corrected: 癫痫
+- id: acupoint.gv10
+  seq: 153
+  surface: 灵台穴
+  corrected: 灵台
+- id: acupoint.gv11
+  seq: 175
+  surface: 神道穴
+  corrected: 神道
+- id: acupoint.gv12
+  seq: 196
+  surface: 生柱
+  corrected: 身柱
+- id: acupoint.gv14
+  seq: 238
+  surface: 大椎
+  corrected: 大椎
+- id: meridian.bl
+  seq: 184
+  surface: 膀胱经
+  corrected: 足太阳膀胱经
+- id: new.acupoint.消渴穴
+  seq: 135
+  surface: 消渴穴
+  corrected: 消渴（经外奇穴）
+kps:
+- type: acupoint_usage
+  s: 命门可治角弓反张及下腰痛；督脉腰段穴多主腰疾。
+  seq:
+  - 3
+  - 146
+  q: 这角弓反张我们在命门穴上都可以治疗
+  ents:
+  - acupoint.gv4
+  - meridian.gv
+  conf: 0.9
+- type: acupoint_usage
+  s: 筋缩在肝后方督脉，治抽筋、癫狂，针灸皆可。
+  seq:
+  - 80
+  - 83
+  q: 癫狂、癫痫狂啊好都可以用，那针很灸都可以
+  ents:
+  - acupoint.gv8
+  - disease.dian_xian
+  conf: 0.85
+- type: clinical_tip
+  s: 灵台、神道可作诊断：神道压痛常提示心脏病；灵台压痛之血证经验供参考。
+  seq:
+  - 153
+  - 176
+  q: 神道穴，任何的心脏病，任何的心脏病，我们在神道都会有压痛点
+  ents:
+  - acupoint.gv11
+  - acupoint.gv10
+  conf: 0.8
+- type: concept_definition
+  s: 大椎在可动颈椎与不动胸椎交界；督为诸阳之会，穴常应脏，针常取旁开膀胱经。
+  seq:
+  - 172
+  - 238
+  q: 动骨和不动骨的中间那个点就是大椎学
+  ents:
+  - acupoint.gv14
+  - meridian.gv
+  conf: 0.9
+  asr: 学=穴
