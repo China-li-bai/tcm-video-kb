@@ -1,0 +1,81 @@
+video_id: jgy-002
+window: w00-02
+seg_from: 0
+seg_to: 395
+annotator: llm_read
+chapters:
+- key: c01
+  title: 脏腑先后·治未病与肝传脾
+  start_seq: 0
+  summary: 肝病最先传脾；上工治未病，须先识将发之肝病。丑时（1–3点）不寐已当虑肝；治肝常兼通大肠以泄肝压，便秘亦须顾肝。
+  clauses: []
+  topics:
+  - zangfu.gan
+  - zangfu.pi
+  - new.method.zhi_wei_bing
+- key: c02
+  title: 妄补阴虚之害
+  start_seq: 139
+  summary: 南派动辄以阴虚论治而妄补。下利误补可致脾陷、腹鼓；归纳补虚诸弊，实症当清泄、虚症宜平淡建中。
+  clauses: []
+  topics:
+  - concept.yin_xu
+- key: c03
+  title: 导引吐纳与望色举例
+  start_seq: 235
+  summary: 房事饮食勿太过；易筋经下紧上松。望小儿印堂青线等可助辨证选方。
+  clauses: []
+  topics:
+  - method.dao_yin
+entities:
+- id: zangfu.gan
+  seq: 0
+  surface: 肝
+  corrected: 肝
+- id: zangfu.pi
+  seq: 0
+  surface: 脾脏
+  corrected: 脾
+- id: new.method.zhi_wei_bing
+  seq: 2
+  surface: 上攻之未病
+  corrected: 上工治未病
+- id: zangfu.da_chang
+  seq: 11
+  surface: 大肠
+  corrected: 大肠
+- id: concept.yin_xu
+  seq: 144
+  surface: 阴虚
+  corrected: 阴虚
+- id: classic.jin_gui_yao_lve
+  seq: 394
+  surface: 第十三页
+  corrected: 金匮要略
+kps:
+- type: pathomechanism
+  s: 肝有病首传脾；上工治未病，须在肝病将发时识之。
+  seq: [0, 2]
+  q: 影响到脾脏
+  ents: [zangfu.gan, zangfu.pi, new.method.zhi_wei_bing]
+  conf: 0.9
+  asr: 上攻之未病=上工治未病；香生=相生
+- type: clinical_tip
+  s: 夜1–3点（肝经流注）不能入睡，当留意肝脏；治肝常兼通大便以泄肝压。
+  seq: [9, 20]
+  q: 不能睡觉
+  ents: [zangfu.gan, zangfu.da_chang]
+  conf: 0.95
+- type: contraindication
+  s: 见病即云阴虚而妄补，有六弊；下利误补尤易致脾陷腹鼓。
+  seq: [144, 149]
+  q: 补息的缺点
+  ents: [concept.yin_xu]
+  conf: 0.85
+  asr: 补息=补虚
+- type: clinical_tip
+  s: 肝实可用清肝苦药；肝虚宜平淡建中之品，非实勿妄用肝泻药。
+  seq: [138]
+  q: 而不是虚症
+  ents: [zangfu.gan]
+  conf: 0.85

@@ -1,0 +1,88 @@
+[
+ {
+  "chapter_id": "jgy-002.c01",
+  "video_id": "jgy-002",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "脏腑先后·治未病与肝传脾",
+  "summary": "肝病最先传脾；上工治未病，须先识将发之肝病。丑时（1–3点）不寐已当虑肝；治肝常兼通大肠以泄肝压，便秘亦须顾肝。",
+  "start_s": 19.49,
+  "end_s": 744.96,
+  "seg_from": 0,
+  "seg_to": 138,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "zangfu.gan",
+   "zangfu.pi",
+   "new.method.zhi_wei_bing"
+  ],
+  "citation": {
+   "youtube_id": "NTn2Kv6abT8",
+   "url": "https://www.youtube.com/watch?v=NTn2Kv6abT8&t=19s",
+   "series": "jgy",
+   "episode": 2,
+   "title": "倪海廈《金匱要略》細分版： 01藏府經絡先後病",
+   "start_s": 19.49,
+   "end_s": 744.96
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-002.c02",
+  "video_id": "jgy-002",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "妄补阴虚之害",
+  "summary": "南派动辄以阴虚论治而妄补。下利误补可致脾陷、腹鼓；归纳补虚诸弊，实症当清泄、虚症宜平淡建中。",
+  "start_s": 744.96,
+  "end_s": 1276.319,
+  "seg_from": 139,
+  "seg_to": 234,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "concept.yin_xu"
+  ],
+  "citation": {
+   "youtube_id": "NTn2Kv6abT8",
+   "url": "https://www.youtube.com/watch?v=NTn2Kv6abT8&t=744s",
+   "series": "jgy",
+   "episode": 2,
+   "title": "倪海廈《金匱要略》細分版： 01藏府經絡先後病",
+   "start_s": 744.96,
+   "end_s": 1276.32
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-002.c03",
+  "video_id": "jgy-002",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "导引吐纳与望色举例",
+  "summary": "房事饮食勿太过；易筋经下紧上松。望小儿印堂青线等可助辨证选方。",
+  "start_s": 1276.854,
+  "end_s": 5167.099,
+  "seg_from": 235,
+  "seg_to": 902,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "method.dao_yin"
+  ],
+  "citation": {
+   "youtube_id": "NTn2Kv6abT8",
+   "url": "https://www.youtube.com/watch?v=NTn2Kv6abT8&t=1276s",
+   "series": "jgy",
+   "episode": 2,
+   "title": "倪海廈《金匱要略》細分版： 01藏府經絡先後病",
+   "start_s": 1276.85,
+   "end_s": 5167.1
+  },
+  "review_status": "llm_read"
+ }
+]
