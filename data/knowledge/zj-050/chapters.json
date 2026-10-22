@@ -1,0 +1,154 @@
+[
+ {
+  "chapter_id": "zj-050.c01",
+  "video_id": "zj-050",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "头侧本神头临泣目窗",
+  "summary": "阳白前为本神；头临泣（ASR头灵气）自瞳孔线上入发际约寸半；目窗（ASR汗木窗）等头侧穴主眼科，胆经上头而胃经止于面。",
+  "start_s": 0.37,
+  "end_s": 229.095,
+  "seg_from": 0,
+  "seg_to": 38,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.gb13",
+   "acupoint.gb15",
+   "acupoint.gb16",
+   "meridian.gb"
+  ],
+  "citation": {
+   "youtube_id": "qsnJodGr-5E",
+   "url": "https://www.youtube.com/watch?v=qsnJodGr-5E&t=0s",
+   "series": "zj",
+   "episode": 50,
+   "title": "Ni Hai-hsia: \"Humanity Series\" - Acupuncture, Episode 50 of 90",
+   "start_s": 0.37,
+   "end_s": 229.09
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-050.c02",
+  "video_id": "zj-050",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "风池取穴与项强手法",
+  "summary": "风池在两项大筋间最凹；俯卧头正，针向对侧颧/旋梁方向斜刺。风府等同属后脑受风；项强可针外加火罐、膀胱经米酒刮痧。",
+  "start_s": 231.36,
+  "end_s": 450.445,
+  "seg_from": 39,
+  "seg_to": 73,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.gb20",
+   "acupoint.gv16",
+   "meridian.bl"
+  ],
+  "citation": {
+   "youtube_id": "qsnJodGr-5E",
+   "url": "https://www.youtube.com/watch?v=qsnJodGr-5E&t=231s",
+   "series": "zj",
+   "episode": 50,
+   "title": "Ni Hai-hsia: \"Humanity Series\" - Acupuncture, Episode 50 of 90",
+   "start_s": 231.36,
+   "end_s": 450.44
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-050.c03",
+  "video_id": "zj-050",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "肩井配足三里与禁忌",
+  "summary": "肩井在肩峰最高肌腹中，宜浅刺；配健侧足三里引气，防气闷胸。孕妇禁针肩井恐动胎；深刺可穿肺。项酸常用后溪。",
+  "start_s": 454.01,
+  "end_s": 801.885,
+  "seg_from": 74,
+  "seg_to": 128,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.gb21",
+   "acupoint.st36",
+   "acupoint.si3"
+  ],
+  "citation": {
+   "youtube_id": "qsnJodGr-5E",
+   "url": "https://www.youtube.com/watch?v=qsnJodGr-5E&t=454s",
+   "series": "zj",
+   "episode": 50,
+   "title": "Ni Hai-hsia: \"Humanity Series\" - Acupuncture, Episode 50 of 90",
+   "start_s": 454.01,
+   "end_s": 801.88
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-050.c04",
+  "video_id": "zj-050",
+  "level": 1,
+  "parent_id": null,
+  "seq": 4,
+  "title": "日月京门与带脉穴",
+  "summary": "胆募为日月非京门；京门为肾募，常配肾俞/命门，针约一寸。带脉、五枢、维道三穴属奇经带脉，主带下与带脉痛。",
+  "start_s": 805.04,
+  "end_s": 1443.269,
+  "seg_from": 129,
+  "seg_to": 240,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.gb24",
+   "acupoint.gb25",
+   "acupoint.gb26",
+   "meridian.bv"
+  ],
+  "citation": {
+   "youtube_id": "qsnJodGr-5E",
+   "url": "https://www.youtube.com/watch?v=qsnJodGr-5E&t=805s",
+   "series": "zj",
+   "episode": 50,
+   "title": "Ni Hai-hsia: \"Humanity Series\" - Acupuncture, Episode 50 of 90",
+   "start_s": 805.04,
+   "end_s": 1443.27
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-050.c05",
+  "video_id": "zj-050",
+  "level": 1,
+  "parent_id": null,
+  "seq": 5,
+  "title": "华佗夹脊与腰痛辨经",
+  "summary": "督旁上下痛属华佗夹脊；带脉病痛横行不下行。胆经本穴配足三里等可治夹脊类背痛。",
+  "start_s": 1444.804,
+  "end_s": 1888.289,
+  "seg_from": 241,
+  "seg_to": 310,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.ex_jia_ji",
+   "meridian.gv",
+   "meridian.gb"
+  ],
+  "citation": {
+   "youtube_id": "qsnJodGr-5E",
+   "url": "https://www.youtube.com/watch?v=qsnJodGr-5E&t=1444s",
+   "series": "zj",
+   "episode": 50,
+   "title": "Ni Hai-hsia: \"Humanity Series\" - Acupuncture, Episode 50 of 90",
+   "start_s": 1444.8,
+   "end_s": 1888.29
+  },
+  "review_status": "llm_read"
+ }
+]

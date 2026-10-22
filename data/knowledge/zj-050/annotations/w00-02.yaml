@@ -1,0 +1,250 @@
+video_id: zj-050
+window: w00-02
+seg_from: 0
+seg_to: 310
+annotator: llm_read
+chapters:
+- key: c01
+  title: 头侧本神头临泣目窗
+  start_seq: 0
+  summary: 阳白前为本神；头临泣（ASR头灵气）自瞳孔线上入发际约寸半；目窗（ASR汗木窗）等头侧穴主眼科，胆经上头而胃经止于面。
+  clauses: []
+  topics:
+  - acupoint.gb13
+  - acupoint.gb15
+  - acupoint.gb16
+  - meridian.gb
+- key: c02
+  title: 风池取穴与项强手法
+  start_seq: 39
+  summary: 风池在两项大筋间最凹；俯卧头正，针向对侧颧/旋梁方向斜刺。风府等同属后脑受风；项强可针外加火罐、膀胱经米酒刮痧。
+  clauses: []
+  topics:
+  - acupoint.gb20
+  - acupoint.gv16
+  - meridian.bl
+- key: c03
+  title: 肩井配足三里与禁忌
+  start_seq: 74
+  summary: 肩井在肩峰最高肌腹中，宜浅刺；配健侧足三里引气，防气闷胸。孕妇禁针肩井恐动胎；深刺可穿肺。项酸常用后溪。
+  clauses: []
+  topics:
+  - acupoint.gb21
+  - acupoint.st36
+  - acupoint.si3
+- key: c04
+  title: 日月京门与带脉穴
+  start_seq: 129
+  summary: 胆募为日月非京门；京门为肾募，常配肾俞/命门，针约一寸。带脉、五枢、维道三穴属奇经带脉，主带下与带脉痛。
+  clauses: []
+  topics:
+  - acupoint.gb24
+  - acupoint.gb25
+  - acupoint.gb26
+  - meridian.bv
+- key: c05
+  title: 华佗夹脊与腰痛辨经
+  start_seq: 241
+  summary: 督旁上下痛属华佗夹脊；带脉病痛横行不下行。胆经本穴配足三里等可治夹脊类背痛。
+  clauses: []
+  topics:
+  - acupoint.ex_jia_ji
+  - meridian.gv
+  - meridian.gb
+entities:
+- id: acupoint.gb13
+  seq: 1
+  surface: 本神
+  corrected: 本神
+- id: acupoint.gb14
+  seq: 1
+  surface: 阳白
+  corrected: 阳白
+- id: acupoint.gb15
+  seq: 9
+  surface: 头灵气
+  corrected: 头临泣
+- id: acupoint.gb16
+  seq: 19
+  surface: 汗木窗
+  corrected: 目窗
+- id: meridian.gb
+  seq: 9
+  surface: 胆经
+  corrected: 足少阳胆经
+- id: meridian.st
+  seq: 9
+  surface: 足阳明胃经
+  corrected: 足阳明胃经
+- id: meridian.bl
+  seq: 7
+  surface: 膀胱经
+  corrected: 足太阳膀胱经
+- id: meridian.gv
+  seq: 32
+  surface: 督脉
+  corrected: 督脉
+- id: acupoint.gb20
+  seq: 51
+  surface: 风池
+  corrected: 风池
+- id: acupoint.gv16
+  seq: 44
+  surface: 风府
+  corrected: 风府
+- id: acupoint.gb21
+  seq: 75
+  surface: 肩颈
+  corrected: 肩井
+- id: acupoint.st36
+  seq: 86
+  surface: 足三里
+  corrected: 足三里
+- id: acupoint.si3
+  seq: 99
+  surface: 后溪
+  corrected: 后溪
+- id: acupoint.gb24
+  seq: 130
+  surface: 日月
+  corrected: 日月
+- id: acupoint.gb25
+  seq: 183
+  surface: 京门
+  corrected: 京门
+- id: acupoint.bl23
+  seq: 195
+  surface: 肾疏
+  corrected: 肾俞
+- id: acupoint.gb26
+  seq: 203
+  surface: 带脉
+  corrected: 带脉
+- id: acupoint.gb27
+  seq: 203
+  surface: 五枢
+  corrected: 五枢
+- id: acupoint.gb28
+  seq: 203
+  surface: 为道
+  corrected: 维道
+- id: meridian.bv
+  seq: 204
+  surface: 带脉
+  corrected: 带脉
+- id: acupoint.ex_jia_ji
+  seq: 275
+  surface: 华佗夹击
+  corrected: 华佗夹脊
+- id: zangfu.fei
+  seq: 114
+  surface: 肺
+  corrected: 肺
+kps:
+- type: concept_definition
+  s: 阳白之前为本神；头临泣在瞳孔线上入发际约寸半；目窗等头侧穴多主眼科。
+  seq:
+  - 1
+  - 19
+  q: 我们叫做本神
+  ents:
+  - acupoint.gb13
+  - acupoint.gb15
+  - acupoint.gb16
+  conf: 0.9
+  asr: 头灵气=头临泣；汗木窗=目窗
+- type: clinical_tip
+  s: 面之前为胃经，头侧往后为胆经；面病多责胃经。
+  seq:
+  - 9
+  - 10
+  q: 就是我们胆经的头灵气
+  ents:
+  - meridian.gb
+  - meridian.st
+  conf: 0.9
+- type: acupoint_usage
+  s: 风池俯卧头正取穴，针向对侧颧梁方向斜刺，免伤血管。
+  seq:
+  - 55
+  - 56
+  q: 这个针头是对着右边的旋梁
+  ents:
+  - acupoint.gb20
+  conf: 0.95
+  asr: 旋梁≈颧梁
+- type: clinical_tip
+  s: 项强除针风池外，可于项部拔罐，或膀胱经撒米酒刮痧至红，勿破皮。
+  seq:
+  - 69
+  - 71
+  q: 刮了红红的一条刮痧
+  ents:
+  - acupoint.gb20
+  - meridian.bl
+  conf: 0.9
+- type: acupoint_usage
+  s: 肩井取肩峰最高肌腹中，宜浅；针后配对侧足三里引气，防气滞胸。
+  seq:
+  - 75
+  - 86
+  q: 配合右边的足三里
+  ents:
+  - acupoint.gb21
+  - acupoint.st36
+  conf: 0.95
+  asr: 肩颈=肩井
+- type: contraindication
+  s: 孕妇禁针肩井，气力下冲可致落胎；肩井亦忌过深，恐刺穿肺。
+  seq:
+  - 114
+  - 116
+  q: 孕妇不可以下肩颈穴
+  ents:
+  - acupoint.gb21
+  - zangfu.fei
+  conf: 0.95
+- type: acupoint_usage
+  s: 颈项酸强硬常用后溪，可配申脉治项背病。
+  seq:
+  - 99
+  - 101
+  q: 最常用的穴道子后溪
+  ents:
+  - acupoint.si3
+  conf: 0.9
+- type: concept_definition
+  s: 胆之募为日月；京门为肾募，常与肾俞同用，针约一寸勿过深。
+  seq:
+  - 130
+  - 187
+  q: 胆的墓穴是日月好板子
+  ents:
+  - acupoint.gb24
+  - acupoint.gb25
+  conf: 0.9
+  asr: 墓穴=募穴；京面=京门
+- type: clinical_tip
+  s: 带脉、五枢、维道三穴即奇经带脉穴，主女子带下与带脉痛。
+  seq:
+  - 203
+  - 207
+  q: 带脉五枢为道三个穴道
+  ents:
+  - acupoint.gb26
+  - acupoint.gb27
+  - acupoint.gb28
+  - meridian.bv
+  conf: 0.9
+  asr: 为道=维道
+- type: clinical_tip
+  s: 背痛沿督旁上下走行属华佗夹脊；带脉病痛横行不向下走。
+  seq:
+  - 254
+  - 275
+  q: 沿着督脉上下华佗夹击
+  ents:
+  - acupoint.ex_jia_ji
+  - meridian.gv
+  conf: 0.85
+  asr: 华佗夹击=华佗夹脊

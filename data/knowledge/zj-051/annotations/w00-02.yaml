@@ -1,0 +1,183 @@
+video_id: zj-051
+window: w00-02
+seg_from: 0
+seg_to: 327
+annotator: llm_read
+chapters:
+- key: c01
+  title: 环跳深刺与骨病初征
+  start_seq: 0
+  summary: 环跳须屈髋取穴，三寸针抵骨/关节旁；可行呼吸补泻。骨病初起常先见环跳痛；可治半身不遂，肩痛可刺对侧环跳。
+  clauses: []
+  topics:
+  - acupoint.gb30
+  - zangfu.gu
+  - method.bu_xie
+- key: c02
+  title: 风市中渎治中风瘫痪
+  start_seq: 63
+  summary: 风市在膝外上七寸，与环跳并为中风/瘫痪大穴；中渎在风市下二寸，加强风湿不仁疗效。
+  clauses: []
+  topics:
+  - acupoint.gb31
+  - acupoint.gb32
+  - syndrome.zhong_feng
+- key: c03
+  title: 阳陵泉筋会与外丘
+  start_seq: 106
+  summary: 阳陵泉为胆经合穴、筋会，膝不得屈伸、抽筋等筋病皆可取；外丘治狂走抽筋，灸可助解毒。
+  clauses: []
+  topics:
+  - acupoint.gb34
+  - acupoint.gb36
+  - zangfu.jin
+- key: c04
+  title: 光明络穴与绝骨髓会
+  start_seq: 223
+  summary: 光明为胆经络穴，外踝上五寸，主眼科；悬钟又名绝骨，髓病、中风大穴，可寻压痛。
+  clauses: []
+  topics:
+  - acupoint.gb37
+  - acupoint.gb39
+  - syndrome.zhong_feng
+entities:
+- id: acupoint.gb30
+  seq: 6
+  surface: 环跳
+  corrected: 环跳
+- id: zangfu.gu
+  seq: 29
+  surface: 骨
+  corrected: 骨
+- id: method.bu_xie
+  seq: 15
+  surface: 呼吸补泻
+  corrected: 补泻
+- id: acupoint.gb31
+  seq: 65
+  surface: 风刺
+  corrected: 风市
+- id: acupoint.gb32
+  seq: 86
+  surface: 中渚
+  corrected: 中渎
+- id: syndrome.zhong_feng
+  seq: 65
+  surface: 中封
+  corrected: 中风
+- id: syndrome.feng_shi
+  seq: 71
+  surface: 风湿
+  corrected: 风湿
+- id: symptom.bu_ren
+  seq: 88
+  surface: 不仁
+  corrected: 不仁
+- id: acupoint.gb34
+  seq: 106
+  surface: 阳陵泉
+  corrected: 阳陵泉
+- id: zangfu.jin
+  seq: 125
+  surface: 筋
+  corrected: 筋
+- id: acupoint.gb36
+  seq: 167
+  surface: 外丘墟
+  corrected: 外丘
+- id: acupoint.gb37
+  seq: 223
+  surface: 光明
+  corrected: 光明
+- id: acupoint.gb39
+  seq: 274
+  surface: 绝骨
+  corrected: 悬钟
+- id: meridian.gb
+  seq: 261
+  surface: 胆经
+  corrected: 足少阳胆经
+kps:
+- type: acupoint_usage
+  s: 环跳屈髋取穴，三寸针深抵骨旁/关节；可行吸提呼推之呼吸补泻。
+  seq:
+  - 6
+  - 15
+  q: 这叫做呼吸补泻
+  ents:
+  - acupoint.gb30
+  - method.bu_xie
+  conf: 0.95
+- type: clinical_tip
+  s: 骨病初起常先见环跳痛；单纯神经痛针一两次可消，久痛须排查骨损/骨癌。
+  seq:
+  - 29
+  - 43
+  q: 一定是在环跳有痛
+  ents:
+  - acupoint.gb30
+  - zangfu.gu
+  conf: 0.9
+- type: clinical_tip
+  s: 肩与对环跳：肩痛可刺对侧环跳；亦用于半身不遂。
+  seq:
+  - 47
+  - 53
+  q: 我们扎环跳对策一阵下去
+  ents:
+  - acupoint.gb30
+  conf: 0.85
+  asr: 对策=对侧
+- type: acupoint_usage
+  s: 风市取膝外上七寸，与环跳同为中风瘫痪大穴；中渎在其下二寸，助治麻痹不仁。
+  seq:
+  - 65
+  - 71
+  q: 都是治疗中封的大穴
+  ents:
+  - acupoint.gb31
+  - acupoint.gb30
+  - syndrome.zhong_feng
+  conf: 0.9
+  asr: 风刺/风式=风市；中封=中风
+- type: acupoint_usage
+  s: 阳陵泉为胆经合穴，凡筋病（膝不得屈伸、抽筋等）皆可取之。
+  seq:
+  - 125
+  - 261
+  q: 阳陵泉就是胆经的和穴
+  ents:
+  - acupoint.gb34
+  - zangfu.jin
+  - meridian.gb
+  conf: 0.95
+  asr: 和穴=合穴
+- type: clinical_tip
+  s: 外丘治狂走、抽筋、脚痛；局部被咬伤可灸外丘助解毒。
+  seq:
+  - 167
+  - 205
+  q: 这个穴道我们称之为外丘墟
+  ents:
+  - acupoint.gb36
+  conf: 0.85
+  asr: 外丘墟=外丘
+- type: acupoint_usage
+  s: 光明为胆经络穴，外踝上五寸直刺，主眼科目疾。
+  seq:
+  - 226
+  - 230
+  q: 大部分我们眼睛眼科的治症
+  ents:
+  - acupoint.gb37
+  conf: 0.95
+- type: acupoint_usage
+  s: 悬钟又名绝骨，治骨髓病与中风；可在穴区寻压痛点下针。
+  seq:
+  - 281
+  - 326
+  q: 在绝骨穴上治疗
+  ents:
+  - acupoint.gb39
+  - syndrome.zhong_feng
+  conf: 0.95

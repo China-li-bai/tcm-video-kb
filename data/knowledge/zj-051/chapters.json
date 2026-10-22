@@ -1,0 +1,122 @@
+[
+ {
+  "chapter_id": "zj-051.c01",
+  "video_id": "zj-051",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "环跳深刺与骨病初征",
+  "summary": "环跳须屈髋取穴，三寸针抵骨/关节旁；可行呼吸补泻。骨病初起常先见环跳痛；可治半身不遂，肩痛可刺对侧环跳。",
+  "start_s": 0.15,
+  "end_s": 393.345,
+  "seg_from": 0,
+  "seg_to": 62,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.gb30",
+   "zangfu.gu",
+   "method.bu_xie"
+  ],
+  "citation": {
+   "youtube_id": "eJs10gOlE8w",
+   "url": "https://www.youtube.com/watch?v=eJs10gOlE8w&t=0s",
+   "series": "zj",
+   "episode": 51,
+   "title": "Ni Hai-sha \"Human Disciplines\" \"Acupuncture\" Complete 90 Episodes - Acupuncture 51",
+   "start_s": 0.15,
+   "end_s": 393.35
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-051.c02",
+  "video_id": "zj-051",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "风市中渎治中风瘫痪",
+  "summary": "风市在膝外上七寸，与环跳并为中风/瘫痪大穴；中渎在风市下二寸，加强风湿不仁疗效。",
+  "start_s": 395.24,
+  "end_s": 637.83,
+  "seg_from": 63,
+  "seg_to": 105,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.gb31",
+   "acupoint.gb32",
+   "syndrome.zhong_feng"
+  ],
+  "citation": {
+   "youtube_id": "eJs10gOlE8w",
+   "url": "https://www.youtube.com/watch?v=eJs10gOlE8w&t=395s",
+   "series": "zj",
+   "episode": 51,
+   "title": "Ni Hai-sha \"Human Disciplines\" \"Acupuncture\" Complete 90 Episodes - Acupuncture 51",
+   "start_s": 395.24,
+   "end_s": 637.83
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-051.c03",
+  "video_id": "zj-051",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "阳陵泉筋会与外丘",
+  "summary": "阳陵泉为胆经合穴、筋会，膝不得屈伸、抽筋等筋病皆可取；外丘治狂走抽筋，灸可助解毒。",
+  "start_s": 639.39,
+  "end_s": 1205.656,
+  "seg_from": 106,
+  "seg_to": 222,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.gb34",
+   "acupoint.gb36",
+   "zangfu.jin"
+  ],
+  "citation": {
+   "youtube_id": "eJs10gOlE8w",
+   "url": "https://www.youtube.com/watch?v=eJs10gOlE8w&t=639s",
+   "series": "zj",
+   "episode": 51,
+   "title": "Ni Hai-sha \"Human Disciplines\" \"Acupuncture\" Complete 90 Episodes - Acupuncture 51",
+   "start_s": 639.39,
+   "end_s": 1205.66
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-051.c04",
+  "video_id": "zj-051",
+  "level": 1,
+  "parent_id": null,
+  "seq": 4,
+  "title": "光明络穴与绝骨髓会",
+  "summary": "光明为胆经络穴，外踝上五寸，主眼科；悬钟又名绝骨，髓病、中风大穴，可寻压痛。",
+  "start_s": 1209.561,
+  "end_s": 1743.516,
+  "seg_from": 223,
+  "seg_to": 327,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.gb37",
+   "acupoint.gb39",
+   "syndrome.zhong_feng"
+  ],
+  "citation": {
+   "youtube_id": "eJs10gOlE8w",
+   "url": "https://www.youtube.com/watch?v=eJs10gOlE8w&t=1209s",
+   "series": "zj",
+   "episode": 51,
+   "title": "Ni Hai-sha \"Human Disciplines\" \"Acupuncture\" Complete 90 Episodes - Acupuncture 51",
+   "start_s": 1209.56,
+   "end_s": 1743.52
+  },
+  "review_status": "llm_read"
+ }
+]
