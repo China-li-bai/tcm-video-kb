@@ -1,0 +1,158 @@
+video_id: zj-017
+window: w00-02
+seg_from: 0
+seg_to: 220
+annotator: llm_read
+chapters:
+- key: c01
+  title: 合谷针刺禁忌与产诊
+  start_seq: 0
+  summary: 合谷旁有动脉，进针宜指甲拨开避脉，勿贴骨伤骨膜。孕妇一般禁针合谷；医书有可泻不可补之说。合谷为原穴，顺经为补逆经为泻。临产合谷脉动上达可助诊；合谷气通胞宫。
+  clauses: []
+  topics:
+  - acupoint.li4
+  - concept.yuan_xue
+  - method.bu_xie
+- key: c02
+  title: 合谷太冲与偏历温溜曲池
+  start_seq: 68
+  summary: 阳溪较少用。合谷配太冲为“四关”。偏历为手阳明络穴；温溜在偏历上两寸。上半身皮肤瘙痒常取曲池、合谷（可配上巨虚）。
+  clauses: []
+  topics:
+  - acupoint.lr3
+  - acupoint.li6
+  - acupoint.li11
+  - acupoint.li5
+entities:
+- id: acupoint.li4
+  seq: 10
+  surface: 合谷
+  corrected: 合谷
+- id: concept.yuan_xue
+  seq: 20
+  surface: 原穴
+  corrected: 原穴
+- id: method.bu_xie
+  seq: 17
+  surface: 补
+  corrected: 补泻
+- id: meridian.li
+  seq: 17
+  surface: 大肠经
+  corrected: 手阳明大肠经
+- id: acupoint.li5
+  seq: 68
+  surface: 阳虚穴
+  corrected: 阳溪
+- id: acupoint.lr3
+  seq: 88
+  surface: 太冲
+  corrected: 太冲
+- id: acupoint.li6
+  seq: 111
+  surface: 偏力穴
+  corrected: 偏历
+- id: concept.luo_xue
+  seq: 111
+  surface: 络穴
+  corrected: 络穴
+- id: acupoint.li7
+  seq: 128
+  surface: 温流穴
+  corrected: 温溜
+- id: acupoint.li11
+  seq: 220
+  surface: 曲池
+  corrected: 曲池
+- id: acupoint.st37
+  seq: 212
+  surface: 巨虚
+  corrected: 上巨虚
+- id: concept.biao_li
+  seq: 212
+  surface: 表里
+  corrected: 表里
+- id: zangfu.fei
+  seq: 212
+  surface: 肺
+  corrected: 肺
+- id: zangfu.da_chang
+  seq: 212
+  surface: 大肠
+  corrected: 大肠
+kps:
+- type: clinical_tip
+  s: 合谷处有动脉，进针以指甲切拨避脉；勿贴骨缘，免伤骨膜剧痛。
+  seq:
+  - 8
+  - 10
+  q: 有脉的地方，指甲切一下，尽量避开脉下针
+  ents:
+  - acupoint.li4
+  conf: 0.95
+- type: contraindication
+  s: 怀孕时合谷一般不下针；医书谓孕妇可泻不可补。
+  seq:
+  - 15
+  - 18
+  q: 怀孕的时候，合谷不要下针
+  ents:
+  - acupoint.li4
+  conf: 0.95
+  asr: 可卸=可泻
+- type: concept_definition
+  s: 手三阳经气自四肢末梢上行；合谷顺经针刺为补，逆经为泻。
+  seq:
+  - 17
+  - 18
+  q: 如果顺着血下增，是不是就叫做补
+  ents:
+  - meridian.li
+  - acupoint.li4
+  - method.bu_xie
+  conf: 0.9
+  asr: 血下增=向下针
+- type: clinical_tip
+  s: 临产阵痛时若合谷脉动上窜，提示即将分娩；合谷气脉通于胞宫，亦可作诊断。
+  seq:
+  - 33
+  - 36
+  q: 合谷是气脉之所在，直接通到子宫
+  ents:
+  - acupoint.li4
+  conf: 0.9
+- type: acupoint_usage
+  s: 双手合谷配双足太冲，合称开四关。
+  seq:
+  - 88
+  - 89
+  q: 下针两个合谷穴，下两个太宗
+  ents:
+  - acupoint.li4
+  - acupoint.lr3
+  conf: 0.95
+  asr: 太宗=太冲；绞落=开四关/交络
+- type: acupoint_usage
+  s: 偏历为手阳明络穴；温溜约在偏历上两寸大肠经上。
+  seq:
+  - 111
+  - 128
+  q: 偏力穴呢是首阳明的络穴
+  ents:
+  - acupoint.li6
+  - acupoint.li7
+  - concept.luo_xue
+  conf: 0.9
+  asr: 偏力=偏历；首阳明=手阳明；温流=温溜
+- type: acupoint_usage
+  s: 上半身皮肤瘙痒，曲池与合谷为常用止痒穴；可配上巨虚（肺与大肠表里）。
+  seq:
+  - 212
+  - 220
+  q: 曲池跟合谷两个是最有名的止痒皮肤止养穴
+  ents:
+  - acupoint.li11
+  - acupoint.li4
+  - acupoint.st37
+  conf: 0.95
+  asr: 止养=止痒

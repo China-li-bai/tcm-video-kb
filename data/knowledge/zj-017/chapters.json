@@ -1,0 +1,63 @@
+[
+ {
+  "chapter_id": "zj-017.c01",
+  "video_id": "zj-017",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "合谷针刺禁忌与产诊",
+  "summary": "合谷旁有动脉，进针宜指甲拨开避脉，勿贴骨伤骨膜。孕妇一般禁针合谷；医书有可泻不可补之说。合谷为原穴，顺经为补逆经为泻。临产合谷脉动上达可助诊；合谷气通胞宫。",
+  "start_s": 0.15,
+  "end_s": 379.45,
+  "seg_from": 0,
+  "seg_to": 67,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.li4",
+   "concept.yuan_xue",
+   "method.bu_xie"
+  ],
+  "citation": {
+   "youtube_id": "aBoNsXGlT6Q",
+   "url": "https://www.youtube.com/watch?v=aBoNsXGlT6Q&t=0s",
+   "series": "zj",
+   "episode": 17,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 17",
+   "start_s": 0.15,
+   "end_s": 379.45
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-017.c02",
+  "video_id": "zj-017",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "合谷太冲与偏历温溜曲池",
+  "summary": "阳溪较少用。合谷配太冲为“四关”。偏历为手阳明络穴；温溜在偏历上两寸。上半身皮肤瘙痒常取曲池、合谷（可配上巨虚）。",
+  "start_s": 379.45,
+  "end_s": 1163.255,
+  "seg_from": 68,
+  "seg_to": 220,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.lr3",
+   "acupoint.li6",
+   "acupoint.li11",
+   "acupoint.li5"
+  ],
+  "citation": {
+   "youtube_id": "aBoNsXGlT6Q",
+   "url": "https://www.youtube.com/watch?v=aBoNsXGlT6Q&t=379s",
+   "series": "zj",
+   "episode": 17,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 17",
+   "start_s": 379.45,
+   "end_s": 1163.26
+  },
+  "review_status": "llm_read"
+ }
+]
