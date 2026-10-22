@@ -1,0 +1,63 @@
+[
+ {
+  "chapter_id": "zj-007.c01",
+  "video_id": "zj-007",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "任脉定位：曲骨、中极与同身寸",
+  "summary": "任脉下腹取穴须准：曲骨在耻骨联合上；中极为曲骨上1寸（脐下4寸），膀胱募穴。肥胖者尤须按骨度/同身寸，勿偏移致误刺邻穴。曲骨多毛处一般不灸。",
+  "start_s": 0.05,
+  "end_s": 1178.67,
+  "seg_from": 0,
+  "seg_to": 206,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "meridian.cv",
+   "acupoint.cv2",
+   "acupoint.cv3",
+   "concept.mu_xue"
+  ],
+  "citation": {
+   "youtube_id": "JRRwpGikqw8",
+   "url": "https://www.youtube.com/watch?v=JRRwpGikqw8&t=0s",
+   "series": "zj",
+   "episode": 7,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 07",
+   "start_s": 0.05,
+   "end_s": 1178.67
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-007.c02",
+  "video_id": "zj-007",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "关元、气海与平补平泻",
+  "summary": "关元（脐下3寸）为小肠募、强壮要穴；气海主治带下、小便不利等。介绍平补平泻（左右捻转）。小便癃闭与夜尿频多皆可取膀胱募系穴，体现中医平衡观。勿死板拘泥书本深浅留针。",
+  "start_s": 1180.785,
+  "end_s": 1824.19,
+  "seg_from": 207,
+  "seg_to": 327,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.cv4",
+   "acupoint.cv6",
+   "method.bu_xie"
+  ],
+  "citation": {
+   "youtube_id": "JRRwpGikqw8",
+   "url": "https://www.youtube.com/watch?v=JRRwpGikqw8&t=1180s",
+   "series": "zj",
+   "episode": 7,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 07",
+   "start_s": 1180.79,
+   "end_s": 1824.19
+  },
+  "review_status": "llm_read"
+ }
+]

@@ -1,0 +1,117 @@
+video_id: zj-007
+window: w00-02
+seg_from: 0
+seg_to: 327
+annotator: llm_read
+chapters:
+- key: c01
+  title: 任脉定位：曲骨、中极与同身寸
+  start_seq: 38
+  summary: 任脉下腹取穴须准：曲骨在耻骨联合上；中极为曲骨上1寸（脐下4寸），膀胱募穴。肥胖者尤须按骨度/同身寸，勿偏移致误刺邻穴。曲骨多毛处一般不灸。
+  clauses: []
+  topics:
+  - meridian.cv
+  - acupoint.cv2
+  - acupoint.cv3
+  - concept.mu_xue
+- key: c02
+  title: 关元、气海与平补平泻
+  start_seq: 207
+  summary: 关元（脐下3寸）为小肠募、强壮要穴；气海主治带下、小便不利等。介绍平补平泻（左右捻转）。小便癃闭与夜尿频多皆可取膀胱募系穴，体现中医平衡观。勿死板拘泥书本深浅留针。
+  clauses: []
+  topics:
+  - acupoint.cv4
+  - acupoint.cv6
+  - method.bu_xie
+entities:
+- id: meridian.cv
+  seq: 38
+  surface: 任脉
+  corrected: 任脉
+- id: acupoint.cv2
+  seq: 65
+  surface: 曲骨
+  corrected: 曲骨
+- id: acupoint.cv3
+  seq: 81
+  surface: 中极穴
+  corrected: 中极
+- id: acupoint.cv4
+  seq: 83
+  surface: 关元
+  corrected: 关元
+- id: new.concept.同身寸
+  seq: 100
+  surface: 同生寸
+  corrected: 同身寸
+- id: method.bu_xie
+  seq: 215
+  surface: 平补平泻
+  corrected: 平补平泻
+- id: acupoint.cv6
+  seq: 237
+  surface: 去补
+  corrected: 气海
+  uncertain: true
+- id: concept.mu_xue
+  seq: 272
+  surface: 目
+  corrected: 募穴
+- id: zangfu.pang_guang
+  seq: 271
+  surface: 膀胱
+  corrected: 膀胱
+kps:
+- type: acupoint_usage
+  s: 中极在曲骨上1寸（脐下4寸），为膀胱募穴；取穴须准，肥胖者易误。
+  seq:
+  - 81
+  - 101
+  q: 上曲骨上一寸好曲骨上阴症，脐骨上阴策呢就是我们的中极穴
+  ents:
+  - acupoint.cv3
+  - acupoint.cv2
+  - concept.mu_xue
+  conf: 0.9
+  asr: 阴症/阴策≈阴交附近口述
+- type: contraindication
+  s: 曲骨处体毛多，一般不灸。
+  seq:
+  - 195
+  - 195
+  q: 取骨穴呢这个穴道在因为这边体毛很多，所以一般我们不灸
+  ents:
+  - acupoint.cv2
+  conf: 0.85
+  asr: 取骨=曲骨
+- type: clinical_tip
+  s: 平补平泻：针下后左右捻转即可，手法后文详述。
+  seq:
+  - 215
+  - 219
+  q: 我们左转右转，左转右转好就可以了，这叫平补平心
+  ents:
+  - method.bu_xie
+  conf: 0.85
+  asr: 平心=平泻
+- type: treatment_principle
+  s: 小便不出与夜尿过多皆可取膀胱相关募穴，体现虚实两端同一穴系、求平衡。
+  seq:
+  - 271
+  - 272
+  q: 不管是膀胱小便湿禁啊，或者是小便不粗啊
+  ents:
+  - zangfu.pang_guang
+  - concept.mu_xue
+  conf: 0.85
+  asr: 湿禁=失禁；不粗=不出
+- type: acupoint_usage
+  s: 关元为腹部要穴，治疼、小便不利、妇人症等；勿被病名吓住，按证取穴。
+  seq:
+  - 312
+  - 312
+  q: 这个关元穴，尤其进取穴，所有腹部我们刚刚讲了腹部的穴病像疼
+  ents:
+  - acupoint.cv4
+  conf: 0.85
+  asr: 进取=近取
