@@ -1,0 +1,81 @@
+video_id: zj-087
+window: w00-02
+seg_from: 0
+seg_to: 301
+annotator: llm_read
+chapters:
+- key: c01
+  title: 三间透劳宫与列缺
+  start_seq: 0
+  summary: 示范三间透劳宫，擅治指关节风湿。列缺/太渊下针须拨开血管斜刺。列缺亦用于咽痛等。
+  clauses: []
+  topics:
+  - acupoint.li3
+  - acupoint.pc8
+  - acupoint.lu7
+- key: c02
+  title: 肾俞京门
+  start_seq: 50
+  summary: 背脊旁凹陷取肾俞，一般一寸针；京门在末肋尖端，为肾募。
+  clauses: []
+  topics:
+  - acupoint.bl23
+  - acupoint.gb25
+entities:
+- id: acupoint.li3
+  seq: 7
+  surface: 三尖
+  corrected: 三间
+- id: acupoint.pc8
+  seq: 7
+  surface: 劳宫
+  corrected: 劳宫
+- id: acupoint.lu7
+  seq: 4
+  surface: 列缺
+  corrected: 列缺
+- id: acupoint.lu9
+  seq: 4
+  surface: 太渊
+  corrected: 太渊
+- id: acupoint.bl23
+  seq: 53
+  surface: 肾出
+  corrected: 肾俞
+- id: acupoint.gb25
+  seq: 55
+  surface: 京门
+  corrected: 京门
+kps:
+- type: acupoint_usage
+  s: 三间透劳宫擅治手指关节风湿。
+  seq:
+  - 7
+  - 8
+  q: 三尖来透劳宫
+  ents:
+  - acupoint.li3
+  - acupoint.pc8
+  conf: 0.95
+  asr: 三尖/三千=三间；劳工=劳宫
+- type: clinical_tip
+  s: 列缺/太渊下针须指甲拨开血管再斜刺，免伤脉。
+  seq:
+  - 4
+  - 5
+  q: 把血管拨开了以后
+  ents:
+  - acupoint.lu7
+  - acupoint.lu9
+  conf: 0.9
+- type: acupoint_usage
+  s: 肾俞取背脊旁凹陷，浅刺即可；京门在末肋尖端（肾募）。
+  seq:
+  - 51
+  - 56
+  q: 最后一个肋骨的顶端
+  ents:
+  - acupoint.bl23
+  - acupoint.gb25
+  conf: 0.9
+  asr: 肾出=肾俞

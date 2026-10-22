@@ -1,0 +1,62 @@
+[
+ {
+  "chapter_id": "zj-086.c01",
+  "video_id": "zj-086",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "涌泉天突关元示范",
+  "summary": "肾虚实常取涌泉，痛甚可用荣穴代；重症可直用涌泉。天突须斜刺向胸腔，忌直刺。巨阙为心募；关元针后脉可复常。合谷治面口；阳白透鱼腰复示。",
+  "start_s": 0.3,
+  "end_s": 171.185,
+  "seg_from": 0,
+  "seg_to": 24,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.ki1",
+   "acupoint.cv22",
+   "acupoint.cv4",
+   "acupoint.cv14"
+  ],
+  "citation": {
+   "youtube_id": "80Zk4csoHtk",
+   "url": "https://www.youtube.com/watch?v=80Zk4csoHtk&t=0s",
+   "series": "zj",
+   "episode": 86,
+   "title": "Ni Hai-hsia \"Human Records\": Acupuncture, Episode 86 of 90",
+   "start_s": 0.3,
+   "end_s": 171.19
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-086.c02",
+  "video_id": "zj-086",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "面口合谷与透刺",
+  "summary": "合谷治面口/痤疮并可局麻止痛；阳白透鱼腰速穿皮减痛。",
+  "start_s": 172.71,
+  "end_s": 1756.422,
+  "seg_from": 25,
+  "seg_to": 306,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.li4",
+   "acupoint.gb14"
+  ],
+  "citation": {
+   "youtube_id": "80Zk4csoHtk",
+   "url": "https://www.youtube.com/watch?v=80Zk4csoHtk&t=172s",
+   "series": "zj",
+   "episode": 86,
+   "title": "Ni Hai-hsia \"Human Records\": Acupuncture, Episode 86 of 90",
+   "start_s": 172.71,
+   "end_s": 1756.42
+  },
+  "review_status": "llm_read"
+ }
+]

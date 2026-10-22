@@ -1,0 +1,85 @@
+video_id: zj-086
+window: w00-02
+seg_from: 0
+seg_to: 306
+annotator: llm_read
+chapters:
+- key: c01
+  title: 涌泉天突关元示范
+  start_seq: 0
+  summary: 肾虚实常取涌泉，痛甚可用荣穴代；重症可直用涌泉。天突须斜刺向胸腔，忌直刺。巨阙为心募；关元针后脉可复常。合谷治面口；阳白透鱼腰复示。
+  clauses: []
+  topics:
+  - acupoint.ki1
+  - acupoint.cv22
+  - acupoint.cv4
+  - acupoint.cv14
+- key: c02
+  title: 面口合谷与透刺
+  start_seq: 25
+  summary: 合谷治面口/痤疮并可局麻止痛；阳白透鱼腰速穿皮减痛。
+  clauses: []
+  topics:
+  - acupoint.li4
+  - acupoint.gb14
+entities:
+- id: acupoint.ki1
+  seq: 0
+  surface: 涌泉
+  corrected: 涌泉
+- id: acupoint.cv22
+  seq: 6
+  surface: 天突
+  corrected: 天突
+- id: acupoint.cv14
+  seq: 11
+  surface: 巨缺
+  corrected: 巨阙
+- id: acupoint.cv4
+  seq: 22
+  surface: 关元
+  corrected: 关元
+- id: acupoint.li4
+  seq: 25
+  surface: 合谷
+  corrected: 合谷
+- id: acupoint.gb14
+  seq: 39
+  surface: 羊白
+  corrected: 阳白
+- id: acupoint.ex_yu_yao
+  seq: 39
+  surface: 鱼药
+  corrected: 鱼腰
+kps:
+- type: clinical_tip
+  s: 肾虚实常取涌泉，痛可用荣穴代；重症可直用涌泉。
+  seq:
+  - 0
+  - 1
+  q: 用它的溶穴来取代涌泉穴
+  ents:
+  - acupoint.ki1
+  conf: 0.9
+  asr: 溶穴=荣穴
+- type: contraindication
+  s: 天突忌直刺，须斜刺向胸腔，以免伤及深部。
+  seq:
+  - 6
+  - 7
+  q: 对着胸腔里面下针
+  ents:
+  - acupoint.cv22
+  conf: 0.95
+- type: acupoint_usage
+  s: 关元下针后心脉可复常；合谷治面口；阳白透鱼腰减痛透刺。
+  seq:
+  - 22
+  - 39
+  q: 关元穴一下针
+  ents:
+  - acupoint.cv4
+  - acupoint.li4
+  - acupoint.gb14
+  conf: 0.9
+  asr: 羊白=阳白；鱼药=鱼腰

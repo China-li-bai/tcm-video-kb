@@ -1,0 +1,61 @@
+[
+ {
+  "chapter_id": "zj-087.c01",
+  "video_id": "zj-087",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "三间透劳宫与列缺",
+  "summary": "示范三间透劳宫，擅治指关节风湿。列缺/太渊下针须拨开血管斜刺。列缺亦用于咽痛等。",
+  "start_s": 0.11,
+  "end_s": 259.42,
+  "seg_from": 0,
+  "seg_to": 49,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.li3",
+   "acupoint.pc8",
+   "acupoint.lu7"
+  ],
+  "citation": {
+   "youtube_id": "6U97Fbk6lIA",
+   "url": "https://www.youtube.com/watch?v=6U97Fbk6lIA&t=0s",
+   "series": "zj",
+   "episode": 87,
+   "title": "Ni Hai-sha \"Ren Ji\" \"Acupuncture\" Complete 90-Episode Series: Acupuncture 87",
+   "start_s": 0.11,
+   "end_s": 259.42
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-087.c02",
+  "video_id": "zj-087",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "肾俞京门",
+  "summary": "背脊旁凹陷取肾俞，一般一寸针；京门在末肋尖端，为肾募。",
+  "start_s": 259.62,
+  "end_s": 1689.484,
+  "seg_from": 50,
+  "seg_to": 301,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.bl23",
+   "acupoint.gb25"
+  ],
+  "citation": {
+   "youtube_id": "6U97Fbk6lIA",
+   "url": "https://www.youtube.com/watch?v=6U97Fbk6lIA&t=259s",
+   "series": "zj",
+   "episode": 87,
+   "title": "Ni Hai-sha \"Ren Ji\" \"Acupuncture\" Complete 90-Episode Series: Acupuncture 87",
+   "start_s": 259.62,
+   "end_s": 1689.48
+  },
+  "review_status": "llm_read"
+ }
+]

@@ -79,9 +79,11 @@
   "zj-081",
   "zj-082",
   "zj-083",
-  "zj-084"
+  "zj-084",
+  "zj-086",
+  "zj-087"
  ],
  "n_entities": 1068,
- "n_knowledge_points": 955,
- "n_chapters": 388
+ "n_knowledge_points": 961,
+ "n_chapters": 392
 }
