@@ -1,0 +1,119 @@
+video_id: nj-001
+window: w00-05
+seg_from: 0
+seg_to: 761
+annotator: llm_read
+chapters:
+- key: c01
+  title: 上古天真论总说
+  start_seq: 0
+  summary: 《内经》开篇上古天真论：岐黄之术（黄帝与岐伯对话）。古百岁不衰，今半百而衰；道法阴阳、和于术数。不知节制、起居无节则半百而衰。
+  clauses: []
+  topics:
+  - classic.sw_shang_gu_tian_zhen_lun
+  - classic.huang_di_nei_jing
+  - concept.yin_yang
+- key: c02
+  title: 虚邪与恬淡真气
+  start_seq: 108
+  summary: 虚邪贼风避之有时；五邪生克传变有虚实。恬淡虚无则真气从之，精神内守病安从来。
+  clauses: []
+  topics:
+  - concept.xu_xie
+  - concept.zhen_qi
+- key: c03
+  title: 肾气天癸与脉穴
+  start_seq: 321
+  summary: 七岁肾气盛（肾主骨、换牙）；女子太冲脉盛等天癸次第。太溪候肾，足有三脉（太冲、冲阳、太溪等）。
+  clauses: []
+  topics:
+  - acupoint.ki3
+  - acupoint.lr3
+  - zangfu.shen
+entities:
+- id: classic.sw_shang_gu_tian_zhen_lun
+  seq: 7
+  surface: 上古天真论
+  corrected: 上古天真论
+- id: classic.huang_di_nei_jing
+  seq: 2
+  surface: 黄帝内经
+  corrected: 黄帝内经
+- id: person.huang_di
+  seq: 47
+  surface: 黄帝
+  corrected: 黄帝
+- id: person.qi_bo
+  seq: 48
+  surface: 岐伯
+  corrected: 岐伯
+- id: concept.yin_yang
+  seq: 53
+  surface: 阴阳
+  corrected: 阴阳
+- id: concept.xu_xie
+  seq: 127
+  surface: 虚邪
+  corrected: 虚邪
+- id: concept.zhen_qi
+  seq: 218
+  surface: 真气
+  corrected: 真气
+- id: acupoint.lr3
+  seq: 338
+  surface: 太冲
+  corrected: 太冲
+- id: acupoint.ki3
+  seq: 365
+  surface: 太溪
+  corrected: 太溪
+kps:
+- type: clinical_tip
+  s: 上古天真论：古百岁不衰、今半百而衰；不知节制、起居无节则早衰。
+  seq:
+  - 50
+  - 105
+  q: 半百而衰
+  ents:
+  - classic.sw_shang_gu_tian_zhen_lun
+  conf: 0.95
+- type: clinical_tip
+  s: 道法于阴阳；全书可约归阴阳。岐黄之术即黄帝岐伯之对话。
+  seq:
+  - 48
+  - 64
+  q: 岐黄之术
+  ents:
+  - person.huang_di
+  - person.qi_bo
+  - concept.yin_yang
+  conf: 0.95
+- type: clinical_tip
+  s: 恬淡虚无，真气从之，精神内守，病安从来。
+  seq:
+  - 218
+  - 218
+  q: 真气从之
+  ents:
+  - concept.zhen_qi
+  conf: 0.95
+  asr: 病安重来=病安从来
+- type: clinical_tip
+  s: 虚邪为虚弱状态下外邪（对实邪而言）；宜避虚邪贼风。
+  seq:
+  - 127
+  - 159
+  q: 我们称为虚邪
+  ents:
+  - concept.xu_xie
+  conf: 0.9
+- type: acupoint_usage
+  s: 太溪候肾经；足部可候太冲、冲阳、太溪等脉。
+  seq:
+  - 338
+  - 365
+  q: 太溪这个穴道这是管肾经的
+  ents:
+  - acupoint.ki3
+  - acupoint.lr3
+  conf: 0.9
