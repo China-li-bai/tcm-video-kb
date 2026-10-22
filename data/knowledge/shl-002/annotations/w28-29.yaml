@@ -1,0 +1,77 @@
+video_id: shl-002
+window: w28-29
+seg_from: 3500
+seg_to: 3686
+annotator: llm_read
+chapters:
+- key: c36
+  title: 第118条 火逆烦躁：桂枝甘草龙骨牡蛎汤
+  start_seq: 3556
+  summary: 火逆或烧针迫汗致烦躁，桂枝甘草龙骨牡蛎汤主之。牡蛎软坚生津止盗汗；虚烦常用苓配龙牡。
+  clauses:
+  - 118
+  topics:
+  - herb.long_gu
+  - herb.mu_li
+  - syndrome.huo_ni
+- key: c37
+  title: 收束：空杯听症与龙牡安神
+  start_seq: 3624
+  summary: 勿见病理报告即先入为主；据现证选大柴胡等。茯苓配龙牡潜心阳治虚烦。太阳中篇收束。
+  topics:
+  - herb.fu_ling
+  - formula.da_chai_hu_tang
+entities:
+- id: formula.gui_zhi_gan_cao_long_gu_mu_li_tang
+  seq: 3556
+  surface: 桂林甘草龙骨牡蛎汤
+  corrected: 桂枝甘草龙骨牡蛎汤
+- id: clause.shl.118
+  seq: 3558
+  surface: 一百三十二条火逆烧针
+  corrected: 伤寒论第118条
+  note: 讲义132→宋本118
+- id: herb.fu_ling
+  seq: 3562
+  surface: 茯苓
+  corrected: 茯苓
+kps:
+- type: clause_interpretation
+  s: 第118条：火逆或烧针迫汗而烦躁，桂枝甘草龙骨牡蛎汤主之。
+  seq:
+  - 3558
+  - 3569
+  q: 造成烦躁的桂苓、甘草龙骨牡蛎汤主治
+  ents:
+  - clause.shl.118
+  - formula.gui_zhi_gan_cao_long_gu_mu_li_tang
+  conf: 0.9
+- type: herb_property
+  s: 牡蛎咸寒软坚，又能生津止盗汗。
+  seq:
+  - 3588
+  - 3589
+  q: 同时呢牡蛎又可以生津液
+  ents:
+  - herb.mu_li
+  conf: 0.8
+- type: clinical_tip
+  s: 虚烦不安常用茯苓配龙骨牡蛎：苓伐心下水气，龙牡潜阳固摄。
+  seq:
+  - 3647
+  - 3670
+  q: 茯苓碰到龙骨牡蛎的话
+  ents:
+  - herb.fu_ling
+  - herb.long_gu
+  - herb.mu_li
+  conf: 0.85
+- type: study_method
+  s: 临证先空杯听症：勿见「大肠癌」报告即先开承气，应据现证选大柴胡等。
+  seq:
+  - 3654
+  - 3654
+  q: 先不要先入为主，病人拿了病理剂来给你喝大肠癌
+  ents:
+  - formula.da_chai_hu_tang
+  conf: 0.85

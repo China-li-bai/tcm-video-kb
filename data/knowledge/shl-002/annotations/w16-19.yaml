@@ -1,0 +1,187 @@
+video_id: shl-002
+window: w16-19
+seg_from: 1971
+seg_to: 2497
+annotator: llm_read
+chapters:
+- key: c27
+  title: 第100–103条 伤寒误下与脉证；引入少阳
+  start_seq: 1971
+  summary: 伤寒误下不愈、表未解等变证铺垫；脉阴阳俱停等示正气重伤。为小柴胡详论作引。
+  clauses:
+  - 100
+  - 101
+  - 102
+  - 103
+  topics:
+  - six_channel.shaoyang
+  - formula.xiao_chai_hu_tang
+- key: c28
+  title: 小柴胡汤总论：胸胁苦满与三焦
+  start_seq: 2093
+  summary: 少阳半表半里、三焦枢纽；往来寒热、胸胁苦满、默默不欲饮食、心烦喜呕即小柴胡。柴半等量，可加减治肝炎、月经期感冒、甲状腺肿等少阳证。月经来潮得感冒一律小柴胡。
+  clauses:
+  - 96
+  - 97
+  topics:
+  - formula.xiao_chai_hu_tang
+  - six_channel.shaoyang
+  - zangfu.san_jiao
+  - herb.chai_hu
+- key: c28.s1
+  parent: c28
+  title: 小柴胡加减：苓术、栀子、牡蛎软坚
+  start_seq: 2155
+  summary: 加白术茯苓祛湿；虚烦不眠加栀子；腹中痛去黄芩加芍药；胁下痞硬去大枣加牡蛎软坚（乳癖、瘿瘤、腋下结块）。
+  topics:
+  - herb.mu_li
+  - herb.fu_ling
+  - herb.shao_yao
+- key: c29
+  title: 第107条起 柴胡证罢转渴入阳明；三阳并病用和解
+  start_seq: 2376
+  summary: 服小柴胡后渴，为转入阳明之佳兆，可按白虎/承气/五苓等治。三阳并病用小柴胡和解。呕家禁用建中（过甜）；有柴胡证但见一证即可用。
+  clauses:
+  - 101
+  - 104
+  - 105
+  topics:
+  - formula.xiao_chai_hu_tang
+  - six_channel.yangming
+  - formula.xiao_jian_zhong_tang
+- key: c30
+  title: 小陷胸与建中、大陷胸线索
+  start_seq: 2484
+  summary: 心下按痛属小结胸病小陷胸汤（小儿不食、腹痛常用）；心中悸烦用小建中；并引出大陷胸危证。
+  clauses:
+  - 138
+  - 100
+  topics:
+  - formula.xiao_xian_xiong_tang
+  - formula.xiao_jian_zhong_tang
+entities:
+- id: clause.shl.100
+  seq: 1971
+  surface: 第一百条
+  corrected: 伤寒论第100条附近
+  note: 讲义100
+- id: clause.shl.103
+  seq: 2059
+  surface: 一百零三条
+  corrected: 伤寒论相关（表未解误下）
+  note: 讲义103
+- id: formula.xiao_chai_hu_tang
+  seq: 2130
+  surface: 小柴胡汤
+  corrected: 小柴胡汤
+- id: herb.chai_hu
+  seq: 2134
+  surface: 柴胡
+  corrected: 柴胡
+- id: herb.mu_li
+  seq: 2323
+  surface: 牡蛎
+  corrected: 牡蛎
+- id: clause.shl.101
+  seq: 2377
+  surface: 一百零七条
+  corrected: 伤寒论第101条附近柴胡证转渴
+  note: 讲义107
+- id: formula.da_chai_hu_tang
+  seq: 2403
+  surface: 大柴胡汤
+  corrected: 大柴胡汤
+- id: formula.xiao_jian_zhong_tang
+  seq: 2483
+  surface: 小煎中
+  corrected: 小建中汤
+- id: formula.xiao_xian_xiong_tang
+  seq: 2484
+  surface: 小陷胸汤
+  corrected: 小陷胸汤
+- id: formula.da_xian_xiong_tang
+  seq: 2495
+  surface: 大陷胸汤
+  corrected: 大陷胸汤
+kps:
+- type: formula_indication
+  s: 小柴胡汤主少阳：往来寒热、胸胁苦满、默默不欲饮食、心烦喜呕；胁肋痛一闻即可径开。
+  seq:
+  - 2130
+  - 2145
+  q: 我这个肋骨之间很痛，已经已经看完了哦，女人都不用看到，小柴胡汤就开出去了
+  ents:
+  - formula.xiao_chai_hu_tang
+  - six_channel.shaoyang
+  conf: 0.9
+- type: formula_composition
+  s: 小柴胡中柴胡与半夏等量（一为容积一为重量）；为防传入阴经的枢纽方，可以此为基础广泛加减。
+  seq:
+  - 2136
+  - 2232
+  q: 柴胡汤小柴胡汤里面呢柴胡汤半夏是相等的量
+  ents:
+  - formula.xiao_chai_hu_tang
+  - herb.chai_hu
+  - herb.ban_xia
+  conf: 0.85
+- type: clinical_tip
+  s: 妇女月经期感冒，不论太阳中风伤寒温病，一律小柴胡汤；亦治月经痛、瘿瘤、腋下结块等少阳三焦证。
+  seq:
+  - 2284
+  - 2298
+  q: 只要你月经来得了感冒，一律小柴胡汤
+  ents:
+  - formula.xiao_chai_hu_tang
+  conf: 0.9
+- type: herb_property
+  s: 牡蛎味咸软坚，治胁下痞硬、乳癖、大脖子、腋下硬块；可与小柴胡同用（去大枣加牡蛎）。
+  seq:
+  - 2323
+  - 2327
+  q: 蛎加牡蛎，那这个米力的的能软坚
+  ents:
+  - herb.mu_li
+  - formula.xiao_chai_hu_tang
+  conf: 0.85
+  asr: 米力=牡蛎
+- type: diagnostic_rule
+  s: 服小柴胡后转渴，示邪入阳明，为向愈机转，再按阳明热/燥选用白虎、承气或五苓等。
+  seq:
+  - 2377
+  - 2386
+  q: 喝了柴胡汤汤后转成渴，症变变成进入阳明症
+  ents:
+  - formula.xiao_chai_hu_tang
+  - six_channel.yangming
+  conf: 0.85
+- type: treatment_principle
+  s: 三阳并病用和解法，即小柴胡汤；汗吐下和四法中「和」即指此。
+  seq:
+  - 2470
+  - 2478
+  q: 如果三阳并病太阳病少阳病明明同时有的时候用和解小柴胡汤
+  ents:
+  - formula.xiao_chai_hu_tang
+  - method.he_jie
+  conf: 0.85
+- type: contraindication
+  s: 呕家不可用建中汤，饴糖过甜易致呕；有柴胡证但见一证便可用柴胡汤。
+  seq:
+  - 2542
+  - 2544
+  q: 藕家不可用，健中汤，为什么太甜哦
+  ents:
+  - formula.xiao_jian_zhong_tang
+  - formula.xiao_chai_hu_tang
+  conf: 0.85
+  asr: 藕家=呕家；健中=建中
+- type: formula_indication
+  s: 小陷胸汤：心下按痛之小结胸；小儿不思饮食、腹痛面鼻旁青黑纹常用。
+  seq:
+  - 2495
+  - 2521
+  q: 小陷胸汤用的地方很多小孩子的不喜欢吃饭
+  ents:
+  - formula.xiao_xian_xiong_tang
+  conf: 0.85

@@ -1,0 +1,213 @@
+video_id: shl-002
+window: w12-15
+seg_from: 1459
+seg_to: 1970
+annotator: llm_read
+chapters:
+- key: c23b
+  title: 栀子豉汤类方：少气、呕恶与葛根黄连
+  start_seq: 1459
+  summary: 续虚烦辨虚实热；少气加甘草，呕用栀子生姜豉汤（病后津回勿用半夏再沥）；表邪下陷下利用葛根黄芩黄连汤。栀豉约各五钱，先栀后豉。
+  clauses:
+  - 76
+  - 77
+  topics:
+  - formula.zhi_zi_shi_tang
+  - herb.zhi_zi
+  - herb.sheng_jiang
+- key: c24
+  title: 第77–79条 烦热胸中窒；厚朴枳实与胆石思路
+  start_seq: 1590
+  summary: 汗下后烦热胸中窒仍栀子豉。腹满虚实皆可用厚朴；胸满用枳实不用白芍。枳实宽肠扩胆，合柴胡黄芩炙草为胆石基本思路。
+  clauses:
+  - 77
+  - 78
+  - 79
+  topics:
+  - herb.hou_po
+  - herb.zhi_shi
+  - formula.zhi_zi_shi_tang
+- key: c24.s1
+  parent: c24
+  title: 栀子配干姜：虚寒下利慎栀豉
+  start_seq: 1717
+  summary: 素体下利虚寒者栀豉偏凉宜慎；需用则配干姜反佐。
+  clauses:
+  - 80
+- key: c25
+  title: 诸家不可发汗：咽干、疮、衄、亡血、中寒
+  start_seq: 1747
+  summary: 咽喉干燥、疮家、衄家、亡血家及中寒者不可强汗；再汗则胃中冷吐。引出小柴胡将详论。
+  clauses:
+  - 83
+  - 86
+  - 89
+  topics:
+  - method.fa_han
+  - concept.jin_ye
+- key: c26
+  title: 治则：有是证用是药
+  start_seq: 1959
+  summary: 无表而见承气燥结则攻里，不可因伤寒之名强汗。
+  clauses:
+  - 90
+  topics:
+  - method.fa_han
+entities:
+- id: formula.zhi_zi_shi_tang
+  seq: 1477
+  surface: 栀子、生姜、豆豉汤
+  corrected: 栀子生姜豉汤
+- id: new.formula.葛根黄芩黄连汤
+  seq: 1544
+  surface: 葛青莲汤
+  corrected: 葛根黄芩黄连汤
+- id: clause.shl.077
+  seq: 1590
+  surface: 第八十五条
+  corrected: 伤寒论第77条
+  note: 讲义85→宋本77
+- id: herb.zhi_shi
+  seq: 1645
+  surface: 子石
+  corrected: 枳实
+- id: herb.hou_po
+  seq: 1625
+  surface: 后补
+  corrected: 厚朴
+- id: clause.shl.080
+  seq: 1717
+  surface: 栀子干姜豆豉汤
+  corrected: 伤寒论第80条附近
+  note: matcher clause80
+- id: clause.shl.086
+  seq: 1883
+  surface: 虐家也不可发汗
+  corrected: 衄家不可发汗（第86条）
+  note: 讲义94→宋本86
+- id: clause.shl.089
+  seq: 1927
+  surface: 第九十七条
+  corrected: 伤寒论第89条
+  note: 讲义97→宋本89
+- id: formula.xiao_chai_hu_tang
+  seq: 1878
+  surface: 小柴柴汤汤
+  corrected: 小柴胡汤
+- id: symptom.wei_zhong_leng
+  seq: 1927
+  surface: 胃中冷
+  corrected: 胃中冷
+kps:
+- type: diagnostic_rule
+  s: 虚烦与实热：实热苔黄厚脉实；虚烦苔微黄、脉按之无，自觉不适而言不清。
+  seq:
+  - 1459
+  - 1463
+  q: 那如果是实热的时候，舌苔是黄
+  ents:
+  - symptom.xu_fan
+  conf: 0.85
+- type: formula_composition
+  s: 栀子豉汤少气加甘草；仲景滋补不过甘草人参白芍。甘草兼解肠中残余宿食之毒。
+  seq:
+  - 1467
+  - 1475
+  q: 张仲景加了一个甘草
+  ents:
+  - formula.zhi_zi_shi_tang
+  - herb.gan_cao
+  conf: 0.9
+- type: herb_property
+  s: 病后呕恶用生姜不用半夏：半夏去胃中寒水，但津刚回时再沥则伤津；生姜止呕且为食物。
+  seq:
+  - 1509
+  - 1520
+  q: 这里不用办夏为什么
+  ents:
+  - herb.sheng_jiang
+  - herb.ban_xia
+  conf: 0.85
+  asr: 办夏=半夏
+- type: clinical_tip
+  s: 表邪下陷成下利（肠病毒样）用葛根黄芩黄连汤；对证则苦药反觉甘甜，与五苓散「水入则吐独不吐散」同类。
+  seq:
+  - 1548
+  - 1569
+  q: 就是表邪下陷
+  ents:
+  - new.formula.葛根黄芩黄连汤
+  - formula.wu_ling_san
+  conf: 0.8
+- type: formula_composition
+  s: 栀子豉汤约栀子五钱、豆豉五钱；先煮栀子后下豆豉。
+  seq:
+  - 1578
+  - 1586
+  q: 一般呢栀子用五钱，豆豉也是五钱钱
+  ents:
+  - formula.zhi_zi_shi_tang
+  conf: 0.9
+- type: clause_interpretation
+  s: 有表汗下后烦热胸中窒，虚热未清，栀子豉汤主之。
+  seq:
+  - 1590
+  - 1594
+  q: 烦热好，胸中炙者好，栀子豆汤汤
+  ents:
+  - clause.shl.077
+  - formula.zhi_zi_shi_tang
+  conf: 0.85
+  asr: 胸中炙=胸中窒
+- type: herb_property
+  s: 厚朴专主腹满（虚实皆可用），移脾湿入肠；枳实主胸满宽肠，胸痛证中不用白芍。
+  seq:
+  - 1624
+  - 1645
+  q: 候补呢是专门对腹部胀满用的
+  ents:
+  - herb.hou_po
+  - herb.zhi_shi
+  conf: 0.85
+- type: clinical_tip
+  s: 胆石基本方思路：炙甘草强心、柴胡疏三焦、黄芩清湿热、枳实宽胆，可加海金沙等。
+  seq:
+  - 1687
+  - 1692
+  q: 然后再加上子石子可以宽胆
+  ents:
+  - herb.zhi_shi
+  - herb.chai_hu
+  - herb.huang_qin
+  conf: 0.8
+- type: contraindication
+  s: 素体下利虚寒者慎栀子豉汤；若用配干姜反佐。
+  seq:
+  - 1739
+  - 1743
+  q: 栀子豆豉本来就是比较寒凉的药
+  ents:
+  - formula.zhi_zi_shi_tang
+  - herb.gan_jiang
+  conf: 0.85
+- type: contraindication
+  s: 衄家、咽干、疮家、亡血及中寒者不可强发汗；中寒再汗则胃中冷而吐。
+  seq:
+  - 1883
+  - 1927
+  q: 虐家也不可发汗，就是常常流鼻血的人
+  ents:
+  - clause.shl.086
+  - clause.shl.089
+  - method.fa_han
+  conf: 0.85
+  asr: 虐家=衄家
+- type: treatment_principle
+  s: 治则：有是证用是药；无表而燥结则攻里，勿因伤寒之名强汗。
+  seq:
+  - 1959
+  - 1967
+  q: 九十八条呢就是给大家一个治的原则原则
+  ents:
+  - method.fa_han
+  conf: 0.8

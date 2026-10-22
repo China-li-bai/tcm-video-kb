@@ -1,0 +1,160 @@
+video_id: shl-002
+window: w20-23
+seg_from: 2498
+seg_to: 3010
+annotator: llm_read
+chapters:
+- key: c31
+  title: 第103–105条 大柴胡汤：少阳兼阳明
+  start_seq: 2573
+  summary: 柴胡证仍在先予小柴胡；呕不止、心下急、郁郁微烦为未解，大柴胡汤主之。少阳与阳明兼（便秘烦躁）方用大柴胡：去人参加大黄枳实，腹满加厚朴。临床治大肠癌未手术、阑尾炎等少阳阳明间证。
+  clauses:
+  - 103
+  - 104
+  - 105
+  topics:
+  - formula.da_chai_hu_tang
+  - formula.xiao_chai_hu_tang
+  - six_channel.yangming
+- key: c31.s1
+  parent: c31
+  title: 大柴胡与承气、柴胡加芒硝
+  start_seq: 2675
+  summary: 小承气多矢气、大承气无屁；潮热大便硬先小柴胡解外，再柴胡加芒硝。大肠癌未手术多在少阳阳明之间，动刀后机局改变。
+  topics:
+  - formula.chai_hu_jia_mang_xiao_tang
+  - formula.da_cheng_qi_tang
+- key: c32
+  title: 误下后柴胡证仍在仍可用；党参代人参
+  start_seq: 2715
+  summary: 本是柴胡证而误下，证仍在则可再用小柴胡；人参价昂可以党参代。
+  clauses:
+  - 101
+  topics:
+  - formula.xiao_chai_hu_tang
+  - herb.ren_shen
+- key: c33
+  title: 第106条 桃核承气汤：热结膀胱如狂
+  start_seq: 2921
+  summary: 太阳随经瘀热在里、少腹急结、如狂，外解乃可攻，桃核承气汤（桃仁桂枝合调胃承气）。伤科瘀血、会阴损伤亦常用。
+  clauses:
+  - 106
+  topics:
+  - formula.tao_he_cheng_qi_tang
+  - zangfu.pang_guang
+  - symptom.ru_kuang
+entities:
+- id: clause.shl.103
+  seq: 2573
+  surface: 柴胡症人在者
+  corrected: 伤寒论第103条
+  note: 讲义116附近→宋本103
+- id: formula.da_chai_hu_tang
+  seq: 2574
+  surface: 大柴胡汤
+  corrected: 大柴胡汤
+- id: herb.zhi_shi
+  seq: 2638
+  surface: 子时
+  corrected: 枳实
+- id: herb.da_huang
+  seq: 2639
+  surface: 大黄
+  corrected: 大黄
+- id: formula.chai_hu_jia_mang_xiao_tang
+  seq: 2770
+  surface: 柴胡加芒硝汤
+  corrected: 柴胡加芒硝汤
+- id: new.herb.芒硝
+  seq: 2770
+  surface: 芒硝
+  corrected: 芒硝
+- id: clause.shl.106
+  seq: 2928
+  surface: 桃，而承气汤
+  corrected: 桃核承气汤（第106条）
+- id: formula.tao_he_cheng_qi_tang
+  seq: 2931
+  surface: 调核承气汤
+  corrected: 桃核承气汤
+- id: herb.tao_ren
+  seq: 3003
+  surface: 桃仁
+  corrected: 桃仁
+kps:
+- type: formula_indication
+  s: 大柴胡汤：呕不止、心下急、郁郁微烦，或少阳兼阳明便秘烦躁；去小柴胡之人参加大黄枳实。
+  seq:
+  - 2573
+  - 2587
+  q: 也有大柴胡汤下肢者欲
+  ents:
+  - formula.da_chai_hu_tang
+  - formula.xiao_chai_hu_tang
+  conf: 0.85
+  asr: 下肢者欲=下之则愈一类
+- type: diagnostic_rule
+  s: 少阳阳明间证：有往来寒热胸胁苦满又见便秘烦躁，用大柴胡；单纯少阳或太阳转入少阳用小柴胡。
+  seq:
+  - 2580
+  - 2586
+  q: 当你出现的少阳跟阳明中间兼政的时候，才是会有大柴胡汤的现象
+  ents:
+  - formula.da_chai_hu_tang
+  - six_channel.shaoyang
+  - six_channel.yangming
+  conf: 0.9
+- type: formula_composition
+  s: 大柴胡：小柴胡去人参，加枳实、大黄；腹满再加厚朴。芍药与半夏等量。
+  seq:
+  - 2637
+  - 2643
+  q: 里面有加了子时，比小柴胡汤多了
+  ents:
+  - formula.da_chai_hu_tang
+  - herb.zhi_shi
+  - herb.da_huang
+  conf: 0.85
+- type: clinical_tip
+  s: 潮热大便硬而兼柴胡证：先小柴胡解外，再柴胡加芒硝；芒硝专破大肠头燥屎。
+  seq:
+  - 2764
+  - 2770
+  q: 先以小柴胡汤进解外，再以柴胡加芒硝汤组织
+  ents:
+  - formula.chai_hu_jia_mang_xiao_tang
+  - formula.xiao_chai_hu_tang
+  conf: 0.85
+- type: treatment_principle
+  s: 误下后若柴胡证仍在，仍可再予小柴胡，不必因误下而弃方。
+  seq:
+  - 2730
+  - 2730
+  q: 只要有证还在，再他柴胡汤，还可以再用好
+  ents:
+  - formula.xiao_chai_hu_tang
+  conf: 0.85
+- type: clause_interpretation
+  s: 第106条桃核承气：太阳瘀热结于膀胱，少腹急结、如狂，表解乃可攻；桃仁活血合调胃承气。
+  seq:
+  - 2928
+  - 3006
+  q: 外郁解，但少妇急竭者乃可攻之桃，而承气汤
+  ents:
+  - clause.shl.106
+  - formula.tao_he_cheng_qi_tang
+  - symptom.ru_kuang
+  conf: 0.85
+  asr: 少妇急竭=少腹急结；调核=桃核
+- type: formula_composition
+  s: 桃核承气比例：桃仁三、桂枝二、大黄四，下合芒硝炙草即调胃承气加桃仁桂枝。
+  seq:
+  - 3003
+  - 3006
+  q: 桃仁是三，桂枝是二，大黄是四
+  ents:
+  - formula.tao_he_cheng_qi_tang
+  - herb.tao_ren
+  - herb.gui_zhi
+  - herb.da_huang
+  conf: 0.9

@@ -1,0 +1,1656 @@
+[
+ {
+  "chapter_id": "shl-002.c01",
+  "video_id": "shl-002",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "第42条 外证未解脉浮弱仍宜桂枝汤",
+  "summary": "太阳病中篇起讲：外证未解、脉浮弱者当以汗解，宜桂枝汤；强调中风证仍在就仍可用桂枝汤，不限初起。",
+  "start_s": 3.29,
+  "end_s": 42.33,
+  "seg_from": 0,
+  "seg_to": 4,
+  "six_channel": [
+   "six_channel.taiyang"
+  ],
+  "clause_refs": [
+   "clause.shl.042"
+  ],
+  "topics": [
+   "formula.gui_zhi_tang",
+   "syndrome.tai_yang_zhong_feng",
+   "pulse.mai_fu_ruo"
+  ],
+  "citation": {
+   "youtube_id": "7kYjtoBpU2Q",
+   "url": "https://www.youtube.com/watch?v=7kYjtoBpU2Q&t=3s",
+   "series": "shl",
+   "episode": 2,
+   "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+   "start_s": 3.29,
+   "end_s": 42.33
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-002.c02",
+  "video_id": "shl-002",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "第43条 桂枝加厚朴杏子汤：表未解而喘",
+  "summary": "太阳病下之微喘、表未解，用桂枝加厚朴杏子汤；并辨厚朴与白术祛湿路径、杏仁止咳润肺，及发表须微汗的火候。",
+  "start_s": 42.33,
+  "end_s": 259.895,
+  "seg_from": 5,
+  "seg_to": 44,
+  "six_channel": [
+   "six_channel.taiyang"
+  ],
+  "clause_refs": [
+   "clause.shl.043"
+  ],
+  "topics": [
+   "formula.gui_zhi_jia_hou_po_xing_zi_tang",
+   "herb.hou_po",
+   "herb.xing_ren",
+   "herb.bai_zhu"
+  ],
+  "citation": {
+   "youtube_id": "7kYjtoBpU2Q",
+   "url": "https://www.youtube.com/watch?v=7kYjtoBpU2Q&t=42s",
+   "series": "shl",
+   "episode": 2,
+   "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+   "start_s": 42.33,
+   "end_s": 259.89
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-002.c02.s1",
+  "video_id": "shl-002",
+  "level": 2,
+  "parent_id": "shl-002.c02",
+  "seq": 1,
+  "title": "厚朴移脾湿入小肠 vs 白术配茯苓利小便",
+  "summary": "厚朴去皮（脾）湿、把脾湿移入小肠以增润津液；白术去肌肉关节与中焦湿，须配茯苓从小便出；白术配炮附子则推邪外出而非利尿。",
+  "start_s": 95.32,
+  "end_s": 200.805,
+  "seg_from": 16,
+  "seg_to": 33,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [],
+  "citation": {
+   "youtube_id": "7kYjtoBpU2Q",
+   "url": "https://www.youtube.com/watch?v=7kYjtoBpU2Q&t=95s",
+   "series": "shl",
+   "episode": 2,
+   "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+   "start_s": 95.32,
+   "end_s": 200.81
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-002.c02.s2",
+  "video_id": "shl-002",
+  "level": 2,
+  "parent_id": "shl-002.c02",
+  "seq": 2,
+  "title": "杏仁剂量与微汗标准",
+  "summary": "杏仁约四至五钱，止咳祛痰、润肺中津液；发表药以皮肤湿绵绵、摸之似无大汗为恰到好处。",
+  "start_s": 202.11,
+  "end_s": 259.895,
+  "seg_from": 34,
+  "seg_to": 44,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [],
+  "citation": {
+   "youtube_id": "7kYjtoBpU2Q",
+   "url": "https://www.youtube.com/watch?v=7kYjtoBpU2Q&t=202s",
+   "series": "shl",
+   "episode": 2,
+   "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+   "start_s": 202.11,
+   "end_s": 259.89
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-002.c03",
+  "video_id": "shl-002",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "第44–45条 有表不可下；发汗后下而脉浮仍桂枝",
+  "summary": "外证未解不可下，下之为逆，仍宜桂枝汤；先发汗不解而复下、脉仍浮者病还在表，只要有桂枝汤证仍用桂枝汤。表里双解仅在大便多日不通且烦躁等必要时。",
+  "start_s": 271.36,
+  "end_s": 361.365,
+  "seg_from": 45,
+  "seg_to": 56,
+  "six_channel": [
+   "six_channel.taiyang"
+  ],
+  "clause_refs": [
+   "clause.shl.044",
+   "clause.shl.045"
+  ],
+  "topics": [
+   "method.jie_biao",
+   "formula.gui_zhi_tang",
+   "concept.biao_li"
+  ],
+  "citation": {
+   "youtube_id": "7kYjtoBpU2Q",
+   "url": "https://www.youtube.com/watch?v=7kYjtoBpU2Q&t=271s",
+   "series": "shl",
+   "episode": 2,
+   "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+   "start_s": 271.36,
+   "end_s": 361.37
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-002.c04",
+  "video_id": "shl-002",
+  "level": 1,
+  "parent_id": null,
+  "seq": 4,
+  "title": "第46条 八九日表仍在用麻黄汤；衄血与纯阳之体",
+  "summary": "脉浮紧、无汗、发热身疼痛，虽过一候（六日）表证仍在则仍麻黄汤；服后仅微汗而烦躁、衄血，多见于十四岁以下纯阳之体，衄可代汗，不必惊慌。",
+  "start_s": 363.3,
+  "end_s": 601.855,
+  "seg_from": 57,
+  "seg_to": 105,
+  "six_channel": [
+   "six_channel.taiyang"
+  ],
+  "clause_refs": [
+   "clause.shl.046"
+  ],
+  "topics": [
+   "formula.ma_huang_tang",
+   "syndrome.tai_yang_shang_han",
+   "symptom.nv",
+   "pulse.mai_fu_jin"
+  ],
+  "citation": {
+   "youtube_id": "7kYjtoBpU2Q",
+   "url": "https://www.youtube.com/watch?v=7kYjtoBpU2Q&t=363s",
+   "series": "shl",
+   "episode": 2,
+   "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+   "start_s": 363.3,
+   "end_s": 601.86
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-002.c04.s1",
+  "video_id": "shl-002",
+  "level": 2,
+  "parent_id": "shl-002.c04",
+  "seq": 1,
+  "title": "小儿常衄与九十岁衄解的对比",
+  "summary": "小儿阳旺常流鼻血反不易高烧；十四岁后天癸至后衄少；若九十岁感冒仍能衄解则说明阳气极强。三四十岁无表证而衄须排查里病。",
+  "start_s": 447.34,
+  "end_s": 601.855,
+  "seg_from": 72,
+  "seg_to": 105,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [],
+  "citation": {
+   "youtube_id": "7kYjtoBpU2Q",
+   "url": "https://www.youtube.com/watch?v=7kYjtoBpU2Q&t=447s",
+   "series": "shl",
+   "episode": 2,
+   "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+   "start_s": 447.34,
+   "end_s": 601.86
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-002.c05",
+  "video_id": "shl-002",
+  "level": 1,
+  "parent_id": null,
+  "seq": 5,
+  "title": "第48条 二阳并病：汗不彻转阳明仍有表则勿下",
+  "summary": "太阳初起桂枝、麻黄、葛根发汗手软、汗出不彻，六日后转入阳明可见下利、呕恶、便秘，若仍有太阳症则万不可攻下；津液被提至体表而未透出即致肠燥。",
+  "start_s": 603.9,
+  "end_s": 723.955,
+  "seg_from": 106,
+  "seg_to": 125,
+  "six_channel": [
+   "six_channel.yangming",
+   "six_channel.taiyang"
+  ],
+  "clause_refs": [
+   "clause.shl.048"
+  ],
+  "topics": [
+   "formula.gui_zhi_tang",
+   "formula.ge_gen_tang",
+   "method.fa_han"
+  ],
+  "citation": {
+   "youtube_id": "7kYjtoBpU2Q",
+   "url": "https://www.youtube.com/watch?v=7kYjtoBpU2Q&t=603s",
+   "series": "shl",
+   "episode": 2,
+   "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+   "start_s": 603.9,
+   "end_s": 723.96
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-002.c06",
+  "video_id": "shl-002",
+  "level": 1,
+  "parent_id": null,
+  "seq": 6,
+  "title": "有表不可攻下与汗不彻的熏法补救",
+  "summary": "表证在则不可攻下，防表邪下陷肺或三焦；汗出不彻致游走痛、脉细微者，宜小发汗或以草药蒸汽熏之，勿大发。",
+  "start_s": 724.2,
+  "end_s": 1052.695,
+  "seg_from": 126,
+  "seg_to": 183,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "method.fa_han",
+   "syndrome.biao_zheng",
+   "concept.jin_ye"
+  ],
+  "citation": {
+   "youtube_id": "7kYjtoBpU2Q",
+   "url": "https://www.youtube.com/watch?v=7kYjtoBpU2Q&t=724s",
+   "series": "shl",
+   "episode": 2,
+   "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+   "start_s": 724.2,
+   "end_s": 1052.69
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-002.c06.s1",
+  "video_id": "shl-002",
+  "level": 2,
+  "parent_id": "shl-002.c06",
+  "seq": 1,
+  "title": "奉节—秭归案：汗后当风与因地制宜",
+  "summary": "经方家在重庆山区得伤寒，奉节服麻黄汤后乘船当风致汗不彻；秭归再诊见涩脉，以水梨等补津液后再予麻黄汤，强调因时因地制宜。",
+  "start_s": 911.69,
+  "end_s": 1052.695,
+  "seg_from": 159,
+  "seg_to": 183,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [],
+  "citation": {
+   "youtube_id": "7kYjtoBpU2Q",
+   "url": "https://www.youtube.com/watch?v=7kYjtoBpU2Q&t=911s",
+   "series": "shl",
+   "episode": 2,
+   "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+   "start_s": 911.69,
+   "end_s": 1052.69
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-002.c07",
+  "video_id": "shl-002",
+  "level": 1,
+  "parent_id": null,
+  "seq": 7,
+  "title": "第49–50条 脉浮数当下则身重心悸不可再汗",
+  "summary": "脉浮数本当汗愈，误下则身重、心有动悸，不可再发汗；素虚之人汗后津液难复、汗为心液故悸，宜休息喝稀饭待阴液自回、自汗而解。尺脉细弱主阴虚。",
+  "start_s": 1054.65,
+  "end_s": 1949.629,
+  "seg_from": 184,
+  "seg_to": 335,
+  "six_channel": [],
+  "clause_refs": [
+   "clause.shl.049",
+   "clause.shl.050"
+  ],
+  "topics": [
+   "pulse.mai_fu_shu",
+   "symptom.shen_zhong",
+   "symptom.xin_ji",
+   "concept.yin_xu"
+  ],
+  "citation": {
+   "youtube_id": "7kYjtoBpU2Q",
+   "url": "https://www.youtube.com/watch?v=7kYjtoBpU2Q&t=1054s",
+   "series": "shl",
+   "episode": 2,
+   "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+   "start_s": 1054.65,
+   "end_s": 1949.63
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-002.c07.s1",
+  "video_id": "shl-002",
+  "level": 2,
+  "parent_id": "shl-002.c07",
+  "seq": 1,
+  "title": "营卫辨：中风伤卫、伤寒营卫俱伤",
+  "summary": "脉浮紧身疼痛法当汗解，若尺中迟则营不足血少不可发汗；以《内经》营卫论：中风伤卫，伤寒营卫俱伤，故麻黄汤中麻黄配桂枝。",
+  "start_s": 1266.344,
+  "end_s": 1949.629,
+  "seg_from": 218,
+  "seg_to": 335,
+  "six_channel": [],
+  "clause_refs": [
+   "clause.shl.050"
+  ],
+  "topics": [],
+  "citation": {
+   "youtube_id": "7kYjtoBpU2Q",
+   "url": "https://www.youtube.com/watch?v=7kYjtoBpU2Q&t=1266s",
+   "series": "shl",
+   "episode": 2,
+   "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+   "start_s": 1266.34,
+   "end_s": 1949.63
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-002.c08",
+  "video_id": "shl-002",
+  "level": 1,
+  "parent_id": null,
+  "seq": 8,
+  "title": "第51–54条 脉浮可汗；营卫和谐与桂枝汤常服",
+  "summary": "脉浮者病在表可发汗，麻黄汤证须无汗、身痛恶寒重且不可手软；病常自汗出为营卫不和宜桂枝汤；脏无他病时发热自汗不愈者，先其时发汗宜桂枝汤，亦可作日常调和营卫之用。",
+  "start_s": 1949.944,
+  "end_s": 2223.229,
+  "seg_from": 336,
+  "seg_to": 375,
+  "six_channel": [],
+  "clause_refs": [
+   "clause.shl.051",
+   "clause.shl.052",
+   "clause.shl.053",
+   "clause.shl.054"
+  ],
+  "topics": [
+   "formula.ma_huang_tang",
+   "formula.gui_zhi_tang",
+   "concept.ying_wei",
+   "herb.gui_zhi",
+   "herb.shao_yao"
+  ],
+  "citation": {
+   "youtube_id": "7kYjtoBpU2Q",
+   "url": "https://www.youtube.com/watch?v=7kYjtoBpU2Q&t=1949s",
+   "series": "shl",
+   "episode": 2,
+   "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+   "start_s": 1949.94,
+   "end_s": 2223.23
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-002.c09",
+  "video_id": "shl-002",
+  "level": 1,
+  "parent_id": null,
+  "seq": 9,
+  "title": "麻黄汤组成与衄代汗；承气三方及表里先后",
+  "summary": "麻黄汤麻黄杏仁宣肺、桂枝走卫营乃能出汗，杏仁防伤肺津；衄而未周身汗则仍须再予麻黄汤。顺带简介调胃/小/大承气所主部位与以小便色判停药；不大便六七日有头痛须辨小便清则病在表宜汗，便秘习惯者解表宜桂枝代麻黄，必要时表里同用。",
+  "start_s": 2227.864,
+  "end_s": 2894.044,
+  "seg_from": 376,
+  "seg_to": 481,
+  "six_channel": [],
+  "clause_refs": [
+   "clause.shl.055",
+   "clause.shl.056"
+  ],
+  "topics": [
+   "formula.ma_huang_tang",
+   "formula.diao_wei_cheng_qi_tang",
+   "formula.xiao_cheng_qi_tang",
+   "formula.da_cheng_qi_tang"
+  ],
+  "citation": {
+   "youtube_id": "7kYjtoBpU2Q",
+   "url": "https://www.youtube.com/watch?v=7kYjtoBpU2Q&t=2227s",
+   "series": "shl",
+   "episode": 2,
+   "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+   "start_s": 2227.86,
+   "end_s": 2894.04
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-002.c09.s1",
+  "video_id": "shl-002",
+  "level": 2,
+  "parent_id": "shl-002.c09",
+  "seq": 1,
+  "title": "第56条后：伤寒汗后转中风改桂枝汤",
+  "summary": "伤寒予麻黄汤后营分已解而卫分未解，可仅见中风证，改予桂枝汤；印证中风伤卫、伤寒营卫俱伤。",
+  "start_s": 2799.134,
+  "end_s": 2894.044,
+  "seg_from": 467,
+  "seg_to": 481,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [],
+  "citation": {
+   "youtube_id": "7kYjtoBpU2Q",
+   "url": "https://www.youtube.com/watch?v=7kYjtoBpU2Q&t=2799s",
+   "series": "shl",
+   "episode": 2,
+   "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+   "start_s": 2799.13,
+   "end_s": 2894.04
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-002.c10",
+  "video_id": "shl-002",
+  "level": 1,
+  "parent_id": null,
+  "seq": 10,
+  "title": "第58–59条 阴阳自和必自愈；大下后汗出小便不利勿治",
+  "summary": "汗吐下后若阴阳自和（脉缓、自觉舒服、汗止且不渴）则勿再药，待其自愈，经方不主张病去后立即滋阴。大下后又发汗致小便少而无痛涩者，为津液暂伤，勿治，得小便利则愈；吐下后以「渴」判断邪是否已净。",
+  "start_s": 2894.104,
+  "end_s": 3173.609,
+  "seg_from": 482,
+  "seg_to": 524,
+  "six_channel": [],
+  "clause_refs": [
+   "clause.shl.058",
+   "clause.shl.059"
+  ],
+  "topics": [
+   "concept.yin_yang",
+   "concept.jin_ye",
+   "symptom.xiao_bian_bu_li"
+  ],
+  "citation": {
+   "youtube_id": "7kYjtoBpU2Q",
+   "url": "https://www.youtube.com/watch?v=7kYjtoBpU2Q&t=2894s",
+   "series": "shl",
+   "episode": 2,
+   "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+   "start_s": 2894.1,
+   "end_s": 3173.61
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-002.c11",
+  "video_id": "shl-002",
+  "level": 1,
+  "parent_id": null,
+  "seq": 11,
+  "title": "第60–61条 先下后汗致虚；昼日烦躁用干姜附子汤",
+  "summary": "先攻下再发汗违背先表后里，可见怕冷、内外俱虚，张仲景不用「阴虚」字以免滥滋阴，主张食补待复。若昼日烦躁不得眠、夜则安静、身无大热、脉转沉，为阳虚，予干姜附子汤（干姜温中、生附子温心阳命门），使阳回则阴自生。",
+  "start_s": 3175.924,
+  "end_s": 3682.157,
+  "seg_from": 525,
+  "seg_to": 607,
+  "six_channel": [],
+  "clause_refs": [
+   "clause.shl.060",
+   "clause.shl.061"
+  ],
+  "topics": [
+   "formula.gan_jiang_fu_zi_tang",
+   "concept.yang_xu",
+   "symptom.fan_zao",
+   "herb.fu_zi",
+   "herb.gan_jiang"
+  ],
+  "citation": {
+   "youtube_id": "7kYjtoBpU2Q",
+   "url": "https://www.youtube.com/watch?v=7kYjtoBpU2Q&t=3175s",
+   "series": "shl",
+   "episode": 2,
+   "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+   "start_s": 3175.92,
+   "end_s": 3682.16
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-002.c11.s1",
+  "video_id": "shl-002",
+  "level": 2,
+  "parent_id": "shl-002.c11",
+  "seq": 1,
+  "title": "生附子与麻黄对心阳作用不同；冻疮须内服外敷",
+  "summary": "生附子去皮可免棉布包；补心阳加快收缩力而不加速心率，麻黄则加速心率。附子形似心、色黑入肾，为肾中水之火。冻疮外敷干姜附子粉不够，须配合当归四逆汤等内服。",
+  "start_s": 3368.824,
+  "end_s": 3682.157,
+  "seg_from": 564,
+  "seg_to": 607,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [],
+  "citation": {
+   "youtube_id": "7kYjtoBpU2Q",
+   "url": "https://www.youtube.com/watch?v=7kYjtoBpU2Q&t=3368s",
+   "series": "shl",
+   "episode": 2,
+   "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+   "start_s": 3368.82,
+   "end_s": 3682.16
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-002.c12",
+  "video_id": "shl-002",
+  "level": 1,
+  "parent_id": null,
+  "seq": 12,
+  "title": "第62条 发汗后身疼痛脉沉迟：桂枝新加汤",
+  "summary": "发汗太过或连服二三碗后，表解而身仍痛、脉沉迟，用桂枝新加汤（桂枝汤中芍药、生姜各加一两，加人参三两）补津液；与桂枝加附子汤（汗漏不止）须严格区分，错用则越补越汗。",
+  "start_s": 3685.932,
+  "end_s": 4056.317,
+  "seg_from": 608,
+  "seg_to": 680,
+  "six_channel": [],
+  "clause_refs": [
+   "clause.shl.062"
+  ],
+  "topics": [
+   "formula.gui_zhi_jia_shao_yao_sheng_jiang_ge_yi_liang_ren_shen_san_liang_xin_jia_tang",
+   "formula.gui_zhi_jia_fu_zi_tang"
+  ],
+  "citation": {
+   "youtube_id": "7kYjtoBpU2Q",
+   "url": "https://www.youtube.com/watch?v=7kYjtoBpU2Q&t=3685s",
+   "series": "shl",
+   "episode": 2,
+   "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+   "start_s": 3685.93,
+   "end_s": 4056.32
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-002.c12.s1",
+  "video_id": "shl-002",
+  "level": 2,
+  "parent_id": "shl-002.c12",
+  "seq": 1,
+  "title": "发汗后饮食宜忌与胃气回复",
+  "summary": "服桂枝/麻黄/葛根类后宜清淡米汤面食，忌油腻肉类与寒凉生菜；待次日中午胃气回复再复常食。经方补阴多用参、姜、草、芍，重在复阳令阴自生。",
+  "start_s": 3900.182,
+  "end_s": 4056.317,
+  "seg_from": 648,
+  "seg_to": 680,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [],
+  "citation": {
+   "youtube_id": "7kYjtoBpU2Q",
+   "url": "https://www.youtube.com/watch?v=7kYjtoBpU2Q&t=3900s",
+   "series": "shl",
+   "episode": 2,
+   "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+   "start_s": 3900.18,
+   "end_s": 4056.32
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-002.c13",
+  "video_id": "shl-002",
+  "level": 1,
+  "parent_id": null,
+  "seq": 13,
+  "title": "第63条 汗后喘无大热：麻杏甘石汤及青龙比例",
+  "summary": "发汗后身愈而喘咳短气、无大热，予麻黄杏仁甘草石膏汤；本方虽有麻黄但不发汗。并授大青龙类「麻黄与石膏+杏仁等量」的黄金比例，痰多热轻则增杏仁减石膏，有高热喘甚须重用麻黄不可手软；麻杏石甘不治单纯高热。",
+  "start_s": 4057.772,
+  "end_s": 4375.032,
+  "seg_from": 681,
+  "seg_to": 737,
+  "six_channel": [],
+  "clause_refs": [
+   "clause.shl.063"
+  ],
+  "topics": [
+   "formula.ma_huang_xing_ren_gan_cao_shi_gao_tang",
+   "herb.ma_huang",
+   "herb.shi_gao",
+   "herb.xing_ren",
+   "formula.da_qing_long_tang"
+  ],
+  "citation": {
+   "youtube_id": "7kYjtoBpU2Q",
+   "url": "https://www.youtube.com/watch?v=7kYjtoBpU2Q&t=4057s",
+   "series": "shl",
+   "episode": 2,
+   "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+   "start_s": 4057.77,
+   "end_s": 4375.03
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-002.c14",
+  "video_id": "shl-002",
+  "level": 1,
+  "parent_id": null,
+  "seq": 14,
+  "title": "第64–65条 叉手冒心用桂枝甘草汤；脐下悸用苓桂甘枣汤",
+  "summary": "发汗过多（多因麻黄汤）见叉手自冒、心下悸，为肺津外泄、下焦水气上冲心下不及补位，予桂枝甘草汤（桂枝四甘草二）降冲气化。脐下悸欲作奔豚多为桂枝汤太过，予茯苓桂枝甘草大枣汤；茯苓除利尿外能去烦。并述脐周动悸分脏定位。",
+  "start_s": 4376.412,
+  "end_s": 5133.96,
+  "seg_from": 738,
+  "seg_to": 875,
+  "six_channel": [],
+  "clause_refs": [
+   "clause.shl.064",
+   "clause.shl.065"
+  ],
+  "topics": [
+   "formula.gui_zhi_gan_cao_tang",
+   "formula.fu_ling_gui_zhi_gan_cao_da_zao_tang",
+   "symptom.cha_shou_zi_mao_xin",
+   "symptom.xin_xia_ji",
+   "syndrome.ben_tun"
+  ],
+  "citation": {
+   "youtube_id": "7kYjtoBpU2Q",
+   "url": "https://www.youtube.com/watch?v=7kYjtoBpU2Q&t=4376s",
+   "series": "shl",
+   "episode": 2,
+   "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+   "start_s": 4376.41,
+   "end_s": 5133.96
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-002.c15",
+  "video_id": "shl-002",
+  "level": 1,
+  "parent_id": null,
+  "seq": 15,
+  "title": "第66条 汗后腹胀满：厚朴生姜半夏甘草人参汤",
+  "summary": "发汗后腹胀满而无便秘、排气多为虚胀，予厚朴生姜半夏甘草人参汤；以小便色及按腹拒按与否辨虚实胀，实胀属承气。亦辨「便秘引起的下利」（天枢拒按、仅水出）及条状细便。方中厚朴移脾湿入肠，参草补津，姜夏止呕逆。",
+  "start_s": 5142.305,
+  "end_s": 5535.04,
+  "seg_from": 876,
+  "seg_to": 949,
+  "six_channel": [],
+  "clause_refs": [
+   "clause.shl.066"
+  ],
+  "topics": [
+   "formula.hou_po_sheng_jiang_ban_xia_gan_cao_ren_shen_tang",
+   "symptom.fu_man",
+   "herb.hou_po"
+  ],
+  "citation": {
+   "youtube_id": "7kYjtoBpU2Q",
+   "url": "https://www.youtube.com/watch?v=7kYjtoBpU2Q&t=5142s",
+   "series": "shl",
+   "episode": 2,
+   "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+   "start_s": 5142.31,
+   "end_s": 5535.04
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-002.c16",
+  "video_id": "shl-002",
+  "level": 1,
+  "parent_id": null,
+  "seq": 16,
+  "title": "第67条 吐下后心下逆满：苓桂术甘汤",
+  "summary": "伤寒本当解表，若先吐下伤肠胃津液再发汗，则肺与肠津皆伤，水停横膈心下，见逆满、气上冲胸、头眩、脉沉紧，发汗则动经，予茯苓桂枝白术甘草汤（苓桂术甘汤）利中焦水饮、桂枝降逆。",
+  "start_s": 5538.925,
+  "end_s": 5788.754,
+  "seg_from": 950,
+  "seg_to": 979,
+  "six_channel": [],
+  "clause_refs": [
+   "clause.shl.067"
+  ],
+  "topics": [
+   "formula.fu_ling_gui_zhi_bai_zhu_gan_cao_tang",
+   "zangfu.xin_xia",
+   "concept.jin_ye"
+  ],
+  "citation": {
+   "youtube_id": "7kYjtoBpU2Q",
+   "url": "https://www.youtube.com/watch?v=7kYjtoBpU2Q&t=5538s",
+   "series": "shl",
+   "episode": 2,
+   "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+   "start_s": 5538.93,
+   "end_s": 5788.75
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-002.c17",
+  "video_id": "shl-002",
+  "level": 1,
+  "parent_id": null,
+  "seq": 17,
+  "title": "苓桂术甘续：起则头眩与中焦停水",
+  "summary": "续第67条：中焦横膈停水如天平失衡，起则头眩（卧则不晕）；苓桂术甘汤茯苓白术去中焦水、桂枝降逆。茯苓用量最重；兼恶心可加盐半夏。与真武等他方眩晕鉴别：动则晕为本方特点。",
+  "start_s": 5791.419,
+  "end_s": 6005.244,
+  "seg_from": 980,
+  "seg_to": 1015,
+  "six_channel": [],
+  "clause_refs": [
+   "clause.shl.067"
+  ],
+  "topics": [
+   "formula.fu_ling_gui_zhi_bai_zhu_gan_cao_tang",
+   "herb.fu_ling",
+   "zangfu.zhong_jiao"
+  ],
+  "citation": {
+   "youtube_id": "7kYjtoBpU2Q",
+   "url": "https://www.youtube.com/watch?v=7kYjtoBpU2Q&t=5791s",
+   "series": "shl",
+   "episode": 2,
+   "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+   "start_s": 5791.42,
+   "end_s": 6005.24
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-002.c18",
+  "video_id": "shl-002",
+  "level": 1,
+  "parent_id": null,
+  "seq": 18,
+  "title": "第68条 汗后病不解反恶寒：芍药甘草附子汤",
+  "summary": "发汗后病未解反恶寒，为病人本虚而非误治，芍药甘草附子汤（炮附子较重）补里虚；轻剂滋阴，重用芍药炙甘草可治静脉曲张（又名去杖汤），脚冷则加重附子以防瘀块回流。",
+  "start_s": 6006.579,
+  "end_s": 6326.724,
+  "seg_from": 1016,
+  "seg_to": 1083,
+  "six_channel": [],
+  "clause_refs": [
+   "clause.shl.068"
+  ],
+  "topics": [
+   "formula.shao_yao_gan_cao_fu_zi_tang",
+   "herb.shao_yao",
+   "herb.fu_zi"
+  ],
+  "citation": {
+   "youtube_id": "7kYjtoBpU2Q",
+   "url": "https://www.youtube.com/watch?v=7kYjtoBpU2Q&t=6006s",
+   "series": "shl",
+   "episode": 2,
+   "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+   "start_s": 6006.58,
+   "end_s": 6326.72
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-002.c19",
+  "video_id": "shl-002",
+  "level": 1,
+  "parent_id": null,
+  "seq": 19,
+  "title": "第69条 汗下后烦躁四逆：茯苓四逆汤",
+  "summary": "汗下后病不解而烦躁、四肢逆冷（冷过肘膝）用茯苓四逆汤：生附子救阳，人参补津，茯苓除烦兼利水，体现补泻兼顾的新陈代谢观。无烦躁用四逆汤，津伤无烦加人参即可。",
+  "start_s": 6341.109,
+  "end_s": 6555.724,
+  "seg_from": 1084,
+  "seg_to": 1116,
+  "six_channel": [],
+  "clause_refs": [
+   "clause.shl.069"
+  ],
+  "topics": [
+   "formula.fu_ling_si_ni_tang",
+   "formula.si_ni_tang",
+   "symptom.fan_zao"
+  ],
+  "citation": {
+   "youtube_id": "7kYjtoBpU2Q",
+   "url": "https://www.youtube.com/watch?v=7kYjtoBpU2Q&t=6341s",
+   "series": "shl",
+   "episode": 2,
+   "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+   "start_s": 6341.11,
+   "end_s": 6555.72
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-002.c20",
+  "video_id": "shl-002",
+  "level": 1,
+  "parent_id": null,
+  "seq": 20,
+  "title": "第70条 汗后恶寒为虚；但热不寒属阳明",
+  "summary": "发汗后恶寒为里虚，可用芍药甘草附子汤；若但热不寒则为阳明，无寒只有热，白虎或承气皆攻无不克。并举艾滋病未服药多见白虎证、服药后转厥阴之临床观察。汗后调胃承气见于食停十二指肠时误用桂枝类散津。",
+  "start_s": 6560.879,
+  "end_s": 6832.264,
+  "seg_from": 1117,
+  "seg_to": 1159,
+  "six_channel": [
+   "six_channel.yangming"
+  ],
+  "clause_refs": [
+   "clause.shl.070"
+  ],
+  "topics": [
+   "formula.bai_hu_tang",
+   "formula.diao_wei_cheng_qi_tang"
+  ],
+  "citation": {
+   "youtube_id": "7kYjtoBpU2Q",
+   "url": "https://www.youtube.com/watch?v=7kYjtoBpU2Q&t=6560s",
+   "series": "shl",
+   "episode": 2,
+   "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+   "start_s": 6560.88,
+   "end_s": 6832.26
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-002.c21",
+  "video_id": "shl-002",
+  "level": 1,
+  "parent_id": null,
+  "seq": 21,
+  "title": "第71条 大汗胃中干与五苓散",
+  "summary": "太阳病发汗后大汗出、胃中干、烦躁不得眠，宜少少饮水待胃气和；若脉浮、小便不利、消渴则五苓散。五苓散无甘草，以桂枝少量引泽泻猪苓茯苓白术之力达表，把表邪/表水从小便出，路径与汗法相反；宜散剂缓吸收。上半身水肿汗解、下半身利尿的内经原则。",
+  "start_s": 6834.663,
+  "end_s": 7555.168,
+  "seg_from": 1160,
+  "seg_to": 1272,
+  "six_channel": [
+   "six_channel.taiyang"
+  ],
+  "clause_refs": [
+   "clause.shl.071"
+  ],
+  "topics": [
+   "formula.wu_ling_san",
+   "symptom.xiao_ke",
+   "symptom.wei_zhong_gan",
+   "herb.ze_xie",
+   "herb.zhu_ling"
+  ],
+  "citation": {
+   "youtube_id": "7kYjtoBpU2Q",
+   "url": "https://www.youtube.com/watch?v=7kYjtoBpU2Q&t=6834s",
+   "series": "shl",
+   "episode": 2,
+   "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+   "start_s": 6834.66,
+   "end_s": 7555.17
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-002.c21.s1",
+  "video_id": "shl-002",
+  "level": 2,
+  "parent_id": "shl-002.c21",
+  "seq": 1,
+  "title": "五苓散组成路径与散剂理由",
+  "summary": "泽泻利全身水、茯苓利中焦、猪苓利下焦，桂枝少许推药力达表，白术祛中焦湿；三者合可表里之水从小便出。用散不用汤，因汤下太快表水未引即从小便过。汗出不彻皮肤痒亦可以五苓散导表水。",
+  "start_s": 7250.293,
+  "end_s": 7555.168,
+  "seg_from": 1223,
+  "seg_to": 1272,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [],
+  "citation": {
+   "youtube_id": "7kYjtoBpU2Q",
+   "url": "https://www.youtube.com/watch?v=7kYjtoBpU2Q&t=7250s",
+   "series": "shl",
+   "episode": 2,
+   "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+   "start_s": 7250.29,
+   "end_s": 7555.17
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-002.c22",
+  "video_id": "shl-002",
+  "level": 1,
+  "parent_id": null,
+  "seq": 22,
+  "title": "第72–74条 汗后渴与水逆仍属五苓；茯苓甘草汤",
+  "summary": "发汗后脉浮数反渴，或伤寒汗出而渴，五苓散主之；渴而大热属白虎非五苓。不渴而心下悸用茯苓甘草汤（苓桂等量加姜草）既利心下水又补津。中风发热六七日不解、渴欲饮水水入则吐名水逆，亦五苓散；狂饮后膈停水同机。半夏苦酒汤治突然吞咽不能。",
+  "start_s": 7560.533,
+  "end_s": 8103.093,
+  "seg_from": 1273,
+  "seg_to": 1361,
+  "six_channel": [],
+  "clause_refs": [
+   "clause.shl.072",
+   "clause.shl.073",
+   "clause.shl.074"
+  ],
+  "topics": [
+   "formula.wu_ling_san",
+   "formula.fu_ling_gan_cao_tang",
+   "symptom.shui_ru_ze_tu"
+  ],
+  "citation": {
+   "youtube_id": "7kYjtoBpU2Q",
+   "url": "https://www.youtube.com/watch?v=7kYjtoBpU2Q&t=7560s",
+   "series": "shl",
+   "episode": 2,
+   "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+   "start_s": 7560.53,
+   "end_s": 8103.09
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-002.c23",
+  "video_id": "shl-002",
+  "level": 1,
+  "parent_id": null,
+  "seq": 23,
+  "title": "第75–83条 重发汗致聋及饮水过快致喘",
+  "summary": "重发汗虚致耳聋（内经精脱者耳聋），可以参枣苓姜草等补津。汗后饮水过快灌肺致喘；麻黄汤伤肺津宜缓补杏仁豆腐水梨，桂枝汤伤胃津宜稀饭。水药不得入口为逆，更汗必吐衄，仍属五苓散机。",
+  "start_s": 8104.908,
+  "end_s": 8384.353,
+  "seg_from": 1362,
+  "seg_to": 1412,
+  "six_channel": [],
+  "clause_refs": [
+   "clause.shl.075",
+   "clause.shl.076"
+  ],
+  "topics": [
+   "concept.jin_ye",
+   "formula.wu_ling_san"
+  ],
+  "citation": {
+   "youtube_id": "7kYjtoBpU2Q",
+   "url": "https://www.youtube.com/watch?v=7kYjtoBpU2Q&t=8104s",
+   "series": "shl",
+   "episode": 2,
+   "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+   "start_s": 8104.91,
+   "end_s": 8384.35
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-002.c24",
+  "video_id": "shl-002",
+  "level": 1,
+  "parent_id": null,
+  "seq": 24,
+  "title": "第76条起 病后虚烦不得眠：栀子豉汤",
+  "summary": "汗吐下病已愈而虚烦不得眠、甚则反复颠倒心中懊憹，栀子豉汤收尾；少气加甘草，呕加生姜。栀子轻清去虚热，异于黄连之重苦入深；豆豉生胃津。脉虚、苔淡黄可助辨虚烦。",
+  "start_s": 8387.188,
+  "end_s": 8700.608,
+  "seg_from": 1413,
+  "seg_to": 1458,
+  "six_channel": [],
+  "clause_refs": [
+   "clause.shl.076"
+  ],
+  "topics": [
+   "formula.zhi_zi_shi_tang",
+   "symptom.xu_fan",
+   "herb.zhi_zi"
+  ],
+  "citation": {
+   "youtube_id": "7kYjtoBpU2Q",
+   "url": "https://www.youtube.com/watch?v=7kYjtoBpU2Q&t=8387s",
+   "series": "shl",
+   "episode": 2,
+   "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+   "start_s": 8387.19,
+   "end_s": 8700.61
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-002.c25",
+  "video_id": "shl-002",
+  "level": 1,
+  "parent_id": null,
+  "seq": 25,
+  "title": "栀子豉汤类方：少气、呕恶与葛根黄连",
+  "summary": "续虚烦辨虚实热；少气加甘草，呕用栀子生姜豉汤（病后津回勿用半夏再沥）；表邪下陷下利用葛根黄芩黄连汤。栀豉约各五钱，先栀后豉。",
+  "start_s": 8700.848,
+  "end_s": 9376.625,
+  "seg_from": 1459,
+  "seg_to": 1589,
+  "six_channel": [],
+  "clause_refs": [
+   "clause.shl.076",
+   "clause.shl.077"
+  ],
+  "topics": [
+   "formula.zhi_zi_shi_tang",
+   "herb.zhi_zi",
+   "herb.sheng_jiang"
+  ],
+  "citation": {
+   "youtube_id": "7kYjtoBpU2Q",
+   "url": "https://www.youtube.com/watch?v=7kYjtoBpU2Q&t=8700s",
+   "series": "shl",
+   "episode": 2,
+   "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+   "start_s": 8700.85,
+   "end_s": 9376.62
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-002.c26",
+  "video_id": "shl-002",
+  "level": 1,
+  "parent_id": null,
+  "seq": 26,
+  "title": "第77–79条 烦热胸中窒；厚朴枳实与胆石思路",
+  "summary": "汗下后烦热胸中窒仍栀子豉。腹满虚实皆可用厚朴；胸满用枳实不用白芍。枳实宽肠扩胆，合柴胡黄芩炙草为胆石基本思路。",
+  "start_s": 9386.39,
+  "end_s": 10333.32,
+  "seg_from": 1590,
+  "seg_to": 1746,
+  "six_channel": [],
+  "clause_refs": [
+   "clause.shl.077",
+   "clause.shl.078",
+   "clause.shl.079"
+  ],
+  "topics": [
+   "herb.hou_po",
+   "herb.zhi_shi",
+   "formula.zhi_zi_shi_tang"
+  ],
+  "citation": {
+   "youtube_id": "7kYjtoBpU2Q",
+   "url": "https://www.youtube.com/watch?v=7kYjtoBpU2Q&t=9386s",
+   "series": "shl",
+   "episode": 2,
+   "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+   "start_s": 9386.39,
+   "end_s": 10333.32
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-002.c26.s1",
+  "video_id": "shl-002",
+  "level": 2,
+  "parent_id": "shl-002.c26",
+  "seq": 1,
+  "title": "栀子配干姜：虚寒下利慎栀豉",
+  "summary": "素体下利虚寒者栀豉偏凉宜慎；需用则配干姜反佐。",
+  "start_s": 10135.75,
+  "end_s": 10333.32,
+  "seg_from": 1717,
+  "seg_to": 1746,
+  "six_channel": [],
+  "clause_refs": [
+   "clause.shl.080"
+  ],
+  "topics": [],
+  "citation": {
+   "youtube_id": "7kYjtoBpU2Q",
+   "url": "https://www.youtube.com/watch?v=7kYjtoBpU2Q&t=10135s",
+   "series": "shl",
+   "episode": 2,
+   "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+   "start_s": 10135.75,
+   "end_s": 10333.32
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-002.c27",
+  "video_id": "shl-002",
+  "level": 1,
+  "parent_id": null,
+  "seq": 27,
+  "title": "诸家不可发汗：咽干、疮、衄、亡血、中寒",
+  "summary": "咽喉干燥、疮家、衄家、亡血家及中寒者不可强汗；再汗则胃中冷吐。引出小柴胡将详论。",
+  "start_s": 10334.945,
+  "end_s": 11496.519,
+  "seg_from": 1747,
+  "seg_to": 1958,
+  "six_channel": [],
+  "clause_refs": [
+   "clause.shl.083",
+   "clause.shl.086",
+   "clause.shl.089"
+  ],
+  "topics": [
+   "method.fa_han",
+   "concept.jin_ye"
+  ],
+  "citation": {
+   "youtube_id": "7kYjtoBpU2Q",
+   "url": "https://www.youtube.com/watch?v=7kYjtoBpU2Q&t=10334s",
+   "series": "shl",
+   "episode": 2,
+   "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+   "start_s": 10334.94,
+   "end_s": 11496.52
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-002.c28",
+  "video_id": "shl-002",
+  "level": 1,
+  "parent_id": null,
+  "seq": 28,
+  "title": "治则：有是证用是药",
+  "summary": "无表而见承气燥结则攻里，不可因伤寒之名强汗。",
+  "start_s": 11508.184,
+  "end_s": 11587.609,
+  "seg_from": 1959,
+  "seg_to": 1970,
+  "six_channel": [],
+  "clause_refs": [
+   "clause.shl.090"
+  ],
+  "topics": [
+   "method.fa_han"
+  ],
+  "citation": {
+   "youtube_id": "7kYjtoBpU2Q",
+   "url": "https://www.youtube.com/watch?v=7kYjtoBpU2Q&t=11508s",
+   "series": "shl",
+   "episode": 2,
+   "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+   "start_s": 11508.18,
+   "end_s": 11587.61
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-002.c29",
+  "video_id": "shl-002",
+  "level": 1,
+  "parent_id": null,
+  "seq": 29,
+  "title": "第100–103条 伤寒误下与脉证；引入少阳",
+  "summary": "伤寒误下不愈、表未解等变证铺垫；脉阴阳俱停等示正气重伤。为小柴胡详论作引。",
+  "start_s": 11590.684,
+  "end_s": 12238.459,
+  "seg_from": 1971,
+  "seg_to": 2092,
+  "six_channel": [
+   "six_channel.shaoyang",
+   "six_channel.taiyang"
+  ],
+  "clause_refs": [
+   "clause.shl.100",
+   "clause.shl.101",
+   "clause.shl.102",
+   "clause.shl.103"
+  ],
+  "topics": [
+   "formula.xiao_chai_hu_tang"
+  ],
+  "citation": {
+   "youtube_id": "7kYjtoBpU2Q",
+   "url": "https://www.youtube.com/watch?v=7kYjtoBpU2Q&t=11590s",
+   "series": "shl",
+   "episode": 2,
+   "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+   "start_s": 11590.68,
+   "end_s": 12238.46
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-002.c30",
+  "video_id": "shl-002",
+  "level": 1,
+  "parent_id": null,
+  "seq": 30,
+  "title": "小柴胡汤总论：胸胁苦满与三焦",
+  "summary": "少阳半表半里、三焦枢纽；往来寒热、胸胁苦满、默默不欲饮食、心烦喜呕即小柴胡。柴半等量，可加减治肝炎、月经期感冒、甲状腺肿等少阳证。月经来潮得感冒一律小柴胡。",
+  "start_s": 12239.544,
+  "end_s": 13762.621,
+  "seg_from": 2093,
+  "seg_to": 2375,
+  "six_channel": [
+   "six_channel.shaoyang"
+  ],
+  "clause_refs": [
+   "clause.shl.096",
+   "clause.shl.097"
+  ],
+  "topics": [
+   "formula.xiao_chai_hu_tang",
+   "zangfu.san_jiao",
+   "herb.chai_hu"
+  ],
+  "citation": {
+   "youtube_id": "7kYjtoBpU2Q",
+   "url": "https://www.youtube.com/watch?v=7kYjtoBpU2Q&t=12239s",
+   "series": "shl",
+   "episode": 2,
+   "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+   "start_s": 12239.54,
+   "end_s": 13762.62
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-002.c30.s1",
+  "video_id": "shl-002",
+  "level": 2,
+  "parent_id": "shl-002.c30",
+  "seq": 1,
+  "title": "小柴胡加减：苓术、栀子、牡蛎软坚",
+  "summary": "加白术茯苓祛湿；虚烦不眠加栀子；腹中痛去黄芩加芍药；胁下痞硬去大枣加牡蛎软坚（乳癖、瘿瘤、腋下结块）。",
+  "start_s": 12589.501,
+  "end_s": 13762.621,
+  "seg_from": 2155,
+  "seg_to": 2375,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.mu_li",
+   "herb.fu_ling",
+   "herb.shao_yao"
+  ],
+  "citation": {
+   "youtube_id": "7kYjtoBpU2Q",
+   "url": "https://www.youtube.com/watch?v=7kYjtoBpU2Q&t=12589s",
+   "series": "shl",
+   "episode": 2,
+   "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+   "start_s": 12589.5,
+   "end_s": 13762.62
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-002.c31",
+  "video_id": "shl-002",
+  "level": 1,
+  "parent_id": null,
+  "seq": 31,
+  "title": "第107条起 柴胡证罢转渴入阳明；三阳并病用和解",
+  "summary": "服小柴胡后渴，为转入阳明之佳兆，可按白虎/承气/五苓等治。三阳并病用小柴胡和解。呕家禁用建中（过甜）；有柴胡证但见一证即可用。",
+  "start_s": 13762.621,
+  "end_s": 14386.006,
+  "seg_from": 2376,
+  "seg_to": 2483,
+  "six_channel": [
+   "six_channel.yangming"
+  ],
+  "clause_refs": [
+   "clause.shl.101",
+   "clause.shl.104",
+   "clause.shl.105"
+  ],
+  "topics": [
+   "formula.xiao_chai_hu_tang",
+   "formula.xiao_jian_zhong_tang"
+  ],
+  "citation": {
+   "youtube_id": "7kYjtoBpU2Q",
+   "url": "https://www.youtube.com/watch?v=7kYjtoBpU2Q&t=13762s",
+   "series": "shl",
+   "episode": 2,
+   "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+   "start_s": 13762.62,
+   "end_s": 14386.01
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-002.c32",
+  "video_id": "shl-002",
+  "level": 1,
+  "parent_id": null,
+  "seq": 32,
+  "title": "小陷胸与建中、大陷胸线索",
+  "summary": "心下按痛属小结胸病小陷胸汤（小儿不食、腹痛常用）；心中悸烦用小建中；并引出大陷胸危证。",
+  "start_s": 14386.371,
+  "end_s": 14849.79,
+  "seg_from": 2484,
+  "seg_to": 2572,
+  "six_channel": [],
+  "clause_refs": [
+   "clause.shl.138",
+   "clause.shl.100"
+  ],
+  "topics": [
+   "formula.xiao_xian_xiong_tang",
+   "formula.xiao_jian_zhong_tang"
+  ],
+  "citation": {
+   "youtube_id": "7kYjtoBpU2Q",
+   "url": "https://www.youtube.com/watch?v=7kYjtoBpU2Q&t=14386s",
+   "series": "shl",
+   "episode": 2,
+   "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+   "start_s": 14386.37,
+   "end_s": 14849.79
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-002.c33",
+  "video_id": "shl-002",
+  "level": 1,
+  "parent_id": null,
+  "seq": 33,
+  "title": "第103–105条 大柴胡汤：少阳兼阳明",
+  "summary": "柴胡证仍在先予小柴胡；呕不止、心下急、郁郁微烦为未解，大柴胡汤主之。少阳与阳明兼（便秘烦躁）方用大柴胡：去人参加大黄枳实，腹满加厚朴。临床治大肠癌未手术、阑尾炎等少阳阳明间证。",
+  "start_s": 14849.87,
+  "end_s": 15692.985,
+  "seg_from": 2573,
+  "seg_to": 2714,
+  "six_channel": [
+   "six_channel.yangming",
+   "six_channel.taiyang"
+  ],
+  "clause_refs": [
+   "clause.shl.103",
+   "clause.shl.104",
+   "clause.shl.105"
+  ],
+  "topics": [
+   "formula.da_chai_hu_tang",
+   "formula.xiao_chai_hu_tang"
+  ],
+  "citation": {
+   "youtube_id": "7kYjtoBpU2Q",
+   "url": "https://www.youtube.com/watch?v=7kYjtoBpU2Q&t=14849s",
+   "series": "shl",
+   "episode": 2,
+   "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+   "start_s": 14849.87,
+   "end_s": 15692.99
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-002.c33.s1",
+  "video_id": "shl-002",
+  "level": 2,
+  "parent_id": "shl-002.c33",
+  "seq": 1,
+  "title": "大柴胡与承气、柴胡加芒硝",
+  "summary": "小承气多矢气、大承气无屁；潮热大便硬先小柴胡解外，再柴胡加芒硝。大肠癌未手术多在少阳阳明之间，动刀后机局改变。",
+  "start_s": 15447.79,
+  "end_s": 15692.985,
+  "seg_from": 2675,
+  "seg_to": 2714,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "formula.chai_hu_jia_mang_xiao_tang",
+   "formula.da_cheng_qi_tang"
+  ],
+  "citation": {
+   "youtube_id": "7kYjtoBpU2Q",
+   "url": "https://www.youtube.com/watch?v=7kYjtoBpU2Q&t=15447s",
+   "series": "shl",
+   "episode": 2,
+   "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+   "start_s": 15447.79,
+   "end_s": 15692.99
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-002.c34",
+  "video_id": "shl-002",
+  "level": 1,
+  "parent_id": null,
+  "seq": 34,
+  "title": "误下后柴胡证仍在仍可用；党参代人参",
+  "summary": "本是柴胡证而误下，证仍在则可再用小柴胡；人参价昂可以党参代。",
+  "start_s": 15694.31,
+  "end_s": 16869.112,
+  "seg_from": 2715,
+  "seg_to": 2920,
+  "six_channel": [],
+  "clause_refs": [
+   "clause.shl.101"
+  ],
+  "topics": [
+   "formula.xiao_chai_hu_tang",
+   "herb.ren_shen"
+  ],
+  "citation": {
+   "youtube_id": "7kYjtoBpU2Q",
+   "url": "https://www.youtube.com/watch?v=7kYjtoBpU2Q&t=15694s",
+   "series": "shl",
+   "episode": 2,
+   "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+   "start_s": 15694.31,
+   "end_s": 16869.11
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-002.c35",
+  "video_id": "shl-002",
+  "level": 1,
+  "parent_id": null,
+  "seq": 35,
+  "title": "第106条 桃核承气汤：热结膀胱如狂",
+  "summary": "太阳随经瘀热在里、少腹急结、如狂，外解乃可攻，桃核承气汤（桃仁桂枝合调胃承气）。伤科瘀血、会阴损伤亦常用。",
+  "start_s": 16871.212,
+  "end_s": 17557.786,
+  "seg_from": 2921,
+  "seg_to": 3043,
+  "six_channel": [
+   "six_channel.taiyang"
+  ],
+  "clause_refs": [
+   "clause.shl.106"
+  ],
+  "topics": [
+   "formula.tao_he_cheng_qi_tang",
+   "zangfu.pang_guang",
+   "symptom.ru_kuang"
+  ],
+  "citation": {
+   "youtube_id": "7kYjtoBpU2Q",
+   "url": "https://www.youtube.com/watch?v=7kYjtoBpU2Q&t=16871s",
+   "series": "shl",
+   "episode": 2,
+   "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+   "start_s": 16871.21,
+   "end_s": 17557.79
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-002.c36",
+  "video_id": "shl-002",
+  "level": 1,
+  "parent_id": null,
+  "seq": 36,
+  "title": "第107条 柴胡加龙骨牡蛎汤",
+  "summary": "表未解而攻下太早，邪陷致胸满烦惊、小便不利、谵语、一身尽重，柴胡加龙骨牡蛎汤。龙骨潜阳收敛、牡蛎软坚生津。",
+  "start_s": 17560.511,
+  "end_s": 19619.082,
+  "seg_from": 3044,
+  "seg_to": 3390,
+  "six_channel": [],
+  "clause_refs": [
+   "clause.shl.107"
+  ],
+  "topics": [
+   "formula.chai_hu_jia_long_gu_mu_li_tang",
+   "herb.long_gu",
+   "herb.mu_li"
+  ],
+  "citation": {
+   "youtube_id": "7kYjtoBpU2Q",
+   "url": "https://www.youtube.com/watch?v=7kYjtoBpU2Q&t=17560s",
+   "series": "shl",
+   "episode": 2,
+   "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+   "start_s": 17560.51,
+   "end_s": 19619.08
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-002.c36.s1",
+  "video_id": "shl-002",
+  "level": 2,
+  "parent_id": "shl-002.c36",
+  "seq": 1,
+  "title": "龙骨牡蛎辨用",
+  "summary": "早泄重龙骨，遗精尿多偏重牡蛎；等量或按症。牡蛎粉可外敷烫伤。",
+  "start_s": 18023.261,
+  "end_s": 19619.082,
+  "seg_from": 3120,
+  "seg_to": 3390,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.long_gu",
+   "herb.mu_li"
+  ],
+  "citation": {
+   "youtube_id": "7kYjtoBpU2Q",
+   "url": "https://www.youtube.com/watch?v=7kYjtoBpU2Q&t=18023s",
+   "series": "shl",
+   "episode": 2,
+   "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+   "start_s": 18023.26,
+   "end_s": 19619.08
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-002.c37",
+  "video_id": "shl-002",
+  "level": 1,
+  "parent_id": null,
+  "seq": 37,
+  "title": "火劫火逆与烧针奔豚",
+  "summary": "太阳宜汗而用火熏烧针致火逆变证；烧针被寒发奔豚，桂枝加桂汤。表证当汗解勿火攻。",
+  "start_s": 19620.297,
+  "end_s": 20591.582,
+  "seg_from": 3391,
+  "seg_to": 3555,
+  "six_channel": [
+   "six_channel.taiyang"
+  ],
+  "clause_refs": [
+   "clause.shl.111",
+   "clause.shl.116",
+   "clause.shl.117"
+  ],
+  "topics": [
+   "syndrome.huo_ni",
+   "method.shao_zhen",
+   "formula.gui_zhi_jia_gui_tang"
+  ],
+  "citation": {
+   "youtube_id": "7kYjtoBpU2Q",
+   "url": "https://www.youtube.com/watch?v=7kYjtoBpU2Q&t=19620s",
+   "series": "shl",
+   "episode": 2,
+   "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+   "start_s": 19620.3,
+   "end_s": 20591.58
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-002.c38",
+  "video_id": "shl-002",
+  "level": 1,
+  "parent_id": null,
+  "seq": 38,
+  "title": "第118条 火逆烦躁：桂枝甘草龙骨牡蛎汤",
+  "summary": "火逆或烧针迫汗致烦躁，桂枝甘草龙骨牡蛎汤主之。牡蛎软坚生津止盗汗；虚烦常用苓配龙牡。",
+  "start_s": 20598.431,
+  "end_s": 21001.356,
+  "seg_from": 3556,
+  "seg_to": 3623,
+  "six_channel": [],
+  "clause_refs": [
+   "clause.shl.118"
+  ],
+  "topics": [
+   "herb.long_gu",
+   "herb.mu_li",
+   "syndrome.huo_ni"
+  ],
+  "citation": {
+   "youtube_id": "7kYjtoBpU2Q",
+   "url": "https://www.youtube.com/watch?v=7kYjtoBpU2Q&t=20598s",
+   "series": "shl",
+   "episode": 2,
+   "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+   "start_s": 20598.43,
+   "end_s": 21001.36
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-002.c39",
+  "video_id": "shl-002",
+  "level": 1,
+  "parent_id": null,
+  "seq": 39,
+  "title": "收束：空杯听症与龙牡安神",
+  "summary": "勿见病理报告即先入为主；据现证选大柴胡等。茯苓配龙牡潜心阳治虚烦。太阳中篇收束。",
+  "start_s": 21001.881,
+  "end_s": 21361.016,
+  "seg_from": 3624,
+  "seg_to": 3686,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.fu_ling",
+   "formula.da_chai_hu_tang"
+  ],
+  "citation": {
+   "youtube_id": "7kYjtoBpU2Q",
+   "url": "https://www.youtube.com/watch?v=7kYjtoBpU2Q&t=21001s",
+   "series": "shl",
+   "episode": 2,
+   "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+   "start_s": 21001.88,
+   "end_s": 21361.02
+  },
+  "review_status": "llm_read"
+ }
+]

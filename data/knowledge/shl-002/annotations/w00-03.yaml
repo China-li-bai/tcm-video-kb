@@ -1,0 +1,389 @@
+video_id: shl-002
+window: w00-03
+seg_from: 0
+seg_to: 481
+annotator: llm_read
+chapters:
+- key: c01
+  title: 第42条 外证未解脉浮弱仍宜桂枝汤
+  start_seq: 0
+  summary: 太阳病中篇起讲：外证未解、脉浮弱者当以汗解，宜桂枝汤；强调中风证仍在就仍可用桂枝汤，不限初起。
+  clauses: [42]
+  topics: [six_channel.taiyang, formula.gui_zhi_tang, syndrome.tai_yang_zhong_feng, pulse.mai_fu_ruo]
+- key: c02
+  title: 第43条 桂枝加厚朴杏子汤：表未解而喘
+  start_seq: 5
+  summary: 太阳病下之微喘、表未解，用桂枝加厚朴杏子汤；并辨厚朴与白术祛湿路径、杏仁止咳润肺，及发表须微汗的火候。
+  clauses: [43]
+  topics: [formula.gui_zhi_jia_hou_po_xing_zi_tang, herb.hou_po, herb.xing_ren, herb.bai_zhu]
+- key: c02.s1
+  parent: c02
+  title: 厚朴移脾湿入小肠 vs 白术配茯苓利小便
+  start_seq: 16
+  summary: 厚朴去皮（脾）湿、把脾湿移入小肠以增润津液；白术去肌肉关节与中焦湿，须配茯苓从小便出；白术配炮附子则推邪外出而非利尿。
+- key: c02.s2
+  parent: c02
+  title: 杏仁剂量与微汗标准
+  start_seq: 34
+  summary: 杏仁约四至五钱，止咳祛痰、润肺中津液；发表药以皮肤湿绵绵、摸之似无大汗为恰到好处。
+- key: c03
+  title: 第44–45条 有表不可下；发汗后下而脉浮仍桂枝
+  start_seq: 45
+  summary: 外证未解不可下，下之为逆，仍宜桂枝汤；先发汗不解而复下、脉仍浮者病还在表，只要有桂枝汤证仍用桂枝汤。表里双解仅在大便多日不通且烦躁等必要时。
+  clauses: [44, 45]
+  topics: [method.jie_biao, formula.gui_zhi_tang, concept.biao_li]
+- key: c04
+  title: 第46条 八九日表仍在用麻黄汤；衄血与纯阳之体
+  start_seq: 57
+  summary: 脉浮紧、无汗、发热身疼痛，虽过一候（六日）表证仍在则仍麻黄汤；服后仅微汗而烦躁、衄血，多见于十四岁以下纯阳之体，衄可代汗，不必惊慌。
+  clauses: [46]
+  topics: [formula.ma_huang_tang, syndrome.tai_yang_shang_han, symptom.nv, pulse.mai_fu_jin]
+- key: c04.s1
+  parent: c04
+  title: 小儿常衄与九十岁衄解的对比
+  start_seq: 72
+  summary: 小儿阳旺常流鼻血反不易高烧；十四岁后天癸至后衄少；若九十岁感冒仍能衄解则说明阳气极强。三四十岁无表证而衄须排查里病。
+- key: c05
+  title: 第48条 二阳并病：汗不彻转阳明仍有表则勿下
+  start_seq: 106
+  summary: 太阳初起桂枝、麻黄、葛根发汗手软、汗出不彻，六日后转入阳明可见下利、呕恶、便秘，若仍有太阳症则万不可攻下；津液被提至体表而未透出即致肠燥。
+  clauses: [48]
+  topics: [six_channel.yangming, formula.gui_zhi_tang, formula.ge_gen_tang, method.fa_han]
+- key: c06
+  title: 有表不可攻下与汗不彻的熏法补救
+  start_seq: 126
+  summary: 表证在则不可攻下，防表邪下陷肺或三焦；汗出不彻致游走痛、脉细微者，宜小发汗或以草药蒸汽熏之，勿大发。
+  topics: [method.fa_han, syndrome.biao_zheng, concept.jin_ye]
+- key: c06.s1
+  parent: c06
+  title: 奉节—秭归案：汗后当风与因地制宜
+  start_seq: 159
+  summary: 经方家在重庆山区得伤寒，奉节服麻黄汤后乘船当风致汗不彻；秭归再诊见涩脉，以水梨等补津液后再予麻黄汤，强调因时因地制宜。
+- key: c07
+  title: 第49–50条 脉浮数当下则身重心悸不可再汗
+  start_seq: 184
+  summary: 脉浮数本当汗愈，误下则身重、心有动悸，不可再发汗；素虚之人汗后津液难复、汗为心液故悸，宜休息喝稀饭待阴液自回、自汗而解。尺脉细弱主阴虚。
+  clauses: [49, 50]
+  topics: [pulse.mai_fu_shu, symptom.shen_zhong, symptom.xin_ji, concept.yin_xu]
+- key: c07.s1
+  parent: c07
+  title: 营卫辨：中风伤卫、伤寒营卫俱伤
+  start_seq: 218
+  summary: 脉浮紧身疼痛法当汗解，若尺中迟则营不足血少不可发汗；以《内经》营卫论：中风伤卫，伤寒营卫俱伤，故麻黄汤中麻黄配桂枝。
+  clauses: [50]
+- key: c08
+  title: 第51–54条 脉浮可汗；营卫和谐与桂枝汤常服
+  start_seq: 336
+  summary: 脉浮者病在表可发汗，麻黄汤证须无汗、身痛恶寒重且不可手软；病常自汗出为营卫不和宜桂枝汤；脏无他病时发热自汗不愈者，先其时发汗宜桂枝汤，亦可作日常调和营卫之用。
+  clauses: [51, 52, 53, 54]
+  topics: [formula.ma_huang_tang, formula.gui_zhi_tang, concept.ying_wei, herb.gui_zhi, herb.shao_yao]
+- key: c09
+  title: 麻黄汤组成与衄代汗；承气三方及表里先后
+  start_seq: 376
+  summary: 麻黄汤麻黄杏仁宣肺、桂枝走卫营乃能出汗，杏仁防伤肺津；衄而未周身汗则仍须再予麻黄汤。顺带简介调胃/小/大承气所主部位与以小便色判停药；不大便六七日有头痛须辨小便清则病在表宜汗，便秘习惯者解表宜桂枝代麻黄，必要时表里同用。
+  clauses: [55, 56]
+  topics: [formula.ma_huang_tang, formula.diao_wei_cheng_qi_tang, formula.xiao_cheng_qi_tang, formula.da_cheng_qi_tang]
+- key: c09.s1
+  parent: c09
+  title: 第56条后：伤寒汗后转中风改桂枝汤
+  start_seq: 467
+  summary: 伤寒予麻黄汤后营分已解而卫分未解，可仅见中风证，改予桂枝汤；印证中风伤卫、伤寒营卫俱伤。
+entities:
+- {id: clause.shl.042, seq: 1, surface: 第四十七个条变, corrected: 伤寒论第42条, note: 倪师讲义编号47，对应宋本42}
+- {id: clause.shl.043, seq: 5, surface: 第四十八条, corrected: 伤寒论第43条, note: 讲义48→宋本43}
+- {id: formula.gui_zhi_jia_hou_po_xing_zi_tang, seq: 6, surface: 桂枝加后补杏仁汤, corrected: 桂枝加厚朴杏子汤}
+- {id: herb.hou_po, seq: 6, surface: 后补, corrected: 厚朴}
+- {id: herb.hou_po, seq: 16, surface: hope, corrected: 厚朴}
+- {id: herb.bai_zhu, seq: 16, surface: 白竹, corrected: 白术}
+- {id: herb.hou_po, seq: 18, surface: 厚谱, corrected: 厚朴}
+- {id: zangfu.pi, seq: 20, surface: 皮脏, corrected: 脾脏}
+- {id: herb.bai_zhu, seq: 23, surface: 白族, corrected: 白术}
+- {id: formula.bai_hu_jia_ren_shen_tang, seq: 26, surface: 白虎加任参汤, corrected: 白虎加人参汤, uncertain: true}
+- {id: herb.fu_zi, seq: 29, surface: 泡附子, corrected: 炮附子, dosage: null}
+- {id: herb.xing_ren, seq: 34, surface: 杏人, corrected: 杏仁, dosage: 四至五钱}
+- {id: clause.shl.044, seq: 46, surface: 第四十九条, corrected: 伤寒论第44条, note: 讲义49→宋本44}
+- {id: clause.shl.045, seq: 54, surface: 第五十条, corrected: 伤寒论第45条, note: 讲义50→宋本45}
+- {id: clause.shl.046, seq: 57, surface: 第五十一条, corrected: 伤寒论第46条, note: 讲义51→宋本46}
+- {id: pulse.mai_fu_jin, seq: 58, surface: 麦浮井, corrected: 脉浮紧}
+- {id: symptom.nv, seq: 65, surface: new, corrected: 衄（流鼻血）}
+- {id: new.concept.天癸, seq: 73, surface: 天魁, corrected: 天癸}
+- {id: clause.shl.048, seq: 106, surface: 第五十三条, corrected: 伤寒论第48条, note: 讲义53二阳并病→宋本48}
+- {id: new.concept.二阳并病, seq: 106, surface: 二阳命病, corrected: 二阳并病}
+- {id: formula.ge_gen_tang, seq: 123, surface: 葛汤汤, corrected: 葛根汤}
+- {id: clause.shl.049, seq: 184, surface: 五十四条, corrected: 伤寒论第49条, note: 讲义54→宋本49}
+- {id: pulse.mai_fu_shu, seq: 184, surface: 麦浮附字, corrected: 脉浮数}
+- {id: new.concept.汗为心液, seq: 198, surface: 探为心液, corrected: 汗为心液}
+- {id: clause.shl.050, seq: 218, surface: 第五十五条, corrected: 伤寒论第50条, note: 讲义55→宋本50}
+- {id: pulse.chi, seq: 221, surface: 始终的脉, corrected: 尺中脉, uncertain: true}
+- {id: concept.ying_qi, seq: 225, surface: 营气, corrected: 营气}
+- {id: concept.wei_qi, seq: 233, surface: 胃, corrected: 卫（卫气）, note: ASR常把卫听成胃}
+- {id: clause.shl.051, seq: 336, surface: 第五十六条, corrected: 伤寒论第51条, note: 讲义56→宋本51}
+- {id: clause.shl.052, seq: 344, surface: 五十七条, corrected: 伤寒论第52条, note: 讲义57→宋本52}
+- {id: clause.shl.053, seq: 346, surface: 五十八条, corrected: 伤寒论第53条, note: 讲义58→宋本53}
+- {id: clause.shl.054, seq: 369, surface: 五十九, corrected: 伤寒论第54条, note: 讲义59→宋本54}
+- {id: herb.shao_yao, seq: 362, surface: 白芍, corrected: 白芍}
+- {id: formula.diao_wei_cheng_qi_tang, seq: 409, surface: 调味气汤汤, corrected: 调胃承气汤}
+- {id: formula.xiao_cheng_qi_tang, seq: 411, surface: 小沉气汤, corrected: 小承气汤}
+- {id: formula.da_cheng_qi_tang, seq: 412, surface: 大沉气汤, corrected: 大承气汤}
+- {id: new.concept.印堂头痛, seq: 442, surface: 印堂这边头痛, corrected: 印堂头痛（便秘头痛）}
+- {id: clause.shl.055, seq: 405, surface: 伤寒呢不大便，六七天, corrected: 伤寒论相关条文（不大便六七日辨表里）, note: 讲义上下文；承气与衄辨}
+- {id: clause.shl.056, seq: 467, surface: 第二十六条呢伤寒发汗, corrected: 伤寒论第56条附近（汗后脉浮数改桂枝）, note: ASR条号错乱，按营卫已解未解理解, uncertain: true}
+kps:
+- type: clause_interpretation
+  s: 第42条：太阳病外证未解、脉浮弱者当以汗解，宜桂枝汤；中风证仍在即仍可用，不限于初病。
+  seq: [2, 4]
+  q: 脉浮弱者当以汗解桂枝汤
+  ents: [clause.shl.042, formula.gui_zhi_tang, pulse.mai_fu_ruo, syndrome.tai_yang_zhong_feng]
+  conf: 0.9
+- type: formula_indication
+  s: 桂枝汤证又兼咳嗽或微喘时，于桂枝汤上加厚朴、杏仁，即桂枝加厚朴杏子汤。
+  seq: [8, 14]
+  q: 本身有桂枝汤证，那还是有带有咳嗽
+  ents: [formula.gui_zhi_jia_hou_po_xing_zi_tang, formula.gui_zhi_tang, herb.hou_po, herb.xing_ren, disease.ke_sou]
+  conf: 0.85
+  asr: 后补/候补=厚朴；柜子=桂枝；hope=厚朴；白竹=白术
+- type: herb_property
+  s: 厚朴祛「皮湿」：把脾湿迁入小肠，使小肠能增润津液；承气类方用厚朴亦同此意。
+  seq: [18, 22]
+  q: 帮忙脾脏搬家，把脾脏的呢呢到小肠里面去
+  ents: [herb.hou_po, zangfu.pi, zangfu.xiao_chang, concept.jin_ye]
+  conf: 0.85
+  asr: 厚谱/后补=厚朴；皮脏=脾脏
+- type: herb_property
+  s: 白术祛肌肉关节与中焦之湿，须配茯苓才能从小便尽去；白术配炮附子则是祛湿并向表推邪（如阴疽、骨脓），与配茯苓利尿不同。
+  seq: [23, 32]
+  q: 白术的时候，你不用茯苓的时候，湿就不会完全去掉
+  ents: [herb.bai_zhu, herb.fu_ling, herb.fu_zi]
+  conf: 0.85
+  asr: 白族=白术；泡附子=炮附子
+- type: herb_property
+  s: 杏仁止咳祛痰，并能润肺中津液；本方用量大约四至五钱。
+  seq: [34, 41]
+  q: 这杏人呢能够止咳
+  ents: [herb.xing_ren]
+  conf: 0.85
+  asr: 杏人=杏仁；精液=津液
+- type: clinical_tip
+  s: 用发表药时，理想汗出是皮肤湿哒哒、摸上去又似无大汗的「湿绵绵」，而非大汗淋漓。
+  seq: [43, 44]
+  q: 就是湿绵绵的这种最好好
+  ents: [method.fa_biao, method.fa_han]
+  conf: 0.9
+- type: treatment_principle
+  s: 大原则：有表证必先解表再攻里；仅当大便五六日不下且人烦躁等必要时才考虑表里双解，切不可有表直接攻下。
+  seq: [46, 52]
+  q: 一定要先解表再去谈理，这是大原则
+  ents: [method.jie_biao, formula.gui_zhi_tang, concept.biao_li]
+  conf: 0.9
+- type: clause_interpretation
+  s: 第45条意：太阳病先发汗不解而又下之，若脉仍浮，说明病未离表，仍可用桂枝汤。
+  seq: [54, 56]
+  q: 脉浮呢，所以我们知道病还在外要解的还是用桂枝汤
+  ents: [clause.shl.045, formula.gui_zhi_tang, pulse.fu]
+  conf: 0.85
+- type: clause_interpretation
+  s: 第46条：脉浮紧、无汗、发热身疼痛，虽已八九日、过一候（六日）本当入里，表证仍在则仍予麻黄汤。
+  seq: [57, 63]
+  q: 虽然过了一个候啊，一猴就是六天以后表症，还是有你还是要麻黄汤
+  ents: [clause.shl.046, formula.ma_huang_tang, pulse.mai_fu_jin, syndrome.tai_yang_shang_han]
+  conf: 0.9
+  asr: 麦浮井=脉浮紧；一猴=一候
+- type: clinical_tip
+  s: 麻黄汤后仅微汗而烦躁继以衄血，常见于十四岁以下纯阳之体，衄可作汗解之机，不必惊慌；小儿常衄者往往不易高烧。
+  seq: [64, 80]
+  q: 小孩子呢你只要发，只要是常常流鼻血的，他不会发高烧的哦
+  ents: [formula.ma_huang_tang, symptom.nv, symptom.fan_zao]
+  conf: 0.8
+- type: diagnostic_rule
+  s: 三四十岁无脉浮紧发热身痛而流鼻血，不可当「衄解」放过，须查明有无里病。
+  seq: [104, 105]
+  q: 三四十岁的人没事，也没有也没有拜辅警的发热
+  ents: [symptom.nv]
+  conf: 0.75
+  asr: 拜辅警=脉浮紧
+- type: pathomechanism
+  s: 二阳并病：太阳发汗手软、汗出不彻，津液被提至体表却未透出，肠胃津液亏则转阳明，可见下利、恶心呕吐或便秘，若太阳症未尽则不可攻下。
+  seq: [113, 127]
+  q: 汗出不彻照，然后过了六天，结果呢转到阳明病
+  ents: [clause.shl.048, six_channel.yangming, formula.gui_zhi_tang, formula.ge_gen_tang, concept.jin_ye]
+  conf: 0.85
+  asr: 二阳命病=二阳并病
+- type: contraindication
+  s: 只要表证仍在，即使已见便秘也不可攻下，恐表邪下陷于肺或三焦等。
+  seq: [127, 132]
+  q: 只要病人有表证在那边，你就不可以攻下
+  ents: [syndrome.biao_zheng, method.fa_han]
+  conf: 0.9
+- type: clinical_tip
+  s: 已发过汗而未透者，宜小发汗或以甘草、菖蒲、艾草等蒸汽熏之令微汗，勿再大发。
+  seq: [133, 142]
+  q: 小小发汗就好了，不用大发汗啊
+  ents: [method.fa_han, herb.gan_cao, herb.chang_pu]
+  conf: 0.8
+- type: pathomechanism
+  s: 汗出不彻可见游走性痛楚、不知痛处固定；脉偏细微（涩脉）是汗未透的指征，再予适当发汗可愈。
+  seq: [145, 152]
+  q: 这种就是汗出，没有透彻
+  ents: [pulse.se, method.fa_han]
+  conf: 0.8
+  asr: 色脉=涩脉
+- type: clinical_tip
+  s: 治病要因时因地制宜：汗后当风致邪不尽时，可先以水梨等补津液再予麻黄汤，不必拘泥一定要熏蒸。
+  seq: [174, 179]
+  q: 要因时因地制宜嘛
+  ents: [formula.ma_huang_tang, concept.jin_ye]
+  conf: 0.85
+- type: clause_interpretation
+  s: 第49条：脉浮数者法当汗出而愈；若误下致身重、心有动悸，则不可再发汗，当俟其自汗而解。
+  seq: [184, 195]
+  q: 身重心有动悸者，这时候不可发汗了
+  ents: [clause.shl.049, pulse.mai_fu_shu, symptom.shen_zhong, symptom.xin_ji]
+  conf: 0.9
+  asr: 麦浮附字=脉浮数
+- type: pathomechanism
+  s: 汗为心液：素虚之人发汗后血中津液不足则心悸；尺脉细弱主阴虚。伤寒家此时主张休息食养待阴液自回，不必急用温病派滋阴药。
+  seq: [197, 214]
+  q: 探为心液
+  ents: [new.concept.汗为心液, concept.yin_xu, symptom.xin_ji]
+  conf: 0.85
+  asr: 探为心液=汗为心液；齿脉=尺脉
+- type: clinical_tip
+  s: 里虚汗后不宜再攻表：让病人多喝稀饭、番薯粥配酱菜等易消化物，必要时略用葱姜助微汗，待表里都实时自汗而愈。
+  seq: [204, 217]
+  q: 让他多喝点稀饭啊
+  ents: [concept.jin_ye, herb.sheng_jiang]
+  conf: 0.85
+- type: contraindication
+  s: 第50条：脉浮紧身疼痛本当汗解；若尺中迟，为营不足、血少，不可发汗。
+  seq: [218, 225]
+  q: 因为他营气不足，血少
+  ents: [clause.shl.050, pulse.mai_fu_jin, concept.ying_qi]
+  conf: 0.9
+- type: concept_definition
+  s: 以营卫释中风与伤寒：中风只伤卫；伤寒营卫俱伤，故麻黄汤中麻黄与桂枝同用。
+  seq: [227, 235]
+  q: 中风呢是伤到只伤到胃
+  ents: [syndrome.zhong_feng, syndrome.shang_han, concept.ying_qi, concept.wei_qi, formula.ma_huang_tang]
+  conf: 0.85
+  asr: 胃/位=卫；银=营；淫位=营卫
+- type: diagnostic_rule
+  s: 脉浮主病在表，脉数主热；法当汗出而愈。误下后身重、心悸者不可再发汗。
+  seq: [239, 246]
+  q: 有出现脉是浮，代表病在表
+  ents: [pulse.fu, pulse.shu, symptom.shen_zhong, symptom.xin_ji]
+  conf: 0.85
+- type: clinical_tip
+  s: 素体湿盛、尺脉弱、舌苔厚白的桂枝汤证，可于方中加白术茯苓，使表解同时从小便祛湿，减少身重心悸一类变证。
+  seq: [281, 286]
+  q: 可以加些白术茯苓，在里面同时开了发的的里面当表御解
+  ents: [formula.gui_zhi_tang, herb.bai_zhu, herb.fu_ling]
+  conf: 0.8
+- type: pathomechanism
+  s: 脉浮紧为伤寒在表：浮主表、紧主寒；毛孔收缩汗不得出，水液循环受阻则全身疼痛，法当汗解。
+  seq: [290, 296]
+  q: 浮呢就是表好紧呢就是寒非常的紧
+  ents: [pulse.mai_fu_jin, syndrome.shang_han, symptom.ti_tong]
+  conf: 0.9
+- type: contraindication
+  s: 欲用麻黄汤而尺中迟者不可发汗：麻黄力猛动血中之水，贫血或营血不足者强发则血更亏（汗血同源）。
+  seq: [297, 306]
+  q: 血会更亏啊，因为我是汗血同源血更亏
+  ents: [formula.ma_huang_tang, concept.ying_qi, herb.ma_huang]
+  conf: 0.85
+- type: clinical_tip
+  s: 必须发汗而阴血不足时，可先予水梨、桃、西瓜等补津液之物，再服麻黄汤，以减轻伤津动血。
+  seq: [311, 327]
+  q: 你可给他吃一些水泥呀
+  ents: [formula.ma_huang_tang, concept.jin_ye]
+  conf: 0.8
+  asr: 水泥=水梨
+- type: diagnostic_rule
+  s: 麻黄汤后心无所悸说明心脏能耐受；若一服即心悸加速、倦怠，提示心气尚未恢复，暂减麻黄，待眠食二便正常后再试。
+  seq: [329, 334]
+  q: 心脏不好的时候，你麻黄汤一下去心就开始跳
+  ents: [formula.ma_huang_tang, symptom.xin_ji, herb.ma_huang]
+  conf: 0.8
+- type: clause_interpretation
+  s: 第51条：脉浮者病在表，可发汗，宜麻黄汤；凡太阳中风、温病、伤寒见表脉皆浮，而麻黄汤证必无汗、身痛恶寒重。
+  seq: [336, 339]
+  q: 外附者病在表，可以发汗麻麻黄
+  ents: [clause.shl.051, formula.ma_huang_tang, pulse.fu]
+  conf: 0.85
+  asr: 外附=脉浮
+- type: clinical_tip
+  s: 确诊麻黄汤证不可手软，最好在病之初即祛邪；拖延则最佳时机已过，青龙类方亦同理。
+  seq: [341, 343]
+  q: 你只要确定是麻黄汤症，你就看麻黄汤好，绝对不要手软
+  ents: [formula.ma_huang_tang, formula.da_qing_long_tang]
+  conf: 0.85
+- type: concept_definition
+  s: 第53条意：常自汗出为营卫不和；卫行脉外、营行脉中，复发汗致营弱卫强则愈见汗出，宜桂枝汤。
+  seq: [346, 357]
+  q: 病呢常滞汗出者，这是营气合阴气合者
+  ents: [clause.shl.053, formula.gui_zhi_tang, concept.ying_wei]
+  conf: 0.75
+  asr: ASR条号与营卫用词混乱，按标准条文义整理
+- type: formula_composition
+  s: 桂枝汤是调和营卫的代表方：桂枝扶卫阳，白芍敛营阴，二者合用调和阴阳；伤寒至金匮多处不离此二味。无事可服桂枝汤保养，不可无故服麻黄汤。
+  seq: [361, 365]
+  q: 桂枝汤时，最好调和营胃的方子
+  ents: [formula.gui_zhi_tang, herb.gui_zhi, herb.shao_yao, concept.ying_wei]
+  conf: 0.9
+  asr: 营胃=营卫
+- type: clause_interpretation
+  s: 第54条：脏无他病，时发热自汗出而不愈者，此卫气不和也，先其时发汗则愈，宜桂枝汤；亦可作无明显桂枝汤证时的调养。
+  seq: [369, 373]
+  q: 时常发热，自汗好而不而不愈者
+  ents: [clause.shl.054, formula.gui_zhi_tang, concept.wei_qi]
+  conf: 0.85
+- type: clinical_tip
+  s: 经方家日常即用桂枝汤，不必非等成病；更年期仅觉身热微汗而情绪尚可者，亦可试予桂枝汤。
+  seq: [371, 375]
+  q: 桂枝汤我们经方家拿来刷牙漱口的啊，每天在用啊
+  ents: [formula.gui_zhi_tang]
+  conf: 0.8
+- type: formula_composition
+  s: 麻黄汤：麻黄配杏仁宣肺开肺；单用麻黄杏仁未必出汗，须桂枝同用才能解营卫而汗出；杏仁兼防麻黄过散伤肺津。
+  seq: [380, 391]
+  q: 一定要靠靠桂枝配在里面，才有办法出汗
+  ents: [formula.ma_huang_tang, herb.ma_huang, herb.xing_ren, herb.gui_zhi, herb.gan_cao]
+  conf: 0.9
+- type: clinical_tip
+  s: 服麻黄汤后仅衄而未周身出汗，病犹未解（衄只开「两个孔」），须再予麻黄汤至真正汗出；临床上麻黄汤证多伴高热，见衄不必停手。
+  seq: [392, 404]
+  q: 一定要去再再给麻麻汤纸啊，一定要给他发汗才能完全好
+  ents: [formula.ma_huang_tang, symptom.nv]
+  conf: 0.85
+  asr: 麻麻汤纸=麻黄汤
+- type: concept_definition
+  s: 三承气所主不同：调胃承气偏胃下十二指肠段；小承气主邪在小肠；大承气主邪壅大肠。共同见症为小便黄赤（里有燥热）。
+  seq: [409, 425]
+  q: 三个成气汤，那通通叫做成气
+  ents: [formula.diao_wei_cheng_qi_tang, formula.xiao_cheng_qi_tang, formula.da_cheng_qi_tang]
+  conf: 0.85
+  asr: 调味/沉气/成气=承气
+- type: diagnostic_rule
+  s: 攻里是否可停，以小便色为度：由深黄攻至蛋黄色即可停，表示肠中燥屎已尽；勿攻至脱肛仍不止。
+  seq: [427, 431]
+  q: 要吃到蛋黄行好，蛋黄假面是蛋黄青色的，这时候可以停了
+  ents: [formula.da_cheng_qi_tang, method.fa_han]
+  conf: 0.8
+- type: diagnostic_rule
+  s: 伤寒不大便六七日又头痛发热：小便黄赤偏承气里证，印堂痛尤提示便秘头痛；小便清淡则病仍在表，当发汗。有便秘习惯解表时宜桂枝汤代麻黄汤。
+  seq: [436, 449]
+  q: 印堂这个地方头痛好，是不是便秘的头痛
+  ents: [formula.cheng_qi_tang, formula.gui_zhi_tang, formula.ma_huang_tang, new.concept.印堂头痛]
+  conf: 0.85
+- type: clinical_tip
+  s: 表证与承气证同见时不必死板：便秘仅两三天可先解表再攻里；已六七天可将解表与承气同煎表里双解，临床可通融。
+  seq: [456, 465]
+  q: 两两个要开在一起
+  ents: [formula.ma_huang_tang, formula.da_cheng_qi_tang, concept.biao_li]
+  conf: 0.8
+- type: pathomechanism
+  s: 伤寒予麻黄汤后，若营分已解而卫分未解，伤寒证去而中风证仍在，改予桂枝汤即可；印证中风伤卫、伤寒营卫俱伤。
+  seq: [467, 476]
+  q: 淫解掉了，胃还没有解掉
+  ents: [formula.ma_huang_tang, formula.gui_zhi_tang, syndrome.shang_han, syndrome.zhong_feng, concept.ying_wei]
+  conf: 0.85
+  asr: 淫=营；胃=卫

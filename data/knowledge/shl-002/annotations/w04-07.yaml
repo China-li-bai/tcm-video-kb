@@ -1,0 +1,263 @@
+video_id: shl-002
+window: w04-07
+seg_from: 482
+seg_to: 979
+annotator: llm_read
+chapters:
+- key: c10
+  title: 第58–59条 阴阳自和必自愈；大下后汗出小便不利勿治
+  start_seq: 482
+  summary: 汗吐下后若阴阳自和（脉缓、自觉舒服、汗止且不渴）则勿再药，待其自愈，经方不主张病去后立即滋阴。大下后又发汗致小便少而无痛涩者，为津液暂伤，勿治，得小便利则愈；吐下后以「渴」判断邪是否已净。
+  clauses: [58, 59]
+  topics: [concept.yin_yang, concept.jin_ye, symptom.xiao_bian_bu_li]
+- key: c11
+  title: 第60–61条 先下后汗致虚；昼日烦躁用干姜附子汤
+  start_seq: 525
+  summary: 先攻下再发汗违背先表后里，可见怕冷、内外俱虚，张仲景不用「阴虚」字以免滥滋阴，主张食补待复。若昼日烦躁不得眠、夜则安静、身无大热、脉转沉，为阳虚，予干姜附子汤（干姜温中、生附子温心阳命门），使阳回则阴自生。
+  clauses: [60, 61]
+  topics: [formula.gan_jiang_fu_zi_tang, concept.yang_xu, symptom.fan_zao, herb.fu_zi, herb.gan_jiang]
+- key: c11.s1
+  parent: c11
+  title: 生附子与麻黄对心阳作用不同；冻疮须内服外敷
+  start_seq: 564
+  summary: 生附子去皮可免棉布包；补心阳加快收缩力而不加速心率，麻黄则加速心率。附子形似心、色黑入肾，为肾中水之火。冻疮外敷干姜附子粉不够，须配合当归四逆汤等内服。
+- key: c12
+  title: 第62条 发汗后身疼痛脉沉迟：桂枝新加汤
+  start_seq: 608
+  summary: 发汗太过或连服二三碗后，表解而身仍痛、脉沉迟，用桂枝新加汤（桂枝汤中芍药、生姜各加一两，加人参三两）补津液；与桂枝加附子汤（汗漏不止）须严格区分，错用则越补越汗。
+  clauses: [62]
+  topics: [formula.gui_zhi_jia_shao_yao_sheng_jiang_ge_yi_liang_ren_shen_san_liang_xin_jia_tang, formula.gui_zhi_jia_fu_zi_tang]
+- key: c12.s1
+  parent: c12
+  title: 发汗后饮食宜忌与胃气回复
+  start_seq: 648
+  summary: 服桂枝/麻黄/葛根类后宜清淡米汤面食，忌油腻肉类与寒凉生菜；待次日中午胃气回复再复常食。经方补阴多用参、姜、草、芍，重在复阳令阴自生。
+- key: c13
+  title: 第63条 汗后喘无大热：麻杏甘石汤及青龙比例
+  start_seq: 681
+  summary: 发汗后身愈而喘咳短气、无大热，予麻黄杏仁甘草石膏汤；本方虽有麻黄但不发汗。并授大青龙类「麻黄与石膏+杏仁等量」的黄金比例，痰多热轻则增杏仁减石膏，有高热喘甚须重用麻黄不可手软；麻杏石甘不治单纯高热。
+  clauses: [63]
+  topics: [formula.ma_huang_xing_ren_gan_cao_shi_gao_tang, herb.ma_huang, herb.shi_gao, herb.xing_ren, formula.da_qing_long_tang]
+- key: c14
+  title: 第64–65条 叉手冒心用桂枝甘草汤；脐下悸用苓桂甘枣汤
+  start_seq: 738
+  summary: 发汗过多（多因麻黄汤）见叉手自冒、心下悸，为肺津外泄、下焦水气上冲心下不及补位，予桂枝甘草汤（桂枝四甘草二）降冲气化。脐下悸欲作奔豚多为桂枝汤太过，予茯苓桂枝甘草大枣汤；茯苓除利尿外能去烦。并述脐周动悸分脏定位。
+  clauses: [64, 65]
+  topics: [formula.gui_zhi_gan_cao_tang, formula.fu_ling_gui_zhi_gan_cao_da_zao_tang, symptom.cha_shou_zi_mao_xin, symptom.xin_xia_ji, syndrome.ben_tun]
+- key: c15
+  title: 第66条 汗后腹胀满：厚朴生姜半夏甘草人参汤
+  start_seq: 876
+  summary: 发汗后腹胀满而无便秘、排气多为虚胀，予厚朴生姜半夏甘草人参汤；以小便色及按腹拒按与否辨虚实胀，实胀属承气。亦辨「便秘引起的下利」（天枢拒按、仅水出）及条状细便。方中厚朴移脾湿入肠，参草补津，姜夏止呕逆。
+  clauses: [66]
+  topics: [formula.hou_po_sheng_jiang_ban_xia_gan_cao_ren_shen_tang, symptom.fu_man, herb.hou_po]
+- key: c16
+  title: 第67条 吐下后心下逆满：苓桂术甘汤
+  start_seq: 950
+  summary: 伤寒本当解表，若先吐下伤肠胃津液再发汗，则肺与肠津皆伤，水停横膈心下，见逆满、气上冲胸、头眩、脉沉紧，发汗则动经，予茯苓桂枝白术甘草汤（苓桂术甘汤）利中焦水饮、桂枝降逆。
+  clauses: [67]
+  topics: [formula.fu_ling_gui_zhi_bai_zhu_gan_cao_tang, zangfu.xin_xia, concept.jin_ye]
+entities:
+- {id: clause.shl.059, seq: 504, surface: 六十四条, corrected: 伤寒论第59条, note: 讲义64→宋本59}
+- {id: clause.shl.060, seq: 525, surface: 第六十五条, corrected: 伤寒论第60条, note: 讲义65→宋本60}
+- {id: new.concept.内外俱虚, seq: 529, surface: 内外巨虚, corrected: 内外俱虚}
+- {id: clause.shl.061, seq: 541, surface: 六十六条, corrected: 伤寒论第61条, note: 讲义66→宋本61}
+- {id: formula.gan_jiang_fu_zi_tang, seq: 561, surface: 干姜，附子汤, corrected: 干姜附子汤}
+- {id: herb.fu_zi, seq: 564, surface: 生附子, corrected: 生附子, note: 生用去皮破八片}
+- {id: formula.dang_gui_si_ni_tang, seq: 591, surface: 当归四泥汤, corrected: 当归四逆汤}
+- {id: clause.shl.062, seq: 608, surface: 第六十七条, corrected: 伤寒论第62条, note: 讲义67→宋本62}
+- {id: formula.gui_zhi_jia_shao_yao_sheng_jiang_ge_yi_liang_ren_shen_san_liang_xin_jia_tang, seq: 618, surface: 心加汤, corrected: 桂枝新加汤}
+- {id: formula.gui_zhi_jia_fu_zi_tang, seq: 619, surface: 桂枝汤家附子, corrected: 桂枝加附子汤}
+- {id: pulse.mai_chen_chi, seq: 621, surface: 脉沉迟子, corrected: 脉沉迟}
+- {id: clause.shl.063, seq: 681, surface: 第六十八条, corrected: 伤寒论第63条, note: 讲义68→宋本63}
+- {id: formula.ma_huang_xing_ren_gan_cao_shi_gao_tang, seq: 683, surface: 麻杏甘草汤, corrected: 麻黄杏仁甘草石膏汤}
+- {id: formula.da_qing_long_tang, seq: 714, surface: 大青香汤, corrected: 大青龙汤}
+- {id: formula.da_xian_xiong_tang, seq: 714, surface: 大陷胸汤, reject: true, note: ASR把大青龙听成大陷胸}
+- {id: clause.shl.064, seq: 738, surface: 第六十九条, corrected: 伤寒论第64条, note: 讲义69→宋本64}
+- {id: symptom.cha_shou_zi_mao_xin, seq: 740, surface: 擦手自冒，心心下悸, corrected: 叉手自冒，心下悸}
+- {id: formula.gui_zhi_gan_cao_tang, seq: 817, surface: 桂枝甘草汤, corrected: 桂枝甘草汤}
+- {id: formula.gui_zhi_jia_gui_tang, seq: 826, surface: 桂枝加桂汤, corrected: 桂枝加桂汤}
+- {id: clause.shl.065, seq: 843, surface: 第七十条, corrected: 伤寒论第65条, note: 讲义70→宋本65}
+- {id: new.symptom.脐下悸, seq: 845, surface: 脐下忌, corrected: 脐下悸}
+- {id: formula.fu_ling_gui_zhi_gan_cao_da_zao_tang, seq: 847, surface: 林桂甘枣汤, corrected: 茯苓桂枝甘草大枣汤}
+- {id: syndrome.ben_tun, seq: 847, surface: 奔腾, corrected: 奔豚}
+- {id: clause.shl.066, seq: 876, surface: 七十一条, corrected: 伤寒论第66条, note: 讲义71→宋本66}
+- {id: formula.hou_po_sheng_jiang_ban_xia_gan_cao_ren_shen_tang, seq: 878, surface: 后补生姜半夏甘草人参汤, corrected: 厚朴生姜半夏甘草人参汤}
+- {id: herb.hou_po, seq: 878, surface: 后补, corrected: 厚朴}
+- {id: clause.shl.067, seq: 950, surface: 第七十二条, corrected: 伤寒论第67条, note: 讲义72→宋本67}
+- {id: formula.fu_ling_gui_zhi_bai_zhu_gan_cao_tang, seq: 957, surface: 苓桂疏肝汤, corrected: 茯苓桂枝白术甘草汤（苓桂术甘汤）}
+kps:
+- type: diagnostic_rule
+  s: 汗吐下后阴阳自和的指征：寸尺脉转缓不浮、医患一呼一吸间约四至五至、自觉舒服略累、汗已止且不渴——此时勿再投药，必自愈。
+  seq: [487, 496]
+  q: 这就代表从脉上面可以知道，阴阳和
+  ents: [concept.yin_yang, pulse.huan]
+  conf: 0.85
+- type: treatment_principle
+  s: 经方大原则：病症已去后勿急用滋阴药，应待阴液自行回复才算真愈；健康人可食补，病中不以补药代痊愈。
+  seq: [497, 502]
+  q: 要让他自己回头好才是真的痊愈
+  ents: [person.zhang_zhong_jing, concept.jin_ye]
+  conf: 0.85
+- type: clause_interpretation
+  s: 第59条：大下之后又发汗，见小便不利（量少而非淋痛结石），为津液暂伤，勿治之，得小便利则愈。
+  seq: [504, 509]
+  q: 小便不利者，王清也不也勿治之，得小便利必愈
+  ents: [clause.shl.059, symptom.xiao_bian_bu_li, concept.jin_ye]
+  conf: 0.9
+  asr: 大夏=大下；王清=亡津液
+- type: diagnostic_rule
+  s: 吐下后判断邪尽的技巧：若服药（如峻吐剂）后出现明显口渴，多表示邪已净、津已伤，勿再投药；不渴则邪未必尽。
+  seq: [515, 521]
+  q: 我问你渴不渴，我很口渴。好了，结束了
+  ents: [concept.jin_ye, new.symptom.口渴]
+  conf: 0.8
+- type: treatment_principle
+  s: 第60条：先下后汗属顺序错误，可见怕冷、表里皆虚；张仲景写作「内外俱虚」而不写阴虚阳虚，以免医者滥开滋阴。无险象时宜食补静养。
+  seq: [525, 535]
+  q: 他绝对不会选阴虚阳虚，他不用这个字的
+  ents: [clause.shl.060, new.concept.内外俱虚, concept.yin_xu]
+  conf: 0.85
+- type: clause_interpretation
+  s: 第61条：下之后复发汗，昼日烦躁不得眠、夜而安静、不渴、身无大热、脉沉，为阳虚，干姜附子汤主之。
+  seq: [543, 561]
+  q: 病人呢出现了昼日躁不得眠
+  ents: [clause.shl.061, formula.gan_jiang_fu_zi_tang, symptom.fan_zao, concept.yang_xu]
+  conf: 0.9
+- type: clinical_tip
+  s: 临床最怕烦躁：安宁病房临终多见烦躁手足乱动；一旦昼烦夜安就要处方，仅「人虚而平稳」可观察勿药。
+  seq: [545, 607]
+  q: 一旦遇到烦躁烦躁了，病人会白天很烦躁啊，晚上很正常
+  ents: [symptom.fan_zao]
+  conf: 0.85
+- type: herb_property
+  s: 干姜附子汤：干姜约二钱温中温肺，生附子约二钱（去皮破八片）温心阳、补命门；肾阳不足多用炮附子，四逆救心阳可用生附子。
+  seq: [561, 573]
+  q: 干姜呢，你不要真的开一两哈
+  ents: [formula.gan_jiang_fu_zi_tang, herb.gan_jiang, herb.fu_zi, formula.si_ni_tang]
+  conf: 0.85
+- type: herb_property
+  s: 生附子增强心收缩力而不加快心率；麻黄则加速心率。附子形如心、色黑入肾，为肾中水中之火，使死水变活。
+  seq: [575, 580]
+  q: 生附子不会啊，这两个不太一样好
+  ents: [herb.fu_zi, herb.ma_huang]
+  conf: 0.85
+- type: treatment_principle
+  s: 张仲景补阳不补阴：干姜附子汤使阳回则阴自生，不加生地麦冬等滋阴药。
+  seq: [582, 585]
+  q: 阳会回头阳回来以后，阴会自己会慢慢慢回来
+  ents: [formula.gan_jiang_fu_zi_tang, concept.yang_xu]
+  conf: 0.9
+- type: clinical_tip
+  s: 小儿冻疮外敷干姜附子粉不够，须同时内服当归四逆汤等，才能避免截肢之祸；先熟伤寒再读他书才不致迷惑。
+  seq: [587, 595]
+  q: 光是外敷不够
+  ents: [formula.dang_gui_si_ni_tang, formula.gan_jiang_fu_zi_tang]
+  conf: 0.8
+- type: formula_indication
+  s: 第62条桂枝新加汤：发汗后身疼痛、脉沉迟，表邪已去而津伤；于桂枝汤增芍药、生姜各一两并加人参三两。汗漏不止当用桂枝加附子汤，二者不可互换。
+  seq: [613, 626]
+  q: 这个新加汤跟我们前面的桂枝汤家附子不一样
+  ents: [clause.shl.062, formula.gui_zhi_jia_shao_yao_sheng_jiang_ge_yi_liang_ren_shen_san_liang_xin_jia_tang, formula.gui_zhi_jia_fu_zi_tang, pulse.mai_chen_chi]
+  conf: 0.9
+  asr: 心加汤/新家汤=新加汤
+- type: treatment_principle
+  s: 经方「滋阴」多用生晒参、生姜、甘草、芍药，重在恢复脏腑阳气令阴液自生，而非以外源性滋阴药取代自体制造（类比激素、胰岛素使人退化）。
+  seq: [627, 642]
+  q: 希望你阴液要治回，而不是你补阴的药给你
+  ents: [herb.ren_shen, herb.shao_yao, concept.yang_qi]
+  conf: 0.8
+- type: clinical_tip
+  s: 服发表药后宜清淡米汤或烂面，忌油腻肉类与寒凉生菜沙拉；次日中午胃气回复即为可复常食的标志。
+  seq: [654, 669]
+  q: 第二天中午胃气回复了
+  ents: [formula.gui_zhi_tang, method.fa_han]
+  conf: 0.85
+- type: contraindication
+  s: 汗漏不止误投新加汤会「边补津边漏汗」越补越坏；表虚汗漏须桂枝加附子汤收敛。
+  seq: [671, 679]
+  q: 流汗不止的时候，要桂枝汤加附子，不要给他新加汤
+  ents: [formula.gui_zhi_jia_fu_zi_tang, formula.gui_zhi_jia_shao_yao_sheng_jiang_ge_yi_liang_ren_shen_san_liang_xin_jia_tang]
+  conf: 0.9
+- type: clause_interpretation
+  s: 第63条：发汗后汗出而喘、无大热，予麻黄杏仁甘草石膏汤；热已退仅余喘咳短气时用之，本方有麻黄但不发汗。
+  seq: [681, 690]
+  q: 汗出而喘，无大恶者咳与好麻杏甘草汤
+  ents: [clause.shl.063, formula.ma_huang_xing_ren_gan_cao_shi_gao_tang]
+  conf: 0.9
+  asr: 无大恶=无大热；麻杏甘草=麻杏甘石
+- type: formula_composition
+  s: 大青龙类黄金比例：麻黄剂量≈石膏+杏仁之和（如麻黄六钱则石膏四杏仁二），可防伤津；痰多热轻则石膏减杏仁增，但石膏与杏仁之和仍应与麻黄等。
+  seq: [698, 720]
+  q: 四加二是不六钱，刚好跟麻黄汤等的
+  ents: [formula.da_qing_long_tang, herb.ma_huang, herb.shi_gao, herb.xing_ren]
+  conf: 0.85
+- type: clinical_tip
+  s: 高热喘甚如SARS类大青龙证，麻黄剂量不足会误事，须按比例重用；麻杏甘石本身不针对高热，见高热却开本方即属误治。
+  seq: [714, 724]
+  q: 麻辛甘蔗汤不是要治治疗发烧的
+  ents: [formula.ma_huang_xing_ren_gan_cao_shi_gao_tang, formula.da_qing_long_tang]
+  conf: 0.85
+  asr: 大青香/大陷胸多为大青龙之误
+- type: clause_interpretation
+  s: 第64条：发汗过多见叉手自冒、心下悸，桂枝甘草汤主之；多为麻黄汤发汗太过，肺津外泄而下焦水气上冲不及补位。
+  seq: [738, 740]
+  q: 擦手自冒，心心下悸
+  ents: [clause.shl.064, formula.gui_zhi_gan_cao_tang, symptom.cha_shou_zi_mao_xin, symptom.xin_xia_ji]
+  conf: 0.9
+- type: diagnostic_rule
+  s: 脐周动悸分脏：脐上属肾、脐左属肝、脐下属心、脐右属肺、正中属脾；按之舒适多为虚水上冲，按之剧痛须警惕癥积。
+  seq: [745, 794]
+  q: 肚脐的左边有洞悸，从肝脏肚脐以下，我们从心脏
+  ents: [zangfu.xin_xia, zangfu.pi]
+  conf: 0.75
+  asr: 洞悸=动悸
+- type: pathomechanism
+  s: 肺津靠「饮食之水」经小肠腐熟、大肠气化上潮而来；仅喝水难止渴。麻黄汤后肺水外泄，下焦水来不及上补则停于心下而悸。
+  seq: [765, 790]
+  q: 肺里面的精液会往外走
+  ents: [formula.ma_huang_tang, concept.jin_ye, zangfu.fei]
+  conf: 0.85
+- type: formula_composition
+  s: 桂枝甘草汤桂枝四两、甘草二两，顿服；桂枝能降冲逆、气化心下水气。桂枝加桂汤则于桂枝汤中加肉桂，用于奔豚一类冲脉上逆。
+  seq: [817, 831]
+  q: 桂枝四这甘草二
+  ents: [formula.gui_zhi_gan_cao_tang, formula.gui_zhi_jia_gui_tang, herb.gui_zhi, meridian.tv]
+  conf: 0.85
+- type: clause_interpretation
+  s: 第65条：发汗后脐下悸、欲作奔豚，茯苓桂枝甘草大枣汤主之；多因桂枝汤发汗太过。苓桂甘枣较桂枝甘草汤多茯苓、大枣，茯苓能去烦。
+  seq: [843, 862]
+  q: 七十条呢吃桂枝汤太过好，所以动剂的位置不一样
+  ents: [clause.shl.065, formula.fu_ling_gui_zhi_gan_cao_da_zao_tang, syndrome.ben_tun, herb.fu_ling]
+  conf: 0.9
+  asr: 奔腾=奔豚；林桂甘枣=苓桂甘枣
+- type: clause_interpretation
+  s: 第66条：发汗后腹胀满者，厚朴生姜半夏甘草人参汤主之；虚胀无便秘而多矢气，实胀属承气，可以小便色与按腹拒按鉴别。
+  seq: [876, 889]
+  q: 发汗以后，腹胀满者
+  ents: [clause.shl.066, formula.hou_po_sheng_jiang_ban_xia_gan_cao_ren_shen_tang, symptom.fu_man]
+  conf: 0.9
+- type: diagnostic_rule
+  s: 「便秘引起的下利」：日泻数十次皆水，天枢周围拒按，乃燥屎堵塞仅从缝隙漏水；或便如细长蛇状，皆属承气实胀，须与虚胀多矢气区分。
+  seq: [897, 917]
+  q: 这是承气汤症便秘引起的下利
+  ents: [formula.cheng_qi_tang, symptom.xia_li]
+  conf: 0.85
+- type: formula_composition
+  s: 厚朴生姜半夏甘草人参汤：厚朴移脾湿入肠以复肠津，姜夏治呕逆，人参炙草补津；排气多、腹胀气广用之。
+  seq: [920, 948]
+  q: 排气太多，肚子胀气胀胀的好都在
+  ents: [formula.hou_po_sheng_jiang_ban_xia_gan_cao_ren_shen_tang, herb.hou_po, herb.ban_xia, herb.ren_shen]
+  conf: 0.85
+- type: clause_interpretation
+  s: 第67条：伤寒若吐若下后，心下逆满、气上冲胸、起则头眩、脉沉紧，发汗则动经，身为振振摇者，茯苓桂枝白术甘草汤主之。
+  seq: [952, 957]
+  q: 心象逆满，要吃到坏的食物啊
+  ents: [clause.shl.067, formula.fu_ling_gui_zhi_bai_zhu_gan_cao_tang, zangfu.xin_xia]
+  conf: 0.85
+  asr: 心象逆满=心下逆满；苓桂疏肝=苓桂术甘
+- type: pathomechanism
+  s: 先吐泻伤肠胃津液，再发汗夺肺津，上下之水皆亏，水气停于横膈心下不能转运，故头眩振摇；西医或归中耳，中医责中焦停水。
+  seq: [962, 979]
+  q: 水汽停在横隔的地方，没有办法运
+  ents: [concept.jin_ye, zangfu.xin_xia, formula.fu_ling_gui_zhi_bai_zhu_gan_cao_tang]
+  conf: 0.85

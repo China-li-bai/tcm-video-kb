@@ -1,0 +1,222 @@
+video_id: shl-002
+window: w08-11
+seg_from: 980
+seg_to: 1458
+annotator: llm_read
+chapters:
+- key: c16b
+  title: 苓桂术甘续：起则头眩与中焦停水
+  start_seq: 980
+  summary: 续第67条：中焦横膈停水如天平失衡，起则头眩（卧则不晕）；苓桂术甘汤茯苓白术去中焦水、桂枝降逆。茯苓用量最重；兼恶心可加盐半夏。与真武等他方眩晕鉴别：动则晕为本方特点。
+  clauses: [67]
+  topics: [formula.fu_ling_gui_zhi_bai_zhu_gan_cao_tang, herb.fu_ling, zangfu.zhong_jiao]
+- key: c17
+  title: 第68条 汗后病不解反恶寒：芍药甘草附子汤
+  start_seq: 1016
+  summary: 发汗后病未解反恶寒，为病人本虚而非误治，芍药甘草附子汤（炮附子较重）补里虚；轻剂滋阴，重用芍药炙甘草可治静脉曲张（又名去杖汤），脚冷则加重附子以防瘀块回流。
+  clauses: [68]
+  topics: [formula.shao_yao_gan_cao_fu_zi_tang, herb.shao_yao, herb.fu_zi]
+- key: c18
+  title: 第69条 汗下后烦躁四逆：茯苓四逆汤
+  start_seq: 1084
+  summary: 汗下后病不解而烦躁、四肢逆冷（冷过肘膝）用茯苓四逆汤：生附子救阳，人参补津，茯苓除烦兼利水，体现补泻兼顾的新陈代谢观。无烦躁用四逆汤，津伤无烦加人参即可。
+  clauses: [69]
+  topics: [formula.fu_ling_si_ni_tang, formula.si_ni_tang, symptom.fan_zao]
+- key: c19
+  title: 第70条 汗后恶寒为虚；但热不寒属阳明
+  start_seq: 1117
+  summary: 发汗后恶寒为里虚，可用芍药甘草附子汤；若但热不寒则为阳明，无寒只有热，白虎或承气皆攻无不克。并举艾滋病未服药多见白虎证、服药后转厥阴之临床观察。汗后调胃承气见于食停十二指肠时误用桂枝类散津。
+  clauses: [70]
+  topics: [six_channel.yangming, formula.bai_hu_tang, formula.diao_wei_cheng_qi_tang]
+- key: c20
+  title: 第71条 大汗胃中干与五苓散
+  start_seq: 1160
+  summary: 太阳病发汗后大汗出、胃中干、烦躁不得眠，宜少少饮水待胃气和；若脉浮、小便不利、消渴则五苓散。五苓散无甘草，以桂枝少量引泽泻猪苓茯苓白术之力达表，把表邪/表水从小便出，路径与汗法相反；宜散剂缓吸收。上半身水肿汗解、下半身利尿的内经原则。
+  clauses: [71]
+  topics: [formula.wu_ling_san, symptom.xiao_ke, symptom.wei_zhong_gan, herb.ze_xie, herb.zhu_ling]
+- key: c20.s1
+  parent: c20
+  title: 五苓散组成路径与散剂理由
+  start_seq: 1223
+  summary: 泽泻利全身水、茯苓利中焦、猪苓利下焦，桂枝少许推药力达表，白术祛中焦湿；三者合可表里之水从小便出。用散不用汤，因汤下太快表水未引即从小便过。汗出不彻皮肤痒亦可以五苓散导表水。
+- key: c21
+  title: 第72–74条 汗后渴与水逆仍属五苓；茯苓甘草汤
+  start_seq: 1273
+  summary: 发汗后脉浮数反渴，或伤寒汗出而渴，五苓散主之；渴而大热属白虎非五苓。不渴而心下悸用茯苓甘草汤（苓桂等量加姜草）既利心下水又补津。中风发热六七日不解、渴欲饮水水入则吐名水逆，亦五苓散；狂饮后膈停水同机。半夏苦酒汤治突然吞咽不能。
+  clauses: [72, 73, 74]
+  topics: [formula.wu_ling_san, formula.fu_ling_gan_cao_tang, symptom.shui_ru_ze_tu]
+- key: c22
+  title: 第75–83条 重发汗致聋及饮水过快致喘
+  start_seq: 1362
+  summary: 重发汗虚致耳聋（内经精脱者耳聋），可以参枣苓姜草等补津。汗后饮水过快灌肺致喘；麻黄汤伤肺津宜缓补杏仁豆腐水梨，桂枝汤伤胃津宜稀饭。水药不得入口为逆，更汗必吐衄，仍属五苓散机。
+  clauses: [75, 76]
+  topics: [concept.jin_ye, formula.wu_ling_san]
+- key: c23
+  title: 第76条起 病后虚烦不得眠：栀子豉汤
+  start_seq: 1413
+  summary: 汗吐下病已愈而虚烦不得眠、甚则反复颠倒心中懊憹，栀子豉汤收尾；少气加甘草，呕加生姜。栀子轻清去虚热，异于黄连之重苦入深；豆豉生胃津。脉虚、苔淡黄可助辨虚烦。
+  clauses: [76]
+  topics: [formula.zhi_zi_shi_tang, symptom.xu_fan, herb.zhi_zi]
+entities:
+- {id: formula.fu_ling_gui_zhi_bai_zhu_gan_cao_tang, seq: 986, surface: 云桂枝汤汤, corrected: 苓桂术甘汤, uncertain: true}
+- {id: clause.shl.068, seq: 1016, surface: g十三呢, corrected: 伤寒论第68条, note: 讲义73→宋本68}
+- {id: formula.shao_yao_gan_cao_fu_zi_tang, seq: 1025, surface: 甘草附子汤, corrected: 芍药甘草附子汤, note: ASR漏芍药}
+- {id: new.concept.去杖汤, seq: 1080, surface: 去杖汤, corrected: 去杖汤（芍药甘草附子汤别名）}
+- {id: clause.shl.069, seq: 1084, surface: 七十四条, corrected: 伤寒论第69条, note: 讲义74→宋本69}
+- {id: formula.fu_ling_si_ni_tang, seq: 1093, surface: 四季汤呢注意看茯苓, corrected: 茯苓四逆汤}
+- {id: formula.si_ni_tang, seq: 1092, surface: 四季汤, corrected: 四逆汤}
+- {id: clause.shl.070, seq: 1117, surface: 第七十五条, corrected: 伤寒论第70条, note: 讲义75→宋本70}
+- {id: formula.bai_hu_tang, seq: 1132, surface: 白虎汤, corrected: 白虎汤}
+- {id: formula.diao_wei_cheng_qi_tang, seq: 1150, surface: 调温，胃气汤汤, corrected: 调胃承气汤}
+- {id: clause.shl.071, seq: 1160, surface: 第七十六条, corrected: 伤寒论第71条, note: 讲义76→宋本71}
+- {id: formula.wu_ling_san, seq: 1163, surface: 五苓散, corrected: 五苓散}
+- {id: symptom.xiao_ke, seq: 1163, surface: 消渴, corrected: 消渴}
+- {id: herb.zhu_ling, seq: 1178, surface: 猪灵, corrected: 猪苓}
+- {id: herb.ze_xie, seq: 1221, surface: 泽泻, corrected: 泽泻}
+- {id: herb.bai_zhu, seq: 1225, surface: 白术, corrected: 白术}
+- {id: clause.shl.072, seq: 1273, surface: 七十八条, corrected: 伤寒论第72条, note: 讲义78→宋本72}
+- {id: formula.fu_ling_gan_cao_tang, seq: 1299, surface: 茯苓甘草汤, corrected: 茯苓甘草汤}
+- {id: formula.bai_hu_tang, seq: 1310, surface: 白虎汤, corrected: 白虎汤}
+- {id: clause.shl.074, seq: 1323, surface: 第八十条, corrected: 伤寒论第74条, note: 讲义80→宋本74；水逆}
+- {id: new.concept.水逆, seq: 1323, surface: 水腻, corrected: 水逆}
+- {id: formula.ku_jiu_tang, seq: 1343, surface: 半夏苦酒汤, corrected: 半夏苦酒汤}
+- {id: clause.shl.075, seq: 1362, surface: 八十一条, corrected: 伤寒论第75条附近, note: 重发汗耳聋, uncertain: true}
+- {id: formula.zhi_zi_shi_tang, seq: 1416, surface: 栀芝芝豉汤, corrected: 栀子豉汤}
+- {id: clause.shl.076, seq: 1424, surface: 第八十四条, corrected: 伤寒论第76条, note: 讲义84→宋本76}
+- {id: herb.zhi_zi, seq: 1420, surface: 栀子, corrected: 栀子}
+- {id: herb.shi, seq: 1421, surface: 豆豉, corrected: 豆豉}
+- {id: symptom.xu_fan, seq: 1419, surface: 虚烦, corrected: 虚烦}
+kps:
+- type: diagnostic_rule
+  s: 苓桂术甘汤证眩晕特点：站起则头昏，躺下或不动则不晕，责中焦横膈停水；茯苓剂量最重以沥中焦。
+  seq: [984, 990]
+  q: 站起来就会头昏，就就是桂素柑汤汤
+  ents: [formula.fu_ling_gui_zhi_bai_zhu_gan_cao_tang, herb.fu_ling]
+  conf: 0.85
+  asr: 桂素柑/宁桂枝根=苓桂术甘
+- type: clinical_tip
+  s: 起则头眩兼恶心时，可于苓桂术甘中加盐半夏助排中焦停水；运动后狂饮致膈停水亦可致晕。
+  seq: [1003, 1008]
+  q: 临桂猪汤汤里呢加盐半价在里面把水排掉
+  ents: [formula.fu_ling_gui_zhi_bai_zhu_gan_cao_tang, herb.ban_xia]
+  conf: 0.75
+  asr: 盐半价=盐半夏
+- type: clause_interpretation
+  s: 第68条：发汗后病不解反恶寒，属病人本虚，芍药甘草附子汤主之；炮附子较重以补里寒，不必用到生附子四逆。
+  seq: [1020, 1038]
+  q: 病人并没有解掉，病情还在那边，反而呢怕冷
+  ents: [clause.shl.068, formula.shao_yao_gan_cao_fu_zi_tang, herb.fu_zi]
+  conf: 0.85
+- type: herb_property
+  s: 白芍轻用偏滋阴，重用（一两以上与炙甘草等量或更重）收敛力强，可治静脉曲张；附子须问足温：足冷加重、足热减量但仍用，以防瘀块回流伤心。
+  seq: [1054, 1077]
+  q: 剂量加重的时候，他收敛的力量很强
+  ents: [herb.shao_yao, herb.gan_cao, herb.fu_zi]
+  conf: 0.85
+- type: clinical_tip
+  s: 芍药甘草附子汤又名去杖汤：本需拐杖行走者服后可弃杖，体现强筋温阳之功。
+  seq: [1080, 1082]
+  q: 又名去杖汤，好去杖
+  ents: [formula.shao_yao_gan_cao_fu_zi_tang, new.concept.去杖汤]
+  conf: 0.8
+- type: clause_interpretation
+  s: 第69条：发汗若下之，病仍不解，烦躁四逆者，茯苓四逆汤；冷须达肘膝才算四逆。有烦躁用茯苓四逆，无烦躁用四逆，津伤无烦用人参四逆。
+  seq: [1086, 1114]
+  q: 必能出现烦躁而且视腻
+  ents: [clause.shl.069, formula.fu_ling_si_ni_tang, formula.si_ni_tang, symptom.fan_zao]
+  conf: 0.85
+  asr: 视腻=四逆
+- type: treatment_principle
+  s: 即便救逆危证，张仲景仍用茯苓：既补又利水，补泻兼顾以恢复新陈代谢；反对纯补（如单用维生素思路）。
+  seq: [1098, 1106]
+  q: 我们不会开纯补的药，在里面一定是补泻兼顾的药
+  ents: [herb.fu_ling, formula.fu_ling_si_ni_tang]
+  conf: 0.85
+- type: diagnostic_rule
+  s: 第70条：汗后恶寒为虚；但热不寒即为阳明，阳明无寒证，白虎、承气皆热证而攻无不克。
+  seq: [1129, 1134]
+  q: 淡热不寒好，就是阳明病
+  ents: [clause.shl.070, six_channel.yangming, formula.bai_hu_tang]
+  conf: 0.9
+  asr: 淡热=但热
+- type: clinical_tip
+  s: 调胃承气辨证要点：无胀满而心下/下脘附近压痛，示燥结在胃下十二指肠段；桂枝汤散肠胃津液恰逢食停该处时易诱发。
+  seq: [1150, 1156]
+  q: 调胃承气汤症的很简单，辩证就是在啊下碗见你这个这个地方
+  ents: [formula.diao_wei_cheng_qi_tang, formula.gui_zhi_tang]
+  conf: 0.8
+- type: clause_interpretation
+  s: 第71条：大汗出胃中干、烦躁不得眠，宜少少与饮，胃气和则愈；脉浮、小便不利、微热消渴者，五苓散主之。
+  seq: [1161, 1163]
+  q: 大汗出胃好，胃中干，烦躁不得眠
+  ents: [clause.shl.071, formula.wu_ling_san, symptom.wei_zhong_gan, symptom.xiao_ke]
+  conf: 0.9
+- type: clinical_tip
+  s: 汗后胃燥口渴须慢慢喝水，灌饮则胃冷不能气化反致变证；少少饮之待胃气自和。
+  seq: [1165, 1171]
+  q: 你喝水要慢慢喝，那么急干嘛好
+  ents: [concept.jin_ye, symptom.wei_zhong_gan]
+  conf: 0.9
+- type: concept_definition
+  s: 五苓散路径与汗法相反：汗法使邪从汗解；五苓散以少量桂枝引利水药力达表，把皮肤表邪/表水倒入小便排出。消渴=饮水不止渴。
+  seq: [1181, 1187]
+  q: 把这个皮肤表面的病毒呢倒到小便里面把它排掉
+  ents: [formula.wu_ling_san, symptom.xiao_ke, method.fa_han]
+  conf: 0.9
+- type: treatment_principle
+  s: 《内经》治水：上半身水肿用汗法，下半身积水用利尿；五苓散属后者。已大汗津伤而不能再汗、表邪仍在时，改用五苓散从小便解。
+  seq: [1191, 1204]
+  q: 上半身有水肿的时候，我们是用焊接好，下半身呢
+  ents: [formula.wu_ling_san, classic.huang_di_nei_jing, symptom.shui_zhong]
+  conf: 0.85
+- type: formula_composition
+  s: 五苓散：泽泻利全身水（最重）、茯苓利中焦、猪苓利下焦，白术祛中湿，桂枝少许达表；不用甘草。宜散剂缓吸收，汤剂过快则表水未引即下。
+  seq: [1224, 1254]
+  q: 所以这个五苓散五味药呢就可以把皮肤表面的水能够从小便立出来
+  ents: [formula.wu_ling_san, herb.ze_xie, herb.fu_ling, herb.zhu_ling, herb.bai_zhu, herb.gui_zhi]
+  conf: 0.9
+- type: clinical_tip
+  s: 五苓散临床极广：瘟疫随身、皮肤病、汗出不彻皮肤痒、以及口渴脉浮而小便不利者；与苓桂术甘别在无甘草且为散剂。
+  seq: [1242, 1268]
+  q: 很多皮肤病，甚至于皮肤病，我都在用五苓散哈
+  ents: [formula.wu_ling_san, formula.fu_ling_gui_zhi_bai_zhu_gan_cao_tang]
+  conf: 0.85
+- type: diagnostic_rule
+  s: 汗后脉浮数反渴，或伤寒汗出而渴，属五苓散；若渴而大热大烦则属白虎，与五苓无关。不渴而心下有水气悸者用茯苓甘草汤。
+  seq: [1291, 1312]
+  q: 如果你热很有渴的话，是白虎汤症
+  ents: [formula.wu_ling_san, formula.bai_hu_tang, formula.fu_ling_gan_cao_tang, pulse.mai_fu_shu]
+  conf: 0.85
+- type: clause_interpretation
+  s: 第74条水逆：中风发热六七日不解而烦，有表里证，渴欲饮水、水入则吐，五苓散主之；不必先有发表史，狂饮停膈同机。
+  seq: [1323, 1335]
+  q: 渴欲饮水，水入则吐者，明曰水腻，又是五苓散
+  ents: [clause.shl.074, formula.wu_ling_san, new.concept.水逆, symptom.shui_ru_ze_tu]
+  conf: 0.9
+  asr: 水腻=水逆
+- type: clinical_tip
+  s: 临床见「连水都吐」即可径开五苓散（须用散剂）；「什么都吞不下」而局部无肿痛者可试半夏苦酒汤，往往入口即能咽。
+  seq: [1336, 1358]
+  q: 什么都吐，就是五苓散不吐
+  ents: [formula.wu_ling_san, formula.ku_jiu_tang]
+  conf: 0.85
+- type: pathomechanism
+  s: 重发汗致耳聋：津液大伤，合《内经》「精脱者耳聋」；可用人参、大枣、茯苓、炙草、生姜等补津收尾，部位不同则后遗症不同。
+  seq: [1372, 1384]
+  q: 经托者耳聋
+  ents: [concept.jin_ye, classic.huang_di_nei_jing, herb.ren_shen]
+  conf: 0.8
+  asr: 经托=精脱
+- type: clinical_tip
+  s: 发汗后口渴勿灌饮：宜淡米汤缓补；麻黄汤伤肺津可辅杏仁豆腐水梨，桂枝汤伤胃津宜粥面。饮水过快使胃冷、膈不能降则喘。
+  seq: [1388, 1400]
+  q: 你喝太快的时候，因为你那个胃里的刚发散过
+  ents: [formula.ma_huang_tang, formula.gui_zhi_tang, concept.jin_ye]
+  conf: 0.85
+- type: clause_interpretation
+  s: 汗吐下后病已愈而虚烦不得眠，甚则反复颠倒、心中懊憹，栀子豉汤主之；少气加甘草，呕加生姜。栀子轻清去虚热，豆豉生胃津，皆病后调理轻剂。
+  seq: [1415, 1455]
+  q: 须烦不得眠
+  ents: [formula.zhi_zi_shi_tang, symptom.xu_fan, herb.zhi_zi, herb.shi]
+  conf: 0.9
+  asr: 须烦=虚烦；懊龙=懊憹

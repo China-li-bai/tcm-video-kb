@@ -1,0 +1,132 @@
+video_id: shl-002
+window: w24-27
+seg_from: 3011
+seg_to: 3499
+annotator: llm_read
+chapters:
+- key: c34
+  title: 第107条 柴胡加龙骨牡蛎汤
+  start_seq: 3044
+  summary: 表未解而攻下太早，邪陷致胸满烦惊、小便不利、谵语、一身尽重，柴胡加龙骨牡蛎汤。龙骨潜阳收敛、牡蛎软坚生津。
+  clauses:
+  - 107
+  topics:
+  - formula.chai_hu_jia_long_gu_mu_li_tang
+  - herb.long_gu
+  - herb.mu_li
+- key: c34.s1
+  parent: c34
+  title: 龙骨牡蛎辨用
+  start_seq: 3120
+  summary: 早泄重龙骨，遗精尿多偏重牡蛎；等量或按症。牡蛎粉可外敷烫伤。
+  topics:
+  - herb.long_gu
+  - herb.mu_li
+- key: c35
+  title: 火劫火逆与烧针奔豚
+  start_seq: 3391
+  summary: 太阳宜汗而用火熏烧针致火逆变证；烧针被寒发奔豚，桂枝加桂汤。表证当汗解勿火攻。
+  clauses:
+  - 111
+  - 116
+  - 117
+  topics:
+  - syndrome.huo_ni
+  - method.shao_zhen
+  - formula.gui_zhi_jia_gui_tang
+entities:
+- id: clause.shl.107
+  seq: 3044
+  surface: 第一百二十条
+  corrected: 伤寒论第107条
+  note: 讲义120→宋本107
+- id: formula.chai_hu_jia_long_gu_mu_li_tang
+  seq: 3084
+  surface: 柴胡加龙骨牡蛎汤
+  corrected: 柴胡加龙骨牡蛎汤
+- id: herb.long_gu
+  seq: 3092
+  surface: 龙骨
+  corrected: 龙骨
+- id: herb.mu_li
+  seq: 3092
+  surface: 牡蛎
+  corrected: 牡蛎
+- id: formula.gui_zhi_qu_shao_yao_jia_shu_qi_mu_li_long_gu_jiu_ni_tang
+  seq: 3313
+  surface: 桂枝汤桂枝去芍药，加蜀西龙菇、牡蛎
+  corrected: 桂枝去芍药加蜀漆牡蛎龙骨救逆汤
+- id: syndrome.huo_ni
+  seq: 3453
+  surface: 火逆
+  corrected: 火逆
+- id: method.shao_zhen
+  seq: 3474
+  surface: 烧针
+  corrected: 烧针
+- id: clause.shl.117
+  seq: 3474
+  surface: 烧针令其汉
+  corrected: 伤寒论第117条
+  note: 烧针→奔豚
+- id: formula.gui_zhi_jia_gui_tang
+  seq: 3475
+  surface: 桂枝加桂桃
+  corrected: 桂枝加桂汤
+- id: syndrome.ben_tun
+  seq: 3475
+  surface: 分豚
+  corrected: 奔豚
+kps:
+- type: clause_interpretation
+  s: 第107条：表未解误下，胸满烦惊、小便不利、谵语、一身尽重不可转侧，柴胡加龙骨牡蛎汤主之。
+  seq:
+  - 3050
+  - 3084
+  q: 柴胡加龙骨牡蛎汤的处方
+  ents:
+  - clause.shl.107
+  - formula.chai_hu_jia_long_gu_mu_li_tang
+  conf: 0.85
+- type: herb_property
+  s: 龙骨潜阳收敛固涩偏治滑泄；牡蛎软坚兼生津偏治硬块与小便多；筋惕肉瞤用二者敛阳。
+  seq:
+  - 3120
+  - 3134
+  q: 当你精湿掉的时候，我们会重用龙骨
+  ents:
+  - herb.long_gu
+  - herb.mu_li
+  conf: 0.85
+- type: formula_composition
+  s: 柴胡加龙骨牡蛎汤重用柴胡，合龙牡桂枝茯苓人参等，用于误下后少阳兼神志不安。
+  seq:
+  - 3140
+  - 3150
+  q: 我们柴胡一定是重用柴胡嘛
+  ents:
+  - formula.chai_hu_jia_long_gu_mu_li_tang
+  - herb.chai_hu
+  conf: 0.85
+- type: contraindication
+  s: 太阳表证当汗解，禁用火熏烧针强求出汗；火逆可致衄、发黄、惊狂等。
+  seq:
+  - 3391
+  - 3453
+  q: 明言火逆哈
+  ents:
+  - syndrome.huo_ni
+  - method.shao_zhen
+  conf: 0.85
+- type: clause_interpretation
+  s: 烧针取汗，针处被寒则发奔豚，气从少腹上冲心，桂枝加桂汤主之。
+  seq:
+  - 3474
+  - 3477
+  q: 必发分豚气
+  ents:
+  - clause.shl.117
+  - formula.gui_zhi_jia_gui_tang
+  - syndrome.ben_tun
+  conf: 0.85
+  asr: 分豚=奔豚
