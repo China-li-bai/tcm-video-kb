@@ -1,0 +1,62 @@
+[
+ {
+  "chapter_id": "zj-090.c01",
+  "video_id": "zj-090",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "脑瘤取穴百会消积",
+  "summary": "终集病例：脑瘤压迫视力。取肾俞区、痞根类奇穴；消积穴在内踝上三寸、针须抵骨。百会（诸阳之会）用于脑部肿瘤；合谷先针头面镇痛；睛明护眼；光明等胆经穴。",
+  "start_s": 0.53,
+  "end_s": 1291.045,
+  "seg_from": 0,
+  "seg_to": 191,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.gv20",
+   "acupoint.li4",
+   "acupoint.bl1",
+   "acupoint.gb37"
+  ],
+  "citation": {
+   "youtube_id": "5KeWYzd_fNk",
+   "url": "https://www.youtube.com/watch?v=5KeWYzd_fNk&t=0s",
+   "series": "zj",
+   "episode": 90,
+   "title": "Ni Hai-hsia: \"Humanity Series\" - Acupuncture, 90-Episode Complete Set: Acupuncture 90",
+   "start_s": 0.53,
+   "end_s": 1291.05
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-090.c02",
+  "video_id": "zj-090",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "内经与大黄用例",
+  "summary": "强调《内经》不可死背、当活用。大黄生用/泡水取其气清上热（目赤等），煮后则下利。兼肺癌咳嗽病例思路（合谷等对应）收束全九十集。",
+  "start_s": 1293.62,
+  "end_s": 3572.965,
+  "seg_from": 192,
+  "seg_to": 566,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "classic.huang_di_nei_jing",
+   "herb.da_huang"
+  ],
+  "citation": {
+   "youtube_id": "5KeWYzd_fNk",
+   "url": "https://www.youtube.com/watch?v=5KeWYzd_fNk&t=1293s",
+   "series": "zj",
+   "episode": 90,
+   "title": "Ni Hai-hsia: \"Humanity Series\" - Acupuncture, 90-Episode Complete Set: Acupuncture 90",
+   "start_s": 1293.62,
+   "end_s": 3572.97
+  },
+  "review_status": "llm_read"
+ }
+]

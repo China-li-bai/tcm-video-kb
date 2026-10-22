@@ -1,0 +1,98 @@
+video_id: zj-090
+window: w00-04
+seg_from: 0
+seg_to: 566
+annotator: llm_read
+chapters:
+- key: c01
+  title: 脑瘤取穴百会消积
+  start_seq: 0
+  summary: 终集病例：脑瘤压迫视力。取肾俞区、痞根类奇穴；消积穴在内踝上三寸、针须抵骨。百会（诸阳之会）用于脑部肿瘤；合谷先针头面镇痛；睛明护眼；光明等胆经穴。
+  clauses: []
+  topics:
+  - acupoint.gv20
+  - acupoint.li4
+  - acupoint.bl1
+  - acupoint.gb37
+- key: c02
+  title: 内经与大黄用例
+  start_seq: 192
+  summary: 强调《内经》不可死背、当活用。大黄生用/泡水取其气清上热（目赤等），煮后则下利。兼肺癌咳嗽病例思路（合谷等对应）收束全九十集。
+  clauses: []
+  topics:
+  - classic.huang_di_nei_jing
+  - herb.da_huang
+entities:
+- id: acupoint.gv20
+  seq: 40
+  surface: 百会
+  corrected: 百会
+- id: new.acupoint.xiao_ji
+  seq: 30
+  surface: 消积
+  corrected: 消积
+- id: acupoint.li4
+  seq: 53
+  surface: 合谷
+  corrected: 合谷
+- id: acupoint.bl1
+  seq: 66
+  surface: 金明
+  corrected: 睛明
+- id: acupoint.gb37
+  seq: 78
+  surface: 光明
+  corrected: 光明
+- id: acupoint.bl23
+  seq: 16
+  surface: 肾出
+  corrected: 肾俞
+- id: classic.huang_di_nei_jing
+  seq: 192
+  surface: 黄帝内经
+  corrected: 黄帝内经
+- id: herb.da_huang
+  seq: 341
+  surface: 大黄
+  corrected: 大黄
+kps:
+- type: acupoint_usage
+  s: 消积穴约内踝上三寸，针从大筋后刺入须抵骨；用于体内积块/肿瘤辅助。
+  seq:
+  - 30
+  - 30
+  q: 消积穴
+  ents:
+  - new.acupoint.xiao_ji
+  conf: 0.85
+- type: acupoint_usage
+  s: 百会为诸阳之会，脑部肿瘤可取；定位两耳连线中点稍后。
+  seq:
+  - 40
+  - 44
+  q: 百会穴
+  ents:
+  - acupoint.gv20
+  conf: 0.95
+  asr: 百汇=百会；助阳之会=诸阳之会
+- type: clinical_tip
+  s: 头面针先取合谷镇痛；睛明护眼须轻推眼球；光明等胆经穴可配。
+  seq:
+  - 53
+  - 78
+  q: 合谷穴
+  ents:
+  - acupoint.li4
+  - acupoint.bl1
+  - acupoint.gb37
+  conf: 0.9
+  asr: 金明=睛明
+- type: clinical_tip
+  s: 大黄泡水取其气清上热（目赤等）；煮后则泻下。
+  seq:
+  - 349
+  - 350
+  q: 吃到的是大黄的气
+  ents:
+  - herb.da_huang
+  conf: 0.9
