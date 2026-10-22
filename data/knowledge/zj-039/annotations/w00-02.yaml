@@ -1,0 +1,100 @@
+video_id: zj-039
+window: w00-02
+seg_from: 0
+seg_to: 345
+annotator: llm_read
+chapters:
+- key: c01
+  title: 背部外线与会阳承扶
+  start_seq: 0
+  summary: 三焦俞、肓门、石门可治乳房硬块。会阳为治痔近取要穴。承扶在臀横纹正中，治坐骨神经痛、背痛、痔及小便不利，深刺至骨无妨。殷门少用（承扶、委中已够）。
+  clauses: []
+  topics:
+  - acupoint.bl35
+  - acupoint.bl36
+  - acupoint.bl22
+- key: c02
+  title: 委阳
+  start_seq: 120
+  summary: 委阳与委中相平，为三焦下合/太阳络相关取穴。
+  clauses: []
+  topics:
+  - acupoint.bl39
+  - acupoint.bl40
+entities:
+- id: acupoint.bl22
+  seq: 28
+  surface: 三焦俞
+  corrected: 三焦俞
+- id: acupoint.bl51
+  seq: 28
+  surface: 黄门
+  corrected: 肓门
+- id: acupoint.cv5
+  seq: 28
+  surface: 石门
+  corrected: 石门
+- id: acupoint.bl35
+  seq: 74
+  surface: 自便穴
+  corrected: 会阳
+- id: acupoint.bl36
+  seq: 85
+  surface: 沉浮
+  corrected: 承扶
+- id: acupoint.bl37
+  seq: 104
+  surface: 阴门穴
+  corrected: 殷门
+- id: acupoint.bl40
+  seq: 104
+  surface: 伪中
+  corrected: 委中
+- id: acupoint.bl39
+  seq: 120
+  surface: 萎阳穴
+  corrected: 委阳
+kps:
+- type: acupoint_usage
+  s: 乳房属三焦相关时，可取三焦俞、肓门及三焦募石门，针或灸。
+  seq:
+  - 28
+  - 31
+  q: 三焦俞跟这个好黄门，还有那个三焦的木穴，石门通通可以用
+  ents:
+  - acupoint.bl22
+  - acupoint.bl51
+  - acupoint.cv5
+  conf: 0.85
+  asr: 黄门/慌门=肓门；木穴=募穴
+- type: acupoint_usage
+  s: 会阳为治痔疮的近取要穴。
+  seq:
+  - 74
+  - 74
+  q: 很有名的一个治疗痔疮的进取穴
+  ents:
+  - acupoint.bl35
+  conf: 0.9
+  asr: 自便=会阳
+- type: acupoint_usage
+  s: 承扶在臀横纹正中，治坐骨神经痛、背痛、痔、小便不利；可深刺抵骨。
+  seq:
+  - 85
+  - 91
+  q: 坐骨神经洞对背痛效果很好
+  ents:
+  - acupoint.bl36
+  conf: 0.95
+  asr: 沉浮/沉服/臣服=承扶
+- type: clinical_tip
+  s: 殷门少用，因承扶、委中已效佳，知有其穴即可。
+  seq:
+  - 104
+  - 104
+  q: 有伪中太好用了，这个阴文的很少下
+  ents:
+  - acupoint.bl37
+  - acupoint.bl40
+  conf: 0.85
+  asr: 阴门/阴文=殷门；伪中=委中

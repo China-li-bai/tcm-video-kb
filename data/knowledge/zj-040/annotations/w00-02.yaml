@@ -1,0 +1,120 @@
+video_id: zj-040
+window: w00-02
+seg_from: 0
+seg_to: 305
+annotator: llm_read
+chapters:
+- key: c01
+  title: 委中承山飞扬
+  start_seq: 0
+  summary: 委中多汗不宜灸，宜刺络放血，治皮肤病（含牛皮癣），为解毒大穴。承山对肛，治痔效著，可配孔最；下针宜透至骨。飞扬为膀胱经络穴，承山下外开，可强健下肢。
+  clauses: []
+  topics:
+  - acupoint.bl40
+  - acupoint.bl57
+  - acupoint.bl58
+- key: c02
+  title: 昆仑仆参京骨
+  start_seq: 131
+  summary: 昆仑在外踝与跟腱间，治项背痛；催产/下胞衣效强，孕妇慎用。仆参在跟旁治足跟痛。京骨为膀胱原穴，治剧烈头痛等。
+  clauses: []
+  topics:
+  - acupoint.bl60
+  - acupoint.bl61
+  - acupoint.bl64
+entities:
+- id: acupoint.bl40
+  seq: 7
+  surface: 尾中
+  corrected: 委中
+- id: acupoint.bl57
+  seq: 31
+  surface: 陈山
+  corrected: 承山
+- id: acupoint.lu6
+  seq: 32
+  surface: 孔坠穴
+  corrected: 孔最
+- id: acupoint.bl58
+  seq: 101
+  surface: 飞扬
+  corrected: 飞扬
+- id: concept.luo_xue
+  seq: 102
+  surface: 落穴
+  corrected: 络穴
+- id: acupoint.bl60
+  seq: 131
+  surface: 昆仑
+  corrected: 昆仑
+- id: acupoint.bl61
+  seq: 188
+  surface: 蒲参
+  corrected: 仆参
+- id: acupoint.bl64
+  seq: 264
+  surface: 京骨穴
+  corrected: 京骨
+- id: concept.yuan_xue
+  seq: 264
+  surface: 元穴
+  corrected: 原穴
+- id: meridian.bl
+  seq: 102
+  surface: 膀胱经
+  corrected: 足太阳膀胱经
+kps:
+- type: contraindication
+  s: 委中多汗不宜灸，宜放血针刺；治诸皮肤病及牛皮癣，为解毒大穴。
+  seq:
+  - 7
+  - 12
+  q: 都不不不揪的好，都放血下针
+  ents:
+  - acupoint.bl40
+  conf: 0.95
+  asr: 尾中/伪中=委中；不揪=不灸
+- type: acupoint_usage
+  s: 承山与肛门相应，治痔效著，可配孔最止血止痛；下针宜深透至骨。
+  seq:
+  - 32
+  - 95
+  q: 陈山是很有名的痔疮的大学
+  ents:
+  - acupoint.bl57
+  - acupoint.lu6
+  conf: 0.95
+  asr: 陈山/乘三=承山；孔坠/孔罪=孔最
+- type: acupoint_usage
+  s: 飞扬在承山下约一寸再外开一寸，为膀胱经络穴；可强健下肢。
+  seq:
+  - 101
+  - 109
+  q: 飞扬呢就是膀胱经的，主要是落穴
+  ents:
+  - acupoint.bl58
+  - concept.luo_xue
+  - meridian.bl
+  conf: 0.95
+  asr: 落穴=络穴
+- type: acupoint_usage
+  s: 昆仑在外踝与大筋间，擅治项背痛；亦可催下胞衣，孕妇慎用。
+  seq:
+  - 141
+  - 186
+  q: 专门治疗项背痛，后项项背痛的哦，很有名的穴道
+  ents:
+  - acupoint.bl60
+  conf: 0.95
+- type: acupoint_usage
+  s: 仆参在昆仑下近跟骨，治足跟痛。京骨为膀胱原穴，治剧烈头痛等。
+  seq:
+  - 188
+  - 271
+  q: 很多人呢足跟痛，这个人脚后跟痛
+  ents:
+  - acupoint.bl61
+  - acupoint.bl64
+  - concept.yuan_xue
+  conf: 0.9
+  asr: 蒲参=仆参；元穴=原穴

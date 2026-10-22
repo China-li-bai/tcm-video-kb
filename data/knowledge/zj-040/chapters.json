@@ -1,0 +1,62 @@
+[
+ {
+  "chapter_id": "zj-040.c01",
+  "video_id": "zj-040",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "委中承山飞扬",
+  "summary": "委中多汗不宜灸，宜刺络放血，治皮肤病（含牛皮癣），为解毒大穴。承山对肛，治痔效著，可配孔最；下针宜透至骨。飞扬为膀胱经络穴，承山下外开，可强健下肢。",
+  "start_s": 0.07,
+  "end_s": 785.6,
+  "seg_from": 0,
+  "seg_to": 130,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.bl40",
+   "acupoint.bl57",
+   "acupoint.bl58"
+  ],
+  "citation": {
+   "youtube_id": "ZXVjQwyr4Ho",
+   "url": "https://www.youtube.com/watch?v=ZXVjQwyr4Ho&t=0s",
+   "series": "zj",
+   "episode": 40,
+   "title": "Ni Hai-hsia \"Human Discipline\" \"Acupuncture\" Complete 90 Episodes - Acupuncture 40",
+   "start_s": 0.07,
+   "end_s": 785.6
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-040.c02",
+  "video_id": "zj-040",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "昆仑仆参京骨",
+  "summary": "昆仑在外踝与跟腱间，治项背痛；催产/下胞衣效强，孕妇慎用。仆参在跟旁治足跟痛。京骨为膀胱原穴，治剧烈头痛等。",
+  "start_s": 786.68,
+  "end_s": 1764.292,
+  "seg_from": 131,
+  "seg_to": 305,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.bl60",
+   "acupoint.bl61",
+   "acupoint.bl64"
+  ],
+  "citation": {
+   "youtube_id": "ZXVjQwyr4Ho",
+   "url": "https://www.youtube.com/watch?v=ZXVjQwyr4Ho&t=786s",
+   "series": "zj",
+   "episode": 40,
+   "title": "Ni Hai-hsia \"Human Discipline\" \"Acupuncture\" Complete 90 Episodes - Acupuncture 40",
+   "start_s": 786.68,
+   "end_s": 1764.29
+  },
+  "review_status": "llm_read"
+ }
+]

@@ -1,0 +1,61 @@
+[
+ {
+  "chapter_id": "zj-039.c01",
+  "video_id": "zj-039",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "背部外线与会阳承扶",
+  "summary": "三焦俞、肓门、石门可治乳房硬块。会阳为治痔近取要穴。承扶在臀横纹正中，治坐骨神经痛、背痛、痔及小便不利，深刺至骨无妨。殷门少用（承扶、委中已够）。",
+  "start_s": 2.74,
+  "end_s": 671.98,
+  "seg_from": 0,
+  "seg_to": 119,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.bl35",
+   "acupoint.bl36",
+   "acupoint.bl22"
+  ],
+  "citation": {
+   "youtube_id": "37k0RDd2q3s",
+   "url": "https://www.youtube.com/watch?v=37k0RDd2q3s&t=2s",
+   "series": "zj",
+   "episode": 39,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 39",
+   "start_s": 2.74,
+   "end_s": 671.98
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-039.c02",
+  "video_id": "zj-039",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "委阳",
+  "summary": "委阳与委中相平，为三焦下合/太阳络相关取穴。",
+  "start_s": 673.8,
+  "end_s": 1870.616,
+  "seg_from": 120,
+  "seg_to": 345,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.bl39",
+   "acupoint.bl40"
+  ],
+  "citation": {
+   "youtube_id": "37k0RDd2q3s",
+   "url": "https://www.youtube.com/watch?v=37k0RDd2q3s&t=673s",
+   "series": "zj",
+   "episode": 39,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 39",
+   "start_s": 673.8,
+   "end_s": 1870.62
+  },
+  "review_status": "llm_read"
+ }
+]
