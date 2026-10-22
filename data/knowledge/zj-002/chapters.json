@@ -1,0 +1,94 @@
+[
+ {
+  "chapter_id": "zj-002.c01",
+  "video_id": "zj-002",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "开篇：何时用针、何时不用",
+  "summary": "针灸课从临床原则讲起，不追起源史。气血大虚、重病刚出、元气不足时不下针；大汗后、醉酒后亦慎针。醉酒可用耳尖三棱针点刺放血。强调针与经方皆须掌握，针药可同用但本课专论针灸。",
+  "start_s": 16.75,
+  "end_s": 474.69,
+  "seg_from": 0,
+  "seg_to": 87,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "method.zhen_jiu",
+   "acupoint.lu7",
+   "acupoint.st45",
+   "concept.qi_xue"
+  ],
+  "citation": {
+   "youtube_id": "DeJtMC80TeU",
+   "url": "https://www.youtube.com/watch?v=DeJtMC80TeU&t=16s",
+   "series": "zj",
+   "episode": 2,
+   "title": "Ni Hai-Hsia's \"The Human Record\": Acupuncture (Full 90-Episode Series) - Acupuncture 02",
+   "start_s": 16.75,
+   "end_s": 474.69
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-002.c02",
+  "video_id": "zj-002",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "灸法总则：隔姜、灯芯、疤痕、米粒",
+  "summary": "虚损元气伤时多用灸。隔姜灸：鲜姜片隔艾；灯芯灸重在火不必拘灯芯草。灸取奇数（三五七九）属阳。病入膏肓则灸膏肓可至百壮。疤痕灸可浅刺引流后灸；神阙隔盐灸止泻。寒证多用灸。",
+  "start_s": 476.62,
+  "end_s": 1122.125,
+  "seg_from": 88,
+  "seg_to": 202,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.bl43",
+   "acupoint.cv8",
+   "herb.sheng_jiang",
+   "method.zhen_jiu"
+  ],
+  "citation": {
+   "youtube_id": "DeJtMC80TeU",
+   "url": "https://www.youtube.com/watch?v=DeJtMC80TeU&t=476s",
+   "series": "zj",
+   "episode": 2,
+   "title": "Ni Hai-Hsia's \"The Human Record\": Acupuncture (Full 90-Episode Series) - Acupuncture 02",
+   "start_s": 476.62,
+   "end_s": 1122.12
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-002.c03",
+  "video_id": "zj-002",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "病进截断：灸头尾阻传变",
+  "summary": "病势向近心端进展时，在红肿头尾分段隔姜灸，可逼邪退向肢末、远离心脏。蜂螫红线亦同法。忌只灸一头。介绍经络穴性与下针补泻将后述；教材用《针灸大成》。米粒灸可治鸡眼、鼻窦等局部。",
+  "start_s": 1123.61,
+  "end_s": 1864.725,
+  "seg_from": 203,
+  "seg_to": 327,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "method.zhen_jiu",
+   "concept.jing_luo",
+   "new.book.针灸大成"
+  ],
+  "citation": {
+   "youtube_id": "DeJtMC80TeU",
+   "url": "https://www.youtube.com/watch?v=DeJtMC80TeU&t=1123s",
+   "series": "zj",
+   "episode": 2,
+   "title": "Ni Hai-Hsia's \"The Human Record\": Acupuncture (Full 90-Episode Series) - Acupuncture 02",
+   "start_s": 1123.61,
+   "end_s": 1864.72
+  },
+  "review_status": "llm_read"
+ }
+]

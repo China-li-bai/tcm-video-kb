@@ -1,0 +1,196 @@
+video_id: zj-002
+window: w00-02
+seg_from: 0
+seg_to: 327
+annotator: llm_read
+chapters:
+- key: c01
+  title: 开篇：何时用针、何时不用
+  start_seq: 0
+  summary: 针灸课从临床原则讲起，不追起源史。气血大虚、重病刚出、元气不足时不下针；大汗后、醉酒后亦慎针。醉酒可用耳尖三棱针点刺放血。强调针与经方皆须掌握，针药可同用但本课专论针灸。
+  clauses: []
+  topics:
+  - method.zhen_jiu
+  - acupoint.lu7
+  - acupoint.st45
+  - concept.qi_xue
+- key: c02
+  title: 灸法总则：隔姜、灯芯、疤痕、米粒
+  start_seq: 88
+  summary: 虚损元气伤时多用灸。隔姜灸：鲜姜片隔艾；灯芯灸重在火不必拘灯芯草。灸取奇数（三五七九）属阳。病入膏肓则灸膏肓可至百壮。疤痕灸可浅刺引流后灸；神阙隔盐灸止泻。寒证多用灸。
+  clauses: []
+  topics:
+  - acupoint.bl43
+  - acupoint.cv8
+  - herb.sheng_jiang
+  - method.zhen_jiu
+- key: c03
+  title: 病进截断：灸头尾阻传变
+  start_seq: 203
+  summary: 病势向近心端进展时，在红肿头尾分段隔姜灸，可逼邪退向肢末、远离心脏。蜂螫红线亦同法。忌只灸一头。介绍经络穴性与下针补泻将后述；教材用《针灸大成》。米粒灸可治鸡眼、鼻窦等局部。
+  clauses: []
+  topics:
+  - method.zhen_jiu
+  - concept.jing_luo
+  - new.book.针灸大成
+entities:
+- id: method.zhen_jiu
+  seq: 6
+  surface: 针灸
+  corrected: 针灸
+- id: concept.qi_xue
+  seq: 19
+  surface: 气血
+  corrected: 气血
+- id: acupoint.lu7
+  seq: 19
+  surface: 列缺
+  corrected: 列缺
+- id: acupoint.st45
+  seq: 20
+  surface: 厉兑
+  corrected: 厉兑
+- id: acupoint.lr4
+  seq: 31
+  surface: 中封
+  corrected: 中封
+- id: concept.jing_fang
+  seq: 45
+  surface: 经方
+  corrected: 经方
+- id: herb.sheng_jiang
+  seq: 97
+  surface: 生姜
+  corrected: 生姜
+- id: acupoint.bl43
+  seq: 125
+  surface: 膏肓穴
+  corrected: 膏肓
+- id: meridian.bl
+  seq: 130
+  surface: 足太阳膀胱经
+  corrected: 足太阳膀胱经
+- id: acupoint.cv8
+  seq: 162
+  surface: 神杜脐
+  corrected: 神阙
+  uncertain: true
+- id: acupoint.st34
+  seq: 162
+  surface: 梁丘
+  corrected: 梁丘
+- id: herb.ai
+  seq: 54
+  surface: 艾
+  corrected: 艾
+- id: new.book.针灸大成
+  seq: 299
+  surface: 针灸大成
+  corrected: 针灸大成
+- id: concept.jing_luo
+  seq: 288
+  surface: 经络
+  corrected: 经络
+- id: new.method.隔姜灸
+  seq: 97
+  surface: 隔的姜灸
+  corrected: 隔姜灸
+- id: new.method.疤痕灸
+  seq: 139
+  surface: 疤痕灸
+  corrected: 疤痕灸
+- id: new.method.米粒灸
+  seq: 324
+  surface: 米粒灸
+  corrected: 米粒灸
+kps:
+- type: contraindication
+  s: 气血大虚、重病刚愈、元气不足时不下针；剧烈运动大汗后、酒醉后亦慎针。
+  seq:
+  - 19
+  - 33
+  q: 这个时候我们是不下针的，厉兑
+  ents:
+  - method.zhen_jiu
+  - concept.qi_xue
+  - acupoint.st45
+  conf: 0.85
+- type: clinical_tip
+  s: 酒醉可用耳尖（打耳洞处）三棱针点刺放血以醒酒。
+  seq:
+  - 29
+  - 30
+  q: 决出去你拿三棱针，我们针刺一下
+  ents:
+  - method.zhen_jiu
+  conf: 0.8
+  asr: 决出=觉出/可用
+- type: treatment_principle
+  s: 针与经方皆须学会；针药可同用，但针灸课内专讲针法，勿与中药混谈。
+  seq:
+  - 45
+  - 48
+  q: 如何针药病食
+  ents:
+  - method.zhen_jiu
+  - concept.jing_fang
+  conf: 0.8
+  asr: 病食=并施
+- type: acupoint_usage
+  s: 病入膏肓、诸法束手时灸膏肓，可灸百壮至口干舌燥，古谓无所不疗。
+  seq:
+  - 124
+  - 127
+  q: 我们有一个穴道就叫做膏肓
+  ents:
+  - acupoint.bl43
+  conf: 0.95
+- type: clinical_tip
+  s: 灸取奇数壮数（三、五、七、九）以合阳数；灸奇不灸偶。
+  seq:
+  - 118
+  - 120
+  q: 那我们灸的话，我们就是灸丹不灸霜
+  ents:
+  - method.zhen_jiu
+  conf: 0.8
+  asr: 丹/霜≈奇/偶
+- type: formula_composition
+  s: 隔姜灸：鲜生姜切片垫于穴上再置艾；姜干则更换。灯芯灸重在点火，可用打火机替代灯芯草。
+  seq:
+  - 97
+  - 110
+  q: 所谓隔隔的姜灸呢，就是我们拿新鲜的生姜切片
+  ents:
+  - new.method.隔姜灸
+  - herb.sheng_jiang
+  conf: 0.9
+- type: treatment_principle
+  s: 红肿/丹毒等病势近心进展时，在头尾分段灸，逼邪退向肢末远离心脏；勿只灸一头。
+  seq:
+  - 216
+  - 220
+  q: 在头这边我就开始放个灸
+  ents:
+  - method.zhen_jiu
+  - new.method.隔姜灸
+  conf: 0.85
+- type: study_method
+  s: 本课教材用《针灸大成》；十二经络逐一经穴性与补泻手法后文详讲。
+  seq:
+  - 288
+  - 299
+  q: 针灸大成这本书嗯，做我们的教科书
+  ents:
+  - new.book.针灸大成
+  - concept.jing_luo
+  conf: 0.9
+- type: clinical_tip
+  s: 米粒大艾炷可直接灸鸡眼等小病灶；亦用于鼻窦等局部。
+  seq:
+  - 324
+  - 326
+  q: 那米粒灸用在什么地方
+  ents:
+  - new.method.米粒灸
+  conf: 0.85
