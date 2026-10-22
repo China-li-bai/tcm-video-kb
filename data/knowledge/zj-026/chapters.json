@@ -1,0 +1,62 @@
+[
+ {
+  "chapter_id": "zj-026.c01",
+  "video_id": "zj-026",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "公孙商丘与对称取穴",
+  "summary": "公孙通冲脉，气强，腹胀肠切痛等虚实可治。商丘为脾经经穴，在踝骨交接缝，直刺。久痛可先泻后补；公孙痛可对取对侧或鱼际等对称法。",
+  "start_s": 0.07,
+  "end_s": 368.45,
+  "seg_from": 0,
+  "seg_to": 73,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.sp4",
+   "acupoint.sp5",
+   "meridian.tv"
+  ],
+  "citation": {
+   "youtube_id": "VTXyFZZv064",
+   "url": "https://www.youtube.com/watch?v=VTXyFZZv064&t=0s",
+   "series": "zj",
+   "episode": 26,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 26",
+   "start_s": 0.07,
+   "end_s": 368.45
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-026.c02",
+  "video_id": "zj-026",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "三阴交大穴与孕妇禁忌",
+  "summary": "三阴交与足三里皆为大穴；足三阴（脾肝肾）交会。可诊治痛经等妇科，按压痛测病情。孕妇：补合谷泻三阴交易伤胎，故合谷、三阴交一般禁针（勿补泻搞错）。",
+  "start_s": 370.35,
+  "end_s": 1347.145,
+  "seg_from": 74,
+  "seg_to": 267,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.sp6",
+   "acupoint.li4",
+   "acupoint.st36"
+  ],
+  "citation": {
+   "youtube_id": "VTXyFZZv064",
+   "url": "https://www.youtube.com/watch?v=VTXyFZZv064&t=370s",
+   "series": "zj",
+   "episode": 26,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 26",
+   "start_s": 370.35,
+   "end_s": 1347.14
+  },
+  "review_status": "llm_read"
+ }
+]

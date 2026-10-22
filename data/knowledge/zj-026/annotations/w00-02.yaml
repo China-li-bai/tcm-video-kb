@@ -1,0 +1,136 @@
+video_id: zj-026
+window: w00-01
+seg_from: 0
+seg_to: 267
+annotator: llm_read
+chapters:
+- key: c01
+  title: 公孙商丘与对称取穴
+  start_seq: 0
+  summary: 公孙通冲脉，气强，腹胀肠切痛等虚实可治。商丘为脾经经穴，在踝骨交接缝，直刺。久痛可先泻后补；公孙痛可对取对侧或鱼际等对称法。
+  clauses: []
+  topics:
+  - acupoint.sp4
+  - acupoint.sp5
+  - meridian.tv
+- key: c02
+  title: 三阴交大穴与孕妇禁忌
+  start_seq: 74
+  summary: 三阴交与足三里皆为大穴；足三阴（脾肝肾）交会。可诊治痛经等妇科，按压痛测病情。孕妇：补合谷泻三阴交易伤胎，故合谷、三阴交一般禁针（勿补泻搞错）。
+  clauses: []
+  topics:
+  - acupoint.sp6
+  - acupoint.li4
+  - acupoint.st36
+entities:
+- id: acupoint.sp4
+  seq: 6
+  surface: 公孙
+  corrected: 公孙
+- id: meridian.tv
+  seq: 6
+  surface: 冲脉
+  corrected: 冲脉
+- id: concept.luo_xue
+  seq: 11
+  surface: 络穴
+  corrected: 络穴
+- id: acupoint.sp5
+  seq: 14
+  surface: 商丘穴
+  corrected: 商丘
+- id: meridian.sp
+  seq: 25
+  surface: 脾经
+  corrected: 足太阴脾经
+- id: acupoint.sp6
+  seq: 74
+  surface: 三阴交
+  corrected: 三阴交
+- id: acupoint.st36
+  seq: 74
+  surface: 足三里
+  corrected: 足三里
+- id: meridian.lr
+  seq: 88
+  surface: 阴肝经
+  corrected: 足厥阴肝经
+- id: meridian.ki
+  seq: 88
+  surface: 足少阴肾经
+  corrected: 足少阴肾经
+- id: acupoint.li4
+  seq: 118
+  surface: 合谷
+  corrected: 合谷
+- id: acupoint.lu10
+  seq: 55
+  surface: 鱼际穴
+  corrected: 鱼际
+- id: method.bu_xie
+  seq: 36
+  surface: 先泻后补
+  corrected: 补泻
+kps:
+- type: acupoint_usage
+  s: 公孙通冲脉、气脉强，腹胀等可用；为络穴，虚实补泻皆可。
+  seq:
+  - 6
+  - 11
+  q: 腹胀、肚子骨胀啊，什么通通可以用公孙
+  ents:
+  - acupoint.sp4
+  - meridian.tv
+  - concept.luo_xue
+  conf: 0.95
+- type: acupoint_usage
+  s: 商丘在内踝骨交接缝中，直刺；为脾经经穴。
+  seq:
+  - 19
+  - 25
+  q: 交接的缝里面，叫做商丘
+  ents:
+  - acupoint.sp5
+  - meridian.sp
+  conf: 0.9
+- type: clinical_tip
+  s: 痛多酸少宜先泻后补；酸多痛少宜先补后泻。痛较易除，麻需更多次治疗。
+  seq:
+  - 36
+  - 39
+  q: 痛比较多，酸比较少，就是先泻后补
+  ents:
+  - method.bu_xie
+  conf: 0.9
+- type: concept_definition
+  s: 三阴交为足三阴（脾、肝、肾）交会处，与足三里同为大穴；勿太贴骨下针。
+  seq:
+  - 74
+  - 88
+  q: 三条阴经都交汇在这里
+  ents:
+  - acupoint.sp6
+  - meridian.sp
+  - meridian.lr
+  - meridian.ki
+  conf: 0.95
+- type: clinical_tip
+  s: 三阴交可诊治痛经等：按压痛程度反映病情；愈后按之不痛可确认。
+  seq:
+  - 96
+  - 113
+  q: 按按三阴交就知道一按那个他惨叫一声
+  ents:
+  - acupoint.sp6
+  conf: 0.9
+- type: contraindication
+  s: 孕妇一般禁针合谷与三阴交：补合谷易气旺、泻三阴交易耗血，补泻一错有堕胎之虞。
+  seq:
+  - 155
+  - 157
+  q: 合谷、三阴交不要下，免得你补泻搞错
+  ents:
+  - acupoint.li4
+  - acupoint.sp6
+  conf: 0.95
+  asr: 竞争=禁针；摔掉=衰掉
