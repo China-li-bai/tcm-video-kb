@@ -1,0 +1,90 @@
+[
+ {
+  "chapter_id": "jgy-007.c01",
+  "video_id": "jgy-007",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "血痹成因与黄芪桂枝五物汤",
+  "summary": "金匮血痹虚劳。血痹多见养尊处优、骨弱肌盛、疲劳汗出动摇感邪；痹为皮肤麻木。黄芪桂枝五物汤＝桂枝汤去炙甘草加黄芪，重用生姜；轻者可针。",
+  "start_s": 3.03,
+  "end_s": 727.035,
+  "seg_from": 0,
+  "seg_to": 125,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "syndrome.xue_bi",
+   "formula.huang_qi_gui_zhi_wu_wu_tang"
+  ],
+  "citation": {
+   "youtube_id": "8kR7guh4l30",
+   "url": "https://www.youtube.com/watch?v=8kR7guh4l30&t=3s",
+   "series": "jgy",
+   "episode": 7,
+   "title": "倪海廈《金匱要略》細分版： 06血痺虛勞病",
+   "start_s": 3.03,
+   "end_s": 727.03
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-007.c02",
+  "video_id": "jgy-007",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "虚劳遗精盗汗·桂枝加龙骨牡蛎汤",
+  "summary": "男子脉浮弱无子、妇人易堕同类虚寒劳证。桂枝加龙骨牡蛎汤不限于遗精，亦治少年遗精、夜尿、瘦弱盗汗；遗精分梦交、无梦、昼遗三等。",
+  "start_s": 727.56,
+  "end_s": 1452.014,
+  "seg_from": 126,
+  "seg_to": 256,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "syndrome.xu_lao",
+   "new.formula.gui_zhi_jia_long_gu_mu_li_tang",
+   "herb.mu_li"
+  ],
+  "citation": {
+   "youtube_id": "8kR7guh4l30",
+   "url": "https://www.youtube.com/watch?v=8kR7guh4l30&t=727s",
+   "series": "jgy",
+   "episode": 7,
+   "title": "倪海廈《金匱要略》細分版： 06血痺虛勞病",
+   "start_s": 727.56,
+   "end_s": 1452.01
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-007.c03",
+  "video_id": "jgy-007",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "桂枝附子剂量与天雄散",
+  "summary": "桂枝附子汤以桂枝量大于附子导药入节；术附则白术量重。继论天雄散等虚劳方。",
+  "start_s": 1452.014,
+  "end_s": 4999.187,
+  "seg_from": 257,
+  "seg_to": 898,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "formula.gui_zhi_fu_zi_tang",
+   "formula.tian_xiong_san"
+  ],
+  "citation": {
+   "youtube_id": "8kR7guh4l30",
+   "url": "https://www.youtube.com/watch?v=8kR7guh4l30&t=1452s",
+   "series": "jgy",
+   "episode": 7,
+   "title": "倪海廈《金匱要略》細分版： 06血痺虛勞病",
+   "start_s": 1452.01,
+   "end_s": 4999.19
+  },
+  "review_status": "llm_read"
+ }
+]

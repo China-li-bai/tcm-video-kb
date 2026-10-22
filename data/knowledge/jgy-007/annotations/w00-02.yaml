@@ -1,0 +1,99 @@
+video_id: jgy-007
+window: w00-02
+seg_from: 0
+seg_to: 395
+annotator: llm_read
+chapters:
+- key: c01
+  title: 血痹成因与黄芪桂枝五物汤
+  start_seq: 0
+  summary: 金匮血痹虚劳。血痹多见养尊处优、骨弱肌盛、疲劳汗出动摇感邪；痹为皮肤麻木。黄芪桂枝五物汤＝桂枝汤去炙甘草加黄芪，重用生姜；轻者可针。
+  clauses: []
+  topics:
+  - syndrome.xue_bi
+  - formula.huang_qi_gui_zhi_wu_wu_tang
+- key: c02
+  title: 虚劳遗精盗汗·桂枝加龙骨牡蛎汤
+  start_seq: 126
+  summary: 男子脉浮弱无子、妇人易堕同类虚寒劳证。桂枝加龙骨牡蛎汤不限于遗精，亦治少年遗精、夜尿、瘦弱盗汗；遗精分梦交、无梦、昼遗三等。
+  clauses: []
+  topics:
+  - syndrome.xu_lao
+  - new.formula.gui_zhi_jia_long_gu_mu_li_tang
+  - herb.mu_li
+- key: c03
+  title: 桂枝附子剂量与天雄散
+  start_seq: 257
+  summary: 桂枝附子汤以桂枝量大于附子导药入节；术附则白术量重。继论天雄散等虚劳方。
+  clauses: []
+  topics:
+  - formula.gui_zhi_fu_zi_tang
+  - formula.tian_xiong_san
+entities:
+- id: syndrome.xue_bi
+  seq: 0
+  surface: 血碧
+  corrected: 血痹
+- id: formula.huang_qi_gui_zhi_wu_wu_tang
+  seq: 17
+  surface: 黄芪桂枝吴物汤
+  corrected: 黄芪桂枝五物汤
+- id: herb.huang_qi
+  seq: 17
+  surface: 黄芪
+  corrected: 黄芪
+- id: herb.sheng_jiang
+  seq: 27
+  surface: 生姜
+  corrected: 生姜
+- id: new.formula.gui_zhi_jia_long_gu_mu_li_tang
+  seq: 131
+  surface: 丝巾胶
+  corrected: 桂枝加龙骨牡蛎汤
+- id: herb.mu_li
+  seq: 142
+  surface: 牡蛎
+  corrected: 牡蛎
+- id: formula.tian_xiong_san
+  seq: 237
+  surface: 天雄散
+  corrected: 天雄散
+- id: syndrome.xu_lao
+  seq: 129
+  surface: 劳症
+  corrected: 虚劳
+kps:
+- type: pathomechanism
+  s: 血痹多因养尊处优骨弱肌盛、疲劳汗出动摇感邪；痹即皮肤麻木无感觉。
+  seq: [0, 12]
+  q: 麻木
+  ents: [syndrome.xue_bi]
+  conf: 0.9
+  asr: 血碧=血痹
+- type: formula_indication
+  s: 身体不仁如风痹状用黄芪桂枝五物汤（桂枝汤去炙草加黄芪），重用生姜。
+  seq: [17, 27]
+  q: 黄芪桂枝
+  ents: [formula.huang_qi_gui_zhi_wu_wu_tang, herb.huang_qi]
+  conf: 0.95
+  asr: 五枝/吴物=五物
+- type: formula_indication
+  s: 桂枝加龙骨牡蛎汤治男子遗精，亦治夜尿、瘦弱盗汗，勿仅锁定遗精。
+  seq: [132, 139]
+  q: 盗汗
+  ents: [new.formula.gui_zhi_jia_long_gu_mu_li_tang, syndrome.xu_lao]
+  conf: 0.9
+  asr: 丝巾胶/四金加/贵州五牡蛎=桂枝加龙骨牡蛎汤
+- type: clinical_tip
+  s: 遗精分三等：梦交最浅、无梦、昼遗最重。
+  seq: [140, 141]
+  q: 遗精
+  ents: [syndrome.xu_lao]
+  conf: 0.9
+  asr: 遗经=遗精
+- type: clinical_tip
+  s: 桂枝附子汤桂枝量宜大于附子以引入关节；白术附子汤则白术量重。
+  seq: [264, 266]
+  q: 白术
+  ents: [formula.gui_zhi_fu_zi_tang]
+  conf: 0.85
