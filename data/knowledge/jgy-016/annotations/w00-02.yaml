@@ -1,0 +1,265 @@
+video_id: jgy-016
+window: w00-02
+seg_from: 0
+seg_to: 397
+annotator: llm_read
+chapters:
+- key: c01
+  title: 黄疸总论·阳黄阴黄·内外因脾湿
+  start_seq: 0
+  summary: 金匮黄疸篇。黄瘅可读丹/淡，即黄色病；有别于黄汗。阳黄鲜亮如橘易治（约十日），阴黄晦暗难治。外因汗出不透致湿积，表感（如太阳中风桂枝汤）可触发黄疸；内因脾湿太盛土克肾水、胃速脾缓，脾胃表里失谐而发黄。思虑少动、久坐网咖等皆助脾湿。
+  clauses: []
+  topics:
+  - disease.huang_dan
+  - syndrome.huang_han
+  - zangfu.pi
+- key: c02
+  title: 女劳疸·酒疸·阳明转黄
+  start_seq: 165
+  summary: 额黑、微汗出、手足心热、薄暮即发、膀胱急小便自利名女劳疸，腹如水状；经云不治仍当救治。酒疸心中懊侬而热（心中=胃）、不能食常呕，酒性寒入胃反促蠕动。阳明病但热不寒：经证白虎、腑证承气；脉迟腹满示脾运不及、可预断将发黄疸。黄疸必小便不利；酒疸又有中焦湿停、鼻燥一型，脉浮用吐法、脉沉用下法。
+  clauses: []
+  topics:
+  - syndrome.nv_lao_dan
+  - syndrome.jiu_dan
+  - syndrome.yang_ming_bing
+- key: c03
+  title: 硝石矾石散·栀子大黄·治黄原则·猪膏发煎
+  start_seq: 273
+  summary: 酒疸危证用硝石矾石散（等分，大麦粥送），小便正黄大便正黑示湿热兼瘀。酒疸心中懊侬无发黄用栀子大黄汤（栀子去肝胆热、豆豉去胃热、大黄硝石去湿通便），有黄则茵陈蒿汤。治黄大纲：诸病黄家当利其小便；脉浮桂枝加黄芪汤取汗，大便不通栀子大黄急下。猪膏发煎用于大便黑、肌肤甲错（湿久化燥），发为血之余炸入猪油活血润燥；另用于妇人阴吹。
+  clauses: []
+  topics:
+  - formula.xiao_shi_fan_shi_san
+  - formula.zhi_zi_da_huang_tang
+  - formula.zhu_gao_fa_jian
+entities:
+- id: disease.huang_dan
+  seq: 24
+  surface: 黄疸
+  corrected: 黄疸
+- id: new.pattern.yang_huang
+  seq: 8
+  surface: 阳黄
+  corrected: 阳黄
+- id: new.pattern.yin_huang
+  seq: 8
+  surface: 阴黄
+  corrected: 阴黄
+- id: syndrome.huang_han
+  seq: 7
+  surface: 黄汗
+  corrected: 黄汗
+- id: formula.gui_zhi_tang
+  seq: 57
+  surface: 桂枝汤
+  corrected: 桂枝汤
+- id: zangfu.pi
+  seq: 35
+  surface: 脾脏
+  corrected: 脾
+- id: zangfu.wei
+  seq: 40
+  surface: 胃
+  corrected: 胃
+- id: zangfu.shen
+  seq: 69
+  surface: 肾
+  corrected: 肾
+- id: zangfu.dan
+  seq: 36
+  surface: 胆
+  corrected: 胆
+- id: zangfu.pang_guang
+  seq: 87
+  surface: 膀胱
+  corrected: 膀胱
+- id: zangfu.xiao_chang
+  seq: 86
+  surface: 小肠
+  corrected: 小肠
+- id: concept.biao_li
+  seq: 104
+  surface: 表里
+  corrected: 表里
+- id: syndrome.nv_lao_dan
+  seq: 165
+  surface: 女劳
+  corrected: 女劳疸
+- id: syndrome.jiu_dan
+  seq: 202
+  surface: 酒
+  corrected: 酒疸
+- id: syndrome.yang_ming_bing
+  seq: 225
+  surface: 阳明病
+  corrected: 阳明病
+- id: formula.bai_hu_tang
+  seq: 228
+  surface: 白虎汤
+  corrected: 白虎汤
+- id: formula.cheng_qi_tang
+  seq: 228
+  surface: 承气汤
+  corrected: 承气汤
+- id: symptom.xiao_bian_bu_li
+  seq: 246
+  surface: 小便不利
+  corrected: 小便不利
+- id: pulse.fu
+  seq: 262
+  surface: 脉浮
+  corrected: 浮脉
+- id: pulse.chen
+  seq: 263
+  surface: 脉沉
+  corrected: 沉脉
+- id: formula.xiao_shi_fan_shi_san
+  seq: 294
+  surface: 消石
+  corrected: 硝石矾石散
+- id: herb.xiao_shi
+  seq: 294
+  surface: 消石
+  corrected: 硝石
+- id: herb.fan_shi
+  seq: 283
+  surface: 凡事
+  corrected: 矾石
+- id: formula.zhi_zi_da_huang_tang
+  seq: 305
+  surface: 栀子
+  corrected: 栀子大黄汤
+- id: herb.zhi_zi
+  seq: 305
+  surface: 栀子
+  corrected: 栀子
+- id: herb.da_huang
+  seq: 317
+  surface: 大黄
+  corrected: 大黄
+- id: formula.yin_chen_hao_tang
+  seq: 313
+  surface: 阴陈老汤
+  corrected: 茵陈蒿汤
+- id: herb.yin_chen_hao
+  seq: 313
+  surface: 阴陈
+  corrected: 茵陈
+- id: formula.gui_zhi_jia_huang_qi_tang
+  seq: 341
+  surface: 黄芪
+  corrected: 桂枝加黄芪汤
+- id: herb.huang_qi
+  seq: 341
+  surface: 黄芪
+  corrected: 黄芪
+- id: formula.zhu_gao_fa_jian
+  seq: 366
+  surface: 诸膏法经
+  corrected: 猪膏发煎
+- id: herb.zhu_gao
+  seq: 376
+  surface: 猪油
+  corrected: 猪膏
+- id: symptom.fa_huang
+  seq: 312
+  surface: 发黄
+  corrected: 发黄
+kps:
+- type: clinical_tip
+  s: 金匮黄疸篇黄瘅可读丹或淡，即黄色病；黄汗并非真正发黄之病。
+  seq: [5]
+  q: 黄色的
+  ents: [disease.huang_dan, syndrome.huang_han]
+  conf: 0.95
+- type: diagnostic_rule
+  s: 黄疸分阳黄与阴黄：阳黄鲜亮如橘，约十日可愈；阴黄晦暗，较难治。
+  seq: [8]
+  q: 阳黄
+  ents: [disease.huang_dan, new.pattern.yang_huang, new.pattern.yin_huang]
+  conf: 0.95
+- type: pathomechanism
+  s: 黄疸总由湿积：外因汗出不透湿留体内；内因脾湿太盛致胃速脾缓、胆汁逆行而周身发黄。
+  seq: [46]
+  q: 表证
+  ents: [disease.huang_dan, zangfu.pi]
+  conf: 0.9
+  asr: 卖腐者=脉浮者；诗/丝/皮湿=湿
+- type: clinical_tip
+  s: 素有停饮湿盛者，太阳中风服桂枝汤后反可发黄疸，因汗不得透彻、表邪与内湿胶结。
+  seq: [63]
+  q: 发黄疸
+  ents: [formula.gui_zhi_tang, disease.huang_dan, syndrome.huang_han]
+  conf: 0.9
+- type: diagnostic_rule
+  s: 脾病（含胰）腹水多无小便（土克水）；肝病腹水小便仍通（木克土尚未克水），可据此判病在脾或在肝。
+  seq: [76]
+  q: 小便
+  ents: [zangfu.pi, zangfu.gan, zangfu.shen]
+  conf: 0.9
+- type: pathomechanism
+  s: 脾胃相表里：胃扩脾收交替；胃太快而脾太慢则发黄，内外因皆归于脾湿太盛。
+  seq: [104]
+  q: 表里
+  ents: [zangfu.pi, zangfu.wei, concept.biao_li, disease.huang_dan]
+  conf: 0.9
+- type: diagnostic_rule
+  s: 女劳疸：额黑、微汗出、手足心热、薄暮即发、小便自利不能约束，腹如水状；经云不治，临床仍当尽力救治。
+  seq: [165]
+  q: 女劳
+  ents: [syndrome.nv_lao_dan]
+  conf: 0.95
+  asr: 女劳禅=女劳疸；薄目=薄暮；汉出=汗出
+- type: clinical_tip
+  s: 酒疸多见于嗜酒：心中（胃）懊侬而热、不能食、常呕吐；酒性寒入胃反促蠕动而生热象。
+  seq: [202]
+  q: 发黄
+  ents: [syndrome.jiu_dan, zangfu.wei]
+  conf: 0.9
+  asr: 九单/酒痰=酒疸；心中=胃
+- type: formula_indication
+  s: 阳明病但热不寒：经证用白虎汤，腑证用承气汤类。
+  seq: [228]
+  q: 白虎汤
+  ents: [syndrome.yang_ming_bing, formula.bai_hu_tang, formula.cheng_qi_tang]
+  conf: 0.95
+- type: diagnostic_rule
+  s: 黄疸必见小便不利；酒客心中热、脚下热而小便不利，为酒湿寒积及脾之征。
+  seq: [246]
+  q: 小便不利
+  ents: [disease.huang_dan, syndrome.jiu_dan, symptom.xiao_bian_bu_li]
+  conf: 0.95
+  asr: 九黄氮=酒黄疸
+- type: diagnostic_rule
+  s: 酒疸脉浮病在上用吐法，脉沉病在下用下法。
+  seq: [262]
+  q: 脉浮
+  ents: [syndrome.jiu_dan, pulse.fu, pulse.chen, method.tu]
+  conf: 0.9
+- type: formula_indication
+  s: 酒疸危重（身黑）用硝石矾石散，等分火煅为散，大麦粥送服；以小便正黄、大便正黑为湿热兼瘀之据。
+  seq: [294]
+  q: 消石
+  ents: [formula.xiao_shi_fan_shi_san, herb.xiao_shi, herb.fan_shi, syndrome.jiu_dan]
+  conf: 0.9
+  asr: 消石/消失=硝石；凡事/凡食=矾石；反思展=矾石散
+- type: formula_indication
+  s: 酒疸心中懊侬未发黄用栀子大黄汤；已发黄用茵陈蒿汤。栀子清肝胆热，豆豉清胃热，大黄硝石祛湿通便。
+  seq: [305]
+  q: 栀子
+  ents: [formula.zhi_zi_da_huang_tang, formula.yin_chen_hao_tang, herb.zhi_zi, syndrome.jiu_dan]
+  conf: 0.95
+  asr: 栀子大汤=栀子大黄汤；阴陈老汤=茵陈蒿汤；阴神=茵陈
+- type: treatment_principle
+  s: 诸病黄家当利其小便；脉浮用桂枝加黄芪汤取汗祛湿，大便不通用栀子大黄急下则黄退胆疏。
+  seq: [341]
+  q: 黄芪
+  ents: [formula.gui_zhi_jia_huang_qi_tang, formula.zhi_zi_da_huang_tang, disease.huang_dan, herb.huang_qi]
+  conf: 0.95
+  asr: 皇家=黄家；贵姿加黄芪=桂枝加黄芪
+- type: formula_indication
+  s: 猪膏发煎：湿久化燥见大便黑、肌肤甲错（如蛇蜕）时，以猪油润燥、乱发（血之余）炸入活血攻瘀；经方另用于妇人阴吹。
+  seq: [373]
+  q: 大便黑
+  ents: [formula.zhu_gao_fa_jian, herb.zhu_gao]
+  conf: 0.9
+  asr: 诸膏法经/珠高发经/猪羔法尖=猪膏发煎

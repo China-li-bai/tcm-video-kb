@@ -1,0 +1,92 @@
+[
+ {
+  "chapter_id": "jgy-016.c01",
+  "video_id": "jgy-016",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "黄疸总论·阳黄阴黄·内外因脾湿",
+  "summary": "金匮黄疸篇。黄瘅可读丹/淡，即黄色病；有别于黄汗。阳黄鲜亮如橘易治（约十日），阴黄晦暗难治。外因汗出不透致湿积，表感（如太阳中风桂枝汤）可触发黄疸；内因脾湿太盛土克肾水、胃速脾缓，脾胃表里失谐而发黄。思虑少动、久坐网咖等皆助脾湿。",
+  "start_s": 0.43,
+  "end_s": 868.19,
+  "seg_from": 0,
+  "seg_to": 164,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "disease.huang_dan",
+   "syndrome.huang_han",
+   "zangfu.pi"
+  ],
+  "citation": {
+   "youtube_id": "rt0S4kpiRF8",
+   "url": "https://www.youtube.com/watch?v=rt0S4kpiRF8&t=0s",
+   "series": "jgy",
+   "episode": 16,
+   "title": "倪海廈《金匱要略》細分版： 15黃瘅病",
+   "start_s": 0.43,
+   "end_s": 868.19
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-016.c02",
+  "video_id": "jgy-016",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "女劳疸·酒疸·阳明转黄",
+  "summary": "额黑、微汗出、手足心热、薄暮即发、膀胱急小便自利名女劳疸，腹如水状；经云不治仍当救治。酒疸心中懊侬而热（心中=胃）、不能食常呕，酒性寒入胃反促蠕动。阳明病但热不寒：经证白虎、腑证承气；脉迟腹满示脾运不及、可预断将发黄疸。黄疸必小便不利；酒疸又有中焦湿停、鼻燥一型，脉浮用吐法、脉沉用下法。",
+  "start_s": 869.31,
+  "end_s": 1500.369,
+  "seg_from": 165,
+  "seg_to": 272,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "syndrome.nv_lao_dan",
+   "syndrome.jiu_dan",
+   "syndrome.yang_ming_bing"
+  ],
+  "citation": {
+   "youtube_id": "rt0S4kpiRF8",
+   "url": "https://www.youtube.com/watch?v=rt0S4kpiRF8&t=869s",
+   "series": "jgy",
+   "episode": 16,
+   "title": "倪海廈《金匱要略》細分版： 15黃瘅病",
+   "start_s": 869.31,
+   "end_s": 1500.37
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-016.c03",
+  "video_id": "jgy-016",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "硝石矾石散·栀子大黄·治黄原则·猪膏发煎",
+  "summary": "酒疸危证用硝石矾石散（等分，大麦粥送），小便正黄大便正黑示湿热兼瘀。酒疸心中懊侬无发黄用栀子大黄汤（栀子去肝胆热、豆豉去胃热、大黄硝石去湿通便），有黄则茵陈蒿汤。治黄大纲：诸病黄家当利其小便；脉浮桂枝加黄芪汤取汗，大便不通栀子大黄急下。猪膏发煎用于大便黑、肌肤甲错（湿久化燥），发为血之余炸入猪油活血润燥；另用于妇人阴吹。",
+  "start_s": 1500.369,
+  "end_s": 3473.885,
+  "seg_from": 273,
+  "seg_to": 630,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "formula.xiao_shi_fan_shi_san",
+   "formula.zhi_zi_da_huang_tang",
+   "formula.zhu_gao_fa_jian"
+  ],
+  "citation": {
+   "youtube_id": "rt0S4kpiRF8",
+   "url": "https://www.youtube.com/watch?v=rt0S4kpiRF8&t=1500s",
+   "series": "jgy",
+   "episode": 16,
+   "title": "倪海廈《金匱要略》細分版： 15黃瘅病",
+   "start_s": 1500.37,
+   "end_s": 3473.89
+  },
+  "review_status": "llm_read"
+ }
+]
