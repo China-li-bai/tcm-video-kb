@@ -1,0 +1,93 @@
+video_id: jgy-005
+window: w00-01
+seg_from: 0
+seg_to: 245
+annotator: llm_read
+chapters:
+- key: c01
+  title: 疟病脉证·无痰不疟
+  start_seq: 0
+  summary: 金匮第四篇疟病。弦数多热、弦迟多寒，可温可汗可吐可针，辨证为要。谚云无痰不疟，治疟必兼祛痰；勿以温病阴虚法套往来寒热。
+  clauses: []
+  topics:
+  - syndrome.nve_bing
+  - formula.bai_hu_jia_gui_zhi_tang
+- key: c02
+  title: 白虎加桂枝·牡蛎汤·柴胡治疟
+  start_seq: 95
+  summary: 温疟骨节烦疼恶心用白虎加桂枝汤。补充牡蛎汤治疟；劳疟往来寒热渴用小柴胡去半夏加瓜蒌根；寒疟可用柴胡姜桂类，配合曲池委中等针灸。
+  clauses: []
+  topics:
+  - formula.bai_hu_jia_gui_zhi_tang
+  - formula.xiao_chai_hu_tang
+  - herb.mu_li
+entities:
+- id: syndrome.nve_bing
+  seq: 1
+  surface: 虐病
+  corrected: 疟病
+- id: formula.bai_hu_jia_gui_zhi_tang
+  seq: 96
+  surface: 白虎家桂枝汤
+  corrected: 白虎加桂枝汤
+- id: herb.mu_li
+  seq: 146
+  surface: 牡蛎
+  corrected: 牡蛎
+- id: new.formula.mu_li_tang
+  seq: 146
+  surface: 牡蛎汤
+  corrected: 牡蛎汤
+- id: formula.xiao_chai_hu_tang
+  seq: 156
+  surface: 小柴汤汤
+  corrected: 小柴胡汤
+- id: herb.yun_mu
+  seq: 136
+  surface: 云母
+  corrected: 云母
+- id: herb.shu_qi
+  seq: 160
+  surface: 祖席
+  corrected: 蜀漆
+kps:
+- type: concept_definition
+  s: 虐病即疟疾；弦数多热、弦迟多寒，可温可汗可针，辨证决定治法。
+  seq: [1, 14]
+  q: 疟疾
+  ents: [syndrome.nve_bing]
+  conf: 0.95
+  asr: 虐=疟
+- type: clinical_tip
+  s: 无痰不疟，治疟必用祛痰药。
+  seq: [19, 23]
+  q: 祛痰的药
+  ents: [syndrome.nve_bing]
+  conf: 0.9
+  asr: 不虐=不疟；有弹=有痰
+- type: contraindication
+  s: 疟之往来寒热不可套温病阴虚滋阴法，经方主张先复阳气。
+  seq: [27, 30]
+  q: 不可以把它阴虚
+  ents: [syndrome.nve_bing]
+  conf: 0.9
+- type: formula_indication
+  s: 温疟身热骨节烦疼恶心，白虎加桂枝汤。
+  seq: [95, 96]
+  q: 白虎家桂枝汤
+  ents: [formula.bai_hu_jia_gui_zhi_tang, syndrome.wen_nve]
+  conf: 0.9
+  asr: 白虎家=白虎加
+- type: formula_indication
+  s: 补充牡蛎汤治疟；劳疟往来寒热燥渴用小柴胡去半夏加瓜蒌根。
+  seq: [146, 156]
+  q: 牡蛎汤
+  ents: [new.formula.mu_li_tang, formula.xiao_chai_hu_tang]
+  conf: 0.85
+  asr: 小柴汤=小柴胡；治虐=治疟
+- type: clinical_tip
+  s: 疟疾可配曲池、委中等针灸；寒湿中焦可用云母或柴胡姜桂类。
+  seq: [157]
+  q: 都可以治疗疟疾
+  ents: [syndrome.nve_bing]
+  conf: 0.85

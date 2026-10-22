@@ -1,0 +1,91 @@
+[
+ {
+  "chapter_id": "jgy-004.c01",
+  "video_id": "jgy-004",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "百合病概说·情志与五脏",
+  "summary": "金匮第三篇百合狐惑阴阳毒。百合病症杂、药食皆拒，多见大病初愈或久郁神经质；五脏失和则神志异常，欲卧不能卧、欲行不能行。",
+  "start_s": 2.97,
+  "end_s": 726.625,
+  "seg_from": 0,
+  "seg_to": 144,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "syndrome.bai_he_bing",
+   "herb.bai_he"
+  ],
+  "citation": {
+   "youtube_id": "vAD7sGJJOCg",
+   "url": "https://www.youtube.com/watch?v=vAD7sGJJOCg&t=2s",
+   "series": "jgy",
+   "episode": 4,
+   "title": "倪海廈《金匱要略》細分版： 03百合狐惑陰陽毒",
+   "start_s": 2.97,
+   "end_s": 726.62
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-004.c02",
+  "video_id": "jgy-004",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "百合误下用滑石与汗吐下三误",
+  "summary": "百合病误下津伤下利，选滑石淡渗利尿止利，不用猪苓茯苓；汗吐下三法对应三种误治。百合宜泡洗涌泉煮以易烂。",
+  "start_s": 726.85,
+  "end_s": 1452.578,
+  "seg_from": 145,
+  "seg_to": 273,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "syndrome.bai_he_bing",
+   "herb.hua_shi",
+   "formula.bai_he_hua_shi_san"
+  ],
+  "citation": {
+   "youtube_id": "vAD7sGJJOCg",
+   "url": "https://www.youtube.com/watch?v=vAD7sGJJOCg&t=726s",
+   "series": "jgy",
+   "episode": 4,
+   "title": "倪海廈《金匱要略》細分版： 03百合狐惑陰陽毒",
+   "start_s": 726.85,
+   "end_s": 1452.58
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-004.c03",
+  "video_id": "jgy-004",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "狐惑与甘草泻心汤",
+  "summary": "狐惑见咽/阴蚀、眠不安、面色乍变，或类梦游惊恐；甘草泻心汤主之，凭心下痞硬肠鸣下利恶心辨证，勿被西医病名框死。",
+  "start_s": 1452.578,
+  "end_s": 3494.059,
+  "seg_from": 274,
+  "seg_to": 633,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "syndrome.hu_huo",
+   "disease.hu_huo_bing",
+   "formula.gan_cao_xie_xin_tang"
+  ],
+  "citation": {
+   "youtube_id": "vAD7sGJJOCg",
+   "url": "https://www.youtube.com/watch?v=vAD7sGJJOCg&t=1452s",
+   "series": "jgy",
+   "episode": 4,
+   "title": "倪海廈《金匱要略》細分版： 03百合狐惑陰陽毒",
+   "start_s": 1452.58,
+   "end_s": 3494.06
+  },
+  "review_status": "llm_read"
+ }
+]

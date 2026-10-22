@@ -1,0 +1,102 @@
+video_id: jgy-004
+window: w00-02
+seg_from: 0
+seg_to: 407
+annotator: llm_read
+chapters:
+- key: c01
+  title: 百合病概说·情志与五脏
+  start_seq: 0
+  summary: 金匮第三篇百合狐惑阴阳毒。百合病症杂、药食皆拒，多见大病初愈或久郁神经质；五脏失和则神志异常，欲卧不能卧、欲行不能行。
+  clauses: []
+  topics:
+  - syndrome.bai_he_bing
+  - herb.bai_he
+- key: c02
+  title: 百合误下用滑石与汗吐下三误
+  start_seq: 145
+  summary: 百合病误下津伤下利，选滑石淡渗利尿止利，不用猪苓茯苓；汗吐下三法对应三种误治。百合宜泡洗涌泉煮以易烂。
+  clauses: []
+  topics:
+  - syndrome.bai_he_bing
+  - herb.hua_shi
+  - formula.bai_he_hua_shi_san
+- key: c03
+  title: 狐惑与甘草泻心汤
+  start_seq: 274
+  summary: 狐惑见咽/阴蚀、眠不安、面色乍变，或类梦游惊恐；甘草泻心汤主之，凭心下痞硬肠鸣下利恶心辨证，勿被西医病名框死。
+  clauses: []
+  topics:
+  - syndrome.hu_huo
+  - disease.hu_huo_bing
+  - formula.gan_cao_xie_xin_tang
+entities:
+- id: classic.jin_gui_yao_lve
+  seq: 0
+  surface: 百合，不惑阴阳独
+  corrected: 百合狐惑阴阳毒
+- id: herb.bai_he
+  seq: 1
+  surface: 百合
+  corrected: 百合
+- id: syndrome.bai_he_bing
+  seq: 155
+  surface: 百合病
+  corrected: 百合病
+- id: herb.hua_shi
+  seq: 162
+  surface: 滑石
+  corrected: 滑石
+- id: formula.gan_cao_xie_xin_tang
+  seq: 297
+  surface: 甘草泻心汤
+  corrected: 甘草泻心汤
+- id: syndrome.hu_huo
+  seq: 277
+  surface: 湖惑
+  corrected: 狐惑
+- id: disease.hu_huo_bing
+  seq: 301
+  surface: 湖霍的病
+  corrected: 狐惑病
+kps:
+- type: concept_definition
+  s: 百合病症杂、药食难纳，倪师比神经病；多发于大病初愈或久郁神经质。
+  seq: [11, 13]
+  q: 大病初愈
+  ents: [syndrome.bai_he_bing, herb.bai_he]
+  conf: 0.9
+  asr: 不惑=狐惑；阴阳独=阴阳毒
+- type: pathomechanism
+  s: 五脏协调则神志开朗；失和则默然、欲卧不能卧（肾水不生肝木）。
+  seq: [30, 58]
+  q: 默然
+  ents: [syndrome.bai_he_bing]
+  conf: 0.85
+- type: formula_indication
+  s: 百合病误下津伤下利，用滑石利尿止利，不用猪苓茯苓。
+  seq: [162, 168]
+  q: 选滑石
+  ents: [herb.hua_shi, syndrome.bai_he_bing]
+  conf: 0.85
+  asr: 指粒=止利；下粒=下利
+- type: clinical_tip
+  s: 汗吐下为中医三法，对应三种误治路径。
+  seq: [178]
+  q: 汗吐下
+  ents: [syndrome.bai_he_bing]
+  conf: 0.9
+- type: formula_indication
+  s: 狐惑精神梦游类证用甘草泻心汤；心下痞硬肠鸣下利恶心即是其证。
+  seq: [297, 317]
+  q: 甘草泻心汤
+  ents: [formula.gan_cao_xie_xin_tang, syndrome.hu_huo]
+  conf: 0.9
+  asr: 湖货/湖惑/湖霍=狐惑；厨方=经方
+- type: clinical_tip
+  s: 即便西医诊为动脉血管堵塞，若呈甘草泻心汤证仍当开该方，中医重辨证。
+  seq: [322]
+  q: 甘草芥心汤
+  ents: [formula.gan_cao_xie_xin_tang]
+  conf: 0.85
+  asr: 芥=泻
