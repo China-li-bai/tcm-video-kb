@@ -1,0 +1,61 @@
+[
+ {
+  "chapter_id": "zj-048.c01",
+  "video_id": "zj-048",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "肩痛辨三阳与天井",
+  "summary": "肩痛须辨大肠/三焦/小肠经，勿一律曲池。天井为三焦合穴属土、子穴，屈肘两筋间凹陷取之；可对称治对侧膝痛。",
+  "start_s": 0.05,
+  "end_s": 166.425,
+  "seg_from": 0,
+  "seg_to": 31,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.te10",
+   "meridian.te",
+   "meridian.li"
+  ],
+  "citation": {
+   "youtube_id": "z4eRK18Svho",
+   "url": "https://www.youtube.com/watch?v=z4eRK18Svho&t=0s",
+   "series": "zj",
+   "episode": 48,
+   "title": "Ni Hai-hsia \"Humanity Series\" - \"Acupuncture\" (90 Episodes Total): Episode 48",
+   "start_s": 0.05,
+   "end_s": 166.43
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-048.c02",
+  "video_id": "zj-048",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "清冷渊与三焦主淋巴",
+  "summary": "清冷渊在天井上一寸，可治三焦火/发热及不能梳头等症。三焦主全身淋巴与内分泌，颈淋巴结、甲亢等常取三焦经穴。",
+  "start_s": 170.5,
+  "end_s": 1837.902,
+  "seg_from": 32,
+  "seg_to": 327,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.te11",
+   "zangfu.san_jiao"
+  ],
+  "citation": {
+   "youtube_id": "z4eRK18Svho",
+   "url": "https://www.youtube.com/watch?v=z4eRK18Svho&t=170s",
+   "series": "zj",
+   "episode": 48,
+   "title": "Ni Hai-hsia \"Humanity Series\" - \"Acupuncture\" (90 Episodes Total): Episode 48",
+   "start_s": 170.5,
+   "end_s": 1837.9
+  },
+  "review_status": "llm_read"
+ }
+]

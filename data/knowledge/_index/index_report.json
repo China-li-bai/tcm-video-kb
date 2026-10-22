@@ -48,9 +48,10 @@
   "zj-043",
   "zj-045",
   "zj-046",
-  "zj-047"
+  "zj-047",
+  "zj-048"
  ],
- "n_entities": 1012,
- "n_knowledge_points": 824,
- "n_chapters": 310
+ "n_entities": 1015,
+ "n_knowledge_points": 828,
+ "n_chapters": 312
 }

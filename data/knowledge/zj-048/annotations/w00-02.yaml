@@ -1,0 +1,102 @@
+video_id: zj-048
+window: w00-02
+seg_from: 0
+seg_to: 327
+annotator: llm_read
+chapters:
+- key: c01
+  title: 肩痛辨三阳与天井
+  start_seq: 0
+  summary: 肩痛须辨大肠/三焦/小肠经，勿一律曲池。天井为三焦合穴属土、子穴，屈肘两筋间凹陷取之；可对称治对侧膝痛。
+  clauses: []
+  topics:
+  - acupoint.te10
+  - meridian.te
+  - meridian.li
+- key: c02
+  title: 清冷渊与三焦主淋巴
+  start_seq: 32
+  summary: 清冷渊在天井上一寸，可治三焦火/发热及不能梳头等症。三焦主全身淋巴与内分泌，颈淋巴结、甲亢等常取三焦经穴。
+  clauses: []
+  topics:
+  - acupoint.te11
+  - zangfu.san_jiao
+entities:
+- id: meridian.te
+  seq: 1
+  surface: 三焦经
+  corrected: 手少阳三焦经
+- id: meridian.li
+  seq: 1
+  surface: 大肠经
+  corrected: 手阳明大肠经
+- id: meridian.si
+  seq: 1
+  surface: 小肠经
+  corrected: 手太阳小肠经
+- id: acupoint.li11
+  seq: 3
+  surface: 曲池
+  corrected: 曲池
+- id: acupoint.te10
+  seq: 14
+  surface: 天井穴
+  corrected: 天井
+- id: acupoint.te11
+  seq: 32
+  surface: 清冷约
+  corrected: 清冷渊
+- id: zangfu.san_jiao
+  seq: 81
+  surface: 三焦
+  corrected: 三焦
+- id: acupoint.te14
+  seq: 73
+  surface: 肩见
+  corrected: 肩髎
+kps:
+- type: clinical_tip
+  s: 肩痛须按经络辨大肠、三焦、小肠，勿凡肩痛皆取曲池。
+  seq:
+  - 3
+  - 5
+  q: 不要说啊那个书上说曲直至肩膀痛
+  ents:
+  - acupoint.li11
+  - meridian.te
+  - meridian.li
+  - meridian.si
+  conf: 0.95
+  asr: 曲直=曲池
+- type: acupoint_usage
+  s: 天井为三焦合穴属土、子穴；屈肘两筋间凹陷直刺。可对侧取治膝痛。
+  seq:
+  - 14
+  - 27
+  q: 天井穴天女穴是三六经的合穴
+  ents:
+  - acupoint.te10
+  - meridian.te
+  conf: 0.9
+  asr: 天女=天井；三六=三焦；殊途=属土
+- type: acupoint_usage
+  s: 清冷渊在天井直上一寸；可治发热及三焦经臂痛、不能梳头等。
+  seq:
+  - 32
+  - 59
+  q: 从天井直上一寸，就是清冷约
+  ents:
+  - acupoint.te11
+  - acupoint.te10
+  conf: 0.9
+  asr: 清冷约/青岭渊=清冷渊
+- type: concept_definition
+  s: 淋巴与内分泌系统属三焦所主；颈淋巴结肿、甲亢等常取三焦经穴。
+  seq:
+  - 79
+  - 81
+  q: 所有的淋巴系统，我们的内分泌系统，通通是三焦
+  ents:
+  - zangfu.san_jiao
+  - meridian.te
+  conf: 0.9
