@@ -40,6 +40,26 @@ CREATE TABLE IF NOT EXISTS step_run (
   PRIMARY KEY (video_id, step, version_key)
 );
 CREATE INDEX IF NOT EXISTS ix_step_run_status ON step_run (status, step);
+-- Heavy media (source audio, wav parts, play copies) deleted after verified outputs.
+-- active=1: purged items are never re-run / re-required; re-fetch from source_url.
+CREATE TABLE IF NOT EXISTS media_purge (
+  video_id      TEXT PRIMARY KEY,
+  series_id     TEXT,
+  episode       INTEGER,
+  title         TEXT,
+  youtube_id    TEXT,
+  source_url    TEXT,
+  source_path   TEXT,
+  source_sha256 TEXT,
+  source_bytes  INTEGER,
+  duration_s    REAL,
+  bytes_freed   INTEGER,
+  files         TEXT,
+  verify        TEXT,
+  batch_id      TEXT,
+  active        INTEGER NOT NULL DEFAULT 1,
+  purged_at     TEXT
+);
 """
 
 def _now() -> str:
@@ -186,6 +206,47 @@ class StateDB:
             q += " AND video_id=?"
             args = (video_id,)
         return [dict(r) for r in self.conn.execute(q + " ORDER BY finished_at", args).fetchall()]
+
+    # ------------------------------------------------------------ media purge
+    def record_purge(self, rec: dict[str, Any]) -> None:
+        cols = ["video_id", "series_id", "episode", "title", "youtube_id", "source_url",
+                "source_path", "source_sha256", "source_bytes", "duration_s", "bytes_freed",
+                "files", "verify", "batch_id"]
+        vals = [json.dumps(rec.get(c), ensure_ascii=False) if c in ("files", "verify")
+                else rec.get(c) for c in cols]
+        self.conn.execute(
+            f"INSERT OR REPLACE INTO media_purge ({','.join(cols)},active,purged_at) "
+            f"VALUES ({','.join('?' * len(cols))},1,?)", (*vals, _now()))
+        self.conn.commit()
+        m = self.get_video(rec["video_id"])
+        if m:
+            m.meta = {**(m.meta or {}), "media_purged": True, "purged_at": _now()}
+            self.upsert_video(m)
+
+    def get_purge(self, video_id: str, active_only: bool = True) -> Optional[dict[str, Any]]:
+        q = "SELECT * FROM media_purge WHERE video_id=?" + (" AND active=1" if active_only else "")
+        row = self.conn.execute(q, (video_id,)).fetchone()
+        if not row:
+            return None
+        d = dict(row)
+        for k in ("files", "verify"):
+            d[k] = json.loads(d[k]) if d.get(k) else None
+        return d
+
+    def is_purged(self, video_id: str) -> bool:
+        return self.get_purge(video_id) is not None
+
+    def clear_purge(self, video_id: str) -> None:
+        """Media re-fetched: keep the history row, but allow s00..s05 to run again."""
+        self.conn.execute("UPDATE media_purge SET active=0 WHERE video_id=?", (video_id,))
+        self.conn.commit()
+        m = self.get_video(video_id)
+        if m:
+            m.meta = {**(m.meta or {}), "media_purged": False}
+            self.upsert_video(m)
+
+    def purged_ids(self) -> set[str]:
+        return {r[0] for r in self.conn.execute("SELECT video_id FROM media_purge WHERE active=1")}
 
     @staticmethod
     def _row_to_step(row: sqlite3.Row) -> StepRun:

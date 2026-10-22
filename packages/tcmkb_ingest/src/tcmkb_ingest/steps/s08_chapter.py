@@ -102,10 +102,17 @@ def _key_points(text: str, n: int = 3) -> list[str]:
                 return hits
     return hits
 
-def render_lecture_md(video_id: str, title: str, chapters: list[dict], segs: list[dict]) -> str:
+def render_lecture_md(video_id: str, title: str, chapters: list[dict], segs: list[dict],
+                      source: dict | None = None) -> str:
     lines = [f"# {title or video_id}", "", f"video_id: `{video_id}`", ""]
+    if source and source.get("url"):
+        lines += [f"source: [{source.get('title') or source['url']}]({source['url']})"
+                  f" — {source.get('series_title') or source.get('series_id')}"
+                  f" 第{source.get('episode')}集", ""]
     for ch in chapters:
-        lines.append(f"## {ch['seq']}. {ch['title']}  [{_fmt_ts(ch['start_s'])}–{_fmt_ts(ch['end_s'])}]")
+        link = (ch.get("cite") or {}).get("t_url")
+        ts = f"[{_fmt_ts(ch['start_s'])}–{_fmt_ts(ch['end_s'])}]"
+        lines.append(f"## {ch['seq']}. {ch['title']}  " + (f"[{ts}]({link})" if link else ts))
         lines.append("")
         if ch.get("summary"):
             lines.append(f"> {ch['summary']}")
@@ -179,7 +186,9 @@ def run(ctx: Ctx, **_kw) -> dict:
         raise RuntimeError(f"{ctx.video_id} not registered")
     cfg = ctx.step_cfg(step)
     mode = cfg.get("mode", "heuristic")
+    source = (m.meta or {}).get("source")
     frag = {
+        "cite": (source or {}).get("youtube_id") or (source or {}).get("url"),
         "mode": mode,
         "silence_gap_s": cfg.get("silence_gap_s", 3.0),
         "min_chapter_s": cfg.get("min_chapter_s", 60.0),
@@ -218,8 +227,11 @@ def run(ctx: Ctx, **_kw) -> dict:
         chapters[0]["start_s"] = float(segs[0]["start_s"])
         chapters[-1]["end_s"] = float(segs[-1]["end_s"])
 
+    from tcmkb_ingest.sources import cite
+    for ch in chapters:
+        ch["cite"] = cite(source, ch["start_s"], ch["end_s"])
     art.atomic_write_json(outdir / "chapters.json", chapters)
-    lecture = render_lecture_md(ctx.video_id, m.title, chapters, segs)
+    lecture = render_lecture_md(ctx.video_id, m.title, chapters, segs, source)
     art.atomic_write_text(outdir / "lecture.md", lecture)
     # Demo pointers
     art.atomic_write_json(ctx.artifacts_base / ctx.video_id / "chapters.json", chapters)

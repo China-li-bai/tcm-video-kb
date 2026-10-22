@@ -19,7 +19,7 @@ def _ffprobe_duration(path: pathlib.Path) -> float:
         return 0.0
 
 def run(ctx: Ctx, *, source_path: str | None = None, series_id: str | None = None,
-        episode: int = 0, title: str = "", **_kw) -> dict:
+        episode: int = 0, title: str = "", source_meta: dict | None = None, **_kw) -> dict:
     step = "s00_register"
     m = ctx.state.get_video(ctx.video_id)
     if m is None:
@@ -44,6 +44,10 @@ def run(ctx: Ctx, *, source_path: str | None = None, series_id: str | None = Non
     vk = ctx.compute_vk(step, cfg, upstream_hash=digest[:16])
     existing = ctx.state.find_done(ctx.video_id, step, vk)
     if existing and not ctx.force:
+        if m is not None and source_meta and (m.meta or {}).get("source") != source_meta:
+            # citation metadata (YouTube id/url/title) may arrive after registration
+            m.meta = {**(m.meta or {}), "source": source_meta}
+            ctx.state.upsert_video(m)
         log.info("skip %s %s (done)", ctx.video_id, step)
         return {"skipped": True, "version_key": vk, "outdir": existing.output_uri}
 
@@ -63,6 +67,7 @@ def run(ctx: Ctx, *, source_path: str | None = None, series_id: str | None = Non
         "source_bytes": size,
         "duration_s": dur,
         "ext": ext,
+        "source": source_meta or ((m.meta or {}).get("source") if m else None),
     }
     art.atomic_write_json(outdir / "meta.json", meta)
     oh = art.hash_dir_files(outdir, ["meta.json"])
@@ -72,6 +77,7 @@ def run(ctx: Ctx, *, source_path: str | None = None, series_id: str | None = Non
         video_id=ctx.video_id, series_id=series_id, episode=episode, title=title,
         source_path=str(src), source_sha256=digest, source_bytes=size,
         duration_s=dur, ext=ext, active_versions={step: vk},
+        meta={**((m.meta or {}) if m else {}), **({"source": source_meta} if source_meta else {})},
     )
     if m and m.active_versions:
         av = dict(m.active_versions)

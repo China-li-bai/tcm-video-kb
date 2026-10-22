@@ -35,6 +35,7 @@ class BatchItem:
     video_id: str
     episode: int = 0
     title: str = ""
+    source: dict[str, Any] | None = None   # YouTube citation (sources.MediaEntry.source())
 
 
 @dataclass
@@ -210,7 +211,8 @@ def run_batch(items: list[BatchItem], *, to_step: str = "s08", from_step: str | 
               force: bool = False, from_cache: bool = False, skip_alt: bool = True,
               cache_dir: str | None = None, root: pathlib.Path | None = None,
               engine: Any = None, fail_fast: bool = False,
-              report_dir: pathlib.Path | None = None, run_id: str | None = None) -> dict[str, Any]:
+              report_dir: pathlib.Path | None = None, run_id: str | None = None,
+              after_item: Any = None) -> dict[str, Any]:
     root = root or repo_root()
     to_step = normalize_step(to_step)
     pipe = load_pipeline_config(root)
@@ -233,7 +235,7 @@ def run_batch(items: list[BatchItem], *, to_step: str = "s08", from_step: str | 
                     it.video_id, to_step=to_step, from_step=from_step, force=force,
                     from_cache=from_cache, skip_alt=skip_alt, cache_dir=cache_dir,
                     source_path=it.file, series_id=it.series_id, episode=it.episode,
-                    title=it.title or it.video_id, root=root, engine=engine,
+                    title=it.title or it.video_id, source_meta=it.source, root=root, engine=engine,
                 )
                 r.status = "ok"
                 for step, v in out["steps"].items():
@@ -262,6 +264,11 @@ def run_batch(items: list[BatchItem], *, to_step: str = "s08", from_step: str | 
             r.n_corrections = dm.get("s06_clean", {}).get("n_edits")
             r.n_chapters = dm.get("s08_chapter", {}).get("n_chapters")
             results.append(r)
+            if after_item is not None:        # e.g. budget mode: verify + purge right away
+                try:
+                    after_item(it, r)
+                except Exception as e:  # never lose the batch over cleanup
+                    log.error("after_item %s failed: %s", it.video_id, e)
             audio_done += float(r.audio_sec or 0)
             el = time.time() - t_batch
             eta = el / i * (len(items) - i)

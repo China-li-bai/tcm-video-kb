@@ -128,6 +128,8 @@ class FunAsrEngine:
                 model=self.model_id, vad_model=self.vad, punc_model=self.punc,
                 vad_kwargs={"max_single_segment_time": self.max_seg_ms},
                 disable_update=True, disable_pbar=True, log_level="ERROR",
+                # AutoModel calls torch.set_num_threads(ncpu) itself (default 4)
+                **({"ncpu": int(self.threads)} if self.threads else {}),
             )
         self.load_sec = time.time() - t0
         self.model_rev = self._model_rev()

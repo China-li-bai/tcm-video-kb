@@ -1,0 +1,97 @@
+# YouTube inventory for 倪海厦 人纪 — probed 2026-10-21 on box.
+# These are typically unofficial re-uploads of copyrighted lectures.
+# Prefer audio-only for ASR. Intermittent YouTube bot checks may need
+#   yt-dlp --cookies-from-browser chrome
+# Probe proof: /workspace/yt-nihaxia-probe/probe/
+
+preferred_channel_note: >
+  国学迷 playlists for 针灸/金匮/本草/伤寒(most) deleted or mostly unavailable.
+  Best complete coverage: 漢學院 (DVD-style long eps) + 倪海廈漢唐智慧 (细分版).
+
+series:
+  shl:
+    title: 伤寒论
+    best:
+      url: "https://www.youtube.com/playlist?list=PLWYut62NoAtzoHlM87Q3bCkuPq4TPbX81"
+      channel: 倪海廈漢唐智慧
+      videos: 8
+      hours: 28.6
+      kind: 细分版_六经
+    alt_mega:
+      - url: "https://www.youtube.com/watch?v=1wdHTmXmESQ"  # 全2冊之1 ~15.8h
+      - url: "https://www.youtube.com/watch?v=tADdPutuDk8"  # 全2冊之2 (often bot-gated)
+    guoxuemi_incomplete:
+      url: "https://www.youtube.com/playlist?list=PLHCq_tasnj0Q"
+      available: "2/10 (8 hidden)"
+  zj:
+    title: 针灸大成
+    best:
+      url: "https://www.youtube.com/playlist?list=PLUOqnoW96eEY"
+      channel: 漢學院
+      videos: 90
+      hours: 38.4
+      kind: short_eps_~30min
+    alt:
+      url: "https://www.youtube.com/playlist?list=PLWYut62NoAtzLkIAryq-Pwmk0kxbOI_Fg"
+      channel: 倪海廈漢唐智慧
+      videos: 34
+      hours: 38.1
+  nj:
+    title: 黄帝内经
+    best:
+      url: "https://www.youtube.com/playlist?list=PLBOS9mCbmy5JSx4dtlOE7fScH-5EDF0ep"
+      channel: 國學迷
+      videos: 10
+      hours: 38.3
+      kind: DVD-style_long
+    alt_hanschool:
+      url: "https://www.youtube.com/playlist?list=PLH-Xb4ZrDfWU"
+      videos: 10
+      hours: 36.4
+    alt_hantang_细分:
+      url: "https://www.youtube.com/playlist?list=PLWYut62NoAtwnRma0bFTX4MSwNEZ-wp-k"
+      videos: 73
+      hours: 38.7
+  jgy:
+    title: 金匮要略
+    best:
+      url: "https://www.youtube.com/playlist?list=PLWYut62NoAtyHMBl-e3MFT69hwrr78VZ0"
+      channel: 倪海廈漢唐智慧
+      videos: 40
+      hours: 38.3
+      kind: 细分版
+    alt_mega:
+      url: "https://www.youtube.com/watch?v=r0aVq6Gb1cQ"
+      hours: 30.4
+      note: "single mega; shorter than 细分 — may miss end cases"
+  bc:
+    title: 神农本草经
+    best:
+      url: "https://www.youtube.com/playlist?list=PLUxSDTWtSyU8"
+      channel: 漢學院
+      videos: 8
+      hours: 29.6
+      kind: DVD-style_long
+      note: "playlist order is reverse (ep8..ep1); use --playlist-reverse or parse title"
+    alt_mega:
+      url: "https://www.youtube.com/watch?v=AE4rjXJ6eh8"
+      hours: 29.6
+    alt_hantang_细分_playlists:
+      - "https://www.youtube.com/playlist?list=PLWYut62NoAtwmS05GpOU3zmIApQ0RPvrp"  # 上经 141
+      - "https://www.youtube.com/playlist?list=PLWYut62NoAtwPwmCMYTs7-bkW6YLlnsZO"  # 中经 101
+      - "https://www.youtube.com/playlist?list=PLWYut62NoAtxbgpA4WrxHEu5UrN8AJ983"  # 下经 69
+      - "https://www.youtube.com/playlist?list=PLWYut62NoAtyVx8dO39HF-l0gpC0bdZVE"  # 增补 29
+    alt_hantang_细分_hours_total: 29.8
+
+bilibili_reference:
+  note: "yt-dlp from this box gets HTTP 412; web inventory only"
+  mega_complete: "https://www.bilibili.com/video/BV1sf421Z7LV/"  # 46 long eps, all 人纪
+  alt_complete: "https://www.bilibili.com/video/BV1eu411t7u7/"   # 50 eps
+  zj_79: "https://www.bilibili.com/video/BV1FQ4y1A7qD/"
+  zj_90: "https://www.bilibili.com/video/BV1Rju2z8EKB/"
+
+size_estimates_renji_173h:
+  audio_64kbps_gb: 3.6
+  audio_128kbps_gb: 9.5
+  video_360p_gb: 27
+  video_720p_gb: 54

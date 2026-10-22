@@ -3,6 +3,7 @@ from __future__ import annotations
 import json, pathlib
 from tcmkb_ingest import artifacts as art
 from tcmkb_ingest.clean import rebuild_sentences
+from tcmkb_ingest.sources import cite
 from tcmkb_ingest.steps.base import Ctx, log
 
 def _load_corrector(ctx: Ctx):
@@ -28,7 +29,9 @@ def run(ctx: Ctx, **_kw) -> dict:
     cfg = ctx.step_cfg(step)
     gap = float(cfg.get("gap_break_s", 1.2))
     max_s = float(cfg.get("max_sentence_s", 40.0))
-    frag = {"gap_break_s": gap, "max_sentence_s": max_s}
+    source = (m.meta or {}).get("source")
+    frag = {"gap_break_s": gap, "max_sentence_s": max_s,
+            "cite": (source or {}).get("youtube_id") or (source or {}).get("url")}
     up = (m.active_versions or {}).get("s04_asr", "")
     lxh = ctx.lexicon_hash()  # corrections change → rerun
     vk = ctx.compute_vk(step, frag, upstream_hash=up, lexicon_hash=lxh)
@@ -70,6 +73,7 @@ def run(ctx: Ctx, **_kw) -> dict:
             "alt_text": None,
             "agreement": None,
             "review_flag": False,
+            "cite": cite(source, s["start_s"], s["end_s"]),
         })
 
     seg_path = outdir / "segments.jsonl"

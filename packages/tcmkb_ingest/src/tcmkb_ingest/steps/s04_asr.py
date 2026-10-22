@@ -210,6 +210,7 @@ def run(ctx: Ctx, **_kw) -> dict:
     else:
         asr_raw = _run_live(ctx, hot_path, hotword_set, outdir)
 
+    asr_raw["source"] = (m.meta or {}).get("source")   # YouTube citation (id/url/title/...)
     # Also write a stable convenience copy at artifacts/{vid}/asr_raw.json via symlink note in success
     art.atomic_write_json(outdir / "asr_raw.json", asr_raw)
     # Mirror at video-level pointer for demo convenience

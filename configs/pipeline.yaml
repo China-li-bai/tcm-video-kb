@@ -9,11 +9,14 @@ steps:
     code_version: "1"
   s01_upload:            # LocalStorage stub of R2 (data/r2-mirror); no cloud upload
     code_version: "1"
+    copy_source: false        # disk budget: record path + YouTube URL, no copy into r2-mirror
   s02_media:
     code_version: "1"
     enabled: true
+    play_copy: false          # YouTube sources: play = YouTube URL, no 64k m4a transcode
   s03_audio:
-    code_version: "2"         # v2: real silence-aware split into parts
+    code_version: "3"         # v3: parts decoded straight from source (no full.wav), no mirror copy
+    mirror_parts: false
     sample_rate: 16000
     channels: 1
     max_part_s: 1200          # 20 min: bounds s04 memory per part
@@ -28,16 +31,24 @@ steps:
     code_version: "1"
     enabled: false            # demo default: skip
   s06_clean:
-    code_version: "1"
+    code_version: "2"         # v2: per-segment YouTube citation (cite.t_url)
     gap_break_s: 1.2
     max_sentence_s: 40.0
   s07_flag:
     code_version: "1"
     agreement_threshold: 0.75
   s08_chapter:
-    code_version: "1"
+    code_version: "2"         # v2: per-chapter YouTube citation
     mode: heuristic           # heuristic | llm
     silence_gap_s: 3.0
     min_chapter_s: 60.0
     max_chapter_s: 1500.0
     target_chapter_s: 300.0
+
+# Disk-budgeted batches (tcmkb_ingest batch --media ... --budget-gb)
+budget:
+  budget_gb: 40               # working set per batch (source + wav parts + outputs)
+  min_free_gb: 15             # refuse to start a batch below this free space
+  wav_bytes_per_s: 32000      # 16 kHz mono s16le
+  overhead_bytes: 50000000    # per item: logs, json outputs, checkpoints
+  min_age_s: 120              # file must be untouched this long (downloader done)

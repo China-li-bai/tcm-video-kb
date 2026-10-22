@@ -41,6 +41,15 @@ uv sync --extra asr
 
 一个进程只加载一次模型（懒加载）；按 version_key 续跑（s04 按 20 min 分片做检查点）；单个视频失败会记入 `step_run` 和报告，然后继续下一个；报告写到 `data/batch/<run_id>.json|csv`（每视频 RTF、纠错数、章节数、峰值内存）。实测 RTF ≈0.047（8 vCPU），常驻内存约 3 GB。详见 [`docs/runbooks/batch_asr.md`](docs/runbooks/batch_asr.md)。
 
+磁盘预算模式（按 30–50 GB 分批、验证后删除音频/wav、只留轻量输出 + YouTube 引用）：
+
+```bash
+.venv/bin/python -m tcmkb_ingest media-status
+.venv/bin/python -m tcmkb_ingest batch --media shl --budget-gb 40 --min-free-gb 15 --asr-threads 6
+```
+
+每条 segment / chapter 带 `cite`（YouTube id、URL、`&t=<秒>s` 链接、标题、系列、集数、起止时间）。详见 [`docs/runbooks/disk_budget.md`](docs/runbooks/disk_budget.md)。
+
 ## 快速 Demo（推荐 `--from-cache`）
 
 用 asr-bench 已有的 SeACo 结果，不加载 FunASR：
