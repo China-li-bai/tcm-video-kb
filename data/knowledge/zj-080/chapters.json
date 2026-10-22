@@ -1,0 +1,58 @@
+[
+ {
+  "chapter_id": "zj-080.c01",
+  "video_id": "zj-080",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "疗程与隔日针",
+  "summary": "诊断准、选穴对、手法到、再加补泻，方可立竿见影；许多病需疗程。隔日连续针使疗效递进，中断则易复原状，非针无效。",
+  "start_s": 17.04,
+  "end_s": 228.23,
+  "seg_from": 0,
+  "seg_to": 35,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "method.zhen_jiu"
+  ],
+  "citation": {
+   "youtube_id": "GP1_mJGRc98",
+   "url": "https://www.youtube.com/watch?v=GP1_mJGRc98&t=17s",
+   "series": "zj",
+   "episode": 80,
+   "title": "Ni Hai-Hsia \"Human Chronicles\" Acupuncture: 90-Part Series - Acupuncture 80",
+   "start_s": 17.04,
+   "end_s": 228.23
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-080.c02",
+  "video_id": "zj-080",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "酸麻补泻次序",
+  "summary": "酸麻为久病难治，多用补。痛多则先泻后补；麻多则先补后泻；仅余表痛再专泻。手法不熟可用捻转或借穴性补泻。",
+  "start_s": 228.23,
+  "end_s": 1801.986,
+  "seg_from": 36,
+  "seg_to": 316,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "method.bu_xie"
+  ],
+  "citation": {
+   "youtube_id": "GP1_mJGRc98",
+   "url": "https://www.youtube.com/watch?v=GP1_mJGRc98&t=228s",
+   "series": "zj",
+   "episode": 80,
+   "title": "Ni Hai-Hsia \"Human Chronicles\" Acupuncture: 90-Part Series - Acupuncture 80",
+   "start_s": 228.23,
+   "end_s": 1801.99
+  },
+  "review_status": "llm_read"
+ }
+]

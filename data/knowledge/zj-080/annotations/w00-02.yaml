@@ -1,0 +1,57 @@
+video_id: zj-080
+window: w00-02
+seg_from: 0
+seg_to: 316
+annotator: llm_read
+chapters:
+- key: c01
+  title: 疗程与隔日针
+  start_seq: 0
+  summary: 诊断准、选穴对、手法到、再加补泻，方可立竿见影；许多病需疗程。隔日连续针使疗效递进，中断则易复原状，非针无效。
+  clauses: []
+  topics:
+  - method.zhen_jiu
+- key: c02
+  title: 酸麻补泻次序
+  start_seq: 36
+  summary: 酸麻为久病难治，多用补。痛多则先泻后补；麻多则先补后泻；仅余表痛再专泻。手法不熟可用捻转或借穴性补泻。
+  clauses: []
+  topics:
+  - method.bu_xie
+entities:
+- id: method.zhen_jiu
+  seq: 7
+  surface: 针灸
+  corrected: 针灸
+- id: method.bu_xie
+  seq: 41
+  surface: 补泻
+  corrected: 补泻
+kps:
+- type: clinical_tip
+  s: 许多病需疗程；隔日连续针使效递进，中断易复，非针无效。
+  seq:
+  - 28
+  - 30
+  q: 没有连续做疗程
+  ents:
+  - method.zhen_jiu
+  conf: 0.95
+- type: clinical_tip
+  s: 酸麻久病多用补；痛多先泻后补，麻多先补后泻，仅余表痛再泻。
+  seq:
+  - 41
+  - 43
+  q: 先泻后补
+  ents:
+  - method.bu_xie
+  conf: 0.95
+- type: clinical_tip
+  s: 手法不熟可用左右捻转，或借穴性补泻，针灸贵活。
+  seq:
+  - 44
+  - 47
+  q: 左转右转
+  ents:
+  - method.bu_xie
+  conf: 0.85

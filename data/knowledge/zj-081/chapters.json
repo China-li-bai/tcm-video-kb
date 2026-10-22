@@ -1,0 +1,60 @@
+[
+ {
+  "chapter_id": "zj-081.c01",
+  "video_id": "zj-081",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "皮肤病五大穴",
+  "summary": "针灸治皮肤病（过敏、风疹等）与用药不同，不必发表药；有皮病/皮痒五大穴为必取，先止痒，对诸皮病多有效。内经重针少药。",
+  "start_s": 0.15,
+  "end_s": 422.105,
+  "seg_from": 0,
+  "seg_to": 75,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "method.zhen_jiu"
+  ],
+  "citation": {
+   "youtube_id": "6rikiO9XZMk",
+   "url": "https://www.youtube.com/watch?v=6rikiO9XZMk&t=0s",
+   "series": "zj",
+   "episode": 81,
+   "title": "Ni Hai-Hsia \"Human Chronicles\" Acupuncture Complete 90-Episode Series: Acupuncture 81",
+   "start_s": 0.15,
+   "end_s": 422.11
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-081.c02",
+  "video_id": "zj-081",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "膝五针鹤顶",
+  "summary": "膝五针治诸膝关节炎/痛肿：鹤顶（髌上肌肉交界）、膝眼、阴陵泉、阳陵泉等；肿甚可用长针与雀啄术。",
+  "start_s": 437.6,
+  "end_s": 1845.795,
+  "seg_from": 76,
+  "seg_to": 308,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.ex_he_ding",
+   "acupoint.gb34",
+   "acupoint.sp9"
+  ],
+  "citation": {
+   "youtube_id": "6rikiO9XZMk",
+   "url": "https://www.youtube.com/watch?v=6rikiO9XZMk&t=437s",
+   "series": "zj",
+   "episode": 81,
+   "title": "Ni Hai-Hsia \"Human Chronicles\" Acupuncture Complete 90-Episode Series: Acupuncture 81",
+   "start_s": 437.6,
+   "end_s": 1845.8
+  },
+  "review_status": "llm_read"
+ }
+]
