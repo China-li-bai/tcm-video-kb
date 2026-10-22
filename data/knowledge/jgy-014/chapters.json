@@ -1,0 +1,92 @@
+[
+ {
+  "chapter_id": "jgy-014.c01",
+  "video_id": "jgy-014",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "消渴总论·缺水与糖尿病",
+  "summary": "金匮第十三篇消渴小便不利淋病。消渴范围大于西医糖尿病；中医责津液/血中之水不足，非单纯降糖。宵夜后即睡、甜食少动、利尿西药耗水均可致消渴。越早经方干预越好。",
+  "start_s": 0.05,
+  "end_s": 1075.845,
+  "seg_from": 0,
+  "seg_to": 197,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "symptom.xiao_ke",
+   "disease.lin_bing",
+   "symptom.xiao_bian_bu_li"
+  ],
+  "citation": {
+   "youtube_id": "UeIn7yJQ5yQ",
+   "url": "https://www.youtube.com/watch?v=UeIn7yJQ5yQ&t=0s",
+   "series": "jgy",
+   "episode": 14,
+   "title": "倪海廈《金匱要略》細分版： 13消渴小便不利淋病",
+   "start_s": 0.05,
+   "end_s": 1075.85
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-014.c02",
+  "video_id": "jgy-014",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "三阳结与厥阴消渴·上中下消方",
+  "summary": "内经三阳结谓之消渴（胃大肠中焦俱热）。厥阴消渴气上冲心、饥不欲食，非宿食故攻下利不止。上消人参白虎；中消白虎加攻下；下消（男子消渴小便多）肾气丸。脉浮小便不利为热，五苓散。",
+  "start_s": 1077.57,
+  "end_s": 1447.709,
+  "seg_from": 198,
+  "seg_to": 257,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "formula.bai_hu_jia_ren_shen_tang",
+   "formula.shen_qi_wan",
+   "formula.wu_ling_san"
+  ],
+  "citation": {
+   "youtube_id": "UeIn7yJQ5yQ",
+   "url": "https://www.youtube.com/watch?v=UeIn7yJQ5yQ&t=1077s",
+   "series": "jgy",
+   "episode": 14,
+   "title": "倪海廈《金匱要略》細分版： 13消渴小便不利淋病",
+   "start_s": 1077.57,
+   "end_s": 1447.71
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-014.c03",
+  "video_id": "jgy-014",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "五苓水逆·白虎止渴·淋与结石",
+  "summary": "口渴而小便不利属五苓；渴饮水吐为水逆亦五苓。渴而小便自利用白虎止渴。上消石膏人参生津；中消白虎加大黄枳实清肠胃热；下消肾气丸。淋病（膏淋沙淋血淋）范围广于西医性病；少腹弦急痛及脐多为膀胱/输尿管结石。",
+  "start_s": 1447.709,
+  "end_s": 4953.272,
+  "seg_from": 258,
+  "seg_to": 902,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "formula.wu_ling_san",
+   "formula.bai_hu_tang",
+   "disease.lin_bing"
+  ],
+  "citation": {
+   "youtube_id": "UeIn7yJQ5yQ",
+   "url": "https://www.youtube.com/watch?v=UeIn7yJQ5yQ&t=1447s",
+   "series": "jgy",
+   "episode": 14,
+   "title": "倪海廈《金匱要略》細分版： 13消渴小便不利淋病",
+   "start_s": 1447.71,
+   "end_s": 4953.27
+  },
+  "review_status": "llm_read"
+ }
+]

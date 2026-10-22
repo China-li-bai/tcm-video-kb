@@ -1,0 +1,178 @@
+video_id: jgy-014
+window: w00-02
+seg_from: 0
+seg_to: 383
+annotator: llm_read
+chapters:
+- key: c01
+  title: 消渴总论·缺水与糖尿病
+  start_seq: 0
+  summary: 金匮第十三篇消渴小便不利淋病。消渴范围大于西医糖尿病；中医责津液/血中之水不足，非单纯降糖。宵夜后即睡、甜食少动、利尿西药耗水均可致消渴。越早经方干预越好。
+  clauses: []
+  topics:
+  - symptom.xiao_ke
+  - disease.lin_bing
+  - symptom.xiao_bian_bu_li
+- key: c02
+  title: 三阳结与厥阴消渴·上中下消方
+  start_seq: 198
+  summary: 内经三阳结谓之消渴（胃大肠中焦俱热）。厥阴消渴气上冲心、饥不欲食，非宿食故攻下利不止。上消人参白虎；中消白虎加攻下；下消（男子消渴小便多）肾气丸。脉浮小便不利为热，五苓散。
+  clauses: []
+  topics:
+  - formula.bai_hu_jia_ren_shen_tang
+  - formula.shen_qi_wan
+  - formula.wu_ling_san
+- key: c03
+  title: 五苓水逆·白虎止渴·淋与结石
+  start_seq: 258
+  summary: 口渴而小便不利属五苓；渴饮水吐为水逆亦五苓。渴而小便自利用白虎止渴。上消石膏人参生津；中消白虎加大黄枳实清肠胃热；下消肾气丸。淋病（膏淋沙淋血淋）范围广于西医性病；少腹弦急痛及脐多为膀胱/输尿管结石。
+  clauses: []
+  topics:
+  - formula.wu_ling_san
+  - formula.bai_hu_tang
+  - disease.lin_bing
+entities:
+- id: symptom.xiao_ke
+  seq: 1
+  surface: 消渴
+  corrected: 消渴
+- id: symptom.xiao_bian_bu_li
+  seq: 1
+  surface: 小便不利
+  corrected: 小便不利
+- id: disease.lin_bing
+  seq: 1
+  surface: 淋病
+  corrected: 淋病
+- id: formula.da_huang_gan_cao_tang
+  seq: 219
+  surface: 大黄甘草汤
+  corrected: 大黄甘草汤
+- id: formula.bai_hu_jia_ren_shen_tang
+  seq: 249
+  surface: 人参白虎汤
+  corrected: 白虎加人参汤
+- id: formula.shen_qi_wan
+  seq: 252
+  surface: 肾气丸
+  corrected: 肾气丸
+- id: formula.wu_ling_san
+  seq: 259
+  surface: 五苓散
+  corrected: 五苓散
+- id: syndrome.shui_ni
+  seq: 264
+  surface: 水逆
+  corrected: 水逆
+- id: formula.bai_hu_tang
+  seq: 281
+  surface: 白虎汤
+  corrected: 白虎汤
+- id: herb.shi_gao
+  seq: 289
+  surface: 石膏
+  corrected: 石膏
+- id: formula.ma_huang_xing_ren_gan_cao_shi_gao_tang
+  seq: 292
+  surface: 麻杏甘石汤
+  corrected: 麻黄杏仁甘草石膏汤
+- id: zangfu.pang_guang
+  seq: 358
+  surface: 膀胱
+  corrected: 膀胱
+kps:
+- type: clinical_tip
+  s: 金匮第十三篇论消渴、小便不利、淋病；消渴范围大于西医糖尿病，经方对二型消渴可速效。
+  seq: [1]
+  q: 消渴
+  ents: [symptom.xiao_ke, disease.lin_bing, symptom.xiao_bian_bu_li]
+  conf: 0.95
+- type: pathomechanism
+  s: 中医消渴责血中缺水：口渴饮水而不能入血脉补津，故愈饮愈渴。
+  seq: [63]
+  q: 缺水
+  ents: [symptom.xiao_ke]
+  conf: 0.9
+- type: clinical_tip
+  s: 吃完宵夜即睡，食停胃中蠕动减缓，糖分释放、胃热渐增，为消渴重要成因；亦见“生活习惯遗传”。
+  seq: [120]
+  q: 小肠
+  ents: [symptom.xiao_ke]
+  conf: 0.85
+- type: pathomechanism
+  s: 内经三阳结谓之消渴：胃与大肠过热，中焦（含胆）随之热。
+  seq: [198]
+  q: 消渴
+  ents: [symptom.xiao_ke]
+  conf: 0.9
+  asr: 三阳节=三阳结
+- type: clause_interpretation
+  s: 厥阴消渴气上冲心、心中疼热、饥不欲食；攻下利不止，示非宿食而属厥阴消渴。
+  seq: [210]
+  q: 消渴
+  ents: [symptom.xiao_ke, six_channel.jueyin]
+  conf: 0.9
+  asr: 厥阴违=厥阴为；积而不遇食=饥而不欲食
+- type: diagnostic_rule
+  s: 饥不欲食、食即吐，若大黄甘草汤后能食不吐则为宿食；利不止则病未去，属厥阴消渴。
+  seq: [219]
+  q: 大黄甘草汤
+  ents: [formula.da_huang_gan_cao_tang, symptom.xiao_ke]
+  conf: 0.9
+- type: formula_indication
+  s: 上消口渴饮不解，上焦津伤，人参白虎汤（白虎加人参）证。
+  seq: [249]
+  q: 人参白虎汤
+  ents: [formula.bai_hu_jia_ren_shen_tang, symptom.xiao_ke]
+  conf: 0.95
+- type: formula_indication
+  s: 下消男子消渴小便多（饮一溲一）、性功能衰，肾气丸主之。
+  seq: [252]
+  q: 肾气丸
+  ents: [formula.shen_qi_wan, symptom.xiao_ke]
+  conf: 0.95
+- type: formula_indication
+  s: 脉浮小便不利为热在表/水停，消渴而小便不利者五苓散。
+  seq: [259]
+  q: 五苓散
+  ents: [formula.wu_ling_san, symptom.xiao_bian_bu_li, symptom.xiao_ke]
+  conf: 0.95
+  asr: 无定散=五苓散
+- type: formula_indication
+  s: 渴欲饮水、水入则吐为水逆，亦属五苓散（如小儿吐乳）。
+  seq: [264]
+  q: 水逆
+  ents: [syndrome.shui_ni, formula.wu_ling_san]
+  conf: 0.95
+- type: diagnostic_rule
+  s: 口渴同见：小便不利→五苓散；小便自利而渴不止→白虎汤。
+  seq: [281]
+  q: 白虎汤
+  ents: [formula.bai_hu_tang, formula.wu_ling_san, symptom.xiao_ke]
+  conf: 0.95
+  asr: 文和=白虎
+- type: formula_composition
+  s: 上消白虎加人参：石膏一两起、知母、生甘草、人参（或党参；无参可用瓜蒌根等生津）。
+  seq: [289]
+  q: 石膏
+  ents: [formula.bai_hu_jia_ren_shen_tang, herb.shi_gao]
+  conf: 0.9
+- type: clinical_tip
+  s: 中消三阳结兼便秘，白虎加大黄枳实清胃肠热；血糖过高或过低致饥颤均可重用石膏白虎。
+  seq: [331]
+  q: 肾气丸
+  ents: [formula.shen_qi_wan, formula.bai_hu_tang, symptom.xiao_ke]
+  conf: 0.85
+- type: clinical_tip
+  s: 中医淋含膏淋、沙淋、血淋等，范围大于西医淋病/性病。
+  seq: [338]
+  q: 淋病
+  ents: [disease.lin_bing]
+  conf: 0.9
+  asr: 灵=淋；高龄=膏淋；沙林=沙淋
+- type: diagnostic_rule
+  s: 小便如粟状、少腹弦急痛引脐中；痛自尿道牵至脐多为膀胱结石，少腹剧痛多为输尿管结石。
+  seq: [358]
+  q: 膀胱
+  ents: [zangfu.pang_guang, disease.lin_bing]
+  conf: 0.9
