@@ -1,0 +1,174 @@
+video_id: zj-028
+window: w00-02
+seg_from: 0
+seg_to: 342
+annotator: llm_read
+chapters:
+- key: c01
+  title: 漏谷地机阴陵泉治水肿
+  start_seq: 0
+  summary: 三阴交为妇科大穴，宜常灸。漏谷（三阴交上三寸）为与胃经相通之络部取穴。三阴交、地机、阴陵泉合用专治水肿，起针常可见水液外渗。阴陵泉为合穴、水穴，主湿、风湿、膝痛及小便异常。
+  clauses: []
+  topics:
+  - acupoint.sp6
+  - acupoint.sp7
+  - acupoint.sp8
+  - acupoint.sp9
+- key: c02
+  title: 血海与冲门
+  start_seq: 178
+  summary: 血海为大穴，治月经过多或闭经、漏下；合三阴交、中极可治诸痛经，宜浅刺（约一寸）。冲门与云门相对称；胞衣不下可取冲门。针深浅须依病位（皮病浅、筋病入筋）。
+  clauses: []
+  topics:
+  - acupoint.sp10
+  - acupoint.sp12
+  - acupoint.cv3
+entities:
+- id: acupoint.sp6
+  seq: 1
+  surface: 三阴交
+  corrected: 三阴交
+- id: acupoint.sp7
+  seq: 26
+  surface: 露骨
+  corrected: 漏谷
+- id: meridian.sp
+  seq: 32
+  surface: 足太阴脾经
+  corrected: 足太阴脾经
+- id: meridian.st
+  seq: 31
+  surface: 足阳明胃经
+  corrected: 足阳明胃经
+- id: concept.luo_xue
+  seq: 31
+  surface: 络穴
+  corrected: 络穴
+- id: acupoint.sp8
+  seq: 92
+  surface: 地基
+  corrected: 地机
+- id: acupoint.sp9
+  seq: 92
+  surface: 阴宁泉
+  corrected: 阴陵泉
+- id: symptom.shui_zhong
+  seq: 92
+  surface: 水肿
+  corrected: 水肿
+- id: acupoint.sp10
+  seq: 178
+  surface: 血海穴
+  corrected: 血海
+- id: acupoint.cv3
+  seq: 185
+  surface: 中极
+  corrected: 中极
+- id: acupoint.sp12
+  seq: 252
+  surface: 冲门穴
+  corrected: 冲门
+- id: acupoint.lu2
+  seq: 270
+  surface: 云门
+  corrected: 云门
+- id: acupoint.cv4
+  seq: 131
+  surface: 关元
+  corrected: 关元
+- id: acupoint.st36
+  seq: 131
+  surface: 足三里
+  corrected: 足三里
+- id: method.zhen_jiu
+  seq: 142
+  surface: 针灸
+  corrected: 针灸
+kps:
+- type: acupoint_usage
+  s: 三阴交为妇科大穴，妇女可常灸；中年后亦宜重视。
+  seq:
+  - 5
+  - 6
+  q: 三阴交是妇科的大穴
+  ents:
+  - acupoint.sp6
+  conf: 0.95
+- type: acupoint_usage
+  s: 漏谷约在三阴交上三寸，为脾经与胃经表里联络处。
+  seq:
+  - 31
+  - 32
+  q: 三阴交再上三寸嘛
+  ents:
+  - acupoint.sp7
+  - acupoint.sp6
+  - meridian.sp
+  - meridian.st
+  conf: 0.9
+  asr: 露骨/肉骨=漏谷
+- type: acupoint_usage
+  s: 双侧三阴交、地机、阴陵泉合用专治水肿；起针时常有水液外渗（非刺破血管之血）。
+  seq:
+  - 92
+  - 100
+  q: 专门治疗什么水肿
+  ents:
+  - acupoint.sp6
+  - acupoint.sp8
+  - acupoint.sp9
+  - symptom.shui_zhong
+  conf: 0.95
+  asr: 地基=地机；阴宁泉=阴陵泉
+- type: acupoint_usage
+  s: 阴陵泉为合穴属水，大穴；主膝痛、脾湿、风湿、水肿及小便频数/失禁等。
+  seq:
+  - 119
+  - 128
+  q: 阴宁泉呢这个穴道是一个大穴
+  ents:
+  - acupoint.sp9
+  conf: 0.9
+  asr: 阴宁泉/阴茎=阴陵泉；和穴=合穴
+- type: clinical_tip
+  s: 宜常灸三阴交、关元；男人尤宜常灸足三里，以免五十后夜尿增多。
+  seq:
+  - 131
+  - 131
+  q: 尤其男人要多久足三里
+  ents:
+  - acupoint.sp6
+  - acupoint.cv4
+  - acupoint.st36
+  conf: 0.85
+  asr: 多久=多灸
+- type: acupoint_usage
+  s: 血海治月经过多、闭经或漏下不止；配三阴交、中极可治诸痛经。宜浅刺（约一寸），勿过深。
+  seq:
+  - 184
+  - 213
+  q: 月经来太多或者月经不来，你都可以在血海上下针
+  ents:
+  - acupoint.sp10
+  - acupoint.sp6
+  - acupoint.cv3
+  conf: 0.95
+- type: acupoint_usage
+  s: 冲门与云门相对称；胎盘不下可取冲门。
+  seq:
+  - 270
+  - 273
+  q: 用的是云门冲门跟云门相对的
+  ents:
+  - acupoint.sp12
+  - acupoint.lu2
+  conf: 0.9
+- type: clinical_tip
+  s: 针之深浅依病位：皮肤病宜浅，抽筋等筋病须入筋，勿一律深透。
+  seq:
+  - 159
+  - 161
+  q: 治疗皮肤表面的病，你心知道他是皮肤病
+  ents:
+  - method.zhen_jiu
+  conf: 0.85

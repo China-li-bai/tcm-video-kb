@@ -1,0 +1,63 @@
+[
+ {
+  "chapter_id": "zj-028.c01",
+  "video_id": "zj-028",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "漏谷地机阴陵泉治水肿",
+  "summary": "三阴交为妇科大穴，宜常灸。漏谷（三阴交上三寸）为与胃经相通之络部取穴。三阴交、地机、阴陵泉合用专治水肿，起针常可见水液外渗。阴陵泉为合穴、水穴，主湿、风湿、膝痛及小便异常。",
+  "start_s": 11.23,
+  "end_s": 978.665,
+  "seg_from": 0,
+  "seg_to": 177,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.sp6",
+   "acupoint.sp7",
+   "acupoint.sp8",
+   "acupoint.sp9"
+  ],
+  "citation": {
+   "youtube_id": "nQ1Fyxd_q8o",
+   "url": "https://www.youtube.com/watch?v=nQ1Fyxd_q8o&t=11s",
+   "series": "zj",
+   "episode": 28,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 28",
+   "start_s": 11.23,
+   "end_s": 978.66
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-028.c02",
+  "video_id": "zj-028",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "血海与冲门",
+  "summary": "血海为大穴，治月经过多或闭经、漏下；合三阴交、中极可治诸痛经，宜浅刺（约一寸）。冲门与云门相对称；胞衣不下可取冲门。针深浅须依病位（皮病浅、筋病入筋）。",
+  "start_s": 979.75,
+  "end_s": 1883.412,
+  "seg_from": 178,
+  "seg_to": 342,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.sp10",
+   "acupoint.sp12",
+   "acupoint.cv3"
+  ],
+  "citation": {
+   "youtube_id": "nQ1Fyxd_q8o",
+   "url": "https://www.youtube.com/watch?v=nQ1Fyxd_q8o&t=979s",
+   "series": "zj",
+   "episode": 28,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 28",
+   "start_s": 979.75,
+   "end_s": 1883.41
+  },
+  "review_status": "llm_read"
+ }
+]
