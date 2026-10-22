@@ -1,4 +1,11 @@
 kp_id,video_id,series,episode,type,statement,entity_ids,chapter_id,chapter_title,evidence_quote,start_s,end_s,url,confidence,asr_note,title
+jgy-001.kp0001,jgy-001,jgy,1,concept_definition,伤寒与金匮原为一书《伤寒杂病论》，宋后分册；霍乱等非六经篇并入金匮。,classic.shang_han_lun classic.jin_gui_yao_lve,jgy-001.c01,续伤寒·霍乱名义与湿热,伤寒杂病论,32.69,37.73,https://www.youtube.com/watch?v=J7zCN4czXuc&t=32s,0.95,,倪海廈《金匱要略》細分版： 0續傷寒篇
+jgy-001.kp0002,jgy-001,jgy,1,concept_definition,中医霍乱指呕吐下利，不必等同西医霍乱病名；素问以太阴湿热中满致之。,disease.huo_luan,jgy-001.c01,续伤寒·霍乱名义与湿热,中满祸乱,61.54,108.445,https://www.youtube.com/watch?v=J7zCN4czXuc&t=61s,0.85,祸乱=霍乱,倪海廈《金匱要略》細分版： 0續傷寒篇
+jgy-001.kp0003,jgy-001,jgy,1,contraindication,下利按腹喜按属虚，妄投大承气汤可害人。,formula.da_cheng_qi_tang,jgy-001.c01,续伤寒·霍乱名义与湿热,大承气汤,718.86,732.56,https://www.youtube.com/watch?v=J7zCN4czXuc&t=718s,0.95,,倪海廈《金匱要略》細分版： 0續傷寒篇
+jgy-001.kp0004,jgy-001,jgy,1,diagnostic_rule,阳明但见热不见寒；能食属阳明，不能食则非阳明。,six_channel.yangming,jgy-001.c02,阳明自愈与脉微恶寒用四逆,只看到热症,796.33,854.16,https://www.youtube.com/watch?v=J7zCN4czXuc&t=796s,0.9,,倪海廈《金匱要略》細分版： 0續傷寒篇
+jgy-001.kp0005,jgy-001,jgy,1,diagnostic_rule,霍乱后恶寒而脉微，为心阳不足，非表寒（表寒脉当浮紧）；当用四逆汤急救。,formula.si_ni_tang,jgy-001.c02,阳明自愈与脉微恶寒用四逆,四逆汤,1248.345,1459.985,https://www.youtube.com/watch?v=J7zCN4czXuc&t=1248s,0.9,,倪海廈《金匱要略》細分版： 0續傷寒篇
+jgy-001.kp0006,jgy-001,jgy,1,formula_indication,霍乱热多欲饮水（兼小便不利）用五苓散；寒多不欲水用理中丸。,formula.wu_ling_san formula.li_zhong_wan,jgy-001.c03,霍乱热多五苓·寒多理中,五苓散,1493.115,1531.67,https://www.youtube.com/watch?v=J7zCN4czXuc&t=1493s,0.95,,倪海廈《金匱要略》細分版： 0續傷寒篇
+jgy-001.kp0007,jgy-001,jgy,1,pathomechanism,五苓散证：水停肌表而中焦无水，口渴饮水反吐；散能集表水归膀胱。,formula.wu_ling_san,jgy-001.c03,霍乱热多五苓·寒多理中,喝水就吐,1558.625,1563.785,https://www.youtube.com/watch?v=J7zCN4czXuc&t=1558s,0.95,,倪海廈《金匱要略》細分版： 0續傷寒篇
 nj-001.kp0001,nj-001,nj,1,clinical_tip,道法于阴阳；全书可约归阴阳。岐黄之术即黄帝岐伯之对话。,person.huang_di person.qi_bo concept.yin_yang,nj-001.c01,上古天真论总说,岐黄之术,318.54,394.215,https://www.youtube.com/watch?v=i_roPY8AEHg&t=318s,0.95,,01 倪海厦精讲《黄帝内经》高清字幕完整版
 nj-001.kp0002,nj-001,nj,1,clinical_tip,上古天真论：古百岁不衰、今半百而衰；不知节制、起居无节则早衰。,classic.sw_shang_gu_tian_zhen_lun,nj-001.c01,上古天真论总说,半百而衰,330.22,615.87,https://www.youtube.com/watch?v=i_roPY8AEHg&t=330s,0.95,,01 倪海厦精讲《黄帝内经》高清字幕完整版
 nj-001.kp0003,nj-001,nj,1,clinical_tip,虚邪为虚弱状态下外邪（对实邪而言）；宜避虚邪贼风。,concept.xu_xie,nj-001.c02,虚邪与恬淡真气,我们称为虚邪,727.76,916.735,https://www.youtube.com/watch?v=i_roPY8AEHg&t=727s,0.9,,01 倪海厦精讲《黄帝内经》高清字幕完整版

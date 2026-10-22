@@ -1,0 +1,115 @@
+video_id: jgy-001
+window: w00-02
+seg_from: 0
+seg_to: 420
+annotator: llm_read
+chapters:
+- key: c01
+  title: 续伤寒·霍乱名义与湿热
+  start_seq: 0
+  summary: 伤寒金匮本一书，宋后分册；霍乱篇并入金匮。中医霍乱指呕吐下利，本于太阴湿热，多见于春分后南方。辨虚实：按腹喜按属虚，忌妄投承气。
+  clauses: []
+  topics:
+  - disease.huo_luan
+  - classic.jin_gui_yao_lve
+- key: c02
+  title: 阳明自愈与脉微恶寒用四逆
+  start_seq: 137
+  summary: 阳明但热不寒，能食；不能食则非阳明。霍乱后脉微恶寒、四肢厥，乃心阳不足而非表寒，当四逆汤（或加人参），忌误作表证发汗。
+  clauses: []
+  topics:
+  - six_channel.yangming
+  - formula.si_ni_tang
+- key: c03
+  title: 霍乱热多五苓·寒多理中
+  start_seq: 281
+  summary: 霍乱头痛发热身疼：热多欲饮水、小便不利用五苓散；寒多不欲水用理中丸。五苓散治水停肌表、中焦无水而吐水。
+  clauses: []
+  topics:
+  - formula.wu_ling_san
+  - formula.li_zhong_wan
+entities:
+- id: classic.jin_gui_yao_lve
+  seq: 3
+  surface: 金贵
+  corrected: 金匮
+- id: classic.shang_han_lun
+  seq: 0
+  surface: 伤寒论
+  corrected: 伤寒论
+- id: disease.huo_luan
+  seq: 11
+  surface: 霍乱
+  corrected: 霍乱
+- id: formula.da_cheng_qi_tang
+  seq: 135
+  surface: 大承气汤
+  corrected: 大承气汤
+- id: six_channel.yangming
+  seq: 149
+  surface: 阳明
+  corrected: 阳明
+- id: formula.si_ni_tang
+  seq: 274
+  surface: 四逆汤
+  corrected: 四逆汤
+- id: formula.wu_ling_san
+  seq: 283
+  surface: 五苓散
+  corrected: 五苓散
+- id: formula.li_zhong_wan
+  seq: 283
+  surface: 理中丸
+  corrected: 理中丸
+- id: herb.fu_ling
+  seq: 297
+  surface: 茯苓
+  corrected: 茯苓
+- id: herb.fu_zi
+  seq: 261
+  surface: 附子
+  corrected: 附子
+kps:
+- type: concept_definition
+  s: 伤寒与金匮原为一书《伤寒杂病论》，宋后分册；霍乱等非六经篇并入金匮。
+  seq: [4]
+  q: 伤寒杂病论
+  ents: [classic.shang_han_lun, classic.jin_gui_yao_lve]
+  conf: 0.95
+- type: concept_definition
+  s: 中医霍乱指呕吐下利，不必等同西医霍乱病名；素问以太阴湿热中满致之。
+  seq: [11, 18]
+  q: 中满祸乱
+  ents: [disease.huo_luan]
+  conf: 0.85
+  asr: 祸乱=霍乱
+- type: contraindication
+  s: 下利按腹喜按属虚，妄投大承气汤可害人。
+  seq: [135]
+  q: 大承气汤
+  ents: [formula.da_cheng_qi_tang]
+  conf: 0.95
+- type: diagnostic_rule
+  s: 阳明但见热不见寒；能食属阳明，不能食则非阳明。
+  seq: [149, 156]
+  q: 只看到热症
+  ents: [six_channel.yangming]
+  conf: 0.9
+- type: diagnostic_rule
+  s: 霍乱后恶寒而脉微，为心阳不足，非表寒（表寒脉当浮紧）；当用四逆汤急救。
+  seq: [232, 274]
+  q: 四逆汤
+  ents: [formula.si_ni_tang]
+  conf: 0.9
+- type: formula_indication
+  s: 霍乱热多欲饮水（兼小便不利）用五苓散；寒多不欲水用理中丸。
+  seq: [283, 287]
+  q: 五苓散
+  ents: [formula.wu_ling_san, formula.li_zhong_wan]
+  conf: 0.95
+- type: pathomechanism
+  s: 五苓散证：水停肌表而中焦无水，口渴饮水反吐；散能集表水归膀胱。
+  seq: [291]
+  q: 喝水就吐
+  ents: [formula.wu_ling_san]
+  conf: 0.95
