@@ -1,0 +1,219 @@
+video_id: shl-005
+window: w00-03
+seg_from: 0
+seg_to: 473
+annotator: llm_read
+chapters:
+- key: c01
+  title: 少阳半表半里：三焦网络无所不到
+  start_seq: 0
+  summary: 少阳不止「半表半里」四字：凡肌肉间、脏腑间网络，头耳五官胸乳子宫心包皆属三焦/少阳，全身上下无所不到。热入血室用柴胡即因属少阳。三阳镇无死证，入阴乃有死证；挡在少阳即无死。
+  clauses: []
+  topics:
+  - six_channel.shaoyang
+  - zangfu.san_jiao
+- key: c02
+  title: 第263条 少阳之为病：口苦咽干目眩
+  start_seq: 156
+  summary: 少阳之为病，口苦咽干目眩。胆属奇恒之腑，胆汁外溢则口苦；三焦水道不利则咽干；目眩因少阳连五官。除胸胁苦满、往来寒热、喜呕外，此三者亦是少阳提纲。
+  clauses:
+  - 263
+  topics:
+  - six_channel.shaoyang
+  - clause.shl.263
+- key: c03
+  title: 第264–266条 少阳禁吐下汗；小柴胡证
+  start_seq: 263
+  summary: 少阳中风耳目口舌属三焦，邪在半表半里，不可吐下——宜和解。脉弦细头痛发热属少阳，勿发汗。太阳转少阳见胸胁苦满干呕不能食往来寒热脉弦细，小柴胡汤：重用柴胡，芩夏参等量；兼表可因柴胡得微汗。
+  clauses:
+  - 264
+  - 265
+  - 266
+  topics:
+  - formula.xiao_chai_hu_tang
+  - six_channel.shaoyang
+- key: c04
+  title: 三阳合病用小柴胡；少阳欲解时
+  start_seq: 364
+  summary: 三阳合病（太阳阳明少阳同见）主以小柴胡和解。伤寒六七日当转阳明而无大热、烦躁为阳去入阴。少阳病脉小者欲自愈；欲解时从寅至辰。少阳篇条文少，因主方仅和解二途。
+  clauses:
+  - 268
+  - 269
+  - 271
+  - 272
+  topics:
+  - formula.xiao_chai_hu_tang
+  - six_channel.shaoyang
+entities:
+- id: six_channel.shaoyang
+  seq: 0
+  surface: 少阳病
+  corrected: 少阳
+- id: zangfu.san_jiao
+  seq: 5
+  surface: 三焦系统
+  corrected: 三焦
+- id: new.pattern.热入血室
+  seq: 7
+  surface: 热入血丝
+  corrected: 热入血室
+- id: formula.xiao_chai_hu_tang
+  seq: 7
+  surface: 柴柴汤
+  corrected: 小柴胡汤
+- id: formula.da_chai_hu_tang
+  seq: 65
+  surface: 大柴柴汤
+  corrected: 大柴胡汤
+- id: clause.shl.263
+  seq: 156
+  surface: 七十七条，少阳之为病，口苦烟目眩
+  corrected: 伤寒论第263条
+  note: 讲义77→宋本263（少阳篇内编号）
+- id: clause.shl.264
+  seq: 263
+  surface: 邵阳中风
+  corrected: 伤寒论第264条
+- id: clause.shl.265
+  seq: 300
+  surface: 脉是玄系
+  corrected: 伤寒论第265条
+  note: 脉弦细
+- id: clause.shl.266
+  seq: 321
+  surface: 小柴胡汤
+  corrected: 伤寒论第266条
+- id: formula.xiao_chai_hu_tang
+  seq: 325
+  surface: 小柴胡汤
+  corrected: 小柴胡汤
+- id: herb.chai_hu
+  seq: 325
+  surface: 柴胡
+  corrected: 柴胡
+- id: herb.huang_qin
+  seq: 327
+  surface: 黄芩
+  corrected: 黄芩
+- id: herb.ban_xia
+  seq: 327
+  surface: 半虾
+  corrected: 半夏
+- id: clause.shl.268
+  seq: 364
+  surface: 二百二十八条三娘合并
+  corrected: 伤寒论第268条
+  note: 三阳合病；讲义228→?
+- id: clause.shl.271
+  seq: 422
+  surface: 伤寒的三日少阳脉小者也
+  corrected: 伤寒论第271条
+- id: clause.shl.272
+  seq: 427
+  surface: 二百八十六条
+  corrected: 伤寒论第272条
+  note: 欲解时；讲义286
+kps:
+- type: concept_definition
+  s: 少阳半表半里=三焦网络：肌肉间、脏腑间，以及头耳五官胸乳子宫心包皆属少阳，范围全身上下。
+  seq:
+  - 2
+  - 7
+  q: 胸部、乳房通通是属于三焦系统
+  ents:
+  - six_channel.shaoyang
+  - zangfu.san_jiao
+  conf: 0.95
+- type: clinical_tip
+  s: 妇人热入血室用柴胡类，因女子胞/血室属少阳三焦系统。
+  seq:
+  - 7
+  - 7
+  q: 女人来热入热入血丝，我们会用到柴柴汤汤汤是少阳
+  ents:
+  - new.pattern.热入血室
+  - formula.xiao_chai_hu_tang
+  conf: 0.85
+  asr: 血丝=血室
+- type: treatment_principle
+  s: 三阳镇（太阳阳明少阳）无死证；入三阴乃现死证。能把病挡在少阳即无性命之虞。
+  seq:
+  - 91
+  - 136
+  q: 当你发现病进入少阳的时候，我们阻挡的少阳这第二开辟的第三个战场啊
+  ents:
+  - six_channel.shaoyang
+  conf: 0.85
+- type: clause_interpretation
+  s: 第263条提纲：少阳之为病，口苦、咽干、目眩。胆溢则苦，三焦水道不利则咽干，少阳连目则眩。
+  seq:
+  - 156
+  - 175
+  q: 七十七条，少阳之为病，口苦烟目眩
+  ents:
+  - clause.shl.263
+  - six_channel.shaoyang
+  conf: 0.95
+  asr: 烟=咽干
+- type: contraindication
+  s: 少阳在半表半里，禁吐、下、汗；耳目口鼻诸窍病亦属少阳，勿妄用吐下。宜和解。
+  seq:
+  - 266
+  - 269
+  q: 所少阳政是和解，好用吐下汉法都不好啊，要和解
+  ents:
+  - six_channel.shaoyang
+  conf: 0.95
+  asr: 政=证；汉=汗
+- type: diagnostic_rule
+  s: 脉弦细而头痛发热属少阳，虽见头痛发热亦不可发汗。
+  seq:
+  - 300
+  - 302
+  q: 旋系病人有头痛，发热者属少阳
+  ents:
+  - clause.shl.265
+  - six_channel.shaoyang
+  conf: 0.9
+  asr: 旋系=弦细
+- type: formula_indication
+  s: 太阳转少阳：胸胁苦满、干呕不能食、往来寒热、脉弦细→小柴胡汤。
+  seq:
+  - 319
+  - 325
+  q: 这个是小柴胡汤，这是很标准的小柴胡汤证
+  ents:
+  - formula.xiao_chai_hu_tang
+  - clause.shl.266
+  conf: 0.95
+- type: formula_composition
+  s: 小柴胡汤重用柴胡，黄芩半夏人参等量；兼有表证时柴胡可助得微汗。
+  seq:
+  - 325
+  - 332
+  q: 柴胡汤的剂量重用柴胡，其他是等量
+  ents:
+  - formula.xiao_chai_hu_tang
+  - herb.chai_hu
+  conf: 0.9
+- type: treatment_principle
+  s: 三阳合病（太阳+阳明+少阳同见）主以小柴胡汤和解，不必三方并行。
+  seq:
+  - 365
+  - 365
+  q: 太阳、阳宁、邵阳同时出现的时候，好，我们呢一定是小柴胡汤解它
+  ents:
+  - formula.xiao_chai_hu_tang
+  - six_channel.shaoyang
+  conf: 0.9
+  asr: 阳宁=阳明；邵阳=少阳
+- type: clause_interpretation
+  s: 第271条：伤寒三日少阳脉小者，欲自愈。第272条：少阳病欲解时，从寅至辰。
+  seq:
+  - 422
+  - 427
+  q: 伤寒的三日少阳脉小者也好，就是会自己会好
+  ents:
+  - clause.shl.271
+  - clause.shl.272
+  conf: 0.85

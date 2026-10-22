@@ -1,0 +1,41 @@
+{
+ "schema": "knowledge/1",
+ "video_id": "shl-005",
+ "youtube_id": "r8MEgenB2Fc",
+ "windows": [
+  "w00-03"
+ ],
+ "annotations_sha256": "942d5b17f5c6f40c",
+ "n_segments": 474,
+ "n_chapters": 4,
+ "n_sections": 0,
+ "n_entities": 92,
+ "entities_by_type": {
+  "formula": 6,
+  "herb": 10,
+  "symptom": 12,
+  "pattern": 11,
+  "six_channel": 5,
+  "meridian": 3,
+  "pulse": 1,
+  "clause": 7,
+  "method": 7,
+  "person": 2,
+  "book": 5,
+  "zangfu": 10,
+  "concept": 13
+ },
+ "n_new_entities": 1,
+ "n_knowledge_points": 10,
+ "kp_by_type": {
+  "concept_definition": 1,
+  "clinical_tip": 1,
+  "treatment_principle": 2,
+  "clause_interpretation": 2,
+  "contraindication": 1,
+  "diagnostic_rule": 1,
+  "formula_indication": 1,
+  "formula_composition": 1
+ },
+ "errors": []
+}
