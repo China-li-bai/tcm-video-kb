@@ -1,0 +1,61 @@
+[
+ {
+  "chapter_id": "zj-082.c01",
+  "video_id": "zj-082",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "阳白透鱼腰眼科",
+  "summary": "阳白透鱼腰为眼科常用透刺；使阳经精气入目。可配太阳、耳尖放血。偏头痛属胆经，可取肝本穴行间及侠溪等。",
+  "start_s": 0.21,
+  "end_s": 169.855,
+  "seg_from": 0,
+  "seg_to": 26,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.gb14",
+   "acupoint.ex_yu_yao",
+   "acupoint.gb43"
+  ],
+  "citation": {
+   "youtube_id": "_4YMCRmhFiI",
+   "url": "https://www.youtube.com/watch?v=_4YMCRmhFiI&t=0s",
+   "series": "zj",
+   "episode": 82,
+   "title": "Ni Hai-sha \"Human Constitution\" - Acupuncture Series, Episode 82 (Total 90 Episodes)",
+   "start_s": 0.21,
+   "end_s": 169.85
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-082.c02",
+  "video_id": "zj-082",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "偏头胆经取穴",
+  "summary": "偏头痛属胆经；可先下侠溪（顺经为补思路），并配太阳等。",
+  "start_s": 171.81,
+  "end_s": 1836.526,
+  "seg_from": 27,
+  "seg_to": 304,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.gb43",
+   "meridian.gb"
+  ],
+  "citation": {
+   "youtube_id": "_4YMCRmhFiI",
+   "url": "https://www.youtube.com/watch?v=_4YMCRmhFiI&t=171s",
+   "series": "zj",
+   "episode": 82,
+   "title": "Ni Hai-sha \"Human Constitution\" - Acupuncture Series, Episode 82 (Total 90 Episodes)",
+   "start_s": 171.81,
+   "end_s": 1836.53
+  },
+  "review_status": "llm_read"
+ }
+]

@@ -1,0 +1,60 @@
+[
+ {
+  "chapter_id": "zj-083.c01",
+  "video_id": "zj-083",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "睛明手法与太阳",
+  "summary": "睛明针时以指轻推眼球向外再浅刺；可配太阳。膝症示范膝五针深刺膝眼。",
+  "start_s": 0.11,
+  "end_s": 314.72,
+  "seg_from": 0,
+  "seg_to": 61,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.bl1",
+   "acupoint.ex_tai_yang"
+  ],
+  "citation": {
+   "youtube_id": "A6CaCR_L0Xs",
+   "url": "https://www.youtube.com/watch?v=A6CaCR_L0Xs&t=0s",
+   "series": "zj",
+   "episode": 83,
+   "title": "Ni Hai-Xia \"Human Discipline\" \"Acupuncture\" Complete 90-Episode Series: Acupuncture 83",
+   "start_s": 0.11,
+   "end_s": 314.72
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-083.c02",
+  "video_id": "zj-083",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "养老透间使",
+  "summary": "养老进针透向对侧间使，为手三阳相关手法示例；轻症可单侧，久病双侧。",
+  "start_s": 314.72,
+  "end_s": 1768.295,
+  "seg_from": 62,
+  "seg_to": 290,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.si6",
+   "acupoint.pc5"
+  ],
+  "citation": {
+   "youtube_id": "A6CaCR_L0Xs",
+   "url": "https://www.youtube.com/watch?v=A6CaCR_L0Xs&t=314s",
+   "series": "zj",
+   "episode": 83,
+   "title": "Ni Hai-Xia \"Human Discipline\" \"Acupuncture\" Complete 90-Episode Series: Acupuncture 83",
+   "start_s": 314.72,
+   "end_s": 1768.3
+  },
+  "review_status": "llm_read"
+ }
+]

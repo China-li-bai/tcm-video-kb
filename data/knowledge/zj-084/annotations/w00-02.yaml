@@ -1,0 +1,75 @@
+video_id: zj-084
+window: w00-02
+seg_from: 0
+seg_to: 272
+annotator: llm_read
+chapters:
+- key: c01
+  title: 隔姜灸法
+  start_seq: 0
+  summary: 示范隔姜灸：姜片约铜板厚置穴上；灸用奇数壮（3/5/7/9，灸单不灸双）。多汗处（腋、委中等）不宜灸，恐烫伤难收口。合谷隔姜灸可减面部油脂/痤疮。
+  clauses: []
+  topics:
+  - new.method.ge_jiang_jiu
+  - acupoint.li4
+- key: c02
+  title: 足三里阑尾区
+  start_seq: 17
+  summary: 足三里下一寸为阑尾穴区，压痛可针；兼隔姜灸应用示范。
+  clauses: []
+  topics:
+  - acupoint.st36
+  - acupoint.ex_lan_wei
+entities:
+- id: new.method.ge_jiang_jiu
+  seq: 27
+  surface: 隔姜灸
+  corrected: 隔姜灸
+- id: acupoint.li4
+  seq: 34
+  surface: 和骨
+  corrected: 合谷
+- id: acupoint.st36
+  seq: 17
+  surface: 足三里
+  corrected: 足三里
+- id: acupoint.ex_lan_wei
+  seq: 19
+  surface: 阑尾穴
+  corrected: 阑尾穴
+- id: acupoint.bl40
+  seq: 51
+  surface: 伪中
+  corrected: 委中
+kps:
+- type: clinical_tip
+  s: 隔姜灸：姜片约铜板厚；壮数用奇数（灸单不灸双）。
+  seq:
+  - 27
+  - 48
+  q: 灸单不灸霜
+  ents:
+  - new.method.ge_jiang_jiu
+  conf: 0.95
+  asr: 灸霜=灸双；状=壮
+- type: contraindication
+  s: 多汗处（腋下、委中等）不宜灸，烫伤难收口。
+  seq:
+  - 51
+  - 52
+  q: 汗比较多的地方
+  ents:
+  - acupoint.bl40
+  - new.method.ge_jiang_jiu
+  conf: 0.9
+  asr: 伪中=委中
+- type: acupoint_usage
+  s: 合谷隔姜灸可减少面部油脂分泌、助治痤疮。
+  seq:
+  - 34
+  - 34
+  q: 灸和骨
+  ents:
+  - acupoint.li4
+  conf: 0.9
+  asr: 和骨=合谷

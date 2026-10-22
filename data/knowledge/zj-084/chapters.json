@@ -1,0 +1,60 @@
+[
+ {
+  "chapter_id": "zj-084.c01",
+  "video_id": "zj-084",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "隔姜灸法",
+  "summary": "示范隔姜灸：姜片约铜板厚置穴上；灸用奇数壮（3/5/7/9，灸单不灸双）。多汗处（腋、委中等）不宜灸，恐烫伤难收口。合谷隔姜灸可减面部油脂/痤疮。",
+  "start_s": 0.29,
+  "end_s": 80.295,
+  "seg_from": 0,
+  "seg_to": 16,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "new.method.ge_jiang_jiu",
+   "acupoint.li4"
+  ],
+  "citation": {
+   "youtube_id": "Xt_tvyrlNms",
+   "url": "https://www.youtube.com/watch?v=Xt_tvyrlNms&t=0s",
+   "series": "zj",
+   "episode": 84,
+   "title": "Ni Hai-hsia \"Human Records\" \"Acupuncture\" 90-Episode Series: Acupuncture 84",
+   "start_s": 0.29,
+   "end_s": 80.3
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-084.c02",
+  "video_id": "zj-084",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "足三里阑尾区",
+  "summary": "足三里下一寸为阑尾穴区，压痛可针；兼隔姜灸应用示范。",
+  "start_s": 80.56,
+  "end_s": 1736.684,
+  "seg_from": 17,
+  "seg_to": 272,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.st36",
+   "acupoint.ex_lan_wei"
+  ],
+  "citation": {
+   "youtube_id": "Xt_tvyrlNms",
+   "url": "https://www.youtube.com/watch?v=Xt_tvyrlNms&t=80s",
+   "series": "zj",
+   "episode": 84,
+   "title": "Ni Hai-hsia \"Human Records\" \"Acupuncture\" 90-Episode Series: Acupuncture 84",
+   "start_s": 80.56,
+   "end_s": 1736.68
+  },
+  "review_status": "llm_read"
+ }
+]

@@ -1,0 +1,71 @@
+video_id: zj-083
+window: w00-02
+seg_from: 0
+seg_to: 290
+annotator: llm_read
+chapters:
+- key: c01
+  title: 睛明手法与太阳
+  start_seq: 0
+  summary: 睛明针时以指轻推眼球向外再浅刺；可配太阳。膝症示范膝五针深刺膝眼。
+  clauses: []
+  topics:
+  - acupoint.bl1
+  - acupoint.ex_tai_yang
+- key: c02
+  title: 养老透间使
+  start_seq: 62
+  summary: 养老进针透向对侧间使，为手三阳相关手法示例；轻症可单侧，久病双侧。
+  clauses: []
+  topics:
+  - acupoint.si6
+  - acupoint.pc5
+entities:
+- id: acupoint.bl1
+  seq: 35
+  surface: 京门
+  corrected: 睛明
+- id: acupoint.ex_tai_yang
+  seq: 41
+  surface: 太阳
+  corrected: 太阳
+- id: acupoint.si6
+  seq: 62
+  surface: 养老
+  corrected: 养老
+- id: acupoint.pc5
+  seq: 76
+  surface: 腱室
+  corrected: 间使
+kps:
+- type: clinical_tip
+  s: 睛明刺法：指轻推眼球向外，浅刺即可。
+  seq:
+  - 34
+  - 35
+  q: 把眼珠子搬开来
+  ents:
+  - acupoint.bl1
+  conf: 0.9
+  asr: 京门/京民=睛明（此处指睛明）
+- type: acupoint_usage
+  s: 养老进针可透向对侧间使。
+  seq:
+  - 62
+  - 76
+  q: 对面腱室穴
+  ents:
+  - acupoint.si6
+  - acupoint.pc5
+  conf: 0.9
+  asr: 腱室=间使
+- type: clinical_tip
+  s: 轻症可单侧针，久病双侧。
+  seq:
+  - 85
+  - 86
+  q: 两边都针炸
+  ents:
+  - acupoint.si6
+  conf: 0.8
+  asr: 针炸=针扎

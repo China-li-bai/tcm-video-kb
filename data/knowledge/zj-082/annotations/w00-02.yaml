@@ -1,0 +1,75 @@
+video_id: zj-082
+window: w00-02
+seg_from: 0
+seg_to: 304
+annotator: llm_read
+chapters:
+- key: c01
+  title: 阳白透鱼腰眼科
+  start_seq: 0
+  summary: 阳白透鱼腰为眼科常用透刺；使阳经精气入目。可配太阳、耳尖放血。偏头痛属胆经，可取肝本穴行间及侠溪等。
+  clauses: []
+  topics:
+  - acupoint.gb14
+  - acupoint.ex_yu_yao
+  - acupoint.gb43
+- key: c02
+  title: 偏头胆经取穴
+  start_seq: 27
+  summary: 偏头痛属胆经；可先下侠溪（顺经为补思路），并配太阳等。
+  clauses: []
+  topics:
+  - acupoint.gb43
+  - meridian.gb
+entities:
+- id: acupoint.gb14
+  seq: 2
+  surface: 羊白
+  corrected: 阳白
+- id: acupoint.ex_yu_yao
+  seq: 2
+  surface: 鱼腰
+  corrected: 鱼腰
+- id: acupoint.gb43
+  seq: 29
+  surface: 侠溪
+  corrected: 侠溪
+- id: acupoint.lr2
+  seq: 28
+  surface: 行间
+  corrected: 行间
+- id: acupoint.ex_tai_yang
+  seq: 35
+  surface: 太阳
+  corrected: 太阳
+kps:
+- type: acupoint_usage
+  s: 阳白透鱼腰为眼科常用透刺大法，助阳经精气入目。
+  seq:
+  - 2
+  - 5
+  q: 羊白透鱼腰
+  ents:
+  - acupoint.gb14
+  - acupoint.ex_yu_yao
+  conf: 0.95
+  asr: 羊白=阳白；自增=常用
+- type: clinical_tip
+  s: 偏头痛属胆经；可取侠溪等，配肝本穴行间。
+  seq:
+  - 27
+  - 29
+  q: 我们先下侠溪
+  ents:
+  - acupoint.gb43
+  - acupoint.lr2
+  conf: 0.9
+- type: clinical_tip
+  s: 眼科可配眉尾太阳及耳尖三棱针放血。
+  seq:
+  - 22
+  - 22
+  q: 耳朵的正尖端
+  ents:
+  - acupoint.ex_tai_yang
+  conf: 0.85
