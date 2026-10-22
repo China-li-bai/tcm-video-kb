@@ -1,0 +1,62 @@
+[
+ {
+  "chapter_id": "zj-045.c01",
+  "video_id": "zj-045",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "腹肾经与冲脉并行",
+  "summary": "腹肾经在任脉旁开约一寸（临床取一寸）。其行与冲脉相当。乳房硬块须按所在经（胃/肾/肝/心包/心/脾）选经治疗。下半身水肿可取水分、水道等“三皇”类配穴消肿。",
+  "start_s": 12.02,
+  "end_s": 337.175,
+  "seg_from": 0,
+  "seg_to": 59,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "meridian.ki",
+   "meridian.tv",
+   "meridian.cv"
+  ],
+  "citation": {
+   "youtube_id": "cv5hnRHcwDY",
+   "url": "https://www.youtube.com/watch?v=cv5hnRHcwDY&t=12s",
+   "series": "zj",
+   "episode": 45,
+   "title": "Ni Hai-Hsia \"Human Discipline\" \"Acupuncture\" All 90 Episodes - Acupuncture 45",
+   "start_s": 12.02,
+   "end_s": 337.18
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-045.c02",
+  "video_id": "zj-045",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "石关阴都幽门",
+  "summary": "石关在中脘旁开一寸。幽门在巨阙旁开一寸；心病仍当取募巨阙，勿误用幽门替代。",
+  "start_s": 339.76,
+  "end_s": 1861.77,
+  "seg_from": 60,
+  "seg_to": 329,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.ki18",
+   "acupoint.ki21",
+   "acupoint.cv14"
+  ],
+  "citation": {
+   "youtube_id": "cv5hnRHcwDY",
+   "url": "https://www.youtube.com/watch?v=cv5hnRHcwDY&t=339s",
+   "series": "zj",
+   "episode": 45,
+   "title": "Ni Hai-Hsia \"Human Discipline\" \"Acupuncture\" All 90 Episodes - Acupuncture 45",
+   "start_s": 339.76,
+   "end_s": 1861.77
+  },
+  "review_status": "llm_read"
+ }
+]

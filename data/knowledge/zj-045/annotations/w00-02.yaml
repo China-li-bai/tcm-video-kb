@@ -1,0 +1,119 @@
+video_id: zj-045
+window: w00-02
+seg_from: 0
+seg_to: 329
+annotator: llm_read
+chapters:
+- key: c01
+  title: 腹肾经与冲脉并行
+  start_seq: 0
+  summary: 腹肾经在任脉旁开约一寸（临床取一寸）。其行与冲脉相当。乳房硬块须按所在经（胃/肾/肝/心包/心/脾）选经治疗。下半身水肿可取水分、水道等“三皇”类配穴消肿。
+  clauses: []
+  topics:
+  - meridian.ki
+  - meridian.tv
+  - meridian.cv
+- key: c02
+  title: 石关阴都幽门
+  start_seq: 60
+  summary: 石关在中脘旁开一寸。幽门在巨阙旁开一寸；心病仍当取募巨阙，勿误用幽门替代。
+  clauses: []
+  topics:
+  - acupoint.ki18
+  - acupoint.ki21
+  - acupoint.cv14
+entities:
+- id: meridian.ki
+  seq: 5
+  surface: 肾经
+  corrected: 足少阴肾经
+- id: meridian.cv
+  seq: 5
+  surface: 任脉
+  corrected: 任脉
+- id: meridian.tv
+  seq: 14
+  surface: 重卖
+  corrected: 冲脉
+- id: meridian.st
+  seq: 16
+  surface: 阳明胃经
+  corrected: 足阳明胃经
+- id: acupoint.cv9
+  seq: 42
+  surface: 水分
+  corrected: 水分
+- id: acupoint.st28
+  seq: 42
+  surface: 水稻穴
+  corrected: 水道
+- id: acupoint.ki18
+  seq: 60
+  surface: 石棺
+  corrected: 石关
+- id: acupoint.cv12
+  seq: 60
+  surface: 中皖
+  corrected: 中脘
+- id: acupoint.ki21
+  seq: 77
+  surface: 幽门
+  corrected: 幽门
+- id: acupoint.cv14
+  seq: 77
+  surface: 俱缺
+  corrected: 巨阙
+- id: concept.mu_xue
+  seq: 77
+  surface: 墓穴
+  corrected: 募穴
+- id: acupoint.ki17
+  seq: 37
+  surface: 商曲
+  corrected: 商曲
+kps:
+- type: concept_definition
+  s: 腹段肾经在任脉旁开约一寸；其走向与冲脉相当。
+  seq:
+  - 5
+  - 15
+  q: 肾经的外开，任脉一寸
+  ents:
+  - meridian.ki
+  - meridian.cv
+  - meridian.tv
+  conf: 0.9
+  asr: 重卖=冲脉；圣经=肾经
+- type: treatment_principle
+  s: 乳房硬块须辨所在经络（胃、肾、肝等）选经取穴，勿固定一方。
+  seq:
+  - 16
+  - 21
+  q: 乳房硬块在阳明胃经上面
+  ents:
+  - meridian.st
+  - meridian.ki
+  conf: 0.9
+- type: clinical_tip
+  s: 下半身水肿、小便不利：水分、水道等配用（天皇地皇人皇类），消肿较快。
+  seq:
+  - 41
+  - 48
+  q: 三环穴就下去肿就开始消哦
+  ents:
+  - acupoint.cv9
+  - acupoint.st28
+  conf: 0.85
+  asr: 三环=三皇；水稻=水道
+- type: acupoint_usage
+  s: 石关在中脘旁开一寸；幽门在巨阙旁开一寸。心病取心募巨阙，勿以幽门代之。
+  seq:
+  - 60
+  - 81
+  q: 巨缺开外开一寸幽门
+  ents:
+  - acupoint.ki18
+  - acupoint.ki21
+  - acupoint.cv14
+  conf: 0.9
+  asr: 石棺=石关；俱缺/具球=巨阙
