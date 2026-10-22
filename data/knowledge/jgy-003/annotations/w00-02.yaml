@@ -1,0 +1,101 @@
+video_id: jgy-003
+window: w00-02
+seg_from: 0
+seg_to: 374
+annotator: llm_read
+chapters:
+- key: c01
+  title: 痉湿暍概说·刚痉柔痉
+  start_seq: 0
+  summary: 金匮第二篇痉湿暍：痉近脑膜炎类急症，湿为风湿，暍为中暑。太阳发热无汗反恶寒为刚痉，发热汗出不恶寒为柔痉，方证不同，一剂可知。
+  clauses: []
+  topics:
+  - new.disease.jing_bing
+  - formula.ge_gen_tang
+- key: c02
+  title: 葛根汤与瓜蒌桂枝汤治痉
+  start_seq: 120
+  summary: 小儿痉见目直项强多用葛根汤；柔痉津伤可选瓜蒌桂枝汤（桂枝汤加瓜蒌根生津）。有疮家则痉难治。
+  clauses: []
+  topics:
+  - formula.ge_gen_tang
+  - formula.gua_lou_gui_zhi_tang
+- key: c03
+  title: 麻黄去节发汗与治症不拘病名
+  start_seq: 251
+  summary: 麻黄中空发汗、节止汗，汤剂宜去节。夜尿若见麻黄汤或葛根汤证亦可选用；治症勿被病名框死。里实燥结可合承气思路。
+  clauses: []
+  topics:
+  - herb.ma_huang
+  - formula.ma_huang_tang
+entities:
+- id: classic.jin_gui_yao_lve
+  seq: 0
+  surface: 金桂
+  corrected: 金匮
+- id: new.disease.jing_bing
+  seq: 4
+  surface: 静
+  corrected: 痉
+- id: new.disease.gang_jing
+  seq: 25
+  surface: 刚劲
+  corrected: 刚痉
+- id: new.disease.rou_jing
+  seq: 29
+  surface: 柔痉
+  corrected: 柔痉
+- id: formula.ge_gen_tang
+  seq: 130
+  surface: 葛根汤
+  corrected: 葛根汤
+- id: formula.gua_lou_gui_zhi_tang
+  seq: 155
+  surface: 挂楼桂枝汤
+  corrected: 瓜蒌桂枝汤
+- id: herb.ma_huang
+  seq: 252
+  surface: 麻黄
+  corrected: 麻黄
+- id: formula.ma_huang_tang
+  seq: 251
+  surface: 麻黄汤
+  corrected: 麻黄汤
+- id: new.pattern.shi_zheng
+  seq: 6
+  surface: 湿症
+  corrected: 湿证
+kps:
+- type: concept_definition
+  s: 痉湿暍篇：痉类急症（倪师比脑膜炎），湿为风湿，暍为中暑。
+  seq: [4, 9]
+  q: 脑膜炎
+  ents: [new.disease.jing_bing]
+  conf: 0.85
+  asr: 静=痉；液=暍
+- type: diagnostic_rule
+  s: 太阳发热无汗反恶寒为刚痉；发热汗出不恶寒为柔痉。
+  seq: [25, 29]
+  q: 柔痉
+  ents: [new.disease.gang_jing, new.disease.rou_jing]
+  conf: 0.9
+  asr: 刚劲=刚痉
+- type: formula_indication
+  s: 小儿痉见项强目直等，常用葛根汤；柔痉津伤可用瓜蒌桂枝汤。
+  seq: [130, 155]
+  q: 葛根汤
+  ents: [formula.ge_gen_tang, formula.gua_lou_gui_zhi_tang]
+  conf: 0.9
+  asr: 挂楼=瓜蒌
+- type: herb_property
+  s: 麻黄中空主发汗，节部止汗，制汤宜去节取汗。
+  seq: [258, 260]
+  q: 发汗
+  ents: [herb.ma_huang]
+  conf: 0.95
+- type: clinical_tip
+  s: 夜尿若见麻黄汤或葛根汤证亦可选用；治症勿被病名固定。
+  seq: [268, 277]
+  q: 不要被病名
+  ents: [formula.ma_huang_tang, formula.ge_gen_tang]
+  conf: 0.9
