@@ -1,0 +1,92 @@
+[
+ {
+  "chapter_id": "jgy-017.c01",
+  "video_id": "jgy-017",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "惊悸脉诊·衄血目晕·离经血与阳虚",
+  "summary": "金匮第十六篇惊悸吐衄下血胸满瘀血。寸口脉动而弱：动为惊（脉左右跳）、弱为悸（水饮，脐下悸用茯苓）。衄止后目金晕黄未退则未愈（肝不藏血、木克土见眼白黄）。面无血色、无寒热、脉沉弦见衄/下血/吐血，乃阳不固阴、血离经；阿司匹林等西药耗阳水亦促出血。咳逆上气吐血脉数不得卧属危候；肝阴实（硬肿）血不归肝可致吐血与夜间不眠（阴结）。",
+  "start_s": 0.09,
+  "end_s": 765.445,
+  "seg_from": 0,
+  "seg_to": 128,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "disease.jing_ji",
+   "symptom.nv",
+   "symptom.tu_xie"
+  ],
+  "citation": {
+   "youtube_id": "mABsoFItvwo",
+   "url": "https://www.youtube.com/watch?v=mABsoFItvwo&t=0s",
+   "series": "jgy",
+   "episode": 17,
+   "title": "倪海廈《金匱要略》細分版： 16驚悸吐衄下血胸滿瘀血病",
+   "start_s": 0.09,
+   "end_s": 765.45
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-017.c02",
+  "video_id": "jgy-017",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "上寒下热常人·失血禁汗·血虚脉象",
+  "summary": "常人上寒下热：上身皮肤凉而掌心热，腹背凉而足心热，阴阳相合。酒客久饮可咳血伤肝胃。冬春衄多太阳、夏秋衄多阳明。失血家阴虚，汗血同源，绝对不可发汗，误汗则孤阳上越、目不得瞑不得眠。寸关尺常脉略呈寸高尺低；血虚时五脏争血脉反大，孔脉中空；妇人血虚易漏下/流产，亡血不可发表。",
+  "start_s": 767.94,
+  "end_s": 1706.59,
+  "seg_from": 129,
+  "seg_to": 284,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "method.fa_han",
+   "concept.xue_xu",
+   "syndrome.wang_xue"
+  ],
+  "citation": {
+   "youtube_id": "mABsoFItvwo",
+   "url": "https://www.youtube.com/watch?v=mABsoFItvwo&t=767s",
+   "series": "jgy",
+   "episode": 17,
+   "title": "倪海廈《金匱要略》細分版： 16驚悸吐衄下血胸滿瘀血病",
+   "start_s": 767.94,
+   "end_s": 1706.59
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-017.c03",
+  "video_id": "jgy-017",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "瘀血辨证·瘀不去新不生·亡血禁发表",
+  "summary": "瘀血：胸满、唇萎（脾主唇）、舌青、口燥但欲漱水不欲咽，无寒热；舌边齿痕、舌有瘀点、少腹压痛可佐证。貌似发热烦满口干渴而脉不数不浮者为内有隐瘀。瘀不去则新血不生，贫血补血无效当先活血；攻补比例可三七或对半。亡血（车祸大失血、衄、便血、吐血）不可发表（大/小青龙、桂枝、葛根类）。",
+  "start_s": 1706.59,
+  "end_s": 4195.439,
+  "seg_from": 285,
+  "seg_to": 744,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "disease.yu_xue",
+   "syndrome.wang_xue",
+   "method.fa_biao"
+  ],
+  "citation": {
+   "youtube_id": "mABsoFItvwo",
+   "url": "https://www.youtube.com/watch?v=mABsoFItvwo&t=1706s",
+   "series": "jgy",
+   "episode": 17,
+   "title": "倪海廈《金匱要略》細分版： 16驚悸吐衄下血胸滿瘀血病",
+   "start_s": 1706.59,
+   "end_s": 4195.44
+  },
+  "review_status": "llm_read"
+ }
+]

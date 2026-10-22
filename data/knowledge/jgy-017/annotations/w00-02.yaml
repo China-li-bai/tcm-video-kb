@@ -1,0 +1,231 @@
+video_id: jgy-017
+window: w00-02
+seg_from: 0
+seg_to: 368
+annotator: llm_read
+chapters:
+- key: c01
+  title: 惊悸脉诊·衄血目晕·离经血与阳虚
+  start_seq: 0
+  summary: 金匮第十六篇惊悸吐衄下血胸满瘀血。寸口脉动而弱：动为惊（脉左右跳）、弱为悸（水饮，脐下悸用茯苓）。衄止后目金晕黄未退则未愈（肝不藏血、木克土见眼白黄）。面无血色、无寒热、脉沉弦见衄/下血/吐血，乃阳不固阴、血离经；阿司匹林等西药耗阳水亦促出血。咳逆上气吐血脉数不得卧属危候；肝阴实（硬肿）血不归肝可致吐血与夜间不眠（阴结）。
+  clauses: []
+  topics:
+  - disease.jing_ji
+  - symptom.nv
+  - symptom.tu_xie
+- key: c02
+  title: 上寒下热常人·失血禁汗·血虚脉象
+  start_seq: 129
+  summary: 常人上寒下热：上身皮肤凉而掌心热，腹背凉而足心热，阴阳相合。酒客久饮可咳血伤肝胃。冬春衄多太阳、夏秋衄多阳明。失血家阴虚，汗血同源，绝对不可发汗，误汗则孤阳上越、目不得瞑不得眠。寸关尺常脉略呈寸高尺低；血虚时五脏争血脉反大，孔脉中空；妇人血虚易漏下/流产，亡血不可发表。
+  clauses: []
+  topics:
+  - method.fa_han
+  - concept.xue_xu
+  - syndrome.wang_xue
+- key: c03
+  title: 瘀血辨证·瘀不去新不生·亡血禁发表
+  start_seq: 285
+  summary: 瘀血：胸满、唇萎（脾主唇）、舌青、口燥但欲漱水不欲咽，无寒热；舌边齿痕、舌有瘀点、少腹压痛可佐证。貌似发热烦满口干渴而脉不数不浮者为内有隐瘀。瘀不去则新血不生，贫血补血无效当先活血；攻补比例可三七或对半。亡血（车祸大失血、衄、便血、吐血）不可发表（大/小青龙、桂枝、葛根类）。
+  clauses: []
+  topics:
+  - disease.yu_xue
+  - syndrome.wang_xue
+  - method.fa_biao
+entities:
+- id: disease.jing_ji
+  seq: 1
+  surface: 经悸
+  corrected: 惊悸
+- id: symptom.xin_ji
+  seq: 7
+  surface: 心悸
+  corrected: 心悸
+- id: symptom.tu_xie
+  seq: 57
+  surface: 吐血
+  corrected: 吐血
+- id: symptom.xia_xue
+  seq: 1
+  surface: 下血
+  corrected: 下血
+- id: symptom.xiong_man
+  seq: 1
+  surface: 胸满
+  corrected: 胸满
+- id: disease.yu_xue
+  seq: 1
+  surface: 淤血
+  corrected: 瘀血
+- id: herb.fu_ling
+  seq: 14
+  surface: 茯苓
+  corrected: 茯苓
+- id: symptom.nv
+  seq: 20
+  surface: 流鼻血
+  corrected: 衄
+- id: zangfu.gan
+  seq: 44
+  surface: 肝
+  corrected: 肝
+- id: concept.yang_xu
+  seq: 86
+  surface: 阳虚
+  corrected: 阳虚
+- id: formula.ma_huang_tang
+  seq: 82
+  surface: 麻黄汤
+  corrected: 麻黄汤
+- id: method.fa_han
+  seq: 194
+  surface: 发汗
+  corrected: 发汗
+- id: concept.yin_xu
+  seq: 194
+  surface: 阴虚
+  corrected: 阴虚
+- id: concept.xue_xu
+  seq: 254
+  surface: 血虚
+  corrected: 血虚
+- id: syndrome.wang_xue
+  seq: 279
+  surface: 王学者
+  corrected: 亡血
+- id: zangfu.pi
+  seq: 286
+  surface: 脾脏
+  corrected: 脾
+- id: zangfu.xin
+  seq: 286
+  surface: 心脏
+  corrected: 心
+- id: formula.gui_zhi_tang
+  seq: 368
+  surface: 桂枝汤
+  corrected: 桂枝汤
+- id: herb.ge_gen
+  seq: 368
+  surface: 葛根
+  corrected: 葛根
+- id: method.fa_biao
+  seq: 366
+  surface: 发表
+  corrected: 发表
+- id: formula.da_qing_long_tang
+  seq: 368
+  surface: 大青龙
+  corrected: 大青龙汤
+- id: formula.xiao_qing_long_tang
+  seq: 368
+  surface: 小青龙
+  corrected: 小青龙汤
+- id: pulse.xian
+  seq: 63
+  surface: 沉玄
+  corrected: 沉弦
+- id: zangfu.fei
+  seq: 133
+  surface: 肺
+  corrected: 肺
+- id: symptom.fan_zao
+  seq: 324
+  surface: 烦躁
+  corrected: 烦躁
+kps:
+- type: clinical_tip
+  s: 金匮第十六篇统论惊悸、吐衄、下血、胸满、瘀血诸证。
+  seq: [1]
+  q: 下血
+  ents: [disease.jing_ji, symptom.xia_xue, symptom.xiong_man, disease.yu_xue]
+  conf: 0.95
+  asr: 经悸=惊悸；吐拗=吐衄；淤血=瘀血
+- type: diagnostic_rule
+  s: 寸口脉动而弱：动（左右跳）为惊，弱细为悸；悸多因水饮，脐下悸用茯苓。
+  seq: [7]
+  q: 心悸
+  ents: [disease.jing_ji, symptom.xin_ji, herb.fu_ling]
+  conf: 0.9
+  asr: 精/济=惊/悸；水影=水饮；洗下剂=脐下悸
+- type: diagnostic_rule
+  s: 衄血止后若目睛金晕黄（眼白仍黄）示未愈，因肝不藏血、木克土；黄退方为真愈。
+  seq: [20]
+  q: 流鼻血
+  ents: [symptom.nv, zangfu.gan]
+  conf: 0.9
+  asr: 目金晕黄/阴黄=目睛黄晕
+- type: pathomechanism
+  s: 面无血色、无寒热而脉沉弦，见衄、下血或吐血：血离经；阳不固阴则阴外溢。阿司匹林等耗阳使血管失弹性易出血。
+  seq: [57]
+  q: 吐血
+  ents: [symptom.tu_xie, symptom.nv, symptom.xia_xue, concept.yang_xu]
+  conf: 0.9
+  asr: 沉玄=沉弦
+- type: diagnostic_rule
+  s: 吐血咳逆上气、脉数有热不得卧为死候；肝阴实（肝硬肿大）血不归肝可致吐血，夜间不眠程度反映阴结进退。
+  seq: [88]
+  q: 吐血
+  ents: [symptom.tu_xie, zangfu.gan]
+  conf: 0.85
+  asr: 阴实/因此=阴实；阴结死=阴结
+- type: clinical_tip
+  s: 常人上寒下热：上身皮肤与腹背凉，手掌足心热；据此可即时判断药是否有效（脚由热转冷则药不对证）。
+  seq: [129]
+  q: 上寒
+  ents: [zangfu.fei, zangfu.xin]
+  conf: 0.9
+  asr: 上韩夏热=上寒下热
+- type: contraindication
+  s: 失血家已阴虚，汗血同源，绝对不可发汗；误汗则阳无所附，目不得瞑、不得眠。
+  seq: [194]
+  q: 发汗
+  ents: [method.fa_han, concept.yin_xu, syndrome.wang_xue]
+  conf: 0.95
+  asr: 失学家/六家=失血家；汗穴同源=汗血同源
+- type: diagnostic_rule
+  s: 血虚时五脏争血，脉反大；孔脉中空如葱管。望诊手掌苍白无血色亦可辨贫血。
+  seq: [254]
+  q: 血虚
+  ents: [concept.xue_xu]
+  conf: 0.9
+  asr: 孔脉=芤脉
+- type: contraindication
+  s: 亡血不可发其表，发汗则寒栗而振；妇人漏下、习惯性流产多属虚寒血虚，宜补血驱寒而非发表。
+  seq: [279]
+  q: 王学者
+  ents: [syndrome.wang_xue, method.fa_han, concept.xue_xu]
+  conf: 0.95
+  asr: 王血/王学者/王雪茄=亡血
+- type: diagnostic_rule
+  s: 瘀血证：胸满、唇萎、舌青、口燥但欲漱水不欲咽，无表寒热；舌边齿痕、舌瘀点、少腹压痛可佐。
+  seq: [285]
+  q: 胸满
+  ents: [disease.yu_xue, symptom.xiong_man, zangfu.pi]
+  conf: 0.95
+  asr: 猪淤汤=诸瘀；唇萎/唇尾=唇萎；内由于=内有瘀
+- type: clinical_tip
+  s: 貌有热状烦满口干渴而脉不数不浮者，为内有隐瘀，非真表热。
+  seq: [322]
+  q: 发热
+  ents: [disease.yu_xue, symptom.fan_zao]
+  conf: 0.9
+- type: treatment_principle
+  s: 瘀不去则新血不生：贫血久补无效当先活血化瘀；攻瘀与补虚可三七或对半配伍。
+  seq: [326]
+  q: 淤血
+  ents: [disease.yu_xue, concept.xue_xu]
+  conf: 0.95
+  asr: 瘀不去心不生=瘀不去新不生
+- type: clinical_tip
+  s: 活血后大便由黑转黄、舌齿痕消退、唇转润、烦躁口燥除，为瘀退之征；久病及肿瘤多兼瘀。
+  seq: [340]
+  q: 淤血
+  ents: [disease.yu_xue]
+  conf: 0.85
+- type: contraindication
+  s: 凡失血状态（大出血、衄、便血、吐血）不可发表；发表含大青龙、小青龙、桂枝汤、葛根类。
+  seq: [366]
+  q: 发表
+  ents: [syndrome.wang_xue, method.fa_biao, formula.gui_zhi_tang, formula.da_qing_long_tang, formula.xiao_qing_long_tang, herb.ge_gen]
+  conf: 0.95
+  asr: 王学者=亡血家
