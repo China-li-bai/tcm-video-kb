@@ -1,0 +1,103 @@
+video_id: zj-036
+window: w00-02
+seg_from: 0
+seg_to: 350
+annotator: llm_read
+chapters:
+- key: c01
+  title: 肺俞与俞募配穴
+  start_seq: 0
+  summary: 第三椎旁为肺俞。肺募在中府/云门。背之肺俞与胸募同用称俞募（鱼目）疗法，多治内科咳嗽、支炎、哮喘、结核等；四肢经络痛多用原络，内科多用俞募。
+  clauses: []
+  topics:
+  - acupoint.bl13
+  - acupoint.lu1
+  - concept.mu_xue
+- key: c02
+  title: 厥阴俞与心俞
+  start_seq: 148
+  summary: 厥阴俞又称心包相关背俞。心俞配巨阙为俞募，治心病；心俞可针可灸。
+  clauses: []
+  topics:
+  - acupoint.bl14
+  - acupoint.bl15
+  - acupoint.cv14
+entities:
+- id: acupoint.bl13
+  seq: 5
+  surface: 肺输
+  corrected: 肺俞
+- id: acupoint.lu1
+  seq: 23
+  surface: 中府
+  corrected: 中府
+- id: acupoint.lu2
+  seq: 23
+  surface: 云门
+  corrected: 云门
+- id: concept.mu_xue
+  seq: 23
+  surface: 墓穴
+  corrected: 募穴
+- id: disease.ke_sou
+  seq: 27
+  surface: 咳嗽
+  corrected: 咳嗽
+- id: acupoint.bl14
+  seq: 148
+  surface: 厥阴俞
+  corrected: 厥阴俞
+- id: acupoint.bl15
+  seq: 191
+  surface: 心盂
+  corrected: 心俞
+- id: acupoint.cv14
+  seq: 191
+  surface: 巨虚
+  corrected: 巨阙
+- id: new.concept.俞募配穴
+  seq: 25
+  surface: 鱼目治疗法
+  corrected: 俞募配穴法
+- id: zangfu.xin
+  seq: 205
+  surface: 心脏
+  corrected: 心
+kps:
+- type: acupoint_usage
+  s: 第三椎旁开为肺俞；肺之募在中府（口述亦及云门）。
+  seq:
+  - 5
+  - 23
+  q: 肺的墓穴呢动从中府下沉到云门去
+  ents:
+  - acupoint.bl13
+  - acupoint.lu1
+  - acupoint.lu2
+  - concept.mu_xue
+  conf: 0.9
+  asr: 肺输=肺俞；墓穴=募穴
+- type: treatment_principle
+  s: 背肺俞与胸募同用为俞募法，多治内科肺系病（咳、喘、结核等）；四肢经络痛多用原络。
+  seq:
+  - 25
+  - 30
+  q: 叫鱼目治疗法
+  ents:
+  - acupoint.bl13
+  - acupoint.lu1
+  - new.concept.俞募配穴
+  conf: 0.95
+  asr: 鱼目/鱼物=俞募
+- type: acupoint_usage
+  s: 心俞配巨阙为俞募，治心病；心俞可针可灸。
+  seq:
+  - 191
+  - 236
+  q: 背后下针下心盂的时候，正面下针下巨虚
+  ents:
+  - acupoint.bl15
+  - acupoint.cv14
+  - new.concept.俞募配穴
+  conf: 0.9
+  asr: 心盂=心俞；巨虚=巨阙

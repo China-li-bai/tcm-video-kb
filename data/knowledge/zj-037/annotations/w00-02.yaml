@@ -1,0 +1,124 @@
+video_id: zj-037
+window: w00-02
+seg_from: 0
+seg_to: 308
+annotator: llm_read
+chapters:
+- key: c01
+  title: 膈俞肝俞与四花
+  start_seq: 0
+  summary: 膈俞为血会，主血病。肝俞可治阴部/睾丸病（肝经所过）。胆俞用于结核等经验取穴；四花灸取胆俞膈俞等四穴。
+  clauses: []
+  topics:
+  - acupoint.bl17
+  - acupoint.bl18
+  - acupoint.bl19
+- key: c02
+  title: 脾俞胃俞三焦俞
+  start_seq: 212
+  summary: 第十二椎下依次脾胃、三焦、肾背俞。胃俞配中脘为俞募。三焦俞对石门（三焦募）；治水道不利、下利脓血、水肿、腹胀不化等。
+  clauses: []
+  topics:
+  - acupoint.bl20
+  - acupoint.bl21
+  - acupoint.bl22
+  - acupoint.cv5
+entities:
+- id: acupoint.bl17
+  seq: 11
+  surface: 格余
+  corrected: 膈俞
+- id: new.concept.八会穴
+  seq: 11
+  surface: 八大晦穴
+  corrected: 八会穴
+- id: acupoint.bl18
+  seq: 155
+  surface: 肝郁
+  corrected: 肝俞
+- id: meridian.lr
+  seq: 155
+  surface: 肝经
+  corrected: 足厥阴肝经
+- id: acupoint.bl19
+  seq: 169
+  surface: 胆鱼
+  corrected: 胆俞
+- id: acupoint.bl20
+  seq: 212
+  surface: 皮鱼
+  corrected: 脾俞
+- id: acupoint.bl21
+  seq: 249
+  surface: 位鱼
+  corrected: 胃俞
+- id: acupoint.cv12
+  seq: 249
+  surface: 中啊
+  corrected: 中脘
+- id: acupoint.bl22
+  seq: 257
+  surface: 三焦俞
+  corrected: 三焦俞
+- id: acupoint.cv5
+  seq: 271
+  surface: 石穴
+  corrected: 石门
+- id: concept.mu_xue
+  seq: 271
+  surface: 墓穴
+  corrected: 募穴
+- id: new.concept.俞募配穴
+  seq: 249
+  surface: 鱼雾治疗
+  corrected: 俞募配穴法
+- id: new.method.四花灸
+  seq: 201
+  surface: 四花灸
+  corrected: 四花灸
+kps:
+- type: acupoint_usage
+  s: 膈俞为血会（八会之一），血病可针可灸。
+  seq:
+  - 11
+  - 24
+  q: 格余呢叫做穴会隔余
+  ents:
+  - acupoint.bl17
+  - new.concept.八会穴
+  conf: 0.9
+  asr: 格余/隔余=膈俞；晦穴=会穴
+- type: acupoint_usage
+  s: 肝经过前后阴；阴部、睾丸病可取肝俞（不单取井穴）。
+  seq:
+  - 155
+  - 155
+  q: 阴部有病，我们可以在肝郁上面下沉
+  ents:
+  - acupoint.bl18
+  - meridian.lr
+  conf: 0.9
+  asr: 肝郁=肝俞
+- type: clinical_tip
+  s: 结核等可用胆俞；四花灸常用膈俞、胆俞等四穴。
+  seq:
+  - 197
+  - 201
+  q: 所谓的四花灸
+  ents:
+  - acupoint.bl19
+  - new.method.四花灸
+  conf: 0.85
+- type: acupoint_usage
+  s: 胃俞配中脘为俞募；三焦俞配石门（三焦募），治水道、下利、水肿、腹胀不化等。
+  seq:
+  - 249
+  - 294
+  q: 三焦是也是水道，那下利啊，大便都带血啊
+  ents:
+  - acupoint.bl21
+  - acupoint.bl22
+  - acupoint.cv5
+  - new.concept.俞募配穴
+  conf: 0.9
+  asr: 位鱼=胃俞；石穴=石门；鱼雾=俞募

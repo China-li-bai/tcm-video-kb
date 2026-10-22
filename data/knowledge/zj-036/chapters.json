@@ -1,0 +1,62 @@
+[
+ {
+  "chapter_id": "zj-036.c01",
+  "video_id": "zj-036",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "肺俞与俞募配穴",
+  "summary": "第三椎旁为肺俞。肺募在中府/云门。背之肺俞与胸募同用称俞募（鱼目）疗法，多治内科咳嗽、支炎、哮喘、结核等；四肢经络痛多用原络，内科多用俞募。",
+  "start_s": 16.78,
+  "end_s": 806.005,
+  "seg_from": 0,
+  "seg_to": 147,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.bl13",
+   "acupoint.lu1",
+   "concept.mu_xue"
+  ],
+  "citation": {
+   "youtube_id": "Qfyl6ac7yWE",
+   "url": "https://www.youtube.com/watch?v=Qfyl6ac7yWE&t=16s",
+   "series": "zj",
+   "episode": 36,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 36",
+   "start_s": 16.78,
+   "end_s": 806.0
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-036.c02",
+  "video_id": "zj-036",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "厥阴俞与心俞",
+  "summary": "厥阴俞又称心包相关背俞。心俞配巨阙为俞募，治心病；心俞可针可灸。",
+  "start_s": 807.72,
+  "end_s": 1867.755,
+  "seg_from": 148,
+  "seg_to": 350,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.bl14",
+   "acupoint.bl15",
+   "acupoint.cv14"
+  ],
+  "citation": {
+   "youtube_id": "Qfyl6ac7yWE",
+   "url": "https://www.youtube.com/watch?v=Qfyl6ac7yWE&t=807s",
+   "series": "zj",
+   "episode": 36,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 36",
+   "start_s": 807.72,
+   "end_s": 1867.76
+  },
+  "review_status": "llm_read"
+ }
+]

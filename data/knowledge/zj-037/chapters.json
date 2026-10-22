@@ -1,0 +1,63 @@
+[
+ {
+  "chapter_id": "zj-037.c01",
+  "video_id": "zj-037",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "膈俞肝俞与四花",
+  "summary": "膈俞为血会，主血病。肝俞可治阴部/睾丸病（肝经所过）。胆俞用于结核等经验取穴；四花灸取胆俞膈俞等四穴。",
+  "start_s": 0.17,
+  "end_s": 1181.915,
+  "seg_from": 0,
+  "seg_to": 211,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.bl17",
+   "acupoint.bl18",
+   "acupoint.bl19"
+  ],
+  "citation": {
+   "youtube_id": "PWyzeMCBMZE",
+   "url": "https://www.youtube.com/watch?v=PWyzeMCBMZE&t=0s",
+   "series": "zj",
+   "episode": 37,
+   "title": "Ni Hai-hsia \"Human Records\": Acupuncture, 90-Episode Series - Acupuncture 37",
+   "start_s": 0.17,
+   "end_s": 1181.91
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-037.c02",
+  "video_id": "zj-037",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "脾俞胃俞三焦俞",
+  "summary": "第十二椎下依次脾胃、三焦、肾背俞。胃俞配中脘为俞募。三焦俞对石门（三焦募）；治水道不利、下利脓血、水肿、腹胀不化等。",
+  "start_s": 1184.96,
+  "end_s": 1776.265,
+  "seg_from": 212,
+  "seg_to": 308,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.bl20",
+   "acupoint.bl21",
+   "acupoint.bl22",
+   "acupoint.cv5"
+  ],
+  "citation": {
+   "youtube_id": "PWyzeMCBMZE",
+   "url": "https://www.youtube.com/watch?v=PWyzeMCBMZE&t=1184s",
+   "series": "zj",
+   "episode": 37,
+   "title": "Ni Hai-hsia \"Human Records\": Acupuncture, 90-Episode Series - Acupuncture 37",
+   "start_s": 1184.96,
+   "end_s": 1776.27
+  },
+  "review_status": "llm_read"
+ }
+]
