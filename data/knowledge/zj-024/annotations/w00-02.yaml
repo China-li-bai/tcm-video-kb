@@ -1,0 +1,152 @@
+video_id: zj-024
+window: w00-02
+seg_from: 0
+seg_to: 366
+annotator: llm_read
+chapters:
+- key: c01
+  title: 冲阳内庭厉兑陷谷
+  start_seq: 0
+  summary: 冲阳为胃经原穴（约解溪下二寸），昔粗针易伤动脉故常禁针，今细针可拨脉下针；有冲阳脉示胃气尚存，虚实皆可治。内庭为荥（水），厉兑为井（金、子穴）。陷谷可治水气上面部。下牙痛取胃经，上牙痛取大肠经。
+  clauses: []
+  topics:
+  - acupoint.st42
+  - acupoint.st44
+  - acupoint.st45
+  - acupoint.st43
+- key: c02
+  title: 脾与胃表里总说
+  start_seq: 230
+  summary: 脾与胃互为表里（胃为表、脾为里）。脾藏血、主四肢与肌肉；甘味入脾胃。为足太阴脾经各论作铺垫。
+  clauses: []
+  topics:
+  - zangfu.pi
+  - zangfu.wei
+  - concept.biao_li
+entities:
+- id: meridian.st
+  seq: 0
+  surface: 足阳命胃经
+  corrected: 足阳明胃经
+- id: acupoint.st42
+  seq: 14
+  surface: 冲阳
+  corrected: 冲阳
+- id: concept.yuan_xue
+  seq: 22
+  surface: 原穴
+  corrected: 原穴
+- id: acupoint.st41
+  seq: 16
+  surface: 解析穴
+  corrected: 解溪
+- id: acupoint.st44
+  seq: 61
+  surface: 内庭穴
+  corrected: 内庭
+- id: acupoint.st45
+  seq: 71
+  surface: 厉兑
+  corrected: 厉兑
+- id: acupoint.st43
+  seq: 100
+  surface: 陷股穴
+  corrected: 陷谷
+- id: zangfu.wei
+  seq: 32
+  surface: 胃气
+  corrected: 胃
+- id: zangfu.pi
+  seq: 234
+  surface: 脾脏
+  corrected: 脾
+- id: concept.biao_li
+  seq: 241
+  surface: 表里
+  corrected: 表里
+- id: acupoint.li20
+  seq: 140
+  surface: 营香
+  corrected: 迎香
+- id: acupoint.li19
+  seq: 140
+  surface: 合疗
+  corrected: 禾髎
+kps:
+- type: concept_definition
+  s: 六阳经有原穴，阴经无原穴（与阴经以输代原相对）。冲阳为胃经原穴。
+  seq:
+  - 14
+  - 22
+  q: 阳经上面才有原穴，阴经上面没有穴足
+  ents:
+  - acupoint.st42
+  - concept.yuan_xue
+  - meridian.st
+  conf: 0.9
+  asr: 穴足=原穴
+- type: contraindication
+  s: 昔日粗针易中动脉，冲阳常禁针；今细针可摸脉拨开后下针，虚实皆可用。
+  seq:
+  - 25
+  - 39
+  q: 冲阳是竞争的
+  ents:
+  - acupoint.st42
+  conf: 0.9
+  asr: 竞争=禁针
+- type: clinical_tip
+  s: 冲阳脉搏动存在提示胃气尚在。
+  seq:
+  - 32
+  - 32
+  q: 冲阳麦有冲阳脉债就代表胃气还在
+  ents:
+  - acupoint.st42
+  - zangfu.wei
+  conf: 0.95
+  asr: 麦/脉债=脉在
+- type: acupoint_usage
+  s: 内庭为胃经荥穴属水；厉兑为井穴属金，为阳明土经之子穴。
+  seq:
+  - 104
+  - 108
+  q: 内庭穴呢，它是胃经的溶穴
+  ents:
+  - acupoint.st44
+  - acupoint.st45
+  conf: 0.95
+  asr: 溶穴=荥穴；止穴=子穴
+- type: acupoint_usage
+  s: 水气上泛面部可取陷谷；取穴在趾缝上约五分，勿贴骨下针。
+  seq:
+  - 66
+  - 100
+  q: 你在陷股穴上下中都可以
+  ents:
+  - acupoint.st43
+  conf: 0.85
+  asr: 陷股=陷谷
+- type: treatment_principle
+  s: 下牙痛取足阳明胃经；上牙痛取禾髎、迎香等大肠经穴。
+  seq:
+  - 140
+  - 140
+  q: 下牙痛的时候，我们下足阳明味精上牙痛的时候
+  ents:
+  - meridian.st
+  - acupoint.li19
+  - acupoint.li20
+  conf: 0.9
+  asr: 味精=胃经
+- type: concept_definition
+  s: 脾与胃互为表里：胃为表可见，脾为里；脾主四肢与肌肉，甘味入脾胃。
+  seq:
+  - 241
+  - 282
+  q: 胃呢是表脾呢是里
+  ents:
+  - zangfu.pi
+  - zangfu.wei
+  - concept.biao_li
+  conf: 0.95

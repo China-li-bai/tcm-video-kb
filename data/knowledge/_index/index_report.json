@@ -27,9 +27,10 @@
   "zj-020",
   "zj-021",
   "zj-022",
-  "zj-023"
+  "zj-023",
+  "zj-024"
  ],
- "n_entities": 906,
- "n_knowledge_points": 725,
- "n_chapters": 268
+ "n_entities": 909,
+ "n_knowledge_points": 732,
+ "n_chapters": 270
 }
