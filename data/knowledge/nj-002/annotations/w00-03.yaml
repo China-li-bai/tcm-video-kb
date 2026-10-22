@@ -1,0 +1,88 @@
+video_id: nj-002
+window: w00-03
+seg_from: 0
+seg_to: 510
+annotator: llm_read
+chapters:
+- key: c01
+  title: 五行五脏化五气
+  start_seq: 0
+  summary: 续《内经》：天有四时五行（寒暑燥湿风），人有五脏化五气、情志相应。暑热耗津；阴阳为血气男女、水火征兆。
+  clauses: []
+  topics:
+  - concept.wu_xing
+  - zangfu.wu_zang
+  - concept.yin_yang
+- key: c02
+  title: 阴阳消长与肾衰
+  start_seq: 224
+  summary: 阴在内为阳之守，阳在外为阴之使。中年后阴气/肾气渐衰（五八六八七八等），宜知阴阳消长；五十后肾气始衰可酌补肾。病由表入里至五脏则半死半生。
+  clauses: []
+  topics:
+  - concept.yin_yang
+  - zangfu.shen
+entities:
+- id: classic.huang_di_nei_jing
+  seq: 24
+  surface: 黄帝内经
+  corrected: 黄帝内经
+- id: concept.wu_xing
+  seq: 64
+  surface: 五行
+  corrected: 五行
+- id: zangfu.wu_zang
+  seq: 66
+  surface: 五脏
+  corrected: 五脏
+- id: concept.yin_yang
+  seq: 224
+  surface: 阴阳
+  corrected: 阴阳
+- id: zangfu.shen
+  seq: 298
+  surface: 肾脏
+  corrected: 肾
+- id: concept.jin_ye
+  seq: 126
+  surface: 精液
+  corrected: 津液
+kps:
+- type: clinical_tip
+  s: 天有四时五行寒暑燥湿风；人五脏化五气、情志相应。
+  seq:
+  - 64
+  - 71
+  q: 五脏化五气
+  ents:
+  - concept.wu_xing
+  - zangfu.wu_zang
+  conf: 0.95
+- type: clinical_tip
+  s: 阴在内为阳之守，阳在外为阴之使；阴阳为万物根本。
+  seq:
+  - 224
+  - 225
+  q: 阴在内阳之手
+  ents:
+  - concept.yin_yang
+  conf: 0.9
+  asr: 阳之手=阳之守；阴之死=阴之使
+- type: clinical_tip
+  s: 五十岁后肾气渐衰；内经五八六八七八等皆关肾脏盛衰。
+  seq:
+  - 298
+  - 299
+  q: 五十岁以后肾脏开始衰竭
+  ents:
+  - zangfu.shen
+  conf: 0.9
+- type: clinical_tip
+  s: 邪从表入肌肉至五脏，按内经则半死半生，宜早治。
+  seq:
+  - 425
+  - 425
+  q: 半死半生
+  ents:
+  - zangfu.wu_zang
+  - classic.huang_di_nei_jing
+  conf: 0.85

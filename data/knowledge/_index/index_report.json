@@ -1,6 +1,7 @@
 {
  "videos": [
   "nj-001",
+  "nj-002",
   "shl-001",
   "shl-002",
   "shl-003",
@@ -87,7 +88,7 @@
   "zj-089",
   "zj-090"
  ],
- "n_entities": 1079,
- "n_knowledge_points": 976,
- "n_chapters": 401
+ "n_entities": 1085,
+ "n_knowledge_points": 980,
+ "n_chapters": 403
 }

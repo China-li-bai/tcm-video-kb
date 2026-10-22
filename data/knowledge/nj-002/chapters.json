@@ -1,0 +1,61 @@
+[
+ {
+  "chapter_id": "nj-002.c01",
+  "video_id": "nj-002",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "五行五脏化五气",
+  "summary": "续《内经》：天有四时五行（寒暑燥湿风），人有五脏化五气、情志相应。暑热耗津；阴阳为血气男女、水火征兆。",
+  "start_s": 0.21,
+  "end_s": 1297.394,
+  "seg_from": 0,
+  "seg_to": 223,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "concept.wu_xing",
+   "zangfu.wu_zang",
+   "concept.yin_yang"
+  ],
+  "citation": {
+   "youtube_id": "ebxTOvVzR-g",
+   "url": "https://www.youtube.com/watch?v=ebxTOvVzR-g&t=0s",
+   "series": "nj",
+   "episode": 2,
+   "title": "02 倪海厦精讲《黄帝内经》高清字幕完整版",
+   "start_s": 0.21,
+   "end_s": 1297.39
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "nj-002.c02",
+  "video_id": "nj-002",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "阴阳消长与肾衰",
+  "summary": "阴在内为阳之守，阳在外为阴之使。中年后阴气/肾气渐衰（五八六八七八等），宜知阴阳消长；五十后肾气始衰可酌补肾。病由表入里至五脏则半死半生。",
+  "start_s": 1297.679,
+  "end_s": 14222.102,
+  "seg_from": 224,
+  "seg_to": 2523,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "concept.yin_yang",
+   "zangfu.shen"
+  ],
+  "citation": {
+   "youtube_id": "ebxTOvVzR-g",
+   "url": "https://www.youtube.com/watch?v=ebxTOvVzR-g&t=1297s",
+   "series": "nj",
+   "episode": 2,
+   "title": "02 倪海厦精讲《黄帝内经》高清字幕完整版",
+   "start_s": 1297.68,
+   "end_s": 14222.1
+  },
+  "review_status": "llm_read"
+ }
+]
