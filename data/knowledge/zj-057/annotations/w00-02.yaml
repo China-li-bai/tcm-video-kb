@@ -1,0 +1,95 @@
+video_id: zj-057
+window: w00-02
+seg_from: 0
+seg_to: 336
+annotator: llm_read
+chapters:
+- key: c01
+  title: 阴维阳维·内关外关
+  start_seq: 0
+  summary: 维脉：阳维主外/腑用外关，阴维主内/脏用内关；外关透内关可交合阴阳。胸胁环痛可取外关；奇经八脉各有主穴。
+  clauses: []
+  topics:
+  - meridian.yinlv
+  - meridian.yanglv
+  - acupoint.pc6
+  - acupoint.te5
+- key: c02
+  title: 引气与烧山火透天凉
+  start_seq: 33
+  summary: 针刺先引气（酸麻胀）。烧山火为大补治里寒，透天凉为大泻治大热；紧按慢提为补。天人地三部操作。
+  clauses: []
+  topics:
+  - new.method.shao_shan_huo
+  - new.method.tou_tian_liang
+  - method.bu_xie
+- key: c03
+  title: 阳中引阴阴中引阳·寒热多少定补泻先后
+  start_seq: 287
+  summary: 先寒后热=先补后泻（阳中引阴）；先热后寒=先泻后补。问清寒多/热多或酸多/痛多；表证经络虚实用补泻手法灵活取穴。
+  clauses: []
+  topics:
+  - method.bu_xie
+entities:
+- id: meridian.yinlv
+  seq: 5
+  surface: 阴为脉
+  corrected: 阴维脉
+- id: meridian.yanglv
+  seq: 3
+  surface: 阳痿脉
+  corrected: 阳维脉
+- id: acupoint.pc6
+  seq: 5
+  surface: 内关
+  corrected: 内关
+- id: acupoint.te5
+  seq: 5
+  surface: 外观
+  corrected: 外关
+- id: new.method.shao_shan_huo
+  seq: 141
+  surface: 烧山火
+  corrected: 烧山火
+- id: new.method.tou_tian_liang
+  seq: 147
+  surface: 透天凉
+  corrected: 透天凉
+- id: method.bu_xie
+  seq: 291
+  surface: 先补后泻
+  corrected: 先补后泻
+kps:
+- type: concept_definition
+  s: 阳维主外用外关，阴维主内用内关；外关透内关使阴阳交合。
+  seq: [5, 6]
+  q: 内关
+  ents: [meridian.yinlv, meridian.yanglv, acupoint.pc6, acupoint.te5]
+  conf: 0.9
+  asr: 阳痿/阳为=阳维；阴为=阴维；外观=外关
+- type: clinical_tip
+  s: 针刺先求引气（酸麻胀），再谈补泻手法。
+  seq: [38]
+  q: 引气
+  ents: [method.bu_xie]
+  conf: 0.9
+- type: clinical_tip
+  s: 烧山火大补治里寒；透天凉大泻治大热；补法紧按慢提。
+  seq: [147, 148]
+  q: 透天凉
+  ents: [new.method.shao_shan_huo, new.method.tou_tian_liang]
+  conf: 0.95
+  asr: 透天鸟=透天凉
+- type: diagnostic_rule
+  s: 先寒后热为阳中引阴（先补后泻）；先热后寒为阴中引阳（先泻后补）。
+  seq: [288, 291]
+  q: 先补后泻
+  ents: [method.bu_xie]
+  conf: 0.9
+  asr: 先卸后补=先泻后补
+- type: clinical_tip
+  s: 寒多热少或酸多痛少先补后泻；问清寒热/酸痛多少再定手法。
+  seq: [294, 311]
+  q: 会宗
+  ents: [method.bu_xie, acupoint.te7]
+  conf: 0.85
