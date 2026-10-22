@@ -1,0 +1,206 @@
+video_id: jgy-012
+window: w00-02
+seg_from: 0
+seg_to: 392
+annotator: llm_read
+chapters:
+- key: c01
+  title: 五脏风寒概说·肺肝中风中寒
+  start_seq: 0
+  summary: 金匮第十一篇五脏风寒积聚，条文残缺最多。肺中风口燥而喘身肿；肺中寒吐浊涕。肝中风头目眩两胁痛；肝中寒胸中痛不得转侧食则吐。肝着喜按用旋覆花汤（旋覆花、葱、新绛/茜草）。
+  clauses: []
+  topics:
+  - disease.ji_ju
+  - zangfu.wu_zang
+  - new.formula.xuan_fu_hua_tang
+- key: c02
+  title: 心中风寒伤·防己黄芪与乌头
+  start_seq: 155
+  summary: 心中风火逆上焦热、饥不欲食吐；心中寒如蒜状心痛彻背，脉浮可自愈，不愈乌头赤石脂丸。心伤头面赤下重烦热脐跳脉弦。邪哭魂魄不安属气血少，癫狂可从肝肺心治。
+  clauses: []
+  topics:
+  - new.formula.fang_ji_huang_qi_tang
+  - formula.wu_tou_chi_shi_zhi_wan
+  - concept.qi_xue
+- key: c03
+  title: 脾中风湿·利尿勿汗·脾约麻子仁
+  start_seq: 291
+  summary: 脾中风发热形如醉人腹中烦重短气，湿盛心火不降。治湿利尿勿发汗；白术茯苓，少腹静脉证重用白芍。脾约胃热约束脾津→麻子仁丸；酸枣仁敛肝藏血。
+  clauses: []
+  topics:
+  - zangfu.pi
+  - method.fa_han
+  - formula.ma_zi_ren_wan
+entities:
+- id: disease.ji_ju
+  seq: 0
+  surface: 风寒积蓄
+  corrected: 风寒积聚
+- id: zangfu.wu_zang
+  seq: 4
+  surface: 五脏
+  corrected: 五脏
+- id: zangfu.fei
+  seq: 9
+  surface: 肺
+  corrected: 肺
+- id: symptom.kou_zao
+  seq: 9
+  surface: 口燥
+  corrected: 口燥
+- id: formula.xiao_chai_hu_tang
+  seq: 69
+  surface: 小柴胡汤
+  corrected: 小柴胡汤
+- id: zangfu.gan
+  seq: 76
+  surface: 肝
+  corrected: 肝
+- id: new.formula.xuan_fu_hua_tang
+  seq: 124
+  surface: 悬浮花
+  corrected: 旋覆花汤
+- id: new.herb.qian_cao
+  seq: 129
+  surface: 芡草
+  corrected: 茜草
+- id: new.formula.fang_ji_huang_qi_tang
+  seq: 172
+  surface: 黄芪汤
+  corrected: 防己黄芪汤
+- id: formula.wu_tou_chi_shi_zhi_wan
+  seq: 191
+  surface: 乌头
+  corrected: 乌头赤石脂丸
+- id: concept.qi_xue
+  seq: 266
+  surface: 气血
+  corrected: 气血
+- id: zangfu.pi
+  seq: 291
+  surface: 脾
+  corrected: 脾
+- id: method.fa_han
+  seq: 328
+  surface: 发汗
+  corrected: 发汗
+- id: herb.bai_zhu
+  seq: 338
+  surface: 白术
+  corrected: 白术
+- id: herb.fu_ling
+  seq: 338
+  surface: 茯苓
+  corrected: 茯苓
+- id: herb.suan_zao_ren
+  seq: 352
+  surface: 酸枣仁
+  corrected: 酸枣仁
+- id: formula.ma_zi_ren_wan
+  seq: 383
+  surface: 麻子仁丸
+  corrected: 麻子仁丸
+kps:
+- type: clinical_tip
+  s: 金匮五脏风寒积聚篇残缺最多，现存条文需结合脉证补释。
+  seq: [0]
+  q: 风寒积蓄
+  ents: [disease.ji_ju, zangfu.wu_zang]
+  conf: 0.9
+  asr: 积蓄闭=积聚病
+- type: pathomechanism
+  s: 肺中风则上焦燥热，口燥而喘、身肿；津不上承如无云蔽日。
+  seq: [9]
+  q: 口燥
+  ents: [zangfu.fei, symptom.kou_zao]
+  conf: 0.9
+- type: pathomechanism
+  s: 肺中寒则津停，吐浊涕、咳唾，肺气衰败可见葱叶无根死脉。
+  seq: [36]
+  q: 肺里面是寒
+  ents: [zangfu.fei]
+  conf: 0.85
+- type: clinical_tip
+  s: 肝中风两胁痛头目眩，临床可按少阳投小柴胡，不必死记条文。
+  seq: [69]
+  q: 小柴胡汤
+  ents: [formula.xiao_chai_hu_tang, zangfu.gan]
+  conf: 0.85
+- type: pathomechanism
+  s: 肝中寒则肝脾肿大顶膈，胸中痛不得转侧，食则吐而喜静。
+  seq: [76]
+  q: 胸中痛
+  ents: [zangfu.gan]
+  conf: 0.9
+- type: formula_indication
+  s: 肝着（寒凝肝血不入肺）其人常欲蹈其胸上，旋覆花汤主之。
+  seq: [124]
+  q: 悬浮花
+  ents: [new.formula.xuan_fu_hua_tang, zangfu.gan]
+  conf: 0.9
+  asr: 悬浮花=旋覆花；全部挖汤=旋覆花汤；甘浊=肝着
+- type: formula_composition
+  s: 旋覆花汤用旋覆花降逆、葱通阳、新绛（茜草）活血入肝；亦治妇科瘀痛。
+  seq: [129]
+  q: 芡草
+  ents: [new.formula.xuan_fu_hua_tang, new.herb.qian_cao]
+  conf: 0.85
+  asr: 芡草/现朝/千草=茜草；欠潮=新绛
+- type: formula_indication
+  s: 心中风上焦热、心中饥饥不欲食而吐，防己黄芪汤类主之。
+  seq: [172]
+  q: 黄芪汤
+  ents: [new.formula.fang_ji_huang_qi_tang]
+  conf: 0.85
+  asr: 方戟黄芪汤/黄芪汤=防己黄芪汤；新中风=心中风
+- type: formula_indication
+  s: 心中寒如蒜状、心痛彻背属寒痰；脉浮可自愈，不愈用乌头赤石脂丸。
+  seq: [191]
+  q: 乌头
+  ents: [formula.wu_tou_chi_shi_zhi_wan]
+  conf: 0.9
+  asr: 乌头刺死的玩=乌头赤石脂丸
+- type: pathomechanism
+  s: 心伤则火不上达小肠，头面赤、下重（里急后重感）、烦热脐跳脉弦。
+  seq: [223]
+  q: 下重
+  ents: [zangfu.xin]
+  conf: 0.85
+- type: pathomechanism
+  s: 邪哭魂魄不安属血气少；阴气衰为癫、阳气衰为狂，可从肝肺心论治。
+  seq: [270]
+  q: 阴气衰
+  ents: [concept.qi_xue]
+  conf: 0.9
+  asr: 邪窟=邪哭；颠=癫
+- type: pathomechanism
+  s: 脾中风湿盛：发热形如醉人、腹中烦重、目润短气；湿阻心火不降。
+  seq: [310]
+  q: 形如醉人
+  ents: [zangfu.pi]
+  conf: 0.95
+- type: treatment_principle
+  s: 脾湿当利尿去湿，不可发汗；汗出快湿行慢，反伤津而腹大依旧。
+  seq: [328]
+  q: 不能发汗
+  ents: [method.fa_han, zangfu.pi]
+  conf: 0.95
+- type: clinical_tip
+  s: 脾湿利水常用白术茯苓；少腹静脉瘀滞可重用白芍一两配茯苓。
+  seq: [338]
+  q: 白术跟茯苓
+  ents: [herb.bai_zhu, herb.fu_ling, zangfu.pi]
+  conf: 0.9
+- type: formula_indication
+  s: 肝藏血可用酸枣仁辈敛血入肝；心主血用黄芩黄连阿胶苦入心。
+  seq: [352]
+  q: 酸枣仁
+  ents: [herb.suan_zao_ren]
+  conf: 0.85
+- type: formula_indication
+  s: 脾约：胃热约束脾津，浮涩脉、大便坚，麻子仁丸主之。
+  seq: [383]
+  q: 麻子仁丸
+  ents: [formula.ma_zi_ren_wan, zangfu.pi]
+  conf: 0.95
+  asr: 平约=脾约
