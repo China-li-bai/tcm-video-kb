@@ -1,0 +1,63 @@
+[
+ {
+  "chapter_id": "zj-023.c01",
+  "video_id": "zj-023",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "足三里迎随补泻",
+  "summary": "足阳明经气下行。足三里补泻勿死记顺逆时针，应随经气流向：顺经快转慢回为补，逆经为泻；补用单数（三五七九）后稍提针。常灸足三里可健胃气、助长寿；血压偏高可于足三里下五分斜刺。",
+  "start_s": 0.13,
+  "end_s": 710.82,
+  "seg_from": 0,
+  "seg_to": 134,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.st36",
+   "method.bu_xie",
+   "meridian.st"
+  ],
+  "citation": {
+   "youtube_id": "UXaMALTo2BY",
+   "url": "https://www.youtube.com/watch?v=UXaMALTo2BY&t=0s",
+   "series": "zj",
+   "episode": 23,
+   "title": "Ni Hai-sha \"Human Record\" - Acupuncture, Episode 23 of 90",
+   "start_s": 0.13,
+   "end_s": 710.82
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-023.c02",
+  "video_id": "zj-023",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "上巨虚下巨虚条口丰隆",
+  "summary": "阑尾奇穴可助诊治。上巨虚善治乳房结块，下巨虚善治脐下结块；二者间下一寸为条口，可透承山治肩不能举。丰隆名示丰满，亦为祛痰要穴，美容需疗程；其下为解溪。",
+  "start_s": 712.0,
+  "end_s": 1898.643,
+  "seg_from": 135,
+  "seg_to": 363,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.st37",
+   "acupoint.st39",
+   "acupoint.st38",
+   "acupoint.st40"
+  ],
+  "citation": {
+   "youtube_id": "UXaMALTo2BY",
+   "url": "https://www.youtube.com/watch?v=UXaMALTo2BY&t=712s",
+   "series": "zj",
+   "episode": 23,
+   "title": "Ni Hai-sha \"Human Record\" - Acupuncture, Episode 23 of 90",
+   "start_s": 712.0,
+   "end_s": 1898.64
+  },
+  "review_status": "llm_read"
+ }
+]

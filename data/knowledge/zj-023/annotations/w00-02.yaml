@@ -1,0 +1,154 @@
+video_id: zj-023
+window: w00-02
+seg_from: 0
+seg_to: 363
+annotator: llm_read
+chapters:
+- key: c01
+  title: 足三里迎随补泻
+  start_seq: 0
+  summary: 足阳明经气下行。足三里补泻勿死记顺逆时针，应随经气流向：顺经快转慢回为补，逆经为泻；补用单数（三五七九）后稍提针。常灸足三里可健胃气、助长寿；血压偏高可于足三里下五分斜刺。
+  clauses: []
+  topics:
+  - acupoint.st36
+  - method.bu_xie
+  - meridian.st
+- key: c02
+  title: 上巨虚下巨虚条口丰隆
+  start_seq: 135
+  summary: 阑尾奇穴可助诊治。上巨虚善治乳房结块，下巨虚善治脐下结块；二者间下一寸为条口，可透承山治肩不能举。丰隆名示丰满，亦为祛痰要穴，美容需疗程；其下为解溪。
+  clauses: []
+  topics:
+  - acupoint.st37
+  - acupoint.st39
+  - acupoint.st38
+  - acupoint.st40
+entities:
+- id: acupoint.st36
+  seq: 1
+  surface: 足三里
+  corrected: 足三里
+- id: method.bu_xie
+  seq: 1
+  surface: 补泻
+  corrected: 补泻
+- id: meridian.st
+  seq: 0
+  surface: 胃经
+  corrected: 足阳明胃经
+- id: acupoint.st45
+  seq: 19
+  surface: 厉兑
+  corrected: 厉兑
+- id: acupoint.st34
+  seq: 11
+  surface: 梁丘
+  corrected: 梁丘
+- id: acupoint.st33
+  seq: 11
+  surface: 阴市
+  corrected: 阴市
+- id: new.acupoint.阑尾穴
+  seq: 144
+  surface: 阑尾
+  corrected: 阑尾穴
+- id: acupoint.st37
+  seq: 193
+  surface: 上巨虚
+  corrected: 上巨虚
+- id: acupoint.st39
+  seq: 193
+  surface: 下巨虚
+  corrected: 下巨虚
+- id: acupoint.st38
+  seq: 195
+  surface: 调口穴
+  corrected: 条口
+- id: acupoint.bl57
+  seq: 274
+  surface: 沉
+  corrected: 承山
+- id: acupoint.st40
+  seq: 304
+  surface: 丰隆
+  corrected: 丰隆
+- id: acupoint.st41
+  seq: 342
+  surface: 解析
+  corrected: 解溪
+- id: zangfu.wei
+  seq: 77
+  surface: 胃气
+  corrected: 胃
+kps:
+- type: clinical_tip
+  s: 足三里补泻按经气流向，勿死记顺/逆时针（左右腿相反）：顺经快转慢回为补，逆经为泻。
+  seq:
+  - 21
+  - 67
+  q: 不要去说什么，顺时针逆时针这样会搞错
+  ents:
+  - acupoint.st36
+  - method.bu_xie
+  - meridian.st
+  conf: 0.95
+- type: clinical_tip
+  s: 补用单数捻转（三五七九）后将针稍上提如绿豆许，气下行更快。
+  seq:
+  - 23
+  - 23
+  q: 转三下转五下，转七下转九下，补完以后
+  ents:
+  - method.bu_xie
+  conf: 0.9
+- type: acupoint_usage
+  s: 足三里为合穴属土、又为本穴，虚实皆可治；常灸可保胃气、助长寿。
+  seq:
+  - 26
+  - 75
+  q: 常常灸足三里的是那一个人健康长寿
+  ents:
+  - acupoint.st36
+  - zangfu.wei
+  conf: 0.9
+- type: clinical_tip
+  s: 血压偏高可于足三里下约半寸处以四十五度斜刺向足三里，有助阳气下行。
+  seq:
+  - 72
+  - 73
+  q: 足三里下五分的地方半寸量，然后真是斜刺
+  ents:
+  - acupoint.st36
+  conf: 0.85
+  asr: 真是=针是
+- type: acupoint_usage
+  s: 上巨虚善治乳房硬块；下巨虚善治脐下结块（如胞宫肿块）；限在胃经者尤宜。
+  seq:
+  - 198
+  - 204
+  q: 上巨虚呢穴道顾名思义这个对我们的乳乳房的硬块非常好
+  ents:
+  - acupoint.st37
+  - acupoint.st39
+  conf: 0.95
+- type: acupoint_usage
+  s: 条口在上、下巨虚之间（上巨虚下一寸）；条口透承山专治肩不能举。
+  seq:
+  - 274
+  - 280
+  q: 条口透沉三专专门道五十间
+  ents:
+  - acupoint.st38
+  - acupoint.bl57
+  conf: 0.9
+  asr: 沉三=承山；五十间=手不能举
+- type: acupoint_usage
+  s: 丰隆可助丰满美容（需隔日疗程、宜补不宜泻），更是著名祛痰穴。
+  seq:
+  - 307
+  - 318
+  q: 最有名的丰隆穴的资质就是祛痰
+  ents:
+  - acupoint.st40
+  conf: 0.95
+  asr: 资质=主治
