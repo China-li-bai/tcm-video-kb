@@ -1,0 +1,90 @@
+[
+ {
+  "chapter_id": "zj-003.c01",
+  "video_id": "zj-003",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "急救：人中、百会与十宣放血",
+  "summary": "针灸急救：掐/针人中（水沟）开窍；指甲掐破则改推按或它法。十宣放血、百会放血亦用于急救复苏。痔疮可局部放血。现代可用细三棱/采血针。",
+  "start_s": 0.27,
+  "end_s": 1119.585,
+  "seg_from": 0,
+  "seg_to": 202,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.gv26",
+   "acupoint.gv20",
+   "method.zhen_jiu"
+  ],
+  "citation": {
+   "youtube_id": "7Ir-nkXZOlE",
+   "url": "https://www.youtube.com/watch?v=7Ir-nkXZOlE&t=0s",
+   "series": "zj",
+   "episode": 3,
+   "title": "Ni Haisha \"Humanity Series\": Acupuncture, Episode 03 (Total 90 Episodes)",
+   "start_s": 0.27,
+   "end_s": 1119.59
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-003.c02",
+  "video_id": "zj-003",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "同身寸与深浅：春夏浅秋冬深",
+  "summary": "取穴首重丈量：同身寸以本人中指中节两横纹间为1寸；二三寸以并指横量。多用于四肢；胸腹另有折量。下针深浅随病位（皮毛→骨旁）与季节（春夏浅、秋冬深）。",
+  "start_s": 1127.326,
+  "end_s": 1458.636,
+  "seg_from": 203,
+  "seg_to": 266,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "new.concept.同身寸",
+   "method.zhen_jiu"
+  ],
+  "citation": {
+   "youtube_id": "7Ir-nkXZOlE",
+   "url": "https://www.youtube.com/watch?v=7Ir-nkXZOlE&t=1127s",
+   "series": "zj",
+   "episode": 3,
+   "title": "Ni Haisha \"Humanity Series\": Acupuncture, Episode 03 (Total 90 Episodes)",
+   "start_s": 1127.33,
+   "end_s": 1458.64
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-003.c03",
+  "video_id": "zj-003",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "进针：针管代替咳嗽；穴在肌缝",
+  "summary": "古法咳嗽进针因无针管、针粗如火柴；今用管针拍入，不必令咳。穴多在两肌缝或肌骨交界，勿直刺肌腹中央。背腹部深浅有别以防伤脏。",
+  "start_s": 1458.656,
+  "end_s": 1717.971,
+  "seg_from": 267,
+  "seg_to": 308,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "method.zhen_jiu",
+   "new.book.针灸大成"
+  ],
+  "citation": {
+   "youtube_id": "7Ir-nkXZOlE",
+   "url": "https://www.youtube.com/watch?v=7Ir-nkXZOlE&t=1458s",
+   "series": "zj",
+   "episode": 3,
+   "title": "Ni Haisha \"Humanity Series\": Acupuncture, Episode 03 (Total 90 Episodes)",
+   "start_s": 1458.66,
+   "end_s": 1717.97
+  },
+  "review_status": "llm_read"
+ }
+]

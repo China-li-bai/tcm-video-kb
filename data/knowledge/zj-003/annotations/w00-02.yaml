@@ -1,0 +1,121 @@
+video_id: zj-003
+window: w00-02
+seg_from: 0
+seg_to: 308
+annotator: llm_read
+chapters:
+- key: c01
+  title: 急救：人中、百会与十宣放血
+  start_seq: 36
+  summary: 针灸急救：掐/针人中（水沟）开窍；指甲掐破则改推按或它法。十宣放血、百会放血亦用于急救复苏。痔疮可局部放血。现代可用细三棱/采血针。
+  clauses: []
+  topics:
+  - acupoint.gv26
+  - acupoint.gv20
+  - method.zhen_jiu
+- key: c02
+  title: 同身寸与深浅：春夏浅秋冬深
+  start_seq: 203
+  summary: 取穴首重丈量：同身寸以本人中指中节两横纹间为1寸；二三寸以并指横量。多用于四肢；胸腹另有折量。下针深浅随病位（皮毛→骨旁）与季节（春夏浅、秋冬深）。
+  clauses: []
+  topics:
+  - new.concept.同身寸
+  - method.zhen_jiu
+- key: c03
+  title: 进针：针管代替咳嗽；穴在肌缝
+  start_seq: 267
+  summary: 古法咳嗽进针因无针管、针粗如火柴；今用管针拍入，不必令咳。穴多在两肌缝或肌骨交界，勿直刺肌腹中央。背腹部深浅有别以防伤脏。
+  clauses: []
+  topics:
+  - method.zhen_jiu
+  - new.book.针灸大成
+entities:
+- id: method.zhen_jiu
+  seq: 36
+  surface: 针灸
+  corrected: 针灸
+- id: acupoint.gv26
+  seq: 52
+  surface: 人中
+  corrected: 水沟（人中）
+- id: acupoint.gv20
+  seq: 98
+  surface: 百会
+  corrected: 百会
+- id: new.method.十宣放血
+  seq: 69
+  surface: 石宣放血
+  corrected: 十宣放血
+- id: new.concept.同身寸
+  seq: 207
+  surface: 同身寸
+  corrected: 同身寸
+- id: new.book.针灸大成
+  seq: 274
+  surface: 针灸大成
+  corrected: 针灸大成
+- id: method.bu_xie
+  seq: 259
+  surface: 补泻
+  corrected: 补泻
+kps:
+- type: acupoint_usage
+  s: 急救开窍首选人中（水沟）；可用掐法，指甲伤肤则改他法，不必强掐。
+  seq:
+  - 52
+  - 63
+  q: 从日鼻孔的下方好人中的中间
+  ents:
+  - acupoint.gv26
+  conf: 0.9
+  asr: 日=两
+- type: clinical_tip
+  s: 十宣（指尖）放血、百会放血可用于晕厥等急救复苏。
+  seq:
+  - 69
+  - 98
+  q: 手指头尖刺货，把血挤出来，这个叫石宣放血
+  ents:
+  - new.method.十宣放血
+  - acupoint.gv20
+  conf: 0.85
+  asr: 石宣=十宣
+- type: concept_definition
+  s: 同身寸：以患者中指中节屈曲后两横纹间为1寸；并二/三/四指可横量2–3寸。因人而异，勿用医者之寸量人。
+  seq:
+  - 207
+  - 219
+  q: 所谓同身寸每一个人的高矮体格就不一样了
+  ents:
+  - new.concept.同身寸
+  conf: 0.95
+- type: treatment_principle
+  s: 下针深浅随病位：病在皮毛则浅刺，病在脏可深达骨旁；春夏宜浅，秋冬宜深。
+  seq:
+  - 237
+  - 258
+  q: 春天的时候，我们要下针呢，要比较且
+  ents:
+  - method.zhen_jiu
+  conf: 0.85
+  asr: 且=浅
+- type: clinical_tip
+  s: 今用管针直接拍入，不必令病人咳嗽进针；古针粗痛，故借咳势。
+  seq:
+  - 274
+  - 285
+  q: 因为当地没有针管，因为都针管
+  ents:
+  - method.zhen_jiu
+  conf: 0.85
+  asr: 都=无
+- type: diagnostic_rule
+  s: 腧穴多在两肌间隙或肌肉与骨交界，勿直刺肌腹中央。
+  seq:
+  - 293
+  - 296
+  q: 金就是两片肌肉，你摸上去就好，就两条他就在缝隙
+  ents:
+  - method.zhen_jiu
+  conf: 0.9
+  asr: 金=穴
