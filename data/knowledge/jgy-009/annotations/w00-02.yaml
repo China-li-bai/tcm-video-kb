@@ -1,0 +1,77 @@
+video_id: jgy-009
+window: w00-02
+seg_from: 0
+seg_to: 346
+annotator: llm_read
+chapters:
+- key: c01
+  title: 奔豚与水气化·大小肠火金
+  start_seq: 0
+  summary: 金匮第八篇奔豚气。倪师以水气化释之：心火/小肠火蒸化，大肠吸水回肺；水路上阻则气冲如豚奔。
+  clauses: []
+  topics:
+  - syndrome.ben_tun
+  - disease.ben_tun_qi
+- key: c02
+  title: 奔豚气上冲·桂枝汤与桂枝加桂汤
+  start_seq: 137
+  summary: 脐下悸等多从苓桂类加减；奔豚气上冲胸腹痛往来寒热用桂枝汤；发汗后烧针致奔豚，气从少腹上冲心，桂枝加桂汤。
+  clauses: []
+  topics:
+  - formula.gui_zhi_tang
+  - formula.gui_zhi_jia_gui_tang
+- key: c03
+  title: 茯苓桂枝甘草大枣汤
+  start_seq: 268
+  summary: 汗后脐下悸欲作奔豚，用茯苓桂枝甘草大枣汤利水降冲。
+  clauses: []
+  topics:
+  - formula.fu_ling_gui_zhi_gan_cao_da_zao_tang
+entities:
+- id: syndrome.ben_tun
+  seq: 0
+  surface: 奔腾
+  corrected: 奔豚
+- id: disease.ben_tun_qi
+  seq: 0
+  surface: 奔腾气病
+  corrected: 奔豚气病
+- id: formula.gui_zhi_tang
+  seq: 174
+  surface: 桂枝汤
+  corrected: 桂枝汤
+- id: formula.gui_zhi_jia_gui_tang
+  seq: 219
+  surface: 桂枝加桂汤
+  corrected: 桂枝加桂汤
+- id: formula.fu_ling_gui_zhi_gan_cao_da_zao_tang
+  seq: 296
+  surface: 临桂甘草汤茯苓、桂枝甘草汤枣
+  corrected: 茯苓桂枝甘草大枣汤
+kps:
+- type: pathomechanism
+  s: 奔豚篇关键在水：小肠火蒸、大肠滤水回肺；水路不通则气上冲。
+  seq: [3, 41]
+  q: 水的问题
+  ents: [syndrome.ben_tun]
+  conf: 0.9
+  asr: 奔腾=奔豚
+- type: formula_indication
+  s: 奔豚气上冲胸腹痛、往来寒热，用桂枝汤。
+  seq: [174]
+  q: 气上冲
+  ents: [formula.gui_zhi_tang, syndrome.ben_tun]
+  conf: 0.9
+- type: formula_indication
+  s: 发汗后烧针令汗，气从少腹上冲心作奔豚，桂枝加桂汤。
+  seq: [217, 219]
+  q: 桂枝加桂汤
+  ents: [formula.gui_zhi_jia_gui_tang, syndrome.ben_tun]
+  conf: 0.95
+  asr: 奔吞=奔豚
+- type: formula_indication
+  s: 汗后脐下悸欲作奔豚，茯苓桂枝甘草大枣汤。
+  seq: [296]
+  q: 茯苓
+  ents: [formula.fu_ling_gui_zhi_gan_cao_da_zao_tang]
+  conf: 0.85
