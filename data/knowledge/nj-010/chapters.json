@@ -1,0 +1,90 @@
+[
+ {
+  "chapter_id": "nj-010.c01",
+  "video_id": "nj-010",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "著至教论·内经亡佚与三皇",
+  "summary": "素问六十六至七十四篇亡佚，后世补入；三皇伏羲易、神农本草、黄帝内经。医须知天地阴阳消长，方无太过不及。",
+  "start_s": 0.21,
+  "end_s": 721.995,
+  "seg_from": 0,
+  "seg_to": 122,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "classic.huang_di_nei_jing",
+   "concept.yin_yang"
+  ],
+  "citation": {
+   "youtube_id": "TbI1TAMqpJ4",
+   "url": "https://www.youtube.com/watch?v=TbI1TAMqpJ4&t=0s",
+   "series": "nj",
+   "episode": 10,
+   "title": "10 倪海厦精讲《黄帝内经》高清字幕完整版 完结",
+   "start_s": 0.21,
+   "end_s": 722.0
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "nj-010.c02",
+  "video_id": "nj-010",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "阴阳互济与一脏为病",
+  "summary": "以物类比见阴阳偏盛；阴阳当互济。中医以肾水为先天第一脏。病变机虽传多脏，临证当专注本病一脏。",
+  "start_s": 723.41,
+  "end_s": 1445.345,
+  "seg_from": 123,
+  "seg_to": 268,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "concept.yin_yang",
+   "zangfu.shen"
+  ],
+  "citation": {
+   "youtube_id": "TbI1TAMqpJ4",
+   "url": "https://www.youtube.com/watch?v=TbI1TAMqpJ4&t=723s",
+   "series": "nj",
+   "episode": 10,
+   "title": "10 倪海厦精讲《黄帝内经》高清字幕完整版 完结",
+   "start_s": 723.41,
+   "end_s": 1445.35
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "nj-010.c03",
+  "video_id": "nj-010",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "肾阳外散与脾肺辨血",
+  "summary": "头重骨重而脉浮，示肾阳外散，病在肾非表。四肢懈惰、便血属脾不统血；咳血衄血属肺。一人之气病在一脏。",
+  "start_s": 1445.425,
+  "end_s": 9265.815,
+  "seg_from": 269,
+  "seg_to": 1645,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "zangfu.shen",
+   "zangfu.pi",
+   "zangfu.fei"
+  ],
+  "citation": {
+   "youtube_id": "TbI1TAMqpJ4",
+   "url": "https://www.youtube.com/watch?v=TbI1TAMqpJ4&t=1445s",
+   "series": "nj",
+   "episode": 10,
+   "title": "10 倪海厦精讲《黄帝内经》高清字幕完整版 完结",
+   "start_s": 1445.42,
+   "end_s": 9265.82
+  },
+  "review_status": "llm_read"
+ }
+]

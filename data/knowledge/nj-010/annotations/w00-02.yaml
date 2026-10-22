@@ -1,0 +1,91 @@
+video_id: nj-010
+window: w00-02
+seg_from: 0
+seg_to: 403
+annotator: llm_read
+chapters:
+- key: c01
+  title: 著至教论·内经亡佚与三皇
+  start_seq: 0
+  summary: 素问六十六至七十四篇亡佚，后世补入；三皇伏羲易、神农本草、黄帝内经。医须知天地阴阳消长，方无太过不及。
+  clauses: []
+  topics:
+  - classic.huang_di_nei_jing
+  - concept.yin_yang
+- key: c02
+  title: 阴阳互济与一脏为病
+  start_seq: 123
+  summary: 以物类比见阴阳偏盛；阴阳当互济。中医以肾水为先天第一脏。病变机虽传多脏，临证当专注本病一脏。
+  clauses: []
+  topics:
+  - concept.yin_yang
+  - zangfu.shen
+- key: c03
+  title: 肾阳外散与脾肺辨血
+  start_seq: 269
+  summary: 头重骨重而脉浮，示肾阳外散，病在肾非表。四肢懈惰、便血属脾不统血；咳血衄血属肺。一人之气病在一脏。
+  clauses: []
+  topics:
+  - zangfu.shen
+  - zangfu.pi
+  - zangfu.fei
+entities:
+- id: classic.huang_di_nei_jing
+  seq: 8
+  surface: 黄帝内经
+  corrected: 黄帝内经
+- id: person.shen_nong
+  seq: 23
+  surface: 神农
+  corrected: 神农
+- id: concept.yin_yang
+  seq: 48
+  surface: 阴阳
+  corrected: 阴阳
+- id: zangfu.shen
+  seq: 219
+  surface: 水
+  corrected: 肾
+- id: zangfu.pi
+  seq: 297
+  surface: 脾脏
+  corrected: 脾
+- id: zangfu.fei
+  seq: 291
+  surface: 肺
+  corrected: 肺
+- id: person.lei_gong
+  seq: 271
+  surface: 雷公
+  corrected: 雷公
+kps:
+- type: study_method
+  s: 素问自六十六至七十四篇原已亡佚，今本多出后世补入；宜知文本源流。
+  seq: [9]
+  q: 丧失掉了
+  ents: [classic.huang_di_nei_jing]
+  conf: 0.9
+- type: concept_definition
+  s: 阴阳当互济平衡；阳太盛则伤阴，阴太盛则伤阳。
+  seq: [139, 147]
+  q: 互相帮助
+  ents: [concept.yin_yang]
+  conf: 0.95
+- type: treatment_principle
+  s: 病变虽可传及他脏，临证当专注本病所在之一脏，勿为兼症所惑。
+  seq: [235]
+  q: 单看一脏就好了
+  ents: []
+  conf: 0.95
+- type: diagnostic_rule
+  s: 头重骨重而脉反浮，示肾阳外散，病在肾而非表证。
+  seq: [278]
+  q: 肾脏病
+  ents: [zangfu.shen]
+  conf: 0.9
+- type: diagnostic_rule
+  s: 咳血衄血属肺（开窍于鼻）；四肢懈惰、便血属脾不统血。
+  seq: [291, 297]
+  q: 开窍在鼻
+  ents: [zangfu.fei, zangfu.pi]
+  conf: 0.95

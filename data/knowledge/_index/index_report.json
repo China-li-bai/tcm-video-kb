@@ -8,6 +8,7 @@
   "nj-006",
   "nj-007",
   "nj-008",
+  "nj-010",
   "shl-001",
   "shl-002",
   "shl-003",
@@ -94,7 +95,7 @@
   "zj-089",
   "zj-090"
  ],
- "n_entities": 1113,
- "n_knowledge_points": 1013,
- "n_chapters": 419
+ "n_entities": 1117,
+ "n_knowledge_points": 1018,
+ "n_chapters": 422
 }
