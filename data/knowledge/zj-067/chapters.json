@@ -1,0 +1,62 @@
+[
+ {
+  "chapter_id": "zj-067.c01",
+  "video_id": "zj-067",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "胸痛循经取穴",
+  "summary": "胸闷痛按经选穴：肺募中府、肾经然谷/涌泉、胃经厉兑等；心包区取关冲。强调针药并用可速效。",
+  "start_s": 0.13,
+  "end_s": 359.945,
+  "seg_from": 0,
+  "seg_to": 68,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.te1",
+   "acupoint.st45",
+   "acupoint.lu1"
+  ],
+  "citation": {
+   "youtube_id": "C3MescsjBYQ",
+   "url": "https://www.youtube.com/watch?v=C3MescsjBYQ&t=0s",
+   "series": "zj",
+   "episode": 67,
+   "title": "Ni Hai-hsia: \"Humanity Series\" - Acupuncture, Episode 67 of 90",
+   "start_s": 0.13,
+   "end_s": 359.94
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-067.c02",
+  "video_id": "zj-067",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "心绝少府关元急救",
+  "summary": "心脉将绝、胸口尚温时可急刺少府（心本穴）与关元，脉可复。心与小肠表里，上焦指麻可联小肠。",
+  "start_s": 361.21,
+  "end_s": 1801.398,
+  "seg_from": 69,
+  "seg_to": 334,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.ht8",
+   "acupoint.cv4",
+   "zangfu.xiao_chang"
+  ],
+  "citation": {
+   "youtube_id": "C3MescsjBYQ",
+   "url": "https://www.youtube.com/watch?v=C3MescsjBYQ&t=361s",
+   "series": "zj",
+   "episode": 67,
+   "title": "Ni Hai-hsia: \"Humanity Series\" - Acupuncture, Episode 67 of 90",
+   "start_s": 361.21,
+   "end_s": 1801.4
+  },
+  "review_status": "llm_read"
+ }
+]

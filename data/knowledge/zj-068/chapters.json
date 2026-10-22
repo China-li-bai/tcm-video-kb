@@ -1,0 +1,62 @@
+[
+ {
+  "chapter_id": "zj-068.c01",
+  "video_id": "zj-068",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "辨证勿泥病名",
+  "summary": "痤疮责肺主皮毛可取大肠经；强调忘病名、按经辨证，望闻问切优于唯脉。胆石/黄疸按时辰与经穴思路。",
+  "start_s": 0.13,
+  "end_s": 513.635,
+  "seg_from": 0,
+  "seg_to": 89,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "meridian.li",
+   "zangfu.dan"
+  ],
+  "citation": {
+   "youtube_id": "sEXZYco5tf4",
+   "url": "https://www.youtube.com/watch?v=sEXZYco5tf4&t=0s",
+   "series": "zj",
+   "episode": 68,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 68",
+   "start_s": 0.13,
+   "end_s": 513.63
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-068.c02",
+  "video_id": "zj-068",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "黄疸至阳与俞募",
+  "summary": "治黄名穴为督脉至阳（ASR滋养）；肝胆病配中脘、章门、期门及背俞。肾病配肾俞、京门；疗程可俞募与原络交替。",
+  "start_s": 514.07,
+  "end_s": 1767.071,
+  "seg_from": 90,
+  "seg_to": 328,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.gv9",
+   "acupoint.cv12",
+   "acupoint.lr13",
+   "acupoint.gb25"
+  ],
+  "citation": {
+   "youtube_id": "sEXZYco5tf4",
+   "url": "https://www.youtube.com/watch?v=sEXZYco5tf4&t=514s",
+   "series": "zj",
+   "episode": 68,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 68",
+   "start_s": 514.07,
+   "end_s": 1767.07
+  },
+  "review_status": "llm_read"
+ }
+]

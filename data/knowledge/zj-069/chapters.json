@@ -1,0 +1,61 @@
+[
+ {
+  "chapter_id": "zj-069.c01",
+  "video_id": "zj-069",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "出血忌本穴与中脘",
+  "summary": "胃/脾出血初起忌取本穴（如足三里），以免阳行加速增出血；可取商丘、内庭等。中脘针或灸常迅使胃动、食下。寒热决定针灸选择。",
+  "start_s": 0.09,
+  "end_s": 660.85,
+  "seg_from": 0,
+  "seg_to": 130,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.st36",
+   "acupoint.cv12",
+   "acupoint.sp5"
+  ],
+  "citation": {
+   "youtube_id": "IcXjdiiNQw0",
+   "url": "https://www.youtube.com/watch?v=IcXjdiiNQw0&t=0s",
+   "series": "zj",
+   "episode": 69,
+   "title": "Ni Hai-hsia \"Humanity Series\" \"Acupuncture\" Complete 90-Episode Collection: Acupuncture 69",
+   "start_s": 0.09,
+   "end_s": 660.85
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-069.c02",
+  "video_id": "zj-069",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "天枢关元调肠",
+  "summary": "关元灸/针可助小肠火；天枢调大肠蠕动——便秘可灸/泻促行，过速则缓之。天枢配关元可助蒸化肠中水湿。",
+  "start_s": 661.11,
+  "end_s": 1249.762,
+  "seg_from": 131,
+  "seg_to": 223,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.st25",
+   "acupoint.cv4"
+  ],
+  "citation": {
+   "youtube_id": "IcXjdiiNQw0",
+   "url": "https://www.youtube.com/watch?v=IcXjdiiNQw0&t=661s",
+   "series": "zj",
+   "episode": 69,
+   "title": "Ni Hai-hsia \"Humanity Series\" \"Acupuncture\" Complete 90-Episode Collection: Acupuncture 69",
+   "start_s": 661.11,
+   "end_s": 1249.76
+  },
+  "review_status": "llm_read"
+ }
+]

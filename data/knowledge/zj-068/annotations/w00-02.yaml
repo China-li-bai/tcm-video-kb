@@ -1,0 +1,86 @@
+video_id: zj-068
+window: w00-02
+seg_from: 0
+seg_to: 328
+annotator: llm_read
+chapters:
+- key: c01
+  title: 辨证勿泥病名
+  start_seq: 0
+  summary: 痤疮责肺主皮毛可取大肠经；强调忘病名、按经辨证，望闻问切优于唯脉。胆石/黄疸按时辰与经穴思路。
+  clauses: []
+  topics:
+  - meridian.li
+  - zangfu.dan
+- key: c02
+  title: 黄疸至阳与俞募
+  start_seq: 90
+  summary: 治黄名穴为督脉至阳（ASR滋养）；肝胆病配中脘、章门、期门及背俞。肾病配肾俞、京门；疗程可俞募与原络交替。
+  clauses: []
+  topics:
+  - acupoint.gv9
+  - acupoint.cv12
+  - acupoint.lr13
+  - acupoint.gb25
+entities:
+- id: acupoint.gv9
+  seq: 93
+  surface: 滋养
+  corrected: 至阳
+- id: acupoint.cv12
+  seq: 130
+  surface: 中晚
+  corrected: 中脘
+- id: acupoint.lr13
+  seq: 130
+  surface: 张门
+  corrected: 章门
+- id: acupoint.lr14
+  seq: 131
+  surface: 奇门
+  corrected: 期门
+- id: acupoint.gb25
+  seq: 137
+  surface: 京门
+  corrected: 京门
+- id: acupoint.st36
+  seq: 139
+  surface: 足三里
+  corrected: 足三里
+- id: meridian.li
+  seq: 15
+  surface: 大肠经
+  corrected: 手阳明大肠经
+kps:
+- type: clinical_tip
+  s: 肺主皮毛，面部痤疮可取大肠经穴（表里）。
+  seq:
+  - 15
+  - 15
+  q: 我们在大场经下大肠经方面下针
+  ents:
+  - meridian.li
+  conf: 0.85
+  asr: 大场=大肠
+- type: acupoint_usage
+  s: 黄疸/胆汁逆流名穴取督脉至阳（约第七椎下）。
+  seq:
+  - 90
+  - 93
+  q: 治黄的穴道就是这个滋养穴
+  ents:
+  - acupoint.gv9
+  conf: 0.9
+  asr: 滋养=至阳；自阳=至阳
+- type: clinical_tip
+  s: 肝胆病可配腑会中脘、脏会章门、肝募期门及背俞；肾病配肾俞与京门。
+  seq:
+  - 130
+  - 137
+  q: 脏会张门
+  ents:
+  - acupoint.cv12
+  - acupoint.lr13
+  - acupoint.gb25
+  conf: 0.9
+  asr: 张门=章门；奇门=期门

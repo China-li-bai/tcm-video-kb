@@ -1,0 +1,80 @@
+video_id: zj-069
+window: w00-01
+seg_from: 0
+seg_to: 223
+annotator: llm_read
+chapters:
+- key: c01
+  title: 出血忌本穴与中脘
+  start_seq: 0
+  summary: 胃/脾出血初起忌取本穴（如足三里），以免阳行加速增出血；可取商丘、内庭等。中脘针或灸常迅使胃动、食下。寒热决定针灸选择。
+  clauses: []
+  topics:
+  - acupoint.st36
+  - acupoint.cv12
+  - acupoint.sp5
+- key: c02
+  title: 天枢关元调肠
+  start_seq: 131
+  summary: 关元灸/针可助小肠火；天枢调大肠蠕动——便秘可灸/泻促行，过速则缓之。天枢配关元可助蒸化肠中水湿。
+  clauses: []
+  topics:
+  - acupoint.st25
+  - acupoint.cv4
+entities:
+- id: acupoint.st36
+  seq: 26
+  surface: 足三里
+  corrected: 足三里
+- id: acupoint.cv12
+  seq: 77
+  surface: 中晚
+  corrected: 中脘
+- id: acupoint.sp5
+  seq: 34
+  surface: 商丘
+  corrected: 商丘
+- id: acupoint.st44
+  seq: 34
+  surface: 内庭
+  corrected: 内庭
+- id: acupoint.st25
+  seq: 132
+  surface: 天枢
+  corrected: 天枢
+- id: acupoint.cv4
+  seq: 131
+  surface: 关元
+  corrected: 关元
+kps:
+- type: contraindication
+  s: 胃出血初起忌取足三里等本穴，恐蠕动加快增出血；可改商丘、内庭等。
+  seq:
+  - 26
+  - 34
+  q: 足三里是本穴
+  ents:
+  - acupoint.st36
+  - acupoint.sp5
+  - acupoint.st44
+  conf: 0.95
+- type: acupoint_usage
+  s: 中脘下针或灸，常迅觉胃动、食物下行。
+  seq:
+  - 77
+  - 79
+  q: 有东西往下跑
+  ents:
+  - acupoint.cv12
+  conf: 0.9
+  asr: 中晚=中脘
+- type: acupoint_usage
+  s: 天枢调大肠蠕动（便秘促之、过速缓之）；配关元助小肠火蒸化水湿。
+  seq:
+  - 131
+  - 137
+  q: 大肠的天枢穴
+  ents:
+  - acupoint.st25
+  - acupoint.cv4
+  conf: 0.95
