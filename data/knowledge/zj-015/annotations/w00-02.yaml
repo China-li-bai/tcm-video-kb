@@ -1,0 +1,172 @@
+video_id: zj-015
+window: w00-02
+seg_from: 0
+seg_to: 345
+annotator: llm_read
+chapters:
+- key: c01
+  title: 中府云门与天府侠白
+  start_seq: 0
+  summary: 中府、云门常同用；书称中府为肺募，口述以云门为真募。天府在臂内侧两肌间（“小老鼠”处），可治鼻血等；侠白在天府下一寸。迎随：顺气为补、逆气为泻。
+  clauses: []
+  topics:
+  - acupoint.lu1
+  - acupoint.lu2
+  - acupoint.lu3
+  - method.bu_xie
+- key: c02
+  title: 孔最、列缺与太渊补泻
+  start_seq: 169
+  summary: 孔最取压痛点（约肘腕间）。列缺为手太阴络穴，通任脉，治任脉病及咽喉至前阴一路。针向：顺经（向指）为补、逆经为泻。肺虚久咳可取太渊。
+  clauses: []
+  topics:
+  - acupoint.lu6
+  - acupoint.lu7
+  - acupoint.lu9
+  - meridian.cv
+entities:
+- id: acupoint.lu1
+  seq: 4
+  surface: 中府穴
+  corrected: 中府
+- id: acupoint.lu2
+  seq: 4
+  surface: 虞门
+  corrected: 云门
+- id: concept.mu_xue
+  seq: 4
+  surface: 墓穴
+  corrected: 募穴
+- id: acupoint.lu3
+  seq: 14
+  surface: 天府穴
+  corrected: 天府
+- id: acupoint.lu4
+  seq: 56
+  surface: 瑕白
+  corrected: 侠白
+- id: method.bu_xie
+  seq: 1
+  surface: 补泻
+  corrected: 补泻
+- id: acupoint.lu6
+  seq: 169
+  surface: 孔最
+  corrected: 孔最
+- id: acupoint.lu7
+  seq: 72
+  surface: 列缺
+  corrected: 列缺
+- id: acupoint.lu9
+  seq: 205
+  surface: 太渊穴
+  corrected: 太渊
+- id: acupoint.lu5
+  seq: 78
+  surface: 诉讼
+  corrected: 尺泽
+- id: concept.luo_xue
+  seq: 253
+  surface: 落穴
+  corrected: 络穴
+- id: meridian.cv
+  seq: 234
+  surface: 任脉
+  corrected: 任脉
+- id: meridian.lu
+  seq: 78
+  surface: 肺经
+  corrected: 手太阴肺经
+- id: new.concept.五腧穴
+  seq: 71
+  surface: 五腧穴
+  corrected: 五腧穴
+- id: disease.ke_sou
+  seq: 337
+  surface: 久咳
+  corrected: 久咳
+kps:
+- type: concept_definition
+  s: 顺经（顺气）扎针为补，逆经（逆气）为泻；此为迎随补泻之一。
+  seq:
+  - 1
+  - 2
+  q: 顺气扎针就叫做补好
+  ents:
+  - method.bu_xie
+  conf: 0.95
+  asr: 气杂=气扎
+- type: acupoint_usage
+  s: 中府、云门接近常同用；书称中府为肺募，口述以云门为真肺募。
+  seq:
+  - 4
+  - 11
+  q: 实际上虞门才是真的肺的墓穴
+  ents:
+  - acupoint.lu1
+  - acupoint.lu2
+  - concept.mu_xue
+  conf: 0.9
+  asr: 虞门=云门；木穴/墓穴=募穴
+- type: acupoint_usage
+  s: 天府在臂内侧两肌之间（“拉小老鼠”处），可治外伤鼻血等；侠白在天府下一寸。
+  seq:
+  - 23
+  - 68
+  q: 一拉个小老鼠跑出来，那就天府穴
+  ents:
+  - acupoint.lu3
+  - acupoint.lu4
+  conf: 0.9
+  asr: 天补=天府；瑕白=侠白
+- type: concept_definition
+  s: 五腧穴分布为手不过肘、足不过膝。
+  seq:
+  - 71
+  - 71
+  q: 手，不过肘足不过膝就是我们的五腧穴
+  ents:
+  - new.concept.五腧穴
+  conf: 0.9
+- type: clinical_tip
+  s: 病人平卧时直刺可不论补泻；针尖逆经为泻、顺经为补。
+  seq:
+  - 92
+  - 93
+  q: 逆向下呢，就是泻，如果是同向下呢，就是补
+  ents:
+  - method.bu_xie
+  conf: 0.95
+- type: acupoint_usage
+  s: 列缺为手太阴络穴，通任脉；任脉病及自咽喉至前阴诸症可取列缺。
+  seq:
+  - 234
+  - 254
+  q: 任脉的病我们下可以下列缺
+  ents:
+  - acupoint.lu7
+  - meridian.cv
+  - concept.luo_xue
+  conf: 0.95
+  asr: 落穴=络穴；费心=肺经
+- type: acupoint_usage
+  s: 列缺补泻：针尖顺气向指端为补，逆经为泻。
+  seq:
+  - 244
+  - 245
+  q: 往手指头一边走的话，就是补了
+  ents:
+  - acupoint.lu7
+  - method.bu_xie
+  conf: 0.9
+- type: acupoint_usage
+  s: 肺虚久咳可取太渊；穴在寸口动脉处，针时须以指甲拨开动脉。
+  seq:
+  - 205
+  - 337
+  q: 久咳尾虚
+  ents:
+  - acupoint.lu9
+  - disease.ke_sou
+  conf: 0.85
+  asr: 元泻/太原=太渊；尾虚=为虚

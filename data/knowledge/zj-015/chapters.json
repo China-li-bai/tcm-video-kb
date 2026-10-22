@@ -1,0 +1,64 @@
+[
+ {
+  "chapter_id": "zj-015.c01",
+  "video_id": "zj-015",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "中府云门与天府侠白",
+  "summary": "中府、云门常同用；书称中府为肺募，口述以云门为真募。天府在臂内侧两肌间（“小老鼠”处），可治鼻血等；侠白在天府下一寸。迎随：顺气为补、逆气为泻。",
+  "start_s": 0.31,
+  "end_s": 871.845,
+  "seg_from": 0,
+  "seg_to": 168,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.lu1",
+   "acupoint.lu2",
+   "acupoint.lu3",
+   "method.bu_xie"
+  ],
+  "citation": {
+   "youtube_id": "uVk3uAz6w0c",
+   "url": "https://www.youtube.com/watch?v=uVk3uAz6w0c&t=0s",
+   "series": "zj",
+   "episode": 15,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 15",
+   "start_s": 0.31,
+   "end_s": 871.85
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-015.c02",
+  "video_id": "zj-015",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "孔最、列缺与太渊补泻",
+  "summary": "孔最取压痛点（约肘腕间）。列缺为手太阴络穴，通任脉，治任脉病及咽喉至前阴一路。针向：顺经（向指）为补、逆经为泻。肺虚久咳可取太渊。",
+  "start_s": 872.02,
+  "end_s": 1795.289,
+  "seg_from": 169,
+  "seg_to": 345,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.lu6",
+   "acupoint.lu7",
+   "acupoint.lu9",
+   "meridian.cv"
+  ],
+  "citation": {
+   "youtube_id": "uVk3uAz6w0c",
+   "url": "https://www.youtube.com/watch?v=uVk3uAz6w0c&t=872s",
+   "series": "zj",
+   "episode": 15,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 15",
+   "start_s": 872.02,
+   "end_s": 1795.29
+  },
+  "review_status": "llm_read"
+ }
+]
