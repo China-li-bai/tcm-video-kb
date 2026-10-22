@@ -1,0 +1,147 @@
+video_id: shl-008
+window: w00-03
+seg_from: 0
+seg_to: 511
+annotator: llm_read
+chapters:
+- key: c01
+  title: 厥阴提纲：消渴气上撞心与蛔厥
+  start_seq: 0
+  summary: 少阴未治则阴寒入厥阴（肝与心包）。提纲：消渴、气上撞心、心中疼热、饥不欲食、食则吐蛔、下之利不止。寒热错杂；蛔厥与脏厥鉴别。欲解时从丑至卯。
+  clauses:
+  - 326
+  - 327
+  - 328
+  - 329
+  topics:
+  - six_channel.jueyin
+  - formula.wu_mei_wan
+- key: c02
+  title: 厥热胜复与禁汗下
+  start_seq: 132
+  summary: 先厥后发热而利者必自止；发热为阳回吉象。厥阴下利而反发汗则口伤烂赤——厥阴主利尿退热，禁汗禁下。脉微欲绝而躁无暂安为脏厥；常自吐蛔为蛔厥。
+  clauses:
+  - 331
+  - 335
+  - 338
+  - 339
+  topics:
+  - six_channel.jueyin
+- key: c03
+  title: 乌梅丸：蛔厥与久利
+  start_seq: 373
+  summary: 乌梅丸酸苦辛并用安蛔止久利，亦治神经质逢考下利、寒热错杂心包热肠寒。当归至厥阴篇始见，非必要不用。
+  clauses:
+  - 338
+  topics:
+  - formula.wu_mei_wan
+  - herb.wu_mei
+  - herb.dang_gui
+entities:
+- id: six_channel.jueyin
+  seq: 0
+  surface: 厥阴
+  corrected: 厥阴
+- id: clause.shl.326
+  seq: 32
+  surface: matcher
+  corrected: 伤寒论第326条
+  note: 提纲
+- id: clause.shl.338
+  seq: 369
+  surface: 油厥
+  corrected: 伤寒论第338条
+  note: 蛔厥
+- id: formula.wu_mei_wan
+  seq: 373
+  surface: 乌梅丸
+  corrected: 乌梅丸
+- id: herb.wu_mei
+  seq: 428
+  surface: 乌梅
+  corrected: 乌梅
+- id: herb.dang_gui
+  seq: 457
+  surface: 当归
+  corrected: 当归
+- id: clause.shl.330
+  seq: 119
+  surface: 三百四十四条
+  corrected: 伤寒论第330条
+  note: 诸厥无阳者不可下；讲义344
+- id: clause.shl.331
+  seq: 132
+  surface: 伤寒呢先厥后发热
+  corrected: 伤寒论第331条
+kps:
+- type: concept_definition
+  s: 厥阴为肝与心包；少阴寒湿未治则传入。寒热错杂为本篇核心。
+  seq:
+  - 3
+  - 9
+  q: 少阴在没好的时候，这个寒湿阴寒症会进入厥阴进入肝脏里面去
+  ents:
+  - six_channel.jueyin
+  conf: 0.95
+- type: clause_interpretation
+  s: 第326条提纲：消渴、气上撞心、心中疼热、饥不欲食、食则吐蛔、下之利不止。
+  seq:
+  - 34
+  - 34
+  q: 就是口渴很渴，喝水喝，不能止渴，好气上壮心，心中疼热，饥饿不欲食食则吐油，下肢夜不止
+  ents:
+  - clause.shl.326
+  - six_channel.jueyin
+  conf: 0.9
+  asr: 壮心=撞心；吐油=吐蛔；下肢夜=下之利
+- type: diagnostic_rule
+  s: 先厥后发热而利者必自止——发热示阳回；厥阴见热多为吉象。
+  seq:
+  - 249
+  - 251
+  q: 伤寒先缺，后后发热，先冷啊，后面发热下利必制止
+  ents:
+  - clause.shl.331
+  - six_channel.jueyin
+  conf: 0.85
+  asr: 先缺=先厥
+- type: contraindication
+  s: 厥阴禁发汗：下利反汗则口伤烂赤。退热靠利尿，非汗非下。
+  seq:
+  - 326
+  - 334
+  q: 厥阴下肢和反发汗者比口腔好烂刺
+  ents:
+  - six_channel.jueyin
+  conf: 0.9
+  asr: 下肢=下利；比口腔烂=口伤烂赤
+- type: diagnostic_rule
+  s: 脏厥：脉微而厥、躁无暂安；蛔厥：常自吐蛔，静而复时烦。
+  seq:
+  - 365
+  - 369
+  q: 跟油厥不一样，好里面肚子有虫油厥呢，其人常治吐油
+  ents:
+  - clause.shl.338
+  conf: 0.85
+  asr: 油厥=蛔厥；吐油=吐蛔
+- type: formula_indication
+  s: 乌梅丸：安蛔、止久利；寒热错杂（肠寒心包热）、逢考下利等神经质泄泻亦常用。
+  seq:
+  - 373
+  - 395
+  q: 乌梅丸了又足，除了足去虫以外，最主要还有酒粒
+  ents:
+  - formula.wu_mei_wan
+  conf: 0.9
+  asr: 酒粒=久利
+- type: herb_property
+  s: 当归至厥阴篇始重用；仲景非必要不用当归，健康人不必补血。
+  seq:
+  - 457
+  - 459
+  q: 都看不到到厥阴病才看到的当归
+  ents:
+  - herb.dang_gui
+  - six_channel.jueyin
+  conf: 0.9

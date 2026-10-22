@@ -1,0 +1,152 @@
+video_id: shl-008
+window: w08-10
+seg_from: 998
+seg_to: 1374
+annotator: llm_read
+chapters:
+- key: c07
+  title: 下利诸法：通脉四逆、白头翁、承气与栀子豉
+  start_seq: 1068
+  summary: 下利清谷里寒外热汗出厥→通脉四逆。热利下重→白头翁（可与桃花汤合用治脓血）。下利谵语者大承气（热结旁流）。虚热懊憹→栀子豉。下利腹胀满身疼痛：先温里后攻表。
+  clauses:
+  - 370
+  - 371
+  - 373
+  - 374
+  - 372
+  topics:
+  - formula.tong_mai_si_ni_tang
+  - formula.bai_tou_weng_tang
+  - formula.da_cheng_qi_tang
+  - formula.zhi_zi_shi_tang
+- key: c08
+  title: 吴茱萸汤与病退路径
+  start_seq: 1163
+  summary: 干呕头痛（颠顶）吐涎沫→吴茱萸汤。呕而发热示病退至少阳，小柴胡。厥阴→少阴→太阴→少阳为正向退路。
+  clauses:
+  - 378
+  - 379
+  topics:
+  - formula.wu_zhu_yu_tang
+  - formula.xiao_chai_hu_tang
+- key: c09
+  title: 伤寒差后：脾约与补中
+  start_seq: 1207
+  summary: 差后喜唾胸上有寒宜理中丸；腹满时痛为太阴，大实痛为阳明可下。讲者并述分消汤、补中益气类善后及厥阴禁妄下。
+  clauses:
+  - 396
+  - 397
+  - 398
+  topics:
+  - formula.li_zhong_wan
+  - six_channel.jueyin
+entities:
+- id: formula.tong_mai_si_ni_tang
+  seq: 1068
+  surface: 通脉四逆汤
+  corrected: 通脉四逆汤
+- id: formula.bai_tou_weng_tang
+  seq: 1098
+  surface: 白头，红汤
+  corrected: 白头翁汤
+- id: formula.tao_hua_tang
+  seq: 1091
+  surface: 桃花汤
+  corrected: 桃花汤
+- id: formula.da_cheng_qi_tang
+  seq: 1120
+  surface: 大神器
+  corrected: 大承气汤
+- id: formula.zhi_zi_shi_tang
+  seq: 1130
+  surface: 栀子豉汤
+  corrected: 栀子豉汤
+- id: clause.shl.372
+  seq: 1100
+  surface: 三百八十八条
+  corrected: 伤寒论第372条
+  note: 先温里后攻表；讲义388
+- id: formula.wu_zhu_yu_tang
+  seq: 1163
+  surface: 吴茱妤汤
+  corrected: 吴茱萸汤
+- id: formula.xiao_chai_hu_tang
+  seq: 1174
+  surface: matcher
+  corrected: 小柴胡汤
+- id: clause.shl.378
+  seq: 1163
+  surface: 干呕恶心、土岩木头痛者吴茱妤汤
+  corrected: 伤寒论第378条
+- id: formula.li_zhong_wan
+  seq: 1210
+  surface: matcher
+  corrected: 理中丸
+- id: six_channel.jueyin
+  seq: 1253
+  surface: 厥阴病
+  corrected: 厥阴
+kps:
+- type: formula_indication
+  s: 下利清谷、里寒外热、汗出而厥→通脉四逆汤。
+  seq:
+  - 1068
+  - 1070
+  q: 好米饭都在里面里寒外热好汗珠而觉得通脉四逆汤
+  ents:
+  - formula.tong_mai_si_ni_tang
+  conf: 0.85
+  asr: 米饭=利清谷
+- type: formula_indication
+  s: 热利下重→白头翁汤；脓血久利可合桃花汤。渴欲饮水者热利易治。
+  seq:
+  - 1091
+  - 1115
+  q: 就是白头，红汤好疟疾，祸乱都会有这种情形吗
+  ents:
+  - formula.bai_tou_weng_tang
+  - formula.tao_hua_tang
+  conf: 0.85
+  asr: 白头红=白头翁
+- type: treatment_principle
+  s: 下利腹胀满身疼痛：先温里，后攻表；有里寒时先四逆再桂枝，勿先麻黄发表。
+  seq:
+  - 1100
+  - 1110
+  q: 先温理再宫表，这个就是原则哦
+  ents:
+  - clause.shl.372
+  - formula.si_ni_tang
+  - formula.gui_zhi_tang
+  conf: 0.9
+  asr: 温理=温里；宫表=攻表
+- type: diagnostic_rule
+  s: 下利而谵语者仍属大承气（热结旁流），非虚利。
+  seq:
+  - 1120
+  - 1123
+  q: 有下令战誉者造师，你看还是大神器
+  ents:
+  - formula.da_cheng_qi_tang
+  conf: 0.85
+  asr: 战誉=谵语；大神器=大承气
+- type: formula_indication
+  s: 干呕、吐涎沫、头痛（颠顶/印堂）→吴茱萸汤；厥阴见呕而发热为病退向少阳。
+  seq:
+  - 1163
+  - 1180
+  q: 干呕恶心、土岩木头痛者吴茱妤汤组织
+  ents:
+  - formula.wu_zhu_yu_tang
+  - clause.shl.378
+  conf: 0.9
+  asr: 土岩木=吐涎沫
+- type: contraindication
+  s: 厥阴寒湿禁妄攻下；下之则死。善后可用理中、补中类，分消治脾积腹水。
+  seq:
+  - 1253
+  - 1286
+  q: 他厥阴病的候不能攻下理，寒湿的时候，你一攻下就死掉
+  ents:
+  - six_channel.jueyin
+  conf: 0.9

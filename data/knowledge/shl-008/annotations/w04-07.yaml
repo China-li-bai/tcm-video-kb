@@ -1,0 +1,147 @@
+video_id: shl-008
+window: w04-07
+seg_from: 512
+seg_to: 997
+annotator: llm_read
+chapters:
+- key: c04
+  title: 当归四逆汤：手足厥寒脉细欲绝
+  start_seq: 611
+  summary: 手足厥寒脉细欲绝，当归四逆汤：桂枝汤去生姜加当归细辛通草。治末梢循环差、糖尿病截肢倾向、冻疮等。内有久寒者加吴茱萸生姜。
+  clauses:
+  - 351
+  - 352
+  topics:
+  - formula.dang_gui_si_ni_tang
+  - herb.dang_gui
+  - herb.xi_xin
+- key: c05
+  title: 白虎、四逆与麻黄升麻汤
+  start_seq: 571
+  summary: 厥而有热、舌干脉大→白虎，勿误作寒投四逆越冷。大汗出热不去无他症→白虎；阳亡外脱→四逆。麻黄升麻汤寒热并用，治肝系吐脓血（争议条文）。干姜黄连黄芩人参汤治寒格吐利。
+  clauses:
+  - 350
+  - 357
+  - 359
+  topics:
+  - formula.bai_hu_tang
+  - formula.si_ni_tang
+  - formula.ma_huang_sheng_ma_tang
+  - formula.gan_jiang_huang_qin_huang_lian_ren_shen_tang
+- key: c06
+  title: 厥热多少与下利预后
+  start_seq: 904
+  summary: 热多厥少病当愈，厥多热少病进。厥阴篇多言下利（肝上肺下大肠）。下利清谷手足厥脉微→通脉四逆/干姜附子；热利下重→白头翁等。
+  clauses:
+  - 341
+  - 342
+  - 366
+  topics:
+  - six_channel.jueyin
+  - formula.tong_mai_si_ni_tang
+entities:
+- id: formula.dang_gui_si_ni_tang
+  seq: 611
+  surface: 当归四逆汤
+  corrected: 当归四逆汤
+- id: herb.dang_gui
+  seq: 618
+  surface: 当归
+  corrected: 当归
+- id: herb.xi_xin
+  seq: 618
+  surface: 细心
+  corrected: 细辛
+- id: herb.tong_cao
+  seq: 618
+  surface: 木通
+  corrected: 通草
+- id: formula.wu_zhu_yu_tang
+  seq: 650
+  surface: 无与生姜汤
+  corrected: 当归四逆加吴茱萸生姜汤
+- id: formula.bai_hu_tang
+  seq: 571
+  surface: 白虎汤
+  corrected: 白虎汤
+- id: formula.si_ni_tang
+  seq: 709
+  surface: 四逆汤
+  corrected: 四逆汤
+- id: formula.ma_huang_sheng_ma_tang
+  seq: 759
+  surface: 麻黄汤麻汤
+  corrected: 麻黄升麻汤
+  uncertain: true
+- id: formula.gan_jiang_huang_qin_huang_lian_ren_shen_tang
+  seq: 818
+  surface: 干姜、黄连、黄芪人参汤
+  corrected: 干姜黄连黄芩人参汤
+- id: clause.shl.351
+  seq: 611
+  surface: 当归四逆汤
+  corrected: 伤寒论第351条
+- id: clause.shl.359
+  seq: 809
+  surface: 干姜黄连黄金人参汤
+  corrected: 伤寒论第359条
+kps:
+- type: formula_composition
+  s: 当归四逆汤：桂枝汤去生姜，加当归、细辛、通草（木通）；温经通脉养血。
+  seq:
+  - 616
+  - 620
+  q: 桂枝汤，把生姜拿掉，加上当归细心跟木通，通草就是木通
+  ents:
+  - formula.dang_gui_si_ni_tang
+  - herb.dang_gui
+  - herb.xi_xin
+  conf: 0.95
+  asr: 细心=细辛
+- type: clinical_tip
+  s: 西医言需截肢、末梢冰冷、冻疮等，可思当归四逆汤。内有久寒呕者加吴茱萸生姜。
+  seq:
+  - 611
+  - 674
+  q: 糖尿病的病人呢，到后来要截肢，也是当归四逆汤症啊
+  ents:
+  - formula.dang_gui_si_ni_tang
+  conf: 0.9
+- type: diagnostic_rule
+  s: 厥而见热象（舌干裂、脉大、手热、小便黄）→白虎，勿误投四逆越冷。
+  seq:
+  - 571
+  - 587
+  q: 白虎汤出现的时候，你绝对不会miss掉
+  ents:
+  - formula.bai_hu_tang
+  conf: 0.85
+- type: treatment_principle
+  s: 大汗出热不去无他症→白虎；阳亡外脱须急用四逆汤挽阳。
+  seq:
+  - 701
+  - 710
+  q: 要赶快下手四逆汤
+  ents:
+  - formula.bai_hu_tang
+  - formula.si_ni_tang
+  conf: 0.85
+- type: formula_composition
+  s: 干姜黄连黄芩人参汤：干姜与芩连寒热并投，人参补中；治寒格、食入口即吐。
+  seq:
+  - 809
+  - 878
+  q: 干姜、黄连、黄芪人参汤，所以看好姜是热药皇情，黄帝是寒凉的药
+  ents:
+  - formula.gan_jiang_huang_qin_huang_lian_ren_shen_tang
+  conf: 0.9
+  asr: 黄芪/黄帝=黄芩
+- type: diagnostic_rule
+  s: 厥热胜复：热多厥少当愈，厥多热少病进——可验温阳药是否中的。
+  seq:
+  - 904
+  - 906
+  q: 如果冷的时间比热的时间多，这个病成是死啊，热的时间比冷的时间多，是不是生
+  ents:
+  - six_channel.jueyin
+  conf: 0.9
