@@ -1,0 +1,186 @@
+video_id: zj-022
+window: w00-02
+seg_from: 0
+seg_to: 304
+annotator: llm_read
+chapters:
+- key: c01
+  title: 天枢寒热与腹募四针
+  start_seq: 0
+  summary: 天枢寒证宜隔姜灸、热证宜针不宜灸。脐旁开二寸天枢为大肠募；关元小肠募、中脘胃募、中极膀胱募。水道与水分合用治水肿腹水；归来、气冲近胞宫，常灸可助孕；腹部深刺宜慎。
+  clauses: []
+  topics:
+  - acupoint.st25
+  - acupoint.cv4
+  - acupoint.cv12
+  - acupoint.st28
+- key: c02
+  title: 伏兔梁丘与足三里
+  start_seq: 111
+  summary: 伏兔在膝上六寸，取象跪时股肌如伏兔。梁丘为郄穴可消炎。足三里为胃经合穴、土经土穴，大穴；男人三十后宜常灸；治呕恶、足软不耐远行；腹部灸后燥热可灸足三里引火下行。
+  clauses: []
+  topics:
+  - acupoint.st32
+  - acupoint.st34
+  - acupoint.st36
+entities:
+- id: acupoint.st25
+  seq: 30
+  surface: 天枢穴
+  corrected: 天枢
+- id: acupoint.cv12
+  seq: 40
+  surface: 中皖
+  corrected: 中脘
+- id: acupoint.cv4
+  seq: 41
+  surface: 关元
+  corrected: 关元
+- id: concept.mu_xue
+  seq: 44
+  surface: 墓
+  corrected: 募穴
+- id: zangfu.da_chang
+  seq: 44
+  surface: 大肠
+  corrected: 大肠
+- id: zangfu.xiao_chang
+  seq: 44
+  surface: 小肠
+  corrected: 小肠
+- id: zangfu.wei
+  seq: 44
+  surface: 胃
+  corrected: 胃
+- id: acupoint.cv3
+  seq: 61
+  surface: 中极
+  corrected: 中极
+- id: acupoint.st28
+  seq: 73
+  surface: 水稻
+  corrected: 水道
+- id: acupoint.cv9
+  seq: 76
+  surface: 水分
+  corrected: 水分
+- id: acupoint.st29
+  seq: 78
+  surface: 归来
+  corrected: 归来
+- id: acupoint.st30
+  seq: 91
+  surface: 气冲
+  corrected: 气冲
+- id: acupoint.st32
+  seq: 111
+  surface: 伏兔穴
+  corrected: 伏兔
+- id: acupoint.st31
+  seq: 118
+  surface: 悲观穴
+  corrected: 髀关
+- id: acupoint.st34
+  seq: 142
+  surface: 梁丘
+  corrected: 梁丘
+- id: acupoint.st36
+  seq: 245
+  surface: 足三里
+  corrected: 足三里
+- id: meridian.st
+  seq: 268
+  surface: 胃经
+  corrected: 足阳明胃经
+- id: method.zhen_jiu
+  seq: 89
+  surface: 腹针
+  corrected: 针刺
+kps:
+- type: treatment_principle
+  s: 天枢：寒证隔姜灸优于针；热实宜针不宜灸（灸如火上加油更燥痛）。
+  seq:
+  - 24
+  - 30
+  q: 如果是热时，你的针下针会比灸好
+  ents:
+  - acupoint.st25
+  conf: 0.95
+  asr: 天书=天枢；揪=灸
+- type: concept_definition
+  s: 天枢为大肠募，关元为小肠募，中脘为胃募（负四针配穴）；蛋白尿等可针天枢。
+  seq:
+  - 44
+  - 44
+  q: 天书是大肠的墓，关元是小肠的墓
+  ents:
+  - acupoint.st25
+  - acupoint.cv4
+  - acupoint.cv12
+  - concept.mu_xue
+  conf: 0.95
+  asr: 天书=天枢；墓=募；中皖=中脘
+- type: acupoint_usage
+  s: 中极为膀胱募；水道（关元旁开）与水分常合用，治水肿、腹水。
+  seq:
+  - 76
+  - 78
+  q: 能够通理水水肿、肚子腹水
+  ents:
+  - acupoint.st28
+  - acupoint.cv9
+  - acupoint.cv3
+  conf: 0.9
+  asr: 水稻=水道
+- type: acupoint_usage
+  s: 归来名义与睾丸上缩等症相关；中极、气冲、归来、关元一带近胞宫，常灸可助孕。
+  seq:
+  - 79
+  - 92
+  q: 常常灸它的话，都容易住晕，帮她怀孕
+  ents:
+  - acupoint.st29
+  - acupoint.st30
+  - acupoint.cv3
+  - acupoint.cv4
+  conf: 0.85
+  asr: 住晕=受孕；官员=关元
+- type: clinical_tip
+  s: 腹部针宜慎，最好勿深刺。
+  seq:
+  - 89
+  - 89
+  q: 腹部的针最好竞争，最好不要蒸它
+  ents:
+  - method.zhen_jiu
+  conf: 0.8
+  asr: 竞争=禁针/慎针；蒸=深
+- type: acupoint_usage
+  s: 伏兔在膝盖直上六寸，取象跪时股肌隆起如伏兔。
+  seq:
+  - 111
+  - 115
+  q: 膝盖头直上六寸好，是不是伏兔穴
+  ents:
+  - acupoint.st32
+  conf: 0.95
+- type: acupoint_usage
+  s: 足三里为胃经合穴、土中之土，为大穴；治恶心呕吐、足软不能远行；针灸皆可，保养可灸至百壮。
+  seq:
+  - 268
+  - 285
+  q: 足三里是胃经的和穴
+  ents:
+  - acupoint.st36
+  - meridian.st
+  conf: 0.95
+  asr: 和穴=合穴
+- type: clinical_tip
+  s: 男人年过三十宜常灸足三里；腹上灸后若燥热，可灸足三里引火气下行。
+  seq:
+  - 265
+  - 295
+  q: 男人那年过三十，就要开始多灸灸足三里
+  ents:
+  - acupoint.st36
+  conf: 0.9

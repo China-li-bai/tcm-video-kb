@@ -1,0 +1,63 @@
+[
+ {
+  "chapter_id": "zj-022.c01",
+  "video_id": "zj-022",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "天枢寒热与腹募四针",
+  "summary": "天枢寒证宜隔姜灸、热证宜针不宜灸。脐旁开二寸天枢为大肠募；关元小肠募、中脘胃募、中极膀胱募。水道与水分合用治水肿腹水；归来、气冲近胞宫，常灸可助孕；腹部深刺宜慎。",
+  "start_s": 0.43,
+  "end_s": 628.945,
+  "seg_from": 0,
+  "seg_to": 110,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.st25",
+   "acupoint.cv4",
+   "acupoint.cv12",
+   "acupoint.st28"
+  ],
+  "citation": {
+   "youtube_id": "iil61YJzV6c",
+   "url": "https://www.youtube.com/watch?v=iil61YJzV6c&t=0s",
+   "series": "zj",
+   "episode": 22,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 22",
+   "start_s": 0.43,
+   "end_s": 628.95
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "zj-022.c02",
+  "video_id": "zj-022",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "伏兔梁丘与足三里",
+  "summary": "伏兔在膝上六寸，取象跪时股肌如伏兔。梁丘为郄穴可消炎。足三里为胃经合穴、土经土穴，大穴；男人三十后宜常灸；治呕恶、足软不耐远行；腹部灸后燥热可灸足三里引火下行。",
+  "start_s": 630.11,
+  "end_s": 1696.576,
+  "seg_from": 111,
+  "seg_to": 304,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.st32",
+   "acupoint.st34",
+   "acupoint.st36"
+  ],
+  "citation": {
+   "youtube_id": "iil61YJzV6c",
+   "url": "https://www.youtube.com/watch?v=iil61YJzV6c&t=630s",
+   "series": "zj",
+   "episode": 22,
+   "title": "倪海厦《人纪》《针灸》全90集 之 针灸 22",
+   "start_s": 630.11,
+   "end_s": 1696.58
+  },
+  "review_status": "llm_read"
+ }
+]
