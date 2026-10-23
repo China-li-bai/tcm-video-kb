@@ -1,0 +1,92 @@
+[
+ {
+  "chapter_id": "jgy-018.c01",
+  "video_id": "jgy-018",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "呕吐总则·小半夏·胃反与血虚",
+  "summary": "金匮第十七篇呕吐哕下利。呕家有痈脓不可止呕。先呕后渴为津伤属常；渴欲饮水水入则吐为水停心下，小半夏汤（半夏生姜，不用甘草）。呕而不渴为心下有支饮，与苓桂术甘（眩晕）别于小半夏（仅恶心）。胃中素虚冷者误汗致膈气上逆脉数似胃热实为虚；朝食暮吐为胃反。寸口脉微为血虚，须先复胸阳再补血；欲吐者不可下，少阳兼见呕可用大柴胡。",
+  "start_s": 1.04,
+  "end_s": 760.395,
+  "seg_from": 0,
+  "seg_to": 125,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "symptom.ou_tu",
+   "formula.xiao_ban_xia_tang",
+   "formula.da_chai_hu_tang"
+  ],
+  "citation": {
+   "youtube_id": "nDlxrIOGArk",
+   "url": "https://www.youtube.com/watch?v=nDlxrIOGArk&t=1s",
+   "series": "jgy",
+   "episode": 18,
+   "title": "倪海廈《金匱要略》細分版： 17嘔吐噦下利病",
+   "start_s": 1.04,
+   "end_s": 760.39
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-018.c02",
+  "video_id": "jgy-018",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "哕逆·橘皮生姜·吴茱萸头痛",
+  "summary": "哕即打嗝。虚热用橘皮生姜汤；虚寒胸满用吴茱萸汤；胃气欲绝（癌腹水等）用茯苓四逆/通脉四逆。吴茱萸汤特证：剧烈头痛（肩胛→后脑→太阳）、头痛必吐、手足冷、经行头痛呕吐、胃下垂虚寒；补肝血、疏肝经至百会。干呕、吐涎沫、头痛皆吴茱萸汤。",
+  "start_s": 762.55,
+  "end_s": 1477.29,
+  "seg_from": 126,
+  "seg_to": 267,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "symptom.hui",
+   "formula.wu_zhu_yu_tang",
+   "formula.ju_pi_tang"
+  ],
+  "citation": {
+   "youtube_id": "nDlxrIOGArk",
+   "url": "https://www.youtube.com/watch?v=nDlxrIOGArk&t=762s",
+   "series": "jgy",
+   "episode": 18,
+   "title": "倪海廈《金匱要略》細分版： 17嘔吐噦下利病",
+   "start_s": 762.55,
+   "end_s": 1477.29
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-018.c03",
+  "video_id": "jgy-018",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "泻心汤类·黄芩半夏·痰饮呕·四逆",
+  "summary": "误下表陷成痞，五泻心汤。半夏泻心：呕而肠鸣心下痞、食后下利；无肠鸣腹痛用甘草泻心；肠鸣下利重用生姜成生姜泻心（生姜排水、干姜温中不加量）。干呕下利用黄芩加半夏生姜汤（去黄连加芍药）。利不止终极利小便。痰饮在胸呕不得息用小半夏祛痰。吐后急饮成停水用猪苓散。呕而脉弱小便复利身有微热为里虚欲脱，四逆汤证。",
+  "start_s": 1477.29,
+  "end_s": 8152.821,
+  "seg_from": 268,
+  "seg_to": 1474,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "formula.ban_xia_xie_xin_tang",
+   "formula.sheng_jiang_xie_xin_tang",
+   "formula.si_ni_tang"
+  ],
+  "citation": {
+   "youtube_id": "nDlxrIOGArk",
+   "url": "https://www.youtube.com/watch?v=nDlxrIOGArk&t=1477s",
+   "series": "jgy",
+   "episode": 18,
+   "title": "倪海廈《金匱要略》細分版： 17嘔吐噦下利病",
+   "start_s": 1477.29,
+   "end_s": 8152.82
+  },
+  "review_status": "llm_read"
+ }
+]
