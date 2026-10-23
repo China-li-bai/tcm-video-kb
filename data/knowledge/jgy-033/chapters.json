@@ -1,0 +1,93 @@
+[
+ {
+  "chapter_id": "jgy-033.c01",
+  "video_id": "jgy-033",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "肺癌寒痰案·白沫与平卧",
+  "summary": "2007-02肺癌III–IV、重烟、咳六月。能平卧示肺无积水。肺癌痰多白泡沫；抽烟焦黄黑痰未必是癌。桔梗甘草汤主咳吐白沫。寒湿：人参半夏祛痰排水；紫菀类治寒痰咳；麻黄宣肺。一周咳减血块少。",
+  "start_s": 11.39,
+  "end_s": 657.865,
+  "seg_from": 0,
+  "seg_to": 118,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "new.disease.fei_ai",
+   "disease.ke_sou",
+   "herb.ban_xia",
+   "herb.jie_geng"
+  ],
+  "citation": {
+   "youtube_id": "btHuC52KXRE",
+   "url": "https://www.youtube.com/watch?v=btHuC52KXRE&t=11s",
+   "series": "jgy",
+   "episode": 33,
+   "title": "倪海廈《金匱要略》細分版： 32醫案（肺癌）",
+   "start_s": 11.39,
+   "end_s": 657.87
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-033.c02",
+  "video_id": "jgy-033",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "干咳加味与下利不弃方",
+  "summary": "血压自高降至正常；癌常低热。后见下利勿弃主方剂量，加麦冬党参五味子等润肺。主方久不变仅加减。保胃气/阳气则虽癌不致饿死；化疗伤胃。骤戒烟或反生他病，可暂续抽。",
+  "start_s": 664.06,
+  "end_s": 1296.775,
+  "seg_from": 119,
+  "seg_to": 249,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.mai_men_dong",
+   "herb.wu_wei_zi",
+   "concept.yang_qi"
+  ],
+  "citation": {
+   "youtube_id": "btHuC52KXRE",
+   "url": "https://www.youtube.com/watch?v=btHuC52KXRE&t=664s",
+   "series": "jgy",
+   "episode": 33,
+   "title": "倪海廈《金匱要略》細分版： 32醫案（肺癌）",
+   "start_s": 664.06,
+   "end_s": 1296.78
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-033.c03",
+  "video_id": "jgy-033",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "肺与大肠·紫参代与未碰西医",
+  "summary": "肺气虚不能固肛则下利频（金匮紫参汤，紫参缺货可用他药代）。胸痛减、焦痰一层层排出。未开刀化疗者辨证清楚、效佳；已刀化则难识真机。半年随诊改善显著。",
+  "start_s": 1302.36,
+  "end_s": 1783.39,
+  "seg_from": 250,
+  "seg_to": 325,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.zi_can",
+   "new.disease.fei_ai",
+   "zangfu.da_chang"
+  ],
+  "citation": {
+   "youtube_id": "btHuC52KXRE",
+   "url": "https://www.youtube.com/watch?v=btHuC52KXRE&t=1302s",
+   "series": "jgy",
+   "episode": 33,
+   "title": "倪海廈《金匱要略》細分版： 32醫案（肺癌）",
+   "start_s": 1302.36,
+   "end_s": 1783.39
+  },
+  "review_status": "llm_read"
+ }
+]

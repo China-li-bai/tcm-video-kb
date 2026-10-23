@@ -1,0 +1,164 @@
+video_id: jgy-033
+window: w00-02
+seg_from: 0
+seg_to: 325
+annotator: llm_read
+chapters:
+- key: c01
+  title: 肺癌寒痰案·白沫与平卧
+  start_seq: 0
+  summary: 2007-02肺癌III–IV、重烟、咳六月。能平卧示肺无积水。肺癌痰多白泡沫；抽烟焦黄黑痰未必是癌。桔梗甘草汤主咳吐白沫。寒湿：人参半夏祛痰排水；紫菀类治寒痰咳；麻黄宣肺。一周咳减血块少。
+  clauses: []
+  topics:
+  - new.disease.fei_ai
+  - disease.ke_sou
+  - herb.ban_xia
+  - herb.jie_geng
+- key: c02
+  title: 干咳加味与下利不弃方
+  start_seq: 119
+  summary: 血压自高降至正常；癌常低热。后见下利勿弃主方剂量，加麦冬党参五味子等润肺。主方久不变仅加减。保胃气/阳气则虽癌不致饿死；化疗伤胃。骤戒烟或反生他病，可暂续抽。
+  clauses: []
+  topics:
+  - herb.mai_men_dong
+  - herb.wu_wei_zi
+  - concept.yang_qi
+- key: c03
+  title: 肺与大肠·紫参代与未碰西医
+  start_seq: 250
+  summary: 肺气虚不能固肛则下利频（金匮紫参汤，紫参缺货可用他药代）。胸痛减、焦痰一层层排出。未开刀化疗者辨证清楚、效佳；已刀化则难识真机。半年随诊改善显著。
+  clauses: []
+  topics:
+  - herb.zi_can
+  - new.disease.fei_ai
+  - zangfu.da_chang
+entities:
+- id: new.disease.fei_ai
+  seq: 1
+  surface: 肺癌
+  corrected: 肺癌
+- id: disease.ke_sou
+  seq: 8
+  surface: 咳嗽
+  corrected: 咳嗽
+- id: herb.jie_geng
+  seq: 40
+  surface: 接梗
+  corrected: 桔梗
+- id: new.formula.jie_geng_gan_cao_tang
+  seq: 40
+  surface: 接梗甘早汤
+  corrected: 桔梗甘草汤
+- id: herb.ban_xia
+  seq: 54
+  surface: 半夏
+  corrected: 半夏
+- id: herb.ren_shen
+  seq: 54
+  surface: 人参
+  corrected: 人参
+- id: syndrome.han_shi
+  seq: 56
+  surface: 寒湿
+  corrected: 寒湿
+- id: formula.ma_huang_tang
+  seq: 69
+  surface: 麻黄汤
+  corrected: 麻黄汤
+- id: herb.ma_huang
+  seq: 69
+  surface: 麻黄
+  corrected: 麻黄
+- id: new.herb.zi_wan
+  seq: 71
+  surface: 紫色的猫
+  corrected: 紫菀
+- id: herb.mai_men_dong
+  seq: 141
+  surface: 麦门冬
+  corrected: 麦门冬
+- id: herb.wu_wei_zi
+  seq: 145
+  surface: 五味子
+  corrected: 五味子
+- id: formula.gan_cao_tang
+  seq: 226
+  surface: 甘草汤
+  corrected: 甘草汤
+- id: formula.da_chai_hu_tang
+  seq: 262
+  surface: 大柴胡汤
+  corrected: 大柴胡汤
+- id: herb.zi_can
+  seq: 314
+  surface: 紫参
+  corrected: 紫参
+- id: herb.chai_hu
+  seq: 275
+  surface: 柴胡
+  corrected: 柴胡
+kps:
+- type: diagnostic_rule
+  s: 能平卧入睡示肺内无明显积水；不能平卧须先利水，久积可累心肺。
+  seq: [20]
+  q: 平躺的睡
+  ents: [new.disease.fei_ai]
+  conf: 0.9
+  asr: 积损=积水
+- type: diagnostic_rule
+  s: 肺癌痰多呈白色泡沫；抽烟常见焦黄黑痰，二者有别。白沫咳亦可见于桔梗甘草汤证。
+  seq: [38]
+  q: 白色泡沫
+  ents: [new.disease.fei_ai, new.formula.jie_geng_gan_cao_tang, herb.jie_geng]
+  conf: 0.95
+  asr: 接梗甘早=桔梗甘草
+- type: formula_indication
+  s: 肺癌寒湿痰：人参、半夏祛痰兼利水；紫菀等治寒痰咳；可合麻黄宣肺。
+  seq: [54]
+  q: 半夏
+  ents: [herb.ban_xia, herb.ren_shen, syndrome.han_shi, new.herb.zi_wan]
+  conf: 0.9
+  asr: 申半夏；紫色的猫/色钢房≈紫菀
+- type: clinical_tip
+  s: 一周后咳大减、血块少、胸痛减；原夜不需盖被之燥热可转为需盖被。
+  seq: [79]
+  q: 咳嗽好很多了
+  ents: [disease.ke_sou, new.disease.fei_ai]
+  conf: 0.85
+- type: diagnostic_rule
+  s: 癌患常见持续低热（约99°F级，非高热）。
+  seq: [127]
+  q: 低烧
+  ents: [new.disease.fei_ai]
+  conf: 0.85
+- type: treatment_principle
+  s: 治肺过程出现下利，不可骤减主方剂量；可加麦冬、党参、五味子等润肺止干咳。
+  seq: [138]
+  q: 下利
+  ents: [herb.mai_men_dong, herb.wu_wei_zi]
+  conf: 0.9
+- type: clinical_tip
+  s: 保胃气/阳气则肺癌亦不易饿死；化疗伤胃纳。骤戒烟或反生他病，可暂续抽。
+  seq: [175]
+  q: 阳气
+  ents: [concept.yang_qi, new.disease.fei_ai]
+  conf: 0.85
+- type: pathomechanism
+  s: 肺气虚不能固守则肛门约束无力，下利日数十次；金匮紫参汤，紫参缺可以他药代。
+  seq: [312]
+  q: 肺气不足
+  ents: [herb.zi_can, new.disease.fei_ai]
+  conf: 0.9
+  asr: 大毛口=肛门口；纸汤=紫参汤
+- type: clinical_tip
+  s: 未经开刀化疗的肺癌，中医第一手介入辨证清楚、效较佳；已刀化则难识本态。
+  seq: [309]
+  q: 没有开刀，没有化疗
+  ents: [new.disease.fei_ai]
+  conf: 0.9
+- type: clinical_tip
+  s: 本案扫描确诊III–IV期，纯中药半年，症状与一般状况明显改善。
+  seq: [303]
+  q: 肺癌
+  ents: [new.disease.fei_ai]
+  conf: 0.85
