@@ -1,0 +1,91 @@
+[
+ {
+  "chapter_id": "jgy-038.c01",
+  "video_id": "jgy-038",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "五脏逼毒法·六字诀",
+  "summary": "练易筋经前先五脏逼毒排内脏毒，不用药。六字：肝嘘、心呵、脾呼、肺呬、肾吹、三焦心包嘻。诀窍在吐尽气后无声发力、提肛全身紧约3–5秒；咳吐痰涎属正常排毒。命门热宜循督脉上达巅。",
+  "start_s": 0.61,
+  "end_s": 654.995,
+  "seg_from": 0,
+  "seg_to": 95,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "zangfu.wu_zang",
+   "zangfu.san_jiao",
+   "meridian.gv"
+  ],
+  "citation": {
+   "youtube_id": "O2Mz0h9CALI",
+   "url": "https://www.youtube.com/watch?v=O2Mz0h9CALI&t=0s",
+   "series": "jgy",
+   "episode": 38,
+   "title": "倪海廈《金匱要略》細分版： 37五臟逼毒法、文式易筋經、武式易筋經",
+   "start_s": 0.61,
+   "end_s": 655.0
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-038.c02",
+  "video_id": "jgy-038",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "文式易筋经·十二势四十九",
+  "summary": "文式练力道/念经，武式练气脉，相辅。文式十二势，每势一松一紧算一下、各四十九下；下半身脐下如磐石脚如爪绷紧，上半身先松后渐紧。清晨面东瞪目舌抵上腭自然呼吸。可兼练奇经阴阳跷开合。",
+  "start_s": 655.46,
+  "end_s": 1445.841,
+  "seg_from": 96,
+  "seg_to": 230,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "zangfu.jin",
+   "meridian.qi_jing_ba_mai"
+  ],
+  "citation": {
+   "youtube_id": "O2Mz0h9CALI",
+   "url": "https://www.youtube.com/watch?v=O2Mz0h9CALI&t=655s",
+   "series": "jgy",
+   "episode": 38,
+   "title": "倪海廈《金匱要略》細分版： 37五臟逼毒法、文式易筋經、武式易筋經",
+   "start_s": 655.46,
+   "end_s": 1445.84
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-038.c03",
+  "video_id": "jgy-038",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "武式收势抖痰与经方为本",
+  "summary": "武式末势手足相触且踮脚最难，可先手着地再起以合阴阳。抖法松筋脉排痰，代藜芦类方意治手抖不停。能成此势示阴阳大致平衡。劝先熟经方再旁涉；兼练功打坐运气息。",
+  "start_s": 1445.841,
+  "end_s": 1854.856,
+  "seg_from": 231,
+  "seg_to": 291,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "concept.yin_yang",
+   "concept.jing_fang",
+   "herb.li_lu"
+  ],
+  "citation": {
+   "youtube_id": "O2Mz0h9CALI",
+   "url": "https://www.youtube.com/watch?v=O2Mz0h9CALI&t=1445s",
+   "series": "jgy",
+   "episode": 38,
+   "title": "倪海廈《金匱要略》細分版： 37五臟逼毒法、文式易筋經、武式易筋經",
+   "start_s": 1445.84,
+   "end_s": 1854.86
+  },
+  "review_status": "llm_read"
+ }
+]

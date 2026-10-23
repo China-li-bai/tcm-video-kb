@@ -1,0 +1,130 @@
+video_id: jgy-038
+window: w00-02
+seg_from: 0
+seg_to: 291
+annotator: llm_read
+chapters:
+- key: c01
+  title: 五脏逼毒法·六字诀
+  start_seq: 0
+  summary: 练易筋经前先五脏逼毒排内脏毒，不用药。六字：肝嘘、心呵、脾呼、肺呬、肾吹、三焦心包嘻。诀窍在吐尽气后无声发力、提肛全身紧约3–5秒；咳吐痰涎属正常排毒。命门热宜循督脉上达巅。
+  clauses: []
+  topics:
+  - zangfu.wu_zang
+  - zangfu.san_jiao
+  - meridian.gv
+- key: c02
+  title: 文式易筋经·十二势四十九
+  start_seq: 96
+  summary: 文式练力道/念经，武式练气脉，相辅。文式十二势，每势一松一紧算一下、各四十九下；下半身脐下如磐石脚如爪绷紧，上半身先松后渐紧。清晨面东瞪目舌抵上腭自然呼吸。可兼练奇经阴阳跷开合。
+  clauses: []
+  topics:
+  - zangfu.jin
+  - meridian.qi_jing_ba_mai
+- key: c03
+  title: 武式收势抖痰与经方为本
+  start_seq: 231
+  summary: 武式末势手足相触且踮脚最难，可先手着地再起以合阴阳。抖法松筋脉排痰，代藜芦类方意治手抖不停。能成此势示阴阳大致平衡。劝先熟经方再旁涉；兼练功打坐运气息。
+  clauses: []
+  topics:
+  - concept.yin_yang
+  - concept.jing_fang
+  - herb.li_lu
+entities:
+- id: zangfu.wu_zang
+  seq: 4
+  surface: 五脏
+  corrected: 五脏
+- id: zangfu.san_jiao
+  seq: 9
+  surface: 三焦
+  corrected: 三焦
+- id: zangfu.xin_bao
+  seq: 9
+  surface: 心包
+  corrected: 心包
+- id: meridian.gv
+  seq: 70
+  surface: 督脉
+  corrected: 督脉
+- id: acupoint.gv4
+  seq: 70
+  surface: 命门
+  corrected: 命门
+- id: zangfu.jin
+  seq: 174
+  surface: 筋
+  corrected: 筋
+- id: meridian.qi_jing_ba_mai
+  seq: 222
+  surface: 奇经八脉
+  corrected: 奇经八脉
+- id: herb.li_lu
+  seq: 250
+  surface: 藜芦
+  corrected: 藜芦
+- id: concept.yin_yang
+  seq: 264
+  surface: 阴阳
+  corrected: 阴阳
+- id: concept.jing_fang
+  seq: 283
+  surface: 经方
+  corrected: 经方
+- id: classic.shang_han_lun
+  seq: 286
+  surface: 伤寒论
+  corrected: 伤寒论
+kps:
+- type: treatment_principle
+  s: 练易筋经前文武功前，先做五脏逼毒法排内脏毒，不用药物而以动作逼出。
+  seq: [5]
+  q: 毒素排泄掉
+  ents: [zangfu.wu_zang]
+  conf: 0.9
+  asr: 逼读/必读=逼毒
+- type: concept_definition
+  s: 六字诀配脏腑：肝嘘、心呵、脾呼、肺呬、肾吹、三焦与心包嘻。
+  seq: [9]
+  q: 三焦
+  ents: [zangfu.san_jiao, zangfu.xin_bao, zangfu.wu_zang]
+  conf: 0.95
+  asr: 虚/喝/乎/四/吹/硒=嘘呵呼呬吹嘻
+- type: clinical_tip
+  s: 逼毒诀窍在吐尽气后无声发力，提肛全身紧约三至五秒；此前动作只是铺垫。咳吐痰涎属正常。
+  seq: [17]
+  q: 吐完气的那一刹那
+  ents: []
+  conf: 0.9
+- type: clinical_tip
+  s: 文式易筋经练力道，武式练气脉，二者相辅；文式十二势，每势一松一紧各四十九下为一套。
+  seq: [100]
+  q: 气脉
+  ents: [zangfu.jin]
+  conf: 0.9
+  asr: 文氏/武四=文式/武式
+- type: clinical_tip
+  s: 文式要领：脐下至趾如磐石脚如爪绷紧，上半身先松后紧；清晨面东瞪目舌抵上腭自然呼吸。
+  seq: [112]
+  q: 脚像鸡爪
+  ents: []
+  conf: 0.9
+- type: formula_indication
+  s: 手抖欲止不能止者，古用藜芦类方涤痰脉；药缺可以武式抖法松筋脉代排痰。
+  seq: [250]
+  q: 藜芦
+  ents: [herb.li_lu]
+  conf: 0.85
+  asr: 藜颅甘汤=藜芦类方
+- type: pathomechanism
+  s: 武式末势手足相触且踮脚，为阴阳相合之极；能成此势示阴阳大致平衡。
+  seq: [264]
+  q: 阴阳结合
+  ents: [concept.yin_yang]
+  conf: 0.85
+- type: treatment_principle
+  s: 须先把经方练熟再看旁书，勿弃正轨；闲时兼练功、打坐运气息。
+  seq: [283]
+  q: 经方练熟
+  ents: [concept.jing_fang]
+  conf: 0.9
