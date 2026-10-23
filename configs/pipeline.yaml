@@ -11,9 +11,11 @@ steps:
     code_version: "1"
     copy_source: false        # disk budget: record path + YouTube URL, no copy into r2-mirror
   s02_media:
-    code_version: "1"
+    code_version: "2"         # v2: always emit 64 kbps AAC/m4a play copy (site playback)
     enabled: true
-    play_copy: false          # YouTube sources: play = YouTube URL, no 64k m4a transcode
+    play_copy: true           # domestic: audio on R2/mirror + /watch?t= ; YouTube kept as backup
+    audio_bitrate: "64k"
+    also_mp4: false           # optional faststart mp4; default audio-only for disk
   s03_audio:
     code_version: "3"         # v3: parts decoded straight from source (no full.wav), no mirror copy
     mirror_parts: false
@@ -31,14 +33,14 @@ steps:
     code_version: "1"
     enabled: false            # demo default: skip
   s06_clean:
-    code_version: "2"         # v2: per-segment YouTube citation (cite.t_url)
+    code_version: "3"         # v3: cite.t_url = /watch/{video_id}?t=<sec> (YouTube as youtube_t_url)
     gap_break_s: 1.2
     max_sentence_s: 40.0
   s07_flag:
     code_version: "1"
     agreement_threshold: 0.75
   s08_chapter:
-    code_version: "2"         # v2: per-chapter YouTube citation
+    code_version: "3"         # v3: per-chapter site citation + lecture.md site links
     mode: heuristic           # heuristic | llm
     silence_gap_s: 3.0
     min_chapter_s: 60.0
@@ -50,5 +52,6 @@ budget:
   budget_gb: 40               # working set per batch (source + wav parts + outputs)
   min_free_gb: 15             # refuse to start a batch below this free space
   wav_bytes_per_s: 32000      # 16 kHz mono s16le
+  play_bytes_per_s: 8000      # 64 kbps AAC ≈ 8 KB/s; retained after purge (~29 MB/h)
   overhead_bytes: 50000000    # per item: logs, json outputs, checkpoints
   min_age_s: 120              # file must be untouched this long (downloader done)

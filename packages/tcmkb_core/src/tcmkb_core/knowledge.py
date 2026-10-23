@@ -4,7 +4,8 @@ Outputs per episode (data/knowledge/<video_id>/):
   chapters.json            list[KChapter]            episode > chapter (level 1) > section (level 2)
   entities.jsonl           one KEntity per line      normalized to lexicon ids, with mentions
   knowledge_points.jsonl   one KnowledgePoint/line   atomic, citable claims as taught
-  outline.md               chapter list with YouTube timestamp links
+  outline.md               chapter list with site /watch/{id}?t= timestamp links
+                           (KCitation.url/t_url align with ingest cite — see Field docs)
 Aggregated: data/knowledge/_index/{entities.csv, knowledge_points.csv}.
 
 The semantic parts (chapter boundaries/titles/summaries, KP statements, ASR-corrected
@@ -15,12 +16,11 @@ citations, merges windows, dedupes and validates. `python -m tcmkb_core.knowledg
 prints the JSON Schemas.
 """
 from __future__ import annotations
-import json, math
+import json
 from typing import Any, Literal, Optional
 from pydantic import BaseModel, ConfigDict, Field, field_validator, model_validator
 
 SCHEMA_VERSION = "knowledge/1"
-YT_WATCH = "https://www.youtube.com/watch?v="
 MAX_QUOTE = 40
 
 # Entity types requested for the knowledge layer; lexicon categories map onto them.
@@ -82,11 +82,16 @@ KP_TYPE_LABEL_ZH = {
 }
 
 
-def t_url(youtube_id: str | None, t: float) -> str | None:
-    """https://www.youtube.com/watch?v=<id>&t=<int sec>s (floor, never negative)."""
-    if not youtube_id:
-        return None
-    return f"{YT_WATCH}{youtube_id}&t={max(int(math.floor(float(t))), 0)}s"
+def t_url(video_id: str | None, t: float, *, end: float | None = None, base: str = "") -> str | None:
+    """Primary cite: /watch/{video_id}?t=<floor sec> (site deep link)."""
+    from tcmkb_core.play import site_watch_url
+    return site_watch_url(video_id, t, end=end, base=base)
+
+
+def youtube_t_url(youtube_id: str | None, t: float) -> str | None:
+    """YouTube backup deep link with &t=<floor sec>s."""
+    from tcmkb_core.play import youtube_t_url as _yt
+    return _yt(youtube_id, t)
 
 
 class _M(BaseModel):
@@ -94,8 +99,22 @@ class _M(BaseModel):
 
 
 class KCitation(_M):
-    youtube_id: Optional[str]
-    url: Optional[str] = Field(description="watch URL with &t=<int sec>s")
+    """Citation block — field names match ingest ``sources.cite``:
+
+    - ``url``: source / YouTube *page* URL (no ``&t=``); backup identity of the video
+    - ``t_url``: primary jump link = site ``/watch/{video_id}?t=<sec>``
+    - ``youtube_t_url``: YouTube backup deep link with ``&t=<sec>s``
+    """
+    video_id: str
+    youtube_id: Optional[str] = None
+    url: Optional[str] = Field(
+        default=None,
+        description="source/YouTube page URL (no timestamp); same meaning as ingest cite.url",
+    )
+    t_url: Optional[str] = Field(
+        description="primary site watch URL /watch/{video_id}?t=<sec>; same as ingest cite.t_url",
+    )
+    youtube_t_url: Optional[str] = Field(default=None, description="YouTube backup &t= link")
     series: str
     episode: int
     title: str
@@ -104,10 +123,13 @@ class KCitation(_M):
 
     @model_validator(mode="after")
     def _url_matches(self) -> "KCitation":
-        if self.youtube_id:
-            want = t_url(self.youtube_id, self.start_s)
-            if self.url != want:
-                raise ValueError(f"citation url {self.url!r} != {want!r}")
+        want = t_url(self.video_id, self.start_s)
+        if self.t_url != want:
+            raise ValueError(f"citation t_url {self.t_url!r} != {want!r}")
+        if self.youtube_id and self.youtube_t_url:
+            ywant = youtube_t_url(self.youtube_id, self.start_s)
+            if self.youtube_t_url != ywant:
+                raise ValueError(f"youtube_t_url {self.youtube_t_url!r} != {ywant!r}")
         return self
 
 

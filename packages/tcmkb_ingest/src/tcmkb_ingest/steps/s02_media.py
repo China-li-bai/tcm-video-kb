@@ -1,8 +1,15 @@
-"""s02_media: playback copies. For local wav demo, copy/link as play audio; skip heavy transcode."""
+"""s02_media: 64 kbps AAC/m4a play copy → LocalStorage (data/r2-mirror) or R2.
+
+Domestic playback: audio on R2 + site /watch/{id}?t= jump. YouTube URL kept as
+source backup only. When play_copy is false, YouTube-backed items skip the
+transcode (legacy disk-budget mode).
+"""
 from __future__ import annotations
-import pathlib, shutil, subprocess
+import pathlib, subprocess
+from tcmkb_core.play import construct_play_url, play_audio_key
 from tcmkb_ingest import artifacts as art
 from tcmkb_ingest.steps.base import Ctx, log
+
 
 def run(ctx: Ctx, **_kw) -> dict:
     step = "s02_media"
@@ -19,8 +26,11 @@ def run(ctx: Ctx, **_kw) -> dict:
     src = pathlib.Path(m.source_path)
     up = (m.active_versions or {}).get("s01_upload", "")
     source = (m.meta or {}).get("source") or {}
-    # YouTube-backed media: playback is the YouTube URL; no local play copy (disk budget)
-    if source.get("url") and not cfg.get("play_copy", False):
+    play_copy = bool(cfg.get("play_copy", True))
+    bitrate = str(cfg.get("audio_bitrate", "64k"))
+
+    # Legacy: YouTube-backed + play_copy false → record YouTube URL only (no local play file)
+    if source.get("url") and not play_copy:
         vk = ctx.compute_vk(step, {"mode": "youtube-ref"}, upstream_hash=up)
         if ctx.state.find_done(ctx.video_id, step, vk) and not ctx.force:
             log.info("skip %s %s", ctx.video_id, step)
@@ -40,7 +50,9 @@ def run(ctx: Ctx, **_kw) -> dict:
         ctx.state.mark_done(ctx.video_id, step, vk, str(outdir), oh, {"play_url": source["url"]})
         log.info("s02 media %s play=%s (youtube-ref, no local copy)", ctx.video_id, source["url"])
         return {"version_key": vk, "play_url": source["url"]}
-    vk = ctx.compute_vk(step, {"mode": "local-lite"}, upstream_hash=up)
+
+    frag = {"mode": "play-m4a", "bitrate": bitrate}
+    vk = ctx.compute_vk(step, frag, upstream_hash=up)
     existing = ctx.state.find_done(ctx.video_id, step, vk)
     if existing and not ctx.force:
         log.info("skip %s %s", ctx.video_id, step)
@@ -49,53 +61,66 @@ def run(ctx: Ctx, **_kw) -> dict:
     ctx.state.ensure_step(ctx.video_id, step, vk)
     ctx.state.claim(ctx.video_id, step, vk, ctx.worker_id)
     outdir = ctx.outdir(step, vk)
-    play_key = f"play/{ctx.video_id}.m4a"
-    audio_key = play_key
-
-    # If source is already wav/m4a/mp3, store as play audio; optionally remux to m4a
+    audio_key = play_audio_key(ctx.video_id)
+    play_key = audio_key
+    dest_local = outdir / f"{ctx.video_id}.m4a"
+    uri = None
     ext = (m.ext or src.suffix.lstrip(".")).lower()
-    if ext in ("wav", "flac", "mp3", "m4a", "aac"):
-        # Prefer remux/copy to m4a when ffmpeg available; else copy original
-        dest_local = outdir / f"{ctx.video_id}.m4a"
-        try:
-            subprocess.run(
-                ["ffmpeg", "-y", "-i", str(src), "-vn", "-c:a", "aac", "-b:a", "64k", str(dest_local)],
-                capture_output=True, check=True, timeout=600,
-            )
-        except Exception:
-            dest_local = outdir / src.name
-            shutil.copy2(src, dest_local)
-        uri = ctx.storage.put_file(play_key, dest_local)
-    else:
-        # Video: remux faststart mp4 (no re-encode) + extract m4a
-        mp4 = outdir / f"{ctx.video_id}.mp4"
-        m4a = outdir / f"{ctx.video_id}.m4a"
-        try:
+
+    try:
+        if not src.is_file():
+            raise FileNotFoundError(str(src))
+        # Always produce 64 kbps AAC/m4a for site playback (audio-only is enough for domestic)
+        subprocess.run(
+            ["ffmpeg", "-y", "-i", str(src), "-vn", "-c:a", "aac", "-b:a", bitrate, str(dest_local)],
+            capture_output=True, check=True, timeout=1800,
+        )
+        uri = ctx.storage.put_file(audio_key, dest_local)
+        # Optional faststart mp4 remux when source is video (kept for future; not required for cites)
+        if ext in ("mp4", "mkv", "webm", "mov") and cfg.get("also_mp4"):
+            mp4 = outdir / f"{ctx.video_id}.mp4"
             subprocess.run(
                 ["ffmpeg", "-y", "-i", str(src), "-c", "copy", "-movflags", "+faststart", str(mp4)],
                 capture_output=True, check=True, timeout=1800,
             )
-            subprocess.run(
-                ["ffmpeg", "-y", "-i", str(src), "-vn", "-c:a", "aac", "-b:a", "64k", str(m4a)],
-                capture_output=True, check=True, timeout=1800,
-            )
             ctx.storage.put_file(f"play/{ctx.video_id}.mp4", mp4)
-            uri = ctx.storage.put_file(play_key, m4a)
-            m.r2_play_key = f"play/{ctx.video_id}.mp4"
-        except Exception as e:
-            log.warning("s02 ffmpeg failed, copying source: %s", e)
-            shutil.copy2(src, outdir / src.name)
-            uri = ctx.storage.put_file(f"play/{ctx.video_id}.{ext}", src)
-            play_key = f"play/{ctx.video_id}.{ext}"
+            play_key = f"play/{ctx.video_id}.mp4"
+    except Exception as e:
+        # Never put the raw source into play/: purge keeps play/*, and a high-bitrate
+        # original would be served as if it were the 64k AAC copy.
+        err = f"ffmpeg failed (no play fallback): {e}"
+        log.error("s02 %s %s", ctx.video_id, err)
+        try:
+            ctx.state.mark_failed(ctx.video_id, step, vk, err)
+        except Exception:  # pragma: no cover
+            pass
+        raise RuntimeError(f"s02_media: {err}") from e
 
     m.r2_audio_key = audio_key
-    if not m.r2_play_key:
-        m.r2_play_key = play_key
-    art.atomic_write_json(outdir / "media.json", {"play_key": m.r2_play_key, "audio_key": audio_key, "uri": uri})
+    m.r2_play_key = play_key
+    play_meta = construct_play_url(ctx.video_id, root=ctx.root)
+    media = {
+        "play_key": play_key,
+        "audio_key": audio_key,
+        "audio_bitrate": bitrate,
+        "uri": uri,
+        "play_url": play_meta.get("url"),
+        "play_mode": play_meta.get("mode"),
+        "youtube_id": source.get("youtube_id"),
+        "youtube_url": source.get("url"),
+        "mode": "play-m4a",
+    }
+    art.atomic_write_json(outdir / "media.json", media)
     oh = art.hash_dir_files(outdir, ["media.json"])
-    art.write_success(outdir, {"play_key": m.r2_play_key}, oh)
+    art.write_success(outdir, {"play_key": play_key, "audio_key": audio_key}, oh)
     m.active_versions[step] = vk
+    # Keep play keys in meta for API / backfill
+    meta = dict(m.meta or {})
+    meta["play"] = {"audio_key": audio_key, "play_key": play_key, "play_url": play_meta.get("url"),
+                    "play_mode": play_meta.get("mode"), "bitrate": bitrate}
+    m.meta = meta
     ctx.state.upsert_video(m)
-    ctx.state.mark_done(ctx.video_id, step, vk, str(outdir), oh, {"play_key": m.r2_play_key})
-    log.info("s02 media %s play=%s", ctx.video_id, m.r2_play_key)
-    return {"version_key": vk, "play_key": m.r2_play_key}
+    ctx.state.mark_done(ctx.video_id, step, vk, str(outdir), oh,
+                       {"play_key": play_key, "audio_key": audio_key, "play_url": play_meta.get("url")})
+    log.info("s02 media %s audio=%s play_url=%s", ctx.video_id, audio_key, play_meta.get("url"))
+    return {"version_key": vk, "play_key": play_key, "audio_key": audio_key, "play_url": play_meta.get("url")}
