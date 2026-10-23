@@ -1,0 +1,175 @@
+video_id: jgy-029
+window: w00-02
+seg_from: 0
+seg_to: 338
+annotator: llm_read
+chapters:
+- key: c01
+  title: 肝癌案问诊要点·丑时醒与二便
+  start_seq: 0
+  summary: 2006-05黑人肝癌案。肝病早诊：丑时（约1–3点）定时醒；必问大便（肝与大肠相通、保持通畅）；小便茶黄示恶化；口渴喜冷饮而脚温；阳痿可伴见。实证持续（非偶发）——因有形积不去。丑时阳气回流受阻则觉热非高热；烦躁燥热加重示病进。
+  clauses: []
+  topics:
+  - new.disease.gan_ai
+  - zangfu.da_chang
+  - concept.yang_qi
+- key: c02
+  title: 疏肝主方·小柴胡加减与术苓泽
+  start_seq: 82
+  summary: 主以小柴胡汤（党参代人参）；常加郁金、龙胆草疏肝清肝。B/C肝或肝硬化恶心呕吐食少，加重半夏、党参。白芍酸收提下焦血、助肝肺挤压循环；苍术泽泻白术茯苓利水防腹水（实脾非仅健脾）。贫血宜补血；未见表寒/不化勿妄投生附子。方多与桂枝汤意相关。
+  clauses: []
+  topics:
+  - formula.xiao_chai_hu_tang
+  - herb.long_dan
+  - formula.gui_zhi_tang
+  - herb.fu_zi
+- key: c03
+  title: 术后随访·三黄泻心与五苓通利
+  start_seq: 230
+  summary: 患者仍手术，术中见肝好转本可不切。术后以三黄泻心类清热；五苓散利水；治内伤须通大便减肝毒负（可略增甘草解毒非蓄水意）。兼肾石加乌药艾叶猪苓滑石。强调未手术前中药已明显改善眠溲；开刀非必。
+  clauses: []
+  topics:
+  - formula.wu_ling_san
+  - new.formula.san_huang_xie_xin_tang
+  - herb.gan_cao
+entities:
+- id: new.disease.gan_ai
+  seq: 2
+  surface: 肝癌
+  corrected: 肝癌
+- id: zangfu.da_chang
+  seq: 21
+  surface: 大肠
+  corrected: 大肠
+- id: formula.xiao_chai_hu_tang
+  seq: 82
+  surface: 小柴胡汤
+  corrected: 小柴胡汤
+- id: herb.long_dan
+  seq: 114
+  surface: 龙胆草
+  corrected: 龙胆草
+- id: new.herb.yu_jin
+  seq: 118
+  surface: 郁金
+  corrected: 郁金
+- id: herb.ban_xia
+  seq: 120
+  surface: 半夏
+  corrected: 半夏
+- id: herb.shao_yao
+  seq: 129
+  surface: 白勺
+  corrected: 白芍
+- id: herb.bai_zhu
+  seq: 158
+  surface: 白术
+  corrected: 白术
+- id: herb.fu_ling
+  seq: 158
+  surface: 茯苓
+  corrected: 茯苓
+- id: herb.ze_xie
+  seq: 158
+  surface: 蜇泻
+  corrected: 泽泻
+- id: new.herb.cang_zhu
+  seq: 158
+  surface: 苍竹
+  corrected: 苍术
+- id: herb.fu_zi
+  seq: 183
+  surface: 生附子
+  corrected: 附子
+- id: formula.gui_zhi_tang
+  seq: 200
+  surface: 桂枝汤
+  corrected: 桂枝汤
+- id: formula.wu_ling_san
+  seq: 260
+  surface: 五苓散
+  corrected: 五苓散
+- id: herb.gan_cao
+  seq: 264
+  surface: 甘草
+  corrected: 甘草
+- id: herb.hua_shi
+  seq: 300
+  surface: 滑石
+  corrected: 滑石
+- id: herb.ai
+  seq: 300
+  surface: 艾叶
+  corrected: 艾叶
+kps:
+- type: diagnostic_rule
+  s: 肝病预警：无故于丑时（约1–3点）定时醒，可早于西医确诊数年；按气血注时肝开于丑。
+  seq: [12]
+  q: 没有办法入眠
+  ents: [new.disease.gan_ai]
+  conf: 0.9
+- type: treatment_principle
+  s: 治肝病必顾大便；肝与大肠相通，经方治肝常从通肠入手以保持便畅。
+  seq: [20]
+  q: 大便的问题
+  ents: [zangfu.da_chang, new.disease.gan_ai]
+  conf: 0.95
+- type: diagnostic_rule
+  s: 肝癌/肝变进展时小便茶黄；可以溲色判病情进退。急性肝炎则可反见溲畅。
+  seq: [28]
+  q: 茶色的一样很黄
+  ents: [new.disease.gan_ai]
+  conf: 0.9
+- type: pathomechanism
+  s: 丑时阳气回流肝脏遇积则进不去，觉热而非高热（体温可正常）；烦躁燥热加重示病进。
+  seq: [59]
+  q: 烦躁燥热
+  ents: [concept.yang_qi]
+  conf: 0.85
+  asr: 杨繁力≈阳返利/阳回流
+- type: formula_indication
+  s: 肝癌案主方小柴胡汤；常配郁金、龙胆草疏肝清肝。
+  seq: [82]
+  q: 小柴胡汤
+  ents: [formula.xiao_chai_hu_tang, herb.long_dan, new.herb.yu_jin]
+  conf: 0.95
+  asr: 龙奶厂=龙胆草；芪郁金
+- type: formula_indication
+  s: B/C肝或肝硬化恶心呕吐食少：小柴胡加重半夏、党参（可代人参）。
+  seq: [119]
+  q: 恶心、呕吐
+  ents: [formula.xiao_chai_hu_tang, herb.ban_xia, symptom.ou_tu]
+  conf: 0.9
+- type: formula_composition
+  s: 苍术、泽泻、白术、茯苓四味利水通调，肝胆肾病常用，防腹积水；言实脾重于空言健脾。
+  seq: [158]
+  q: 白术、茯苓
+  ents: [herb.bai_zhu, herb.fu_ling, herb.ze_xie, new.herb.cang_zhu]
+  conf: 0.9
+  asr: 苍竹蜇泻=苍术泽泻
+- type: contraindication
+  s: 无附子证（如寒凝不化）勿投生附子；药证相应才用强药。
+  seq: [183]
+  q: 生附子
+  ents: [herb.fu_zi]
+  conf: 0.9
+- type: clinical_tip
+  s: 燥热烦躁时段拉长（如由1–3点延至1–5/7点）示阳气更难入肝、病进。
+  seq: [178]
+  q: 烦躁时间拉长
+  ents: [concept.yang_qi]
+  conf: 0.85
+- type: formula_indication
+  s: 术后热象可用三黄泻心类；五苓散利水；治肝同时保持大便通畅以减毒负。
+  seq: [260]
+  q: 五苓散
+  ents: [formula.wu_ling_san, herb.gan_cao]
+  conf: 0.9
+  asr: 三黄鲜应≈三黄泻心
+- type: clinical_tip
+  s: 兼肾结石可加乌药、艾叶、猪苓、滑石等；本案未刀前中药已改善眠溲，开刀非必。
+  seq: [300]
+  q: 肾的石
+  ents: [herb.hua_shi, herb.ai]
+  conf: 0.85
+  asr: 朱林=猪苓

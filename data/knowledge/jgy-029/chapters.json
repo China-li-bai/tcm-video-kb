@@ -1,0 +1,93 @@
+[
+ {
+  "chapter_id": "jgy-029.c01",
+  "video_id": "jgy-029",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "肝癌案问诊要点·丑时醒与二便",
+  "summary": "2006-05黑人肝癌案。肝病早诊：丑时（约1–3点）定时醒；必问大便（肝与大肠相通、保持通畅）；小便茶黄示恶化；口渴喜冷饮而脚温；阳痿可伴见。实证持续（非偶发）——因有形积不去。丑时阳气回流受阻则觉热非高热；烦躁燥热加重示病进。",
+  "start_s": 1.56,
+  "end_s": 475.745,
+  "seg_from": 0,
+  "seg_to": 81,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "new.disease.gan_ai",
+   "zangfu.da_chang",
+   "concept.yang_qi"
+  ],
+  "citation": {
+   "youtube_id": "lP6uIh07rmc",
+   "url": "https://www.youtube.com/watch?v=lP6uIh07rmc&t=1s",
+   "series": "jgy",
+   "episode": 29,
+   "title": "倪海廈《金匱要略》細分版： 28 醫案（肝癌）",
+   "start_s": 1.56,
+   "end_s": 475.75
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-029.c02",
+  "video_id": "jgy-029",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "疏肝主方·小柴胡加减与术苓泽",
+  "summary": "主以小柴胡汤（党参代人参）；常加郁金、龙胆草疏肝清肝。B/C肝或肝硬化恶心呕吐食少，加重半夏、党参。白芍酸收提下焦血、助肝肺挤压循环；苍术泽泻白术茯苓利水防腹水（实脾非仅健脾）。贫血宜补血；未见表寒/不化勿妄投生附子。方多与桂枝汤意相关。",
+  "start_s": 477.36,
+  "end_s": 1399.39,
+  "seg_from": 82,
+  "seg_to": 229,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "formula.xiao_chai_hu_tang",
+   "herb.long_dan",
+   "formula.gui_zhi_tang",
+   "herb.fu_zi"
+  ],
+  "citation": {
+   "youtube_id": "lP6uIh07rmc",
+   "url": "https://www.youtube.com/watch?v=lP6uIh07rmc&t=477s",
+   "series": "jgy",
+   "episode": 29,
+   "title": "倪海廈《金匱要略》細分版： 28 醫案（肝癌）",
+   "start_s": 477.36,
+   "end_s": 1399.39
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-029.c03",
+  "video_id": "jgy-029",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "术后随访·三黄泻心与五苓通利",
+  "summary": "患者仍手术，术中见肝好转本可不切。术后以三黄泻心类清热；五苓散利水；治内伤须通大便减肝毒负（可略增甘草解毒非蓄水意）。兼肾石加乌药艾叶猪苓滑石。强调未手术前中药已明显改善眠溲；开刀非必。",
+  "start_s": 1399.39,
+  "end_s": 2060.69,
+  "seg_from": 230,
+  "seg_to": 338,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "formula.wu_ling_san",
+   "new.formula.san_huang_xie_xin_tang",
+   "herb.gan_cao"
+  ],
+  "citation": {
+   "youtube_id": "lP6uIh07rmc",
+   "url": "https://www.youtube.com/watch?v=lP6uIh07rmc&t=1399s",
+   "series": "jgy",
+   "episode": 29,
+   "title": "倪海廈《金匱要略》細分版： 28 醫案（肝癌）",
+   "start_s": 1399.39,
+   "end_s": 2060.69
+  },
+  "review_status": "llm_read"
+ }
+]
