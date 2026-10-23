@@ -448,6 +448,16 @@ nj-008.kp0004,nj-008,nj,8,diagnostic_rule,望色：青黑主痛，白主寒；�
 nj-008.kp0005,nj-008,nj,8,pathomechanism,大寒犯头久不去可深入骨髓，致头痛经年不愈。,symptom.tou_tong,nj-008.c02,诊脉久病与寒入头痛消渴,大寒,891.17,904.965,https://www.youtube.com/watch?v=RgoDwTXW5Os&t=891s,0.9,,08 倪海厦精讲《黄帝内经》高清字幕完整版
 nj-008.kp0006,nj-008,nj,8,pathomechanism,甘味太过令人中满、气上溢，过腻可转为消渴。,symptom.xiao_ke,nj-008.c02,诊脉久病与寒入头痛消渴,甘蔗令人中满,1229.908,1271.863,https://www.youtube.com/watch?v=RgoDwTXW5Os&t=1229s,0.95,,08 倪海厦精讲《黄帝内经》高清字幕完整版
 nj-008.kp0007,nj-008,nj,8,clinical_tip,口苦当联想肝胆为病。,zangfu.dan,nj-008.c03,口苦属胆与先天癫痫,口苦,1718.718,1724.053,https://www.youtube.com/watch?v=RgoDwTXW5Os&t=1718s,0.95,,08 倪海厦精讲《黄帝内经》高清字幕完整版
+nj-009.kp0001,nj-009,nj,9,concept_definition,本段入《骨空论》（讲中作古空论）；内经传抄久，题文或不相属，须耐读。,classic.sw_gu_kong_lun classic.huang_di_nei_jing,nj-009.c01,骨空论与风为百病之始,古空论,24.51,27.95,https://www.youtube.com/watch?v=lqwNzysmE3k&t=24s,0.9,古空论=骨空论,09 倪海厦精讲《黄帝内经》高清字幕完整版
+nj-009.kp0002,nj-009,nj,9,pathomechanism,风者百病之始（ASR死）；外风由表入，先孙络腠理，不已入经，再入腑，再入脏。,,nj-009.c01,骨空论与风为百病之始,风者百病之死,47.51,50.05,https://www.youtube.com/watch?v=lqwNzysmE3k&t=47s,0.95,百病之死=百病之始,09 倪海厦精讲《黄帝内经》高清字幕完整版
+nj-009.kp0003,nj-009,nj,9,pathomechanism,表风由外入：孙络→肉→正经→腑→脏，此为传变次序。,,nj-009.c01,骨空论与风为百病之始,孙落,85.05,98.885,https://www.youtube.com/watch?v=lqwNzysmE3k&t=85s,0.9,孙落=孙络；衰肉=腠肉,09 倪海厦精讲《黄帝内经》高清字幕完整版
+nj-009.kp0004,nj-009,nj,9,treatment_principle,六经辨证（太阳→少阳→阳明→太阴→少阴→厥阴）为伤寒传变大纲。,concept.liu_jing six_channel.taiyang six_channel.yangming,nj-009.c01,骨空论与风为百病之始,六经,106.35,120.265,https://www.youtube.com/watch?v=lqwNzysmE3k&t=106s,0.95,,09 倪海厦精讲《黄帝内经》高清字幕完整版
+nj-009.kp0005,nj-009,nj,9,diagnostic_rule,有汗多属风；毛窍闭缩无汗属寒。,,nj-009.c01,骨空论与风为百病之始,毛孔会闭缩掉,159.71,161.865,https://www.youtube.com/watch?v=lqwNzysmE3k&t=159s,0.9,,09 倪海厦精讲《黄帝内经》高清字幕完整版
+nj-009.kp0006,nj-009,nj,9,concept_definition,津液畅行无阻之力称为阳；津液不能敷布四肢则身重。,concept.jin_ye,nj-009.c01,骨空论与风为百病之始,津液,211.07,215.865,https://www.youtube.com/watch?v=lqwNzysmE3k&t=211s,0.9,,09 倪海厦精讲《黄帝内经》高清字幕完整版
+nj-009.kp0007,nj-009,nj,9,clinical_tip,恶寒汗出头痛身重等表风证，可取风府等穴。,acupoint.gv16,nj-009.c01,骨空论与风为百病之始,风府,224.74,228.55,https://www.youtube.com/watch?v=lqwNzysmE3k&t=224s,0.9,丰府=风府,09 倪海厦精讲《黄帝内经》高清字幕完整版
+nj-009.kp0008,nj-009,nj,9,clinical_tip,刺痛处、从骨边下针；中风刺不及骨则难效。,,nj-009.c02,六经气血与刺法要点,骨边,9516.528,9520.168,https://www.youtube.com/watch?v=lqwNzysmE3k&t=9516s,0.85,,09 倪海厦精讲《黄帝内经》高清字幕完整版
+nj-009.kp0009,nj-009,nj,9,treatment_principle,温病与常法多循命限；经方进治可突破「该死之日」。,,nj-009.c03,望色神气与经方温病对照,温病,12790.668,12803.528,https://www.youtube.com/watch?v=lqwNzysmE3k&t=12790s,0.85,,09 倪海厦精讲《黄帝内经》高清字幕完整版
+nj-009.kp0010,nj-009,nj,9,diagnostic_rule,望神色宜抓转头、灯光变换等刹那；持续见鲜红当心。,,nj-009.c03,望色神气与经方温病对照,刹那,13596.528,13603.533,https://www.youtube.com/watch?v=lqwNzysmE3k&t=13596s,0.8,,09 倪海厦精讲《黄帝内经》高清字幕完整版
 nj-010.kp0001,nj-010,nj,10,study_method,素问自六十六至七十四篇原已亡佚，今本多出后世补入；宜知文本源流。,classic.huang_di_nei_jing,nj-010.c01,著至教论·内经亡佚与三皇,丧失掉了,27.86,37.06,https://www.youtube.com/watch?v=TbI1TAMqpJ4&t=27s,0.9,,10 倪海厦精讲《黄帝内经》高清字幕完整版 完结
 nj-010.kp0002,nj-010,nj,10,concept_definition,阴阳当互济平衡；阳太盛则伤阴，阴太盛则伤阳。,concept.yin_yang,nj-010.c02,阴阳互济与一脏为病,互相帮助,790.67,826.925,https://www.youtube.com/watch?v=TbI1TAMqpJ4&t=790s,0.95,,10 倪海厦精讲《黄帝内经》高清字幕完整版 完结
 nj-010.kp0003,nj-010,nj,10,treatment_principle,病变虽可传及他脏，临证当专注本病所在之一脏，勿为兼症所惑。,,nj-010.c02,阴阳互济与一脏为病,单看一脏就好了,1262.385,1269.75,https://www.youtube.com/watch?v=TbI1TAMqpJ4&t=1262s,0.95,,10 倪海厦精讲《黄帝内经》高清字幕完整版 完结

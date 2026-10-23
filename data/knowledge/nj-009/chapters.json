@@ -1,0 +1,93 @@
+[
+ {
+  "chapter_id": "nj-009.c01",
+  "video_id": "nj-009",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "骨空论与风为百病之始",
+  "summary": "略过气府论针灸经络后入骨空论。风者百病之始（ASR死）；外风由表孙络→肉→经→腑→脏。有汗属风、无汗属寒闭毛窍。身重恶寒汗出头痛可取风府等。津液畅行为阳，受阻则身重。",
+  "start_s": 0.23,
+  "end_s": 2354.503,
+  "seg_from": 0,
+  "seg_to": 399,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "classic.sw_gu_kong_lun",
+   "classic.huang_di_nei_jing",
+   "acupoint.gv16",
+   "concept.jin_ye"
+  ],
+  "citation": {
+   "youtube_id": "lqwNzysmE3k",
+   "url": "https://www.youtube.com/watch?v=lqwNzysmE3k&t=0s",
+   "series": "nj",
+   "episode": 9,
+   "title": "09 倪海厦精讲《黄帝内经》高清字幕完整版",
+   "start_s": 0.23,
+   "end_s": 2354.5
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "nj-009.c02",
+  "video_id": "nj-009",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "六经气血与刺法要点",
+  "summary": "气血逆乱可见热中等变。半表未入经络之神气变化。刺宜取压痛、从骨边下手；中风刺须及骨。伤寒六经辨证定义再申（太阳少阳阳明太阴少阴厥阴）。",
+  "start_s": 2357.438,
+  "end_s": 10799.825,
+  "seg_from": 400,
+  "seg_to": 1899,
+  "six_channel": [
+   "six_channel.taiyang",
+   "six_channel.shaoyang",
+   "six_channel.yangming"
+  ],
+  "clause_refs": [],
+  "topics": [
+   "concept.liu_jing"
+  ],
+  "citation": {
+   "youtube_id": "lqwNzysmE3k",
+   "url": "https://www.youtube.com/watch?v=lqwNzysmE3k&t=2357s",
+   "series": "nj",
+   "episode": 9,
+   "title": "09 倪海厦精讲《黄帝内经》高清字幕完整版",
+   "start_s": 2357.44,
+   "end_s": 10799.83
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "nj-009.c03",
+  "video_id": "nj-009",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "望色神气与经方温病对照",
+  "summary": "医道可传后世。望色须抓转头灯光变换等刹那神色；持续见红当心。温病与西医多循命定，经方可突破命限。兼及南北半球方位等术数避灾说。",
+  "start_s": 10799.825,
+  "end_s": 17217.829,
+  "seg_from": 1900,
+  "seg_to": 3037,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "classic.huang_di_nei_jing"
+  ],
+  "citation": {
+   "youtube_id": "lqwNzysmE3k",
+   "url": "https://www.youtube.com/watch?v=lqwNzysmE3k&t=10799s",
+   "series": "nj",
+   "episode": 9,
+   "title": "09 倪海厦精讲《黄帝内经》高清字幕完整版",
+   "start_s": 10799.83,
+   "end_s": 17217.83
+  },
+  "review_status": "llm_read"
+ }
+]
