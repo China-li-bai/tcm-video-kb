@@ -1,0 +1,153 @@
+video_id: jgy-013
+window: w00-09
+seg_from: 0
+seg_to: 1288
+annotator: llm_read
+chapters:
+- key: c01
+  title: 痰饮咳嗽病与四饮概念
+  start_seq: 0
+  summary: 《金匮》痰饮咳嗽病第十二；与肺痿肺痈咳嗽上气相关。饮即水饮，人人或多或少；当运动出汗更新水液。四饮：痰饮（素盛今瘦、肠间沥沥有声）、悬饮（水流胁下咳唾引痛）、溢饮（水流四肢当汗不汗身疼重）、支饮。感冒屡重示内有伏饮，宜先排饮。
+  clauses: []
+  topics: [classic.jin_gui_yao_lve, classic.jgy_ch_tan_yin_ke_sou_bing_mai_zheng_bing_zhi, syndrome.tan_yin, syndrome.xuan_yin, syndrome.yi_yin, syndrome.zhi_yin]
+- key: c02
+  title: 小青龙与麻黄族排饮
+  start_seq: 100
+  summary: 小青龙汤证可见背冷如掌大。麻黄汤族发汗可排溢饮之水湿，兼利关节肌肉痛。杏仁与麻黄等量（秤不离砣）。留饮可见下利后心下仍满。
+  clauses: []
+  topics: [formula.xiao_qing_long_tang, formula.ma_huang_tang, herb.ma_huang, herb.xing_ren, syndrome.liu_yin]
+- key: c03
+  title: 呕家与发表排饮
+  start_seq: 700
+  summary: 久病吐下后加人参。呕家本渴；葛根汤、麻黄汤等发表可使饮随汗外解。亦及泽泻、茯苓、半夏等利水涤饮。
+  clauses: []
+  topics: [herb.ren_shen, formula.ge_gen_tang, formula.ma_huang_tang, herb.fu_ling, herb.ban_xia]
+entities:
+- id: classic.jin_gui_yao_lve
+  seq: 2
+  surface: 金匮
+  corrected: 金匮要略
+- id: classic.jgy_ch_tan_yin_ke_sou_bing_mai_zheng_bing_zhi
+  seq: 1
+  surface: 痰饮咳嗽病
+  corrected: 痰饮咳嗽病脉证并治
+- id: syndrome.tan_yin
+  seq: 39
+  surface: 痰饮
+  corrected: 痰饮
+- id: syndrome.xuan_yin
+  seq: 43
+  surface: 悬疑
+  corrected: 悬饮
+- id: syndrome.yi_yin
+  seq: 44
+  surface: 意淫
+  corrected: 溢饮
+- id: syndrome.zhi_yin
+  seq: 7
+  surface: 知饮
+  corrected: 支饮
+- id: formula.xiao_qing_long_tang
+  seq: 107
+  surface: 小青龙汤
+  corrected: 小青龙汤
+- id: formula.gui_zhi_tang
+  seq: 25
+  surface: 桂枝汤
+  corrected: 桂枝汤
+- id: formula.ma_huang_tang
+  seq: 46
+  surface: 麻黄
+  corrected: 麻黄汤
+- id: herb.ma_huang
+  seq: 46
+  surface: 麻黄
+  corrected: 麻黄
+- id: herb.xing_ren
+  seq: 535
+  surface: 杏仁
+  corrected: 杏仁
+- id: herb.ren_shen
+  seq: 535
+  surface: 仁参
+  corrected: 人参
+- id: syndrome.liu_yin
+  seq: 323
+  surface: 留饮
+  corrected: 留饮
+- id: formula.ge_gen_tang
+  seq: 1070
+  surface: 葛根汤
+  corrected: 葛根汤
+- id: herb.fu_ling
+  seq: 1284
+  surface: 茯苓
+  corrected: 茯苓
+- id: herb.ban_xia
+  seq: 1284
+  surface: 半夏
+  corrected: 半夏
+kps:
+- type: concept_definition
+  s: 本篇为金匮痰饮咳嗽病第十二；饮即水饮，运动出汗可排饮。
+  seq: [1]
+  q: 痰饮咳嗽病
+  ents: [classic.jgy_ch_tan_yin_ke_sou_bing_mai_zheng_bing_zhi, syndrome.tan_yin]
+  conf: 0.95
+- type: concept_definition
+  s: 四饮：痰饮、悬饮、溢饮、支饮（讲中血饮/意义/知饮为音讹）。
+  seq: [7]
+  q: 痰饮
+  ents: [syndrome.tan_yin, syndrome.xuan_yin, syndrome.yi_yin, syndrome.zhi_yin]
+  conf: 0.9
+  asr: 血饮/意义/知饮≈悬溢支
+- type: diagnostic_rule
+  s: 素盛今瘦、肠间沥沥有声谓之痰饮。
+  seq: [39]
+  q: 痰饮
+  ents: [syndrome.tan_yin]
+  conf: 0.95
+- type: diagnostic_rule
+  s: 水流胁下、咳唾引痛为悬饮；勿畏用药。
+  seq: [43]
+  q: 悬疑
+  ents: [syndrome.xuan_yin]
+  conf: 0.9
+  asr: 悬疑=悬饮
+- type: diagnostic_rule
+  s: 水流四肢、当汗不汗、身体疼重为溢饮；轻证可用麻黄汤族。
+  seq: [44]
+  q: 意淫
+  ents: [syndrome.yi_yin, formula.ma_huang_tang]
+  conf: 0.9
+  asr: 意淫/意境=溢饮
+- type: clinical_tip
+  s: 小青龙汤证可见两肩胛间背冷如掌大。
+  seq: [107]
+  q: 小青龙汤
+  ents: [formula.xiao_qing_long_tang]
+  conf: 0.95
+- type: clinical_tip
+  s: 杏仁与麻黄等量，称「秤不离砣」；青龙类不易出偏差。
+  seq: [535]
+  q: 麻黄
+  ents: [herb.ma_huang, herb.xing_ren]
+  conf: 0.9
+- type: diagnostic_rule
+  s: 下利后心下仍坚满，示留饮未尽、水复回聚。
+  seq: [323]
+  q: 留饮
+  ents: [syndrome.liu_yin]
+  conf: 0.85
+- type: clinical_tip
+  s: 葛根汤、麻黄汤等发表，毛窍一开则饮可随汗外排。
+  seq: [1070]
+  q: 葛根汤
+  ents: [formula.ge_gen_tang, formula.ma_huang_tang]
+  conf: 0.9
+- type: clinical_tip
+  s: 感冒一剂即瘥者多无伏饮；屡发深重者内有饮，宜先排饮。
+  seq: [25]
+  q: 桂枝汤
+  ents: [formula.gui_zhi_tang]
+  conf: 0.85
