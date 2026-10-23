@@ -1,0 +1,127 @@
+video_id: jgy-034
+window: w00-01
+seg_from: 0
+seg_to: 173
+annotator: llm_read
+chapters:
+- key: c01
+  title: 肺炎肺热案·承气通腑
+  start_seq: 0
+  summary: 1998-12肺炎（肺热湿热，非癌）：身热、苔白厚、便秘、溲黄、渴喜冰、咳白沫痰、低热频醒。肺与大肠表里，治肺实证须通腑；大承气汤不可缺。两日大便畅行、眠复；余热未清勿强收表，可加麦冬西洋参润肺津。
+  clauses: []
+  topics:
+  - new.disease.fei_yan
+  - formula.da_cheng_qi_tang
+  - zangfu.da_chang
+- key: c02
+  title: 减承气便秘复·百合润肺
+  start_seq: 130
+  summary: 减大黄承气量则四日不便、咳白痰复；须回大肠经原方。加百合（百合病意：意欲食复不能食、如有神灵）强力润肺固肺。合桔梗甘草+大承气。约九至十日全复。承气通下后可汗出，因腑通肺热得泄。
+  clauses: []
+  topics:
+  - herb.bai_he
+  - syndrome.bai_he_bing
+  - formula.da_cheng_qi_tang
+entities:
+- id: new.disease.fei_yan
+  seq: 2
+  surface: 肺热湿热
+  corrected: 肺炎
+- id: zangfu.da_chang
+  seq: 32
+  surface: 大肠
+  corrected: 大肠
+- id: formula.cheng_qi_tang
+  seq: 46
+  surface: 承气汤
+  corrected: 承气汤
+- id: formula.da_cheng_qi_tang
+  seq: 48
+  surface: 大承气汤
+  corrected: 大承气汤
+- id: symptom.fa_re
+  seq: 56
+  surface: 发热
+  corrected: 发热
+- id: herb.gan_cao
+  seq: 98
+  surface: 甘草
+  corrected: 甘草
+- id: herb.mai_men_dong
+  seq: 126
+  surface: 脉冬
+  corrected: 麦门冬
+- id: new.herb.xi_yang_shen
+  seq: 126
+  surface: 西洋参
+  corrected: 西洋参
+- id: herb.bai_he
+  seq: 145
+  surface: 百合
+  corrected: 百合
+- id: syndrome.bai_he_bing
+  seq: 139
+  surface: 百合病
+  corrected: 百合病
+- id: formula.gan_cao_tang
+  seq: 151
+  surface: 甘草汤
+  corrected: 甘草汤
+- id: herb.da_huang
+  seq: 151
+  surface: 大黄
+  corrected: 大黄
+kps:
+- type: diagnostic_rule
+  s: 肺热湿热肺炎：身热急、苔白厚腻；与肺癌阴实不同，恢复可很快。
+  seq: [2]
+  q: 肺热湿热
+  ents: [new.disease.fei_yan]
+  conf: 0.9
+  asr: 肺因迟≈肺阴实之对举
+- type: treatment_principle
+  s: 肺与大肠表里；肺实证（便秘、溲黄）须问二便，治肺当通腑。
+  seq: [32]
+  q: 肺根大肠是表里
+  ents: [zangfu.da_chang, new.disease.fei_yan]
+  conf: 0.95
+- type: formula_indication
+  s: 肺炎/肺壅热便秘用大承气汤；不用承气则肺热难清。大小承气当辨。
+  seq: [48]
+  q: 大承气汤
+  ents: [formula.da_cheng_qi_tang, formula.cheng_qi_tang]
+  conf: 0.95
+- type: clinical_tip
+  s: 两日大便畅下、眠至天亮、纳复；余热有表虚汗时勿强收表，可加麦冬、西洋参润肺津。
+  seq: [119]
+  q: 大便跑出来
+  ents: [herb.mai_men_dong, new.herb.xi_yang_shen]
+  conf: 0.85
+  asr: 脉冬=麦冬
+- type: contraindication
+  s: 大黄/承气减量过早则便秘咳痰复作，须回原通腑方。
+  seq: [135]
+  q: 四天没有大便
+  ents: [formula.da_cheng_qi_tang, herb.da_huang]
+  conf: 0.9
+  asr: 大食经/大红黄=大承气/大黄
+- type: herb_property
+  s: 百合润肺力强，可固肺；百合病见意欲食复不能、如有神灵、诸药不和。
+  seq: [145]
+  q: 润费很强
+  ents: [herb.bai_he, syndrome.bai_he_bing]
+  conf: 0.9
+  asr: 润费=润肺；百合金=百合
+- type: formula_indication
+  s: 善后：百合+桔梗甘草汤意合大承气；约九至十日可全复。
+  seq: [151]
+  q: 大承鸡汤
+  ents: [formula.da_cheng_qi_tang, herb.bai_he, formula.gan_cao_tang]
+  conf: 0.85
+  asr: 伪金/煎饼甘草≈桔梗甘草；大承鸡=大承气
+- type: pathomechanism
+  s: 承气通下后可汗出：大便壅则肺气不降、肺热更炽；腑通则壅热外解。
+  seq: [162]
+  q: 大承气汤
+  ents: [formula.da_cheng_qi_tang]
+  conf: 0.9

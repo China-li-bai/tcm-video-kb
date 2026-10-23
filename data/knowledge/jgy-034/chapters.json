@@ -1,0 +1,62 @@
+[
+ {
+  "chapter_id": "jgy-034.c01",
+  "video_id": "jgy-034",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "肺炎肺热案·承气通腑",
+  "summary": "1998-12肺炎（肺热湿热，非癌）：身热、苔白厚、便秘、溲黄、渴喜冰、咳白沫痰、低热频醒。肺与大肠表里，治肺实证须通腑；大承气汤不可缺。两日大便畅行、眠复；余热未清勿强收表，可加麦冬西洋参润肺津。",
+  "start_s": 0.95,
+  "end_s": 716.025,
+  "seg_from": 0,
+  "seg_to": 129,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "new.disease.fei_yan",
+   "formula.da_cheng_qi_tang",
+   "zangfu.da_chang"
+  ],
+  "citation": {
+   "youtube_id": "txGqeT4AnxY",
+   "url": "https://www.youtube.com/watch?v=txGqeT4AnxY&t=0s",
+   "series": "jgy",
+   "episode": 34,
+   "title": "倪海廈《金匱要略》細分版： 33醫案（肺炎）",
+   "start_s": 0.95,
+   "end_s": 716.02
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-034.c02",
+  "video_id": "jgy-034",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "减承气便秘复·百合润肺",
+  "summary": "减大黄承气量则四日不便、咳白痰复；须回大肠经原方。加百合（百合病意：意欲食复不能食、如有神灵）强力润肺固肺。合桔梗甘草+大承气。约九至十日全复。承气通下后可汗出，因腑通肺热得泄。",
+  "start_s": 722.8,
+  "end_s": 1020.035,
+  "seg_from": 130,
+  "seg_to": 173,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.bai_he",
+   "syndrome.bai_he_bing",
+   "formula.da_cheng_qi_tang"
+  ],
+  "citation": {
+   "youtube_id": "txGqeT4AnxY",
+   "url": "https://www.youtube.com/watch?v=txGqeT4AnxY&t=722s",
+   "series": "jgy",
+   "episode": 34,
+   "title": "倪海廈《金匱要略》細分版： 33醫案（肺炎）",
+   "start_s": 722.8,
+   "end_s": 1020.03
+  },
+  "review_status": "llm_read"
+ }
+]
