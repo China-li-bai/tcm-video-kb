@@ -1,0 +1,91 @@
+[
+ {
+  "chapter_id": "jgy-037.c01",
+  "video_id": "jgy-037",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "红斑狼疮全身疹·刺痛与蜕皮药",
+  "summary": "2007-08未碰西医之SLE：全身红疹刺痛（非痒）、脱发重、唇周红干。饿则须即食，示阳停胃腑不能入脏。疏肝清肝用龙胆草；皮肤蜕皮用蝉蜕+蛇蜕（甲壳类偏关节、蛇蜕偏肌肉皮肤）。",
+  "start_s": 1.07,
+  "end_s": 722.955,
+  "seg_from": 0,
+  "seg_to": 133,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "new.disease.hong_ban_lang_chuang",
+   "herb.long_dan"
+  ],
+  "citation": {
+   "youtube_id": "m6Awl_Jxh-o",
+   "url": "https://www.youtube.com/watch?v=m6Awl_Jxh-o&t=1s",
+   "series": "jgy",
+   "episode": 37,
+   "title": "倪海廈《金匱要略》細分版： 36 醫案（紅斑性狼瘡）",
+   "start_s": 1.07,
+   "end_s": 722.96
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-037.c02",
+  "video_id": "jgy-037",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "四诊加减·当归人参与红斑退",
+  "summary": "一方加减：白芍酸收平肝；手脚冷加当归人参干姜桂枝等补血温阳；约十二日红斑大退、头痛减。四诊约七周近愈。同病异治：邻案处方可完全不同，须辨证。",
+  "start_s": 724.71,
+  "end_s": 1445.665,
+  "seg_from": 134,
+  "seg_to": 272,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.dang_gui",
+   "herb.ren_shen",
+   "new.disease.hong_ban_lang_chuang"
+  ],
+  "citation": {
+   "youtube_id": "m6Awl_Jxh-o",
+   "url": "https://www.youtube.com/watch?v=m6Awl_Jxh-o&t=724s",
+   "series": "jgy",
+   "episode": 37,
+   "title": "倪海廈《金匱要略》細分版： 36 醫案（紅斑性狼瘡）",
+   "start_s": 724.71,
+   "end_s": 1445.66
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-037.c03",
+  "video_id": "jgy-037",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "保阳总则·轻重用药",
+  "summary": "疏肝清肝时常兼顾肝胆肾之阳药（神农本草干姜细辛之类）。轻证肝胆肾药即可；手脚冰冷重症须乌头麻黄硫磺等固阳。能受阳药则有救；保阳气则重病不殆。",
+  "start_s": 1446.06,
+  "end_s": 1718.935,
+  "seg_from": 273,
+  "seg_to": 318,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "concept.yang_qi",
+   "herb.wu_tou",
+   "herb.ma_huang"
+  ],
+  "citation": {
+   "youtube_id": "m6Awl_Jxh-o",
+   "url": "https://www.youtube.com/watch?v=m6Awl_Jxh-o&t=1446s",
+   "series": "jgy",
+   "episode": 37,
+   "title": "倪海廈《金匱要略》細分版： 36 醫案（紅斑性狼瘡）",
+   "start_s": 1446.06,
+   "end_s": 1718.93
+  },
+  "review_status": "llm_read"
+ }
+]
