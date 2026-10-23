@@ -1,0 +1,152 @@
+[
+ {
+  "chapter_id": "bc-005.c01",
+  "video_id": "bc-005",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "松脂琥珀与茯苓",
+  "summary": "松脂（ASR松子）为松树裂缝油脂，苦温；久埋成琥珀/蜜蜡。松下茯苓可循山猪掘迹采。松花祛风。强调中药止痛祛风湿，非仅吗啡掩盖。",
+  "start_s": 0.41,
+  "end_s": 502.485,
+  "seg_from": 0,
+  "seg_to": 93,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.song_zhi",
+   "herb.fu_ling"
+  ],
+  "citation": {
+   "youtube_id": "zISIogXMuyE",
+   "url": "https://www.youtube.com/watch?v=zISIogXMuyE&t=0s",
+   "series": "bc",
+   "episode": 5,
+   "title": "倪海廈精解 神農本草經之4 完整重製版 全68篇",
+   "start_s": 0.41,
+   "end_s": 502.49
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-005.c02",
+  "video_id": "bc-005",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "槐枸杞侧柏酸枣五加",
+  "summary": "槐花寒凉，治痔疮肠风、清肝热。枸杞子与地骨皮同株异用。侧柏叶针形，润燥乌发常配当归。柏实黑白相间利小便兼补肾安神。酸枣仁养心安神。五加皮祛风湿强筋骨（勿与五加皮酒滥饮混）。",
+  "start_s": 503.27,
+  "end_s": 3587.061,
+  "seg_from": 94,
+  "seg_to": 639,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "new.herb.huai_hua",
+   "herb.gou_qi",
+   "new.herb.ce_bai_ye",
+   "herb.suan_zao_ren",
+   "herb.wu_jia"
+  ],
+  "citation": {
+   "youtube_id": "zISIogXMuyE",
+   "url": "https://www.youtube.com/watch?v=zISIogXMuyE&t=503s",
+   "series": "bc",
+   "episode": 5,
+   "title": "倪海廈精解 神農本草經之4 完整重製版 全68篇",
+   "start_s": 503.27,
+   "end_s": 3587.06
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-005.c03",
+  "video_id": "bc-005",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "麝香阿胶鹿角",
+  "summary": "麝香无孔不入，喷鼻或舌下化开吞药，不必同煎。鹿角纯阳，过近阴器反抑。阿胶补血力强，汤面起泡即离火，久煮力失。",
+  "start_s": 3587.216,
+  "end_s": 5790.37,
+  "seg_from": 640,
+  "seg_to": 1029,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.she_xiang",
+   "herb.e_jiao",
+   "new.herb.lu_jiao"
+  ],
+  "citation": {
+   "youtube_id": "zISIogXMuyE",
+   "url": "https://www.youtube.com/watch?v=zISIogXMuyE&t=3587s",
+   "series": "bc",
+   "episode": 5,
+   "title": "倪海廈精解 神農本草經之4 完整重製版 全68篇",
+   "start_s": 3587.22,
+   "end_s": 5790.37
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-005.c04",
+  "video_id": "bc-005",
+  "level": 1,
+  "parent_id": null,
+  "seq": 4,
+  "title": "莲芡胡麻与日常饮食",
+  "summary": "莲子心叶藕蓬皆入药；生嚼莲子易凉胀，宜熟用；强利尿时加红枣护津。芡实莲子汤可常食。胡麻即芝麻类。本草意在日常可食防病；排水必兼祛湿。",
+  "start_s": 5790.37,
+  "end_s": 10425.002,
+  "seg_from": 1030,
+  "seg_to": 1919,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "new.herb.lian_zi",
+   "new.herb.qian_shi",
+   "herb.hu_ma"
+  ],
+  "citation": {
+   "youtube_id": "zISIogXMuyE",
+   "url": "https://www.youtube.com/watch?v=zISIogXMuyE&t=5790s",
+   "series": "bc",
+   "episode": 5,
+   "title": "倪海廈精解 神農本草經之4 完整重製版 全68篇",
+   "start_s": 5790.37,
+   "end_s": 10425.0
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-005.c05",
+  "video_id": "bc-005",
+  "level": 1,
+  "parent_id": null,
+  "seq": 5,
+  "title": "雄黄禁忌与能收能放",
+  "summary": "雄黄解毒力强，治蜂蛇等；内服慎。有毒攻伐药须知收放，能放不能收非高手。硫磺等阳药南方医家多用。",
+  "start_s": 10427.157,
+  "end_s": 12777.996,
+  "seg_from": 1920,
+  "seg_to": 2340,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.xiong_huang",
+   "herb.shi_liu_huang"
+  ],
+  "citation": {
+   "youtube_id": "zISIogXMuyE",
+   "url": "https://www.youtube.com/watch?v=zISIogXMuyE&t=10427s",
+   "series": "bc",
+   "episode": 5,
+   "title": "倪海廈精解 神農本草經之4 完整重製版 全68篇",
+   "start_s": 10427.16,
+   "end_s": 12778.0
+  },
+  "review_status": "llm_read"
+ }
+]

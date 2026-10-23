@@ -1,4 +1,14 @@
 kp_id,video_id,series,episode,type,statement,entity_ids,chapter_id,chapter_title,evidence_quote,start_s,end_s,url,confidence,asr_note,title
+bc-005.kp0001,bc-005,bc,5,concept_definition,松脂为松树裂缝溢出之油脂（讲中称松子），苦温；久埋土中成琥珀或蜜蜡。,herb.song_zhi,bc-005.c01,松脂琥珀与茯苓,油脂,30.62,34.78,https://www.youtube.com/watch?v=zISIogXMuyE&t=30s,0.9,松子=松脂,倪海廈精解 神農本草經之4 完整重製版 全68篇
+bc-005.kp0002,bc-005,bc,5,clinical_tip,槐花性寒，善清肠风热，治痔疮。,new.herb.huai_hua,bc-005.c02,槐枸杞侧柏酸枣五加,槐花,536.41,541.545,https://www.youtube.com/watch?v=zISIogXMuyE&t=536s,0.9,,倪海廈精解 神農本草經之4 完整重製版 全68篇
+bc-005.kp0003,bc-005,bc,5,concept_definition,枸杞子为枸杞之籽，根皮为地骨皮，子根皆入药。,herb.gou_qi new.herb.di_gu_pi,bc-005.c02,槐枸杞侧柏酸枣五加,地骨皮,810.47,824.945,https://www.youtube.com/watch?v=zISIogXMuyE&t=810s,0.95,,倪海廈精解 神農本草經之4 完整重製版 全68篇
+bc-005.kp0004,bc-005,bc,5,clinical_tip,侧柏叶针形，润燥；发为血余，乌发生发常配当归。,new.herb.ce_bai_ye,bc-005.c02,槐枸杞侧柏酸枣五加,侧柏叶,1178.031,1191.051,https://www.youtube.com/watch?v=zISIogXMuyE&t=1178s,0.9,,倪海廈精解 神農本草經之4 完整重製版 全68篇
+bc-005.kp0005,bc-005,bc,5,clinical_tip,柏实皮黑白相间，利小便又补肾，口干舌燥、安魂养神可用。,herb.bai_shi,bc-005.c02,槐枸杞侧柏酸枣五加,利小便,1510.511,1521.386,https://www.youtube.com/watch?v=zISIogXMuyE&t=1510s,0.85,,倪海廈精解 神農本草經之4 完整重製版 全68篇
+bc-005.kp0006,bc-005,bc,5,clinical_tip,麝香无孔不入；用药时置舌上化开吞下即可，不必入煎。,herb.she_xiang,bc-005.c03,麝香阿胶鹿角,无孔,3651.766,3658.406,https://www.youtube.com/watch?v=zISIogXMuyE&t=3651s,0.9,无孔不顾=无孔不入,倪海廈精解 神農本草經之4 完整重製版 全68篇
+bc-005.kp0007,bc-005,bc,5,clinical_tip,阿胶补血力强，汤面起泡即冲离火，久煮则力失。,herb.e_jiao,bc-005.c03,麝香阿胶鹿角,阿胶,4819.993,4832.688,https://www.youtube.com/watch?v=zISIogXMuyE&t=4819s,0.95,,倪海廈精解 神農本草經之4 完整重製版 全68篇
+bc-005.kp0008,bc-005,bc,5,clinical_tip,芡实与莲子同熬汤可作日常食养。,new.herb.qian_shi new.herb.lian_zi,bc-005.c04,莲芡胡麻与日常饮食,芡实,6287.45,6293.83,https://www.youtube.com/watch?v=zISIogXMuyE&t=6287s,0.85,,倪海廈精解 神農本草經之4 完整重製版 全68篇
+bc-005.kp0009,bc-005,bc,5,clinical_tip,莲子生嚼易凉胀，宜熟食；利尿过强时方中加红枣护肠胃津液。,new.herb.lian_zi herb.da_zao,bc-005.c04,莲芡胡麻与日常饮食,莲子,9026.521,9033.911,https://www.youtube.com/watch?v=zISIogXMuyE&t=9026s,0.9,,倪海廈精解 神農本草經之4 完整重製版 全68篇
+bc-005.kp0010,bc-005,bc,5,treatment_principle,攻伐有毒药须能收能放；只放不收非高手。雄黄解毒力强，内服宜慎。,herb.xiong_huang,bc-005.c05,雄黄禁忌与能收能放,能收能放,12205.822,12218.767,https://www.youtube.com/watch?v=zISIogXMuyE&t=12205s,0.9,,倪海廈精解 神農本草經之4 完整重製版 全68篇
 bc-008.kp0001,bc-008,bc,8,treatment_principle,讲本经为给伤寒金匮立药性与剂量标准，药性不明则方剂剂量必错。,classic.shen_nong_ben_cao_jing concept.jing_fang,bc-008.c01,为何讲神农本草经,药性,112.14,123.465,https://www.youtube.com/watch?v=ZqdH7Gn8N7I&t=112s,0.95,,倪海廈精解 神農本草經之1 完整重製版 全68篇
 bc-008.kp0002,bc-008,bc,8,clinical_tip,清热石膏效优于犀角之类温病常用物；本经去芜存菁，不取纲目怪药。,herb.shi_gao,bc-008.c01,为何讲神农本草经,石膏,203.26,207.04,https://www.youtube.com/watch?v=ZqdH7Gn8N7I&t=203s,0.85,,倪海廈精解 神農本草經之1 完整重製版 全68篇
 bc-008.kp0003,bc-008,bc,8,clinical_tip,润喉肠胃药宜作散，直达病所；汤散膏丹各因病位与便用而选。,,bc-008.c01,为何讲神农本草经,做成药散,958.44,970.185,https://www.youtube.com/watch?v=ZqdH7Gn8N7I&t=958s,0.85,,倪海廈精解 神農本草經之1 完整重製版 全68篇
