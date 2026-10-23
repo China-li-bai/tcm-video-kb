@@ -1,0 +1,32 @@
+{
+ "schema": "knowledge/1",
+ "video_id": "jgy-036",
+ "youtube_id": "U_oMvj94FL0",
+ "windows": [
+  "w00-01"
+ ],
+ "annotations_sha256": "1e3e12d5399bafae",
+ "n_segments": 195,
+ "n_chapters": 2,
+ "n_sections": 0,
+ "n_entities": 18,
+ "entities_by_type": {
+  "formula": 2,
+  "herb": 8,
+  "symptom": 2,
+  "disease": 2,
+  "book": 1,
+  "zangfu": 2,
+  "concept": 1
+ },
+ "n_new_entities": 1,
+ "n_knowledge_points": 6,
+ "kp_by_type": {
+  "clinical_tip": 2,
+  "formula_indication": 1,
+  "diagnostic_rule": 1,
+  "treatment_principle": 1,
+  "contraindication": 1
+ },
+ "errors": []
+}

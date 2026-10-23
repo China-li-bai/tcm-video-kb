@@ -1,0 +1,61 @@
+[
+ {
+  "chapter_id": "jgy-036.c01",
+  "video_id": "jgy-036",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "肾癌案·尿血吐血与小陷胸",
+  "summary": "左肾癌切除后右肾再发瘤；尿血、咳吐血、腹胀倦怠、口渴。腹胀责脾。初以小陷胸汤开腹胀消纳差；有体力时攻、虚则先补再攻。尿血深黑、丑时吐血示肾瘤累肝。止血勿一味收涩，当活血化瘀兼温通防脉破。",
+  "start_s": 0.73,
+  "end_s": 723.875,
+  "seg_from": 0,
+  "seg_to": 130,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "new.disease.shen_ai",
+   "formula.xiao_xian_xiong_tang",
+   "symptom.tu_xie"
+  ],
+  "citation": {
+   "youtube_id": "U_oMvj94FL0",
+   "url": "https://www.youtube.com/watch?v=U_oMvj94FL0&t=0s",
+   "series": "jgy",
+   "episode": 36,
+   "title": "倪海廈《金匱要略》細分版： 35醫案（腎癌）",
+   "start_s": 0.73,
+   "end_s": 723.88
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-036.c02",
+  "video_id": "jgy-036",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "瘤不必强攻·七年随访",
+  "summary": "假设瘤择恶血自养、好血难入；不宜强攻如葛根汤类。能吃能喝能便、精神体力好即可长养观察；本案瘤稳定七年、生活质量佳。勿因西医必切/化疗而弃中医长养。",
+  "start_s": 725.99,
+  "end_s": 1088.555,
+  "seg_from": 131,
+  "seg_to": 194,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "new.disease.shen_ai",
+   "concept.jing_shen"
+  ],
+  "citation": {
+   "youtube_id": "U_oMvj94FL0",
+   "url": "https://www.youtube.com/watch?v=U_oMvj94FL0&t=725s",
+   "series": "jgy",
+   "episode": 36,
+   "title": "倪海廈《金匱要略》細分版： 35醫案（腎癌）",
+   "start_s": 725.99,
+   "end_s": 1088.56
+  },
+  "review_status": "llm_read"
+ }
+]

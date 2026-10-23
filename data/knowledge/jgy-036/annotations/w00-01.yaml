@@ -1,0 +1,99 @@
+video_id: jgy-036
+window: w00-01
+seg_from: 0
+seg_to: 194
+annotator: llm_read
+chapters:
+- key: c01
+  title: 肾癌案·尿血吐血与小陷胸
+  start_seq: 0
+  summary: 左肾癌切除后右肾再发瘤；尿血、咳吐血、腹胀倦怠、口渴。腹胀责脾。初以小陷胸汤开腹胀消纳差；有体力时攻、虚则先补再攻。尿血深黑、丑时吐血示肾瘤累肝。止血勿一味收涩，当活血化瘀兼温通防脉破。
+  clauses: []
+  topics:
+  - new.disease.shen_ai
+  - formula.xiao_xian_xiong_tang
+  - symptom.tu_xie
+- key: c02
+  title: 瘤不必强攻·七年随访
+  start_seq: 131
+  summary: 假设瘤择恶血自养、好血难入；不宜强攻如葛根汤类。能吃能喝能便、精神体力好即可长养观察；本案瘤稳定七年、生活质量佳。勿因西医必切/化疗而弃中医长养。
+  clauses: []
+  topics:
+  - new.disease.shen_ai
+  - concept.jing_shen
+entities:
+- id: new.disease.shen_ai
+  seq: 3
+  surface: 生癌
+  corrected: 肾癌
+- id: symptom.tu_xie
+  seq: 8
+  surface: 吐血
+  corrected: 吐血
+- id: formula.xiao_xian_xiong_tang
+  seq: 40
+  surface: 小陷胸汤
+  corrected: 小陷胸汤
+- id: herb.dang_gui
+  seq: 97
+  surface: 当归
+  corrected: 当归
+- id: herb.e_jiao
+  seq: 103
+  surface: 阿胶
+  corrected: 阿胶
+- id: formula.ge_gen_tang
+  seq: 146
+  surface: 葛根汤
+  corrected: 葛根汤
+- id: concept.jing_shen
+  seq: 150
+  surface: 精神
+  corrected: 精神
+- id: herb.sheng_jiang
+  seq: 36
+  surface: 生姜
+  corrected: 生姜
+- id: herb.bai_zhu
+  seq: 48
+  surface: 白术
+  corrected: 白术
+kps:
+- type: clinical_tip
+  s: 左肾癌切除后右肾可再发；见尿血、咳吐血、腹胀倦怠。腹胀任何病先想到脾。
+  seq: [8]
+  q: 咳嗽吐血
+  ents: [new.disease.shen_ai, symptom.tu_xie]
+  conf: 0.9
+- type: formula_indication
+  s: 肾癌腹胀纳差可用小陷胸汤开结消胀；有体力时攻、虚则先补再攻，勿连打耗正。
+  seq: [40]
+  q: 小陷胸汤
+  ents: [formula.xiao_xian_xiong_tang, new.disease.shen_ai]
+  conf: 0.9
+  asr: 小陷红汤=小陷胸
+- type: diagnostic_rule
+  s: 尿血色深黑、丑时（约2:45–3点）吐血，示肾瘤累及肝脏气血注时。
+  seq: [75]
+  q: 吐血
+  ents: [symptom.tu_xie, new.disease.shen_ai]
+  conf: 0.85
+- type: treatment_principle
+  s: 吐血勿一味阿胶等收涩止血；当活血化瘀兼增温，因寒凝则脉易破而再出血。
+  seq: [103]
+  q: 阿胶
+  ents: [herb.e_jiao, symptom.tu_xie]
+  conf: 0.9
+- type: contraindication
+  s: 稳定之肾瘤不宜强攻（如葛根汤类猛剂）；能吃能喝能便、精神体力好即可长养观察。
+  seq: [146]
+  q: 葛根汤
+  ents: [formula.ge_gen_tang, new.disease.shen_ai]
+  conf: 0.85
+  asr: 不能供他=不能攻他
+- type: clinical_tip
+  s: 本案观察约七年瘤稳定、生活质量佳；中药后精神体力好，偶咳感冒即可。
+  seq: [150]
+  q: 精神体力
+  ents: [concept.jing_shen, new.disease.shen_ai]
+  conf: 0.9
