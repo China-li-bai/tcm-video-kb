@@ -1,0 +1,135 @@
+video_id: jgy-020
+window: w00-01
+seg_from: 0
+seg_to: 220
+annotator: llm_read
+chapters:
+- key: c01
+  title: 趺蹶刺承山·臂肿藜芦甘草
+  start_seq: 0
+  summary: 金匮第十九篇趺蹶手指臂肿转筋阴狐疝蚘虫。趺蹶：只能前行不能后退、刹不住，刺承山（太阳经）针抵骨。手指臂肿动振摇、专心则止为痰饮在经络，藜芦甘草汤（藜芦倍甘草）涤络中痰；与帕金森鉴别：令停则抖止为本方证。惧死积久生痰入络。
+  clauses: []
+  topics:
+  - herb.li_lu
+  - formula.gan_cao_tang
+  - acupoint.bl57
+- key: c02
+  title: 转筋·阴狐疝蜘蛛散当归四逆
+  start_seq: 82
+  summary: 转筋（抽筋）急者甘缓之，蔗糖水可缓；转筋入腹者危。阴狐疝（睾丸大小交替上下）经典蜘蛛散（东南隅短脚大腹蛛炙灰+桂）；临床可以当归四逆加减或防己黄芪（水疝）代之。
+  clauses: []
+  topics:
+  - syndrome.zhuan_jin
+  - formula.zhi_zhu_san
+  - formula.dang_gui_si_ni_tang
+- key: c03
+  title: 蚘虫甘草粉蜜·乌梅丸
+  start_seq: 157
+  summary: 吐涎心痛（胃脘）发作有虫、药不止，甘草粉蜜汤为经方最强驱虫，强于乌梅丸：先煮甘草去渣入白蜜与粉，使虫不能分拣；乌梅丸使虫逃出多仍活，粉蜜可使虫死随便下。
+  clauses: []
+  topics:
+  - formula.wu_mei_wan
+  - formula.gan_cao_tang
+entities:
+- id: acupoint.bl57
+  seq: 10
+  surface: 承山
+  corrected: 承山
+- id: formula.gan_cao_tang
+  seq: 28
+  surface: 甘草汤
+  corrected: 甘草汤
+- id: herb.li_lu
+  seq: 47
+  surface: 藜芦
+  corrected: 藜芦
+- id: herb.gan_cao
+  seq: 46
+  surface: 甘草
+  corrected: 甘草
+- id: syndrome.tan_yin
+  seq: 38
+  surface: 痰饮
+  corrected: 痰饮
+- id: syndrome.zhuan_jin
+  seq: 82
+  surface: 转经
+  corrected: 转筋
+- id: syndrome.yin_hu_shan
+  seq: 118
+  surface: 音湖陕
+  corrected: 阴狐疝
+- id: formula.zhi_zhu_san
+  seq: 119
+  surface: 蜘蛛散
+  corrected: 蜘蛛散
+- id: formula.dang_gui_si_ni_tang
+  seq: 134
+  surface: 当归四逆汤
+  corrected: 当归四逆汤
+- id: herb.dang_gui
+  seq: 132
+  surface: 当归
+  corrected: 当归
+- id: formula.wu_mei_wan
+  seq: 158
+  surface: 乌梅丸
+  corrected: 乌梅丸
+- id: herb.gui_zhi
+  seq: 129
+  surface: 桂
+  corrected: 桂枝
+- id: formula.fang_ji_huang_qi_tang
+  seq: 130
+  surface: 黄芪
+  corrected: 防己黄芪汤
+- id: new.formula.li_lu_gan_cao_tang
+  seq: 34
+  surface: 梨芦甘草汤
+  corrected: 藜芦甘草汤
+- id: disease.xin_tong
+  seq: 157
+  surface: 心痛
+  corrected: 心痛
+kps:
+- type: diagnostic_rule
+  s: 趺蹶：只能前行不能后退、停不住，属太阳经伤；刺承山须针抵胫骨方效。
+  seq: [10]
+  q: 承山
+  ents: [acupoint.bl57]
+  conf: 0.9
+  asr: 夫/刺/串=趺蹶相关
+- type: formula_indication
+  s: 手指臂肿动振摇、令停则止，为经络痰饮，藜芦甘草汤（藜芦：甘草=2:1）专涤络中痰；令停仍抖则非本方。
+  seq: [28]
+  q: 甘草汤
+  ents: [new.formula.li_lu_gan_cao_tang, herb.li_lu, herb.gan_cao, syndrome.tan_yin]
+  conf: 0.95
+  asr: 梨芦/例芦=藜芦；避震=臂肿振
+- type: clinical_tip
+  s: 转筋急者甘缓之：蔗糖水缓筋急；转筋入腹者危。香蕉木瓜等甘缓亦可辅。
+  seq: [82]
+  q: 转经
+  ents: [syndrome.zhuan_jin]
+  conf: 0.85
+  asr: 转经=转筋
+- type: formula_indication
+  s: 阴狐疝用蜘蛛散（东南隅短脚大腹蛛炙灰配桂）；畏蜘蛛可用当归四逆加减；水疝亮如水泡用防己黄芪汤。
+  seq: [119]
+  q: 蜘蛛散
+  ents: [formula.zhi_zhu_san, formula.dang_gui_si_ni_tang, syndrome.yin_hu_shan, formula.fang_ji_huang_qi_tang]
+  conf: 0.9
+  asr: 音湖陕=阴狐疝；房己黄芪=防己黄芪
+- type: formula_indication
+  s: 吐涎心痛（胃痛）发作有蛔、药不止，甘草粉蜜汤为经方最强驱虫，力在乌梅丸之上。
+  seq: [158]
+  q: 乌梅丸
+  ents: [formula.wu_mei_wan, formula.gan_cao_tang, disease.xin_tong]
+  conf: 0.95
+- type: formula_composition
+  s: 甘草粉蜜：先煮甘草去渣，入白蜜与粉同煮如薄粥，使虫不能分拣蜜粉，多可杀虫随便下；乌梅丸所下之虫常仍活。
+  seq: [157]
+  q: 蜜
+  ents: [formula.gan_cao_tang, herb.gan_cao, formula.wu_mei_wan]
+  conf: 0.9
+  asr: 甘草汤蜜汤=甘草粉蜜汤

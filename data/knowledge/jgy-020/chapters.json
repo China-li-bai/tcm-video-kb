@@ -1,0 +1,91 @@
+[
+ {
+  "chapter_id": "jgy-020.c01",
+  "video_id": "jgy-020",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "趺蹶刺承山·臂肿藜芦甘草",
+  "summary": "金匮第十九篇趺蹶手指臂肿转筋阴狐疝蚘虫。趺蹶：只能前行不能后退、刹不住，刺承山（太阳经）针抵骨。手指臂肿动振摇、专心则止为痰饮在经络，藜芦甘草汤（藜芦倍甘草）涤络中痰；与帕金森鉴别：令停则抖止为本方证。惧死积久生痰入络。",
+  "start_s": 12.17,
+  "end_s": 455.21,
+  "seg_from": 0,
+  "seg_to": 81,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.li_lu",
+   "formula.gan_cao_tang",
+   "acupoint.bl57"
+  ],
+  "citation": {
+   "youtube_id": "jMzdni2EB1Q",
+   "url": "https://www.youtube.com/watch?v=jMzdni2EB1Q&t=12s",
+   "series": "jgy",
+   "episode": 20,
+   "title": "倪海廈《金匱要略》細分版： 19趺蹶手指臂腫轉筋狐疝蚘蟲病",
+   "start_s": 12.17,
+   "end_s": 455.21
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-020.c02",
+  "video_id": "jgy-020",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "转筋·阴狐疝蜘蛛散当归四逆",
+  "summary": "转筋（抽筋）急者甘缓之，蔗糖水可缓；转筋入腹者危。阴狐疝（睾丸大小交替上下）经典蜘蛛散（东南隅短脚大腹蛛炙灰+桂）；临床可以当归四逆加减或防己黄芪（水疝）代之。",
+  "start_s": 456.81,
+  "end_s": 864.52,
+  "seg_from": 82,
+  "seg_to": 156,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "syndrome.zhuan_jin",
+   "formula.zhi_zhu_san",
+   "formula.dang_gui_si_ni_tang"
+  ],
+  "citation": {
+   "youtube_id": "jMzdni2EB1Q",
+   "url": "https://www.youtube.com/watch?v=jMzdni2EB1Q&t=456s",
+   "series": "jgy",
+   "episode": 20,
+   "title": "倪海廈《金匱要略》細分版： 19趺蹶手指臂腫轉筋狐疝蚘蟲病",
+   "start_s": 456.81,
+   "end_s": 864.52
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-020.c03",
+  "video_id": "jgy-020",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "蚘虫甘草粉蜜·乌梅丸",
+  "summary": "吐涎心痛（胃脘）发作有虫、药不止，甘草粉蜜汤为经方最强驱虫，强于乌梅丸：先煮甘草去渣入白蜜与粉，使虫不能分拣；乌梅丸使虫逃出多仍活，粉蜜可使虫死随便下。",
+  "start_s": 864.62,
+  "end_s": 1228.695,
+  "seg_from": 157,
+  "seg_to": 220,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "formula.wu_mei_wan",
+   "formula.gan_cao_tang"
+  ],
+  "citation": {
+   "youtube_id": "jMzdni2EB1Q",
+   "url": "https://www.youtube.com/watch?v=jMzdni2EB1Q&t=864s",
+   "series": "jgy",
+   "episode": 20,
+   "title": "倪海廈《金匱要略》細分版： 19趺蹶手指臂腫轉筋狐疝蚘蟲病",
+   "start_s": 864.62,
+   "end_s": 1228.69
+  },
+  "review_status": "llm_read"
+ }
+]
