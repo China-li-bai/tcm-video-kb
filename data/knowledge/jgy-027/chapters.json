@@ -1,0 +1,120 @@
+[
+ {
+  "chapter_id": "jgy-027.c01",
+  "video_id": "jgy-027",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "胆出阳·参同契导论",
+  "summary": "医案前导：参同契与内经；胆为中正之官、出阳之所，子时阳生与胆相关；胆囊切除后胆汁直自肝出、无沉淀调节。",
+  "start_s": 12.3,
+  "end_s": 731.8,
+  "seg_from": 0,
+  "seg_to": 121,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "zangfu.dan"
+  ],
+  "citation": {
+   "youtube_id": "MkCQVjCQma8",
+   "url": "https://www.youtube.com/watch?v=MkCQVjCQma8&t=12s",
+   "series": "jgy",
+   "episode": 27,
+   "title": "倪海廈《金匱要略》細分版： 26 醫案（肝硬化、糖尿病、膽結石、腎結石、食物中毒、腹水和《參同契》）",
+   "start_s": 12.3,
+   "end_s": 731.8
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-027.c02",
+  "video_id": "jgy-027",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "肝硬化吐血案首诊·温阳利水",
+  "summary": "2006-02肝硬化门脉食道出血吐黑血、糖尿病、腹胀水肿、脾肿大、肾/肝结石史、已切胆。治以疏肝活血+温阳利水（桂枝汤意合术苓泽泻/真武+五苓），吐血后兼补血；忌寒凉。水消后腹胀仍著。",
+  "start_s": 731.8,
+  "end_s": 2101.223,
+  "seg_from": 122,
+  "seg_to": 377,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "formula.wu_ling_san",
+   "formula.zhen_wu_tang",
+   "formula.gui_zhi_tang",
+   "symptom.tu_xie"
+  ],
+  "citation": {
+   "youtube_id": "MkCQVjCQma8",
+   "url": "https://www.youtube.com/watch?v=MkCQVjCQma8&t=731s",
+   "series": "jgy",
+   "episode": 27,
+   "title": "倪海廈《金匱要略》細分版： 26 醫案（肝硬化、糖尿病、膽結石、腎結石、食物中毒、腹水和《參同契》）",
+   "start_s": 731.8,
+   "end_s": 2101.22
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-027.c03",
+  "video_id": "jgy-027",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "腹水消·桂枝去芍与附子",
+  "summary": "附子汤等强温后觉气机欲转不能；改桂枝汤去芍药加味方。腹水消、体力复，遗肾区痛/镜下血尿属结石压痛。强调能吃能喝能睡即可长养，勿被西医预后吓退。",
+  "start_s": 2104.988,
+  "end_s": 2529.653,
+  "seg_from": 378,
+  "seg_to": 444,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "formula.gui_zhi_tang",
+   "formula.fu_zi_tang"
+  ],
+  "citation": {
+   "youtube_id": "MkCQVjCQma8",
+   "url": "https://www.youtube.com/watch?v=MkCQVjCQma8&t=2104s",
+   "series": "jgy",
+   "episode": 27,
+   "title": "倪海廈《金匱要略》細分版： 26 醫案（肝硬化、糖尿病、膽結石、腎結石、食物中毒、腹水和《參同契》）",
+   "start_s": 2104.99,
+   "end_s": 2529.65
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-027.c04",
+  "video_id": "jgy-027",
+  "level": 1,
+  "parent_id": null,
+  "seq": 4,
+  "title": "二次腹水·大柴胡与忌甘草蓄水",
+  "summary": "2006-08再发腹水伴食物中毒样、手脚冷汗；大柴胡汤通腑泄肝热（无胆者尤须大黄芒硝类通大肠代胆道减压），兼补血；腹水一般不用甘草（蓄水）。后以苍术厚朴陈皮猪苓等粉剂+针灸+鲤鱼汤助脾代胆消化、利下半身水肿。",
+  "start_s": 2542.698,
+  "end_s": 3479.623,
+  "seg_from": 445,
+  "seg_to": 602,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "formula.da_chai_hu_tang",
+   "formula.zhu_ling_tang",
+   "herb.gan_cao"
+  ],
+  "citation": {
+   "youtube_id": "MkCQVjCQma8",
+   "url": "https://www.youtube.com/watch?v=MkCQVjCQma8&t=2542s",
+   "series": "jgy",
+   "episode": 27,
+   "title": "倪海廈《金匱要略》細分版： 26 醫案（肝硬化、糖尿病、膽結石、腎結石、食物中毒、腹水和《參同契》）",
+   "start_s": 2542.7,
+   "end_s": 3479.62
+  },
+  "review_status": "llm_read"
+ }
+]

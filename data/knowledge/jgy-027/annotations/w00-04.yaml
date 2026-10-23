@@ -1,0 +1,151 @@
+video_id: jgy-027
+window: w00-04
+seg_from: 0
+seg_to: 602
+annotator: llm_read
+chapters:
+- key: c01
+  title: 胆出阳·参同契导论
+  start_seq: 0
+  summary: 医案前导：参同契与内经；胆为中正之官、出阳之所，子时阳生与胆相关；胆囊切除后胆汁直自肝出、无沉淀调节。
+  clauses: []
+  topics:
+  - zangfu.dan
+- key: c02
+  title: 肝硬化吐血案首诊·温阳利水
+  start_seq: 122
+  summary: 2006-02肝硬化门脉食道出血吐黑血、糖尿病、腹胀水肿、脾肿大、肾/肝结石史、已切胆。治以疏肝活血+温阳利水（桂枝汤意合术苓泽泻/真武+五苓），吐血后兼补血；忌寒凉。水消后腹胀仍著。
+  clauses: []
+  topics:
+  - formula.wu_ling_san
+  - formula.zhen_wu_tang
+  - formula.gui_zhi_tang
+  - symptom.tu_xie
+- key: c03
+  title: 腹水消·桂枝去芍与附子
+  start_seq: 378
+  summary: 附子汤等强温后觉气机欲转不能；改桂枝汤去芍药加味方。腹水消、体力复，遗肾区痛/镜下血尿属结石压痛。强调能吃能喝能睡即可长养，勿被西医预后吓退。
+  clauses: []
+  topics:
+  - formula.gui_zhi_tang
+  - formula.fu_zi_tang
+- key: c04
+  title: 二次腹水·大柴胡与忌甘草蓄水
+  start_seq: 445
+  summary: 2006-08再发腹水伴食物中毒样、手脚冷汗；大柴胡汤通腑泄肝热（无胆者尤须大黄芒硝类通大肠代胆道减压），兼补血；腹水一般不用甘草（蓄水）。后以苍术厚朴陈皮猪苓等粉剂+针灸+鲤鱼汤助脾代胆消化、利下半身水肿。
+  clauses: []
+  topics:
+  - formula.da_chai_hu_tang
+  - formula.zhu_ling_tang
+  - herb.gan_cao
+entities:
+- id: symptom.tu_xie
+  seq: 123
+  surface: 吐血
+  corrected: 吐血
+- id: formula.gui_zhi_tang
+  seq: 209
+  surface: 桂枝汤
+  corrected: 桂枝汤
+- id: formula.wu_ling_san
+  seq: 229
+  surface: 五苓散
+  corrected: 五苓散
+- id: formula.zhen_wu_tang
+  seq: 232
+  surface: 蒸午汤
+  corrected: 真武汤
+- id: formula.fu_zi_tang
+  seq: 388
+  surface: 附子汤
+  corrected: 附子汤
+- id: formula.da_chai_hu_tang
+  seq: 477
+  surface: 大柴胡汤
+  corrected: 大柴胡汤
+- id: herb.da_huang
+  seq: 475
+  surface: 大黄
+  corrected: 大黄
+- id: herb.gan_cao
+  seq: 490
+  surface: 甘草
+  corrected: 甘草
+- id: formula.zhu_ling_tang
+  seq: 535
+  surface: 猪苓汤
+  corrected: 猪苓汤
+- id: herb.wu_tou
+  seq: 318
+  surface: 乌头
+  corrected: 乌头
+- id: acupoint.ki1
+  seq: 565
+  surface: 涌泉
+  corrected: 涌泉
+kps:
+- type: concept_definition
+  s: 胆为出阳之所、中正之官；子时阳生与胆相关，重病夜半胃气来复欲食，示胆阳回复。
+  seq: [74]
+  q: 胆是出阳
+  ents: []
+  conf: 0.85
+  asr: 出羊/胆子=出阳/胆
+- type: diagnostic_rule
+  s: 肝硬化门脉食道出血：吐黑血、大便黑；可兼糖尿、腹水、脾肿大及结石史。
+  seq: [123]
+  q: 吐血
+  ents: [symptom.tu_xie]
+  conf: 0.95
+- type: treatment_principle
+  s: 肝病吐血腹水属寒瘀水停时，温阳利水疏肝活血为正治；吐血后兼补血，忌一味寒凉止血。
+  seq: [209]
+  q: 桂枝汤
+  ents: [formula.gui_zhi_tang, formula.wu_ling_san]
+  conf: 0.9
+- type: formula_indication
+  s: 温阳利水常用五苓散、真武汤（附子）合白芍等；胃纳尚可可不加姜。
+  seq: [229]
+  q: 五苓散
+  ents: [formula.wu_ling_san, formula.zhen_wu_tang]
+  conf: 0.9
+  asr: 蒸午/蒸正=真武；泡沫子=附子
+- type: formula_indication
+  s: 强附子汤后气欲转运不能，改桂枝汤去芍药加味方以助表阳运转。
+  seq: [390]
+  q: 桂枝汤
+  ents: [formula.gui_zhi_tang, formula.fu_zi_tang]
+  conf: 0.85
+  asr: 去扫扫家=去芍药加
+- type: clinical_tip
+  s: 腹水消后肾区痛、小便微血可见而不显，多为结石压痛或翻身水压，非必再大出血。
+  seq: [414]
+  q: 肾结石
+  ents: []
+  conf: 0.85
+- type: formula_indication
+  s: 肝硬化再发腹水热结，用大柴胡汤；无胆囊者尤须大黄芒硝通大肠以泄肝热减压。
+  seq: [477]
+  q: 大柴胡汤
+  ents: [formula.da_chai_hu_tang, herb.da_huang]
+  conf: 0.95
+  asr: 大柴无=大柴胡；芒跳=芒硝
+- type: contraindication
+  s: 治腹水一般不用甘草，因甘草蓄水积湿；有表证需炙草时另当别论。
+  seq: [490]
+  q: 甘草会蓄水
+  ents: [herb.gan_cao]
+  conf: 0.95
+- type: clinical_tip
+  s: 无胆者可用味觉/脾胃方暂代胆汁助消化；鲤鱼汤（神农本草）合肝胆除湿药助利水消肿。
+  seq: [582]
+  q: 没有胆
+  ents: [formula.zhu_ling_tang]
+  conf: 0.85
+  asr: 味平汤=未明示方名；鲤鱼排水
+- type: clinical_tip
+  s: 汤剂利腹水效佳时，下半身踝肿可另需补肾方；粉剂苍术厚朴陈皮猪苓等行气利水可作辅。
+  seq: [557]
+  q: 水肿
+  ents: [symptom.shui_zhong, formula.zhu_ling_tang]
+  conf: 0.85
