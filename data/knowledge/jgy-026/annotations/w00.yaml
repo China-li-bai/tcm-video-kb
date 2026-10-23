@@ -1,0 +1,129 @@
+video_id: jgy-026
+window: w00
+seg_from: 0
+seg_to: 137
+annotator: llm_read
+chapters:
+- key: c01
+  title: 渐冻人案·寒湿病机与问诊
+  start_seq: 0
+  summary: 医案ALS（卢伽雷氏/渐冻人）：右下肢无力、上肢无力、抽筋、颈背痛、极度倦怠；眠差、胃口尚可、由喜冷饮改喜温饮、双脚冰冷、全身无热感；女患经准。断为里寒湿盛。
+  clauses: []
+  topics:
+  - syndrome.han_shi
+  - herb.fu_zi
+- key: c02
+  title: 茯苓四逆加味·生附干姜
+  start_seq: 32
+  summary: 生附子三钱、干姜、炙甘草、茯苓五钱、白术三钱、牛膝——四逆汤加茯苓（茯苓四逆）祛寒湿从小便；牛膝止抽筋；桂芍同用以阴阳并补；另补骨脂当归细辛泽泻壮肾活血利水。强调生附≠炮附，四逆须生附配干姜。
+  clauses: []
+  topics:
+  - formula.si_ni_tang
+  - formula.fu_ling_si_ni_tang
+  - herb.fu_zi
+  - herb.niu_xi
+- key: c03
+  title: 药后反应·停药标准
+  start_seq: 77
+  summary: 寒解则溲多；一周抽筋减、手脚转温、喜冷饮复、溲频。误将九碗熬成两碗分服反使首剂力足，当晚深睡（心阳得温）。停药目标：头面身凉而手足温。未用辛热则难挽渐冻进展。
+  clauses: []
+  topics:
+  - formula.si_ni_tang
+  - herb.fu_zi
+entities:
+- id: syndrome.han_shi
+  seq: 40
+  surface: 寒湿
+  corrected: 寒湿
+- id: herb.fu_zi
+  seq: 34
+  surface: 生父子
+  corrected: 附子
+- id: herb.gan_jiang
+  seq: 35
+  surface: 干将
+  corrected: 干姜
+- id: herb.gan_cao
+  seq: 36
+  surface: 炙甘草
+  corrected: 甘草
+- id: herb.fu_ling
+  seq: 37
+  surface: 茯苓
+  corrected: 茯苓
+- id: herb.bai_zhu
+  seq: 39
+  surface: 白族
+  corrected: 白术
+- id: herb.niu_xi
+  seq: 43
+  surface: 牛膝
+  corrected: 牛膝
+- id: formula.si_ni_tang
+  seq: 40
+  surface: 四逆汤
+  corrected: 四逆汤
+- id: formula.fu_ling_si_ni_tang
+  seq: 40
+  surface: 茯苓四逆汤
+  corrected: 茯苓四逆汤
+- id: herb.shao_yao
+  seq: 45
+  surface: 白芍
+  corrected: 白芍
+- id: herb.gui_zhi
+  seq: 46
+  surface: 桂枝
+  corrected: 桂枝
+kps:
+- type: diagnostic_rule
+  s: 渐冻人（ALS）案见手脚冰冷、全身无热、喜温饮、极度倦怠，属里寒湿盛，非纯虚劳。
+  seq: [22]
+  q: 双脚是冰冷的
+  ents: [syndrome.han_shi, herb.fu_zi]
+  conf: 0.9
+  asr: AOS/lugarerk=ALS卢伽雷
+- type: formula_indication
+  s: 寒湿盛用茯苓四逆：四逆汤（生附干姜炙草）加茯苓白术，利小便祛寒湿；茯苓量宜重于白术以达下焦。
+  seq: [40]
+  q: 茯苓四逆汤
+  ents: [formula.fu_ling_si_ni_tang, formula.si_ni_tang, herb.fu_zi, herb.fu_ling, herb.bai_zhu]
+  conf: 0.95
+  asr: 生父子=生附子；干将=干姜；白族=白术
+- type: clinical_tip
+  s: 下肢无力抽筋加牛膝；欲阴阳并补则桂枝与白芍同用（单补阳用桂枝，补阴侧重白芍）。
+  seq: [43]
+  q: 牛膝
+  ents: [herb.niu_xi, herb.shao_yao, herb.gui_zhi]
+  conf: 0.9
+- type: contraindication
+  s: 四逆须用生附配干姜；不可用炮附重剂冒充生附——炮附与生附主治不同（如桂附八味用炮附）。
+  seq: [68]
+  q: 泡附子
+  ents: [herb.fu_zi, formula.si_ni_tang]
+  conf: 0.9
+  asr: 泡芙子/参附子=炮附/生附之辨
+- type: clinical_tip
+  s: 寒解征象为小便增多（如冰融）；药后手脚转温、抽筋减为向愈。
+  seq: [77]
+  q: 小便多
+  ents: [formula.fu_ling_si_ni_tang]
+  conf: 0.9
+- type: clinical_tip
+  s: 九碗水久煎成三碗：解毒、药力透出，且合经方剂量习惯；首剂得力可当晚深睡。
+  seq: [88]
+  q: 九碗水煮成三碗
+  ents: [herb.fu_zi]
+  conf: 0.85
+- type: treatment_principle
+  s: 停药时机：头面身体觉凉而手脚温热——里寒祛尽、阳归四末。
+  seq: [116]
+  q: 手脚是温热的
+  ents: [formula.si_ni_tang]
+  conf: 0.9
+- type: prognosis
+  s: ALS晚期可至轮椅、吞咽不能；辨为寒证而用生附辛热尚有转机，不知用里寒药则难阻进展。
+  seq: [113]
+  q: 他是寒症
+  ents: [herb.fu_zi, syndrome.han_shi]
+  conf: 0.85

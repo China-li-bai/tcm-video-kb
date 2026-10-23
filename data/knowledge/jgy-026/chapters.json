@@ -1,0 +1,91 @@
+[
+ {
+  "chapter_id": "jgy-026.c01",
+  "video_id": "jgy-026",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "渐冻人案·寒湿病机与问诊",
+  "summary": "医案ALS（卢伽雷氏/渐冻人）：右下肢无力、上肢无力、抽筋、颈背痛、极度倦怠；眠差、胃口尚可、由喜冷饮改喜温饮、双脚冰冷、全身无热感；女患经准。断为里寒湿盛。",
+  "start_s": 0.03,
+  "end_s": 158.775,
+  "seg_from": 0,
+  "seg_to": 31,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "syndrome.han_shi",
+   "herb.fu_zi"
+  ],
+  "citation": {
+   "youtube_id": "y4i28HnGB1s",
+   "url": "https://www.youtube.com/watch?v=y4i28HnGB1s&t=0s",
+   "series": "jgy",
+   "episode": 26,
+   "title": "倪海廈《金匱要略》細分版： 25 醫案（漸凍人）",
+   "start_s": 0.03,
+   "end_s": 158.78
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-026.c02",
+  "video_id": "jgy-026",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "茯苓四逆加味·生附干姜",
+  "summary": "生附子三钱、干姜、炙甘草、茯苓五钱、白术三钱、牛膝——四逆汤加茯苓（茯苓四逆）祛寒湿从小便；牛膝止抽筋；桂芍同用以阴阳并补；另补骨脂当归细辛泽泻壮肾活血利水。强调生附≠炮附，四逆须生附配干姜。",
+  "start_s": 163.48,
+  "end_s": 417.55,
+  "seg_from": 32,
+  "seg_to": 76,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "formula.si_ni_tang",
+   "formula.fu_ling_si_ni_tang",
+   "herb.fu_zi",
+   "herb.niu_xi"
+  ],
+  "citation": {
+   "youtube_id": "y4i28HnGB1s",
+   "url": "https://www.youtube.com/watch?v=y4i28HnGB1s&t=163s",
+   "series": "jgy",
+   "episode": 26,
+   "title": "倪海廈《金匱要略》細分版： 25 醫案（漸凍人）",
+   "start_s": 163.48,
+   "end_s": 417.55
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-026.c03",
+  "video_id": "jgy-026",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "药后反应·停药标准",
+  "summary": "寒解则溲多；一周抽筋减、手脚转温、喜冷饮复、溲频。误将九碗熬成两碗分服反使首剂力足，当晚深睡（心阳得温）。停药目标：头面身凉而手足温。未用辛热则难挽渐冻进展。",
+  "start_s": 417.55,
+  "end_s": 702.88,
+  "seg_from": 77,
+  "seg_to": 137,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "formula.si_ni_tang",
+   "herb.fu_zi"
+  ],
+  "citation": {
+   "youtube_id": "y4i28HnGB1s",
+   "url": "https://www.youtube.com/watch?v=y4i28HnGB1s&t=417s",
+   "series": "jgy",
+   "episode": 26,
+   "title": "倪海廈《金匱要略》細分版： 25 醫案（漸凍人）",
+   "start_s": 417.55,
+   "end_s": 702.88
+  },
+  "review_status": "llm_read"
+ }
+]
