@@ -1,0 +1,183 @@
+[
+ {
+  "chapter_id": "bc-008.c01",
+  "video_id": "bc-008",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "为何讲神农本草经",
+  "summary": "本经非一人一时之作；张仲景为经方发扬者非创立者，所据汤液本草已佚，故以神农本草经定药性标准，方能用伤寒金匮剂量。删怪异纲目条目；石膏清热优于犀角之类。须识药性药味，汤散膏丹各有所宜。",
+  "start_s": 0.76,
+  "end_s": 1214.588,
+  "seg_from": 0,
+  "seg_to": 217,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "classic.shen_nong_ben_cao_jing",
+   "concept.jing_fang",
+   "herb.shi_gao"
+  ],
+  "citation": {
+   "youtube_id": "ZqdH7Gn8N7I",
+   "url": "https://www.youtube.com/watch?v=ZqdH7Gn8N7I&t=0s",
+   "series": "bc",
+   "episode": 8,
+   "title": "倪海廈精解 神農本草經之1 完整重製版 全68篇",
+   "start_s": 0.76,
+   "end_s": 1214.59
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-008.c02",
+  "video_id": "bc-008",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "剂量生熟与五色五味",
+  "summary": "生药毒性与力强于炮制品，表阳虚大汗用生附之类。五色五味归经：青入肝、白入肺、红入心、黄入脾、黑入肾；苦主宣泄、甘主滋补、咸入肾且能补心、酸收敛、辛发散。辛甘为阳发散，酸苦为阴。",
+  "start_s": 1214.848,
+  "end_s": 3261.676,
+  "seg_from": 218,
+  "seg_to": 599,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "concept.wu_wei",
+   "concept.wu_xing",
+   "herb.fu_zi"
+  ],
+  "citation": {
+   "youtube_id": "ZqdH7Gn8N7I",
+   "url": "https://www.youtube.com/watch?v=ZqdH7Gn8N7I&t=1214s",
+   "series": "bc",
+   "episode": 8,
+   "title": "倪海廈精解 神農本草經之1 完整重製版 全68篇",
+   "start_s": 1214.85,
+   "end_s": 3261.68
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-008.c03",
+  "video_id": "bc-008",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "走表走里与相须",
+  "summary": "病在皮肤用生药走表；取心（桂心）行内脏，取皮（桂皮杜仲）走表浅。药色亦示归经。白术茯苓相须；相恶相反须知。气薄味厚等定升降浮沉。",
+  "start_s": 3262.201,
+  "end_s": 4590.507,
+  "seg_from": 600,
+  "seg_to": 849,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.bai_zhu",
+   "herb.fu_ling",
+   "herb.gui_zhi"
+  ],
+  "citation": {
+   "youtube_id": "ZqdH7Gn8N7I",
+   "url": "https://www.youtube.com/watch?v=ZqdH7Gn8N7I&t=3262s",
+   "series": "bc",
+   "episode": 8,
+   "title": "倪海廈精解 神農本草經之1 完整重製版 全68篇",
+   "start_s": 3262.2,
+   "end_s": 4590.51
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-008.c04",
+  "video_id": "bc-008",
+  "level": 1,
+  "parent_id": null,
+  "seq": 4,
+  "title": "脏腑苦欲与补泻",
+  "summary": "依内经脏腑苦欲：如心苦缓急食酸，咸能补心；脾湿盛用苦燥；肾病多用咸（龙骨牡蛎）。虚则补其母、实则泻其子。风游走不定；内热重勿仅堆寒凉，可顺势再热以折之。",
+  "start_s": 4590.807,
+  "end_s": 7810.629,
+  "seg_from": 850,
+  "seg_to": 1449,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "concept.wu_xing",
+   "zangfu.xin",
+   "zangfu.pi",
+   "zangfu.shen"
+  ],
+  "citation": {
+   "youtube_id": "ZqdH7Gn8N7I",
+   "url": "https://www.youtube.com/watch?v=ZqdH7Gn8N7I&t=4590s",
+   "series": "bc",
+   "episode": 8,
+   "title": "倪海廈精解 神農本草經之1 完整重製版 全68篇",
+   "start_s": 4590.81,
+   "end_s": 7810.63
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-008.c05",
+  "video_id": "bc-008",
+  "level": 1,
+  "parent_id": null,
+  "seq": 5,
+  "title": "炮制与矿物药",
+  "summary": "炒蜜煅淬蒸煮乳制各变药性（姜半夏温散寒咳等）。朱砂陈州佳，未经火煅则汞隐于内不显毒；枯矾合麝香约五十比一去鼻息肉。道地与形色辨伪。",
+  "start_s": 7810.629,
+  "end_s": 10063.563,
+  "seg_from": 1450,
+  "seg_to": 1849,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.dan_sha",
+   "herb.she_xiang",
+   "new.herb.ku_fan"
+  ],
+  "citation": {
+   "youtube_id": "ZqdH7Gn8N7I",
+   "url": "https://www.youtube.com/watch?v=ZqdH7Gn8N7I&t=7810s",
+   "series": "bc",
+   "episode": 8,
+   "title": "倪海廈精解 神農本草經之1 完整重製版 全68篇",
+   "start_s": 7810.63,
+   "end_s": 10063.56
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-008.c06",
+  "video_id": "bc-008",
+  "level": 1,
+  "parent_id": null,
+  "seq": 6,
+  "title": "大黄芒硝滑石",
+  "summary": "大黄入血分泻火；芒硝软坚散结、降气分热，便不硬勿用硝。滑石清热利湿通淋，治石淋。空青曾青余粮等矿物续本经。",
+  "start_s": 10064.763,
+  "end_s": 12865.682,
+  "seg_from": 1850,
+  "seg_to": 2310,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.da_huang",
+   "herb.xiao_shi",
+   "herb.hua_shi"
+  ],
+  "citation": {
+   "youtube_id": "ZqdH7Gn8N7I",
+   "url": "https://www.youtube.com/watch?v=ZqdH7Gn8N7I&t=10064s",
+   "series": "bc",
+   "episode": 8,
+   "title": "倪海廈精解 神農本草經之1 完整重製版 全68篇",
+   "start_s": 10064.76,
+   "end_s": 12865.68
+  },
+  "review_status": "llm_read"
+ }
+]
