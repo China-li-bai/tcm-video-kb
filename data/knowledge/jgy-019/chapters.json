@@ -1,0 +1,92 @@
+[
+ {
+  "chapter_id": "jgy-019.c01",
+  "video_id": "jgy-019",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "疮痈诊脓·胆阑尾破溃·排脓与阳和",
+  "summary": "金匮第十八篇疮痈肠痈浸淫。脉浮数当发热而反恶寒、局部痛处，为表有痈脓；手摸热者为有脓。胆总管结石胀破前后剧痛可牵肩与阳陵泉下；破后痛减而局部烫。阑尾炎破溃同理。排脓汤治体表深部化脓；经方家另传阳和汤（麻黄泡姜熟地鹿角胶肉桂）发其痈。",
+  "start_s": 2.03,
+  "end_s": 789.0,
+  "seg_from": 0,
+  "seg_to": 145,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "disease.chuang_yong",
+   "formula.pai_nong_tang",
+   "syndrome.chang_yong"
+  ],
+  "citation": {
+   "youtube_id": "-a2KxWDrvB0",
+   "url": "https://www.youtube.com/watch?v=-a2KxWDrvB0&t=2s",
+   "series": "jgy",
+   "episode": 19,
+   "title": "倪海廈《金匱要略》細分版： 18瘡癰腸癰浸淫病",
+   "start_s": 2.03,
+   "end_s": 789.0
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-019.c02",
+  "video_id": "jgy-019",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "肠痈大黄牡丹皮·赤小豆当归",
+  "summary": "肠痈（急性阑尾炎）脉迟紧脓未成可下，大黄牡丹皮汤（大黄牡丹桃仁）。脓成或体表溃破后可用赤小豆当归散（赤小豆发芽、当归生用）排脓生肌。",
+  "start_s": 789.28,
+  "end_s": 1790.961,
+  "seg_from": 146,
+  "seg_to": 333,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "formula.da_huang_mu_dan_tang",
+   "formula.chi_xiao_dou_dang_gui_san",
+   "syndrome.chang_yong"
+  ],
+  "citation": {
+   "youtube_id": "-a2KxWDrvB0",
+   "url": "https://www.youtube.com/watch?v=-a2KxWDrvB0&t=789s",
+   "series": "jgy",
+   "episode": 19,
+   "title": "倪海廈《金匱要略》細分版： 18瘡癰腸癰浸淫病",
+   "start_s": 789.28,
+   "end_s": 1790.96
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-019.c03",
+  "video_id": "jgy-019",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "排脓散汤·桔梗·浸淫与兼方",
+  "summary": "排脓散：枳实芍药桔梗；可与柴胡/甘草类同用。排脓汤：甘草桔梗生姜大枣，肺痈痰多时桔梗类同葛根汤意。左侧腹痛气上冲可用茯苓桂枝甘草汤。",
+  "start_s": 1792.186,
+  "end_s": 2426.111,
+  "seg_from": 334,
+  "seg_to": 439,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "formula.pai_nong_san",
+   "formula.pai_nong_tang",
+   "herb.jie_geng"
+  ],
+  "citation": {
+   "youtube_id": "-a2KxWDrvB0",
+   "url": "https://www.youtube.com/watch?v=-a2KxWDrvB0&t=1792s",
+   "series": "jgy",
+   "episode": 19,
+   "title": "倪海廈《金匱要略》細分版： 18瘡癰腸癰浸淫病",
+   "start_s": 1792.19,
+   "end_s": 2426.11
+  },
+  "review_status": "llm_read"
+ }
+]

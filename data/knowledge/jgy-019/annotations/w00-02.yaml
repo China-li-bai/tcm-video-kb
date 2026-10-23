@@ -1,0 +1,160 @@
+video_id: jgy-019
+window: w00-02
+seg_from: 0
+seg_to: 394
+annotator: llm_read
+chapters:
+- key: c01
+  title: 疮痈诊脓·胆阑尾破溃·排脓与阳和
+  start_seq: 0
+  summary: 金匮第十八篇疮痈肠痈浸淫。脉浮数当发热而反恶寒、局部痛处，为表有痈脓；手摸热者为有脓。胆总管结石胀破前后剧痛可牵肩与阳陵泉下；破后痛减而局部烫。阑尾炎破溃同理。排脓汤治体表深部化脓；经方家另传阳和汤（麻黄泡姜熟地鹿角胶肉桂）发其痈。
+  clauses: []
+  topics:
+  - disease.chuang_yong
+  - formula.pai_nong_tang
+  - syndrome.chang_yong
+- key: c02
+  title: 肠痈大黄牡丹皮·赤小豆当归
+  start_seq: 146
+  summary: 肠痈（急性阑尾炎）脉迟紧脓未成可下，大黄牡丹皮汤（大黄牡丹桃仁）。脓成或体表溃破后可用赤小豆当归散（赤小豆发芽、当归生用）排脓生肌。
+  clauses: []
+  topics:
+  - formula.da_huang_mu_dan_tang
+  - formula.chi_xiao_dou_dang_gui_san
+  - syndrome.chang_yong
+- key: c03
+  title: 排脓散汤·桔梗·浸淫与兼方
+  start_seq: 334
+  summary: 排脓散：枳实芍药桔梗；可与柴胡/甘草类同用。排脓汤：甘草桔梗生姜大枣，肺痈痰多时桔梗类同葛根汤意。左侧腹痛气上冲可用茯苓桂枝甘草汤。
+  clauses: []
+  topics:
+  - formula.pai_nong_san
+  - formula.pai_nong_tang
+  - herb.jie_geng
+entities:
+- id: disease.chuang_yong
+  seq: 0
+  surface: 昌雍
+  corrected: 疮痈
+- id: syndrome.chang_yong
+  seq: 149
+  surface: 肠臃
+  corrected: 肠痈
+- id: symptom.fa_re
+  seq: 2
+  surface: 发热
+  corrected: 发热
+- id: symptom.e_han
+  seq: 5
+  surface: 恶寒
+  corrected: 恶寒
+- id: formula.pai_nong_tang
+  seq: 41
+  surface: 排脓汤
+  corrected: 排脓汤
+- id: acupoint.ex_lan_wei
+  seq: 31
+  surface: 阑尾
+  corrected: 阑尾
+- id: formula.da_huang_mu_dan_tang
+  seq: 146
+  surface: 大黄牡丹
+  corrected: 大黄牡丹皮汤
+- id: herb.da_huang
+  seq: 146
+  surface: 大黄
+  corrected: 大黄
+- id: herb.mu_dan_pi
+  seq: 146
+  surface: 牡丹
+  corrected: 牡丹皮
+- id: formula.chi_xiao_dou_dang_gui_san
+  seq: 219
+  surface: 赤小豆
+  corrected: 赤小豆当归散
+- id: herb.dang_gui
+  seq: 219
+  surface: 当归
+  corrected: 当归
+- id: herb.jie_geng
+  seq: 334
+  surface: 桔梗
+  corrected: 桔梗
+- id: formula.pai_nong_san
+  seq: 334
+  surface: 排龙散
+  corrected: 排脓散
+- id: formula.fu_ling_gui_zhi_gan_cao_da_zao_tang
+  seq: 376
+  surface: 茯苓桂枝甘草汤
+  corrected: 茯苓桂枝甘草大枣汤
+- id: new.formula.yang_he_tang
+  seq: 56
+  surface: 羊和汤
+  corrected: 阳和汤
+- id: herb.ma_huang
+  seq: 59
+  surface: 麻黄
+  corrected: 麻黄
+- id: zangfu.dan
+  seq: 17
+  surface: 胆
+  corrected: 胆
+- id: acupoint.gb34
+  seq: 24
+  surface: 阳陵泉
+  corrected: 阳陵泉
+kps:
+- type: diagnostic_rule
+  s: 脉浮数当发热而反恶寒、局部痛处，示表有痈脓将成；手摸局部热者为有脓，不热为无脓。
+  seq: [5]
+  q: 恶寒
+  ents: [disease.chuang_yong, symptom.fa_re, symptom.e_han]
+  conf: 0.95
+  asr: 拥涌/龙=痈脓
+- type: clinical_tip
+  s: 胆胀未破剧痛可牵右胁背肩及左腿阳陵泉下一寸压痛；一破则痛骤减，局部仍烫，勿误为已愈。
+  seq: [24]
+  q: 阳陵泉
+  ents: [zangfu.dan, acupoint.gb34]
+  conf: 0.85
+- type: clinical_tip
+  s: 阑尾炎破溃前后：破前剧痛，破后痛减而腹局部烫，示脓已出腹膜。
+  seq: [31]
+  q: 阑尾
+  ents: [acupoint.ex_lan_wei, syndrome.chang_yong]
+  conf: 0.9
+- type: formula_indication
+  s: 体表/深部化脓摸之烫，排脓汤可促脓外溃而消；经方家发痈用阳和汤（麻黄、炮姜、熟地、鹿角胶、肉桂）。
+  seq: [41]
+  q: 排脓汤
+  ents: [formula.pai_nong_tang, new.formula.yang_he_tang, disease.chuang_yong]
+  conf: 0.9
+  asr: 羊和汤=阳和汤
+- type: formula_indication
+  s: 肠痈脉迟紧脓未成可下，大黄牡丹皮汤（大黄、牡丹皮、桃仁等）治急性阑尾炎类肠痈。
+  seq: [146]
+  q: 大黄牡丹
+  ents: [formula.da_huang_mu_dan_tang, syndrome.chang_yong, herb.da_huang, herb.mu_dan_pi]
+  conf: 0.95
+  asr: 牡丹脾=牡丹皮；囊肠=阑尾
+- type: formula_indication
+  s: 赤小豆当归散：赤小豆发芽、当归生用，用于痈脓溃后排脓生肌。
+  seq: [219]
+  q: 赤小豆
+  ents: [formula.chi_xiao_dou_dang_gui_san, herb.dang_gui]
+  conf: 0.9
+- type: formula_composition
+  s: 排脓散用枳实、芍药、桔梗；排脓汤甘草桔梗生姜大枣，肺痈痰多用桔梗。
+  seq: [334]
+  q: 桔梗
+  ents: [formula.pai_nong_san, formula.pai_nong_tang, herb.jie_geng]
+  conf: 0.9
+  asr: 排龙散=排脓散；紫石=枳实
+- type: formula_indication
+  s: 左侧腹气上冲痛，可用茯苓桂枝甘草（大枣）汤类方。
+  seq: [376]
+  q: 茯苓桂枝甘草汤
+  ents: [formula.fu_ling_gui_zhi_gan_cao_da_zao_tang]
+  conf: 0.85
+  asr: 银贵甘草/宁桂甘草=苓桂草枣
