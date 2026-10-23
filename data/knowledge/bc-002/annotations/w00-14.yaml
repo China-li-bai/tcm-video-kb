@@ -1,0 +1,152 @@
+video_id: bc-002
+window: w00-14
+seg_from: 0
+seg_to: 1951
+annotator: llm_read
+chapters:
+- key: c01
+  title: 乌梅与露蜂房
+  start_seq: 0
+  summary: 露蜂房外形介绍后入乌梅：梅实炮制分乌梅白梅；乌梅酸平涩，收敛解热消肿驱蛔，治下利与吐蛔；酸主收亦能加重痉挛，夜抽筋宜甘缓勿过酸。
+  clauses: []
+  topics: [herb.wu_mei, herb.lu_feng_fang]
+- key: c02
+  title: 粉锡戎盐代赭石
+  start_seq: 180
+  summary: 粉锡（铅粉）外用解毒治皮肤硬疮，内服过多伤血。青盐/戎盐可清肾结石，宜少用助排水，过食伤骨；常配茯苓。代赭石（ASR带者食）苦寒镇降，胃热呕逆反胃、带下可用。
+  clauses: []
+  topics: [herb.fen_xi, herb.rong_yan, herb.dai_zhe_shi]
+- key: c03
+  title: 附子天雄半夏
+  start_seq: 360
+  summary: 附子回阳救逆、防脱水；阳虚汗出不固等多赖附子。天雄并论。半夏燥湿化痰，脑积水、肺中水饮可用；强调炮制去麻。
+  clauses: []
+  topics: [herb.fu_zi, herb.tian_xiong, herb.ban_xia]
+- key: c04
+  title: 大黄巴豆葶苈旋覆
+  start_seq: 1200
+  summary: 巴豆峻下。大黄泻实非单纯清热。葶苈子下气行水泻肺定喘，力猛伤胃须配大枣（葶苈大枣泻肺汤）。旋覆花（ASR悬浮花）降气化痰止呕，重证合吴茱萸生姜。
+  clauses: []
+  topics: [herb.da_huang, herb.ba_dou, herb.ting_li_zi, herb.xuan_fu_hua, herb.wu_zhu_yu, herb.da_zao]
+entities:
+- id: herb.lu_feng_fang
+  seq: 0
+  surface: 露蜂房
+  corrected: 露蜂房
+- id: herb.wu_mei
+  seq: 6
+  surface: 乌梅
+  corrected: 乌梅
+- id: herb.fen_xi
+  seq: 180
+  surface: 粉烯
+  corrected: 粉锡
+- id: herb.rong_yan
+  seq: 297
+  surface: 青盐
+  corrected: 戎盐
+- id: herb.dai_zhe_shi
+  seq: 197
+  surface: 待者食
+  corrected: 代赭石
+- id: herb.fu_zi
+  seq: 400
+  surface: 附子
+  corrected: 附子
+- id: herb.tian_xiong
+  seq: 365
+  surface: 天雄
+  corrected: 天雄
+- id: herb.ban_xia
+  seq: 1035
+  surface: 半夏
+  corrected: 半夏
+- id: herb.ba_dou
+  seq: 1202
+  surface: 巴豆
+  corrected: 巴豆
+- id: herb.da_huang
+  seq: 1315
+  surface: 大黄
+  corrected: 大黄
+- id: herb.ting_li_zi
+  seq: 1491
+  surface: 亭粒子
+  corrected: 葶苈子
+- id: herb.da_zao
+  seq: 1528
+  surface: 大枣
+  corrected: 大枣
+- id: herb.xuan_fu_hua
+  seq: 1700
+  surface: 悬浮花
+  corrected: 旋覆花
+- id: herb.wu_zhu_yu
+  seq: 1701
+  surface: 吴茱萸
+  corrected: 吴茱萸
+kps:
+- type: clinical_tip
+  s: 乌梅酸平涩，收敛解热消肿驱蛔；最常用在下利与驱虫吐蛔。
+  seq: [26]
+  q: 乌梅
+  ents: [herb.wu_mei]
+  conf: 0.95
+- type: contraindication
+  s: 酸主痉挛；夜抽筋者勿过食酸，宜甘味缓急。
+  seq: [21]
+  q: 抽筋
+  ents: [herb.wu_mei]
+  conf: 0.9
+- type: clinical_tip
+  s: 粉锡外用治皮肤硬疮；内服过多反伤血。
+  seq: [180]
+  q: 粉烯
+  ents: [herb.fen_xi]
+  conf: 0.85
+  asr: 粉烯/粉昔=粉锡
+- type: clinical_tip
+  s: 青盐（戎盐类）可助清肾结石、少量助排水；过食伤骨，宜配茯苓等。
+  seq: [297]
+  q: 青盐
+  ents: [herb.rong_yan]
+  conf: 0.85
+- type: clinical_tip
+  s: 代赭石苦寒镇降，治胃热呕逆反胃；妇人带下亦常用。
+  seq: [200]
+  q: 红色
+  ents: [herb.dai_zhe_shi]
+  conf: 0.85
+  asr: 带者食/待者食=代赭石
+- type: clinical_tip
+  s: 附子回阳，可防脱水；阳虚不固多赖附子。
+  seq: [400]
+  q: 附子
+  ents: [herb.fu_zi]
+  conf: 0.9
+- type: clinical_tip
+  s: 半夏化痰涤饮；脑积水、肺中停水可用。
+  seq: [1100]
+  q: 半夏
+  ents: [herb.ban_xia]
+  conf: 0.9
+- type: clinical_tip
+  s: 大黄是泻实之药，并非单纯清热。
+  seq: [1400]
+  q: 大黄
+  ents: [herb.da_huang]
+  conf: 0.95
+- type: clinical_tip
+  s: 葶苈子下气行水、泻肺定喘；力猛伤胃，须配大枣。
+  seq: [1491]
+  q: 亭粒子
+  ents: [herb.ting_li_zi, herb.da_zao]
+  conf: 0.95
+  asr: 亭粒子/提粒子=葶苈子
+- type: clinical_tip
+  s: 旋覆花降气化痰止呕；恶心重可合吴茱萸与姜。
+  seq: [1700]
+  q: 悬浮花
+  ents: [herb.xuan_fu_hua, herb.wu_zhu_yu]
+  conf: 0.9
+  asr: 悬浮花=旋覆花

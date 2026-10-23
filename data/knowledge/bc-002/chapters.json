@@ -1,0 +1,124 @@
+[
+ {
+  "chapter_id": "bc-002.c01",
+  "video_id": "bc-002",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "乌梅与露蜂房",
+  "summary": "露蜂房外形介绍后入乌梅：梅实炮制分乌梅白梅；乌梅酸平涩，收敛解热消肿驱蛔，治下利与吐蛔；酸主收亦能加重痉挛，夜抽筋宜甘缓勿过酸。",
+  "start_s": 1.02,
+  "end_s": 1035.465,
+  "seg_from": 0,
+  "seg_to": 179,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.wu_mei",
+   "herb.lu_feng_fang"
+  ],
+  "citation": {
+   "youtube_id": "_qJgBxPY0Jc",
+   "url": "https://www.youtube.com/watch?v=_qJgBxPY0Jc&t=1s",
+   "series": "bc",
+   "episode": 2,
+   "title": "倪海廈精解 神農本草經之7 完整重製版 全68篇",
+   "start_s": 1.02,
+   "end_s": 1035.46
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-002.c02",
+  "video_id": "bc-002",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "粉锡戎盐代赭石",
+  "summary": "粉锡（铅粉）外用解毒治皮肤硬疮，内服过多伤血。青盐/戎盐可清肾结石，宜少用助排水，过食伤骨；常配茯苓。代赭石（ASR带者食）苦寒镇降，胃热呕逆反胃、带下可用。",
+  "start_s": 1040.24,
+  "end_s": 2076.045,
+  "seg_from": 180,
+  "seg_to": 359,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.fen_xi",
+   "herb.rong_yan",
+   "herb.dai_zhe_shi"
+  ],
+  "citation": {
+   "youtube_id": "_qJgBxPY0Jc",
+   "url": "https://www.youtube.com/watch?v=_qJgBxPY0Jc&t=1040s",
+   "series": "bc",
+   "episode": 2,
+   "title": "倪海廈精解 神農本草經之7 完整重製版 全68篇",
+   "start_s": 1040.24,
+   "end_s": 2076.05
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-002.c03",
+  "video_id": "bc-002",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "附子天雄半夏",
+  "summary": "附子回阳救逆、防脱水；阳虚汗出不固等多赖附子。天雄并论。半夏燥湿化痰，脑积水、肺中水饮可用；强调炮制去麻。",
+  "start_s": 2077.26,
+  "end_s": 6644.84,
+  "seg_from": 360,
+  "seg_to": 1199,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.fu_zi",
+   "herb.tian_xiong",
+   "herb.ban_xia"
+  ],
+  "citation": {
+   "youtube_id": "_qJgBxPY0Jc",
+   "url": "https://www.youtube.com/watch?v=_qJgBxPY0Jc&t=2077s",
+   "series": "bc",
+   "episode": 2,
+   "title": "倪海廈精解 神農本草經之7 完整重製版 全68篇",
+   "start_s": 2077.26,
+   "end_s": 6644.84
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-002.c04",
+  "video_id": "bc-002",
+  "level": 1,
+  "parent_id": null,
+  "seq": 4,
+  "title": "大黄巴豆葶苈旋覆",
+  "summary": "巴豆峻下。大黄泻实非单纯清热。葶苈子下气行水泻肺定喘，力猛伤胃须配大枣（葶苈大枣泻肺汤）。旋覆花（ASR悬浮花）降气化痰止呕，重证合吴茱萸生姜。",
+  "start_s": 6645.425,
+  "end_s": 10844.4,
+  "seg_from": 1200,
+  "seg_to": 1951,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.da_huang",
+   "herb.ba_dou",
+   "herb.ting_li_zi",
+   "herb.xuan_fu_hua",
+   "herb.wu_zhu_yu",
+   "herb.da_zao"
+  ],
+  "citation": {
+   "youtube_id": "_qJgBxPY0Jc",
+   "url": "https://www.youtube.com/watch?v=_qJgBxPY0Jc&t=6645s",
+   "series": "bc",
+   "episode": 2,
+   "title": "倪海廈精解 神農本草經之7 完整重製版 全68篇",
+   "start_s": 6645.43,
+   "end_s": 10844.4
+  },
+  "review_status": "llm_read"
+ }
+]

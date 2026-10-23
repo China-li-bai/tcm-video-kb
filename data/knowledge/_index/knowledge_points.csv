@@ -1,4 +1,14 @@
 kp_id,video_id,series,episode,type,statement,entity_ids,chapter_id,chapter_title,evidence_quote,start_s,end_s,url,confidence,asr_note,title
+bc-002.kp0001,bc-002,bc,2,contraindication,酸主痉挛；夜抽筋者勿过食酸，宜甘味缓急。,herb.wu_mei,bc-002.c01,乌梅与露蜂房,抽筋,136.69,144.11,https://www.youtube.com/watch?v=_qJgBxPY0Jc&t=136s,0.9,,倪海廈精解 神農本草經之7 完整重製版 全68篇
+bc-002.kp0002,bc-002,bc,2,clinical_tip,乌梅酸平涩，收敛解热消肿驱蛔；最常用在下利与驱虫吐蛔。,herb.wu_mei,bc-002.c01,乌梅与露蜂房,乌梅,162.73,169.85,https://www.youtube.com/watch?v=_qJgBxPY0Jc&t=162s,0.95,,倪海廈精解 神農本草經之7 完整重製版 全68篇
+bc-002.kp0003,bc-002,bc,2,clinical_tip,粉锡外用治皮肤硬疮；内服过多反伤血。,herb.fen_xi,bc-002.c02,粉锡戎盐代赭石,粉烯,1040.24,1044.235,https://www.youtube.com/watch?v=_qJgBxPY0Jc&t=1040s,0.85,粉烯/粉昔=粉锡,倪海廈精解 神農本草經之7 完整重製版 全68篇
+bc-002.kp0004,bc-002,bc,2,clinical_tip,代赭石苦寒镇降，治胃热呕逆反胃；妇人带下亦常用。,herb.dai_zhe_shi,bc-002.c02,粉锡戎盐代赭石,红色,1159.75,1166.27,https://www.youtube.com/watch?v=_qJgBxPY0Jc&t=1159s,0.85,带者食/待者食=代赭石,倪海廈精解 神農本草經之7 完整重製版 全68篇
+bc-002.kp0005,bc-002,bc,2,clinical_tip,青盐（戎盐类）可助清肾结石、少量助排水；过食伤骨，宜配茯苓等。,herb.rong_yan,bc-002.c02,粉锡戎盐代赭石,青盐,1733.14,1736.165,https://www.youtube.com/watch?v=_qJgBxPY0Jc&t=1733s,0.85,,倪海廈精解 神農本草經之7 完整重製版 全68篇
+bc-002.kp0006,bc-002,bc,2,clinical_tip,附子回阳，可防脱水；阳虚不固多赖附子。,herb.fu_zi,bc-002.c03,附子天雄半夏,附子,2325.147,2332.727,https://www.youtube.com/watch?v=_qJgBxPY0Jc&t=2325s,0.9,,倪海廈精解 神農本草經之7 完整重製版 全68篇
+bc-002.kp0007,bc-002,bc,2,clinical_tip,半夏化痰涤饮；脑积水、肺中停水可用。,herb.ban_xia,bc-002.c03,附子天雄半夏,半夏,6116.485,6126.09,https://www.youtube.com/watch?v=_qJgBxPY0Jc&t=6116s,0.9,,倪海廈精解 神農本草經之7 完整重製版 全68篇
+bc-002.kp0008,bc-002,bc,2,clinical_tip,大黄是泻实之药，并非单纯清热。,herb.da_huang,bc-002.c04,大黄巴豆葶苈旋覆,大黄,7740.442,7745.337,https://www.youtube.com/watch?v=_qJgBxPY0Jc&t=7740s,0.95,,倪海廈精解 神農本草經之7 完整重製版 全68篇
+bc-002.kp0009,bc-002,bc,2,clinical_tip,葶苈子下气行水、泻肺定喘；力猛伤胃，须配大枣。,herb.ting_li_zi herb.da_zao,bc-002.c04,大黄巴豆葶苈旋覆,亭粒子,8259.435,8260.555,https://www.youtube.com/watch?v=_qJgBxPY0Jc&t=8259s,0.95,亭粒子/提粒子=葶苈子,倪海廈精解 神農本草經之7 完整重製版 全68篇
+bc-002.kp0010,bc-002,bc,2,clinical_tip,旋覆花降气化痰止呕；恶心重可合吴茱萸与姜。,herb.xuan_fu_hua herb.wu_zhu_yu,bc-002.c04,大黄巴豆葶苈旋覆,悬浮花,9415.122,9421.937,https://www.youtube.com/watch?v=_qJgBxPY0Jc&t=9415s,0.9,悬浮花=旋覆花,倪海廈精解 神農本草經之7 完整重製版 全68篇
 bc-003.kp0001,bc-003,bc,3,clinical_tip,地榆主止血，痔疮出血与呕血最常用。,herb.di_yu,bc-003.c01,地榆与海藻,地狱,2.1,8.579,https://www.youtube.com/watch?v=xUYZpkVoOjs&t=2s,0.9,地狱/地鱼=地榆,倪海廈精解 神農本草經之6 完整重製版 全68篇
 bc-003.kp0002,bc-003,bc,3,clinical_tip,海藻可作日常长寿零食，处方约三钱，过咸易恶心。,herb.hai_zao,bc-003.c01,地榆与海藻,海藻,44.6,45.06,https://www.youtube.com/watch?v=xUYZpkVoOjs&t=44s,0.9,,倪海廈精解 神農本草經之6 完整重製版 全68篇
 bc-003.kp0003,bc-003,bc,3,clinical_tip,海藻味咸能软坚，治甲状腺肿大、淋巴结与淋巴瘤；性寒，寒证慎用。,herb.hai_zao,bc-003.c01,地榆与海藻,海藻,173.54,178.08,https://www.youtube.com/watch?v=xUYZpkVoOjs&t=173s,0.95,,倪海廈精解 神農本草經之6 完整重製版 全68篇
