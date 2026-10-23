@@ -1,4 +1,21 @@
 kp_id,video_id,series,episode,type,statement,entity_ids,chapter_id,chapter_title,evidence_quote,start_s,end_s,url,confidence,asr_note,title
+bc-004.kp0001,bc-004,bc,4,pathomechanism,人体阴阳呈圆形；热极则生寒，不可作直线理解。,,bc-004.c01,热极生寒与石膏白虎,热极生寒,6.17,12.93,https://www.youtube.com/watch?v=wHtt5w6Y2Uk&t=6s,0.95,,倪海廈精解 神農本草經之5 完整重製版 全68篇
+bc-004.kp0002,bc-004,bc,4,clinical_tip,金石类如石膏、硫磺宜打散后入棉布袋煎，勿整粉直倒汤中。,herb.shi_gao herb.shi_liu_huang,bc-004.c01,热极生寒与石膏白虎,石膏,84.97,94.535,https://www.youtube.com/watch?v=wHtt5w6Y2Uk&t=84s,0.9,,倪海廈精解 神農本草經之5 完整重製版 全68篇
+bc-004.kp0003,bc-004,bc,4,clinical_tip,石膏清肺胃三焦气分热；大热狂渴属白虎汤证。,herb.shi_gao formula.bai_hu_tang,bc-004.c01,热极生寒与石膏白虎,石膏,193.77,198.84,https://www.youtube.com/watch?v=wHtt5w6Y2Uk&t=193s,0.95,,倪海廈精解 神農本草經之5 完整重製版 全68篇
+bc-004.kp0004,bc-004,bc,4,concept_definition,干姜与生姜不同；干姜助水气化，利水消肿时常配用，肺为水之上源。,herb.gan_jiang herb.sheng_jiang,bc-004.c02,干姜葛根与气化利水,干姜,1460.899,1462.644,https://www.youtube.com/watch?v=wHtt5w6Y2Uk&t=1460s,0.9,,倪海廈精解 神農本草經之5 完整重製版 全68篇
+bc-004.kp0005,bc-004,bc,4,clinical_tip,栝蒌根又名天花粉，清热生津，善治消渴。,herb.gua_lou_gen,bc-004.c03,栝蒌根麻黄当归芍药,天花粉,2939.666,2940.281,https://www.youtube.com/watch?v=wHtt5w6Y2Uk&t=2939s,0.95,,倪海廈精解 神農本草經之5 完整重製版 全68篇
+bc-004.kp0006,bc-004,bc,4,clinical_tip,麻黄茎轻上散；不可提炼作减肥药，曾致心脏受损。,herb.ma_huang,bc-004.c03,栝蒌根麻黄当归芍药,麻黄,4104.943,4113.998,https://www.youtube.com/watch?v=wHtt5w6Y2Uk&t=4104s,0.9,,倪海廈精解 神農本草經之5 完整重製版 全68篇
+bc-004.kp0007,bc-004,bc,4,clinical_tip,白芍与赤芍本为一物分用；当归、川芎、芍药同用补血活血。,herb.shao_yao herb.dang_gui,bc-004.c03,栝蒌根麻黄当归芍药,白芍,4996.174,5001.199,https://www.youtube.com/watch?v=wHtt5w6Y2Uk&t=4996s,0.85,,倪海廈精解 神農本草經之5 完整重製版 全68篇
+bc-004.kp0008,bc-004,bc,4,clinical_tip,秦艽（讲中作芹交）经脉左右交缠，主偏风经脉疼痛，骨折续接常配续断。,new.herb.qin_jiao herb.xu_duan,bc-004.c04,秦艽续断百合知母,芹交,6373.294,6374.014,https://www.youtube.com/watch?v=wHtt5w6Y2Uk&t=6373s,0.9,芹交=秦艽；续段=续断,倪海廈精解 神農本草經之5 完整重製版 全68篇
+bc-004.kp0009,bc-004,bc,4,clinical_tip,知母叶难尽拔、水气盛，善清气分热；血分热属心脉，二者不同。,herb.zhi_mu,bc-004.c04,秦艽续断百合知母,子母,7208.491,7214.806,https://www.youtube.com/watch?v=wHtt5w6Y2Uk&t=7208s,0.85,子母/字母=知母,倪海廈精解 神農本草經之5 完整重製版 全68篇
+bc-004.kp0010,bc-004,bc,4,clinical_tip,紫菀性温，祛痰止咳；肺痈脓血、寒咳、肺痨咯血可酌用。,herb.zi_wan,bc-004.c05,紫菀紫草败酱,紫月,9382.885,9388.34,https://www.youtube.com/watch?v=wHtt5w6Y2Uk&t=9382s,0.9,紫月/紫云=紫菀,倪海廈精解 神農本草經之5 完整重製版 全68篇
+bc-004.kp0011,bc-004,bc,4,clinical_tip,紫草寒凉，治麻疹水痘天花等热疹；临床需要时勿被禁忌捆住手脚。,herb.zi_cao,bc-004.c05,紫菀紫草败酱,紫草,9530.195,9534.86,https://www.youtube.com/watch?v=wHtt5w6Y2Uk&t=9530s,0.9,,倪海廈精解 神農本草經之5 完整重製版 全68篇
+bc-004.kp0012,bc-004,bc,4,clinical_tip,败酱（本草败酱草）治肠痈腹膜炎等，常与附子薏苡等同方。,herb.bai_jiang,bc-004.c05,紫菀紫草败酱,败姜,9813.545,9821.72,https://www.youtube.com/watch?v=wHtt5w6Y2Uk&t=9813s,0.9,败姜/败江=败酱,倪海廈精解 神農本草經之5 完整重製版 全68篇
+bc-004.kp0013,bc-004,bc,4,formula_indication,下利腹痛可用紫参汤，以紫参为主药。,herb.zi_can,bc-004.c06,紫参白鲜白薇苦瓜根海藻,紫参,10903.228,10914.598,https://www.youtube.com/watch?v=wHtt5w6Y2Uk&t=10903s,0.85,,倪海廈精解 神農本草經之5 完整重製版 全68篇
+bc-004.kp0014,bc-004,bc,4,clinical_tip,白鲜色白带黄，疏肝排毒兼入肺；肝虚积毒宜用。,herb.bai_xian,bc-004.c06,紫参白鲜白薇苦瓜根海藻,被泄,11306.588,11313.023,https://www.youtube.com/watch?v=wHtt5w6Y2Uk&t=11306s,0.8,被泄/被陷=白鲜,倪海廈精解 神農本草經之5 完整重製版 全68篇
+bc-004.kp0015,bc-004,bc,4,clinical_tip,白薇凉血退热，治突然中风不知人、狂惑；非凡高血压通套药。,herb.bai_wei,bc-004.c06,紫参白鲜白薇苦瓜根海藻,白维,11597.129,11600.564,https://www.youtube.com/watch?v=wHtt5w6Y2Uk&t=11597s,0.9,白维/白尾=白薇,倪海廈精解 神農本草經之5 完整重製版 全68篇
+bc-004.kp0016,bc-004,bc,4,contraindication,苦瓜根能吐能下，可落胎；经期及过量慎用。,new.herb.ku_gua_gen,bc-004.c06,紫参白鲜白薇苦瓜根海藻,苦瓜根,12173.279,12176.334,https://www.youtube.com/watch?v=wHtt5w6Y2Uk&t=12173s,0.95,,倪海廈精解 神農本草經之5 完整重製版 全68篇
+bc-004.kp0017,bc-004,bc,4,clinical_tip,海藻可作日常长寿零食，胜于糖果零食。,herb.hai_zao,bc-004.c06,紫参白鲜白薇苦瓜根海藻,海藻,12708.984,12711.984,https://www.youtube.com/watch?v=wHtt5w6Y2Uk&t=12708s,0.9,,倪海廈精解 神農本草經之5 完整重製版 全68篇
 bc-005.kp0001,bc-005,bc,5,concept_definition,松脂为松树裂缝溢出之油脂（讲中称松子），苦温；久埋土中成琥珀或蜜蜡。,herb.song_zhi,bc-005.c01,松脂琥珀与茯苓,油脂,30.62,34.78,https://www.youtube.com/watch?v=zISIogXMuyE&t=30s,0.9,松子=松脂,倪海廈精解 神農本草經之4 完整重製版 全68篇
 bc-005.kp0002,bc-005,bc,5,clinical_tip,槐花性寒，善清肠风热，治痔疮。,new.herb.huai_hua,bc-005.c02,槐枸杞侧柏酸枣五加,槐花,536.41,541.545,https://www.youtube.com/watch?v=zISIogXMuyE&t=536s,0.9,,倪海廈精解 神農本草經之4 完整重製版 全68篇
 bc-005.kp0003,bc-005,bc,5,concept_definition,枸杞子为枸杞之籽，根皮为地骨皮，子根皆入药。,herb.gou_qi new.herb.di_gu_pi,bc-005.c02,槐枸杞侧柏酸枣五加,地骨皮,810.47,824.945,https://www.youtube.com/watch?v=zISIogXMuyE&t=810s,0.95,,倪海廈精解 神農本草經之4 完整重製版 全68篇

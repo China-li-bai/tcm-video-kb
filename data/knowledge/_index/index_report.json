@@ -1,5 +1,6 @@
 {
  "videos": [
+  "bc-004",
   "bc-005",
   "bc-008",
   "jgy-001",
@@ -135,7 +136,7 @@
   "zj-089",
   "zj-090"
  ],
- "n_entities": 1308,
- "n_knowledge_points": 1397,
- "n_chapters": 556
+ "n_entities": 1322,
+ "n_knowledge_points": 1414,
+ "n_chapters": 562
 }

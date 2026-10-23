@@ -1,0 +1,186 @@
+[
+ {
+  "chapter_id": "bc-004.c01",
+  "video_id": "bc-004",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "热极生寒与石膏白虎",
+  "summary": "阴阳圆形、热极生寒；石膏清肺胃三焦气分热，大热狂渴白虎汤证。对比西医降糖路径与中医生津补肾合石膏之治消渴。金石类粉入棉布袋煎。",
+  "start_s": 0.13,
+  "end_s": 1405.929,
+  "seg_from": 0,
+  "seg_to": 229,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.shi_gao",
+   "formula.bai_hu_tang",
+   "herb.shi_liu_huang"
+  ],
+  "citation": {
+   "youtube_id": "wHtt5w6Y2Uk",
+   "url": "https://www.youtube.com/watch?v=wHtt5w6Y2Uk&t=0s",
+   "series": "bc",
+   "episode": 4,
+   "title": "倪海廈精解 神農本草經之5 完整重製版 全68篇",
+   "start_s": 0.13,
+   "end_s": 1405.93
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-004.c02",
+  "video_id": "bc-004",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "干姜葛根与气化利水",
+  "summary": "干姜异于生姜，助水气化、肺为水之上源；水肿利水常配干姜。葛根汤发太阳阳明，鲜葛根可外敷。",
+  "start_s": 1408.039,
+  "end_s": 2774.316,
+  "seg_from": 230,
+  "seg_to": 469,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.gan_jiang",
+   "herb.sheng_jiang",
+   "herb.ge_gen"
+  ],
+  "citation": {
+   "youtube_id": "wHtt5w6Y2Uk",
+   "url": "https://www.youtube.com/watch?v=wHtt5w6Y2Uk&t=1408s",
+   "series": "bc",
+   "episode": 4,
+   "title": "倪海廈精解 神農本草經之5 完整重製版 全68篇",
+   "start_s": 1408.04,
+   "end_s": 2774.32
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-004.c03",
+  "video_id": "bc-004",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "栝蒌根麻黄当归芍药",
+  "summary": "栝蒌根又名天花粉，清热生津治消渴；麻黄茎轻上散，戒滥作减肥。当归活血；白芍赤芍同源，当归川芎芍药合用补血活血。",
+  "start_s": 2774.376,
+  "end_s": 6252.534,
+  "seg_from": 470,
+  "seg_to": 1099,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.gua_lou_gen",
+   "herb.ma_huang",
+   "herb.dang_gui",
+   "herb.shao_yao"
+  ],
+  "citation": {
+   "youtube_id": "wHtt5w6Y2Uk",
+   "url": "https://www.youtube.com/watch?v=wHtt5w6Y2Uk&t=2774s",
+   "series": "bc",
+   "episode": 4,
+   "title": "倪海廈精解 神農本草經之5 完整重製版 全68篇",
+   "start_s": 2774.38,
+   "end_s": 6252.53
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-004.c04",
+  "video_id": "bc-004",
+  "level": 1,
+  "parent_id": null,
+  "seq": 4,
+  "title": "秦艽续断百合知母",
+  "summary": "秦艽（ASR芹交）左右交缠主经脉疼痛、续接经脉，骨折常配续断。百合可作食；知母水气盛、清气分热，白虎多方用知母。",
+  "start_s": 6252.534,
+  "end_s": 9368.355,
+  "seg_from": 1100,
+  "seg_to": 1659,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "new.herb.qin_jiao",
+   "herb.xu_duan",
+   "herb.bai_he",
+   "herb.zhi_mu"
+  ],
+  "citation": {
+   "youtube_id": "wHtt5w6Y2Uk",
+   "url": "https://www.youtube.com/watch?v=wHtt5w6Y2Uk&t=6252s",
+   "series": "bc",
+   "episode": 4,
+   "title": "倪海廈精解 神農本草經之5 完整重製版 全68篇",
+   "start_s": 6252.53,
+   "end_s": 9368.35
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-004.c05",
+  "video_id": "bc-004",
+  "level": 1,
+  "parent_id": null,
+  "seq": 5,
+  "title": "紫菀紫草败酱",
+  "summary": "紫菀（ASR紫月）温、祛痰止咳，寒咳肺痈可用。紫草寒凉治麻疹痘疹，勿泥于禁忌。败酱（ASR败姜）治肠痈腹膜炎类证，常合附子薏苡。",
+  "start_s": 9370.095,
+  "end_s": 10786.238,
+  "seg_from": 1660,
+  "seg_to": 1899,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.zi_wan",
+   "herb.zi_cao",
+   "herb.bai_jiang"
+  ],
+  "citation": {
+   "youtube_id": "wHtt5w6Y2Uk",
+   "url": "https://www.youtube.com/watch?v=wHtt5w6Y2Uk&t=9370s",
+   "series": "bc",
+   "episode": 4,
+   "title": "倪海廈精解 神農本草經之5 完整重製版 全68篇",
+   "start_s": 9370.09,
+   "end_s": 10786.24
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-004.c06",
+  "video_id": "bc-004",
+  "level": 1,
+  "parent_id": null,
+  "seq": 6,
+  "title": "紫参白鲜白薇苦瓜根海藻",
+  "summary": "紫参汤治下利腹痛。白鲜色白入肺兼疏肝毒。白薇凉血退热治中风狂惑。苦瓜根吐下、可落胎，经期慎。海藻为长寿零食，散瘿消痰。",
+  "start_s": 10786.458,
+  "end_s": 12902.209,
+  "seg_from": 1900,
+  "seg_to": 2276,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.zi_can",
+   "herb.bai_xian",
+   "herb.bai_wei",
+   "new.herb.ku_gua_gen",
+   "herb.hai_zao"
+  ],
+  "citation": {
+   "youtube_id": "wHtt5w6Y2Uk",
+   "url": "https://www.youtube.com/watch?v=wHtt5w6Y2Uk&t=10786s",
+   "series": "bc",
+   "episode": 4,
+   "title": "倪海廈精解 神農本草經之5 完整重製版 全68篇",
+   "start_s": 10786.46,
+   "end_s": 12902.21
+  },
+  "review_status": "llm_read"
+ }
+]
