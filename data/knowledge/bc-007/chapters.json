@@ -1,0 +1,382 @@
+[
+ {
+  "chapter_id": "bc-007.c01",
+  "video_id": "bc-007",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "禹余粮与精石类禁忌",
+  "summary": "禹余粮（ASR余粮/余梁）止涩下利；咸入肾，过食伤肾而不吃盐反水肿；精石重镇安神，实热湿热忌；便秘须辨寒热再配大黄等。",
+  "start_s": 1.99,
+  "end_s": 786.745,
+  "seg_from": 0,
+  "seg_to": 141,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.yu_yu_liang",
+   "herb.mu_li"
+  ],
+  "citation": {
+   "youtube_id": "Bb5QMWnFGtI",
+   "url": "https://www.youtube.com/watch?v=Bb5QMWnFGtI&t=1s",
+   "series": "bc",
+   "episode": 7,
+   "title": "倪海廈精解 神農本草經之2 完整重製版 全68篇",
+   "start_s": 1.99,
+   "end_s": 786.75
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-007.c02",
+  "video_id": "bc-007",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "白石英紫石英",
+  "summary": "白石英甘温主消渴，白色入肺；精石类镇烦躁焦虑；紫白石英禁忌阴虚火旺与阳虚精气者。",
+  "start_s": 789.93,
+  "end_s": 2071.824,
+  "seg_from": 142,
+  "seg_to": 370,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.bai_shi_ying",
+   "herb.zi_shi"
+  ],
+  "citation": {
+   "youtube_id": "Bb5QMWnFGtI",
+   "url": "https://www.youtube.com/watch?v=Bb5QMWnFGtI&t=789s",
+   "series": "bc",
+   "episode": 7,
+   "title": "倪海廈精解 神農本草經之2 完整重製版 全68篇",
+   "start_s": 789.93,
+   "end_s": 2071.82
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-007.c03",
+  "video_id": "bc-007",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "空青白青与眼科",
+  "summary": "白青空青扁青多治眼科；水飞后可作眼药水；草木贝母亦可眼科。",
+  "start_s": 2071.864,
+  "end_s": 2194.169,
+  "seg_from": 371,
+  "seg_to": 393,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.bai_qing",
+   "herb.kong_qing",
+   "herb.bei_mu"
+  ],
+  "citation": {
+   "youtube_id": "Bb5QMWnFGtI",
+   "url": "https://www.youtube.com/watch?v=Bb5QMWnFGtI&t=2071s",
+   "series": "bc",
+   "episode": 7,
+   "title": "倪海廈精解 神農本草經之2 完整重製版 全68篇",
+   "start_s": 2071.86,
+   "end_s": 2194.17
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-007.c04",
+  "video_id": "bc-007",
+  "level": 1,
+  "parent_id": null,
+  "seq": 4,
+  "title": "石菖蒲开窍",
+  "summary": "用石菖蒲非水菖蒲；开心孔通九窍治心病鼻病；外用喷鼻可配辛夷麝香；李时珍言解巴豆毒。",
+  "start_s": 2197.244,
+  "end_s": 2852.881,
+  "seg_from": 394,
+  "seg_to": 511,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.chang_pu",
+   "herb.she_xiang"
+  ],
+  "citation": {
+   "youtube_id": "Bb5QMWnFGtI",
+   "url": "https://www.youtube.com/watch?v=Bb5QMWnFGtI&t=2197s",
+   "series": "bc",
+   "episode": 7,
+   "title": "倪海廈精解 神農本草經之2 完整重製版 全68篇",
+   "start_s": 2197.24,
+   "end_s": 2852.88
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-007.c05",
+  "video_id": "bc-007",
+  "level": 1,
+  "parent_id": null,
+  "seq": 5,
+  "title": "菊花杭菊",
+  "summary": "杭菊黄白小朵入药；清风热明目解毒；陈年菊花反不如鲜；平肝风热常配。",
+  "start_s": 2854.846,
+  "end_s": 3019.041,
+  "seg_from": 512,
+  "seg_to": 543,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.ju_hua"
+  ],
+  "citation": {
+   "youtube_id": "Bb5QMWnFGtI",
+   "url": "https://www.youtube.com/watch?v=Bb5QMWnFGtI&t=2854s",
+   "series": "bc",
+   "episode": 7,
+   "title": "倪海廈精解 神農本草經之2 完整重製版 全68篇",
+   "start_s": 2854.85,
+   "end_s": 3019.04
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-007.c06",
+  "video_id": "bc-007",
+  "level": 1,
+  "parent_id": null,
+  "seq": 6,
+  "title": "人参补气禁忌",
+  "summary": "人参大补元气，贵则党参黄芪甘草代；虚劳气血两虚用，实热咳嗽痘疹发散期忌；平常勿日日服。",
+  "start_s": 3020.696,
+  "end_s": 3794.561,
+  "seg_from": 544,
+  "seg_to": 671,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.ren_shen",
+   "herb.huang_qi"
+  ],
+  "citation": {
+   "youtube_id": "Bb5QMWnFGtI",
+   "url": "https://www.youtube.com/watch?v=Bb5QMWnFGtI&t=3020s",
+   "series": "bc",
+   "episode": 7,
+   "title": "倪海廈精解 神農本草經之2 完整重製版 全68篇",
+   "start_s": 3020.7,
+   "end_s": 3794.56
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-007.c07",
+  "video_id": "bc-007",
+  "level": 1,
+  "parent_id": null,
+  "seq": 7,
+  "title": "天门冬与经方温病",
+  "summary": "天门冬常配麦门冬；强调经方为本，温病药可附不可舍伤寒。",
+  "start_s": 3796.586,
+  "end_s": 4286.871,
+  "seg_from": 672,
+  "seg_to": 754,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.tian_men_dong",
+   "herb.mai_men_dong"
+  ],
+  "citation": {
+   "youtube_id": "Bb5QMWnFGtI",
+   "url": "https://www.youtube.com/watch?v=Bb5QMWnFGtI&t=3796s",
+   "series": "bc",
+   "episode": 7,
+   "title": "倪海廈精解 神農本草經之2 完整重製版 全68篇",
+   "start_s": 3796.59,
+   "end_s": 4286.87
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-007.c08",
+  "video_id": "bc-007",
+  "level": 1,
+  "parent_id": null,
+  "seq": 8,
+  "title": "甘草生炙异用",
+  "summary": "甘草甘平补五脏解百毒；发汗方护胃津；生用解毒，炙甘草汤治脉结代心动悸；急下排水时不用。",
+  "start_s": 4288.616,
+  "end_s": 5106.331,
+  "seg_from": 755,
+  "seg_to": 905,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.gan_cao",
+   "formula.zhi_gan_cao_tang"
+  ],
+  "citation": {
+   "youtube_id": "Bb5QMWnFGtI",
+   "url": "https://www.youtube.com/watch?v=Bb5QMWnFGtI&t=4288s",
+   "series": "bc",
+   "episode": 7,
+   "title": "倪海廈精解 神農本草經之2 完整重製版 全68篇",
+   "start_s": 4288.62,
+   "end_s": 5106.33
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-007.c09",
+  "video_id": "bc-007",
+  "level": 1,
+  "parent_id": null,
+  "seq": 9,
+  "title": "干地黄白术茯苓",
+  "summary": "干地黄滋阴养血，脾胃虚寒忌；白术苦燥祛湿健脾，常配茯苓利水；阴虚骨蒸溃疡忌白术。",
+  "start_s": 5107.111,
+  "end_s": 6860.625,
+  "seg_from": 906,
+  "seg_to": 1215,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.gan_di_huang",
+   "herb.bai_zhu",
+   "herb.fu_ling"
+  ],
+  "citation": {
+   "youtube_id": "Bb5QMWnFGtI",
+   "url": "https://www.youtube.com/watch?v=Bb5QMWnFGtI&t=5107s",
+   "series": "bc",
+   "episode": 7,
+   "title": "倪海廈精解 神農本草經之2 完整重製版 全68篇",
+   "start_s": 5107.11,
+   "end_s": 6860.62
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-007.c10",
+  "video_id": "bc-007",
+  "level": 1,
+  "parent_id": null,
+  "seq": 10,
+  "title": "牛膝下焦活血",
+  "summary": "牛膝治下焦腿痛膝伤，活血兼补；孕妇禁用易落胎；走下焦上焦病不必用。",
+  "start_s": 6863.02,
+  "end_s": 8489.136,
+  "seg_from": 1216,
+  "seg_to": 1524,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.niu_xi"
+  ],
+  "citation": {
+   "youtube_id": "Bb5QMWnFGtI",
+   "url": "https://www.youtube.com/watch?v=Bb5QMWnFGtI&t=6863s",
+   "series": "bc",
+   "episode": 7,
+   "title": "倪海廈精解 神農本草經之2 完整重製版 全68篇",
+   "start_s": 6863.02,
+   "end_s": 8489.14
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-007.c11",
+  "video_id": "bc-007",
+  "level": 1,
+  "parent_id": null,
+  "seq": 11,
+  "title": "柴胡连翘半表半里",
+  "summary": "柴胡少阳半表半里，往来寒热胸胁苦满；连翘多治皮肤痒疹，与柴胡分用。",
+  "start_s": 8490.356,
+  "end_s": 9319.967,
+  "seg_from": 1525,
+  "seg_to": 1656,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.chai_hu",
+   "herb.lian_qiao"
+  ],
+  "citation": {
+   "youtube_id": "Bb5QMWnFGtI",
+   "url": "https://www.youtube.com/watch?v=Bb5QMWnFGtI&t=8490s",
+   "series": "bc",
+   "episode": 7,
+   "title": "倪海廈精解 神農本草經之2 完整重製版 全68篇",
+   "start_s": 8490.36,
+   "end_s": 9319.97
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-007.c12",
+  "video_id": "bc-007",
+  "level": 1,
+  "parent_id": null,
+  "seq": 12,
+  "title": "麦门冬车前木香薯蓣",
+  "summary": "麦门冬汤养肺胃；车前子利小便；木香行气；薯蓣（山药）补虚。",
+  "start_s": 9325.382,
+  "end_s": 12387.296,
+  "seg_from": 1657,
+  "seg_to": 2177,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.mai_men_dong",
+   "herb.che_qian_zi",
+   "herb.mu_xiang",
+   "herb.shu_yu"
+  ],
+  "citation": {
+   "youtube_id": "Bb5QMWnFGtI",
+   "url": "https://www.youtube.com/watch?v=Bb5QMWnFGtI&t=9325s",
+   "series": "bc",
+   "episode": 7,
+   "title": "倪海廈精解 神農本草經之2 完整重製版 全68篇",
+   "start_s": 9325.38,
+   "end_s": 12387.3
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-007.c13",
+  "video_id": "bc-007",
+  "level": 1,
+  "parent_id": null,
+  "seq": 13,
+  "title": "泽泻远志龙胆",
+  "summary": "泽泻利小便治水肿；远志开心窍；龙胆泻肝胆湿热收束本草上经石药段。",
+  "start_s": 12392.241,
+  "end_s": 14188.594,
+  "seg_from": 2178,
+  "seg_to": 2493,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.ze_xie",
+   "herb.yuan_zhi",
+   "herb.long_dan"
+  ],
+  "citation": {
+   "youtube_id": "Bb5QMWnFGtI",
+   "url": "https://www.youtube.com/watch?v=Bb5QMWnFGtI&t=12392s",
+   "series": "bc",
+   "episode": 7,
+   "title": "倪海廈精解 神農本草經之2 完整重製版 全68篇",
+   "start_s": 12392.24,
+   "end_s": 14188.59
+  },
+  "review_status": "llm_read"
+ }
+]
