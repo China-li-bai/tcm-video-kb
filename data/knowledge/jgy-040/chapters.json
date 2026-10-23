@@ -1,0 +1,33 @@
+[
+ {
+  "chapter_id": "jgy-040.c01",
+  "video_id": "jgy-040",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "肺癌寒湿·桔梗皂荚与脉诊",
+  "summary": "老烟客右肺野肺癌，仍吸烟。癌患夜卧生热、阳不入阴为阴阳分隔凶象；肺寒湿用桔梗甘草汤（桔梗须重约一两）合甘草干姜汤，皂荚涤浊痰必配红枣护胃酸。脉右大左无为阴阳相隔；加冬瓜仁意通、见两手脉相应则有救。劝戒烟无益者勿强，以脉是否归合判转机。",
+  "start_s": 0.21,
+  "end_s": 535.295,
+  "seg_from": 0,
+  "seg_to": 90,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "new.disease.fei_ai",
+   "formula.jie_geng_tang",
+   "herb.zao_jia",
+   "concept.yin_yang"
+  ],
+  "citation": {
+   "youtube_id": "BjiMBb2k3QY",
+   "url": "https://www.youtube.com/watch?v=BjiMBb2k3QY&t=0s",
+   "series": "jgy",
+   "episode": 40,
+   "title": "倪海廈《金匱要略》細分版： 39醫案（肺癌）",
+   "start_s": 0.21,
+   "end_s": 535.29
+  },
+  "review_status": "llm_read"
+ }
+]
