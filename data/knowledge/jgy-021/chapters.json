@@ -1,0 +1,300 @@
+[
+ {
+  "chapter_id": "jgy-021.c01",
+  "video_id": "jgy-021",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "妊娠总论·早期脉诊与桂枝汤",
+  "summary": "金匮妇人妊娠病篇。男子妇人同方，唯妊娠特殊。古法阴脉小弱、渴不能食、无寒热而恶恶心为早孕；头两月用桂枝汤调和阴阳护正气，忌误用攻下（大黄甘草等）致择绝（流产）。不孕无专方，随证（温经汤等）调理常意外得孕。",
+  "start_s": 5.11,
+  "end_s": 338.625,
+  "seg_from": 0,
+  "seg_to": 51,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "formula.gui_zhi_tang",
+   "formula.wen_jing_tang",
+   "symptom.e_xin"
+  ],
+  "citation": {
+   "youtube_id": "z4o9zRl7AUM",
+   "url": "https://www.youtube.com/watch?v=z4o9zRl7AUM&t=5s",
+   "series": "jgy",
+   "episode": 21,
+   "title": "倪海廈《金匱要略》細分版： 20婦人妊娠病",
+   "start_s": 5.11,
+   "end_s": 338.62
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-021.c02",
+  "video_id": "jgy-021",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "男女脉象·合谷三阴交安胎泻胎",
+  "summary": "妇人左（血）右（气），血旺气衰方易孕；尺脉大胎安、寸旺尺弱易漏。合谷补气泻血可堕胎，泻合谷补三阴交安胎。脉象辨男女仅供参考，妊娠非病可用验尿产检。",
+  "start_s": 339.82,
+  "end_s": 548.935,
+  "seg_from": 52,
+  "seg_to": 86,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.li4",
+   "acupoint.sp6"
+  ],
+  "citation": {
+   "youtube_id": "z4o9zRl7AUM",
+   "url": "https://www.youtube.com/watch?v=z4o9zRl7AUM&t=339s",
+   "series": "jgy",
+   "episode": 21,
+   "title": "倪海廈《金匱要略》細分版： 20婦人妊娠病",
+   "start_s": 339.82,
+   "end_s": 548.93
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-021.c03",
+  "video_id": "jgy-021",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "癥瘕鉴别·桂枝茯苓丸",
+  "summary": "停经前三月经准时→多属胎；经乱后停→多属癥。六月胎动、鲜血→恐堕；黑血块→无孕。桂枝茯苓丸（桂枝茯苓牡丹桃仁芍药）消子宫肌瘤癥积：桂枝导心火下焦祛寒，茯苓去水，桃仁化瘀，芍药止腹痛；非癌；重症加生附子、硫黄。亦可治经痛经乱合证。以手足转温判效。",
+  "start_s": 550.94,
+  "end_s": 986.25,
+  "seg_from": 87,
+  "seg_to": 162,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "formula.gui_zhi_fu_ling_wan",
+   "herb.fu_zi"
+  ],
+  "citation": {
+   "youtube_id": "z4o9zRl7AUM",
+   "url": "https://www.youtube.com/watch?v=z4o9zRl7AUM&t=550s",
+   "series": "jgy",
+   "episode": 21,
+   "title": "倪海廈《金匱要略》細分版： 20婦人妊娠病",
+   "start_s": 550.94,
+   "end_s": 986.25
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-021.c04",
+  "video_id": "jgy-021",
+  "level": 1,
+  "parent_id": null,
+  "seq": 4,
+  "title": "妊娠寒水·附子汤",
+  "summary": "孕六七月脉弦主寒；身热反恶寒、少腹如扇、腹胀急为胞中寒水。附子汤（炮附子白术茯苓人参白芍）温里祛寒利水，胀消溲利则停。",
+  "start_s": 990.58,
+  "end_s": 1139.065,
+  "seg_from": 163,
+  "seg_to": 194,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "formula.fu_zi_tang",
+   "herb.fu_zi"
+  ],
+  "citation": {
+   "youtube_id": "z4o9zRl7AUM",
+   "url": "https://www.youtube.com/watch?v=z4o9zRl7AUM&t=990s",
+   "series": "jgy",
+   "episode": 21,
+   "title": "倪海廈《金匱要略》細分版： 20婦人妊娠病",
+   "start_s": 990.58,
+   "end_s": 1139.07
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-021.c05",
+  "video_id": "jgy-021",
+  "level": 1,
+  "parent_id": null,
+  "seq": 5,
+  "title": "漏下半产·胶艾汤与肝脾",
+  "summary": "脾统血、肝经过胞宫，肝脾供血养胎。漏下、半产后下血不止、妊娠下血、妊娠腹痛四大证用胶艾汤（芎归芍地阿胶艾甘草；阿胶烊化酒煎）。寸脉两侧交替跳示阳虚不固阴。补血真在地黄，当归以油润滑肠间接助纳谷。",
+  "start_s": 1146.665,
+  "end_s": 1653.18,
+  "seg_from": 195,
+  "seg_to": 293,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "new.formula.jiao_ai_tang",
+   "symptom.lou_xia",
+   "herb.e_jiao",
+   "herb.dang_gui"
+  ],
+  "citation": {
+   "youtube_id": "z4o9zRl7AUM",
+   "url": "https://www.youtube.com/watch?v=z4o9zRl7AUM&t=1146s",
+   "series": "jgy",
+   "episode": 21,
+   "title": "倪海廈《金匱要略》細分版： 20婦人妊娠病",
+   "start_s": 1146.66,
+   "end_s": 1653.18
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-021.c06",
+  "video_id": "jgy-021",
+  "level": 1,
+  "parent_id": null,
+  "seq": 6,
+  "title": "腹中绞痛·当归芍药散",
+  "summary": "妊娠腹中绞痛（无漏）用当归芍药散：当归川芎芍药入血分，白术茯苓泽泻入气分利水；重用芍药止痛。有水停胞宫；漏下须用胶艾不可混。未孕经痛有水亦可用；瘀重加丹皮桃仁茜草等。粉剂酒送。",
+  "start_s": 1658.115,
+  "end_s": 1923.285,
+  "seg_from": 294,
+  "seg_to": 347,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "formula.dang_gui_shao_yao_san",
+   "herb.shao_yao"
+  ],
+  "citation": {
+   "youtube_id": "z4o9zRl7AUM",
+   "url": "https://www.youtube.com/watch?v=z4o9zRl7AUM&t=1658s",
+   "series": "jgy",
+   "episode": 21,
+   "title": "倪海廈《金匱要略》細分版： 20婦人妊娠病",
+   "start_s": 1658.12,
+   "end_s": 1923.29
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-021.c07",
+  "video_id": "jgy-021",
+  "level": 1,
+  "parent_id": null,
+  "seq": 7,
+  "title": "妊娠恶阻·干姜人参半夏丸",
+  "summary": "妊娠剧吐用干姜人参半夏丸（汤）：中焦虚寒停水，干姜温中、半夏去水、人参复津；一剂多显效。生姜汁糊粉或入胶囊皆可。",
+  "start_s": 1926.945,
+  "end_s": 2052.72,
+  "seg_from": 348,
+  "seg_to": 373,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "formula.gan_jiang_ren_shen_ban_xia_wan",
+   "herb.ban_xia"
+  ],
+  "citation": {
+   "youtube_id": "z4o9zRl7AUM",
+   "url": "https://www.youtube.com/watch?v=z4o9zRl7AUM&t=1926s",
+   "series": "jgy",
+   "episode": 21,
+   "title": "倪海廈《金匱要略》細分版： 20婦人妊娠病",
+   "start_s": 1926.94,
+   "end_s": 2052.72
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-021.c08",
+  "video_id": "jgy-021",
+  "level": 1,
+  "parent_id": null,
+  "seq": 8,
+  "title": "小便不利两方·当归贝母苦参与葵子茯苓",
+  "summary": "胎压膀胱致溲不利用当归贝母苦参丸（等分粉吞）：苦参利湿、贝母当归润肠补血。仅溲闭无肿。下半身/全身水肿则用葵子茯苓散（葵子:茯苓约3:1），中药利尿水去不复；勿与前方混。",
+  "start_s": 2056.165,
+  "end_s": 2330.075,
+  "seg_from": 374,
+  "seg_to": 423,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "new.formula.dang_gui_bei_mu_ku_shen_tang",
+   "formula.kui_zi_fu_ling_san",
+   "symptom.xiao_bian_bu_li",
+   "symptom.shui_zhong"
+  ],
+  "citation": {
+   "youtube_id": "z4o9zRl7AUM",
+   "url": "https://www.youtube.com/watch?v=z4o9zRl7AUM&t=2056s",
+   "series": "jgy",
+   "episode": 21,
+   "title": "倪海廈《金匱要略》細分版： 20婦人妊娠病",
+   "start_s": 2056.16,
+   "end_s": 2330.07
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-021.c09",
+  "video_id": "jgy-021",
+  "level": 1,
+  "parent_id": null,
+  "seq": 9,
+  "title": "养母养胎·当归散白术散",
+  "summary": "首两月桂枝汤；三月至五月当归散养母（归芩芍术芎等清胃热补血，芍不过堕）；六月至十月白术散养胎（白术牡蛎蜀椒川芎，牡蛎即钙），防巨婴难产。可与当归散分时同用。漏下水肿勿用此调理方。白术散加减：心下痛倍芎、心烦呕加细辛半夏、甚呕加醋；小麦粥安心、大麦粥顾肠。",
+  "start_s": 2333.902,
+  "end_s": 2726.027,
+  "seg_from": 424,
+  "seg_to": 485,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "formula.dang_gui_san",
+   "new.formula.bai_zhu_san",
+   "herb.mu_li",
+   "herb.xiao_mai"
+  ],
+  "citation": {
+   "youtube_id": "z4o9zRl7AUM",
+   "url": "https://www.youtube.com/watch?v=z4o9zRl7AUM&t=2333s",
+   "series": "jgy",
+   "episode": 21,
+   "title": "倪海廈《金匱要略》細分版： 20婦人妊娠病",
+   "start_s": 2333.9,
+   "end_s": 2726.03
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-021.c10",
+  "video_id": "jgy-021",
+  "level": 1,
+  "parent_id": null,
+  "seq": 10,
+  "title": "伤胎小便闭·至阴隐白与难产方",
+  "summary": "跌仆伤胎、腰以下重、小便不通为胎位不正；倪氏主张针至阴（膀胱井）与隐白（脾井）优于原文劳宫关元（孕妇忌针关元）。难产/死胎不下用党参当归牛膝重剂活血。",
+  "start_s": 2734.442,
+  "end_s": 2999.917,
+  "seg_from": 486,
+  "seg_to": 533,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "acupoint.bl67",
+   "acupoint.sp1",
+   "herb.niu_xi"
+  ],
+  "citation": {
+   "youtube_id": "z4o9zRl7AUM",
+   "url": "https://www.youtube.com/watch?v=z4o9zRl7AUM&t=2734s",
+   "series": "jgy",
+   "episode": 21,
+   "title": "倪海廈《金匱要略》細分版： 20婦人妊娠病",
+   "start_s": 2734.44,
+   "end_s": 2999.92
+  },
+  "review_status": "llm_read"
+ }
+]
