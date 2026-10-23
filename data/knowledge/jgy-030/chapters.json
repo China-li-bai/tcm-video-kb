@@ -1,0 +1,92 @@
+[
+ {
+  "chapter_id": "jgy-030.c01",
+  "video_id": "jgy-030",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "乳癌四期案·问诊与恶征",
+  "summary": "2007-02乳癌案：左乳切除后对侧再发并肝肺转移（四期）。必问失眠、大便、胸痛、脚温凉、纳谷及更年热。乳头下陷、肿块硬而不规则不痛为恶候。胸腔属上焦；有肝转移则柴胡入肝。",
+  "start_s": 1.57,
+  "end_s": 256.06,
+  "seg_from": 0,
+  "seg_to": 48,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "new.disease.ru_ai",
+   "formula.xiao_chai_hu_tang"
+  ],
+  "citation": {
+   "youtube_id": "iUsY2SGJ2Qw",
+   "url": "https://www.youtube.com/watch?v=iUsY2SGJ2Qw&t=1s",
+   "series": "jgy",
+   "episode": 30,
+   "title": "倪海廈《金匱要略》細分版： 29醫案（乳癌）",
+   "start_s": 1.57,
+   "end_s": 256.06
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-030.c02",
+  "video_id": "jgy-030",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "小柴胡合黄连阿胶·不开利水",
+  "summary": "小柴胡清肝热用黄芩（非黄连/黄柏）清中焦。失眠心神不安：黄连+白芍+阿胶成黄连阿胶汤意——黄芩/黄芪疏肝、黄连助心阴、白芍酸收提血归心、阿胶/蛋黄安血中神。勿妄加泽泻茯苓利水（动气分非血分）。喉肺转移布半夏、细辛开胸膈止咳痰；源头在乳/卵巢则重心治本。",
+  "start_s": 259.33,
+  "end_s": 816.205,
+  "seg_from": 49,
+  "seg_to": 144,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "formula.huang_lian_e_jiao_tang",
+   "formula.xiao_chai_hu_tang",
+   "herb.ban_xia"
+  ],
+  "citation": {
+   "youtube_id": "iUsY2SGJ2Qw",
+   "url": "https://www.youtube.com/watch?v=iUsY2SGJ2Qw&t=259s",
+   "series": "jgy",
+   "episode": 30,
+   "title": "倪海廈《金匱要略》細分版： 29醫案（乳癌）",
+   "start_s": 259.33,
+   "end_s": 816.21
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-030.c03",
+  "video_id": "jgy-030",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "疗效与鳖甲海藻·乳癖轻证",
+  "summary": "药后眠改善、更年热非全身燥热、苔由蛋黄转蛋白示胃气来复；镜面苔现则危。鳖甲、海藻等软坚治肝胆积；龟板偏补虚。乳癌转肝较原发肝癌易治（由外入内）。乳癖硬块光滑可痛：奇方岩露四物+炒麦芽去乳积水，或桂枝汤加葛根；初期不必鳖甲海藻。流脓后用紫草等。",
+  "start_s": 817.98,
+  "end_s": 1600.133,
+  "seg_from": 145,
+  "seg_to": 271,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.bie_jia",
+   "herb.hai_zao",
+   "formula.gui_zhi_tang",
+   "new.formula.si_wu_tang"
+  ],
+  "citation": {
+   "youtube_id": "iUsY2SGJ2Qw",
+   "url": "https://www.youtube.com/watch?v=iUsY2SGJ2Qw&t=817s",
+   "series": "jgy",
+   "episode": 30,
+   "title": "倪海廈《金匱要略》細分版： 29醫案（乳癌）",
+   "start_s": 817.98,
+   "end_s": 1600.13
+  },
+  "review_status": "llm_read"
+ }
+]

@@ -1,0 +1,35 @@
+{
+ "schema": "knowledge/1",
+ "video_id": "jgy-030",
+ "youtube_id": "iUsY2SGJ2Qw",
+ "windows": [
+  "w00-01"
+ ],
+ "annotations_sha256": "8a25c9484ceee0e0",
+ "n_segments": 272,
+ "n_chapters": 3,
+ "n_sections": 0,
+ "n_entities": 36,
+ "entities_by_type": {
+  "formula": 4,
+  "herb": 14,
+  "symptom": 2,
+  "disease": 2,
+  "meridian": 1,
+  "acupoint": 2,
+  "pulse": 1,
+  "method": 1,
+  "book": 1,
+  "zangfu": 6,
+  "concept": 2
+ },
+ "n_new_entities": 3,
+ "n_knowledge_points": 10,
+ "kp_by_type": {
+  "clinical_tip": 3,
+  "diagnostic_rule": 2,
+  "formula_indication": 4,
+  "contraindication": 1
+ },
+ "errors": []
+}

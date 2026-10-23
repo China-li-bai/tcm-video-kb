@@ -1,0 +1,164 @@
+video_id: jgy-030
+window: w00-01
+seg_from: 0
+seg_to: 271
+annotator: llm_read
+chapters:
+- key: c01
+  title: 乳癌四期案·问诊与恶征
+  start_seq: 0
+  summary: 2007-02乳癌案：左乳切除后对侧再发并肝肺转移（四期）。必问失眠、大便、胸痛、脚温凉、纳谷及更年热。乳头下陷、肿块硬而不规则不痛为恶候。胸腔属上焦；有肝转移则柴胡入肝。
+  clauses: []
+  topics:
+  - new.disease.ru_ai
+  - formula.xiao_chai_hu_tang
+- key: c02
+  title: 小柴胡合黄连阿胶·不开利水
+  start_seq: 49
+  summary: 小柴胡清肝热用黄芩（非黄连/黄柏）清中焦。失眠心神不安：黄连+白芍+阿胶成黄连阿胶汤意——黄芩/黄芪疏肝、黄连助心阴、白芍酸收提血归心、阿胶/蛋黄安血中神。勿妄加泽泻茯苓利水（动气分非血分）。喉肺转移布半夏、细辛开胸膈止咳痰；源头在乳/卵巢则重心治本。
+  clauses: []
+  topics:
+  - formula.huang_lian_e_jiao_tang
+  - formula.xiao_chai_hu_tang
+  - herb.ban_xia
+- key: c03
+  title: 疗效与鳖甲海藻·乳癖轻证
+  start_seq: 145
+  summary: 药后眠改善、更年热非全身燥热、苔由蛋黄转蛋白示胃气来复；镜面苔现则危。鳖甲、海藻等软坚治肝胆积；龟板偏补虚。乳癌转肝较原发肝癌易治（由外入内）。乳癖硬块光滑可痛：奇方岩露四物+炒麦芽去乳积水，或桂枝汤加葛根；初期不必鳖甲海藻。流脓后用紫草等。
+  clauses: []
+  topics:
+  - herb.bie_jia
+  - herb.hai_zao
+  - formula.gui_zhi_tang
+  - new.formula.si_wu_tang
+entities:
+- id: new.disease.ru_ai
+  seq: 2
+  surface: breast cancer
+  corrected: 乳癌
+- id: herb.wu_tou
+  seq: 13
+  surface: 乌头
+  corrected: 乌头
+- id: formula.xiao_chai_hu_tang
+  seq: 53
+  surface: 小柴胡汤
+  corrected: 小柴胡汤
+- id: herb.huang_qin
+  seq: 53
+  surface: 黄芩
+  corrected: 黄芩
+- id: herb.huang_lian
+  seq: 56
+  surface: 黄连
+  corrected: 黄连
+- id: formula.huang_lian_e_jiao_tang
+  seq: 56
+  surface: 黄连阿胶汤
+  corrected: 黄连阿胶汤
+- id: herb.e_jiao
+  seq: 56
+  surface: 阿胶
+  corrected: 阿胶
+- id: herb.shao_yao
+  seq: 56
+  surface: 白芍
+  corrected: 白芍
+- id: herb.ban_xia
+  seq: 119
+  surface: 半夏
+  corrected: 半夏
+- id: herb.bie_jia
+  seq: 221
+  surface: 鳖甲
+  corrected: 鳖甲
+- id: herb.da_huang
+  seq: 221
+  surface: 大黄
+  corrected: 大黄
+- id: herb.hai_zao
+  seq: 227
+  surface: 海藻
+  corrected: 海藻
+- id: new.formula.si_wu_tang
+  seq: 260
+  surface: 四物汤
+  corrected: 四物汤
+- id: formula.gui_zhi_tang
+  seq: 261
+  surface: 桂枝汤
+  corrected: 桂枝汤
+- id: herb.ge_gen
+  seq: 261
+  surface: 葛根
+  corrected: 葛根
+- id: acupoint.st36
+  seq: 147
+  surface: 足三里
+  corrected: 足三里
+kps:
+- type: clinical_tip
+  s: 乳癌术后仍失眠常见；问诊还须大便、胸痛、脚温凉、纳谷及更年热。
+  seq: [8]
+  q: 失眠
+  ents: [new.disease.ru_ai]
+  conf: 0.85
+- type: diagnostic_rule
+  s: 乳癌恶征：肿块硬而不规则、按之不痛；乳头下陷示阳气下陷，与阴茎内缩同理。
+  seq: [42]
+  q: 硬邦邦的
+  ents: [new.disease.ru_ai]
+  conf: 0.9
+  asr: 主头陷=乳头陷
+- type: formula_indication
+  s: 乳癌兼肝热：小柴胡用黄芩清中焦热，不用黄连黄柏；柴胡兼入肝。
+  seq: [53]
+  q: 小柴胡汤
+  ents: [formula.xiao_chai_hu_tang, herb.huang_qin]
+  conf: 0.95
+- type: formula_indication
+  s: 失眠心神不安合黄连阿胶汤意：黄连+白芍酸收+阿胶；白芍提下肢血归心以减心负。
+  seq: [56]
+  q: 黄连阿胶汤
+  ents: [formula.huang_lian_e_jiao_tang, herb.huang_lian, herb.e_jiao, herb.shao_yao]
+  conf: 0.95
+- type: contraindication
+  s: 黄连阿胶安血分时勿妄加泽泻茯苓等利水，以免动气分而失血分之治。
+  seq: [72]
+  q: 茯苓
+  ents: [formula.huang_lian_e_jiao_tang, herb.fu_ling]
+  conf: 0.85
+  asr: 折蟹=泽泻
+- type: clinical_tip
+  s: 喉肺已有转移灶可先布半夏、细辛开胸膈、止咳化痰；仍须抓住乳/卵巢源头。
+  seq: [119]
+  q: 半夏
+  ents: [herb.ban_xia, new.disease.ru_ai]
+  conf: 0.85
+- type: clinical_tip
+  s: 乳癌转移至肝往往较原发肝癌易治（邪由外入内）。
+  seq: [133]
+  q: 乳癌
+  ents: [new.disease.ru_ai, new.disease.gan_ai]
+  conf: 0.85
+  asr: 疑诊=移诊/转移
+- type: diagnostic_rule
+  s: 更年期潮热冲上≠全身燥热（阴阳乖隔）；苔由厚腻转薄白示胃气来复，现镜面苔则危。
+  seq: [153]
+  q: 更年期生热
+  ents: [concept.yin_yang]
+  conf: 0.9
+- type: formula_indication
+  s: 肝胆积坚用鳖甲等；可加大黄；喉核加强海藻软坚。龟板偏补虚长寿。
+  seq: [221]
+  q: 鳖甲
+  ents: [herb.bie_jia, herb.hai_zao, herb.da_huang]
+  conf: 0.9
+  asr: 千草=茜草？或甘草；拜龟板=龟板
+- type: formula_indication
+  s: 乳癖硬块光滑或痛：四物汤加炒麦芽去乳积水；或桂枝汤加葛根。初期不必鳖甲海藻。
+  seq: [260]
+  q: 四物汤
+  ents: [new.formula.si_wu_tang, formula.gui_zhi_tang, herb.ge_gen]
+  conf: 0.9
+  asr: 奇芳艳露=奇方岩露类
