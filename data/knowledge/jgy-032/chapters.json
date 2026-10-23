@@ -1,0 +1,93 @@
+[
+ {
+  "chapter_id": "jgy-032.c01",
+  "video_id": "jgy-032",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "红斑狼疮案·经闭逆心与寒湿",
+  "summary": "2004-05黑人女SLE：肥胖、周身关节痛、八年闭经、乳胀溢液、小便失禁、纳亢不渴、失眠。病机：情志闭经后经血/乳汁逆入心；下寒重、上焦虚热。必问汗眠以察心。南派不明真寒，唯生附子可破冰山。",
+  "start_s": 0.48,
+  "end_s": 398.76,
+  "seg_from": 0,
+  "seg_to": 74,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "new.disease.hong_ban_lang_chuang",
+   "herb.fu_zi",
+   "zangfu.xin"
+  ],
+  "citation": {
+   "youtube_id": "jqt8fhESGs0",
+   "url": "https://www.youtube.com/watch?v=jqt8fhESGs0&t=0s",
+   "series": "jgy",
+   "episode": 32,
+   "title": "倪海廈《金匱要略》細分版： 31 醫案（紅斑性狼瘡）",
+   "start_s": 0.48,
+   "end_s": 398.76
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-032.c02",
+  "video_id": "jgy-032",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "生附合防己黄芪·沥乳固肾",
+  "summary": "生附子五钱破下寒；乳房胀满湿盛用防己类沥水（非必周身水肿）；黄芪运脾补气亦可补肾；龙胆草清余热；桑螵蛸类固小便失禁、复膀胱约。五天内关节痛大减、眠纳脚温好转；加柴胡郁金等防乳邪入肝。",
+  "start_s": 398.76,
+  "end_s": 897.635,
+  "seg_from": 75,
+  "seg_to": 165,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.fu_zi",
+   "herb.fang_ji",
+   "herb.huang_qi",
+   "herb.long_dan"
+  ],
+  "citation": {
+   "youtube_id": "jqt8fhESGs0",
+   "url": "https://www.youtube.com/watch?v=jqt8fhESGs0&t=398s",
+   "series": "jgy",
+   "episode": 32,
+   "title": "倪海廈《金匱要略》細分版： 31 醫案（紅斑性狼瘡）",
+   "start_s": 398.76,
+   "end_s": 897.63
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-032.c03",
+  "video_id": "jgy-032",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "咳痰善后与狼疮转阴",
+  "summary": "加白术；乳退关节近愈后出现咳白痰，予桂枝甘草汤意；后黄痰干咳加麦冬半夏。七月西医复查狼疮指标阴转。总则：复阳气、祛阴积（勿执一药杀「菌」）；关节痛不论痛风风湿，乌头助阳气周行则邪无依。",
+  "start_s": 904.44,
+  "end_s": 1488.394,
+  "seg_from": 166,
+  "seg_to": 270,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "formula.gui_zhi_gan_cao_tang",
+   "herb.wu_tou",
+   "formula.gui_zhi_tang"
+  ],
+  "citation": {
+   "youtube_id": "jqt8fhESGs0",
+   "url": "https://www.youtube.com/watch?v=jqt8fhESGs0&t=904s",
+   "series": "jgy",
+   "episode": 32,
+   "title": "倪海廈《金匱要略》細分版： 31 醫案（紅斑性狼瘡）",
+   "start_s": 904.44,
+   "end_s": 1488.39
+  },
+  "review_status": "llm_read"
+ }
+]
