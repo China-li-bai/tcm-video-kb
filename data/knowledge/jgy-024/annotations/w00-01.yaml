@@ -1,0 +1,159 @@
+video_id: jgy-024
+window: w00-01
+seg_from: 0
+seg_to: 192
+annotator: llm_read
+chapters:
+- key: c01
+  title: 阴阳易·梅毒阴疮方
+  start_seq: 0
+  summary: 金匮阴阳易差后劳复。阴阳易为男女交合传染（性病）：身重少气、阴中痛引挛、热上冲胸、头重目花。倪氏弃烧裩散；女用狼牙汤，男用解毒剂（川芎忍冬甘草大黄等）治梅毒淋病阴疮睾肿；末期阴茎溃落用阿胶附子甘草汤止血固表解毒。
+  clauses: []
+  topics:
+  - syndrome.yin_yang_yi
+  - formula.lang_ya_tang
+  - new.formula.e_jiao_fu_zi_tang
+- key: c02
+  title: 差后劳复·枳实栀子豉与小柴胡
+  start_seq: 87
+  summary: 大病初愈过劳复发用枳实栀子豉汤（先煮枳实栀子再下豉微汗）；有宿食用加大黄。差后仍发热属少阳余邪，用小柴胡汤。
+  clauses: []
+  topics:
+  - formula.zhi_zi_shi_tang
+  - formula.xiao_chai_hu_tang
+- key: c03
+  title: 病后水肿·牡蛎泽泻散
+  start_seq: 114
+  summary: 大病后腰以下水肿用牡蛎泽泻散等分（牡蛎泽泻海藻商陆葶苈等）咸软坚利尿；商陆等猛剂临床以常山等代慎用。
+  clauses: []
+  topics:
+  - formula.mu_li_ze_xie_san
+- key: c04
+  title: 病后吐涎·理中与竹叶石膏
+  start_seq: 134
+  summary: 病后口吐涎沫为胃寒心火不降，用理中丸/汤。大病后短气欲吐恶心为胃虚热津伤，用竹叶石膏汤（竹叶石膏半夏麦冬人参粳米）；亦常用于糖尿虚羸恶心。实呕用姜半夏，肝虚顶胃呕用吴茱萸汤。差后忌骤进厚味，宜稀粥面食。
+  clauses: []
+  topics:
+  - formula.li_zhong_wan
+  - formula.zhu_ye_shi_gao_tang
+  - formula.wu_zhu_yu_tang
+entities:
+- id: syndrome.yin_yang_yi
+  seq: 2
+  surface: 阴阳易
+  corrected: 阴阳易
+- id: formula.lang_ya_tang
+  seq: 24
+  surface: 狼牙汤
+  corrected: 狼牙汤
+- id: new.formula.e_jiao_fu_zi_tang
+  seq: 68
+  surface: 阿胶附子汤
+  corrected: 阿胶附子汤
+- id: herb.e_jiao
+  seq: 62
+  surface: 阿胶
+  corrected: 阿胶
+- id: herb.fu_zi
+  seq: 63
+  surface: 泡附子
+  corrected: 附子
+- id: herb.gan_cao
+  seq: 63
+  surface: 甘草
+  corrected: 甘草
+- id: formula.zhi_zi_shi_tang
+  seq: 101
+  surface: 子石跟栀子
+  corrected: 枳实栀子豉汤
+- id: formula.xiao_chai_hu_tang
+  seq: 107
+  surface: 小柴胡汤
+  corrected: 小柴胡汤
+- id: formula.mu_li_ze_xie_san
+  seq: 116
+  surface: 五蛎泽泻散
+  corrected: 牡蛎泽泻散
+- id: formula.li_zhong_wan
+  seq: 145
+  surface: 李中丸
+  corrected: 理中丸
+- id: formula.zhu_ye_shi_gao_tang
+  seq: 152
+  surface: 竹叶石膏汤
+  corrected: 竹叶石膏汤
+- id: herb.ban_xia
+  seq: 156
+  surface: 半夏
+  corrected: 半夏
+- id: formula.wu_zhu_yu_tang
+  seq: 162
+  surface: 无助益汤
+  corrected: 吴茱萸汤
+kps:
+- type: concept_definition
+  s: 阴阳易为男女交合所传之病（性病）：身重少气、阴中痛挛、热反上冲胸、头重目花如中毒。
+  seq: [3]
+  q: 阴阳易
+  ents: [syndrome.yin_yang_yi]
+  conf: 0.9
+  asr: 阴阳异=阴阳易
+- type: contraindication
+  s: 烧裩散倪氏临床不用；女阴疮用狼牙汤，男梅毒淋病阴疮用解毒剂类方。
+  seq: [15]
+  q: 烧昆散
+  ents: [formula.lang_ya_tang, syndrome.yin_yang_yi]
+  conf: 0.85
+  asr: 烧昆/赵昆=烧裩
+- type: formula_indication
+  s: 梅毒末期阴茎溃落，阿胶附子甘草汤：阿胶止血、附子固表、甘草解毒，一剂可挽。
+  seq: [68]
+  q: 阿胶附子汤
+  ents: [new.formula.e_jiao_fu_zi_tang, herb.e_jiao, herb.fu_zi, herb.gan_cao]
+  conf: 0.9
+- type: formula_indication
+  s: 大病初愈因过劳复发，用枳实栀子豉汤微汗：先煮枳实栀子，后下豆豉；有宿食加大黄。
+  seq: [101]
+  q: 豆豉
+  ents: [formula.zhi_zi_shi_tang]
+  conf: 0.9
+  asr: 子石=枳实；有子石之子豆芝=枳实栀子豉
+- type: formula_indication
+  s: 差后仍发热为少阳余邪未尽，用小柴胡汤；见「鬼神」亦属柴胡证机。
+  seq: [107]
+  q: 小柴胡汤
+  ents: [formula.xiao_chai_hu_tang]
+  conf: 0.95
+- type: formula_indication
+  s: 大病后独腰下水肿，牡蛎泽泻散等分粉服，咸味软坚利尿；猛泻药临床需代换慎用。
+  seq: [116]
+  q: 五蛎泽泻散
+  ents: [formula.mu_li_ze_xie_san]
+  conf: 0.9
+  asr: 五蛎=牡蛎；暑期伤露=商陆之类
+- type: diagnostic_rule
+  s: 口中涎沫频吐为胃寒、心火不能下行；可用理中丸/汤温中。
+  seq: [144]
+  q: 口吐研沫
+  ents: [formula.li_zhong_wan]
+  conf: 0.85
+  asr: 研沫/研膜=涎沫；李中=理中
+- type: formula_indication
+  s: 大病后短气欲吐恶心属胃虚热津伤，竹叶石膏汤清虚热、半夏止呕、麦冬人参复津；亦用于糖尿虚羸欲呕。
+  seq: [152]
+  q: 竹叶石膏汤
+  ents: [formula.zhu_ye_shi_gao_tang, herb.ban_xia]
+  conf: 0.95
+- type: clinical_tip
+  s: 实呕（胃有停水）用姜半夏；虚呕（肝胀顶胃）用吴茱萸汤——临证辨虚实。
+  seq: [162]
+  q: 无助益汤
+  ents: [formula.wu_zhu_yu_tang, herb.ban_xia]
+  conf: 0.85
+  asr: 无助益/无助于=吴茱萸
+- type: clinical_tip
+  s: 大病初愈忌骤进鱼肉厚味致胃气上逆；宜稀粥面条等易消化饮食。
+  seq: [177]
+  q: 容易消化的东西
+  ents: []
+  conf: 0.85

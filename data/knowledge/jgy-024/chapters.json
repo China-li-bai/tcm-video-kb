@@ -1,0 +1,119 @@
+[
+ {
+  "chapter_id": "jgy-024.c01",
+  "video_id": "jgy-024",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "阴阳易·梅毒阴疮方",
+  "summary": "金匮阴阳易差后劳复。阴阳易为男女交合传染（性病）：身重少气、阴中痛引挛、热上冲胸、头重目花。倪氏弃烧裩散；女用狼牙汤，男用解毒剂（川芎忍冬甘草大黄等）治梅毒淋病阴疮睾肿；末期阴茎溃落用阿胶附子甘草汤止血固表解毒。",
+  "start_s": 14.67,
+  "end_s": 441.725,
+  "seg_from": 0,
+  "seg_to": 86,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "syndrome.yin_yang_yi",
+   "formula.lang_ya_tang",
+   "new.formula.e_jiao_fu_zi_tang"
+  ],
+  "citation": {
+   "youtube_id": "hhJXXiE44I8",
+   "url": "https://www.youtube.com/watch?v=hhJXXiE44I8&t=14s",
+   "series": "jgy",
+   "episode": 24,
+   "title": "倪海廈《金匱要略》細分版： 23陰陽易差後勞復",
+   "start_s": 14.67,
+   "end_s": 441.73
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-024.c02",
+  "video_id": "jgy-024",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "差后劳复·枳实栀子豉与小柴胡",
+  "summary": "大病初愈过劳复发用枳实栀子豉汤（先煮枳实栀子再下豉微汗）；有宿食用加大黄。差后仍发热属少阳余邪，用小柴胡汤。",
+  "start_s": 443.86,
+  "end_s": 588.145,
+  "seg_from": 87,
+  "seg_to": 113,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "formula.zhi_zi_shi_tang",
+   "formula.xiao_chai_hu_tang"
+  ],
+  "citation": {
+   "youtube_id": "hhJXXiE44I8",
+   "url": "https://www.youtube.com/watch?v=hhJXXiE44I8&t=443s",
+   "series": "jgy",
+   "episode": 24,
+   "title": "倪海廈《金匱要略》細分版： 23陰陽易差後勞復",
+   "start_s": 443.86,
+   "end_s": 588.14
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-024.c03",
+  "video_id": "jgy-024",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "病后水肿·牡蛎泽泻散",
+  "summary": "大病后腰以下水肿用牡蛎泽泻散等分（牡蛎泽泻海藻商陆葶苈等）咸软坚利尿；商陆等猛剂临床以常山等代慎用。",
+  "start_s": 589.36,
+  "end_s": 704.045,
+  "seg_from": 114,
+  "seg_to": 133,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "formula.mu_li_ze_xie_san"
+  ],
+  "citation": {
+   "youtube_id": "hhJXXiE44I8",
+   "url": "https://www.youtube.com/watch?v=hhJXXiE44I8&t=589s",
+   "series": "jgy",
+   "episode": 24,
+   "title": "倪海廈《金匱要略》細分版： 23陰陽易差後勞復",
+   "start_s": 589.36,
+   "end_s": 704.04
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-024.c04",
+  "video_id": "jgy-024",
+  "level": 1,
+  "parent_id": null,
+  "seq": 4,
+  "title": "病后吐涎·理中与竹叶石膏",
+  "summary": "病后口吐涎沫为胃寒心火不降，用理中丸/汤。大病后短气欲吐恶心为胃虚热津伤，用竹叶石膏汤（竹叶石膏半夏麦冬人参粳米）；亦常用于糖尿虚羸恶心。实呕用姜半夏，肝虚顶胃呕用吴茱萸汤。差后忌骤进厚味，宜稀粥面食。",
+  "start_s": 705.88,
+  "end_s": 1010.925,
+  "seg_from": 134,
+  "seg_to": 192,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "formula.li_zhong_wan",
+   "formula.zhu_ye_shi_gao_tang",
+   "formula.wu_zhu_yu_tang"
+  ],
+  "citation": {
+   "youtube_id": "hhJXXiE44I8",
+   "url": "https://www.youtube.com/watch?v=hhJXXiE44I8&t=705s",
+   "series": "jgy",
+   "episode": 24,
+   "title": "倪海廈《金匱要略》細分版： 23陰陽易差後勞復",
+   "start_s": 705.88,
+   "end_s": 1010.92
+  },
+  "review_status": "llm_read"
+ }
+]
