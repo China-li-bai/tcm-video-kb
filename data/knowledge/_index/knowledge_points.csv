@@ -1,4 +1,15 @@
 kp_id,video_id,series,episode,type,statement,entity_ids,chapter_id,chapter_title,evidence_quote,start_s,end_s,url,confidence,asr_note,title
+bc-003.kp0001,bc-003,bc,3,clinical_tip,地榆主止血，痔疮出血与呕血最常用。,herb.di_yu,bc-003.c01,地榆与海藻,地狱,2.1,8.579,https://www.youtube.com/watch?v=xUYZpkVoOjs&t=2s,0.9,地狱/地鱼=地榆,倪海廈精解 神農本草經之6 完整重製版 全68篇
+bc-003.kp0002,bc-003,bc,3,clinical_tip,海藻可作日常长寿零食，处方约三钱，过咸易恶心。,herb.hai_zao,bc-003.c01,地榆与海藻,海藻,44.6,45.06,https://www.youtube.com/watch?v=xUYZpkVoOjs&t=44s,0.9,,倪海廈精解 神農本草經之6 完整重製版 全68篇
+bc-003.kp0003,bc-003,bc,3,clinical_tip,海藻味咸能软坚，治甲状腺肿大、淋巴结与淋巴瘤；性寒，寒证慎用。,herb.hai_zao,bc-003.c01,地榆与海藻,海藻,173.54,178.08,https://www.youtube.com/watch?v=xUYZpkVoOjs&t=173s,0.95,,倪海廈精解 神農本草經之6 完整重製版 全68篇
+bc-003.kp0004,bc-003,bc,3,clinical_tip,泽兰妇科用得最多，活血利水。,herb.ze_lan,bc-003.c02,泽兰桑白皮栀子厚朴青皮,泽兰,556.83,559.265,https://www.youtube.com/watch?v=xUYZpkVoOjs&t=556s,0.9,,倪海廈精解 神農本草經之6 完整重製版 全68篇
+bc-003.kp0005,bc-003,bc,3,clinical_tip,桑根白皮治虚劳及女子腹中硬块等。,herb.sang_gen_bai_pi,bc-003.c02,泽兰桑白皮栀子厚朴青皮,虚劳,2185.314,2195.269,https://www.youtube.com/watch?v=xUYZpkVoOjs&t=2185s,0.85,,倪海廈精解 神農本草經之6 完整重製版 全68篇
+bc-003.kp0006,bc-003,bc,3,clinical_tip,栀子苦寒，清心包烦热，夜烦不眠可用。,herb.zhi_zi,bc-003.c02,泽兰桑白皮栀子厚朴青皮,栀子,3653.906,3657.026,https://www.youtube.com/watch?v=xUYZpkVoOjs&t=3653s,0.9,,倪海廈精解 神農本草經之6 完整重製版 全68篇
+bc-003.kp0007,bc-003,bc,3,clinical_tip,青皮临床多用于皮肤病，亦治皮肤发黄。,new.herb.qing_pi,bc-003.c02,泽兰桑白皮栀子厚朴青皮,青皮,4767.683,4775.878,https://www.youtube.com/watch?v=xUYZpkVoOjs&t=4767s,0.85,,倪海廈精解 神農本草經之6 完整重製版 全68篇
+bc-003.kp0008,bc-003,bc,3,clinical_tip,龙眼滋阴养心安神，可作茶饮，不必过虑副作用。,herb.long_yan,bc-003.c03,龙眼鹿角羚羊角刺猬皮,龙眼,5643.173,5652.063,https://www.youtube.com/watch?v=xUYZpkVoOjs&t=5643s,0.9,,倪海廈精解 神農本草經之6 完整重製版 全68篇
+bc-003.kp0009,bc-003,bc,3,clinical_tip,鹿角胶、鹿茸性味相近，补督脉力强。,new.herb.lu_jiao,bc-003.c03,龙眼鹿角羚羊角刺猬皮,鹿角,6190.254,6197.299,https://www.youtube.com/watch?v=xUYZpkVoOjs&t=6190s,0.85,,倪海廈精解 神農本草經之6 完整重製版 全68篇
+bc-003.kp0010,bc-003,bc,3,clinical_tip,羚羊角熄风止痉，脑伤肿瘤抽搐时重要选用。,herb.ling_yang_jiao,bc-003.c03,龙眼鹿角羚羊角刺猬皮,羚羊角,6643.514,6645.509,https://www.youtube.com/watch?v=xUYZpkVoOjs&t=6643s,0.9,,倪海廈精解 神農本草經之6 完整重製版 全68篇
+bc-003.kp0011,bc-003,bc,3,clinical_tip,刺猬皮收敛祛湿止血，痔疮可用。,new.herb.ci_wei_pi,bc-003.c03,龙眼鹿角羚羊角刺猬皮,刺猬,7176.56,7187.82,https://www.youtube.com/watch?v=xUYZpkVoOjs&t=7176s,0.85,,倪海廈精解 神農本草經之6 完整重製版 全68篇
 bc-004.kp0001,bc-004,bc,4,pathomechanism,人体阴阳呈圆形；热极则生寒，不可作直线理解。,,bc-004.c01,热极生寒与石膏白虎,热极生寒,6.17,12.93,https://www.youtube.com/watch?v=wHtt5w6Y2Uk&t=6s,0.95,,倪海廈精解 神農本草經之5 完整重製版 全68篇
 bc-004.kp0002,bc-004,bc,4,clinical_tip,金石类如石膏、硫磺宜打散后入棉布袋煎，勿整粉直倒汤中。,herb.shi_gao herb.shi_liu_huang,bc-004.c01,热极生寒与石膏白虎,石膏,84.97,94.535,https://www.youtube.com/watch?v=wHtt5w6Y2Uk&t=84s,0.9,,倪海廈精解 神農本草經之5 完整重製版 全68篇
 bc-004.kp0003,bc-004,bc,4,clinical_tip,石膏清肺胃三焦气分热；大热狂渴属白虎汤证。,herb.shi_gao formula.bai_hu_tang,bc-004.c01,热极生寒与石膏白虎,石膏,193.77,198.84,https://www.youtube.com/watch?v=wHtt5w6Y2Uk&t=193s,0.95,,倪海廈精解 神農本草經之5 完整重製版 全68篇
