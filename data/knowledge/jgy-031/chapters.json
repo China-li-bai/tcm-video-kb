@@ -1,0 +1,63 @@
+[
+ {
+  "chapter_id": "jgy-031.c01",
+  "video_id": "jgy-031",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "尿毒医案与水气头昏恶心",
+  "summary": "2007-02-09尿毒透析医案。肾衰主症头昏、恶心：肾不能气化则冷水停积，上犯膈胃则恶心，水晃则头昏；五苓散、苓桂术甘等利水消眩。保心阳则肾衰不立刻致命。",
+  "start_s": 0.28,
+  "end_s": 458.305,
+  "seg_from": 0,
+  "seg_to": 89,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "new.disease.niao_du",
+   "formula.wu_ling_san",
+   "formula.fu_ling_gui_zhi_bai_zhu_gan_cao_tang"
+  ],
+  "citation": {
+   "youtube_id": "B363X3T9VOg",
+   "url": "https://www.youtube.com/watch?v=B363X3T9VOg&t=0s",
+   "series": "jgy",
+   "episode": 31,
+   "title": "倪海廈《金匱要略》細分版： 30醫案（尿毒）",
+   "start_s": 0.28,
+   "end_s": 458.31
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-031.c02",
+  "video_id": "jgy-031",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "桂枝汤合当归四逆附子温阳",
+  "summary": "首诊从桂枝汤加减；四肢冷壮心阳用生附、干姜近四逆法；合当归四逆通血；苓桂类健脾开胃。尿毒常累心，炙甘草汤类可顾心。疗程中便通、血压稳，强调温阳利水强心。",
+  "start_s": 460.41,
+  "end_s": 2025.114,
+  "seg_from": 90,
+  "seg_to": 375,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "formula.gui_zhi_tang",
+   "formula.dang_gui_si_ni_tang",
+   "herb.fu_zi",
+   "formula.zhi_gan_cao_tang"
+  ],
+  "citation": {
+   "youtube_id": "B363X3T9VOg",
+   "url": "https://www.youtube.com/watch?v=B363X3T9VOg&t=460s",
+   "series": "jgy",
+   "episode": 31,
+   "title": "倪海廈《金匱要略》細分版： 30醫案（尿毒）",
+   "start_s": 460.41,
+   "end_s": 2025.11
+  },
+  "review_status": "llm_read"
+ }
+]

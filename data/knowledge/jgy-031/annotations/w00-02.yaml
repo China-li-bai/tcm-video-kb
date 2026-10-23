@@ -1,0 +1,91 @@
+video_id: jgy-031
+window: w00-02
+seg_from: 0
+seg_to: 375
+annotator: llm_read
+chapters:
+- key: c01
+  title: 尿毒医案与水气头昏恶心
+  start_seq: 0
+  summary: 2007-02-09尿毒透析医案。肾衰主症头昏、恶心：肾不能气化则冷水停积，上犯膈胃则恶心，水晃则头昏；五苓散、苓桂术甘等利水消眩。保心阳则肾衰不立刻致命。
+  clauses: []
+  topics: [new.disease.niao_du, formula.wu_ling_san, formula.fu_ling_gui_zhi_bai_zhu_gan_cao_tang]
+- key: c02
+  title: 桂枝汤合当归四逆附子温阳
+  start_seq: 90
+  summary: 首诊从桂枝汤加减；四肢冷壮心阳用生附、干姜近四逆法；合当归四逆通血；苓桂类健脾开胃。尿毒常累心，炙甘草汤类可顾心。疗程中便通、血压稳，强调温阳利水强心。
+  clauses: []
+  topics: [formula.gui_zhi_tang, formula.dang_gui_si_ni_tang, herb.fu_zi, formula.zhi_gan_cao_tang]
+entities:
+- id: new.disease.niao_du
+  seq: 6
+  surface: 尿毒
+  corrected: 尿毒
+- id: formula.wu_ling_san
+  seq: 36
+  surface: 五苓散
+  corrected: 五苓散
+- id: formula.fu_ling_gui_zhi_bai_zhu_gan_cao_tang
+  seq: 36
+  surface: 名桂树
+  corrected: 苓桂术甘汤
+- id: formula.gui_zhi_tang
+  seq: 96
+  surface: 桂枝汤
+  corrected: 桂枝汤
+- id: formula.dang_gui_si_ni_tang
+  seq: 122
+  surface: 当归四米汤
+  corrected: 当归四逆汤
+- id: herb.fu_zi
+  seq: 123
+  surface: 附子
+  corrected: 附子
+- id: formula.zhi_gan_cao_tang
+  seq: 142
+  surface: 甘草汤
+  corrected: 炙甘草汤
+- id: formula.si_ni_tang
+  seq: 110
+  surface: 四逆汤
+  corrected: 四逆汤
+kps:
+- type: clinical_tip
+  s: 中医可治尿毒；本案示透析病人仍可以经方温阳利水调治。
+  seq: [6]
+  q: 尿毒
+  ents: [new.disease.niao_du]
+  conf: 0.85
+- type: diagnostic_rule
+  s: 肾衰常见头昏与恶心：冷水不化上犯则呕恶，水饮动摇则眩晕。
+  seq: [11]
+  q: 头昏
+  ents: [new.disease.niao_du]
+  conf: 0.9
+  asr: 核心=恶心
+- type: formula_indication
+  s: 水饮头昏头重可用五苓散、苓桂术甘汤一类利水消眩。
+  seq: [36]
+  q: 五苓散
+  ents: [formula.wu_ling_san, formula.fu_ling_gui_zhi_bai_zhu_gan_cao_tang]
+  conf: 0.9
+  asr: 名桂树肝猪肝汤≈苓桂术甘汤
+- type: treatment_principle
+  s: 肾衰时先守护心阳，免心肺同衰；再温阳利水。
+  seq: [90]
+  q: 肾脏
+  ents: [herb.fu_zi]
+  conf: 0.9
+- type: clinical_tip
+  s: 本案首诊以桂枝汤加减，合当归四逆、附子、干姜等壮心阳通血。
+  seq: [96]
+  q: 桂枝汤
+  ents: [formula.gui_zhi_tang, formula.dang_gui_si_ni_tang, herb.fu_zi]
+  conf: 0.9
+  asr: 当归四米=当归四逆
+- type: clinical_tip
+  s: 尿毒常累及心脏；无汗心悸等可参炙甘草汤法。
+  seq: [141]
+  q: 尿毒
+  ents: [new.disease.niao_du, formula.zhi_gan_cao_tang]
+  conf: 0.85
