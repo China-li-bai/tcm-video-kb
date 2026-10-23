@@ -1,0 +1,240 @@
+[
+ {
+  "chapter_id": "bc-006.c01",
+  "video_id": "bc-006",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "龙胆续与石斛",
+  "summary": "承接远志龙胆；石斛甘平治五脏虚劳阴伤。",
+  "start_s": 3.5,
+  "end_s": 1620.781,
+  "seg_from": 0,
+  "seg_to": 288,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.long_dan",
+   "herb.shi_hu"
+  ],
+  "citation": {
+   "youtube_id": "jMoDrrLb6CQ",
+   "url": "https://www.youtube.com/watch?v=jMoDrrLb6CQ&t=3s",
+   "series": "bc",
+   "episode": 6,
+   "title": "倪海廈精解 神農本草經之3 完整重製版 全68篇",
+   "start_s": 3.5,
+   "end_s": 1620.78
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-006.c02",
+  "video_id": "bc-006",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "防风石膏白蒿",
+  "summary": "防风祛风；石膏水生为佳寒凉；白蒿滋补。",
+  "start_s": 1620.781,
+  "end_s": 3306.537,
+  "seg_from": 289,
+  "seg_to": 589,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.fang_feng",
+   "herb.shi_gao",
+   "herb.bai_hao"
+  ],
+  "citation": {
+   "youtube_id": "jMoDrrLb6CQ",
+   "url": "https://www.youtube.com/watch?v=jMoDrrLb6CQ&t=1620s",
+   "series": "bc",
+   "episode": 6,
+   "title": "倪海廈精解 神農本草經之3 完整重製版 全68篇",
+   "start_s": 1620.78,
+   "end_s": 3306.54
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-006.c03",
+  "video_id": "bc-006",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "狼毒乌头毒性",
+  "summary": "狼毒草剧毒；乌头即射罔，箭毒级，中毒伤心。",
+  "start_s": 3307.062,
+  "end_s": 4089.384,
+  "seg_from": 590,
+  "seg_to": 739,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.lang_du",
+   "herb.wu_tou"
+  ],
+  "citation": {
+   "youtube_id": "jMoDrrLb6CQ",
+   "url": "https://www.youtube.com/watch?v=jMoDrrLb6CQ&t=3307s",
+   "series": "bc",
+   "episode": 6,
+   "title": "倪海廈精解 神農本草經之3 完整重製版 全68篇",
+   "start_s": 3307.06,
+   "end_s": 4089.38
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-006.c04",
+  "video_id": "bc-006",
+  "level": 1,
+  "parent_id": null,
+  "seq": 4,
+  "title": "黄连清热",
+  "summary": "黄连苦寒清热解毒入血分，川产佳；外用口疮改五倍子/五味子粉；与石膏气氛血分异。",
+  "start_s": 4089.384,
+  "end_s": 5350.085,
+  "seg_from": 740,
+  "seg_to": 950,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.huang_lian",
+   "herb.shi_gao",
+   "herb.wu_wei_zi"
+  ],
+  "citation": {
+   "youtube_id": "jMoDrrLb6CQ",
+   "url": "https://www.youtube.com/watch?v=jMoDrrLb6CQ&t=4089s",
+   "series": "bc",
+   "episode": 6,
+   "title": "倪海廈精解 神農本草經之3 完整重製版 全68篇",
+   "start_s": 4089.38,
+   "end_s": 5350.09
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-006.c05",
+  "video_id": "bc-006",
+  "level": 1,
+  "parent_id": null,
+  "seq": 5,
+  "title": "黄芪补气实脾",
+  "summary": "黄芪气药大补脾肺，可代人参；托疮生肌排脓；与防风相制增强走表。",
+  "start_s": 5351.545,
+  "end_s": 7317.528,
+  "seg_from": 951,
+  "seg_to": 1285,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.huang_qi",
+   "herb.fang_feng"
+  ],
+  "citation": {
+   "youtube_id": "jMoDrrLb6CQ",
+   "url": "https://www.youtube.com/watch?v=jMoDrrLb6CQ&t=5351s",
+   "series": "bc",
+   "episode": 6,
+   "title": "倪海廈精解 神農本草經之3 完整重製版 全68篇",
+   "start_s": 5351.55,
+   "end_s": 7317.53
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-006.c06",
+  "video_id": "bc-006",
+  "level": 1,
+  "parent_id": null,
+  "seq": 6,
+  "title": "蒲黄决明丹参",
+  "summary": "蒲黄活血化瘀；决明子用途广；丹参一味功同四物。",
+  "start_s": 7317.803,
+  "end_s": 9212.975,
+  "seg_from": 1286,
+  "seg_to": 1646,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.pu_huang",
+   "herb.jue_ming_zi",
+   "herb.dan_shen"
+  ],
+  "citation": {
+   "youtube_id": "jMoDrrLb6CQ",
+   "url": "https://www.youtube.com/watch?v=jMoDrrLb6CQ&t=7317s",
+   "series": "bc",
+   "episode": 6,
+   "title": "倪海廈精解 神農本草經之3 完整重製版 全68篇",
+   "start_s": 7317.8,
+   "end_s": 9212.98
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-006.c07",
+  "video_id": "bc-006",
+  "level": 1,
+  "parent_id": null,
+  "seq": 7,
+  "title": "五味子兰草景天",
+  "summary": "五味子酸收；兰草；景天治烫火伤蜂毒。",
+  "start_s": 9220.58,
+  "end_s": 11658.653,
+  "seg_from": 1647,
+  "seg_to": 2058,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.wu_wei_zi",
+   "herb.lan_cao",
+   "herb.jing_tian"
+  ],
+  "citation": {
+   "youtube_id": "jMoDrrLb6CQ",
+   "url": "https://www.youtube.com/watch?v=jMoDrrLb6CQ&t=9220s",
+   "series": "bc",
+   "episode": 6,
+   "title": "倪海廈精解 神農本草經之3 完整重製版 全68篇",
+   "start_s": 9220.58,
+   "end_s": 11658.65
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-006.c08",
+  "video_id": "bc-006",
+  "level": 1,
+  "parent_id": null,
+  "seq": 8,
+  "title": "王不留行胡麻葱白桂枝",
+  "summary": "王不留行散主药；胡麻补精；葱白通阳；桂枝汤发汗解肌。",
+  "start_s": 11660.293,
+  "end_s": 14180.156,
+  "seg_from": 2059,
+  "seg_to": 2504,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.wang_bu_liu_xing",
+   "herb.hu_ma",
+   "herb.cong_bai",
+   "herb.gui_zhi"
+  ],
+  "citation": {
+   "youtube_id": "jMoDrrLb6CQ",
+   "url": "https://www.youtube.com/watch?v=jMoDrrLb6CQ&t=11660s",
+   "series": "bc",
+   "episode": 6,
+   "title": "倪海廈精解 神農本草經之3 完整重製版 全68篇",
+   "start_s": 11660.29,
+   "end_s": 14180.16
+  },
+  "review_status": "llm_read"
+ }
+]

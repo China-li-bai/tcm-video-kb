@@ -4,6 +4,7 @@
   "bc-003",
   "bc-004",
   "bc-005",
+  "bc-006",
   "bc-007",
   "bc-008",
   "jgy-001",
@@ -143,7 +144,7 @@
   "zj-089",
   "zj-090"
  ],
- "n_entities": 1361,
- "n_knowledge_points": 1503,
- "n_chapters": 593
+ "n_entities": 1371,
+ "n_knowledge_points": 1525,
+ "n_chapters": 601
 }
