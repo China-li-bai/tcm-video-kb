@@ -1,0 +1,137 @@
+video_id: jgy-035
+window: w00
+seg_from: 0
+seg_to: 154
+annotator: llm_read
+chapters:
+- key: c01
+  title: 子宫肌瘤术后不孕·下焦寒湿
+  start_seq: 0
+  summary: 三次肌瘤手术（最多一次取出二十八颗），压迫膀胱、经痛崩漏输血；术后不孕。2007-01起一方到底：生附+炮附治下焦寒湿盛（腹脚冰凉），合当归芍药散/当归生姜类补血止腹痛、生姜和胃；生附合桂枝鼓心阳达四肢。约一月半怀孕。
+  clauses: []
+  topics:
+  - new.disease.zi_gong_ji_liu
+  - herb.fu_zi
+  - formula.dang_gui_shao_yao_san
+- key: c02
+  title: 大乌头煎阶梯与孕后当归散
+  start_seq: 103
+  summary: 少腹大寒痛：大建中（蜀椒干姜）无效且吐白沫则大乌头煎（乌头须蜜制，不可生煎）。孕后停攻伐；前二十周当归散，后二十周白术散意安胎。阳药运行可驱阴积外排（头汗臭秽）。阴极生热、阳极生寒——纯热不应时可阴中求阳。
+  clauses: []
+  topics:
+  - formula.da_wu_tou_jian
+  - formula.dang_gui_san
+  - herb.wu_tou
+entities:
+- id: new.disease.zi_gong_ji_liu
+  seq: 3
+  surface: 子宫肌瘤
+  corrected: 子宫肌瘤
+- id: herb.sheng_jiang
+  seq: 34
+  surface: 生姜
+  corrected: 生姜
+- id: herb.gan_jiang
+  seq: 34
+  surface: 干姜
+  corrected: 干姜
+- id: herb.dang_gui
+  seq: 39
+  surface: 当归
+  corrected: 当归
+- id: herb.fu_zi
+  seq: 58
+  surface: 生附子
+  corrected: 附子
+- id: formula.fu_zi_tang
+  seq: 58
+  surface: 生附子汤泡
+  corrected: 附子汤
+- id: syndrome.han_shi
+  seq: 59
+  surface: 寒湿
+  corrected: 寒湿
+- id: herb.shao_yao
+  seq: 66
+  surface: 芍药
+  corrected: 芍药
+- id: herb.gui_zhi
+  seq: 74
+  surface: 桂枝
+  corrected: 桂枝
+- id: formula.dang_gui_shao_yao_san
+  seq: 94
+  surface: 当归芍药散
+  corrected: 当归芍药散
+- id: formula.da_wu_tou_jian
+  seq: 107
+  surface: 大乌头煎
+  corrected: 大乌头煎
+- id: herb.wu_tou
+  seq: 107
+  surface: 乌头
+  corrected: 乌头
+- id: formula.dang_gui_san
+  seq: 128
+  surface: 当归散
+  corrected: 当归散
+- id: formula.bai_hu_tang
+  seq: 130
+  surface: 白虎汤
+  corrected: 白虎汤
+- id: herb.chang_pu
+  seq: 45
+  surface: 菖蒲
+  corrected: 菖蒲
+kps:
+- type: clinical_tip
+  s: 子宫肌瘤可压迫膀胱致排尿难、经痛；多次手术后仍可复发，本案一次取出二十八颗仍求嗣。
+  seq: [3]
+  q: 子宫肌瘤
+  ents: [new.disease.zi_gong_ji_liu]
+  conf: 0.9
+- type: formula_indication
+  s: 生附与炮附同用：必下焦寒湿盛（腹脚如冰）；炮附温肾阳，生附鼓心阳合桂枝达四肢。
+  seq: [59]
+  q: 下焦寒湿
+  ents: [herb.fu_zi, syndrome.han_shi, herb.gui_zhi]
+  conf: 0.95
+  asr: 父子=附子；泡腹子=炮附子；生腹/生物子=生附
+- type: formula_indication
+  s: 纳差恶心合当归芍药散、当归生姜类；艾叶温经暖宫止痛，兼补血。
+  seq: [94]
+  q: 当归芍药散
+  ents: [formula.dang_gui_shao_yao_san, herb.dang_gui, herb.shao_yao]
+  conf: 0.9
+- type: pathomechanism
+  s: 药性阴阳互藏：桂枝阳中有阴，石膏阴中有阳；寒极生热、热极生寒——纯热不应时可阴中求阳。
+  seq: [74]
+  q: 桂枝
+  ents: [herb.gui_zhi, herb.shi_gao]
+  conf: 0.85
+- type: formula_indication
+  s: 少腹大寒痛：大建中无效且吐白沫→大乌头煎；乌头须蜜制炮制，不可生乌头直煎。
+  seq: [107]
+  q: 大乌头煎
+  ents: [formula.da_wu_tou_jian, herb.wu_tou]
+  conf: 0.95
+  asr: 大剑中=大建中；乌头尖=乌头煎
+- type: clinical_tip
+  s: 本案一方到底约一月半即孕；严重术后不孕仍可图嗣，轻证往往更快。
+  seq: [122]
+  q: 怀孕
+  ents: [new.disease.zi_gong_ji_liu]
+  conf: 0.85
+- type: formula_indication
+  s: 孕后停攻伐；金匮当归散用于孕前二十周，后二十周白术散意以养胎。
+  seq: [128]
+  q: 当归散
+  ents: [formula.dang_gui_san]
+  conf: 0.9
+  asr: 白竹伞=白术散
+- type: clinical_tip
+  s: 阳药运行可驱体内阴积外排（如头汗臭秽）；阳气得守则产后仍少病、寿可期。
+  seq: [133]
+  q: 阳气
+  ents: [concept.yang_qi]
+  conf: 0.85

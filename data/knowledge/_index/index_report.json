@@ -30,6 +30,7 @@
   "jgy-032",
   "jgy-033",
   "jgy-034",
+  "jgy-035",
   "nj-001",
   "nj-002",
   "nj-003",
@@ -127,7 +128,7 @@
   "zj-089",
   "zj-090"
  ],
- "n_entities": 1267,
- "n_knowledge_points": 1331,
- "n_chapters": 530
+ "n_entities": 1268,
+ "n_knowledge_points": 1339,
+ "n_chapters": 532
 }

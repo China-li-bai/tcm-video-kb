@@ -1,0 +1,62 @@
+[
+ {
+  "chapter_id": "jgy-035.c01",
+  "video_id": "jgy-035",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "子宫肌瘤术后不孕·下焦寒湿",
+  "summary": "三次肌瘤手术（最多一次取出二十八颗），压迫膀胱、经痛崩漏输血；术后不孕。2007-01起一方到底：生附+炮附治下焦寒湿盛（腹脚冰凉），合当归芍药散/当归生姜类补血止腹痛、生姜和胃；生附合桂枝鼓心阳达四肢。约一月半怀孕。",
+  "start_s": 1.69,
+  "end_s": 572.69,
+  "seg_from": 0,
+  "seg_to": 102,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "new.disease.zi_gong_ji_liu",
+   "herb.fu_zi",
+   "formula.dang_gui_shao_yao_san"
+  ],
+  "citation": {
+   "youtube_id": "4K3L57kViyo",
+   "url": "https://www.youtube.com/watch?v=4K3L57kViyo&t=1s",
+   "series": "jgy",
+   "episode": 35,
+   "title": "倪海廈《金匱要略》細分版： 34醫案（子宮肌瘤）",
+   "start_s": 1.69,
+   "end_s": 572.69
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-035.c02",
+  "video_id": "jgy-035",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "大乌头煎阶梯与孕后当归散",
+  "summary": "少腹大寒痛：大建中（蜀椒干姜）无效且吐白沫则大乌头煎（乌头须蜜制，不可生煎）。孕后停攻伐；前二十周当归散，后二十周白术散意安胎。阳药运行可驱阴积外排（头汗臭秽）。阴极生热、阳极生寒——纯热不应时可阴中求阳。",
+  "start_s": 573.11,
+  "end_s": 901.195,
+  "seg_from": 103,
+  "seg_to": 154,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "formula.da_wu_tou_jian",
+   "formula.dang_gui_san",
+   "herb.wu_tou"
+  ],
+  "citation": {
+   "youtube_id": "4K3L57kViyo",
+   "url": "https://www.youtube.com/watch?v=4K3L57kViyo&t=573s",
+   "series": "jgy",
+   "episode": 35,
+   "title": "倪海廈《金匱要略》細分版： 34醫案（子宮肌瘤）",
+   "start_s": 573.11,
+   "end_s": 901.2
+  },
+  "review_status": "llm_read"
+ }
+]
