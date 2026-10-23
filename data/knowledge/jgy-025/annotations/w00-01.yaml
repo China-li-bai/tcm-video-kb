@@ -1,0 +1,122 @@
+video_id: jgy-025
+window: w00-01
+seg_from: 0
+seg_to: 181
+annotator: llm_read
+chapters:
+- key: c01
+  title: 淋巴血癌案·病机与望问
+  start_seq: 0
+  summary: 医案：1945年生男性，心脏五支bypass后淋巴瘤并血癌复犯。倪氏病机：心伤则精残渣不能循任上达，逆入心为红斑狼疮样、入督为选(?)、入淋巴成淋巴癌；胡子减少为残渣逆流之征。脚冷身热、脉洪大、眠差、激素后假胃口好而溲黄——里寒兼上热。
+  clauses: []
+  topics:
+  - herb.fu_zi
+  - new.herb.liu_huang
+- key: c02
+  title: 处方思路·柴胡瓦楞硫附与黄连阿胶
+  start_seq: 96
+  summary: 柴胡党参通路三焦淋巴；瓦楞子消痰软坚；生附子+生硫黄温里寒入三焦消瘤（配牡蛎）；黄芩黄连白芍阿胶隐含黄连阿胶汤复心血安眠；破布子等壮肾。一周眠纳改善、脚温、溲便转；续方加麦冬顾肺津。半夏+硫黄可治淋巴痰饮。
+  clauses: []
+  topics:
+  - formula.huang_lian_e_jiao_tang
+  - herb.fu_zi
+  - new.herb.liu_huang
+  - herb.mu_li
+- key: c03
+  title: 传变防传·治心顾肺
+  start_seq: 166
+  summary: 治心必兼润肺（火克金），如修引擎必顾水箱；同理治肝先固脾、治肾先安心，阻断传变。本案黄连阿胶复心血后加麦冬，眠深脚温脉缓。
+  clauses: []
+  topics:
+  - formula.huang_lian_e_jiao_tang
+  - concept.wu_xing
+entities:
+- id: herb.fu_zi
+  seq: 124
+  surface: 生附子
+  corrected: 附子
+- id: new.herb.liu_huang
+  seq: 125
+  surface: 生硫磺
+  corrected: 硫黄
+- id: formula.huang_lian_e_jiao_tang
+  seq: 119
+  surface: 黄连阿胶汤
+  corrected: 黄连阿胶汤
+- id: herb.huang_lian
+  seq: 119
+  surface: 黄连
+  corrected: 黄连
+- id: herb.huang_qin
+  seq: 119
+  surface: 黄芩
+  corrected: 黄芩
+- id: herb.e_jiao
+  seq: 119
+  surface: 阿胶
+  corrected: 阿胶
+- id: herb.mu_li
+  seq: 144
+  surface: 牡蛎
+  corrected: 牡蛎
+- id: herb.ban_xia
+  seq: 148
+  surface: 半夏
+  corrected: 半夏
+- id: concept.wu_xing
+  seq: 171
+  surface: 五行
+  corrected: 五行
+kps:
+- type: pathomechanism
+  s: 心伤后精之残渣不能循任上达而生须，逆入淋巴则成淋巴系病变；胡子渐少为残渣逆流之望诊线索。
+  seq: [51]
+  q: 胡子越来越少
+  ents: []
+  conf: 0.85
+- type: diagnostic_rule
+  s: 脚冷而身热、脉洪大：里寒外热；激素可假增胃口，仍须据足冷定里寒。
+  seq: [85]
+  q: 脚是冷的
+  ents: [herb.fu_zi]
+  conf: 0.9
+- type: treatment_principle
+  s: 中医处方写寒湿热虚实等病机，不必以淋巴瘤/白血病西名作为辨证结论。
+  seq: [92]
+  q: 不需要
+  ents: []
+  conf: 0.8
+- type: formula_indication
+  s: 眠差属心血虚（非心阳亢），黄芩黄连白芍阿胶合黄连阿胶汤意以复心血则能深睡。
+  seq: [119]
+  q: 黄连阿胶汤
+  ents: [formula.huang_lian_e_jiao_tang, herb.huang_lian, herb.e_jiao]
+  conf: 0.95
+  asr: 黄牙的阿胶=黄连阿胶
+- type: clinical_tip
+  s: 里寒用生附子；生硫黄入三焦，配牡蛎可速消淋巴痰结肿瘤；半夏配硫黄亦治淋巴痰饮。
+  seq: [124]
+  q: 生附子
+  ents: [herb.fu_zi, new.herb.liu_huang, herb.mu_li, herb.ban_xia]
+  conf: 0.9
+  asr: 硫磺=硫黄；半牛丸=半夏硫黄
+- type: diagnostic_rule
+  s: 黄连阿胶汤辨证参考：舌苔黄焦乏津。
+  seq: [160]
+  q: 舌苔是黄
+  ents: [formula.huang_lian_e_jiao_tang]
+  conf: 0.85
+- type: treatment_principle
+  s: 治心必兼治肺（火克金），如引擎过热须顾水箱；治肝先固脾、治肾先安心，以阻断传变。
+  seq: [174]
+  q: 影响的是肺燥
+  ents: [concept.wu_xing]
+  conf: 0.9
+  asr: 克劳金=克金
+- type: clinical_tip
+  s: 本案一周后眠纳改善、脚转温、溲便好转；续加麦冬顾肺津以图根治。
+  seq: [166]
+  q: 口渴还在
+  ents: [formula.huang_lian_e_jiao_tang]
+  conf: 0.85
+  asr: 原冬=麦门冬

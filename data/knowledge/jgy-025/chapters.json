@@ -1,0 +1,91 @@
+[
+ {
+  "chapter_id": "jgy-025.c01",
+  "video_id": "jgy-025",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "淋巴血癌案·病机与望问",
+  "summary": "医案：1945年生男性，心脏五支bypass后淋巴瘤并血癌复犯。倪氏病机：心伤则精残渣不能循任上达，逆入心为红斑狼疮样、入督为选(?)、入淋巴成淋巴癌；胡子减少为残渣逆流之征。脚冷身热、脉洪大、眠差、激素后假胃口好而溲黄——里寒兼上热。",
+  "start_s": 0.15,
+  "end_s": 490.755,
+  "seg_from": 0,
+  "seg_to": 95,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.fu_zi",
+   "new.herb.liu_huang"
+  ],
+  "citation": {
+   "youtube_id": "5z0vtfkjVSw",
+   "url": "https://www.youtube.com/watch?v=5z0vtfkjVSw&t=0s",
+   "series": "jgy",
+   "episode": 25,
+   "title": "倪海廈《金匱要略》細分版： 24醫案（淋巴瘤與血癌）",
+   "start_s": 0.15,
+   "end_s": 490.75
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-025.c02",
+  "video_id": "jgy-025",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "处方思路·柴胡瓦楞硫附与黄连阿胶",
+  "summary": "柴胡党参通路三焦淋巴；瓦楞子消痰软坚；生附子+生硫黄温里寒入三焦消瘤（配牡蛎）；黄芩黄连白芍阿胶隐含黄连阿胶汤复心血安眠；破布子等壮肾。一周眠纳改善、脚温、溲便转；续方加麦冬顾肺津。半夏+硫黄可治淋巴痰饮。",
+  "start_s": 492.6,
+  "end_s": 847.5,
+  "seg_from": 96,
+  "seg_to": 165,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "formula.huang_lian_e_jiao_tang",
+   "herb.fu_zi",
+   "new.herb.liu_huang",
+   "herb.mu_li"
+  ],
+  "citation": {
+   "youtube_id": "5z0vtfkjVSw",
+   "url": "https://www.youtube.com/watch?v=5z0vtfkjVSw&t=492s",
+   "series": "jgy",
+   "episode": 25,
+   "title": "倪海廈《金匱要略》細分版： 24醫案（淋巴瘤與血癌）",
+   "start_s": 492.6,
+   "end_s": 847.5
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-025.c03",
+  "video_id": "jgy-025",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "传变防传·治心顾肺",
+  "summary": "治心必兼润肺（火克金），如修引擎必顾水箱；同理治肝先固脾、治肾先安心，阻断传变。本案黄连阿胶复心血后加麦冬，眠深脚温脉缓。",
+  "start_s": 847.58,
+  "end_s": 934.225,
+  "seg_from": 166,
+  "seg_to": 181,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "formula.huang_lian_e_jiao_tang",
+   "concept.wu_xing"
+  ],
+  "citation": {
+   "youtube_id": "5z0vtfkjVSw",
+   "url": "https://www.youtube.com/watch?v=5z0vtfkjVSw&t=847s",
+   "series": "jgy",
+   "episode": 25,
+   "title": "倪海廈《金匱要略》細分版： 24醫案（淋巴瘤與血癌）",
+   "start_s": 847.58,
+   "end_s": 934.23
+  },
+  "review_status": "llm_read"
+ }
+]
