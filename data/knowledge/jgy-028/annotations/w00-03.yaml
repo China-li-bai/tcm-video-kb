@@ -1,0 +1,159 @@
+video_id: jgy-028
+window: w00-03
+seg_from: 0
+seg_to: 473
+annotator: llm_read
+chapters:
+- key: c01
+  title: 心绞痛案总则·红花辨
+  start_seq: 0
+  summary: 九种心痛之心绞痛（刀刺样）：合并糖尿/肾功差常不能手术。治则排心中瘀、复心功；瓣膜/心律不齐可同法。金匮有红蓝花酒；藏红花清轻入脑（脑溢血），川红花气臭入心（冠脉）。
+  clauses: []
+  topics:
+  - disease.xin_tong
+  - new.herb.hong_hua
+- key: c02
+  title: 通心方·瓜蒌薤白桂枝红花
+  start_seq: 132
+  summary: 主方：红花（金匮红蓝花酒治心痛）+瓜蒌实/薤白+桂枝汤意通心气；瓜蒌色白入心包、紫石英入心、薤白辛白入肺。可加地龙通络、石膏慎用（寒败胃）。桂枝助心射血，配当归防破血伤络；耳心点/胸椎压痛示气血同治。
+  clauses: []
+  topics:
+  - formula.gua_lou_xie_bai_bai_jiu_tang
+  - herb.gui_zhi
+  - herb.xie_bai
+  - disease.xin_tong
+- key: c03
+  title: 胸痛鉴别·小陷胸与痊愈标准
+  start_seq: 325
+  summary: 心脏病后胸痛需辨小陷胸（痰热结胸/食管灼感）与真心痛。痊愈：能正常出汗、手足温、大便调、胸口温。金匮心痛彻背：枳实薤白桂枝汤与乌头剂；痰饮在纵隔可呈前后彻痛。总则：眠安、胸口不痛且温；刺痛属瘀可活瘀兼补血，闷痛属气滞勿妄破血。针可救急，药须清净。
+  clauses: []
+  topics:
+  - formula.xiao_xian_xiong_tang
+  - formula.zhi_shi_xie_bai_gui_zhi_tang
+  - herb.wu_tou
+  - syndrome.tan_yin
+entities:
+- id: disease.xin_tong
+  seq: 2
+  surface: 心痛
+  corrected: 心痛
+- id: new.herb.hong_hua
+  seq: 144
+  surface: 红花
+  corrected: 红花
+- id: herb.xie_bai
+  seq: 153
+  surface: 蟹白
+  corrected: 薤白
+- id: formula.gua_lou_xie_bai_bai_jiu_tang
+  seq: 164
+  surface: 蟹白，桂枝汤
+  corrected: 栝蒌薤白白酒汤
+- id: herb.gui_zhi
+  seq: 223
+  surface: 桂枝
+  corrected: 桂枝
+- id: herb.shi_gao
+  seq: 178
+  surface: 石膏
+  corrected: 石膏
+- id: herb.dang_gui
+  seq: 210
+  surface: 当归
+  corrected: 当归
+- id: formula.xiao_xian_xiong_tang
+  seq: 347
+  surface: 小陷胸汤
+  corrected: 小陷胸汤
+- id: formula.zhi_shi_xie_bai_gui_zhi_tang
+  seq: 420
+  surface: 桂制汤
+  corrected: 枳实薤白桂枝汤
+- id: herb.wu_tou
+  seq: 421
+  surface: 乌头
+  corrected: 乌头
+- id: syndrome.tan_yin
+  seq: 429
+  surface: 痰饮
+  corrected: 痰饮
+- id: formula.si_ni_tang
+  seq: 456
+  surface: 四逆汤
+  corrected: 四逆汤
+- id: acupoint.ki1
+  seq: 95
+  surface: 涌泉
+  corrected: 涌泉
+kps:
+- type: clinical_tip
+  s: 心绞痛刀刺样剧痛，合并糖尿/肾衰常不能手术；中医可排瘀复心，瓣膜闭锁不全与心律不齐可同法思路。
+  seq: [2]
+  q: 心绞痛
+  ents: [disease.xin_tong]
+  conf: 0.9
+- type: herb_property
+  s: 藏红花清轻无味偏入脑，宜脑溢血；川红花气臭入心，宜冠脉瘀阻。
+  seq: [23]
+  q: 藏红花
+  ents: [new.herb.hong_hua]
+  conf: 0.9
+  asr: 窗红花=川红花
+- type: formula_indication
+  s: 金匮红蓝花酒（红花）治心痛；合瓜蒌实、薤白、桂枝等通心气、化瘀宽胸。
+  seq: [147]
+  q: 心痛
+  ents: [new.herb.hong_hua, disease.xin_tong, herb.xie_bai]
+  conf: 0.95
+  asr: 红兰花酒=红蓝花酒；蟹白/蟹瓜=薤白/瓜蒌
+- type: herb_property
+  s: 瓜蒌实色白偏心包，紫石英色深味厚入心，薤白辛白入肺——形色气味识药。
+  seq: [155]
+  q: 像心脏
+  ents: [herb.xie_bai]
+  conf: 0.85
+  asr: 瓜肉丝/紫石=瓜蒌实/紫石英
+- type: contraindication
+  s: 石膏大寒易败胃缩纳，心痛剧证选药宜慎，非白虎热盛勿轻投。
+  seq: [181]
+  q: 石膏
+  ents: [herb.shi_gao]
+  conf: 0.85
+- type: pathomechanism
+  s: 桂枝加强心射血以冲开瘀；须配当归等护络，防压力骤增破脉。
+  seq: [223]
+  q: 桂枝
+  ents: [herb.gui_zhi, herb.dang_gui, new.herb.hong_hua]
+  conf: 0.9
+- type: diagnostic_rule
+  s: 心脏病后胸痛须辨真心痛与小陷胸证（痰热/食管灼感似心痛）。
+  seq: [347]
+  q: 小陷胸汤
+  ents: [formula.xiao_xian_xiong_tang, disease.xin_tong]
+  conf: 0.9
+- type: clinical_tip
+  s: 心病向愈：能正常出汗、手足不凉、大便调、胸口转温。
+  seq: [419]
+  q: 手脚没有
+  ents: [disease.xin_tong]
+  conf: 0.85
+  asr: 马桶≈发凉/麻木之误识；以手足温为要
+- type: formula_indication
+  s: 金匮心痛彻背：一为枳实薤白桂枝汤，一为乌头剂；痰饮在纵隔可致前后彻痛。
+  seq: [420]
+  q: 心痛
+  ents: [formula.zhi_shi_xie_bai_gui_zhi_tang, herb.wu_tou, syndrome.tan_yin, disease.xin_tong]
+  conf: 0.9
+  asr: 桂制汤=枳实薤白桂枝；射备被痛=心痛彻背
+- type: treatment_principle
+  s: 心病总则：眠安、胸口不痛且温。刺痛多瘀可活瘀兼补血；闷痛多气滞，勿妄投破血致虚。
+  seq: [431]
+  q: 痰饮
+  ents: [syndrome.tan_yin, disease.xin_tong]
+  conf: 0.9
+- type: clinical_tip
+  s: 针刺可迅速止痛打通，仍须服药清净瘀痰；药后反剧痛肢凉则停转诊。
+  seq: [435]
+  q: 针灸
+  ents: [disease.xin_tong]
+  conf: 0.85

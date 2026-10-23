@@ -1,0 +1,93 @@
+[
+ {
+  "chapter_id": "jgy-028.c01",
+  "video_id": "jgy-028",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "心绞痛案总则·红花辨",
+  "summary": "九种心痛之心绞痛（刀刺样）：合并糖尿/肾功差常不能手术。治则排心中瘀、复心功；瓣膜/心律不齐可同法。金匮有红蓝花酒；藏红花清轻入脑（脑溢血），川红花气臭入心（冠脉）。",
+  "start_s": 0.11,
+  "end_s": 738.865,
+  "seg_from": 0,
+  "seg_to": 131,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "disease.xin_tong",
+   "new.herb.hong_hua"
+  ],
+  "citation": {
+   "youtube_id": "1VtrxKUEXmg",
+   "url": "https://www.youtube.com/watch?v=1VtrxKUEXmg&t=0s",
+   "series": "jgy",
+   "episode": 28,
+   "title": "倪海廈《金匱要略》細分版： 27 醫案（心臟病）",
+   "start_s": 0.11,
+   "end_s": 738.87
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-028.c02",
+  "video_id": "jgy-028",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "通心方·瓜蒌薤白桂枝红花",
+  "summary": "主方：红花（金匮红蓝花酒治心痛）+瓜蒌实/薤白+桂枝汤意通心气；瓜蒌色白入心包、紫石英入心、薤白辛白入肺。可加地龙通络、石膏慎用（寒败胃）。桂枝助心射血，配当归防破血伤络；耳心点/胸椎压痛示气血同治。",
+  "start_s": 740.38,
+  "end_s": 1791.255,
+  "seg_from": 132,
+  "seg_to": 324,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "formula.gua_lou_xie_bai_bai_jiu_tang",
+   "herb.gui_zhi",
+   "herb.xie_bai",
+   "disease.xin_tong"
+  ],
+  "citation": {
+   "youtube_id": "1VtrxKUEXmg",
+   "url": "https://www.youtube.com/watch?v=1VtrxKUEXmg&t=740s",
+   "series": "jgy",
+   "episode": 28,
+   "title": "倪海廈《金匱要略》細分版： 27 醫案（心臟病）",
+   "start_s": 740.38,
+   "end_s": 1791.26
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-028.c03",
+  "video_id": "jgy-028",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "胸痛鉴别·小陷胸与痊愈标准",
+  "summary": "心脏病后胸痛需辨小陷胸（痰热结胸/食管灼感）与真心痛。痊愈：能正常出汗、手足温、大便调、胸口温。金匮心痛彻背：枳实薤白桂枝汤与乌头剂；痰饮在纵隔可呈前后彻痛。总则：眠安、胸口不痛且温；刺痛属瘀可活瘀兼补血，闷痛属气滞勿妄破血。针可救急，药须清净。",
+  "start_s": 1803.24,
+  "end_s": 2642.22,
+  "seg_from": 325,
+  "seg_to": 473,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "formula.xiao_xian_xiong_tang",
+   "formula.zhi_shi_xie_bai_gui_zhi_tang",
+   "herb.wu_tou",
+   "syndrome.tan_yin"
+  ],
+  "citation": {
+   "youtube_id": "1VtrxKUEXmg",
+   "url": "https://www.youtube.com/watch?v=1VtrxKUEXmg&t=1803s",
+   "series": "jgy",
+   "episode": 28,
+   "title": "倪海廈《金匱要略》細分版： 27 醫案（心臟病）",
+   "start_s": 1803.24,
+   "end_s": 2642.22
+  },
+  "review_status": "llm_read"
+ }
+]
