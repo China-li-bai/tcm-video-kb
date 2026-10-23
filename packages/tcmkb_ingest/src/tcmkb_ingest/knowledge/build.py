@@ -1,6 +1,6 @@
 """Annotations (reader output) -> validated chapters / entities / knowledge points.
 
-Deterministic: resolves segment seq -> timestamps, builds YouTube citations, merges
+Deterministic: resolves segment seq -> timestamps, builds site /watch citations, merges
 chapters across windows, adds lexicon mentions, dedupes knowledge points, validates
 everything against tcmkb_core.knowledge and writes data/knowledge/<video_id>/.
 """
@@ -13,7 +13,7 @@ import yaml
 
 from tcmkb_core.knowledge import (
     ENTITY_TYPES, KP_TYPE_LABEL_ZH, TYPE_LABEL_ZH, SCHEMA_VERSION, AnnChapter, AnnKP, Annotation,
-    KChapter, KCitation, KEntity, KMention, KnowledgePoint, t_url,
+    KChapter, KCitation, KEntity, KMention, KnowledgePoint, t_url, youtube_t_url,
 )
 from tcmkb_ingest import artifacts as art
 from tcmkb_ingest.knowledge.chunk import hms
@@ -50,8 +50,11 @@ def load_annotations(kdir: pathlib.Path) -> list[Annotation]:
 
 def citation(ep: Episode, start_s: float, end_s: float) -> KCitation:
     start_s, end_s = round(float(start_s), 2), round(float(end_s), 2)   # url from the stored value
-    return KCitation(youtube_id=ep.youtube_id, url=t_url(ep.youtube_id, start_s), series=ep.series,
-                     episode=ep.episode, title=ep.title, start_s=start_s, end_s=end_s)
+    return KCitation(
+        video_id=ep.video_id, youtube_id=ep.youtube_id,
+        url=t_url(ep.video_id, start_s), youtube_t_url=youtube_t_url(ep.youtube_id, start_s),
+        series=ep.series, episode=ep.episode, title=ep.title, start_s=start_s, end_s=end_s,
+    )
 
 
 # ------------------------------------------------------------------ entity id helpers
@@ -212,7 +215,7 @@ def build_entities(ep: Episode, anns: list[Annotation], chapters: list[KChapter]
         ch = chapter_for(chapters, seq)
         ments.setdefault(eid, []).append(KMention(
             surface=surface, corrected=corrected or surface, seq=seq, start_s=s["start_s"], end_s=s["end_s"],
-            url=t_url(ep.youtube_id, s["start_s"]), chapter_id=ch.chapter_id if ch else None,
+            url=t_url(ep.video_id, s["start_s"]), chapter_id=ch.chapter_id if ch else None,
             source=source, asr_uncertain=uncertain, dosage=dosage))
 
     rejected = {(e.id, e.seq) for a in anns for e in a.entities if e.reject}
@@ -352,7 +355,7 @@ def build_kps(ep: Episode, anns: list[Annotation], chapters: list[KChapter], key
 def render_outline(ep: Episode, chapters: list[KChapter], kps: list[KnowledgePoint],
                    entities: list[KEntity]) -> str:
     def link(t: float) -> str:
-        u = t_url(ep.youtube_id, t)
+        u = t_url(ep.video_id, t)
         return f"[{hms(t)}]({u})" if u else hms(t)
 
     def clauses(c: KChapter) -> str:
@@ -360,7 +363,7 @@ def render_outline(ep: Episode, chapters: list[KChapter], kps: list[KnowledgePoi
         return f"（条文 {'、'.join(nos)}）" if nos else ""
 
     lines = [f"# {ep.title}", "",
-             f"- 视频：{t_url(ep.youtube_id, 0) or ep.video_id}　系列 `{ep.series}` 第 {ep.episode} 集　"
+             f"- 视频：{t_url(ep.video_id, 0) or ep.video_id}　系列 `{ep.series}` 第 {ep.episode} 集　"
              f"时长 {hms(ep.duration_s)}",
              f"- 章节 {sum(1 for c in chapters if c.level == 1)}，小节 {sum(1 for c in chapters if c.level == 2)}，"
              f"知识点 {len(kps)}，实体 {len(entities)}（schema `{SCHEMA_VERSION}`，由转写阅读生成，ASR 有误差，引用前请点链接核对）",

@@ -188,7 +188,8 @@ def run(ctx: Ctx, **_kw) -> dict:
     mode = cfg.get("mode", "heuristic")
     source = (m.meta or {}).get("source")
     frag = {
-        "cite": (source or {}).get("youtube_id") or (source or {}).get("url"),
+        "cite_mode": "site",
+        "cite": ctx.video_id,
         "mode": mode,
         "silence_gap_s": cfg.get("silence_gap_s", 3.0),
         "min_chapter_s": cfg.get("min_chapter_s", 60.0),
@@ -229,7 +230,7 @@ def run(ctx: Ctx, **_kw) -> dict:
 
     from tcmkb_ingest.sources import cite
     for ch in chapters:
-        ch["cite"] = cite(source, ch["start_s"], ch["end_s"])
+        ch["cite"] = cite(source, ch["start_s"], ch["end_s"], video_id=ctx.video_id)
     art.atomic_write_json(outdir / "chapters.json", chapters)
     lecture = render_lecture_md(ctx.video_id, m.title, chapters, segs, source)
     art.atomic_write_text(outdir / "lecture.md", lecture)

@@ -41,14 +41,14 @@ uv sync --extra asr
 
 一个进程只加载一次模型（懒加载）；按 version_key 续跑（s04 按 20 min 分片做检查点）；单个视频失败会记入 `step_run` 和报告，然后继续下一个；报告写到 `data/batch/<run_id>.json|csv`（每视频 RTF、纠错数、章节数、峰值内存）。实测 RTF ≈0.047（8 vCPU），常驻内存约 3 GB。详见 [`docs/runbooks/batch_asr.md`](docs/runbooks/batch_asr.md)。
 
-磁盘预算模式（按 30–50 GB 分批、验证后删除音频/wav、只留轻量输出 + YouTube 引用）：
+磁盘预算模式（按 30–50 GB 分批、验证后删除源/wav、保留 64 kbps play m4a + 站内 cite）：
 
 ```bash
 .venv/bin/python -m tcmkb_ingest media-status
 .venv/bin/python -m tcmkb_ingest batch --media shl --budget-gb 40 --min-free-gb 15 --asr-threads 6
 ```
 
-每条 segment / chapter 带 `cite`（YouTube id、URL、`&t=<秒>s` 链接、标题、系列、集数、起止时间）。详见 [`docs/runbooks/disk_budget.md`](docs/runbooks/disk_budget.md)。
+每条 segment / chapter 带 `cite`：主链接 `/watch/{video_id}?t=<秒>`，YouTube id/`youtube_t_url` 为备份。播放用 64 kbps m4a 在 `data/r2-mirror/play/`（或 R2）。详见 [`docs/runbooks/disk_budget.md`](docs/runbooks/disk_budget.md)、[`web/README.md`](web/README.md)。
 
 ## 快速 Demo（推荐 `--from-cache`）
 
@@ -85,6 +85,14 @@ uv sync --extra asr
 ```
 
 `--skip-alt` 为默认（跳过 s05 SenseVoice）。改词典纠错后从 s06 续跑即可；热词默认 pin，不自动重跑 ASR（需 `--force`）。
+
+## 站内播放 stub
+
+```bash
+.venv/bin/python web/stub_server.py --port 8765
+# http://127.0.0.1:8765/watch/<video_id>?t=120
+.venv/bin/python -m tcmkb_ingest backfill-cites --video shl-001   # 旧 cite → 站内，不重跑 ASR
+```
 
 ## 测试
 

@@ -9,8 +9,8 @@ Inputs (all already on disk, nothing fetched):
 Local files are named `{series}-{idx}.m4a`, so video_id = `{series}-{idx}` and the
 playlist row with the same idx gives the YouTube id. The resulting `source` dict is
 stored in video.meta["source"] at s00 and copied into every transcript segment /
-chapter as a citation (`cite()`), so the knowledge layer links to
-https://www.youtube.com/watch?v=<id>&t=<sec>s instead of local files.
+chapter as a citation (`cite()`). Primary jump link is site `/watch/{video_id}?t=<sec>`;
+YouTube id/url/`youtube_t_url` remain as source backup fields.
 """
 from __future__ import annotations
 import json, math, pathlib, time
@@ -20,6 +20,7 @@ from typing import Any
 import yaml
 
 from tcmkb_core.config import load_series_config
+from tcmkb_core.play import site_watch_url, youtube_t_url as yt_t_url
 
 AUDIO_EXTS = (".m4a", ".webm", ".opus", ".mp3", ".aac", ".wav", ".flac", ".mp4")
 YT_WATCH = "https://www.youtube.com/watch?v="
@@ -54,6 +55,7 @@ class MediaEntry:
         """Citation block stored in video.meta['source'] and copied into outputs."""
         return {
             "platform": "youtube" if self.youtube_id else "local",
+            "video_id": self.video_id,
             "youtube_id": self.youtube_id,
             "url": self.url,
             "title": self.title,
@@ -69,15 +71,23 @@ class MediaEntry:
         return asdict(self)
 
 
-def cite(source: dict[str, Any] | None, start_s: float, end_s: float) -> dict[str, Any] | None:
-    """Per-segment / per-chapter citation. None when the video has no source metadata."""
-    if not source:
+def cite(source: dict[str, Any] | None, start_s: float, end_s: float,
+         video_id: str | None = None) -> dict[str, Any] | None:
+    """Per-segment / per-chapter citation. Primary t_url is site /watch/{id}?t=; YouTube is backup."""
+    if not source and not video_id:
         return None
+    source = source or {}
+    vid = video_id or source.get("video_id")
     yid = source.get("youtube_id")
+    if not vid and not yid:
+        return None
+    site = site_watch_url(vid, start_s) if vid else None
     return {
+        "video_id": vid,
         "youtube_id": yid,
-        "url": source.get("url") or (youtube_url(yid) if yid else None),
-        "t_url": youtube_url(yid, start_s) if yid else None,
+        "url": source.get("url") or (youtube_url(yid) if yid else None),  # YouTube page (backup)
+        "t_url": site or (youtube_url(yid, start_s) if yid else None),     # primary: site
+        "youtube_t_url": yt_t_url(yid, start_s) if yid else None,
         "title": source.get("title"),
         "series_id": source.get("series_id"),
         "series_title": source.get("series_title"),

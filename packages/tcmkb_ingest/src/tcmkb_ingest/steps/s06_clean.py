@@ -30,8 +30,8 @@ def run(ctx: Ctx, **_kw) -> dict:
     gap = float(cfg.get("gap_break_s", 1.2))
     max_s = float(cfg.get("max_sentence_s", 40.0))
     source = (m.meta or {}).get("source")
-    frag = {"gap_break_s": gap, "max_sentence_s": max_s,
-            "cite": (source or {}).get("youtube_id") or (source or {}).get("url")}
+    frag = {"gap_break_s": gap, "max_sentence_s": max_s, "cite_mode": "site",
+            "cite": ctx.video_id}
     up = (m.active_versions or {}).get("s04_asr", "")
     lxh = ctx.lexicon_hash()  # corrections change → rerun
     vk = ctx.compute_vk(step, frag, upstream_hash=up, lexicon_hash=lxh)
@@ -73,7 +73,7 @@ def run(ctx: Ctx, **_kw) -> dict:
             "alt_text": None,
             "agreement": None,
             "review_flag": False,
-            "cite": cite(source, s["start_s"], s["end_s"]),
+            "cite": cite(source, s["start_s"], s["end_s"], video_id=ctx.video_id),
         })
 
     seg_path = outdir / "segments.jsonl"

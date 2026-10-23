@@ -280,6 +280,21 @@ def knowledge_index_cmd(ctx: click.Context):
     from tcmkb_ingest.knowledge.export import build_index
     click.echo(json.dumps(build_index(ctx.obj["root"]), ensure_ascii=False))
 
+
+@main.command("backfill-cites")
+@click.option("--video", "video_ids", multiple=True, help="video ids (default: every episode with segments)")
+@click.option("--dry-run", is_flag=True, help="List what would be rewritten")
+@click.pass_context
+def backfill_cites_cmd(ctx: click.Context, video_ids: tuple[str, ...], dry_run: bool):
+    """Rewrite cite.t_url to /watch/{id}?t= without re-running ASR (also lecture.md)."""
+    from tcmkb_ingest.backfill_cites import backfill_many, backfill_video
+    root = ctx.obj["root"]
+    if video_ids:
+        items = [backfill_video(root, v, dry_run=dry_run) for v in video_ids]
+        click.echo(json.dumps({"n": len(items), "dry_run": dry_run, "items": items}, ensure_ascii=False, indent=1))
+    else:
+        click.echo(json.dumps(backfill_many(root, dry_run=dry_run), ensure_ascii=False, indent=1))
+
 @main.command("steps")
 def steps_cmd():
     """List known pipeline steps."""

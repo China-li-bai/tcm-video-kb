@@ -79,7 +79,7 @@ def estimate(e: MediaEntry, b: Budget) -> Estimate:
 def verify_outputs(db: StateDB, artifacts_base: pathlib.Path, video_id: str,
                    expect_duration_s: float | None = None, min_coverage: float = 0.95,
                    require_cite: bool = True) -> tuple[bool, dict[str, Any]]:
-    """Transcript JSON present & non-empty, segments/chapters present, citations attached."""
+    """Transcript JSON present & non-empty, segments/chapters present, site citations attached."""
     info: dict[str, Any] = {"video_id": video_id}
     m = db.get_video(video_id)
     if not m:
@@ -272,7 +272,8 @@ def heavy_paths(root: pathlib.Path, artifacts_base: pathlib.Path, video_id: str,
     out += [p for p in d.glob("s02_media/*/*") if p.suffix.lower() in _MEDIA_EXT]
     out += [p for p in d.glob("s01_upload/*/source.*")]
     mirror = roots["mirror"]
-    out += sorted(mirror.glob(f"source/{video_id}.*")) + sorted(mirror.glob(f"play/{video_id}.*"))
+    # Keep play/{video_id}.m4a (64 kbps site audio); only purge source/ artifacts copies
+    out += sorted(mirror.glob(f"source/{video_id}.*"))
     out.append(mirror / "artifacts" / video_id)
     seen, uniq = set(), []
     for p in out:

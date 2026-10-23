@@ -1,7 +1,7 @@
 # 知识层（s09_knowledge）
 
 把一集讲座转写变成可学习、可引用的结构：**章节大纲 → 实体 → 知识点**，每条都带
-YouTube 跳转链接（`&t=<秒>s`）。schema 版本 `knowledge/1`，模型定义在
+站内跳转链接（`/watch/{video_id}?t=<秒>`；YouTube 为备份字段）。schema 版本 `knowledge/1`，模型定义在
 `packages/tcmkb_core/src/tcmkb_core/knowledge.py`（pydantic v2，`extra=forbid`；
 `python -m tcmkb_core.knowledge` 打印 JSON Schema）。
 
@@ -12,7 +12,7 @@ YouTube 跳转链接（`&t=<秒>s`）。schema 版本 `knowledge/1`，模型定�
 | `annotations/*.yaml` | **阅读产物**（语义部分）：按窗口组写的章节、实体修正、知识点，只引用转写句序号 `seq` |
 | `chapters.json` | `KChapter[]`：集 > 章（`<vid>.cNN`）> 节（`<vid>.cNN.sN`）；标题、1–2 句自述摘要、起止秒/句、条文 `clause_refs`（宋本编号）、六经、`citation` |
 | `entities.jsonl` | `KEntity`：规范 id（词典 id，或 `new.<type>.<name>`）、类型、全部表面形式（ASR 原文）与修正形、剂量、提及列表（每条带时间与链接）、`asr_uncertain` |
-| `knowledge_points.jsonl` | `KnowledgePoint`：`kp_id`、类型、中文转述 `statement`（≤160 字）、实体 id、章节 id、原文证据 `evidence_quote`（≤40 字，必须能在所引句中找到）、起止秒、`citation{youtube_id,url,series,episode,title}`、置信度、`asr_note` |
+| `knowledge_points.jsonl` | `KnowledgePoint`：`kp_id`、类型、中文转述 `statement`（≤160 字）、实体 id、章节 id、原文证据 `evidence_quote`（≤40 字，必须能在所引句中找到）、起止秒、`citation{video_id,url,youtube_id,youtube_t_url,series,episode,title}`、置信度、`asr_note` |
 | `outline.md` | 人读大纲：章节目录（时间戳链接）、按章知识点、实体索引 |
 | `build_report.json` | 计数、注释哈希、错误 |
 | `_work/`（不入 git） | 阅读窗口 `windows/wNN.txt`（`seq 时间 文本`，头部附词典候选、条文匹配、s08 启发式章节） |

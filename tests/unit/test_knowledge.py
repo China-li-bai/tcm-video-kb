@@ -7,7 +7,7 @@ import yaml
 from pydantic import ValidationError
 
 from tcmkb_core.knowledge import (
-    Annotation, KChapter, KCitation, KnowledgePoint, json_schemas, t_url,
+    Annotation, KChapter, KCitation, KnowledgePoint, json_schemas, t_url, youtube_t_url,
 )
 from tcmkb_ingest.knowledge.build import KnowledgeBuildError, build, citation
 from tcmkb_ingest.knowledge.chunk import make_windows
@@ -113,7 +113,8 @@ def _jsonl(p: pathlib.Path) -> list[dict]:
 
 # ---------------------------------------------------------------- schema
 def _cit(start=12.7, **kw) -> dict:
-    d = {"youtube_id": YT, "url": t_url(YT, start), "series": "tv", "episode": 1, "title": "t",
+    d = {"video_id": "tv-001", "youtube_id": YT, "url": t_url("tv-001", start),
+         "youtube_t_url": youtube_t_url(YT, start), "series": "tv", "episode": 1, "title": "t",
          "start_s": start, "end_s": start + 5}
     d.update(kw)
     return d
@@ -128,14 +129,15 @@ def _kp(**kw) -> dict:
 
 
 def test_t_url_floors_seconds():
-    assert t_url(YT, 12.99) == f"https://www.youtube.com/watch?v={YT}&t=12s"
-    assert t_url(YT, 0) .endswith("&t=0s")
+    assert t_url("tv-001", 12.99) == "/watch/tv-001?t=12"
+    assert t_url("tv-001", 0) == "/watch/tv-001?t=0"
+    assert youtube_t_url(YT, 12.99) == f"https://www.youtube.com/watch?v={YT}&t=12s"
 
 
 def test_citation_url_must_match_start():
     KCitation(**_cit())
     with pytest.raises(ValidationError):
-        KCitation(**_cit(url=t_url(YT, 99)))
+        KCitation(**_cit(url=t_url("tv-001", 99)))
 
 
 def test_kp_quote_and_statement_limits():
@@ -177,7 +179,8 @@ def test_json_schemas_export():
 def test_citation_rounds_before_url():
     ep = Episode("tv-001", "tv", 1, "t", YT, 1200.0, _segments())
     c = citation(ep, 4052.996, 4060.0)
-    assert c.start_s == 4053.0 and c.url.endswith("&t=4053s")
+    assert c.start_s == 4053.0 and c.url == "/watch/tv-001?t=4053"
+    assert c.youtube_t_url.endswith("&t=4053s")
 
 
 def test_make_windows_cover_and_fold_tail():
@@ -203,7 +206,8 @@ def test_build_end_to_end(root: pathlib.Path):
     assert (c02["seg_from"], c02["seg_to"]) == (1, 7)
     assert c02["six_channel"] == ["six_channel.taiyang"]
     assert chapters[2]["parent_id"] == "tv-001.c02" and chapters[2]["seg_to"] == 7
-    assert c02["citation"]["url"] == t_url(YT, 100.4)
+    assert c02["citation"]["url"] == t_url("tv-001", 100.4)
+    assert c02["citation"]["video_id"] == "tv-001"
 
     kps = _jsonl(kdir / "knowledge_points.jsonl")
     # the two near-identical clause_interpretation KPs in c02 merge; higher confidence wins
@@ -212,7 +216,7 @@ def test_build_end_to_end(root: pathlib.Path):
     assert set(ci[0]["entity_ids"]) >= {"formula.gui_zhi_tang", "symptom.han_chu"}
     assert len(kps) == 4
     for k in kps:
-        assert k["citation"]["url"] == t_url(YT, k["start_s"])
+        assert k["citation"]["url"] == t_url("tv-001", k["start_s"])
         assert k["kp_id"].startswith("tv-001.kp")
     tip = next(k for k in kps if k["type"] == "clinical_tip")
     assert tip["chapter_id"] == "tv-001.c02.s1"
@@ -225,12 +229,12 @@ def test_build_end_to_end(root: pathlib.Path):
     assert ents["acupoint.gb20"]["n_mentions"] == 2            # both have 针/扎 nearby
     assert ents["clause.shl.012"]["type"] == "clause"
     outline = (kdir / "outline.md").read_text("utf-8")
-    assert f"[01:40]({t_url(YT, 100.4)}) **c02 第12条 桂枝汤**" in outline
+    assert f"[01:40]({t_url('tv-001', 100.4)}) **c02 第12条 桂枝汤**" in outline
 
     idx = build_index(root)
     assert idx["n_knowledge_points"] == 4
     rows = list(csv.DictReader((root / "data/knowledge/_index/knowledge_points.csv").open(encoding="utf-8")))
-    assert rows[0]["url"].startswith("https://www.youtube.com/watch?v=")
+    assert rows[0]["url"].startswith("/watch/tv-001?t=")
     erows = list(csv.DictReader((root / "data/knowledge/_index/entities.csv").open(encoding="utf-8")))
     assert any(r["entity_id"] == "herb.gui_zhi" and r["videos"] == "tv-001" for r in erows)
 
