@@ -1,0 +1,238 @@
+[
+ {
+  "chapter_id": "jgy-023.c01",
+  "video_id": "jgy-023",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "经期感冒·小柴胡与半夏厚朴",
+  "summary": "金匮妇人杂病。经期伤寒发热恶寒、胸胁苦满用小柴胡汤（柴胡入三焦肝经过胞宫），不必等愈。咽中如有炙脔（梅核气）、自觉心下有物下坠用半夏厚朴汤。",
+  "start_s": 3.14,
+  "end_s": 536.575,
+  "seg_from": 0,
+  "seg_to": 97,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "formula.xiao_chai_hu_tang",
+   "new.formula.ban_xia_hou_po_tang"
+  ],
+  "citation": {
+   "youtube_id": "IuidW1aav8U",
+   "url": "https://www.youtube.com/watch?v=IuidW1aav8U&t=3s",
+   "series": "jgy",
+   "episode": 23,
+   "title": "倪海廈《金匱要略》細分版： 22婦人雜病",
+   "start_s": 3.14,
+   "end_s": 536.58
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-023.c02",
+  "video_id": "jgy-023",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "脏躁·甘麦大枣汤与癫痫",
+  "summary": "脏躁指胞宫津枯：悲伤欲哭、如有神灵、欠伸；甘麦大枣汤（小麦甘草大枣）甘缓肝急。扩用于小儿高热后癫痫、男女脏躁样情志。",
+  "start_s": 544.58,
+  "end_s": 1230.473,
+  "seg_from": 98,
+  "seg_to": 218,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "new.formula.gan_mai_da_zao_tang",
+   "herb.xiao_mai",
+   "disease.dian_xian"
+  ],
+  "citation": {
+   "youtube_id": "IuidW1aav8U",
+   "url": "https://www.youtube.com/watch?v=IuidW1aav8U&t=544s",
+   "series": "jgy",
+   "episode": 23,
+   "title": "倪海廈《金匱要略》細分版： 22婦人雜病",
+   "start_s": 544.58,
+   "end_s": 1230.47
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-023.c03",
+  "video_id": "jgy-023",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "吐涎沫误下·泻心与先表后里",
+  "summary": "上焦寒湿吐涎沫误下成心下痞；先解表（小青龙类）再治痞（五泻心：呕半夏泻心、利生姜泻心等）。",
+  "start_s": 1234.178,
+  "end_s": 1888.473,
+  "seg_from": 219,
+  "seg_to": 345,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "formula.xie_xin_tang"
+  ],
+  "citation": {
+   "youtube_id": "IuidW1aav8U",
+   "url": "https://www.youtube.com/watch?v=IuidW1aav8U&t=1234s",
+   "series": "jgy",
+   "episode": 23,
+   "title": "倪海廈《金匱要略》細分版： 22婦人雜病",
+   "start_s": 1234.18,
+   "end_s": 1888.47
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-023.c04",
+  "video_id": "jgy-023",
+  "level": 1,
+  "parent_id": null,
+  "seq": 4,
+  "title": "带下湿热寒湿·三黄与附子术",
+  "summary": "带下必有湿，分湿热（黄稠臭、体偏胖）与寒湿。湿热实用力用三黄泻心（黄连黄芩黄柏）；虚则扶正。寒湿漏下用炮附子固下焦配白术。",
+  "start_s": 1889.288,
+  "end_s": 2571.742,
+  "seg_from": 346,
+  "seg_to": 472,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "symptom.dai_xia",
+   "new.formula.san_huang_xie_xin_tang",
+   "herb.fu_zi"
+  ],
+  "citation": {
+   "youtube_id": "IuidW1aav8U",
+   "url": "https://www.youtube.com/watch?v=IuidW1aav8U&t=1889s",
+   "series": "jgy",
+   "episode": 23,
+   "title": "倪海廈《金匱要略》細分版： 22婦人雜病",
+   "start_s": 1889.29,
+   "end_s": 2571.74
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-023.c05",
+  "video_id": "jgy-023",
+  "level": 1,
+  "parent_id": null,
+  "seq": 5,
+  "title": "温经汤调经",
+  "summary": "年五十前后下血不止、暮发热、少腹里急腹满、手掌烦热、唇口干燥——瘀阻兼虚，温经汤（吴茱萸为君，归芎芍参桂阿胶丹皮姜草半夏麦冬等）温通调经；不必拘五十岁。头痛呕吐合吴茱萸；虚可加重阿胶促经来，实人阿胶慎用。黄连阿胶偏补心血。",
+  "start_s": 2571.742,
+  "end_s": 3012.027,
+  "seg_from": 473,
+  "seg_to": 552,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "formula.wen_jing_tang",
+   "herb.wu_zhu_yu",
+   "herb.e_jiao"
+  ],
+  "citation": {
+   "youtube_id": "IuidW1aav8U",
+   "url": "https://www.youtube.com/watch?v=IuidW1aav8U&t=2571s",
+   "series": "jgy",
+   "episode": 23,
+   "title": "倪海廈《金匱要略》細分版： 22婦人雜病",
+   "start_s": 2571.74,
+   "end_s": 3012.03
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-023.c06",
+  "video_id": "jgy-023",
+  "level": 1,
+  "parent_id": null,
+  "seq": 6,
+  "title": "经闭瘀实·土瓜根散椒姜与抵当",
+  "summary": "月经一月来一月不来为瘀阻用土瓜根散（实），温经汤主虚。陷经漏下黑不止（崩）倪氏作胶艾去艾加干姜（椒姜/姜艾变方）补血止血。抵当汤治纯血蓄胞宫：溲利、大便黑、喜忘易怒；血在膀胱则桃核承气。",
+  "start_s": 3017.082,
+  "end_s": 4108.89,
+  "seg_from": 553,
+  "seg_to": 747,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "new.formula.tu_gua_gen_san",
+   "formula.di_dang_tang",
+   "formula.tao_he_cheng_qi_tang"
+  ],
+  "citation": {
+   "youtube_id": "IuidW1aav8U",
+   "url": "https://www.youtube.com/watch?v=IuidW1aav8U&t=3017s",
+   "series": "jgy",
+   "episode": 23,
+   "title": "倪海廈《金匱要略》細分版： 22婦人雜病",
+   "start_s": 3017.08,
+   "end_s": 4108.89
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-023.c07",
+  "video_id": "jgy-023",
+  "level": 1,
+  "parent_id": null,
+  "seq": 7,
+  "title": "经痛转胞·当归芍药散与肾气丸",
+  "summary": "妇人腹中痛：水停当归芍药散；虚劳不食小建中。转胞（子宫/胎压膀胱）小便不通用肾气丸（桂附八味）；便秘偏六味，稀溏/小便不利偏桂附八味。",
+  "start_s": 4114.695,
+  "end_s": 4791.903,
+  "seg_from": 748,
+  "seg_to": 880,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "formula.dang_gui_shao_yao_san",
+   "formula.shen_qi_wan"
+  ],
+  "citation": {
+   "youtube_id": "IuidW1aav8U",
+   "url": "https://www.youtube.com/watch?v=IuidW1aav8U&t=4114s",
+   "series": "jgy",
+   "episode": 23,
+   "title": "倪海廈《金匱要略》細分版： 22婦人雜病",
+   "start_s": 4114.69,
+   "end_s": 4791.9
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-023.c08",
+  "video_id": "jgy-023",
+  "level": 1,
+  "parent_id": null,
+  "seq": 8,
+  "title": "阴疮阴吹·狼牙汤与猪膏发煎",
+  "summary": "阴中腐烂脓疮用狼牙汤煎汁棉裹纳阴中；蛇床子粉可外掺或入小柴胡。阴吹（阴道直肠瘘）用猪膏发煎，忌反复手术扩大瘘管。",
+  "start_s": 4792.828,
+  "end_s": 5229.163,
+  "seg_from": 881,
+  "seg_to": 953,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "formula.lang_ya_tang",
+   "herb.lang_ya",
+   "herb.she_chuang_zi"
+  ],
+  "citation": {
+   "youtube_id": "IuidW1aav8U",
+   "url": "https://www.youtube.com/watch?v=IuidW1aav8U&t=4792s",
+   "series": "jgy",
+   "episode": 23,
+   "title": "倪海廈《金匱要略》細分版： 22婦人雜病",
+   "start_s": 4792.83,
+   "end_s": 5229.16
+  },
+  "review_status": "llm_read"
+ }
+]
