@@ -1,0 +1,148 @@
+[
+ {
+  "chapter_id": "jgy-022.c01",
+  "video_id": "jgy-022",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "产后三病与小柴胡",
+  "summary": "产后气血两虚易中风、郁冒、大便难；三者并见或难辨时小柴胡汤和解为第一方；大便难用麻子仁丸润导，忌妄用承气。",
+  "start_s": 0.38,
+  "end_s": 403.61,
+  "seg_from": 0,
+  "seg_to": 71,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "formula.xiao_chai_hu_tang",
+   "formula.ma_zi_ren_wan",
+   "concept.xue_xu"
+  ],
+  "citation": {
+   "youtube_id": "1C6RSxE27YY",
+   "url": "https://www.youtube.com/watch?v=1C6RSxE27YY&t=0s",
+   "series": "jgy",
+   "episode": 22,
+   "title": "倪海廈《金匱要略》細分版： 21婦人產後病",
+   "start_s": 0.38,
+   "end_s": 403.61
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-022.c02",
+  "video_id": "jgy-022",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "当归生姜羊肉汤与腹痛",
+  "summary": "产后腹痛寒疝虚劳用当归生姜羊肉汤；烦满不得卧为胞中浊秽未尽，枳实芍药散；不效则下瘀血汤。",
+  "start_s": 405.25,
+  "end_s": 887.03,
+  "seg_from": 72,
+  "seg_to": 147,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "formula.dang_gui_sheng_jiang_yang_rou_tang",
+   "herb.zhi_shi",
+   "formula.xia_yu_xue_tang"
+  ],
+  "citation": {
+   "youtube_id": "1C6RSxE27YY",
+   "url": "https://www.youtube.com/watch?v=1C6RSxE27YY&t=405s",
+   "series": "jgy",
+   "episode": 22,
+   "title": "倪海廈《金匱要略》細分版： 21婦人產後病",
+   "start_s": 405.25,
+   "end_s": 887.03
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-022.c03",
+  "video_id": "jgy-022",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "产后风阳旦与竹叶汤",
+  "summary": "产后风久不解用阳旦汤（桂枝汤加肉桂）；面正赤喘头痛辨虚热用竹叶汤（含附子）而非白虎。",
+  "start_s": 887.05,
+  "end_s": 1302.886,
+  "seg_from": 148,
+  "seg_to": 225,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "formula.gui_zhi_tang",
+   "formula.zhu_ye_tang"
+  ],
+  "citation": {
+   "youtube_id": "1C6RSxE27YY",
+   "url": "https://www.youtube.com/watch?v=1C6RSxE27YY&t=887s",
+   "series": "jgy",
+   "episode": 22,
+   "title": "倪海廈《金匱要略》細分版： 21婦人產後病",
+   "start_s": 887.05,
+   "end_s": 1302.89
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-022.c04",
+  "video_id": "jgy-022",
+  "level": 1,
+  "parent_id": null,
+  "seq": 4,
+  "title": "竹皮大丸与退乳",
+  "summary": "哺乳乳中虚烦呕逆用竹皮大丸；退奶炒麦芽等可使月经来而乳消，兼治乳癖硬块。",
+  "start_s": 1310.421,
+  "end_s": 1757.976,
+  "seg_from": 226,
+  "seg_to": 292,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "formula.zhu_pi_da_wan",
+   "new.herb.mai_ya"
+  ],
+  "citation": {
+   "youtube_id": "1C6RSxE27YY",
+   "url": "https://www.youtube.com/watch?v=1C6RSxE27YY&t=1310s",
+   "series": "jgy",
+   "episode": 22,
+   "title": "倪海廈《金匱要略》細分版： 21婦人產後病",
+   "start_s": 1310.42,
+   "end_s": 1757.98
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-022.c05",
+  "video_id": "jgy-022",
+  "level": 1,
+  "parent_id": null,
+  "seq": 5,
+  "title": "产后下利白头翁加味",
+  "summary": "产后热利下重虚甚，白头翁汤加甘草阿胶；阿胶勿久煮。",
+  "start_s": 1758.861,
+  "end_s": 1842.676,
+  "seg_from": 293,
+  "seg_to": 307,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "formula.bai_tou_weng_jia_gan_cao_e_jiao_tang"
+  ],
+  "citation": {
+   "youtube_id": "1C6RSxE27YY",
+   "url": "https://www.youtube.com/watch?v=1C6RSxE27YY&t=1758s",
+   "series": "jgy",
+   "episode": 22,
+   "title": "倪海廈《金匱要略》細分版： 21婦人產後病",
+   "start_s": 1758.86,
+   "end_s": 1842.68
+  },
+  "review_status": "llm_read"
+ }
+]
