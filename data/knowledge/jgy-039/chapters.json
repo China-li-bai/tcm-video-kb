@@ -1,0 +1,122 @@
+[
+ {
+  "chapter_id": "jgy-039.c01",
+  "video_id": "jgy-039",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "脑瘤近视神经·鼻窍泄脑压",
+  "summary": "视神经旁脑瘤致盲。治则从鼻窍泄脑部积水减压：外用五十九号麝香白芷散喷鼻（麝香无孔不入，比例约一比五十）；针风府肾俞痞根（奇穴、只针一侧）委中消积穴（须抵跟骨）百会合谷睛明太阳养老光明迎香灵台等，意在排脑水、护视力。手脚肥大为逆/危象。",
+  "start_s": 0.58,
+  "end_s": 724.19,
+  "seg_from": 0,
+  "seg_to": 116,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "new.disease.nao_liu",
+   "herb.she_xiang",
+   "acupoint.gv20"
+  ],
+  "citation": {
+   "youtube_id": "WskhApLXXPc",
+   "url": "https://www.youtube.com/watch?v=WskhApLXXPc&t=0s",
+   "series": "jgy",
+   "episode": 39,
+   "title": "倪海廈《金匱要略》細分版： 38醫案（腦瘤）",
+   "start_s": 0.58,
+   "end_s": 724.19
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-039.c02",
+  "video_id": "jgy-039",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "阴阳消长与肿瘤虚实",
+  "summary": "夹叙鸡眼直接灸（凡士林固定艾绒）。肿瘤/皮肤/乳块：外凸属阳较安，内陷属阴危；视力持续不见为实，时好时坏为虚。瘤治先排水再断营养（偏原始有机食）。勿泥西医定位，凭中医虚实阴阳。",
+  "start_s": 724.19,
+  "end_s": 1668.1,
+  "seg_from": 117,
+  "seg_to": 245,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "concept.yin_yang",
+   "new.pattern.shi_zheng"
+  ],
+  "citation": {
+   "youtube_id": "WskhApLXXPc",
+   "url": "https://www.youtube.com/watch?v=WskhApLXXPc&t=724s",
+   "series": "jgy",
+   "episode": 39,
+   "title": "倪海廈《金匱要略》細分版： 38醫案（腦瘤）",
+   "start_s": 724.19,
+   "end_s": 1668.1
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-039.c03",
+  "video_id": "jgy-039",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "开窍排湿与肝肺五行",
+  "summary": "肿瘤首重排水：麝香喷鼻促嚏涕；内服辛夷苍耳菖蒲开窍，苍术燥鼻湿（苗部入肺窍，异于白术根部入腹）。目盲从肝，柴芩类疏肝；白睛赤为火克金，生大黄片泡茶取气清上勿煮致泻。",
+  "start_s": 1668.1,
+  "end_s": 2327.745,
+  "seg_from": 246,
+  "seg_to": 350,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.she_xiang",
+   "new.herb.cang_zhu",
+   "herb.da_huang",
+   "zangfu.gan"
+  ],
+  "citation": {
+   "youtube_id": "WskhApLXXPc",
+   "url": "https://www.youtube.com/watch?v=WskhApLXXPc&t=1668s",
+   "series": "jgy",
+   "episode": 39,
+   "title": "倪海廈《金匱要略》細分版： 38醫案（腦瘤）",
+   "start_s": 1668.1,
+   "end_s": 2327.74
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-039.c04",
+  "video_id": "jgy-039",
+  "level": 1,
+  "parent_id": null,
+  "seq": 4,
+  "title": "小肠寒频尿与阴实硫磺",
+  "summary": "夜尿频属小肠寒、膀胱水不化，非括约肌；乌药益智仁温化。病机：精室残渣小肠火衰则逆入脑。阴实须阳药直达深寒，首选硫磺；龙骨牡蛎敛阳使力集于病所。好转征：肢消、复明、须生。",
+  "start_s": 2329.94,
+  "end_s": 3038.11,
+  "seg_from": 351,
+  "seg_to": 476,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "zangfu.xiao_chang",
+   "herb.shi_liu_huang",
+   "herb.long_gu"
+  ],
+  "citation": {
+   "youtube_id": "WskhApLXXPc",
+   "url": "https://www.youtube.com/watch?v=WskhApLXXPc&t=2329s",
+   "series": "jgy",
+   "episode": 39,
+   "title": "倪海廈《金匱要略》細分版： 38醫案（腦瘤）",
+   "start_s": 2329.94,
+   "end_s": 3038.11
+  },
+  "review_status": "llm_read"
+ }
+]
