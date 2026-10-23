@@ -15,7 +15,9 @@ cd /workspace/tcm-video-kb
 # 浏览器打开 http://127.0.0.1:8765/watch/shl-001?t=125
 ```
 
-真实 R2：在 `configs/.env` 填 `R2_*`（见 `configs/.env.example`）。未配置时走本地 mirror。
+真实 R2：在 `configs/.env` 填 `R2_*`（见 `configs/.env.example`）。
+播放 stub HMAC 请设 `TCMKB_MEDIA_HMAC_SECRET`（勿直接复用 `R2_SECRET_ACCESS_KEY`）。
+未配置 R2 时走本地 mirror。
 版权：个人/内部学习；优先私有桶 + 签名 URL，勿把桶设为 public。
 
 ## API

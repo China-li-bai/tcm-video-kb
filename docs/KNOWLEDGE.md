@@ -12,8 +12,8 @@
 | `annotations/*.yaml` | **阅读产物**（语义部分）：按窗口组写的章节、实体修正、知识点，只引用转写句序号 `seq` |
 | `chapters.json` | `KChapter[]`：集 > 章（`<vid>.cNN`）> 节（`<vid>.cNN.sN`）；标题、1–2 句自述摘要、起止秒/句、条文 `clause_refs`（宋本编号）、六经、`citation` |
 | `entities.jsonl` | `KEntity`：规范 id（词典 id，或 `new.<type>.<name>`）、类型、全部表面形式（ASR 原文）与修正形、剂量、提及列表（每条带时间与链接）、`asr_uncertain` |
-| `knowledge_points.jsonl` | `KnowledgePoint`：`kp_id`、类型、中文转述 `statement`（≤160 字）、实体 id、章节 id、原文证据 `evidence_quote`（≤40 字，必须能在所引句中找到）、起止秒、`citation{video_id,url,youtube_id,youtube_t_url,series,episode,title}`、置信度、`asr_note` |
-| `outline.md` | 人读大纲：章节目录（时间戳链接）、按章知识点、实体索引 |
+| `knowledge_points.jsonl` | `KnowledgePoint`：`kp_id`、类型、中文转述 `statement`（≤160 字）、实体 id、章节 id、原文证据 `evidence_quote`（≤40 字，必须能在所引句中找到）、起止秒、`citation{video_id,url,t_url,youtube_id,youtube_t_url,series,episode,title}`、置信度、`asr_note` |
+| `outline.md` | 人读大纲：章节目录（站内 `/watch/{id}?t=` 时间戳链接）、按章知识点、实体索引 |
 | `build_report.json` | 计数、注释哈希、错误 |
 | `_work/`（不入 git） | 阅读窗口 `windows/wNN.txt`（`seq 时间 文本`，头部附词典候选、条文匹配、s08 启发式章节） |
 
@@ -56,9 +56,20 @@ kps:
 - {type: herb_property, s: 葛根能升津液…, seq: [1303, 1314], q: 原文片段≤40字, ents: [herb.ge_gen], conf: 0.85, asr: 可选}
 ```
 
+### 引用字段（与 ingest `cite` 一致）
+
+| 字段 | 含义 |
+|---|---|
+| `citation.url` | 源视频 / YouTube **页面** URL（无时间戳） |
+| `citation.t_url` | **主链接**：站内 `/watch/{video_id}?t=<秒>` |
+| `citation.youtube_t_url` | YouTube 备份 `&t=<秒>s` |
+
+实体的 `first_url` / `mentions[].url` 是站内跳转（等同 `t_url`），不是 `citation.url`。
+CSV 汇总（`_index/*.csv`）的 `url` 列取 `t_url`（站内），便于点开。
+
 ### 确定性部分（代码负责）
 
-- 句序号 → 秒、引用 URL（`t = floor(round(start_s, 2))`，与 `KCitation` 校验一致）。
+- 句序号 → 秒、引用 URL（`t = floor(round(start_s, 2))` → `citation.t_url`，与 `KCitation` 校验一致）。
 - 实体：词典最长匹配（排除 `course_term`、单字泛词；`acupoint` 需附近有「穴/针/灸…」；
   `exclude_auto` 列出同形异义 id，如 `acupoint.ex_tai_yang`），加 `aliases` 补充，再合并注释提及；
   知识点引用但未提及的实体自动补一条提及。

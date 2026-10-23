@@ -1,7 +1,8 @@
 """Rewrite segment/chapter cite.t_url to site /watch/{id}?t= without re-running ASR.
 
 Also refreshes lecture.md timestamp links. Does not touch asr_raw.json or wav.
-Optional: refresh knowledge outline/chapters citation URLs when present.
+When ``data/knowledge/<id>/`` exists: rewrites chapters/kp/entities citation URLs
+and re-renders ``outline.md`` via the same ``render_outline`` used by knowledge-build.
 """
 from __future__ import annotations
 import json, pathlib
@@ -115,48 +116,107 @@ def backfill_video(root: pathlib.Path, video_id: str, *, dry_run: bool = False) 
     kdir = root / "data" / "knowledge" / video_id
     if (kdir / "chapters.json").is_file():
         try:
-            from tcmkb_core.knowledge import t_url, youtube_t_url
-            kch = json.loads((kdir / "chapters.json").read_text(encoding="utf-8"))
-            yid = source.get("youtube_id") or (kch[0].get("citation") or {}).get("youtube_id") if kch else None
-            for ch in kch:
-                cit = dict(ch.get("citation") or {})
-                start_s = float(cit.get("start_s", ch["start_s"]))
+            from tcmkb_core.knowledge import (
+                KChapter, KEntity, KnowledgePoint, t_url, youtube_t_url,
+            )
+            from tcmkb_ingest.knowledge.build import render_outline
+            from tcmkb_ingest.knowledge.episode import Episode, load_episode
+
+            def _rewrite_k_cite(cit_in: dict[str, Any] | None, start_s: float,
+                                end_s: float | None = None) -> dict[str, Any]:
+                """Align knowledge citation with ingest cite: url=YouTube page, t_url=site."""
+                cit = dict(cit_in or {})
+                y = cit.get("youtube_id") or source.get("youtube_id")
                 cit["video_id"] = video_id
-                cit["url"] = t_url(video_id, start_s)
-                if yid or cit.get("youtube_id"):
-                    cit["youtube_id"] = cit.get("youtube_id") or yid
-                    cit["youtube_t_url"] = youtube_t_url(cit["youtube_id"], start_s)
-                ch["citation"] = cit
+                cit["t_url"] = t_url(video_id, start_s)
+                cit["start_s"] = float(cit.get("start_s", start_s))
+                if end_s is not None and cit.get("end_s") is None:
+                    cit["end_s"] = float(end_s)
+                if y:
+                    cit["youtube_id"] = y
+                    cit["youtube_t_url"] = youtube_t_url(y, start_s)
+                    cit["url"] = f"https://www.youtube.com/watch?v={y}"
+                else:
+                    # keep non-YouTube source url if present; drop stale site-style url
+                    src_url = source.get("url")
+                    if src_url:
+                        cit["url"] = src_url
+                    elif isinstance(cit.get("url"), str) and cit["url"].startswith("/watch/"):
+                        cit["url"] = None
+                return cit
+
+            kch = json.loads((kdir / "chapters.json").read_text(encoding="utf-8"))
+            yid = source.get("youtube_id") or (
+                (kch[0].get("citation") or {}).get("youtube_id") if kch else None)
+            for ch in kch:
+                start_s = float((ch.get("citation") or {}).get("start_s", ch["start_s"]))
+                ch["citation"] = _rewrite_k_cite(ch.get("citation"), start_s, ch.get("end_s"))
+                # ensure series/episode/title for KCitation validation when re-rendering outline
+                cit = ch["citation"]
+                cit.setdefault("series", source.get("series_id") or video_id.split("-", 1)[0])
+                cit.setdefault("episode", int(source.get("episode") or 0))
+                cit.setdefault("title", source.get("title") or (m.title if m else None) or video_id)
             if not dry_run:
                 art.atomic_write_json(kdir / "chapters.json", kch)
             info["updated"].append(f"data/knowledge/{video_id}/chapters.json")
-            # knowledge_points + entities first_url
+
+            kp_rows: list[dict] = []
             kp_p = kdir / "knowledge_points.jsonl"
             if kp_p.is_file():
-                rows = [json.loads(x) for x in kp_p.read_text(encoding="utf-8").splitlines() if x.strip()]
-                for k in rows:
-                    cit = dict(k.get("citation") or {})
-                    start_s = float(cit.get("start_s", k["start_s"]))
-                    cit["video_id"] = video_id
-                    cit["url"] = t_url(video_id, start_s)
-                    if cit.get("youtube_id") or yid:
-                        cit["youtube_id"] = cit.get("youtube_id") or yid
-                        cit["youtube_t_url"] = youtube_t_url(cit["youtube_id"], start_s)
-                    k["citation"] = cit
+                kp_rows = [json.loads(x) for x in kp_p.read_text(encoding="utf-8").splitlines() if x.strip()]
+                for k in kp_rows:
+                    start_s = float((k.get("citation") or {}).get("start_s", k["start_s"]))
+                    k["citation"] = _rewrite_k_cite(k.get("citation"), start_s, k.get("end_s"))
+                    cit = k["citation"]
+                    cit.setdefault("series", source.get("series_id") or video_id.split("-", 1)[0])
+                    cit.setdefault("episode", int(source.get("episode") or 0))
+                    cit.setdefault("title", source.get("title") or (m.title if m else None) or video_id)
                 if not dry_run:
-                    art.atomic_write_text(kp_p, "".join(json.dumps(k, ensure_ascii=False) + "\n" for k in rows))
+                    art.atomic_write_text(
+                        kp_p, "".join(json.dumps(k, ensure_ascii=False) + "\n" for k in kp_rows))
                 info["updated"].append(f"data/knowledge/{video_id}/knowledge_points.jsonl")
+
+            ent_rows: list[dict] = []
             ent_p = kdir / "entities.jsonl"
             if ent_p.is_file():
-                rows = [json.loads(x) for x in ent_p.read_text(encoding="utf-8").splitlines() if x.strip()]
-                for e in rows:
+                ent_rows = [json.loads(x) for x in ent_p.read_text(encoding="utf-8").splitlines() if x.strip()]
+                for e in ent_rows:
                     if e.get("first_start_s") is not None:
                         e["first_url"] = t_url(video_id, e["first_start_s"])
                     for ment in e.get("mentions") or []:
                         ment["url"] = t_url(video_id, ment["start_s"])
                 if not dry_run:
-                    art.atomic_write_text(ent_p, "".join(json.dumps(e, ensure_ascii=False) + "\n" for e in rows))
+                    art.atomic_write_text(
+                        ent_p, "".join(json.dumps(e, ensure_ascii=False) + "\n" for e in ent_rows))
                 info["updated"].append(f"data/knowledge/{video_id}/entities.jsonl")
+
+            # Re-render outline.md with the same helper as knowledge-build
+            try:
+                chapters_m = [KChapter.model_validate(c) for c in kch]
+                kps_m = [KnowledgePoint.model_validate(k) for k in kp_rows]
+                ents_m = [KEntity.model_validate(e) for e in ent_rows]
+                try:
+                    ep = load_episode(root, video_id)
+                except Exception:
+                    cit0 = (kch[0].get("citation") or {}) if kch else {}
+                    ep = Episode(
+                        video_id=video_id,
+                        series=cit0.get("series") or source.get("series_id")
+                               or video_id.split("-", 1)[0],
+                        episode=int(cit0.get("episode") or source.get("episode") or 0),
+                        title=cit0.get("title") or source.get("title")
+                              or (m.title if m else None) or video_id,
+                        youtube_id=cit0.get("youtube_id") or yid,
+                        duration_s=float(max((c.get("end_s") or 0) for c in kch) if kch else 0),
+                        segments=[],
+                    )
+                outline = render_outline(ep, chapters_m, kps_m, ents_m)
+                if not dry_run:
+                    art.atomic_write_text(kdir / "outline.md", outline)
+                info["updated"].append(f"data/knowledge/{video_id}/outline.md")
+            except Exception as oe:
+                info["outline_error"] = str(oe)
+                log.warning("outline re-render %s: %s", video_id, oe)
         except Exception as e:
             info["knowledge_error"] = str(e)
             log.warning("knowledge backfill %s: %s", video_id, e)

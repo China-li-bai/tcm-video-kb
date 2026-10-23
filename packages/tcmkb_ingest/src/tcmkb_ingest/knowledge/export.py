@@ -49,7 +49,7 @@ def build_index(root: pathlib.Path) -> dict[str, Any]:
         ctitle = {c["chapter_id"]: c["title"] for c in chapters}
         for c in chapters:
             chaps.append({**c, "clause_refs": " ".join(c.get("clause_refs") or []),
-                          "url": c["citation"]["url"]})
+                          "url": (c["citation"].get("t_url") or c["citation"].get("url"))})
         for e in _jsonl(d / "entities.jsonl"):
             g = ents.setdefault(e["entity_id"], {
                 "entity_id": e["entity_id"], "type": e["type"], "canonical": e["canonical"],
@@ -65,7 +65,7 @@ def build_index(root: pathlib.Path) -> dict[str, Any]:
         for k in _jsonl(d / "knowledge_points.jsonl"):
             c = k["citation"]
             kps.append({**k, "entity_ids": " ".join(k["entity_ids"]), "series": c["series"],
-                        "episode": c["episode"], "url": c["url"], "title": c["title"],
+                        "episode": c["episode"], "url": (c.get("t_url") or c.get("url")), "title": c["title"],
                         "chapter_title": ctitle.get(k.get("chapter_id") or "", "")})
     erows = []
     for g in sorted(ents.values(), key=lambda g: (g["type"], -g["n_mentions"], g["entity_id"])):

@@ -113,7 +113,9 @@ def _jsonl(p: pathlib.Path) -> list[dict]:
 
 # ---------------------------------------------------------------- schema
 def _cit(start=12.7, **kw) -> dict:
-    d = {"video_id": "tv-001", "youtube_id": YT, "url": t_url("tv-001", start),
+    d = {"video_id": "tv-001", "youtube_id": YT,
+         "url": f"https://www.youtube.com/watch?v={YT}",
+         "t_url": t_url("tv-001", start),
          "youtube_t_url": youtube_t_url(YT, start), "series": "tv", "episode": 1, "title": "t",
          "start_s": start, "end_s": start + 5}
     d.update(kw)
@@ -137,7 +139,7 @@ def test_t_url_floors_seconds():
 def test_citation_url_must_match_start():
     KCitation(**_cit())
     with pytest.raises(ValidationError):
-        KCitation(**_cit(url=t_url("tv-001", 99)))
+        KCitation(**_cit(t_url=t_url("tv-001", 99)))
 
 
 def test_kp_quote_and_statement_limits():
@@ -179,7 +181,8 @@ def test_json_schemas_export():
 def test_citation_rounds_before_url():
     ep = Episode("tv-001", "tv", 1, "t", YT, 1200.0, _segments())
     c = citation(ep, 4052.996, 4060.0)
-    assert c.start_s == 4053.0 and c.url == "/watch/tv-001?t=4053"
+    assert c.start_s == 4053.0 and c.t_url == "/watch/tv-001?t=4053"
+    assert c.url == f"https://www.youtube.com/watch?v={YT}"
     assert c.youtube_t_url.endswith("&t=4053s")
 
 
@@ -206,7 +209,8 @@ def test_build_end_to_end(root: pathlib.Path):
     assert (c02["seg_from"], c02["seg_to"]) == (1, 7)
     assert c02["six_channel"] == ["six_channel.taiyang"]
     assert chapters[2]["parent_id"] == "tv-001.c02" and chapters[2]["seg_to"] == 7
-    assert c02["citation"]["url"] == t_url("tv-001", 100.4)
+    assert c02["citation"]["t_url"] == t_url("tv-001", 100.4)
+    assert c02["citation"]["url"] == f"https://www.youtube.com/watch?v={YT}"
     assert c02["citation"]["video_id"] == "tv-001"
 
     kps = _jsonl(kdir / "knowledge_points.jsonl")
@@ -216,7 +220,7 @@ def test_build_end_to_end(root: pathlib.Path):
     assert set(ci[0]["entity_ids"]) >= {"formula.gui_zhi_tang", "symptom.han_chu"}
     assert len(kps) == 4
     for k in kps:
-        assert k["citation"]["url"] == t_url("tv-001", k["start_s"])
+        assert k["citation"]["t_url"] == t_url("tv-001", k["start_s"])
         assert k["kp_id"].startswith("tv-001.kp")
     tip = next(k for k in kps if k["type"] == "clinical_tip")
     assert tip["chapter_id"] == "tv-001.c02.s1"

@@ -5,7 +5,7 @@ source backup only. When play_copy is false, YouTube-backed items skip the
 transcode (legacy disk-budget mode).
 """
 from __future__ import annotations
-import pathlib, shutil, subprocess
+import pathlib, subprocess
 from tcmkb_core.play import construct_play_url, play_audio_key
 from tcmkb_ingest import artifacts as art
 from tcmkb_ingest.steps.base import Ctx, log
@@ -86,15 +86,15 @@ def run(ctx: Ctx, **_kw) -> dict:
             ctx.storage.put_file(f"play/{ctx.video_id}.mp4", mp4)
             play_key = f"play/{ctx.video_id}.mp4"
     except Exception as e:
-        log.warning("s02 ffmpeg failed, copying source as play fallback: %s", e)
-        if src.is_file():
-            fallback = outdir / src.name
-            shutil.copy2(src, fallback)
-            play_key = f"play/{ctx.video_id}.{ext or 'bin'}"
-            uri = ctx.storage.put_file(play_key, fallback)
-            audio_key = play_key
-        else:
-            raise RuntimeError(f"s02_media: source missing and ffmpeg failed: {e}") from e
+        # Never put the raw source into play/: purge keeps play/*, and a high-bitrate
+        # original would be served as if it were the 64k AAC copy.
+        err = f"ffmpeg failed (no play fallback): {e}"
+        log.error("s02 %s %s", ctx.video_id, err)
+        try:
+            ctx.state.mark_failed(ctx.video_id, step, vk, err)
+        except Exception:  # pragma: no cover
+            pass
+        raise RuntimeError(f"s02_media: {err}") from e
 
     m.r2_audio_key = audio_key
     m.r2_play_key = play_key

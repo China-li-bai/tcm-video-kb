@@ -65,6 +65,18 @@ setsid nohup .venv/bin/python -m tcmkb_ingest batch --media zj --media nj \
 
 主链接是站内 `/watch/{video_id}?t=<秒>`；YouTube 仅作来源备份（`url` / `youtube_t_url`）。
 
+### 字段对照（ingest `cite` ≡ knowledge `KCitation`）
+
+| 字段 | 含义 | 示例 |
+|---|---|---|
+| `url` | 源视频页（YouTube 无 `&t=`） | `https://www.youtube.com/watch?v=…` |
+| `t_url` | **主链接**：站内跳秒 | `/watch/shl-006?t=591` |
+| `youtube_t_url` | YouTube 备份深链 | `https://www.youtube.com/watch?v=…&t=591s` |
+| `video_id` | 站内 id | `shl-006` |
+| `youtube_id` | YouTube 视频 id | `9zCCln-3KaE` |
+
+知识层实体的 `first_url` / `mentions[].url` 仍是站内跳转（与 cite 的 `t_url` 同类），不是 `cite.url`。
+
 `video.meta.source`、`asr_raw.json.source`、每条 segment / chapter 的 `cite`：
 
 ```json
@@ -91,7 +103,8 @@ s02_media:
 
 新跑的条目会在 `data/r2-mirror/play/<video_id>.m4a` 留下播放副本（purge **不会**删它）。
 真实 R2：配置 `R2_ACCOUNT_ID` / `R2_ACCESS_KEY_ID` / `R2_SECRET_ACCESS_KEY` / `R2_BUCKET`
-（`configs/.env.example`）；LocalStorage 在密钥未设时继续写本地 mirror。
+（`configs/.env.example`）；播放 stub HMAC 用独立的 `TCMKB_MEDIA_HMAC_SECRET`
+（未设时回退 R2_SECRET 并打 warning）。LocalStorage 在 R2 密钥未设时继续写本地 mirror。
 
 已 purge、只有 YouTube 引用、没有 play 文件的条目：先 `refetch --video …` 再
 `tcmkb run --video … --from s02 --to s02`（或整批重跑 s02），不必重跑 ASR。
@@ -101,9 +114,11 @@ s02_media:
 ```bash
 # 预览
 .venv/bin/python -m tcmkb_ingest backfill-cites --dry-run
-# 单集 / 全集：改写 segments.jsonl、chapters.json、lecture.md（及 knowledge 层 URL）
+# 单集 / 全集：改写 segments.jsonl、chapters.json、lecture.md，
+# 以及 knowledge 的 chapters/kp/entities URL + 重渲 outline.md
 .venv/bin/python -m tcmkb_ingest backfill-cites --video shl-006
 .venv/bin/python -m tcmkb_ingest backfill-cites
 ```
 
 只改 cite / 文档链接，不动 `asr_raw.json`、不分词、不调 FunASR。
+knowledge `outline.md` 用与 `knowledge-build` 相同的 `render_outline` 重渲，与 JSON 站内链接保持一致。

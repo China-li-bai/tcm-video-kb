@@ -53,6 +53,32 @@ def _hmac_token(video_id: str, expires: int, secret: str) -> str:
     return hmac.new(secret.encode(), msg, hashlib.sha256).hexdigest()[:32]
 
 
+_warned_hmac_fallback = False
+
+
+def _media_hmac_secret() -> str:
+    """HMAC secret for stub play tokens — not the R2 object-store key.
+
+    Prefer ``TCMKB_MEDIA_HMAC_SECRET``. Falls back to ``R2_SECRET_ACCESS_KEY`` with a
+    one-time warning (legacy), then ``dev`` for local tests.
+    """
+    global _warned_hmac_fallback
+    import logging
+    dedicated = os.environ.get("TCMKB_MEDIA_HMAC_SECRET")
+    if dedicated:
+        return dedicated
+    legacy = os.environ.get("R2_SECRET_ACCESS_KEY")
+    if legacy:
+        if not _warned_hmac_fallback:
+            logging.getLogger("tcmkb.play").warning(
+                "TCMKB_MEDIA_HMAC_SECRET unset; falling back to R2_SECRET_ACCESS_KEY for "
+                "stub HMAC (set TCMKB_MEDIA_HMAC_SECRET to decouple media signing from R2 credentials)"
+            )
+            _warned_hmac_fallback = True
+        return legacy
+    return "dev"
+
+
 def construct_play_url(video_id: str, *, root: str | pathlib.Path | None = None,
                        expires_s: int = 14400, mirror_dir: str | pathlib.Path | None = None
                        ) -> dict[str, Any]:
@@ -67,7 +93,7 @@ def construct_play_url(video_id: str, *, root: str | pathlib.Path | None = None,
     out: dict[str, Any] = {"video_id": video_id, "key": key, "expires_s": expires_s}
 
     if _r2_configured():
-        secret = os.environ.get("R2_SECRET_ACCESS_KEY") or "dev"
+        secret = _media_hmac_secret()
         exp = int(time.time()) + expires_s
         token = _hmac_token(video_id, exp, secret)
         domain = (os.environ.get("R2_PUBLIC_BASE")
@@ -103,5 +129,5 @@ def verify_media_token(video_id: str, exp: int | str, token: str,
         return False
     if exp_i < int(time.time()):
         return False
-    secret = secret or os.environ.get("R2_SECRET_ACCESS_KEY") or "dev"
+    secret = secret or _media_hmac_secret()
     return hmac.compare_digest(_hmac_token(video_id, exp_i, secret), token or "")

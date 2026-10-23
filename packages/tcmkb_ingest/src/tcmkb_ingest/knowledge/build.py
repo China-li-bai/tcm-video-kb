@@ -49,10 +49,12 @@ def load_annotations(kdir: pathlib.Path) -> list[Annotation]:
 
 
 def citation(ep: Episode, start_s: float, end_s: float) -> KCitation:
-    start_s, end_s = round(float(start_s), 2), round(float(end_s), 2)   # url from the stored value
+    start_s, end_s = round(float(start_s), 2), round(float(end_s), 2)   # t_url from the stored value
+    page = f"https://www.youtube.com/watch?v={ep.youtube_id}" if ep.youtube_id else None
     return KCitation(
         video_id=ep.video_id, youtube_id=ep.youtube_id,
-        url=t_url(ep.video_id, start_s), youtube_t_url=youtube_t_url(ep.youtube_id, start_s),
+        url=page, t_url=t_url(ep.video_id, start_s),
+        youtube_t_url=youtube_t_url(ep.youtube_id, start_s),
         series=ep.series, episode=ep.episode, title=ep.title, start_s=start_s, end_s=end_s,
     )
 

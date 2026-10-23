@@ -51,7 +51,8 @@ def test_construct_play_url_local(tmp_path, monkeypatch):
 def test_construct_play_url_r2_stub(monkeypatch):
     monkeypatch.setenv("R2_ACCOUNT_ID", "acc")
     monkeypatch.setenv("R2_ACCESS_KEY_ID", "key")
-    monkeypatch.setenv("R2_SECRET_ACCESS_KEY", "sekrit")
+    monkeypatch.setenv("R2_SECRET_ACCESS_KEY", "r2-store-secret")
+    monkeypatch.setenv("TCMKB_MEDIA_HMAC_SECRET", "media-hmac-only")
     monkeypatch.setenv("R2_BUCKET", "tcm-media")
     monkeypatch.setenv("R2_PUBLIC_BASE", "https://media.example.com")
     meta = construct_play_url("shl-001", expires_s=3600)
@@ -59,11 +60,29 @@ def test_construct_play_url_r2_stub(monkeypatch):
     assert meta["key"] == "play/shl-001.m4a"
     assert meta["url"].startswith("https://media.example.com/play/shl-001.m4a?")
     assert "token=" in meta["url"] and "exp=" in meta["url"]
-    # token verifies
+    # token verifies with dedicated HMAC secret (not R2 store key)
     from urllib.parse import parse_qs, urlparse
     q = parse_qs(urlparse(meta["url"]).query)
-    assert verify_media_token("shl-001", q["exp"][0], q["token"][0])
+    assert verify_media_token("shl-001", q["exp"][0], q["token"][0], secret="media-hmac-only")
+    assert not verify_media_token("shl-001", q["exp"][0], q["token"][0], secret="r2-store-secret")
     assert not verify_media_token("shl-001", q["exp"][0], "deadbeef")
+
+
+def test_hmac_falls_back_to_r2_secret_with_warning(monkeypatch, caplog):
+    import logging
+    import tcmkb_core.play as play_mod
+    play_mod._warned_hmac_fallback = False
+    monkeypatch.setenv("R2_ACCOUNT_ID", "acc")
+    monkeypatch.setenv("R2_ACCESS_KEY_ID", "key")
+    monkeypatch.setenv("R2_SECRET_ACCESS_KEY", "legacy-sekrit")
+    monkeypatch.delenv("TCMKB_MEDIA_HMAC_SECRET", raising=False)
+    monkeypatch.setenv("R2_PUBLIC_BASE", "https://media.example.com")
+    with caplog.at_level(logging.WARNING, logger="tcmkb.play"):
+        meta = construct_play_url("shl-001", expires_s=60)
+    assert "TCMKB_MEDIA_HMAC_SECRET" in caplog.text
+    from urllib.parse import parse_qs, urlparse
+    q = parse_qs(urlparse(meta["url"]).query)
+    assert verify_media_token("shl-001", q["exp"][0], q["token"][0], secret="legacy-sekrit")
 
 
 def test_backfill_cites_rewrites_without_asr(tmp_path):
@@ -122,3 +141,113 @@ def test_backfill_cites_rewrites_without_asr(tmp_path):
     lecture = (root / "data/artifacts/shl-099/s08_chapter/vk2/lecture.md").read_text(encoding="utf-8")
     assert "/watch/shl-099?t=10" in lecture
     assert asr_p.read_bytes() == before  # ASR untouched
+
+
+def test_backfill_rewrites_knowledge_outline(tmp_path):
+    """knowledge chapters + outline.md get site /watch links (same render_outline format)."""
+    root = tmp_path
+    for d in ("configs", "lexicon", "packages",
+              "data/artifacts/shl-099/s06_clean/vk1",
+              "data/knowledge/shl-099"):
+        (root / d).mkdir(parents=True, exist_ok=True)
+    (root / "configs" / "pipeline.yaml").write_text(
+        "state_db: data/state.sqlite\nartifacts_dir: data/artifacts\nr2_mirror: data/r2-mirror\n",
+        encoding="utf-8")
+    from tcmkb_ingest.state import StateDB
+    from tcmkb_core.models import VideoManifest
+    db = StateDB(root / "data" / "state.sqlite")
+    m = VideoManifest(
+        video_id="shl-099", series_id="shl", episode=99, title="旧集",
+        source_path="/missing.m4a", source_sha256="0" * 64,
+        meta={"source": {"video_id": "shl-099", "youtube_id": "OLDID",
+                         "url": "https://www.youtube.com/watch?v=OLDID",
+                         "title": "旧集", "series_id": "shl", "episode": 99}},
+        active_versions={"s06_clean": "vk1"},
+    )
+    db.upsert_video(m)
+    db.close()
+
+    # minimal segments so load_episode works for outline duration/title
+    seg = {"video_id": "shl-099", "seq": 0, "start_s": 10.5, "end_s": 20.0, "text": "甲",
+           "text_raw": "甲", "edits": [],
+           "cite": {"video_id": "shl-099", "youtube_id": "OLDID", "title": "旧集",
+                    "series_id": "shl", "episode": 99,
+                    "t_url": "https://www.youtube.com/watch?v=OLDID&t=10s",
+                    "url": "https://www.youtube.com/watch?v=OLDID",
+                    "start_s": 10.5, "end_s": 20.0}}
+    (root / "data/artifacts/shl-099/s06_clean/vk1/segments.jsonl").write_text(
+        json.dumps(seg, ensure_ascii=False) + "\n", encoding="utf-8")
+
+    kdir = root / "data/knowledge/shl-099"
+    old_yt = "https://www.youtube.com/watch?v=OLDID&t=10s"
+    kch = [{
+        "chapter_id": "shl-099.c01", "video_id": "shl-099", "level": 1, "parent_id": None,
+        "seq": 1, "title": "开篇", "summary": "概述本集。", "start_s": 10.5, "end_s": 20.0,
+        "seg_from": 0, "seg_to": 0, "six_channel": [], "clause_refs": [], "topics": [],
+        "citation": {"youtube_id": "OLDID", "url": old_yt, "series": "shl", "episode": 99,
+                     "title": "旧集", "start_s": 10.5, "end_s": 20.0},
+        "review_status": "llm_read",
+    }]
+    (kdir / "chapters.json").write_text(json.dumps(kch, ensure_ascii=False, indent=1), encoding="utf-8")
+    (kdir / "knowledge_points.jsonl").write_text("", encoding="utf-8")
+    (kdir / "entities.jsonl").write_text("", encoding="utf-8")
+    (kdir / "outline.md").write_text(
+        f"# 旧集\n\n- 视频：{old_yt}\n\n## 章节目录\n\n- [00:10]({old_yt}) **c01 开篇** — 概述本集。\n",
+        encoding="utf-8")
+
+    info = backfill_video(root, "shl-099")
+    assert "data/knowledge/shl-099/outline.md" in info["updated"]
+    assert "outline_error" not in info
+    new_ch = json.loads((kdir / "chapters.json").read_text(encoding="utf-8"))
+    assert new_ch[0]["citation"]["t_url"] == "/watch/shl-099?t=10"
+    assert new_ch[0]["citation"]["url"] == "https://www.youtube.com/watch?v=OLDID"
+    assert new_ch[0]["citation"]["video_id"] == "shl-099"
+    outline = (kdir / "outline.md").read_text(encoding="utf-8")
+    assert "/watch/shl-099?t=10" in outline
+    assert "/watch/shl-099?t=0" in outline  # header video link
+    assert "youtube.com" not in outline
+    assert "**c01 开篇**" in outline
+
+
+def test_s02_ffmpeg_failure_does_not_copy_source_to_play(tmp_path, monkeypatch):
+    """ffmpeg failure must not put the raw source into play/ (purge would keep it)."""
+    root = tmp_path
+    for d in ("configs", "lexicon", "packages", "data/media/shl", "data/r2-mirror", "data/artifacts"):
+        (root / d).mkdir(parents=True, exist_ok=True)
+    (root / "configs" / "pipeline.yaml").write_text(
+        "state_db: data/state.sqlite\nartifacts_dir: data/artifacts\n"
+        "r2_mirror: data/r2-mirror\n"
+        "steps:\n  s02_media:\n    play_copy: true\n    audio_bitrate: \"64k\"\n",
+        encoding="utf-8")
+    src = root / "data/media/shl/shl-050.wav"
+    src.write_bytes(b"not-a-real-wav")
+    from tcmkb_ingest.state import StateDB
+    from tcmkb_core.models import VideoManifest
+    from tcmkb_ingest.steps.base import Ctx
+    from tcmkb_ingest.steps import s02_media
+
+    db = StateDB(root / "data" / "state.sqlite")
+    m = VideoManifest(
+        video_id="shl-050", series_id="shl", episode=50, title="坏源",
+        source_path=str(src), source_sha256="a" * 64, ext="wav",
+        meta={"source": {"video_id": "shl-050", "youtube_id": "X",
+                         "url": "https://www.youtube.com/watch?v=X",
+                         "title": "坏源", "series_id": "shl", "episode": 50}},
+        active_versions={"s01_upload": "vk0"},
+    )
+    db.upsert_video(m)
+    db.close()
+
+    def boom(*_a, **_k):
+        raise RuntimeError("fake ffmpeg boom")
+
+    monkeypatch.setattr(s02_media.subprocess, "run", boom)
+    ctx = Ctx.build("shl-050", root=root, force=True)
+    try:
+        with pytest.raises(RuntimeError, match="no play fallback"):
+            s02_media.run(ctx)
+    finally:
+        ctx.state.close()
+
+    mirror = root / "data" / "r2-mirror" / "play"
+    assert not mirror.exists() or not any(mirror.iterdir())

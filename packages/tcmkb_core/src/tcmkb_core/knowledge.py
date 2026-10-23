@@ -5,6 +5,7 @@ Outputs per episode (data/knowledge/<video_id>/):
   entities.jsonl           one KEntity per line      normalized to lexicon ids, with mentions
   knowledge_points.jsonl   one KnowledgePoint/line   atomic, citable claims as taught
   outline.md               chapter list with site /watch/{id}?t= timestamp links
+                           (KCitation.url/t_url align with ingest cite — see Field docs)
 Aggregated: data/knowledge/_index/{entities.csv, knowledge_points.csv}.
 
 The semantic parts (chapter boundaries/titles/summaries, KP statements, ASR-corrected
@@ -98,9 +99,21 @@ class _M(BaseModel):
 
 
 class KCitation(_M):
+    """Citation block — field names match ingest ``sources.cite``:
+
+    - ``url``: source / YouTube *page* URL (no ``&t=``); backup identity of the video
+    - ``t_url``: primary jump link = site ``/watch/{video_id}?t=<sec>``
+    - ``youtube_t_url``: YouTube backup deep link with ``&t=<sec>s``
+    """
     video_id: str
     youtube_id: Optional[str] = None
-    url: Optional[str] = Field(description="site watch URL /watch/{video_id}?t=<sec>")
+    url: Optional[str] = Field(
+        default=None,
+        description="source/YouTube page URL (no timestamp); same meaning as ingest cite.url",
+    )
+    t_url: Optional[str] = Field(
+        description="primary site watch URL /watch/{video_id}?t=<sec>; same as ingest cite.t_url",
+    )
     youtube_t_url: Optional[str] = Field(default=None, description="YouTube backup &t= link")
     series: str
     episode: int
@@ -111,8 +124,8 @@ class KCitation(_M):
     @model_validator(mode="after")
     def _url_matches(self) -> "KCitation":
         want = t_url(self.video_id, self.start_s)
-        if self.url != want:
-            raise ValueError(f"citation url {self.url!r} != {want!r}")
+        if self.t_url != want:
+            raise ValueError(f"citation t_url {self.t_url!r} != {want!r}")
         if self.youtube_id and self.youtube_t_url:
             ywant = youtube_t_url(self.youtube_id, self.start_s)
             if self.youtube_t_url != ywant:
