@@ -105,13 +105,13 @@ Schema（每行一个 JSON 对象；文件头用 `#` 注释，加载时请跳过
 }
 ```
 
-命中规则（§9）：检索 top-8 中任一条落在 `[gold_start_s − tolerance_s, gold_end_s + tolerance_s]` 且 `video_id` 正确 → Recall 命中。当前为种子题（~10–15），目标扩到约 50 题后再跑自动评测。
+命中规则（§9）：检索 top-8 中任一条落在 `[gold_start_s − tolerance_s, gold_end_s + tolerance_s]` 且 `video_id` 正确 → Recall 命中。已有约 50 题种子（`eval/retrieval/qa.jsonl`）；校验：`uv run python scripts/eval/validate_qa.py`。
 
 ## 5. 滚动任务建议顺序
 
 1. 填完 batch001 ASR 窗 CER / 术语召回；不达标的系列加大 `--per-n` 再抽 batch002。
 2. 填完 KP `verdict`；「错」「部分对」回流 `data/knowledge/<vid>/annotations/`。
-3. 扩写 `eval/retrieval/qa.jsonl` 至 ~50（辨证 / 条文 / 穴位 / 跨系列）。
+3. 维护 `eval/retrieval/qa.jsonl`（已约 50；可继续增至 200）；改后跑 `validate_qa.py`。
 4. 汇总报告：`eval/reports/{date}_spotcheck.md`（后续 stretch 可加汇总脚本）。
 
 ## 6. 注意

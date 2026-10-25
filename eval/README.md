@@ -15,3 +15,7 @@
 uv run python scripts/eval/sample_asr_windows.py
 uv run python scripts/eval/sample_kp_review.py
 ```
+
+```bash
+uv run python scripts/eval/validate_qa.py --strict-kp
+```
