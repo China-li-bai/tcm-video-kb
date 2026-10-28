@@ -7,6 +7,8 @@ dependencies = [
   "tcmkb-core",
   "tcmkb-lexicon",
   "tcmkb-ingest",
+  "tcmkb-graph",
+  "tcmkb-api",
 ]
 
 [project.optional-dependencies]
@@ -14,12 +16,20 @@ dependencies = [
 asr = ["tcmkb-ingest[asr]"]
 
 [tool.uv.workspace]
-members = ["packages/tcmkb_core", "packages/tcmkb_lexicon", "packages/tcmkb_ingest"]
+members = [
+  "packages/tcmkb_core",
+  "packages/tcmkb_lexicon",
+  "packages/tcmkb_ingest",
+  "packages/tcmkb_graph",
+  "services/api",
+]
 
 [tool.uv.sources]
 tcmkb-core = { workspace = true }
 tcmkb-lexicon = { workspace = true }
 tcmkb-ingest = { workspace = true }
+tcmkb-graph = { workspace = true }
+tcmkb-api = { workspace = true }
 torch = { index = "pytorch-cpu" }
 torchaudio = { index = "pytorch-cpu" }
 
@@ -30,9 +40,16 @@ explicit = true
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-pythonpath = ["packages/tcmkb_core/src", "packages/tcmkb_lexicon/src", "packages/tcmkb_ingest/src"]
+pythonpath = [
+  "packages/tcmkb_core/src",
+  "packages/tcmkb_lexicon/src",
+  "packages/tcmkb_ingest/src",
+  "packages/tcmkb_graph/src",
+  "services/api/src",
+]
 
 [dependency-groups]
 dev = [
     "pytest>=9.1.1",
+    "httpx>=0.27",
 ]

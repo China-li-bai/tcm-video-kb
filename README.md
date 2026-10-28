@@ -11,6 +11,8 @@
 | `packages/tcmkb_core` | 模型、配置、LocalStorage、`version_key` |
 | `packages/tcmkb_lexicon` | 词典校验/构建/纠错/匹配 |
 | `packages/tcmkb_ingest` | 流水线 s00–s08 + CLI |
+| `packages/tcmkb_graph` | 讲课边硬闸：candidate `treats` / `indicates` |
+| `services/api` | FastAPI：`/health`、`/graph/subgraph`、`/graph/paths` |
 | `lexicon/` | 共享中医词典（YAML）与 `dist/` 产物 |
 | `configs/` | `pipeline.yaml` / `asr.yaml` / `series.yaml` / prompts |
 | `data/` | 本地状态库与产物（gitignore） |
@@ -99,6 +101,21 @@ uv sync --extra asr
 ```bash
 .venv/bin/pytest -q
 ```
+
+## 方证图（API + AntV G6）
+
+最小切片是桂枝汤 / 太阳中风。`composed_of`（方→药）来自词典；`treats`（方→证）与 `indicates`（症/脉/舌→证）只从知识点生成 **candidate**，不标 `approved`，也不进检索。多证同权，不排唯一证型。
+
+```bash
+uv sync
+.venv/bin/python -m tcmkb_graph draft --video shl-001
+.venv/bin/python -m tcmkb_api
+# 另开终端
+cd web && npm install && npm run dev
+# http://127.0.0.1:5173/graph?focus=formula.gui_zhi_tang
+```
+
+硬闸、起服务和校验命令见 [`docs/runbooks/graph_app.md`](docs/runbooks/graph_app.md)。`web/stub_server.py` 仍是播放 stub，与这张图无关。
 
 ## 免责
 
