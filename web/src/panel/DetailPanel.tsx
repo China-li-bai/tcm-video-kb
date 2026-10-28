@@ -3,6 +3,16 @@ import { categoryCaption, styleForPred } from "../graph/styleRegistry";
 import { CiteLinks } from "./format";
 import { HeldList } from "./HeldList";
 
+const REVIEW_LABEL: Record<string, string> = {
+  lexicon: "词典",
+  candidate: "候选",
+  approved: "已核",
+};
+
+function reviewLabel(status: string): string {
+  return REVIEW_LABEL[status] ?? status;
+}
+
 type Props = {
   subgraph: Subgraph | null;
   selection: Selection | null;
@@ -49,7 +59,7 @@ export function DetailPanel({ subgraph, selection }: Props) {
       )}
       {edge && (
         <>
-          <p className="badge">{edge.review_status}</p>
+          <p className="badge">{reviewLabel(edge.review_status)}</p>
           <h2>{styleForPred(edge.pred).caption}</h2>
           <p className="mono">
             {edge.subj_id} → {edge.obj_id}

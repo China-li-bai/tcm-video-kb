@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useOutletContext } from "react-router-dom";
 import { ApiError, fetchPaths } from "../api/client";
-import { categoryCaption } from "../graph/styleRegistry";
+import { categoryCaption, predLabel } from "../graph/styleRegistry";
 import { CiteLinks } from "../panel/format";
 import { ErrorState } from "../panel/ErrorState";
 import { HeldList } from "../panel/HeldList";
@@ -42,7 +42,7 @@ export function PathsPage() {
           <p className="disclaimer">{data.disclaimer}</p>
           {data.tracks.length === 0 && (
             <p className="empty">
-              这个焦点下没有通过硬闸的 candidate 边，所以这里不列出证型，也不做排行。
+              这个焦点下没有通过硬闸的候选边，所以这里不列出证型，也不做排行。
             </p>
           )}
           <div className="tracks">
@@ -54,7 +54,7 @@ export function PathsPage() {
                   <ul className="cards">
                     {track.treats.map((card) => (
                       <li key={`t-${card.kp_id}-${card.subj_id}`} className="card">
-                        <p className="badge">{categoryCaption(card.category)} · treats · candidate</p>
+                        <p className="badge">{categoryCaption(card.category)} · {predLabel(card.pred)}</p>
                         <h3>{card.label}</h3>
                         {card.statement && <p>{card.statement}</p>}
                         {card.evidence_quote && <blockquote>{card.evidence_quote}</blockquote>}
@@ -63,11 +63,11 @@ export function PathsPage() {
                     ))}
                   </ul>
                 )}
-                {track.cards.length === 0 && <p className="muted">这条证下没有通过硬闸的 indicates。</p>}
+                {track.cards.length === 0 && <p className="muted">这条证下没有通过硬闸的提示关系。</p>}
                 <ul className="cards">
                   {track.cards.map((card) => (
                     <li key={`${card.kp_id}-${card.subj_id}`} className="card">
-                      <p className="badge">{categoryCaption(card.category)} · indicates · candidate</p>
+                      <p className="badge">{categoryCaption(card.category)} · {predLabel(card.pred)}</p>
                       <h3>{card.label}</h3>
                       {card.statement && <p>{card.statement}</p>}
                       {card.evidence_quote && <blockquote>{card.evidence_quote}</blockquote>}

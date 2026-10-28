@@ -105,22 +105,41 @@ export function styleForCategory(category: string): NodeStyleSpec {
   return STYLES[category] ?? FALLBACK;
 }
 
+/**
+ * Display names for edge predicates. The graph and legend read `label`;
+ * API / JSON keep the English key (`composed_of`, `treats`, `indicates`).
+ */
+const PRED_LABEL: Record<string, string> = {
+  composed_of: "组成",
+  treats: "主治",
+  indicates: "提示",
+  on_meridian: "归经",
+  belongs_to: "属于",
+  contraindicated: "禁忌",
+  related: "相关",
+};
+
+export function predLabel(pred: string): string {
+  return PRED_LABEL[pred] ?? "关系";
+}
+
 export function styleForPred(pred: string): EdgeStyleSpec {
+  const label = predLabel(pred);
   switch (pred) {
     case "composed_of":
-      return { stroke: "#333333", lineWidth: 1.5, label: "composed_of", caption: "方 → 药（词典）" };
+      return { stroke: "#333333", lineWidth: 1.5, label, caption: "组成（方 → 药）" };
     case "treats":
-      return { stroke: "#111111", lineWidth: 2, label: "treats", caption: "方 → 证（candidate）" };
+      return { stroke: "#111111", lineWidth: 2, label, caption: "主治（方 → 证）" };
     case "indicates":
       return {
         stroke: "#333333",
         lineWidth: 1.5,
         lineDash: [6, 4],
-        label: "indicates",
-        caption: "症/脉/舌 → 证（candidate）",
+        label,
+        caption: "提示（症/脉/舌 → 证）",
       };
     default:
-      return { stroke: "#666666", lineWidth: 1, label: pred, caption: pred };
+      return { stroke: "#666666", lineWidth: 1, label, caption: label };
   }
 }
 
