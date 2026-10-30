@@ -6,7 +6,8 @@ import { styleForCategory, styleForPred } from "./styleRegistry";
 
 type Props = {
   subgraph: Subgraph;
-  onSelect: (selection: Selection) => void;
+  selection: Selection | null;
+  onSelect: (selection: Selection | null) => void;
 };
 
 function paint(subgraph: Subgraph) {
@@ -49,10 +50,12 @@ function paint(subgraph: Subgraph) {
   };
 }
 
-export function GraphApp({ subgraph, onSelect }: Props) {
+export function GraphApp({ subgraph, selection, onSelect }: Props) {
   const host = useRef<HTMLDivElement>(null);
   const onSelectRef = useRef(onSelect);
   onSelectRef.current = onSelect;
+  const graphRef = useRef<Graph | null>(null);
+  const selectedRef = useRef("");
 
   useEffect(() => {
     const el = host.current;
@@ -75,16 +78,43 @@ export function GraphApp({ subgraph, onSelect }: Props) {
           selected: { lineWidth: 2.5, stroke: "#3370FF", fill: "#E8F0FF" }, // 候选待拍板 · soft 蓝选中
         },
       },
+      edge: {
+        state: {
+          selected: { lineWidth: 3, stroke: "#3370FF" }, // 候选待拍板
+        },
+      },
       behaviors: ["drag-canvas", "zoom-canvas", "drag-element"],
       animation: false,
     });
+    graphRef.current = graph;
 
-    const selected = { id: "" };
     const mark = (id: string) => {
-      if (selected.id && selected.id !== id) graph.setElementState(selected.id, []);
-      graph.setElementState(id, "selected");
-      selected.id = id;
+      if (selectedRef.current && selectedRef.current !== id) {
+        try {
+          graph.setElementState(selectedRef.current, []);
+        } catch {
+          /* element may be gone after data swap */
+        }
+      }
+      try {
+        graph.setElementState(id, "selected");
+      } catch {
+        /* ignore */
+      }
+      selectedRef.current = id;
     };
+
+    const clearMark = () => {
+      if (selectedRef.current) {
+        try {
+          graph.setElementState(selectedRef.current, []);
+        } catch {
+          /* ignore */
+        }
+      }
+      selectedRef.current = "";
+    };
+
     const elementId = (event: IElementEvent): string | undefined => {
       const id = event.target?.id;
       return typeof id === "string" ? id : undefined;
@@ -104,7 +134,9 @@ export function GraphApp({ subgraph, onSelect }: Props) {
 
     let alive = true;
     void graph.render().then(() => {
-      if (alive) graph.fitView();
+      if (!alive) return;
+      graph.fitView();
+      if (selection?.id) mark(selection.id);
     });
     let frame = 0;
     const observer = new ResizeObserver(() => {
@@ -121,9 +153,43 @@ export function GraphApp({ subgraph, onSelect }: Props) {
       alive = false;
       cancelAnimationFrame(frame);
       observer.disconnect();
+      clearMark();
+      graphRef.current = null;
       graph.destroy();
     };
+    // selection applied in separate effect; only rebuild on subgraph change
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [subgraph]);
+
+  useEffect(() => {
+    const graph = graphRef.current;
+    if (!graph) return;
+    const id = selection?.id ?? "";
+    if (!id) {
+      if (selectedRef.current) {
+        try {
+          graph.setElementState(selectedRef.current, []);
+        } catch {
+          /* ignore */
+        }
+        selectedRef.current = "";
+      }
+      return;
+    }
+    if (selectedRef.current && selectedRef.current !== id) {
+      try {
+        graph.setElementState(selectedRef.current, []);
+      } catch {
+        /* ignore */
+      }
+    }
+    try {
+      graph.setElementState(id, "selected");
+      selectedRef.current = id;
+    } catch {
+      /* ignore */
+    }
+  }, [selection]);
 
   return <div ref={host} className="canvas" aria-label="方证关系图" />;
 }

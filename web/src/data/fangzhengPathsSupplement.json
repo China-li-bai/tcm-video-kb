@@ -1,0 +1,262 @@
+{
+  "source": "prototype/fangzheng/seed.json（只读迁入；cite 未编造）",
+  "applies_to_focus": [
+    "formula.gui_zhi_tang"
+  ],
+  "tracks": [
+    {
+      "id": "track.liu_jing",
+      "label": "伤寒六经",
+      "layer": "典籍",
+      "summary": "经证路径：症/脉 indicates 证，方 treats 证，方 composed_of 药。学习讲法，非诊疗。"
+    },
+    {
+      "id": "track.fang_zheng",
+      "label": "讲者主张 / 方证",
+      "layer": "主张",
+      "summary": "条文「主之」直连主症到方；讲者强调汗出、恶风为主教症状。主张层与六经轨同权并列。"
+    }
+  ],
+  "symptom_filters": [
+    {
+      "id": "symptom.fa_re",
+      "label": "发热"
+    },
+    {
+      "id": "symptom.han_chu",
+      "label": "汗出"
+    },
+    {
+      "id": "symptom.e_feng",
+      "label": "恶风"
+    },
+    {
+      "id": "pulse.fu_huan",
+      "label": "脉浮缓"
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "hyp.liu_jing.tai_yang_gui_zhi",
+      "track_id": "track.liu_jing",
+      "title": "太阳中风 → 桂枝汤",
+      "target_label": "太阳中风 / 桂枝汤",
+      "target_syndrome": "syndrome.tai_yang_zhong_feng",
+      "target_formula": "formula.gui_zhi_tang",
+      "path_summary": "发热 · 汗出 · 恶风 · 脉浮缓 → 太阳中风 → 桂枝汤 → 桂枝 / 芍药 / 甘草 / 生姜 / 大枣",
+      "path_steps": [
+        {
+          "kind": "symptom",
+          "ids": [
+            "symptom.fa_re",
+            "symptom.han_chu",
+            "symptom.e_feng",
+            "pulse.fu_huan"
+          ],
+          "label": "发热 · 汗出 · 恶风 · 脉浮缓"
+        },
+        {
+          "kind": "syndrome",
+          "ids": [
+            "syndrome.tai_yang_zhong_feng"
+          ],
+          "label": "太阳中风"
+        },
+        {
+          "kind": "formula",
+          "ids": [
+            "formula.gui_zhi_tang"
+          ],
+          "label": "桂枝汤"
+        },
+        {
+          "kind": "herb",
+          "ids": [
+            "herb.gui_zhi",
+            "herb.shao_yao",
+            "herb.gan_cao",
+            "herb.sheng_jiang",
+            "herb.da_zao"
+          ],
+          "label": "桂枝 / 芍药 / 甘草 / 生姜 / 大枣"
+        }
+      ],
+      "edge_ids": [
+        "e.lec.indicates.fa_re",
+        "e.lec.indicates.han_chu",
+        "e.lec.indicates.e_feng",
+        "e.lec.indicates.pulse",
+        "e.lec.treats.syndrome",
+        "e.lex.co.gui_zhi",
+        "e.lex.co.shao_yao",
+        "e.lex.co.gan_cao",
+        "e.lex.co.sheng_jiang",
+        "e.lex.co.da_zao",
+        "e.lec.co.pack"
+      ],
+      "symptom_ids": [
+        "symptom.fa_re",
+        "symptom.han_chu",
+        "symptom.e_feng",
+        "pulse.fu_huan"
+      ],
+      "source_layers": [
+        "典籍",
+        "讲义"
+      ],
+      "relevance_note": "证据条数",
+      "citations": [
+        {
+          "kp_id": "shl-001.kp0025",
+          "url": "https://www.youtube.com/watch?v=W-z7WGZXmp8&t=1998s",
+          "start_s": 1998,
+          "evidence": "有发热、汗出恶风，脉寒者名为中风。",
+          "edge_ids": [
+            "e.lec.indicates.fa_re",
+            "e.lec.indicates.han_chu",
+            "e.lec.indicates.e_feng",
+            "e.lec.indicates.pulse"
+          ]
+        },
+        {
+          "kp_id": "shl-001.kp0068",
+          "url": "https://www.youtube.com/watch?v=W-z7WGZXmp8&t=5004s",
+          "start_s": 5004,
+          "evidence": "阳浮阴弱，寸脉是浮到了阴脉。",
+          "edge_ids": []
+        },
+        {
+          "kp_id": "shl-001.kp0069",
+          "url": "https://www.youtube.com/watch?v=W-z7WGZXmp8&t=5046s",
+          "start_s": 5046,
+          "evidence": "张仲景把它归到太阳中风。",
+          "edge_ids": [
+            "e.lec.treats.syndrome"
+          ]
+        },
+        {
+          "kp_id": "shl-001.kp0075",
+          "url": "https://www.youtube.com/watch?v=W-z7WGZXmp8&t=5588s",
+          "start_s": 5588,
+          "evidence": "生姜三两切大枣十二枚",
+          "edge_ids": [
+            "e.lec.co.pack"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hyp.fang_zheng.han_chu_e_feng",
+      "track_id": "track.fang_zheng",
+      "title": "第13条主症 → 桂枝汤",
+      "target_label": "汗出恶风 / 桂枝汤",
+      "target_syndrome": null,
+      "target_formula": "formula.gui_zhi_tang",
+      "path_summary": "汗出 · 恶风 → 桂枝汤（条文「主之」；讲者主教症状）",
+      "path_steps": [
+        {
+          "kind": "symptom",
+          "ids": [
+            "symptom.han_chu",
+            "symptom.e_feng"
+          ],
+          "label": "汗出 · 恶风"
+        },
+        {
+          "kind": "formula",
+          "ids": [
+            "formula.gui_zhi_tang"
+          ],
+          "label": "桂枝汤"
+        }
+      ],
+      "edge_ids": [
+        "e.lec.related.han_chu",
+        "e.lec.related.e_feng"
+      ],
+      "symptom_ids": [
+        "symptom.han_chu",
+        "symptom.e_feng"
+      ],
+      "source_layers": [
+        "主张",
+        "讲义"
+      ],
+      "relevance_note": "证据条数",
+      "citations": [
+        {
+          "kp_id": "shl-001.kp0093",
+          "url": "https://www.youtube.com/watch?v=W-z7WGZXmp8&t=6911s",
+          "start_s": 6911,
+          "evidence": "像一定有汗出，这是主教的症状，是汗出和恶风。",
+          "edge_ids": [
+            "e.lec.related.han_chu",
+            "e.lec.related.e_feng"
+          ]
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "formula.gui_zhi_tang",
+      "label": "桂枝汤",
+      "kind": "formula"
+    },
+    {
+      "id": "syndrome.tai_yang_zhong_feng",
+      "label": "太阳中风",
+      "kind": "syndrome"
+    },
+    {
+      "id": "concept.yin_yang",
+      "label": "调和阴阳",
+      "kind": "concept"
+    },
+    {
+      "id": "symptom.fa_re",
+      "label": "发热",
+      "kind": "symptom"
+    },
+    {
+      "id": "symptom.han_chu",
+      "label": "汗出",
+      "kind": "symptom"
+    },
+    {
+      "id": "symptom.e_feng",
+      "label": "恶风",
+      "kind": "symptom"
+    },
+    {
+      "id": "pulse.fu_huan",
+      "label": "脉浮缓",
+      "kind": "pulse"
+    },
+    {
+      "id": "herb.gui_zhi",
+      "label": "桂枝",
+      "kind": "herb"
+    },
+    {
+      "id": "herb.shao_yao",
+      "label": "芍药",
+      "kind": "herb"
+    },
+    {
+      "id": "herb.gan_cao",
+      "label": "甘草",
+      "kind": "herb"
+    },
+    {
+      "id": "herb.sheng_jiang",
+      "label": "生姜",
+      "kind": "herb"
+    },
+    {
+      "id": "herb.da_zao",
+      "label": "大枣",
+      "kind": "herb"
+    }
+  ]
+}
