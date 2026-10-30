@@ -8,3 +8,5 @@ data/*
 !data/knowledge/
 data/knowledge/*/_work/
 lexicon/dist/
+web/node_modules/
+web/dist/

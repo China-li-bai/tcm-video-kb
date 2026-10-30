@@ -1,3 +1,7 @@
+# Web
+
+正式方证图是本目录的 React + Vite + AntV G6 应用，说明见 [`docs/runbooks/graph_app.md`](../docs/runbooks/graph_app.md)。下面仍是更早的播放 stub。
+
 # Web stub（国内播放：站内跳秒 + R2/本地 64 kbps 音频）
 
 完整 React 播放器见 ARCHITECTURE.md §8.4；本目录是**最小可播 stub**，用于验证：
