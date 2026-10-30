@@ -1,0 +1,28 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "tcm-fangzheng",
+  // Account comes from `pywrangler login`. Uncomment to pin one:
+  // "account_id": "YOUR_ACCOUNT_ID",
+  "main": "src/entry.py",
+  "compatibility_date": "2026-10-30",
+  "compatibility_flags": ["python_workers"],
+  "workers_dev": true,
+  "observability": {
+    "enabled": true,
+    "logs": {
+      "enabled": true,
+      "head_sampling_rate": 1
+    },
+    "traces": {
+      "enabled": true,
+      "head_sampling_rate": 0.01
+    }
+  },
+  "assets": {
+    "directory": "../../web/dist",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application",
+    // API routes hit FastAPI. /graph and /paths are the SPA and fall through to index.html.
+    "run_worker_first": ["/health", "/graph/subgraph", "/graph/paths"]
+  }
+}

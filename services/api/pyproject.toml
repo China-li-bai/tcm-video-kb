@@ -6,8 +6,11 @@ requires-python = ">=3.11"
 dependencies = [
   "tcmkb-graph",
   "fastapi>=0.115",
-  "uvicorn>=0.32",
 ]
+
+[project.optional-dependencies]
+# Local process only. The Worker bundle must not pull uvicorn.
+server = ["uvicorn>=0.32"]
 
 [build-system]
 requires = ["setuptools>=68"]

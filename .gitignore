@@ -3,6 +3,7 @@ __pycache__/
 *.pyc
 .pytest_cache/
 *.egg-info/
+build/
 # runtime data (media, artifacts, state DB) stays local; the knowledge layer is versioned
 data/*
 !data/knowledge/
@@ -10,3 +11,8 @@ data/knowledge/*/_work/
 lexicon/dist/
 web/node_modules/
 web/dist/
+services/worker/.venv/
+services/worker/.venv-workers/
+services/worker/python_modules/
+services/worker/.wrangler/
+services/worker/node_modules/
