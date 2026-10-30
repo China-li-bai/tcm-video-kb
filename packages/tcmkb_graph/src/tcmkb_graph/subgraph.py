@@ -48,7 +48,7 @@ def build_subgraph(focus: str, mat: Materialization) -> dict:
             if end not in node_ids:
                 node_ids.append(end)
 
-    mentions = load_mentions(mat.knowledge_root, set(node_ids))
+    mentions = mentions_for(mat, set(node_ids))
     nodes = [_node(nid, mat.index, mentions, edges) for nid in node_ids]
     held = _held_for(focus, mat)
     return {
@@ -88,17 +88,51 @@ def build_paths(focus: str, mat: Materialization) -> dict:
     }
 
 
+def mentions_for(mat: Materialization, ids: set[str]) -> dict[str, dict]:
+    """Mentions for ``ids``. A snapshot dict is used as-is; otherwise scan JSONL."""
+    if mat.mentions is not None:
+        return {i: mat.mentions[i] for i in ids if i in mat.mentions}
+    return load_mentions(mat.knowledge_root, ids)
+
+
+def index_mentions(knowledge_root: Path) -> dict[str, dict]:
+    """First lecture mention for every entity id. Same order as :func:`load_mentions`."""
+    found: dict[str, dict] = {}
+    for video_dir in _entity_dirs(knowledge_root):
+        for line in (video_dir / "entities.jsonl").read_text(encoding="utf-8").splitlines():
+            if '"entity_id"' not in line:
+                continue
+            try:
+                row = json.loads(line)
+            except json.JSONDecodeError:
+                continue
+            eid = str(row.get("entity_id") or "")
+            if not eid or eid in found:
+                continue
+            cite = _mention_cite(row)
+            if cite:
+                found[eid] = cite
+    return found
+
+
+def _entity_dirs(knowledge_root: Path) -> list[Path]:
+    if not knowledge_root.is_dir():
+        return []
+    dirs = [
+        p for p in knowledge_root.iterdir()
+        if p.is_dir() and (p / "entities.jsonl").is_file()
+    ]
+    dirs.sort(key=lambda p: (p.name != "shl-001", p.name))
+    return dirs
+
+
 def load_mentions(knowledge_root: Path, ids: set[str]) -> dict[str, dict]:
     """First lecture mention per entity. Prefer shl-001, then other episodes."""
     if not ids or not knowledge_root.is_dir():
         return {}
     need = set(ids)
     found: dict[str, dict] = {}
-    dirs = [
-        p for p in knowledge_root.iterdir()
-        if p.is_dir() and (p / "entities.jsonl").is_file()
-    ]
-    dirs.sort(key=lambda p: (p.name != "shl-001", p.name))
+    dirs = _entity_dirs(knowledge_root)
     for video_dir in dirs:
         if not need:
             break

@@ -8,7 +8,7 @@ dependencies = [
   "tcmkb-lexicon",
   "tcmkb-ingest",
   "tcmkb-graph",
-  "tcmkb-api",
+  "tcmkb-api[server]",
 ]
 
 [project.optional-dependencies]

@@ -48,6 +48,10 @@ class Materialization:
     held: list[dict]
     index: dict[str, Ent]
     knowledge_root: Path
+    # None: read first mentions from knowledge_root at request time (local API).
+    # A dict: precomputed mentions from the Worker snapshot. Empty means none,
+    # and the request path must not fall back to scanning JSONL.
+    mentions: dict[str, dict] | None = None
 
 
 def retrieval_edges(edges: list[dict]) -> list[dict]:

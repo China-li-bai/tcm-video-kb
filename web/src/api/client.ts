@@ -29,7 +29,9 @@ async function getJson<T>(path: string): Promise<T> {
       /* response was not JSON */
     }
     if (response.status >= 500 && detail.startsWith("HTTP")) {
-      detail = `API 没有正常响应（HTTP ${response.status}）。确认 127.0.0.1:8000 上的服务已启动。`;
+      detail = import.meta.env.DEV
+        ? `API 没有正常响应（HTTP ${response.status}）。确认 127.0.0.1:8000 上的服务已启动。`
+        : `API 没有正常响应（HTTP ${response.status}）。`;
     }
     throw new ApiError(detail, response.status);
   }
