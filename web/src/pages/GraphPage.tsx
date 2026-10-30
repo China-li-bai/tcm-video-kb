@@ -6,7 +6,7 @@ import { styleForCategory, styleForPred } from "../graph/styleRegistry";
 import { DetailPanel } from "../panel/DetailPanel";
 import { ErrorState } from "../panel/ErrorState";
 import type { Selection, Subgraph } from "../types";
-import type { ShellContext } from "../App";
+import type { ShellContext } from "../layout/AppShell";
 
 export function GraphPage() {
   const { focus } = useOutletContext<ShellContext>();

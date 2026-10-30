@@ -6,7 +6,7 @@ import { CiteLinks } from "../panel/format";
 import { ErrorState } from "../panel/ErrorState";
 import { HeldList } from "../panel/HeldList";
 import type { PathsResponse } from "../types";
-import type { ShellContext } from "../App";
+import type { ShellContext } from "../layout/AppShell";
 
 export function PathsPage() {
   const { focus } = useOutletContext<ShellContext>();

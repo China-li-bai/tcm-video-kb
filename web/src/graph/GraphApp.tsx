@@ -38,9 +38,9 @@ function paint(subgraph: Subgraph) {
         endArrow: true,
         labelText: spec.label,
         labelFontSize: 11,
-        labelFill: "#333333",
+        labelFill: "#8F959E",
         labelBackground: true,
-        labelBackgroundFill: "#f3f3f3",
+        labelBackgroundFill: "#F5F6F8",
         cursor: "pointer",
       };
       if (spec.lineDash) style.lineDash = spec.lineDash;
@@ -72,7 +72,7 @@ export function GraphApp({ subgraph, onSelect }: Props) {
       },
       node: {
         state: {
-          selected: { lineWidth: 3, stroke: "#111111" },
+          selected: { lineWidth: 2.5, stroke: "#3370FF", fill: "#E8F0FF" }, // 候选待拍板 · soft 蓝选中
         },
       },
       behaviors: ["drag-canvas", "zoom-canvas", "drag-element"],
