@@ -59,3 +59,5 @@ uv sync
 .venv/bin/pytest -q tests/unit/test_draft_edges.py tests/unit/test_api_graph.py
 cd web && npm install && npm run build
 ```
+
+公开的 `*.workers.dev` 地址（不是本机 5173）见 [`cloudflare_workers.md`](cloudflare_workers.md)。本地 uvicorn 和 Vite 代理保持不变。边的中文名仍在 `web/src/graph/styleRegistry.ts` 的 `PRED_LABEL`。

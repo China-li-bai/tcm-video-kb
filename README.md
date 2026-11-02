@@ -115,7 +115,7 @@ cd web && npm install && npm run dev
 # http://127.0.0.1:5173/graph?focus=formula.gui_zhi_tang
 ```
 
-硬闸、起服务和校验命令见 [`docs/runbooks/graph_app.md`](docs/runbooks/graph_app.md)。`web/stub_server.py` 仍是播放 stub，与这张图无关。
+硬闸、起服务和校验命令见 [`docs/runbooks/graph_app.md`](docs/runbooks/graph_app.md)。部署到 Cloudflare Workers（`tcm-fangzheng.<subdomain>.workers.dev`）见 [`docs/runbooks/cloudflare_workers.md`](docs/runbooks/cloudflare_workers.md)。`web/stub_server.py` 仍是播放 stub，与这张图无关。
 
 ## 免责
 

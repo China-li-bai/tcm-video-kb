@@ -1,0 +1,518 @@
+[
+ {
+  "chapter_id": "bc-001.c01",
+  "video_id": "bc-001",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "白及止血肺伤",
+  "summary": "白及苦寒疗痈肿肺损咳血；复方清瘀配伍；以通为补。",
+  "start_s": 1.12,
+  "end_s": 379.925,
+  "seg_from": 0,
+  "seg_to": 73,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.bai_ji"
+  ],
+  "citation": {
+   "youtube_id": "IH3tubhWMOo",
+   "url": "https://www.youtube.com/watch?v=IH3tubhWMOo&t=1s",
+   "series": "bc",
+   "episode": 1,
+   "title": "倪海廈精解 神農本草經之8 完整重製版 全68篇 完結篇",
+   "start_s": 1.12,
+   "end_s": 379.93
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-001.c02",
+  "video_id": "bc-001",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "大戟峻下",
+  "summary": "大戟峻猛；十枣汤生粉红枣送服清肺积水。",
+  "start_s": 399.88,
+  "end_s": 1337.3,
+  "seg_from": 74,
+  "seg_to": 224,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.da_ji",
+   "formula.shi_zao_tang"
+  ],
+  "citation": {
+   "youtube_id": "IH3tubhWMOo",
+   "url": "https://www.youtube.com/watch?v=IH3tubhWMOo&t=399s",
+   "series": "bc",
+   "episode": 1,
+   "title": "倪海廈精解 神農本草經之8 完整重製版 全68篇 完結篇",
+   "start_s": 399.88,
+   "end_s": 1337.3
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-001.c03",
+  "video_id": "bc-001",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "狼牙乌梅",
+  "summary": "狼牙即古牙子；乌梅等续论。",
+  "start_s": 1337.38,
+  "end_s": 1919.13,
+  "seg_from": 225,
+  "seg_to": 326,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.lang_ya",
+   "herb.wu_mei"
+  ],
+  "citation": {
+   "youtube_id": "IH3tubhWMOo",
+   "url": "https://www.youtube.com/watch?v=IH3tubhWMOo&t=1337s",
+   "series": "bc",
+   "episode": 1,
+   "title": "倪海廈精解 神農本草經之8 完整重製版 全68篇 完結篇",
+   "start_s": 1337.38,
+   "end_s": 1919.13
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-001.c04",
+  "video_id": "bc-001",
+  "level": 1,
+  "parent_id": null,
+  "seq": 4,
+  "title": "白头翁",
+  "summary": "白头翁经方常用。",
+  "start_s": 1919.19,
+  "end_s": 2481.224,
+  "seg_from": 327,
+  "seg_to": 428,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.bai_tou_weng"
+  ],
+  "citation": {
+   "youtube_id": "IH3tubhWMOo",
+   "url": "https://www.youtube.com/watch?v=IH3tubhWMOo&t=1919s",
+   "series": "bc",
+   "episode": 1,
+   "title": "倪海廈精解 神農本草經之8 完整重製版 全68篇 完結篇",
+   "start_s": 1919.19,
+   "end_s": 2481.22
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-001.c05",
+  "video_id": "bc-001",
+  "level": 1,
+  "parent_id": null,
+  "seq": 5,
+  "title": "连翘清热",
+  "summary": "连翘常用清热解毒。",
+  "start_s": 2482.069,
+  "end_s": 2659.689,
+  "seg_from": 429,
+  "seg_to": 460,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.lian_qiao"
+  ],
+  "citation": {
+   "youtube_id": "IH3tubhWMOo",
+   "url": "https://www.youtube.com/watch?v=IH3tubhWMOo&t=2482s",
+   "series": "bc",
+   "episode": 1,
+   "title": "倪海廈精解 神農本草經之8 完整重製版 全68篇 完結篇",
+   "start_s": 2482.07,
+   "end_s": 2659.69
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-001.c06",
+  "video_id": "bc-001",
+  "level": 1,
+  "parent_id": null,
+  "seq": 6,
+  "title": "赤小豆当归",
+  "summary": "赤小豆入方利水；当归养血。",
+  "start_s": 2659.909,
+  "end_s": 2928.894,
+  "seg_from": 461,
+  "seg_to": 502,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.chi_xiao_dou",
+   "herb.dang_gui"
+  ],
+  "citation": {
+   "youtube_id": "IH3tubhWMOo",
+   "url": "https://www.youtube.com/watch?v=IH3tubhWMOo&t=2659s",
+   "series": "bc",
+   "episode": 1,
+   "title": "倪海廈精解 神農本草經之8 完整重製版 全68篇 完結篇",
+   "start_s": 2659.91,
+   "end_s": 2928.89
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-001.c07",
+  "video_id": "bc-001",
+  "level": 1,
+  "parent_id": null,
+  "seq": 7,
+  "title": "夏枯草",
+  "summary": "夏枯草本经所载。",
+  "start_s": 2933.209,
+  "end_s": 3605.814,
+  "seg_from": 503,
+  "seg_to": 620,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.xia_ku_cao"
+  ],
+  "citation": {
+   "youtube_id": "IH3tubhWMOo",
+   "url": "https://www.youtube.com/watch?v=IH3tubhWMOo&t=2933s",
+   "series": "bc",
+   "episode": 1,
+   "title": "倪海廈精解 神農本草經之8 完整重製版 全68篇 完結篇",
+   "start_s": 2933.21,
+   "end_s": 3605.81
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-001.c08",
+  "video_id": "bc-001",
+  "level": 1,
+  "parent_id": null,
+  "seq": 8,
+  "title": "李时珍与十枣",
+  "summary": "评李时珍留饮说；十枣生用要点。",
+  "start_s": 3607.144,
+  "end_s": 3892.429,
+  "seg_from": 621,
+  "seg_to": 670,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "person.li_shi_zhen",
+   "formula.shi_zao_tang",
+   "herb.da_ji"
+  ],
+  "citation": {
+   "youtube_id": "IH3tubhWMOo",
+   "url": "https://www.youtube.com/watch?v=IH3tubhWMOo&t=3607s",
+   "series": "bc",
+   "episode": 1,
+   "title": "倪海廈精解 神農本草經之8 完整重製版 全68篇 完結篇",
+   "start_s": 3607.14,
+   "end_s": 3892.43
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-001.c09",
+  "video_id": "bc-001",
+  "level": 1,
+  "parent_id": null,
+  "seq": 9,
+  "title": "巴豆走马汤",
+  "summary": "巴豆剧毒巴蜀产；走马汤峻下。",
+  "start_s": 3894.734,
+  "end_s": 4645.817,
+  "seg_from": 671,
+  "seg_to": 793,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.ba_dou"
+  ],
+  "citation": {
+   "youtube_id": "IH3tubhWMOo",
+   "url": "https://www.youtube.com/watch?v=IH3tubhWMOo&t=3894s",
+   "series": "bc",
+   "episode": 1,
+   "title": "倪海廈精解 神農本草經之8 完整重製版 全68篇 完結篇",
+   "start_s": 3894.73,
+   "end_s": 4645.82
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-001.c10",
+  "video_id": "bc-001",
+  "level": 1,
+  "parent_id": null,
+  "seq": 10,
+  "title": "皂荚雄黄",
+  "summary": "皂荚涤痰；雄黄加热成砒。",
+  "start_s": 4647.492,
+  "end_s": 5736.041,
+  "seg_from": 794,
+  "seg_to": 988,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.zao_jia",
+   "herb.xiong_huang"
+  ],
+  "citation": {
+   "youtube_id": "IH3tubhWMOo",
+   "url": "https://www.youtube.com/watch?v=IH3tubhWMOo&t=4647s",
+   "series": "bc",
+   "episode": 1,
+   "title": "倪海廈精解 神農本草經之8 完整重製版 全68篇 完結篇",
+   "start_s": 4647.49,
+   "end_s": 5736.04
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-001.c11",
+  "video_id": "bc-001",
+  "level": 1,
+  "parent_id": null,
+  "seq": 11,
+  "title": "雷丸蜈蚣",
+  "summary": "雷丸驱虫；蜈蚣攻毒息风。",
+  "start_s": 5738.596,
+  "end_s": 7242.319,
+  "seg_from": 989,
+  "seg_to": 1254,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.lei_wan",
+   "herb.wu_gong"
+  ],
+  "citation": {
+   "youtube_id": "IH3tubhWMOo",
+   "url": "https://www.youtube.com/watch?v=IH3tubhWMOo&t=5738s",
+   "series": "bc",
+   "episode": 1,
+   "title": "倪海廈精解 神農本草經之8 完整重製版 全68篇 完結篇",
+   "start_s": 5738.6,
+   "end_s": 7242.32
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-001.c12",
+  "video_id": "bc-001",
+  "level": 1,
+  "parent_id": null,
+  "seq": 12,
+  "title": "桃仁活血",
+  "summary": "桃仁活血化瘀润燥；久病必瘀、以通为补。",
+  "start_s": 7243.074,
+  "end_s": 7834.689,
+  "seg_from": 1255,
+  "seg_to": 1356,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.tao_ren"
+  ],
+  "citation": {
+   "youtube_id": "IH3tubhWMOo",
+   "url": "https://www.youtube.com/watch?v=IH3tubhWMOo&t=7243s",
+   "series": "bc",
+   "episode": 1,
+   "title": "倪海廈精解 神農本草經之8 完整重製版 全68篇 完結篇",
+   "start_s": 7243.07,
+   "end_s": 7834.69
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-001.c13",
+  "video_id": "bc-001",
+  "level": 1,
+  "parent_id": null,
+  "seq": 13,
+  "title": "杏仁",
+  "summary": "杏仁止咳平喘。",
+  "start_s": 7836.597,
+  "end_s": 8216.432,
+  "seg_from": 1357,
+  "seg_to": 1418,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.xing_ren"
+  ],
+  "citation": {
+   "youtube_id": "IH3tubhWMOo",
+   "url": "https://www.youtube.com/watch?v=IH3tubhWMOo&t=7836s",
+   "series": "bc",
+   "episode": 1,
+   "title": "倪海廈精解 神農本草經之8 完整重製版 全68篇 完結篇",
+   "start_s": 7836.6,
+   "end_s": 8216.43
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-001.c14",
+  "video_id": "bc-001",
+  "level": 1,
+  "parent_id": null,
+  "seq": 14,
+  "title": "栀子豉汤",
+  "summary": "虚烦失眠用栀子豉汤。",
+  "start_s": 8216.817,
+  "end_s": 9438.262,
+  "seg_from": 1419,
+  "seg_to": 1641,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.zhi_zi",
+   "herb.shi"
+  ],
+  "citation": {
+   "youtube_id": "IH3tubhWMOo",
+   "url": "https://www.youtube.com/watch?v=IH3tubhWMOo&t=8216s",
+   "series": "bc",
+   "episode": 1,
+   "title": "倪海廈精解 神農本草經之8 完整重製版 全68篇 完結篇",
+   "start_s": 8216.82,
+   "end_s": 9438.26
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-001.c15",
+  "video_id": "bc-001",
+  "level": 1,
+  "parent_id": null,
+  "seq": 15,
+  "title": "艾叶",
+  "summary": "艾叶温经。",
+  "start_s": 9439.577,
+  "end_s": 11267.684,
+  "seg_from": 1642,
+  "seg_to": 1960,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.ai"
+  ],
+  "citation": {
+   "youtube_id": "IH3tubhWMOo",
+   "url": "https://www.youtube.com/watch?v=IH3tubhWMOo&t=9439s",
+   "series": "bc",
+   "episode": 1,
+   "title": "倪海廈精解 神農本草經之8 完整重製版 全68篇 完結篇",
+   "start_s": 9439.58,
+   "end_s": 11267.68
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-001.c16",
+  "video_id": "bc-001",
+  "level": 1,
+  "parent_id": null,
+  "seq": 16,
+  "title": "鸡子黄阿胶",
+  "summary": "鸡子黄、黄连阿胶汤。",
+  "start_s": 11269.919,
+  "end_s": 11814.604,
+  "seg_from": 1961,
+  "seg_to": 2064,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.ji_zi_huang",
+   "herb.e_jiao",
+   "herb.huang_lian"
+  ],
+  "citation": {
+   "youtube_id": "IH3tubhWMOo",
+   "url": "https://www.youtube.com/watch?v=IH3tubhWMOo&t=11269s",
+   "series": "bc",
+   "episode": 1,
+   "title": "倪海廈精解 神農本草經之8 完整重製版 全68篇 完結篇",
+   "start_s": 11269.92,
+   "end_s": 11814.6
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-001.c17",
+  "video_id": "bc-001",
+  "level": 1,
+  "parent_id": null,
+  "seq": 17,
+  "title": "合欢远志",
+  "summary": "合欢舒情；远志安神。",
+  "start_s": 11815.049,
+  "end_s": 12491.9,
+  "seg_from": 2065,
+  "seg_to": 2190,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.he_huan",
+   "herb.yuan_zhi"
+  ],
+  "citation": {
+   "youtube_id": "IH3tubhWMOo",
+   "url": "https://www.youtube.com/watch?v=IH3tubhWMOo&t=11815s",
+   "series": "bc",
+   "episode": 1,
+   "title": "倪海廈精解 神農本草經之8 完整重製版 全68篇 完結篇",
+   "start_s": 11815.05,
+   "end_s": 12491.9
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "bc-001.c18",
+  "video_id": "bc-001",
+  "level": 1,
+  "parent_id": null,
+  "seq": 18,
+  "title": "小麦大枣",
+  "summary": "小麦、大枣安神。",
+  "start_s": 12494.815,
+  "end_s": 13263.57,
+  "seg_from": 2191,
+  "seg_to": 2337,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.xiao_mai",
+   "herb.da_zao"
+  ],
+  "citation": {
+   "youtube_id": "IH3tubhWMOo",
+   "url": "https://www.youtube.com/watch?v=IH3tubhWMOo&t=12494s",
+   "series": "bc",
+   "episode": 1,
+   "title": "倪海廈精解 神農本草經之8 完整重製版 全68篇 完結篇",
+   "start_s": 12494.82,
+   "end_s": 13263.57
+  },
+  "review_status": "llm_read"
+ }
+]

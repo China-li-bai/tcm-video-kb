@@ -6,7 +6,7 @@ import { styleForCategory, styleForPred } from "../graph/styleRegistry";
 import { DetailPanel } from "../panel/DetailPanel";
 import { ErrorState } from "../panel/ErrorState";
 import type { Selection, Subgraph } from "../types";
-import type { ShellContext } from "../App";
+import type { ShellContext } from "../layout/AppShell";
 
 export function GraphPage() {
   const { focus } = useOutletContext<ShellContext>();
@@ -37,54 +37,70 @@ export function GraphPage() {
     return () => ac.abort();
   }, [focus]);
 
+  function clearSelection() {
+    setSelection(null);
+  }
+
   return (
     <div className="shell">
-      <main>
+      <main className="graph-main">
         {loading && <p className="status">正在读取子图…</p>}
         {error && <ErrorState title="关系图接口不可用" detail={error} />}
         {subgraph && subgraph.nodes.length === 0 && <p className="status">子图是空的。</p>}
         {subgraph && subgraph.nodes.length > 0 && (
           <>
-            <GraphApp subgraph={subgraph} onSelect={setSelection} />
-            <Legend />
+            <GraphApp subgraph={subgraph} selection={selection} onSelect={setSelection} />
+            <footer className="graph-foot">
+              <Legend />
+              <span className="foot-hint">点节点 / 边看详情；点 cite 新开 YouTube 到秒</span>
+            </footer>
           </>
         )}
       </main>
-      <DetailPanel subgraph={subgraph} selection={selection} />
+      <DetailPanel subgraph={subgraph} selection={selection} onClear={clearSelection} />
     </div>
   );
 }
 
 function Legend() {
-  const nodes = ["formula", "herb", "syndrome", "symptom", "pulse"] as const;
-  const edges = ["composed_of", "treats", "indicates"] as const;
+  const nodes = ["formula", "herb", "syndrome", "symptom", "pulse", "concept"] as const;
+  const edges = ["composed_of", "treats", "indicates", "related"] as const;
   return (
-    <ul className="legend">
-      {nodes.map((category) => {
-        const spec = styleForCategory(category);
-        return (
-          <li key={category}>
-            <i
-              className={`swatch shape-${spec.shape}`}
-              style={{
-                background: spec.fill,
-                borderColor: spec.stroke,
-                borderStyle: spec.lineDash ? "dashed" : "solid",
-              }}
-            />
-            {spec.badge}
-          </li>
-        );
-      })}
-      {edges.map((pred) => {
-        const spec = styleForPred(pred);
-        return (
-          <li key={pred}>
-            <i className="line" style={{ borderTopStyle: spec.lineDash ? "dashed" : "solid" }} />
-            {spec.caption}
-          </li>
-        );
-      })}
-    </ul>
+    <div className="legend" aria-label="图例">
+      <div className="leg-group" aria-label="节点类型">
+        <span className="leg-k">节点</span>
+        {nodes.map((category) => {
+          const spec = styleForCategory(category);
+          return (
+            <span key={category} className="leg" title={spec.badge}>
+              <i
+                className={`swatch shape-${spec.shape}`}
+                style={{
+                  background: spec.fill,
+                  borderColor: spec.stroke,
+                  borderStyle: spec.lineDash ? "dashed" : "solid",
+                }}
+              />
+              {spec.badge}
+            </span>
+          );
+        })}
+      </div>
+      <div className="leg-group" aria-label="关系谓词">
+        <span className="leg-k">边</span>
+        {edges.map((pred) => {
+          const spec = styleForPred(pred);
+          return (
+            <span key={pred} className="leg">
+              <i
+                className="line"
+                style={{ borderTopStyle: spec.lineDash ? "dashed" : "solid" }}
+              />
+              {spec.label}
+            </span>
+          );
+        })}
+      </div>
+    </div>
   );
 }

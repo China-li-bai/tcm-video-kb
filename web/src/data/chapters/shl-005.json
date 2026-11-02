@@ -1,0 +1,134 @@
+[
+ {
+  "chapter_id": "shl-005.c01",
+  "video_id": "shl-005",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "少阳半表半里：三焦网络无所不到",
+  "summary": "少阳不止「半表半里」四字：凡肌肉间、脏腑间网络，头耳五官胸乳子宫心包皆属三焦/少阳，全身上下无所不到。热入血室用柴胡即因属少阳。三阳镇无死证，入阴乃有死证；挡在少阳即无死。",
+  "start_s": 2.51,
+  "end_s": 818.365,
+  "seg_from": 0,
+  "seg_to": 155,
+  "six_channel": [
+   "six_channel.shaoyang"
+  ],
+  "clause_refs": [],
+  "topics": [
+   "zangfu.san_jiao"
+  ],
+  "citation": {
+   "youtube_id": "r8MEgenB2Fc",
+   "url": "https://www.youtube.com/watch?v=r8MEgenB2Fc&t=2s",
+   "series": "shl",
+   "episode": 5,
+   "title": "倪海廈《傷寒論》細分版： 5少陽症",
+   "start_s": 2.51,
+   "end_s": 818.37
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-005.c02",
+  "video_id": "shl-005",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "第263条 少阳之为病：口苦咽干目眩",
+  "summary": "少阳之为病，口苦咽干目眩。胆属奇恒之腑，胆汁外溢则口苦；三焦水道不利则咽干；目眩因少阳连五官。除胸胁苦满、往来寒热、喜呕外，此三者亦是少阳提纲。",
+  "start_s": 819.67,
+  "end_s": 1394.981,
+  "seg_from": 156,
+  "seg_to": 262,
+  "six_channel": [
+   "six_channel.shaoyang"
+  ],
+  "clause_refs": [
+   "clause.shl.263"
+  ],
+  "topics": [
+   "clause.shl.263"
+  ],
+  "citation": {
+   "youtube_id": "r8MEgenB2Fc",
+   "url": "https://www.youtube.com/watch?v=r8MEgenB2Fc&t=819s",
+   "series": "shl",
+   "episode": 5,
+   "title": "倪海廈《傷寒論》細分版： 5少陽症",
+   "start_s": 819.67,
+   "end_s": 1394.98
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-005.c03",
+  "video_id": "shl-005",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "第264–266条 少阳禁吐下汗；小柴胡证",
+  "summary": "少阳中风耳目口舌属三焦，邪在半表半里，不可吐下——宜和解。脉弦细头痛发热属少阳，勿发汗。太阳转少阳见胸胁苦满干呕不能食往来寒热脉弦细，小柴胡汤：重用柴胡，芩夏参等量；兼表可因柴胡得微汗。",
+  "start_s": 1395.776,
+  "end_s": 1967.531,
+  "seg_from": 263,
+  "seg_to": 363,
+  "six_channel": [
+   "six_channel.shaoyang",
+   "six_channel.taiyang"
+  ],
+  "clause_refs": [
+   "clause.shl.264",
+   "clause.shl.265",
+   "clause.shl.266"
+  ],
+  "topics": [
+   "formula.xiao_chai_hu_tang"
+  ],
+  "citation": {
+   "youtube_id": "r8MEgenB2Fc",
+   "url": "https://www.youtube.com/watch?v=r8MEgenB2Fc&t=1395s",
+   "series": "shl",
+   "episode": 5,
+   "title": "倪海廈《傷寒論》細分版： 5少陽症",
+   "start_s": 1395.78,
+   "end_s": 1967.53
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-005.c04",
+  "video_id": "shl-005",
+  "level": 1,
+  "parent_id": null,
+  "seq": 4,
+  "title": "三阳合病用小柴胡；少阳欲解时",
+  "summary": "三阳合病（太阳阳明少阳同见）主以小柴胡和解。伤寒六七日当转阳明而无大热、烦躁为阳去入阴。少阳病脉小者欲自愈；欲解时从寅至辰。少阳篇条文少，因主方仅和解二途。",
+  "start_s": 1969.786,
+  "end_s": 2625.184,
+  "seg_from": 364,
+  "seg_to": 473,
+  "six_channel": [
+   "six_channel.shaoyang"
+  ],
+  "clause_refs": [
+   "clause.shl.268",
+   "clause.shl.269",
+   "clause.shl.271",
+   "clause.shl.272"
+  ],
+  "topics": [
+   "formula.xiao_chai_hu_tang"
+  ],
+  "citation": {
+   "youtube_id": "r8MEgenB2Fc",
+   "url": "https://www.youtube.com/watch?v=r8MEgenB2Fc&t=1969s",
+   "series": "shl",
+   "episode": 5,
+   "title": "倪海廈《傷寒論》細分版： 5少陽症",
+   "start_s": 1969.79,
+   "end_s": 2625.18
+  },
+  "review_status": "llm_read"
+ }
+]

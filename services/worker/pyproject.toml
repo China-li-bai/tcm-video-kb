@@ -1,0 +1,26 @@
+[project]
+name = "tcm-fangzheng"
+version = "0.1.0"
+description = "方证图 on Cloudflare Workers (FastAPI ASGI + Vite static assets)"
+# compatibility_date 2026-10-30 selects Pyodide 3.14. Keep the Worker project on that line.
+requires-python = ">=3.14"
+dependencies = [
+  "fastapi>=0.115",
+  "pyyaml>=6",
+  "tcmkb-api",
+  "tcmkb-graph",
+  "tcmkb-core",
+]
+
+[tool.uv.sources]
+# Copies, not the workspace members. Editable installs would point at the repo
+# path, which is not present on the Worker. build.sh refreshes these directories.
+tcmkb-api = { path = "vendor/tcmkb_api", editable = false }
+tcmkb-graph = { path = "vendor/tcmkb_graph", editable = false }
+tcmkb-core = { path = "vendor/tcmkb_core", editable = false }
+
+[dependency-groups]
+dev = [
+  "workers-py",
+  "workers-runtime-sdk",
+]

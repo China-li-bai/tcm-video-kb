@@ -1,64 +1,36 @@
-import { FormEvent, useEffect, useState } from "react";
-import { NavLink, Navigate, Outlet, Route, Routes, useSearchParams } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
+import { AppShell } from "./layout/AppShell";
+import type { ShellContext } from "./layout/AppShell";
+import { ListenDeskShell } from "./layout/ListenDeskShell";
 import { GraphPage } from "./pages/GraphPage";
 import { PathsPage } from "./pages/PathsPage";
-import { DEFAULT_FOCUS } from "./types";
+import { ListenHomePage } from "./pages/listen/ListenHomePage";
+import { WatchPage } from "./pages/listen/WatchPage";
+import { SeriesPage } from "./pages/listen/SeriesPage";
+import { SeriesDetailPage } from "./pages/listen/SeriesDetailPage";
+import { SearchPage } from "./pages/listen/SearchPage";
+import { StashPage } from "./pages/listen/StashPage";
+import { RecallPage } from "./pages/listen/RecallPage";
 
-export type ShellContext = { focus: string };
-
-function Shell() {
-  const [params, setParams] = useSearchParams();
-  const focus = params.get("focus") || DEFAULT_FOCUS;
-  const [draft, setDraft] = useState(focus);
-
-  useEffect(() => {
-    setDraft(focus);
-  }, [focus]);
-
-  function onSubmit(event: FormEvent) {
-    event.preventDefault();
-    const next = draft.trim();
-    if (!next) return;
-    const query = new URLSearchParams(params);
-    query.set("focus", next);
-    setParams(query);
-  }
-
-  return (
-    <>
-      <header className="top">
-        <div>
-          <h1>伤寒方证子图</h1>
-          <p className="disclaimer">
-            学习倪师讲授，非诊疗建议。讲课边都是 candidate，不进检索。多证同权，不标唯一证型。
-          </p>
-        </div>
-        <nav>
-          <NavLink to={`/graph?focus=${encodeURIComponent(focus)}`}>关系图</NavLink>
-          <NavLink to={`/paths?focus=${encodeURIComponent(focus)}`}>路径分轨</NavLink>
-        </nav>
-        <form onSubmit={onSubmit}>
-          <label>
-            焦点
-            <input
-              value={draft}
-              onChange={(event) => setDraft(event.target.value)}
-              spellCheck={false}
-            />
-          </label>
-          <button type="submit">打开</button>
-        </form>
-      </header>
-      <Outlet context={{ focus } satisfies ShellContext} />
-    </>
-  );
-}
+export type { ShellContext };
 
 export function App() {
   return (
     <Routes>
-      <Route element={<Shell />}>
-        <Route path="/" element={<Navigate to={`/graph?focus=${DEFAULT_FOCUS}`} replace />} />
+      {/* 学习主路径：播客听课台，无侧栏 */}
+      <Route element={<ListenDeskShell />}>
+        <Route path="/" element={<ListenHomePage />} />
+        <Route path="/watch/:videoId" element={<WatchPage />} />
+        <Route path="/series" element={<SeriesPage />} />
+        <Route path="/series/:seriesId" element={<SeriesDetailPage />} />
+        <Route path="/search" element={<SearchPage />} />
+        <Route path="/stash" element={<StashPage />} />
+        <Route path="/recall/:itemId" element={<RecallPage />} />
+        <Route path="/lectures" element={<Navigate to="/series" replace />} />
+      </Route>
+
+      {/* 方证工具壳：保留旧侧栏，次要入口 */}
+      <Route element={<AppShell />}>
         <Route path="/graph" element={<GraphPage />} />
         <Route path="/paths" element={<PathsPage />} />
       </Route>
