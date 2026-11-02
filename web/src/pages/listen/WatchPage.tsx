@@ -50,6 +50,8 @@ export function WatchPage() {
   const [seekS, setSeekS] = useState(startT);
   const [segments, setSegments] = useState<Segment[] | null>(null);
   const [transcriptLoading, setTranscriptLoading] = useState(true);
+  /** True when the active sentence is scrolled out of view — show 「回到正在播放」. */
+  const [awayFromActive, setAwayFromActive] = useState(false);
   const activeRowRef = useRef<HTMLDivElement | null>(null);
   const skipScrollRef = useRef(false);
 
@@ -149,6 +151,31 @@ export function WatchPage() {
   }, [activeUtterIdx, videoId]);
 
   useEffect(() => {
+    if (tab !== "script") {
+      setAwayFromActive(false);
+      return;
+    }
+    const el = activeRowRef.current;
+    if (!el) {
+      setAwayFromActive(false);
+      return;
+    }
+    const io = new IntersectionObserver(
+      ([entry]) => {
+        setAwayFromActive(!entry.isIntersecting);
+      },
+      {
+        root: null,
+        // Treat "near center band" as following; leave that band → show return chip.
+        threshold: 0.35,
+        rootMargin: "-18% 0px -28% 0px",
+      },
+    );
+    io.observe(el);
+    return () => io.disconnect();
+  }, [activeUtterIdx, tab, utterances.length, hasRealScript, transcriptLoading]);
+
+  useEffect(() => {
     if (!lecture) return;
     const active = utterances[activeUtterIdx];
     setLastWatch({
@@ -198,6 +225,13 @@ export function WatchPage() {
     if (i !== activeUtterIdx) setMoreOpen(false);
     setActiveUtterIdx(i);
     seekTo(u.t, { play });
+  }
+
+  function returnToPlaying() {
+    const el = activeRowRef.current;
+    if (!el) return;
+    el.scrollIntoView({ block: "center", behavior: "smooth" });
+    setAwayFromActive(false);
   }
 
   function onStash(opts?: { text?: string; t?: number }) {
@@ -270,7 +304,7 @@ export function WatchPage() {
                 <span className="play-orb" aria-hidden>
                   ▶
                 </span>
-                <span>点这里听原讲（YouTube）</span>
+                <span>点这里听</span>
               </button>
             )}
           </div>
@@ -279,7 +313,7 @@ export function WatchPage() {
             <button type="button" className="play-orb big" onClick={() => setPlaying((p) => !p)} aria-label="播放">
               {playing ? "❚❚" : "▶"}
             </button>
-            <p>本集暂无嵌入片源，可从系列页外链听原讲。</p>
+            <p>本集暂无嵌入片源，有原平台链接时请到系列页听。</p>
           </div>
         )}
 
@@ -291,12 +325,10 @@ export function WatchPage() {
           <span>{lecture.duration || "—"}</span>
         </div>
         {lecture.youtubeId && (
-          <p className="muted-sm" style={{ marginTop: 8 }}>
-            嵌入播不了时，可{" "}
+          <p className="player-fallback">
             <a href={youtubeWatchUrl(lecture.youtubeId, embedStart)} target="_blank" rel="noreferrer">
-              外链听原讲
+              播不了？用原平台听
             </a>
-            。
           </p>
         )}
       </section>
@@ -322,7 +354,7 @@ export function WatchPage() {
         {tab === "chapters" && (
           <ul className="chapter-list">
             {chapters.length === 0 && (
-              <li className="empty-inline">这集还没有打包章节，先听原讲即可。</li>
+              <li className="empty-inline">这集还没有打包章节，先听上面即可。</li>
             )}
             {chapters.map((ch) => (
               <li key={ch.chapter_id}>
@@ -349,17 +381,9 @@ export function WatchPage() {
             {showScriptEmpty && (
               <div className="empty-inline">
                 <p>这集还没有对齐好的文稿。</p>
-                <p className="muted-sm">你可以先听原讲；有样例集（如伤寒 shl-001～005）可看文稿与核对。</p>
-                {lecture.youtubeId && (
-                  <a
-                    className="listen-btn listen-btn-ghost"
-                    href={youtubeWatchUrl(lecture.youtubeId, embedStart)}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    外链听原讲
-                  </a>
-                )}
+                <p className="muted-sm">
+                  可以先听上面；有样例集（如伤寒 shl-001～005）可看文稿与核对。播不了时用播放器旁的原平台链接。
+                </p>
               </div>
             )}
 
@@ -482,6 +506,12 @@ export function WatchPage() {
           setCheckOpen(false);
         }}
       />
+
+      {tab === "script" && awayFromActive && utterances.length > 0 && (
+        <button type="button" className="return-playing" onClick={returnToPlaying}>
+          回到正在播放
+        </button>
+      )}
 
       {toast && <div className="listen-toast">{toast}</div>}
     </div>
