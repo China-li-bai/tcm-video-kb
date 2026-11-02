@@ -5,17 +5,17 @@ import { DEFAULT_FOCUS } from "../types";
 export type ShellContext = { focus: string };
 
 const NAV = [
-  { to: "/", label: "首页", end: true },
+  { to: "/", label: "听课台", end: true },
   { to: "/graph", label: "关系图", end: false },
   { to: "/paths", label: "路径", end: false },
-  { to: "/lectures", label: "讲次", end: false },
+  { to: "/series", label: "系列", end: false },
 ] as const;
 
 const PAGE_TITLE: Record<string, string> = {
-  "/": "首页",
+  "/": "听课台",
   "/graph": "方证关系图",
   "/paths": "路径分轨",
-  "/lectures": "讲次浏览",
+  "/series": "课程系列",
 };
 
 export function AppShell() {
@@ -53,7 +53,7 @@ export function AppShell() {
           <span className="brand-mark" aria-hidden />
           <div className="brand-text">
             <strong>人纪</strong>
-            <span>方证图</span>
+            <span>工具</span>
           </div>
         </div>
         <nav className="side-nav">
