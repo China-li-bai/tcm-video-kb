@@ -1,3 +1,4 @@
+/** @deprecated P4: learner routes use ListenDeskShell only; kept for reference. */
 import { FormEvent, useEffect, useState } from "react";
 import { NavLink, Outlet, useLocation, useSearchParams } from "react-router-dom";
 import { DEFAULT_FOCUS } from "../types";

@@ -107,7 +107,8 @@ export function ListenHomePage() {
 
       <div className="listen-footer-links">
         <Link to="/series">全部课程系列</Link>
-        <Link to="/graph?focus=formula.gui_zhi_tang">方证图（次要）</Link>
+        <Link to="/graph?focus=formula.gui_zhi_tang">方证图</Link>
+        <Link to="/paths?focus=syndrome.tai_yang_bing">路径</Link>
       </div>
     </div>
   );
