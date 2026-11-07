@@ -1,0 +1,90 @@
+[
+ {
+  "chapter_id": "jgy-001.c01",
+  "video_id": "jgy-001",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "续伤寒·霍乱名义与湿热",
+  "summary": "伤寒金匮本一书，宋后分册；霍乱篇并入金匮。中医霍乱指呕吐下利，本于太阴湿热，多见于春分后南方。辨虚实：按腹喜按属虚，忌妄投承气。",
+  "start_s": 12.65,
+  "end_s": 734.125,
+  "seg_from": 0,
+  "seg_to": 136,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "disease.huo_luan",
+   "classic.jin_gui_yao_lve"
+  ],
+  "citation": {
+   "youtube_id": "J7zCN4czXuc",
+   "url": "https://www.youtube.com/watch?v=J7zCN4czXuc&t=12s",
+   "series": "jgy",
+   "episode": 1,
+   "title": "倪海廈《金匱要略》細分版： 0續傷寒篇",
+   "start_s": 12.65,
+   "end_s": 734.12
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-001.c02",
+  "video_id": "jgy-001",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "阳明自愈与脉微恶寒用四逆",
+  "summary": "阳明但热不寒，能食；不能食则非阳明。霍乱后脉微恶寒、四肢厥，乃心阳不足而非表寒，当四逆汤（或加人参），忌误作表证发汗。",
+  "start_s": 735.65,
+  "end_s": 1479.95,
+  "seg_from": 137,
+  "seg_to": 280,
+  "six_channel": [
+   "six_channel.yangming"
+  ],
+  "clause_refs": [],
+  "topics": [
+   "formula.si_ni_tang"
+  ],
+  "citation": {
+   "youtube_id": "J7zCN4czXuc",
+   "url": "https://www.youtube.com/watch?v=J7zCN4czXuc&t=735s",
+   "series": "jgy",
+   "episode": 1,
+   "title": "倪海廈《金匱要略》細分版： 0續傷寒篇",
+   "start_s": 735.65,
+   "end_s": 1479.95
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-001.c03",
+  "video_id": "jgy-001",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "霍乱热多五苓·寒多理中",
+  "summary": "霍乱头痛发热身疼：热多欲饮水、小便不利用五苓散；寒多不欲水用理中丸。五苓散治水停肌表、中焦无水而吐水。",
+  "start_s": 1481.915,
+  "end_s": 3578.059,
+  "seg_from": 281,
+  "seg_to": 685,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "formula.wu_ling_san",
+   "formula.li_zhong_wan"
+  ],
+  "citation": {
+   "youtube_id": "J7zCN4czXuc",
+   "url": "https://www.youtube.com/watch?v=J7zCN4czXuc&t=1481s",
+   "series": "jgy",
+   "episode": 1,
+   "title": "倪海廈《金匱要略》細分版： 0續傷寒篇",
+   "start_s": 1481.91,
+   "end_s": 3578.06
+  },
+  "review_status": "llm_read"
+ }
+]

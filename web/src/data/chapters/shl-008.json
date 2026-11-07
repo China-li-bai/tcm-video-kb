@@ -1,0 +1,307 @@
+[
+ {
+  "chapter_id": "shl-008.c01",
+  "video_id": "shl-008",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "厥阴提纲：消渴气上撞心与蛔厥",
+  "summary": "少阴未治则阴寒入厥阴（肝与心包）。提纲：消渴、气上撞心、心中疼热、饥不欲食、食则吐蛔、下之利不止。寒热错杂；蛔厥与脏厥鉴别。欲解时从丑至卯。",
+  "start_s": 1.22,
+  "end_s": 732.23,
+  "seg_from": 0,
+  "seg_to": 131,
+  "six_channel": [
+   "six_channel.jueyin"
+  ],
+  "clause_refs": [
+   "clause.shl.326",
+   "clause.shl.327",
+   "clause.shl.328",
+   "clause.shl.329"
+  ],
+  "topics": [
+   "formula.wu_mei_wan"
+  ],
+  "citation": {
+   "youtube_id": "7VK465ZyRMg",
+   "url": "https://www.youtube.com/watch?v=7VK465ZyRMg&t=1s",
+   "series": "shl",
+   "episode": 8,
+   "title": "倪海廈《傷寒論》細分版： 8厥陰症",
+   "start_s": 1.22,
+   "end_s": 732.23
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-008.c02",
+  "video_id": "shl-008",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "厥热胜复与禁汗下",
+  "summary": "先厥后发热而利者必自止；发热为阳回吉象。厥阴下利而反发汗则口伤烂赤——厥阴主利尿退热，禁汗禁下。脉微欲绝而躁无暂安为脏厥；常自吐蛔为蛔厥。",
+  "start_s": 734.21,
+  "end_s": 2130.498,
+  "seg_from": 132,
+  "seg_to": 372,
+  "six_channel": [
+   "six_channel.jueyin"
+  ],
+  "clause_refs": [
+   "clause.shl.331",
+   "clause.shl.335",
+   "clause.shl.338",
+   "clause.shl.339"
+  ],
+  "topics": [],
+  "citation": {
+   "youtube_id": "7VK465ZyRMg",
+   "url": "https://www.youtube.com/watch?v=7VK465ZyRMg&t=734s",
+   "series": "shl",
+   "episode": 8,
+   "title": "倪海廈《傷寒論》細分版： 8厥陰症",
+   "start_s": 734.21,
+   "end_s": 2130.5
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-008.c03",
+  "video_id": "shl-008",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "乌梅丸：蛔厥与久利",
+  "summary": "乌梅丸酸苦辛并用安蛔止久利，亦治神经质逢考下利、寒热错杂心包热肠寒。当归至厥阴篇始见，非必要不用。",
+  "start_s": 2130.498,
+  "end_s": 3297.929,
+  "seg_from": 373,
+  "seg_to": 570,
+  "six_channel": [],
+  "clause_refs": [
+   "clause.shl.338"
+  ],
+  "topics": [
+   "formula.wu_mei_wan",
+   "herb.wu_mei",
+   "herb.dang_gui"
+  ],
+  "citation": {
+   "youtube_id": "7VK465ZyRMg",
+   "url": "https://www.youtube.com/watch?v=7VK465ZyRMg&t=2130s",
+   "series": "shl",
+   "episode": 8,
+   "title": "倪海廈《傷寒論》細分版： 8厥陰症",
+   "start_s": 2130.5,
+   "end_s": 3297.93
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-008.c04",
+  "video_id": "shl-008",
+  "level": 1,
+  "parent_id": null,
+  "seq": 4,
+  "title": "白虎、四逆与麻黄升麻汤",
+  "summary": "厥而有热、舌干脉大→白虎，勿误作寒投四逆越冷。大汗出热不去无他症→白虎；阳亡外脱→四逆。麻黄升麻汤寒热并用，治肝系吐脓血（争议条文）。干姜黄连黄芩人参汤治寒格吐利。",
+  "start_s": 3298.174,
+  "end_s": 3528.429,
+  "seg_from": 571,
+  "seg_to": 610,
+  "six_channel": [],
+  "clause_refs": [
+   "clause.shl.350",
+   "clause.shl.357",
+   "clause.shl.359"
+  ],
+  "topics": [
+   "formula.bai_hu_tang",
+   "formula.si_ni_tang",
+   "formula.ma_huang_sheng_ma_tang",
+   "formula.gan_jiang_huang_qin_huang_lian_ren_shen_tang"
+  ],
+  "citation": {
+   "youtube_id": "7VK465ZyRMg",
+   "url": "https://www.youtube.com/watch?v=7VK465ZyRMg&t=3298s",
+   "series": "shl",
+   "episode": 8,
+   "title": "倪海廈《傷寒論》細分版： 8厥陰症",
+   "start_s": 3298.17,
+   "end_s": 3528.43
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-008.c05",
+  "video_id": "shl-008",
+  "level": 1,
+  "parent_id": null,
+  "seq": 5,
+  "title": "当归四逆汤：手足厥寒脉细欲绝",
+  "summary": "手足厥寒脉细欲绝，当归四逆汤：桂枝汤去生姜加当归细辛通草。治末梢循环差、糖尿病截肢倾向、冻疮等。内有久寒者加吴茱萸生姜。",
+  "start_s": 3528.844,
+  "end_s": 5248.917,
+  "seg_from": 611,
+  "seg_to": 903,
+  "six_channel": [],
+  "clause_refs": [
+   "clause.shl.351",
+   "clause.shl.352"
+  ],
+  "topics": [
+   "formula.dang_gui_si_ni_tang",
+   "herb.dang_gui",
+   "herb.xi_xin"
+  ],
+  "citation": {
+   "youtube_id": "7VK465ZyRMg",
+   "url": "https://www.youtube.com/watch?v=7VK465ZyRMg&t=3528s",
+   "series": "shl",
+   "episode": 8,
+   "title": "倪海廈《傷寒論》細分版： 8厥陰症",
+   "start_s": 3528.84,
+   "end_s": 5248.92
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-008.c06",
+  "video_id": "shl-008",
+  "level": 1,
+  "parent_id": null,
+  "seq": 6,
+  "title": "厥热多少与下利预后",
+  "summary": "热多厥少病当愈，厥多热少病进。厥阴篇多言下利（肝上肺下大肠）。下利清谷手足厥脉微→通脉四逆/干姜附子；热利下重→白头翁等。",
+  "start_s": 5248.917,
+  "end_s": 6210.371,
+  "seg_from": 904,
+  "seg_to": 1067,
+  "six_channel": [
+   "six_channel.jueyin"
+  ],
+  "clause_refs": [
+   "clause.shl.341",
+   "clause.shl.342",
+   "clause.shl.366"
+  ],
+  "topics": [
+   "formula.tong_mai_si_ni_tang"
+  ],
+  "citation": {
+   "youtube_id": "7VK465ZyRMg",
+   "url": "https://www.youtube.com/watch?v=7VK465ZyRMg&t=5248s",
+   "series": "shl",
+   "episode": 8,
+   "title": "倪海廈《傷寒論》細分版： 8厥陰症",
+   "start_s": 5248.92,
+   "end_s": 6210.37
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-008.c07",
+  "video_id": "shl-008",
+  "level": 1,
+  "parent_id": null,
+  "seq": 7,
+  "title": "下利诸法：通脉四逆、白头翁、承气与栀子豉",
+  "summary": "下利清谷里寒外热汗出厥→通脉四逆。热利下重→白头翁（可与桃花汤合用治脓血）。下利谵语者大承气（热结旁流）。虚热懊憹→栀子豉。下利腹胀满身疼痛：先温里后攻表。",
+  "start_s": 6210.571,
+  "end_s": 6759.326,
+  "seg_from": 1068,
+  "seg_to": 1162,
+  "six_channel": [],
+  "clause_refs": [
+   "clause.shl.370",
+   "clause.shl.371",
+   "clause.shl.373",
+   "clause.shl.374",
+   "clause.shl.372"
+  ],
+  "topics": [
+   "formula.tong_mai_si_ni_tang",
+   "formula.bai_tou_weng_tang",
+   "formula.da_cheng_qi_tang",
+   "formula.zhi_zi_shi_tang"
+  ],
+  "citation": {
+   "youtube_id": "7VK465ZyRMg",
+   "url": "https://www.youtube.com/watch?v=7VK465ZyRMg&t=6210s",
+   "series": "shl",
+   "episode": 8,
+   "title": "倪海廈《傷寒論》細分版： 8厥陰症",
+   "start_s": 6210.57,
+   "end_s": 6759.33
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-008.c08",
+  "video_id": "shl-008",
+  "level": 1,
+  "parent_id": null,
+  "seq": 8,
+  "title": "吴茱萸汤与病退路径",
+  "summary": "干呕头痛（颠顶）吐涎沫→吴茱萸汤。呕而发热示病退至少阳，小柴胡。厥阴→少阴→太阴→少阳为正向退路。",
+  "start_s": 6760.271,
+  "end_s": 7016.262,
+  "seg_from": 1163,
+  "seg_to": 1206,
+  "six_channel": [],
+  "clause_refs": [
+   "clause.shl.378",
+   "clause.shl.379"
+  ],
+  "topics": [
+   "formula.wu_zhu_yu_tang",
+   "formula.xiao_chai_hu_tang"
+  ],
+  "citation": {
+   "youtube_id": "7VK465ZyRMg",
+   "url": "https://www.youtube.com/watch?v=7VK465ZyRMg&t=6760s",
+   "series": "shl",
+   "episode": 8,
+   "title": "倪海廈《傷寒論》細分版： 8厥陰症",
+   "start_s": 6760.27,
+   "end_s": 7016.26
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-008.c09",
+  "video_id": "shl-008",
+  "level": 1,
+  "parent_id": null,
+  "seq": 9,
+  "title": "伤寒差后：脾约与补中",
+  "summary": "差后喜唾胸上有寒宜理中丸；腹满时痛为太阴，大实痛为阳明可下。讲者并述分消汤、补中益气类善后及厥阴禁妄下。",
+  "start_s": 7018.717,
+  "end_s": 7980.312,
+  "seg_from": 1207,
+  "seg_to": 1374,
+  "six_channel": [
+   "six_channel.jueyin"
+  ],
+  "clause_refs": [
+   "clause.shl.396",
+   "clause.shl.397",
+   "clause.shl.398"
+  ],
+  "topics": [
+   "formula.li_zhong_wan"
+  ],
+  "citation": {
+   "youtube_id": "7VK465ZyRMg",
+   "url": "https://www.youtube.com/watch?v=7VK465ZyRMg&t=7018s",
+   "series": "shl",
+   "episode": 8,
+   "title": "倪海廈《傷寒論》細分版： 8厥陰症",
+   "start_s": 7018.72,
+   "end_s": 7980.31
+  },
+  "review_status": "llm_read"
+ }
+]

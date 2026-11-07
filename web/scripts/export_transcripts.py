@@ -9,7 +9,29 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_ARTIFACTS = Path("/workspace/tcm-video-kb/data/artifacts")
 DEFAULT_OUT = ROOT / "web" / "public" / "transcripts"
-DEFAULT_IDS = ["shl-001", "shl-002", "shl-003", "shl-004", "shl-005", "jgy-005", "bc-001"]
+DEFAULT_IDS = [
+    "shl-001",
+    "shl-002",
+    "shl-003",
+    "shl-004",
+    "shl-005",
+    "shl-006",
+    "shl-007",
+    "shl-008",
+    "jgy-001",
+    "jgy-002",
+    "jgy-003",
+    "jgy-004",
+    "jgy-005",
+    "jgy-006",
+    "jgy-007",
+    "jgy-008",
+    "jgy-009",
+    "jgy-010",
+    "jgy-011",
+    "jgy-012",
+    "bc-001",
+]
 
 
 def export_one(vid: str, artifacts: Path, out_dir: Path) -> bool:

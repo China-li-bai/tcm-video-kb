@@ -1,6 +1,7 @@
 import { getAllLectures, getLecture } from "./lectures";
 import { getChapters } from "./chapters";
 import { loadTranscript } from "./transcript";
+import { TRANSCRIPT_VIDEO_IDS } from "./transcriptCoverage";
 import type { Lecture } from "./types";
 
 export type SearchHit = {
@@ -78,9 +79,8 @@ export async function searchQuotes(q: string, limit = 40): Promise<SearchHit[]> 
   const needle = q.trim().toLowerCase();
   if (!needle) return [];
 
-  const lectures = getAllLectures().filter((l) =>
-    ["shl-001", "shl-002", "shl-003", "shl-004", "shl-005", "jgy-005", "bc-001"].includes(l.id),
-  );
+  const covered = new Set(TRANSCRIPT_VIDEO_IDS);
+  const lectures = getAllLectures().filter((l) => covered.has(l.id));
 
   const hits: SearchHit[] = [];
   await Promise.all(

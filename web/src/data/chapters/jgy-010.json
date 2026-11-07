@@ -1,0 +1,89 @@
+[
+ {
+  "chapter_id": "jgy-010.c01",
+  "video_id": "jgy-010",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "胸痹心痛概说·瓜蒌薤白与人参汤",
+  "summary": "金匮第九篇胸痹心痛短气。经方可速治心脏病。实证胸痹用瓜蒌薤白白酒/半夏及枳实薤白桂枝汤；虚证胸闷用人参汤（理中类），肠胃致胸闷需辨虚实。",
+  "start_s": 6.14,
+  "end_s": 728.545,
+  "seg_from": 0,
+  "seg_to": 125,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "syndrome.xiong_bi",
+   "formula.gua_lou_xie_bai_bai_jiu_tang",
+   "formula.ren_shen_tang"
+  ],
+  "citation": {
+   "youtube_id": "6twecFxjSRQ",
+   "url": "https://www.youtube.com/watch?v=6twecFxjSRQ&t=6s",
+   "series": "jgy",
+   "episode": 10,
+   "title": "倪海廈《金匱要略》細分版： 09胸麻痺心痛短氣病",
+   "start_s": 6.14,
+   "end_s": 728.54
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-010.c02",
+  "video_id": "jgy-010",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "茯苓杏仁甘草汤·缓痛气塞",
+  "summary": "胸中气塞短气缓痛用茯苓杏仁甘草汤；与麻杏石甘等肺方鉴别。虚实胸闷剂量可等量人参甘草活用。",
+  "start_s": 730.0,
+  "end_s": 1458.75,
+  "seg_from": 126,
+  "seg_to": 249,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "formula.fu_ling_xing_ren_gan_cao_tang"
+  ],
+  "citation": {
+   "youtube_id": "6twecFxjSRQ",
+   "url": "https://www.youtube.com/watch?v=6twecFxjSRQ&t=730s",
+   "series": "jgy",
+   "episode": 10,
+   "title": "倪海廈《金匱要略》細分版： 09胸麻痺心痛短氣病",
+   "start_s": 730.0,
+   "end_s": 1458.75
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-010.c03",
+  "video_id": "jgy-010",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "心包炎感·桂枝生姜枳实与乌头",
+  "summary": "心中痞、心悬似心包炎用桂枝生姜枳实汤行胸阳利水。心痛剧者乌头赤石脂丸；乌头/乌梅传抄之辨。",
+  "start_s": 1458.83,
+  "end_s": 3134.06,
+  "seg_from": 250,
+  "seg_to": 543,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "formula.gui_zhi_sheng_jiang_zhi_shi_tang",
+   "formula.wu_tou_chi_shi_zhi_wan"
+  ],
+  "citation": {
+   "youtube_id": "6twecFxjSRQ",
+   "url": "https://www.youtube.com/watch?v=6twecFxjSRQ&t=1458s",
+   "series": "jgy",
+   "episode": 10,
+   "title": "倪海廈《金匱要略》細分版： 09胸麻痺心痛短氣病",
+   "start_s": 1458.83,
+   "end_s": 3134.06
+  },
+  "review_status": "llm_read"
+ }
+]
