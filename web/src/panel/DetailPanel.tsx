@@ -59,7 +59,7 @@ export function DetailPanel({ subgraph, selection, onClear }: Props) {
       <div className="panel-body">
         {!node && !edge && (
           <p className="panel-empty muted">
-            点击图中节点或边：查看来源与 evidence，并从讲课边打开真实 YouTube 到秒。
+            点击图中节点或边：查看来源与 evidence；有讲课出处时优先「听原讲」进站内学一段。
           </p>
         )}
         {node && (

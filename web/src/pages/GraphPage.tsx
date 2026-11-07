@@ -52,7 +52,7 @@ export function GraphPage() {
             <GraphApp subgraph={subgraph} selection={selection} onSelect={setSelection} />
             <footer className="graph-foot">
               <Legend />
-              <span className="foot-hint">点节点 / 边看详情；点 cite 新开 YouTube 到秒</span>
+              <span className="foot-hint">点节点 / 边看详情；点「听原讲」进站内学一段（YouTube 为退路）</span>
             </footer>
           </>
         )}

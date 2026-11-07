@@ -431,6 +431,21 @@ blockquote {
 
 .cite-links { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center; }
 
+.cite-listen {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent, #1d4ed8);
+  text-decoration: none;
+}
+.cite-listen:hover { text-decoration: underline; }
+
+.cite-yt {
+  font-size: 12px;
+  color: var(--text-secondary, #64748b);
+  text-decoration: none;
+}
+.cite-yt:hover { text-decoration: underline; }
+
 .held {
   margin-top: 18px;
   padding-top: 8px;
@@ -868,6 +883,7 @@ blockquote {
 .cite-quote { margin: 4px 0 6px; font-size: 13px; }
 
 .cite-link { font-size: 13px; }
+.cite-card .cite-links { margin: 6px 0 0; }
 
 .hyp-cites .cite-list { margin: 0; }
 
