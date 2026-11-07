@@ -13,6 +13,13 @@ import {
   type KnowledgePoint,
 } from "../../listen/knowledgePoints";
 import {
+  entityTypeBadge,
+  loadEntities,
+  pickChipsNear,
+  type EntityMention,
+} from "../../listen/entities";
+import { EntitySheet } from "../../listen/EntitySheet";
+import {
   formatClock,
   getLecture,
   youtubeEmbedUrl,
@@ -57,6 +64,8 @@ export function WatchPage() {
   const [transcriptLoading, setTranscriptLoading] = useState(true);
   const [kpPoints, setKpPoints] = useState<KnowledgePoint[] | null>(null);
   const [kpLoading, setKpLoading] = useState(true);
+  const [entityMentions, setEntityMentions] = useState<EntityMention[] | null>(null);
+  const [chipEntity, setChipEntity] = useState<EntityMention | null>(null);
   /** True when the active sentence is scrolled out of view — show 「回到正在播放」. */
   const [awayFromActive, setAwayFromActive] = useState(false);
   const activeRowRef = useRef<HTMLDivElement | null>(null);
@@ -85,6 +94,19 @@ export function WatchPage() {
       if (cancelled) return;
       setKpPoints(file?.points ?? null);
       setKpLoading(false);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [videoId]);
+
+  useEffect(() => {
+    let cancelled = false;
+    setEntityMentions(null);
+    setChipEntity(null);
+    loadEntities(videoId).then((file) => {
+      if (cancelled) return;
+      setEntityMentions(file?.mentions ?? null);
     });
     return () => {
       cancelled = true;
@@ -221,6 +243,14 @@ export function WatchPage() {
     () => pickClaimsNear(kpPoints ?? [], askT),
     [kpPoints, askT],
   );
+  const activeChips = useMemo(() => {
+    if (!activeUtter) return [];
+    return pickChipsNear(
+      entityMentions ?? [],
+      activeUtter.t,
+      activeUtter.end,
+    );
+  }, [entityMentions, activeUtter]);
 
   function flash(msg: string) {
     setToast(msg);
@@ -459,6 +489,25 @@ export function WatchPage() {
                         </button>
                       )}
                     </div>
+                    {active && activeChips.length > 0 && (
+                      <div className="utter-chips" role="list" aria-label="这句里的方证">
+                        {activeChips.map((m) => (
+                          <button
+                            key={m.entity_id}
+                            type="button"
+                            className="entity-chip"
+                            role="listitem"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              setChipEntity(m);
+                            }}
+                          >
+                            <span className="entity-chip-badge">{entityTypeBadge(m.type)}</span>
+                            {m.label}
+                          </button>
+                        ))}
+                      </div>
+                    )}
                     {showMore && (
                       <div className="utter-actions" role="group" aria-label="这句操作">
                         <button
@@ -549,6 +598,19 @@ export function WatchPage() {
         onListenClaim={(claim) => {
           setCheckOpen(false);
           seekTo(claim.start_s, { play: true });
+        }}
+      />
+
+      <EntitySheet
+        open={Boolean(chipEntity)}
+        mention={chipEntity}
+        videoId={videoId}
+        t={askT}
+        onClose={() => setChipEntity(null)}
+        onListen={() => {
+          setChipEntity(null);
+          if (activeUtter) onPickUtter(activeUtterIdx, true);
+          else setPlaying(true);
         }}
       />
 

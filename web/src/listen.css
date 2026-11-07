@@ -1619,3 +1619,178 @@ body:has(.listen-desk--watch),
     font-size: 18px;
   }
 }
+
+/* —— P3：文稿高置信实体轻对照 chips + mini sheet —— */
+.utter-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+.entity-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  max-width: 100%;
+  border: 1px solid color-mix(in srgb, var(--border) 80%, transparent);
+  background: #fff;
+  color: var(--text);
+  border-radius: 999px;
+  padding: 4px 10px 4px 6px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.3;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+}
+.entity-chip:hover,
+.entity-chip:focus-visible {
+  border-color: var(--primary);
+  color: var(--primary);
+  outline: none;
+}
+.entity-chip-badge {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 18px;
+  padding: 0 4px;
+  border-radius: 999px;
+  background: #f1f5f9;
+  color: #475569;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+.entity-chip:hover .entity-chip-badge,
+.entity-chip:focus-visible .entity-chip-badge {
+  background: var(--primary-soft, #e8efff);
+  color: var(--primary);
+}
+
+.entity-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.entity-backdrop {
+  position: absolute;
+  inset: 0;
+  border: none;
+  background: rgba(15, 23, 42, 0.36);
+  cursor: pointer;
+}
+.entity-sheet {
+  position: relative;
+  z-index: 1;
+  width: min(520px, 100%);
+  max-height: min(72vh, 560px);
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 -12px 40px rgba(15, 23, 42, 0.18);
+  animation: listen-sheet-in 0.22s ease-out;
+  overflow: hidden;
+}
+@media (min-width: 769px) {
+  .entity-overlay {
+    align-items: center;
+  }
+  .entity-sheet {
+    border-radius: 16px;
+    max-height: min(70vh, 520px);
+  }
+}
+.entity-sheet-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px 8px;
+}
+.entity-sheet-head h2 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 600;
+}
+.entity-close {
+  border: none;
+  background: transparent;
+  font-size: 22px;
+  line-height: 1;
+  color: #8f959e;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+.entity-sheet-body {
+  padding: 8px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow: auto;
+}
+.entity-hero {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.entity-badge {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 28px;
+  height: 28px;
+  padding: 0 8px;
+  border-radius: 999px;
+  background: #1f2329;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+}
+.entity-name {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.3;
+}
+.entity-meta {
+  margin: 0;
+  font-size: 13px;
+  color: #8f959e;
+}
+.entity-plain {
+  margin: 0;
+  font-size: 14px;
+  color: #4e5969;
+  line-height: 1.55;
+}
+.entity-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+.entity-no-graph {
+  font-size: 13px;
+  color: #8f959e;
+}
+.entity-back-hint {
+  margin: 0;
+  font-size: 12px;
+  color: #8f959e;
+  line-height: 1.5;
+}
+.entity-sheet-foot {
+  background: #f8fafc;
+  padding: 12px 20px;
+  font-size: 12px;
+  color: #8f959e;
+  border-top: 1px solid #f0f2f5;
+}
