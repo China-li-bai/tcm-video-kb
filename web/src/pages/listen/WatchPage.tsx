@@ -8,6 +8,11 @@ import {
   hasBundledChapters,
 } from "../../listen/chapters";
 import {
+  loadKnowledgePoints,
+  pickClaimsNear,
+  type KnowledgePoint,
+} from "../../listen/knowledgePoints";
+import {
   formatClock,
   getLecture,
   youtubeEmbedUrl,
@@ -50,6 +55,8 @@ export function WatchPage() {
   const [seekS, setSeekS] = useState(startT);
   const [segments, setSegments] = useState<Segment[] | null>(null);
   const [transcriptLoading, setTranscriptLoading] = useState(true);
+  const [kpPoints, setKpPoints] = useState<KnowledgePoint[] | null>(null);
+  const [kpLoading, setKpLoading] = useState(true);
   /** True when the active sentence is scrolled out of view — show 「回到正在播放」. */
   const [awayFromActive, setAwayFromActive] = useState(false);
   const activeRowRef = useRef<HTMLDivElement | null>(null);
@@ -64,6 +71,20 @@ export function WatchPage() {
       if (cancelled) return;
       setSegments(file?.segments ?? null);
       setTranscriptLoading(false);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [videoId]);
+
+  useEffect(() => {
+    let cancelled = false;
+    setKpLoading(true);
+    setKpPoints(null);
+    loadKnowledgePoints(videoId).then((file) => {
+      if (cancelled) return;
+      setKpPoints(file?.points ?? null);
+      setKpLoading(false);
     });
     return () => {
       cancelled = true;
@@ -195,6 +216,11 @@ export function WatchPage() {
   const where = lecture
     ? `${lecture.seriesLabel} · ${lecture.id}${activeUtter ? ` · 约 ${formatClock(activeUtter.t)}` : ""}`
     : "";
+  const askT = activeUtter?.t ?? seekS ?? startT ?? 0;
+  const nearbyClaims = useMemo(
+    () => pickClaimsNear(kpPoints ?? [], askT),
+    [kpPoints, askT],
+  );
 
   function flash(msg: string) {
     setToast(msg);
@@ -507,6 +533,9 @@ export function WatchPage() {
         open={checkOpen}
         quote={quote}
         where={where}
+        t={askT}
+        claims={nearbyClaims}
+        claimsLoading={kpLoading}
         onClose={() => setCheckOpen(false)}
         onListen={() => {
           setCheckOpen(false);
@@ -516,6 +545,10 @@ export function WatchPage() {
         onStash={() => {
           onStash({ text: quote, t: activeUtter?.t });
           setCheckOpen(false);
+        }}
+        onListenClaim={(claim) => {
+          setCheckOpen(false);
+          seekTo(claim.start_s, { play: true });
         }}
       />
 
