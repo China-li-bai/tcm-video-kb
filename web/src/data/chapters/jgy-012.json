@@ -1,0 +1,92 @@
+[
+ {
+  "chapter_id": "jgy-012.c01",
+  "video_id": "jgy-012",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "五脏风寒概说·肺肝中风中寒",
+  "summary": "金匮第十一篇五脏风寒积聚，条文残缺最多。肺中风口燥而喘身肿；肺中寒吐浊涕。肝中风头目眩两胁痛；肝中寒胸中痛不得转侧食则吐。肝着喜按用旋覆花汤（旋覆花、葱、新绛/茜草）。",
+  "start_s": 0.05,
+  "end_s": 874.545,
+  "seg_from": 0,
+  "seg_to": 154,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "disease.ji_ju",
+   "zangfu.wu_zang",
+   "new.formula.xuan_fu_hua_tang"
+  ],
+  "citation": {
+   "youtube_id": "iXTNVFSIW4g",
+   "url": "https://www.youtube.com/watch?v=iXTNVFSIW4g&t=0s",
+   "series": "jgy",
+   "episode": 12,
+   "title": "倪海廈《金匱要略》細分版： 11五藏風寒積聚病",
+   "start_s": 0.05,
+   "end_s": 874.54
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-012.c02",
+  "video_id": "jgy-012",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "心中风寒伤·防己黄芪与乌头",
+  "summary": "心中风火逆上焦热、饥不欲食吐；心中寒如蒜状心痛彻背，脉浮可自愈，不愈乌头赤石脂丸。心伤头面赤下重烦热脐跳脉弦。邪哭魂魄不安属气血少，癫狂可从肝肺心治。",
+  "start_s": 876.58,
+  "end_s": 1639.753,
+  "seg_from": 155,
+  "seg_to": 290,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "new.formula.fang_ji_huang_qi_tang",
+   "formula.wu_tou_chi_shi_zhi_wan",
+   "concept.qi_xue"
+  ],
+  "citation": {
+   "youtube_id": "iXTNVFSIW4g",
+   "url": "https://www.youtube.com/watch?v=iXTNVFSIW4g&t=876s",
+   "series": "jgy",
+   "episode": 12,
+   "title": "倪海廈《金匱要略》細分版： 11五藏風寒積聚病",
+   "start_s": 876.58,
+   "end_s": 1639.75
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-012.c03",
+  "video_id": "jgy-012",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "脾中风湿·利尿勿汗·脾约麻子仁",
+  "summary": "脾中风发热形如醉人腹中烦重短气，湿盛心火不降。治湿利尿勿发汗；白术茯苓，少腹静脉证重用白芍。脾约胃热约束脾津→麻子仁丸；酸枣仁敛肝藏血。",
+  "start_s": 1641.233,
+  "end_s": 5453.991,
+  "seg_from": 291,
+  "seg_to": 995,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "zangfu.pi",
+   "method.fa_han",
+   "formula.ma_zi_ren_wan"
+  ],
+  "citation": {
+   "youtube_id": "iXTNVFSIW4g",
+   "url": "https://www.youtube.com/watch?v=iXTNVFSIW4g&t=1641s",
+   "series": "jgy",
+   "episode": 12,
+   "title": "倪海廈《金匱要略》細分版： 11五藏風寒積聚病",
+   "start_s": 1641.23,
+   "end_s": 5453.99
+  },
+  "review_status": "llm_read"
+ }
+]

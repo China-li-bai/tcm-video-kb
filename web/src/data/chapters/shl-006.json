@@ -1,0 +1,446 @@
+[
+ {
+  "chapter_id": "shl-006.c01",
+  "video_id": "shl-006",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "太阴篇导论：三阴传变与\"一幅图\"",
+  "summary": "倪师用\"一幅图\"串起六经传变：病由太阳膀胱、少阳三焦入太阴脾，再深入心肾，至厥阴肝决生死；并提出阴极阳回的观点，作为读三阴篇的总纲。",
+  "start_s": 25.77,
+  "end_s": 530.435,
+  "seg_from": 0,
+  "seg_to": 88,
+  "six_channel": [
+   "six_channel.taiyin",
+   "six_channel.shaoyin",
+   "six_channel.jueyin"
+  ],
+  "clause_refs": [],
+  "topics": [
+   "zangfu.pi"
+  ],
+  "citation": {
+   "youtube_id": "9zCCln-3KaE",
+   "url": "https://www.youtube.com/watch?v=9zCCln-3KaE&t=25s",
+   "series": "shl",
+   "episode": 6,
+   "title": "倪海廈《傷寒論》細分版： 6太陰症",
+   "start_s": 25.77,
+   "end_s": 530.43
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-006.c01.s1",
+  "video_id": "shl-006",
+  "level": 2,
+  "parent_id": "shl-006.c01",
+  "seq": 1,
+  "title": "传变路线与\"病时不服补药\"",
+  "summary": "三阳失治即入阴经，影响气血；张仲景气虚用人参、血虚用白芍，从不用当归，强调病时吃治病药而非补药。",
+  "start_s": 25.77,
+  "end_s": 234.245,
+  "seg_from": 0,
+  "seg_to": 38,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [],
+  "citation": {
+   "youtube_id": "9zCCln-3KaE",
+   "url": "https://www.youtube.com/watch?v=9zCCln-3KaE&t=25s",
+   "series": "shl",
+   "episode": 6,
+   "title": "倪海廈《傷寒論》細分版： 6太陰症",
+   "start_s": 25.77,
+   "end_s": 234.25
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-006.c01.s2",
+  "video_id": "shl-006",
+  "level": 2,
+  "parent_id": "shl-006.c01",
+  "seq": 2,
+  "title": "脾主湿与\"人体不是银行\"的代谢观",
+  "summary": "脾主湿；饮食一半营养一半残渣，只进不出会在体内积聚成阴、成实；思伤脾、忧伤肺，外感加内伤更难治。",
+  "start_s": 235.25,
+  "end_s": 434.905,
+  "seg_from": 39,
+  "seg_to": 71,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [],
+  "citation": {
+   "youtube_id": "9zCCln-3KaE",
+   "url": "https://www.youtube.com/watch?v=9zCCln-3KaE&t=235s",
+   "series": "shl",
+   "episode": 6,
+   "title": "倪海廈《傷寒論》細分版： 6太陰症",
+   "start_s": 235.25,
+   "end_s": 434.9
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-006.c01.s3",
+  "video_id": "shl-006",
+  "level": 2,
+  "parent_id": "shl-006.c01",
+  "seq": 3,
+  "title": "三阴的层次：阴之初、阴之中、阴之尽",
+  "summary": "太阴为阴之初、少阴为阴之中、厥阴为阴之尽；三阴多寒证，至厥阴阴极阳回，可见寒热错杂。",
+  "start_s": 436.49,
+  "end_s": 530.435,
+  "seg_from": 72,
+  "seg_to": 88,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [],
+  "citation": {
+   "youtube_id": "9zCCln-3KaE",
+   "url": "https://www.youtube.com/watch?v=9zCCln-3KaE&t=436s",
+   "series": "shl",
+   "episode": 6,
+   "title": "倪海廈《傷寒論》細分版： 6太陰症",
+   "start_s": 436.49,
+   "end_s": 530.43
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-006.c02",
+  "video_id": "shl-006",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "第273条 太阴提纲：腹满而吐、食不下",
+  "summary": "讲太阴病提纲证：脾主腹主湿，湿盛则腹满、脾大压胃而吐、食不下；腹满并非燥屎，误用承气攻下反致胸下结硬。",
+  "start_s": 545.84,
+  "end_s": 745.785,
+  "seg_from": 89,
+  "seg_to": 123,
+  "six_channel": [
+   "six_channel.taiyin"
+  ],
+  "clause_refs": [
+   "clause.shl.273"
+  ],
+  "topics": [
+   "symptom.fu_man",
+   "zangfu.pi"
+  ],
+  "citation": {
+   "youtube_id": "9zCCln-3KaE",
+   "url": "https://www.youtube.com/watch?v=9zCCln-3KaE&t=545s",
+   "series": "shl",
+   "episode": 6,
+   "title": "倪海廈《傷寒論》細分版： 6太陰症",
+   "start_s": 545.84,
+   "end_s": 745.78
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-006.c03",
+  "video_id": "shl-006",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "第274–276条 太阴中风、欲解时与脉浮可汗",
+  "summary": "太阴中风四肢烦疼，因脾主四肢肌肉、湿盛使新旧津液不能更替；阴脉由涩转长为欲愈；太阴脉浮可用桂枝汤发汗，湿盛加白术、茯苓。",
+  "start_s": 747.13,
+  "end_s": 976.095,
+  "seg_from": 124,
+  "seg_to": 166,
+  "six_channel": [
+   "six_channel.taiyin"
+  ],
+  "clause_refs": [
+   "clause.shl.274",
+   "clause.shl.275",
+   "clause.shl.276"
+  ],
+  "topics": [
+   "formula.gui_zhi_tang",
+   "herb.bai_zhu",
+   "herb.fu_ling"
+  ],
+  "citation": {
+   "youtube_id": "9zCCln-3KaE",
+   "url": "https://www.youtube.com/watch?v=9zCCln-3KaE&t=747s",
+   "series": "shl",
+   "episode": 6,
+   "title": "倪海廈《傷寒論》細分版： 6太陰症",
+   "start_s": 747.13,
+   "end_s": 976.1
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-006.c04",
+  "video_id": "shl-006",
+  "level": 1,
+  "parent_id": null,
+  "seq": 4,
+  "title": "第277条 自利不渴属太阴，当温之（四逆辈）",
+  "summary": "下利而不渴是太阴湿盛、脏有寒；寒湿在里当温中，四逆汤类可用；并讲附子与干姜、生姜的配伍用意及祛湿药按部位选择。",
+  "start_s": 988.35,
+  "end_s": 1327.107,
+  "seg_from": 167,
+  "seg_to": 232,
+  "six_channel": [],
+  "clause_refs": [
+   "clause.shl.277"
+  ],
+  "topics": [
+   "formula.si_ni_tang",
+   "herb.fu_zi",
+   "herb.gan_jiang",
+   "herb.sheng_jiang",
+   "syndrome.han_shi"
+  ],
+  "citation": {
+   "youtube_id": "9zCCln-3KaE",
+   "url": "https://www.youtube.com/watch?v=9zCCln-3KaE&t=988s",
+   "series": "shl",
+   "episode": 6,
+   "title": "倪海廈《傷寒論》細分版： 6太陰症",
+   "start_s": 988.35,
+   "end_s": 1327.11
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-006.c04.s1",
+  "video_id": "shl-006",
+  "level": 2,
+  "parent_id": "shl-006.c04",
+  "seq": 1,
+  "title": "下利不渴辨阴证；附子固表",
+  "summary": "下利口渴属阳证，下利不渴属阴病脏寒；炮附子固阳固表，可治汗出及二便失禁。",
+  "start_s": 988.35,
+  "end_s": 1119.55,
+  "seg_from": 167,
+  "seg_to": 197,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [],
+  "citation": {
+   "youtube_id": "9zCCln-3KaE",
+   "url": "https://www.youtube.com/watch?v=9zCCln-3KaE&t=988s",
+   "series": "shl",
+   "episode": 6,
+   "title": "倪海廈《傷寒論》細分版： 6太陰症",
+   "start_s": 988.35,
+   "end_s": 1119.55
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-006.c04.s2",
+  "video_id": "shl-006",
+  "level": 2,
+  "parent_id": "shl-006.c04",
+  "seq": 2,
+  "title": "附子配生姜、干姜的用意",
+  "summary": "炮附子配生姜以去水，生附子配干姜以救逆；水犯心脏时干姜、生姜同用以速排水；经方药性源自《胎胪药录》。",
+  "start_s": 1120.29,
+  "end_s": 1327.107,
+  "seg_from": 198,
+  "seg_to": 232,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [],
+  "citation": {
+   "youtube_id": "9zCCln-3KaE",
+   "url": "https://www.youtube.com/watch?v=9zCCln-3KaE&t=1120s",
+   "series": "shl",
+   "episode": 6,
+   "title": "倪海廈《傷寒論》細分版： 6太陰症",
+   "start_s": 1120.29,
+   "end_s": 1327.11
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-006.c05",
+  "video_id": "shl-006",
+  "level": 1,
+  "parent_id": null,
+  "seq": 5,
+  "title": "第278条 系在太阴：手足自温、发黄与脾家实",
+  "summary": "手足自温表示肠胃功能尚在；太阴湿盛当发黄，小便自利则不发黄，因此治阴证必须利小便；脾家实时暴烦下利会自止，腐秽自去。",
+  "start_s": 1328.602,
+  "end_s": 1544.707,
+  "seg_from": 233,
+  "seg_to": 271,
+  "six_channel": [],
+  "clause_refs": [
+   "clause.shl.278"
+  ],
+  "topics": [
+   "symptom.fa_huang",
+   "method.li_xiao_bian",
+   "symptom.xiao_bian_zi_li"
+  ],
+  "citation": {
+   "youtube_id": "9zCCln-3KaE",
+   "url": "https://www.youtube.com/watch?v=9zCCln-3KaE&t=1328s",
+   "series": "shl",
+   "episode": 6,
+   "title": "倪海廈《傷寒論》細分版： 6太陰症",
+   "start_s": 1328.6,
+   "end_s": 1544.71
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-006.c06",
+  "video_id": "shl-006",
+  "level": 1,
+  "parent_id": null,
+  "seq": 6,
+  "title": "第279条 桂枝加芍药汤与桂枝加大黄汤",
+  "summary": "太阳病误下致腹满时痛属太阴，用桂枝加芍药汤（芍药倍用、不加饴糖）；大实痛用桂枝加大黄汤，大黄量轻；附倪师小儿血癌的临床经验（含其个人对疫苗的看法，非共识）。",
+  "start_s": 1557.482,
+  "end_s": 1881.207,
+  "seg_from": 272,
+  "seg_to": 331,
+  "six_channel": [
+   "six_channel.taiyang"
+  ],
+  "clause_refs": [
+   "clause.shl.279"
+  ],
+  "topics": [
+   "formula.gui_zhi_jia_shao_yao_tang",
+   "formula.gui_zhi_jia_da_huang_tang",
+   "herb.shao_yao",
+   "herb.da_huang"
+  ],
+  "citation": {
+   "youtube_id": "9zCCln-3KaE",
+   "url": "https://www.youtube.com/watch?v=9zCCln-3KaE&t=1557s",
+   "series": "shl",
+   "episode": 6,
+   "title": "倪海廈《傷寒論》細分版： 6太陰症",
+   "start_s": 1557.48,
+   "end_s": 1881.21
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-006.c06.s1",
+  "video_id": "shl-006",
+  "level": 2,
+  "parent_id": "shl-006.c06",
+  "seq": 1,
+  "title": "方证与芍药止痛",
+  "summary": "腹满时痛用桂枝加芍药汤，芍药倍桂枝；与小建中汤相比不加饴糖，因甘味生湿；白芍治寒水致血行不畅之痛。",
+  "start_s": 1557.482,
+  "end_s": 1680.477,
+  "seg_from": 272,
+  "seg_to": 292,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [],
+  "citation": {
+   "youtube_id": "9zCCln-3KaE",
+   "url": "https://www.youtube.com/watch?v=9zCCln-3KaE&t=1557s",
+   "series": "shl",
+   "episode": 6,
+   "title": "倪海廈《傷寒論》細分版： 6太陰症",
+   "start_s": 1557.48,
+   "end_s": 1680.48
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-006.c06.s2",
+  "video_id": "shl-006",
+  "level": 2,
+  "parent_id": "shl-006.c06",
+  "seq": 2,
+  "title": "临床：小儿血癌治验与愈后判断",
+  "summary": "倪师以桂枝汤重用芍药加生附子、茯苓治小儿血癌（太阴湿盛、腹胀肢冷）；以睡眠、饮食、二便、手足温及第五胸椎压痛判断好转。其关于疫苗致病的说法为个人观点。",
+  "start_s": 1681.822,
+  "end_s": 1832.437,
+  "seg_from": 293,
+  "seg_to": 322,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [],
+  "citation": {
+   "youtube_id": "9zCCln-3KaE",
+   "url": "https://www.youtube.com/watch?v=9zCCln-3KaE&t=1681s",
+   "series": "shl",
+   "episode": 6,
+   "title": "倪海廈《傷寒論》細分版： 6太陰症",
+   "start_s": 1681.82,
+   "end_s": 1832.44
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-006.c06.s3",
+  "video_id": "shl-006",
+  "level": 2,
+  "parent_id": "shl-006.c06",
+  "seq": 3,
+  "title": "桂枝加大黄汤：阴证攻下宜轻",
+  "summary": "大实痛用桂枝加大黄汤，大黄与桂枝约一比三，阴证中攻下只轻下。",
+  "start_s": 1832.732,
+  "end_s": 1881.207,
+  "seg_from": 323,
+  "seg_to": 331,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [],
+  "citation": {
+   "youtube_id": "9zCCln-3KaE",
+   "url": "https://www.youtube.com/watch?v=9zCCln-3KaE&t=1832s",
+   "series": "shl",
+   "episode": 6,
+   "title": "倪海廈《傷寒論》細分版： 6太陰症",
+   "start_s": 1832.73,
+   "end_s": 1881.21
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "shl-006.c07",
+  "video_id": "shl-006",
+  "level": 1,
+  "parent_id": null,
+  "seq": 7,
+  "title": "第280条 脉弱减大黄芍药；太阴以脾为主",
+  "summary": "脉弱且续自便利者，大黄、芍药应减量，因胃气弱易动；六经辨证中太阴以脾为主，脾为肺之母，脾复则肺复。",
+  "start_s": 1888.732,
+  "end_s": 2045.577,
+  "seg_from": 332,
+  "seg_to": 363,
+  "six_channel": [],
+  "clause_refs": [
+   "clause.shl.280"
+  ],
+  "topics": [
+   "herb.da_huang",
+   "herb.shao_yao",
+   "pulse.ruo",
+   "zangfu.pi",
+   "zangfu.fei"
+  ],
+  "citation": {
+   "youtube_id": "9zCCln-3KaE",
+   "url": "https://www.youtube.com/watch?v=9zCCln-3KaE&t=1888s",
+   "series": "shl",
+   "episode": 6,
+   "title": "倪海廈《傷寒論》細分版： 6太陰症",
+   "start_s": 1888.73,
+   "end_s": 2045.58
+  },
+  "review_status": "llm_read"
+ }
+]
