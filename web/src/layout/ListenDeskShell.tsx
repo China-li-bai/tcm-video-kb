@@ -13,6 +13,8 @@ export function ListenDeskShell() {
   const [params] = useSearchParams();
   const [q, setQ] = useState(params.get("q") ?? "");
   const isWatch = location.pathname.startsWith("/watch");
+  const isTool =
+    location.pathname === "/graph" || location.pathname === "/paths";
 
   function onSearch(e: FormEvent) {
     e.preventDefault();
@@ -20,8 +22,16 @@ export function ListenDeskShell() {
     navigate(needle ? `/search?q=${encodeURIComponent(needle)}` : "/search");
   }
 
+  const deskClass = [
+    "listen-desk",
+    isWatch ? "listen-desk--watch" : "",
+    isTool ? "listen-desk--tool" : "",
+  ]
+    .filter(Boolean)
+    .join(" ");
+
   return (
-    <div className={isWatch ? "listen-desk listen-desk--watch" : "listen-desk"}>
+    <div className={deskClass}>
       <header className="listen-topbar">
         <Link to="/" className="listen-brand" aria-label="人纪首页">
           <span className="listen-brand-mark">人纪</span>

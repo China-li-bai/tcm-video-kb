@@ -1,15 +1,22 @@
 import { useEffect, useState } from "react";
-import { useOutletContext } from "react-router-dom";
-import { ApiError, fetchSubgraph } from "../api/client";
 import { GraphApp } from "../graph/GraphApp";
 import { styleForCategory, styleForPred } from "../graph/styleRegistry";
+import { ToolFocusBar } from "../layout/ToolFocusBar";
+import { useToolFocus } from "../layout/useToolFocus";
+import { ApiError, fetchSubgraph } from "../api/client";
 import { DetailPanel } from "../panel/DetailPanel";
 import { ErrorState } from "../panel/ErrorState";
 import type { Selection, Subgraph } from "../types";
-import type { ShellContext } from "../layout/AppShell";
+import { DEFAULT_FOCUS } from "../types";
+
+const GRAPH_PRESETS = [
+  { label: "桂枝汤", focus: "formula.gui_zhi_tang" },
+  { label: "太阳中风", focus: "syndrome.tai_yang_zhong_feng" },
+  { label: "桂枝", focus: "herb.gui_zhi" },
+] as const;
 
 export function GraphPage() {
-  const { focus } = useOutletContext<ShellContext>();
+  const { focus, setFocus } = useToolFocus(DEFAULT_FOCUS);
   const [subgraph, setSubgraph] = useState<Subgraph | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
@@ -42,22 +49,50 @@ export function GraphPage() {
   }
 
   return (
-    <div className="shell">
-      <main className="graph-main">
-        {loading && <p className="status">正在读取子图…</p>}
-        {error && <ErrorState title="关系图接口不可用" detail={error} />}
-        {subgraph && subgraph.nodes.length === 0 && <p className="status">子图是空的。</p>}
-        {subgraph && subgraph.nodes.length > 0 && (
-          <>
-            <GraphApp subgraph={subgraph} selection={selection} onSelect={setSelection} />
-            <footer className="graph-foot">
-              <Legend />
-              <span className="foot-hint">点节点 / 边看详情；点「听原讲」进站内学一段（YouTube 为退路）</span>
-            </footer>
-          </>
-        )}
-      </main>
-      <DetailPanel subgraph={subgraph} selection={selection} onClear={clearSelection} />
+    <div className="listen-tool-page">
+      <ToolFocusBar
+        title="方证关系图"
+        lead="旁证对照 · 听才是主场；点出处「听原讲」回学一段"
+        focus={focus}
+        onFocus={setFocus}
+        presets={GRAPH_PRESETS}
+        sibling={{
+          to: `/paths?focus=${encodeURIComponent(
+            focus.startsWith("syndrome.") ? focus : "syndrome.tai_yang_bing",
+          )}`,
+          label: "看路径 →",
+        }}
+      />
+
+      <div className="shell shell--in-desk">
+        <main className="graph-main">
+          {loading && <p className="status">正在读取子图…</p>}
+          {error && <ErrorState title="关系图暂时打不开" detail={error} />}
+          {subgraph && subgraph.nodes.length === 0 && (
+            <p className="status">这里还没有可展开的关系。</p>
+          )}
+          {subgraph && subgraph.nodes.length > 0 && (
+            <>
+              <GraphApp
+                subgraph={subgraph}
+                selection={selection}
+                onSelect={setSelection}
+              />
+              <footer className="graph-foot">
+                <Legend />
+                <span className="foot-hint">
+                  点节点 / 边看详情；有讲课出处时优先「听原讲」
+                </span>
+              </footer>
+            </>
+          )}
+        </main>
+        <DetailPanel
+          subgraph={subgraph}
+          selection={selection}
+          onClear={clearSelection}
+        />
+      </div>
     </div>
   );
 }

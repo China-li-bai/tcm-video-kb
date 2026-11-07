@@ -1,6 +1,4 @@
 import { Navigate, Route, Routes } from "react-router-dom";
-import { AppShell } from "./layout/AppShell";
-import type { ShellContext } from "./layout/AppShell";
 import { ListenDeskShell } from "./layout/ListenDeskShell";
 import { GraphPage } from "./pages/GraphPage";
 import { PathsPage } from "./pages/PathsPage";
@@ -12,12 +10,13 @@ import { SearchPage } from "./pages/listen/SearchPage";
 import { StashPage } from "./pages/listen/StashPage";
 import { RecallPage } from "./pages/listen/RecallPage";
 
-export type { ShellContext };
-
+/**
+ * Single learner shell: ListenDeskShell for home/watch/series/stash
+ * and for secondary /graph + /paths (no AppShell sidebar fork).
+ */
 export function App() {
   return (
     <Routes>
-      {/* 学习主路径：播客听课台，无侧栏 */}
       <Route element={<ListenDeskShell />}>
         <Route path="/" element={<ListenHomePage />} />
         <Route path="/watch/:videoId" element={<WatchPage />} />
@@ -27,10 +26,7 @@ export function App() {
         <Route path="/stash" element={<StashPage />} />
         <Route path="/recall/:itemId" element={<RecallPage />} />
         <Route path="/lectures" element={<Navigate to="/series" replace />} />
-      </Route>
-
-      {/* 方证工具壳：保留旧侧栏，次要入口 */}
-      <Route element={<AppShell />}>
+        {/* 旁证工具：同壳，无中台侧栏 */}
         <Route path="/graph" element={<GraphPage />} />
         <Route path="/paths" element={<PathsPage />} />
       </Route>

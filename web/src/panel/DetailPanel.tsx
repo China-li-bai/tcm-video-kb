@@ -71,13 +71,13 @@ export function DetailPanel({ subgraph, selection, onClear }: Props) {
               </div>
             </div>
             <div className="field">
-              <p className="field-k">id</p>
+              <p className="field-k">编号</p>
               <p className="field-v mono">{node.id}</p>
             </div>
             <div className="field">
-              <p className="field-k">Citations</p>
+              <p className="field-k">出处</p>
               {node.citations.length === 0 && (
-                <p className="muted">此节点无讲课 cite（词典侧）。</p>
+                <p className="muted">词典条目，还没有挂上讲课出处。</p>
               )}
               <ul className="cite-list">
                 {node.citations.map((cite, index) => (
@@ -113,7 +113,7 @@ export function DetailPanel({ subgraph, selection, onClear }: Props) {
               </div>
             </div>
             <div className="field">
-              <p className="field-k">from → to</p>
+              <p className="field-k">从 → 到</p>
               <p className="field-v mono">
                 {edge.subj_id} → {edge.obj_id}
               </p>
@@ -129,19 +129,19 @@ export function DetailPanel({ subgraph, selection, onClear }: Props) {
             )}
             {edge.evidence_quote && (
               <div className="field">
-                <p className="field-k">evidence</p>
+                <p className="field-k">原话</p>
                 <p className="cite-quote">「{edge.evidence_quote}」</p>
               </div>
             )}
             {edge.kp_id && (
               <div className="field">
-                <p className="field-k">kp_id</p>
+                <p className="field-k">知识点</p>
                 <p className="field-v mono">{edge.kp_id}</p>
               </div>
             )}
             {edge.citation && (
               <div className="field">
-                <p className="field-k">Citations</p>
+                <p className="field-k">出处</p>
                 <div className="cite-card">
                   <div className="cite-meta">
                     <span>{edge.citation.kp_id || edge.kp_id || "—"}</span>
