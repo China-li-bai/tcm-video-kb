@@ -2032,3 +2032,8 @@ body:has(.listen-desk--watch),
     height: auto;
   }
 }
+
+/* Backup controls stay in the existing stash scroll area, never in the watch shell. */
+.backup-file { display: flex; flex-wrap: wrap; gap: 8px; min-width: 0; }
+.backup-file input { max-width: 100%; min-width: 0; }
+.learning-backup { overflow-wrap: anywhere; }
