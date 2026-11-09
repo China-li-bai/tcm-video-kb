@@ -220,3 +220,73 @@ cd web && npm ci && npm test -- --reporter=verbose && npm run build
 ### PR-6 输入只读核对（不执行）
 
 `configs/pipeline.yaml` 和 `web/scripts/export_transcripts.py` 都要求 `data/artifacts/<video_id>/segments.jsonl`。本checkout的 `data/artifacts` **目录不存在**，匹配文件0；catalog145、现有公开句稿21、未公开124，未公开且具备输入的讲次为0。仅列文件/检查存在性，没有读取/扩展媒体、执行ASR或新导出。**PR-6当前不具备输入**；须先由后续任务提供获准的、待扩连续讲次的 segments.jsonl（保持时间/seq/身份契约），再决定该批。原21集公开JSON不能替代新讲次的原始segments输入，不擅自开始PR-6。
+
+## PR-6：只读导出下一连续小批句稿
+
+2026-11-09（Asia/Shanghai），基于 `bb33958` 接栈，base `feat/derived-citation-links`（依赖 #19），head `feat/listen-jgy-013-015`。只完成方案 PR-6；找到真实输入，故不实施条件备选 PR-7。
+
+### 输入核查与范围更正
+
+PR-5 的“缺 artifacts”仅适用于 `/workspace/tcm-video-kb-pr4`，不代表 box 全无。本次仅列 `/workspace` 顶层、授权 store 项目目录、已知三个 TCM 位置。原流水线 `/workspace/tcm-video-kb/data/artifacts` 有497个递归 segments 路径，其中145个 canonical catalog 讲次（另有demo/中间产物），覆盖原先未公开124集的文件存在性；PR3/PR4 checkout无 artifacts。未无边界扫描 home/其它 bot store、未触用户电脑、未新clone。仅 jgy-013..015 的内容经过验证，其余文件不能外推为可发布。
+
+选当前金匮001..012后的连续三集；原计划只要求小连续批次，未指定数量。完整源行 video_id/cite.youtube_id 对 catalog、有限有序时间、非空文本与唯一连续 seq；33 KP/9章的 seq 起止均存在且秒数最大差为0。KP/章/实体来源与原流水线相同文件逐字节比较相同。不是 ASR 质量或医学正确性结论。
+
+| 讲次 | 源句数 | seq | 秒范围 | 源 segments.jsonl SHA-256 |
+|---|---:|---|---|---|
+| jgy-013 | 1289 | 0..1288 | 1.84..7419.95 | `20f0a3933e799838c1b53bb0760ccce6602fb3d1b543f1159845d246b2a45b79` |
+| jgy-014 | 903 | 0..902 | 0.05..4953.272 | `a5b13e93f6d6d57c85a289eaac8a85b838033386b8cfd5d245f866e4fee2d5ad` |
+| jgy-015 | 1931 | 0..1930 | 2.07..11334.257 | `945afefc06d2d184af1058c770c0c235592086dbe686fcb77b540e5eacf44dc3` |
+
+### 真实 RED → GREEN
+
+- `uv run --no-sync pytest -q -ra --strict-offline --disable-socket --allow-unix-socket tests/unit/test_listen_release_batch.py`：数据发布前 **3 failed / 1 passed**。真实缺新三集资产/清单；原21资产与917原知识的固定基线保护直接绿，如实记录、不故意破坏。
+- `python3 -m unittest discover -s tests/publish -k source_identity -v`：新增1方法，**3失败子测试**；缺 video_id、跨讲次、路径样式错误身份都被原 exporter 重贴为 shl-001 并退出0。最小修复为解析后严格验证源行对象及 video_id；不是硬编码三集特殊放行。
+- `cd web && npm test -- --reporter=verbose src/listen/releaseBatch.test.tsx`：初次 jsdom file-URL 测试接线报错，**不计产品 RED**。修正为测试 JSON import + 受限 cwd/public 文件读取后，**3 failed**：实际 SearchPage 无法找到新三集的真实源样句。未 mock 搜索、组件、路由、播放器请求逻辑。
+- 只读导出真实既有原输入，临时树中四层完整校验、真实三导出器各重复两次且字节一致、manifest重复两次一致后，新增12份公开/打包文件并生成清单。focused release **4 passed**、发布 **16 OK**；之后完整前端 **128 passed**。未增加测试 skip/xfail、continue-on-error 或减少既有用例。
+
+### 本地完整回归
+
+```sh
+uv sync --locked
+uv run --no-sync pytest -q -ra --strict-offline --disable-socket --allow-unix-socket tests/unit tests/ci
+python3 -m unittest discover -s tests/publish -v
+python3 web/scripts/publish_manifest.py --check
+cd web
+npm ci
+npm test -- --reporter=verbose
+npm run build
+```
+
+实测 Python **148 passed / 0 skipped**（144+4）、发布 **16 OK**（15+1）、前端 **128 passed / 0 skipped / 11文件**（125+3），manifest、`tsc --noEmit`、Vite通过。`uv sync --locked` 检查35包；npm ci安装234包/audit0、无依赖/lock/workflow改动。保留 FastAPI/httpx 弃用、esbuild allowScripts 及大 bundle 提示。远端干净runner安装和实际 job 日志以本PR checks / 主线Page记录为准；本地绿不冒称远端已绿。
+
+新DOM每集抽1条真实样句：原public字节作为唯一受限HTTP响应，SearchPage→实际检索命中→Link/Router→WatchPage句稿→显式点听→catalog YouTube iframe请求 floor(start_s) 秒；不显示未公开/假进度/假实时播放。`fetch` 不允许任何外站URL，jsdom默认不加载iframe子资源；缺失Observer/scroll API只替身接线。不覆盖视觉、真实滚动几何、焦点遍历、手机、YouTube播放/自动播放限制或跨源故障探测。先前浏览器403仍是合并前独立门槛，本次没有重试/启动预览/更改代理或隧道。
+
+### 离线重现与审计边界
+
+默认导出id及运行覆盖仅来自生成manifest；历史审计收据 `docs/releases/pr6-jgy-013-015.audit.json` 只用于测试/复核，不进入运行选择。CI不需要原始artifacts：验证收据绑定的规范投影/public字节、所有新KP/章seq时间、原21集84资产及全部917原始知识/catalog基线。**CI没有再次验证box原始segments文件**；这些原始哈希/源身份核对属于上述本地只读取证，收据保留重现依据。
+
+在获准且有原输入的box上，可只写临时目录重现，不执行任何重建/ASR/下载：
+
+```sh
+# repo根目录；不是假设每台机器都存在此原工作目录
+ARTIFACTS=/workspace/tcm-video-kb/data/artifacts
+TMP=$(mktemp -d)
+# 这里只指定本次历史批次；默认运行/导出不读取这份命令或审计收据
+python3 web/scripts/export_transcripts.py --artifacts "$ARTIFACTS" --out "$TMP/transcripts" --ids jgy-013 jgy-014 jgy-015
+python3 web/scripts/export_knowledge_points.py --out "$TMP/knowledge" --ids jgy-013 jgy-014 jgy-015
+python3 web/scripts/export_entities.py --out "$TMP/entities" --ids jgy-013 jgy-014 jgy-015
+python3 - "$TMP" <<'PY'
+import hashlib, json, sys
+from pathlib import Path
+out = Path(sys.argv[1])
+r = json.loads(Path('docs/releases/pr6-jgy-013-015.audit.json').read_text())
+for item in r['episodes']:
+    vid = item['video_id']
+    for layer in ['transcripts', 'knowledge', 'entities']:
+        assert (out/layer/f'{vid}.json').read_bytes() == Path(f'web/public/{layer}/{vid}.json').read_bytes()
+    assert hashlib.sha256((out/'transcripts'/f'{vid}.json').read_bytes()).hexdigest() == item['projected_transcript_sha256']
+print('All three actual exporters reproduce the committed batch byte-for-byte.')
+PY
+```
+
+本批4,123句/33KP/1,522实体提及/9章，四层新增731,688字节，最大文件254,889字节；无对象存储迁移必要。总覆盖24/145，33,823句/4,563,201句稿字节；老21集84资产保持字节不变。知识1575KP/624章、CSV、catalog、图快照/嵌入文本未重写。37份既有eval删除与.superdesign保持未提交。没有knowledge-build/媒体/付费调用/云资源/新API/播放器策略/布局改变，不合main、不部署。普通revert整个PR连同清单与新增文件回滚，无数据库或存储迁移；PR-7仅为后续待办。

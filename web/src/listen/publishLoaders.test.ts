@@ -59,11 +59,11 @@ it('derives coverage from actual generated manifest, not another id list', async
   const { default: manifest } = await import('../data/publish-manifest.json');
   const { TRANSCRIPT_VIDEO_IDS } = await import('./transcriptCoverage');
   expect(TRANSCRIPT_VIDEO_IDS).toEqual(manifest.lectures.filter(r => r.has_public_transcript).map(r => r.video_id));
-  expect(TRANSCRIPT_VIDEO_IDS).toHaveLength(21);
+  expect(TRANSCRIPT_VIDEO_IDS).toHaveLength(24);
 });
 
 // Exercise the real committed release through the same HTTP validation path.
-it('accepts all 63 shipped assets without reducing the 21-episode release', async () => {
+it('accepts all 72 shipped assets in the 24-episode release', async () => {
   const { readFileSync } = await import('node:fs');
   const { default: manifest } = await import('../data/publish-manifest.json');
   for (const entry of manifest.lectures.filter(r => r.has_public_transcript)) {

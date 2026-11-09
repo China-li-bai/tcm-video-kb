@@ -1,0 +1,96 @@
+[
+ {
+  "chapter_id": "jgy-015.c01",
+  "video_id": "jgy-015",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "水气病与风水皮水正水",
+  "summary": "《金匮》水气病脉证：水肿鼓胀积水。水病多由表证失治（当用麻桂葛而误用银翘板蓝等）水内停；饮病多自内生。浅深：风水→皮水→正水/石水/黄汗。风水脉浮、骨节疼痛恶风，似麻黄/桂枝证。",
+  "start_s": 2.07,
+  "end_s": 1797.934,
+  "seg_from": 0,
+  "seg_to": 299,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "classic.jgy_ch_shui_qi_bing_mai_zheng_bing_zhi",
+   "disease.shui_qi_bing",
+   "syndrome.feng_shui",
+   "syndrome.pi_shui",
+   "syndrome.zheng_shui"
+  ],
+  "citation": {
+   "youtube_id": "ix7nI1MAfoA",
+   "url": "https://www.youtube.com/watch?v=ix7nI1MAfoA&t=2s",
+   "series": "jgy",
+   "episode": 15,
+   "title": "倪海廈《金匱要略》細分版： 14水氣病",
+   "start_s": 2.07,
+   "end_s": 1797.93
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-015.c02",
+  "video_id": "jgy-015",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "黄汗与防己黄芪",
+  "summary": "黄汗不宜妄发汗；黄芪芍药桂枝苦酒汤等。风水/皮水常用防己黄芪汤（讲中己黄芪汤）。",
+  "start_s": 1798.879,
+  "end_s": 6535.312,
+  "seg_from": 300,
+  "seg_to": 1099,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "syndrome.huang_han",
+   "formula.fang_ji_huang_qi_tang",
+   "herb.huang_qi"
+  ],
+  "citation": {
+   "youtube_id": "ix7nI1MAfoA",
+   "url": "https://www.youtube.com/watch?v=ix7nI1MAfoA&t=1798s",
+   "series": "jgy",
+   "episode": 15,
+   "title": "倪海廈《金匱要略》細分版： 14水氣病",
+   "start_s": 1798.88,
+   "end_s": 6535.31
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-015.c03",
+  "video_id": "jgy-015",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "正水甘草麻黄与阴虚调桂芍",
+  "summary": "皮水失治深入为正水（ASR泥/漓水），可用越婢加术汤、甘草麻黄汤等。阴虚证调桂枝白芍分量；肺积水与大肠相关等。",
+  "start_s": 6539.157,
+  "end_s": 11334.257,
+  "seg_from": 1100,
+  "seg_to": 1930,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "syndrome.zheng_shui",
+   "formula.gan_cao_ma_huang_tang",
+   "formula.yue_bi_tang",
+   "herb.gui_zhi",
+   "herb.shao_yao"
+  ],
+  "citation": {
+   "youtube_id": "ix7nI1MAfoA",
+   "url": "https://www.youtube.com/watch?v=ix7nI1MAfoA&t=6539s",
+   "series": "jgy",
+   "episode": 15,
+   "title": "倪海廈《金匱要略》細分版： 14水氣病",
+   "start_s": 6539.16,
+   "end_s": 11334.26
+  },
+  "review_status": "llm_read"
+ }
+]

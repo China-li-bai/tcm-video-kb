@@ -25,7 +25,7 @@ class PublishContract(unittest.TestCase):
         self.addCleanup(self.tmp.cleanup)
         self.root = Path(self.tmp.name)
         self.vid = 'shl-001'
-        self.segment = dict(seq=0, start_s=1, end_s=3, text='原句')
+        self.segment = dict(video_id=self.vid, seq=0, start_s=1, end_s=3, text='原句')
         write(self.root/'web/src/data/lectures.json', {'lectures': [dict(id=self.vid, series='shl', youtubeId='abc'), dict(id='zj-002', series='zj', youtubeId='def')]})
         for folder, key, rows in [('transcripts', 'segments', [self.segment]), ('knowledge', 'points', []), ('entities', 'mentions', [])]:
             write(self.root/f'web/public/{folder}/{self.vid}.json', dict(video_id=self.vid, **{key: rows}))
@@ -91,7 +91,7 @@ class PublishContract(unittest.TestCase):
         self.assertEqual(len(rows), 145)
         ids = {r['video_id'] for r in rows if r['has_public_transcript']}
         self.assertEqual(ids, {p.stem for p in (ROOT/'web/public/transcripts').glob('*.json')})
-        self.assertEqual(len(ids), 21)
+        self.assertEqual(len(ids), 24)
         self.assertEqual(next(r for r in rows if r['video_id']=='shl-001')['segment_count'], 3604)
 
     def test_export_missing_inputs_and_duplicate_ids_exit_nonzero(self):
@@ -114,6 +114,18 @@ class PublishContract(unittest.TestCase):
             src.write_text(''.join(json.dumps(row)+'\n' for row in rows))
             result = run(ROOT/'web/scripts/export_transcripts.py', '--artifacts', self.root, '--out', self.root/'out', '--ids', self.vid)
             self.assertNotEqual(result.returncode, 0)
+
+    def test_transcript_source_identity_missing_or_cross_lecture_fails_before_publish(self):
+        src = self.root/self.vid/'segments.jsonl'; src.parent.mkdir()
+        for video_id in [None, 'jgy-013', '../shl-001']:
+            row = {**self.segment, 'video_id': video_id}
+            if video_id is None:
+                row.pop('video_id')
+            src.write_text(json.dumps(row)+'\n')
+            result = run(ROOT/'web/scripts/export_transcripts.py', '--artifacts', self.root, '--out', self.root/'out', '--ids', self.vid)
+            with self.subTest(video_id=video_id):
+                self.assertNotEqual(result.returncode, 0, result.stdout)
+                self.assertFalse((self.root/'out'/f'{self.vid}.json').exists())
 
     def test_eligible_entity_with_missing_identity_fails(self):
         src = self.root/self.vid/'entities.jsonl'; src.parent.mkdir()
@@ -139,7 +151,7 @@ class PublishContract(unittest.TestCase):
             rows = json.loads(src.read_text())['segments']
             dest = self.root/'artifacts'/src.stem/'segments.jsonl'
             dest.parent.mkdir(parents=True)
-            dest.write_text(''.join(json.dumps(row, ensure_ascii=False)+'\n' for row in rows))
+            dest.write_text(''.join(json.dumps({'video_id': src.stem, **row}, ensure_ascii=False)+'\n' for row in rows))
         result = run(ROOT/'web/scripts/export_transcripts.py', '--artifacts', self.root/'artifacts', '--out', self.root/'transcripts')
         self.assertEqual(result.returncode, 0, result.stderr)
         for src in (ROOT/'web/public/transcripts').glob('*.json'):
@@ -154,7 +166,7 @@ class PublishContract(unittest.TestCase):
 
 
 class CitationPublicationCompatibility(unittest.TestCase):
-    def test_existing_21_knowledge_exports_remain_byte_identical(self):
+    def test_existing_knowledge_exports_remain_byte_identical(self):
         """Exercise the actual slim exporter into a temp dir, never public/ itself."""
         manifest = json.loads((ROOT/'web/src/data/publish-manifest.json').read_text())
         rows = [r for r in manifest['lectures'] if r['has_public_knowledge']]
