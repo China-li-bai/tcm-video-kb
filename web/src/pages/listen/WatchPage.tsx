@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Link, useNavigate, useParams, useSearchParams } from "react-router-dom";
+import { CheckSheet } from "../../listen/CheckSheet";
 import {
   chapterAsUtterances,
   chapterApproxMin,
@@ -41,6 +42,9 @@ export function WatchPage() {
   const [activeChapter, setActiveChapter] = useState<Chapter | null>(null);
   const [activeUtterIdx, setActiveUtterIdx] = useState(0);
   const [toast, setToast] = useState("");
+  const [checkOpen, setCheckOpen] = useState(false);
+  /** Progressive disclosure: ⋯ on active line opens 问这句/收下 (first tap still seek-only). */
+  const [moreOpen, setMoreOpen] = useState(false);
   const [playing, setPlaying] = useState(false);
   const [embedNonce, setEmbedNonce] = useState(0);
   const [seekS, setSeekS] = useState(startT);
@@ -141,6 +145,10 @@ export function WatchPage() {
   }, [activeUtterIdx, tab, hasRealScript]);
 
   useEffect(() => {
+    setMoreOpen(false);
+  }, [activeUtterIdx, videoId]);
+
+  useEffect(() => {
     if (!lecture) return;
     const active = utterances[activeUtterIdx];
     setLastWatch({
@@ -155,6 +163,9 @@ export function WatchPage() {
 
   const activeUtter = utterances[activeUtterIdx] ?? utterances[0];
   const quote = activeUtter?.text || activeChapter?.summary || lecture?.title || "";
+  const where = lecture
+    ? `${lecture.seriesLabel} · ${lecture.id}${activeUtter ? ` · 约 ${formatClock(activeUtter.t)}` : ""}`
+    : "";
 
   function flash(msg: string) {
     setToast(msg);
@@ -183,17 +194,19 @@ export function WatchPage() {
   function onPickUtter(i: number, play = true) {
     const u = utterances[i];
     if (!u) return;
+    // First touch = seek/highlight only; secondary ⋯ reveals ask/stash.
+    if (i !== activeUtterIdx) setMoreOpen(false);
     setActiveUtterIdx(i);
     seekTo(u.t, { play });
   }
 
-  function onStash(text?: string) {
+  function onStash(opts?: { text?: string; t?: number }) {
     if (!lecture) return;
     saveStashItem({
       videoId: lecture.id,
       title: activeChapter?.title || lecture.title,
-      text: text || quote,
-      t: activeUtter?.t ?? activeChapter?.start_s,
+      text: opts?.text || quote,
+      t: opts?.t ?? activeUtter?.t ?? activeChapter?.start_s,
     });
     flash("已收下，放进收获匣了");
   }
@@ -358,6 +371,7 @@ export function WatchPage() {
 
             {utterances.map((u, i) => {
               const active = i === activeUtterIdx;
+              const showMore = active && moreOpen;
               return (
                 <div
                   key={u.key}
@@ -372,10 +386,50 @@ export function WatchPage() {
                 >
                   <span className="utter-t">{formatClock(u.t)}</span>
                   <div className="utter-body">
-                    {/* PR1: first-touch = seek/play + highlight only (lyrics feel).
-                        PR2 TODO: progressive disclosure for 问这句 / 收下 (not the old 4-button row).
-                        听原讲/外链 stay as page-level fallback near the player. */}
-                    <p>{u.text}</p>
+                    <div className="utter-line">
+                      <p>{u.text}</p>
+                      {active && (
+                        <button
+                          type="button"
+                          className={moreOpen ? "utter-more open" : "utter-more"}
+                          aria-label="这句还能做什么"
+                          aria-expanded={moreOpen}
+                          title="这句还能做什么"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setMoreOpen((v) => !v);
+                          }}
+                        >
+                          ⋯
+                        </button>
+                      )}
+                    </div>
+                    {showMore && (
+                      <div className="utter-actions" role="group" aria-label="这句操作">
+                        <button
+                          type="button"
+                          className="listen-btn listen-btn-ghost utter-action-secondary"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setCheckOpen(true);
+                            setMoreOpen(false);
+                          }}
+                        >
+                          问这句
+                        </button>
+                        <button
+                          type="button"
+                          className="listen-btn listen-btn-ghost utter-action-secondary"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            onStash({ text: u.text, t: u.t });
+                            setMoreOpen(false);
+                          }}
+                        >
+                          收下
+                        </button>
+                      </div>
+                    )}
                   </div>
                 </div>
               );
@@ -413,6 +467,21 @@ export function WatchPage() {
         )}
       </section>
 
+      <CheckSheet
+        open={checkOpen}
+        quote={quote}
+        where={where}
+        onClose={() => setCheckOpen(false)}
+        onListen={() => {
+          setCheckOpen(false);
+          if (activeUtter) onPickUtter(activeUtterIdx, true);
+          else setPlaying(true);
+        }}
+        onStash={() => {
+          onStash({ text: quote, t: activeUtter?.t });
+          setCheckOpen(false);
+        }}
+      />
 
       {toast && <div className="listen-toast">{toast}</div>}
     </div>
