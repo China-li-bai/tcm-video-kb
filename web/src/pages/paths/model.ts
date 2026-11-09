@@ -3,6 +3,7 @@ import type { PathCard, PathTrack, PathsResponse } from "../../types";
 
 export type CiteItem = {
   kp_id?: string | null;
+  video_id?: string | null;
   url?: string | null;
   start_s?: number | null;
   evidence?: string | null;
@@ -66,6 +67,7 @@ export function kindZh(kind: string): string {
 function cardCite(card: PathCard): CiteItem {
   return {
     kp_id: card.kp_id,
+    video_id: card.video_id ?? null,
     start_s: card.start_s ?? null,
     evidence: card.evidence_quote ?? card.statement ?? null,
     youtube_t_url: card.youtube_t_url ?? null,
