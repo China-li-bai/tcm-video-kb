@@ -25,7 +25,8 @@ export function StaticYouTubePlayer({youtubeId, title, requestedS, requested, on
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
         onLoad={() => dispatch({type: 'load'})}
-        onError={() => dispatch({type: 'error'})}
+        // Native iframe errors do not bubble; React's iframe wiring only delegates load.
+        onErrorCapture={() => dispatch({type: 'error'})}
       /> : <button type="button" className="yt-poster" onClick={onRequest}>
         <span className="play-orb" aria-hidden>▶</span><span>点这里听</span>
       </button>}

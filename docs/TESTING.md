@@ -93,10 +93,10 @@ GitHub CI 状态以该 PR checks 为准；本地通过不代表已合并或已�
 
 - **单位/纯逻辑**：请求秒归一化、空/间隙句选择、小数句首显式行选择、iframe pending→responded/failed、失败不会被随后 load 冒充清除、状态文案不承诺播放或跳秒成功。
 - **真实组件 SSR**：MemoryRouter 中 WatchPage 的 URL t 与初始不开 iframe/无假条；真实小数章节入口；Home 从 localStorage fixture 读请求位置/深链；CheckSheet 不是人工审校措辞；StaticYouTubePlayer 生成不同 start 与原平台跳秒链接、请求未响应说明/重试、无片源不画假按钮。原发布测试还实际读取 63 份公开资产。
-- **没有运行 DOM 交互测试**：SSR 不执行 effects / 点击 / iframe load-error 回调 / IntersectionObserver。上述异步句稿到达后的 lastWatch 写入、路由来回切换、键盘/重试接线、滚动与焦点仅做代码审查，不将 reducer/SSR 的绿说成 DOM 已验证。
+- **首提交 9d23697 当时没有运行 DOM 交互测试**：SSR 不执行 effects / 点击 / iframe load-error 回调 / IntersectionObserver。当时异步句稿到达后的 lastWatch 写入、路由来回切换、键盘/重试接线、滚动与焦点仅做代码审查。后续同 PR 补测见末节；保留此历史记录，不把当时的 SSR 绿追认成 DOM 已验证。
 - **没有真实浏览器/YouTube/视觉验证**：未验证第三方可访问性、跨源失败事件、自动播放限制、跳秒是否真正落地、手机/PC 高度与文稿内滚。测试不访问 YouTube，也不伪造媒体时间，不跑真实知识构建或付费调用。
 
-可交接预览（另开终端；不是生产部署）：
+历史预览命令（不是生产部署；随后真实浏览器验收因连接拒绝/403受阻，当前不再重试，也不更改 proxy/隧道/网络控制）：
 
 ```sh
 cd /workspace/tcm-video-kb-pr4/web
@@ -105,3 +105,38 @@ npm run dev -- --host 0.0.0.0
 ```
 
 手验应覆盖手机/PC 定高和固定区、初开海报、点句/章与小数章边界、滚离所选句再返回、重试/备份链接、切集与返回首页的记录语义；iframe load 不能作为播放成功断言。CI 结果以 PR checks 及 job 日志为准，未合并/未部署；本轮不开始 PR-4。
+
+
+## PR-3 同 PR 补测：真实组件 DOM 事件 / effects
+
+2026-11-09（Asia/Shanghai），仍在 `fix/listen-honest-position` / #17 追加，不开始 PR-4，不开新 PR。用户反馈：localhost 连接拒绝，另一网络地址 Shell 200、浏览器 403；这不是通过的视觉验收。本轮没有再尝试浏览器，没有启动服务或更改 Vite host/proxy、网络控制或隧道。
+
+### RED → 修复 → GREEN
+
+1. 先新增 `watchInteraction.test.tsx`，用现有 Vitest，新增最小 dev 依赖 `jsdom@31.0.0`、`@testing-library/react@16.3.3`、其显式 peer `@testing-library/dom@10.4.2`；只有该测试文件使用 jsdom，不改变既有 Node/SSR 环境。
+2. `cd web && npm test -- --reporter=verbose`：**3 failed / 71 passed（74 项），exit 1**。真实 DOM 事件暴露两类既有缺陷：原生不冒泡 iframe error 没接到 `onError`；嵌套「⋯」按钮收到 Enter/空格冒泡到句行，意外重新请求 iframe。不是故意删实现或只靠缺模块制造 RED。
+3. 最小修复：iframe 使用 `onErrorCapture` 接收可见的原生非冒泡 error；句行键盘处理仅响应 `target === currentTarget`，子按钮自主管理激活，不触发 seek。没有新增播放策略、遥测、UI 布局或跟读。
+4. 额外保留两项行自身 Enter/空格跳秒回归，防止守卫禁掉正常键盘操作。最初构建另指出测试代码把不支持的 `exact` 传给 role-query，已修正为其标准 name 查询；不忽略类型错误。
+5. `npm ci && npm test && npm run build`：锁定安装成功、audit 0 漏洞；**76 passed / 5 文件 / 0 skipped（原 65 + 11 DOM）**；TypeScript + Vite 通过。既有大 bundle、安装脚本提示未压制。
+6. 完整严格离线 Python 命令仍 **94 passed / 0 skipped**；manifest `--check` 通过；独立发布 unittest **14/14 OK**。FastAPI/httpx 弃用警告保留。CI 结果以本次追加提交的 PR checks / job 日志为准，不拿旧提交 CI 绿替代。
+
+### 实际自动交互覆盖
+
+测试直接挂载 **真实 WatchPage、StaticYouTubePlayer、ListenHomePage**，使用真实 Router、加载器/校验/缓存、localStorage 写入效果及真实事件 handler；不 mock 播放/选中/重试/持久化业务逻辑。
+
+- 点击句子 → Router URL 请求整秒、iframe start/autoplay、原平台链接、aria-pressed 与 lastWatch 更新；再点另一句真正更换目标。
+- 点击章 → 真实已入库小数章边界选中/句稿切窗/iframe start，随后点章内小数句不退回前一句或上一章。
+- 延迟 fetch 完成 → lastWatch 仍保留 URL 请求秒，不被句首覆盖；海报按钮仍从该请求秒打开。
+- 未公开集实际模拟 HTTP 404 → 白话无句稿提示；已公开集模拟 200 HTML → 加载失败提示和明确的章节摘要标签，不冒充逐句文稿。
+- iframe 原生非冒泡 error → 失败提示；其后 load 不抹掉失败；点击重试换真实 iframe DOM 节点、保留同一目标秒并回到 pending；新 load 只说页面响应，不能确认播放/跳秒成功，不推进高亮或进度。
+- 嵌套按钮 Enter/空格不会重试或启动播放器；句行自身 Enter/空格仍可跳秒。
+- 通过合成 IntersectionObserver 回调验证「回到所选句」调用滚动但不 seek；切换真实 Router 讲次后清空旧 iframe 意图，返回讲次不假播放；回首页读到上次请求位置。
+- 操作链无假进度条、已播放/正在播放/完成等状态声明。
+
+### 隔离与仍未验证
+
+`fetch` 仅返回固定的本地小 fixture（带真实章边界），同源 JSON/404/HTML；所有请求记录断言只访问预期的三个相对资产目录，没有 live-network fallback。jsdom 默认不加载外部 subresources，iframe URL 仅检查属性、不下载 YouTube；未执行 iframe 内部代码。测试用例之间清空模块缓存/存储、卸载组件和恢复全局替身。
+
+只替换了外部 HTTP、jsdom 缺失的 scrollIntoView/IntersectionObserver 浏览器能力。后者验证调用接线，不证明真实几何、可见性或布局；没有自动化焦点遍历/屏幕阅读器验证。
+
+**合并前门槛仍未通过：** 必须在获准且可访问的真实浏览器环境完成手机/PC 定高、固定播放器/底栏、文稿内滚与所选句返回，以及实际 YouTube 自动播放限制/跳秒/失败与备份路径验收。当前仍因浏览器 403 未验证；Shell 200、jsdom 76 项和 CI 绿都不能替代它。不绕过网络控制，不自动开始 PR-4，不合 main、不部署。跨源 iframe 没有 error 时仍无法判定，load 不代表媒体成功；此次 capture 修复不消除该边界。

@@ -422,6 +422,8 @@ export function WatchPage() {
                   tabIndex={0}
                   aria-pressed={active}
                   onKeyDown={(e) => {
+                    // Nested ask/stash/more buttons own their keyboard activation, not a new seek.
+                    if (e.target !== e.currentTarget) return;
                     if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onPickUtter(i); }
                   }}
                 >
