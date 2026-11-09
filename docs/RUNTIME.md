@@ -193,3 +193,13 @@ CI 增加清单检查、独立 Python 发布契约测试与 `npm test`，保留�
 ## PR-11：题集结构与出处校验（开发栈，不是问答成绩）
 
 依赖PR-10 #22/566c0ed，仅把原`eval/retrieval/qa.jsonl`50题及真实catalog/CSV/canonical KP引用接入离线CI；无运行时接口或模型。`python3 scripts/eval/validate_qa.py --strict-kp --json`独立输出稳定`qa-validation/1`报告，失败非零。实际原50题结构/引用50通过、0错误，不是检索或医学答案通过。完整模式/误差/字段/来源诊断与未覆盖见[QA_VALIDATION.md](QA_VALIDATION.md)。原问题/知识不重写，不读或恢复37份既有eval删除，PR-12只做只读输入准备；未合main/部署，浏览器403等独立门槛保留。
+
+## PR-12 display labels versus retained catalog
+
+The shared `web/src/listen/lectures.ts` reader projects only nj's runtime
+`seriesLabel` to 黄帝内经, supported by both retained source configs and all ten
+original source titles; its blurb simply follows those titles. Legacy directory
+now uses that same reader. The historical raw catalog bytes (including its old
+incorrect UI label 难经) and original titles/IDs/URLs are intentionally untouched;
+no data/storage migration, search alias, transcript publication or new book-content
+claim. See [SERIES_DISPLAY.md](SERIES_DISPLAY.md) for evidence and rollback.

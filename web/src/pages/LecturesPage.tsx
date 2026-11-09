@@ -1,17 +1,7 @@
 import { useMemo, useState } from "react";
-import catalog from "../data/lectures.json";
+import { getAllLectures } from "../listen/lectures";
 
-type Lecture = {
-  id: string;
-  title: string;
-  series: string;
-  seriesLabel: string;
-  chapters: number;
-  youtubeId: string | null;
-  duration: string | null;
-};
-
-const lectures = (catalog as { lectures?: Lecture[] }).lectures ?? [];
+const lectures = getAllLectures();
 
 export function LecturesPage() {
   const [q, setQ] = useState("");

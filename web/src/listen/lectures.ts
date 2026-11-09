@@ -1,7 +1,14 @@
 import catalog from "../data/lectures.json";
 import type { Lecture } from "./types";
 
-const lectures = ((catalog as { lectures?: Lecture[] }).lectures ?? []) as Lecture[];
+// Display correction only. Retained configs/series.yaml (book_id huangdineijing),
+// configs/sources/youtube_renji.yaml and all ten original source titles agree.
+// Preserve the historical catalog bytes and every source/ID field; do not use
+// its erroneous label as a search alias. See docs/SERIES_DISPLAY.md.
+const SERIES_DISPLAY_LABEL: Readonly<Record<string, string>> = { nj: "黄帝内经" };
+const lectures: Lecture[] = ((catalog as { lectures?: Lecture[] }).lectures ?? []).map(
+  (lecture) => ({ ...lecture, seriesLabel: SERIES_DISPLAY_LABEL[lecture.series] ?? lecture.seriesLabel }),
+);
 
 export function getAllLectures(): Lecture[] {
   return lectures;
@@ -24,7 +31,7 @@ const SERIES_BLURB: Record<string, string> = {
   jgy: "杂病门径：痰饮、虚劳、妇人诸病，跟原文走一遭。",
   zj: "经络穴位与针法：把人纪针灸一路听下来。",
   bc: "神农本草经：药性与配伍，按篇细听。",
-  nj: "难经脉络：脉诊与脏腑，把难处拆开听。",
+  nj: "黄帝内经：按原讲次标题，逐集听原讲。",
 };
 
 export function getSeriesGroups(): SeriesGroup[] {
