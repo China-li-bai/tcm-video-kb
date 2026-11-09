@@ -132,7 +132,9 @@ export function pickChipsNear(
 ): EntityMention[] {
   if (!mentions.length) return [];
   const nearWindow = opts?.nearWindowS ?? CHIP_NEAR_S;
-  const max = opts?.max ?? MAX_CHIPS;
+  // A cap counts whole items; zero/invalid caps must not leak a first result.
+  const max = Math.floor(opts?.max ?? MAX_CHIPS);
+  if (!Number.isFinite(max) || max <= 0) return [];
   const lo = Math.max(0, startS);
   const hi = Math.max(lo + 0.5, endS ?? startS + 4);
 

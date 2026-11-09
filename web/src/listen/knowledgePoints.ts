@@ -97,7 +97,7 @@ function distance(p: KnowledgePoint, t: number): number {
 /**
  * Pick claims near the current sentence time.
  * Prefer overlapping windows, then nearest within NEAR_WINDOW_S; cap at MAX_CLAIMS.
- * Empty array = honest「还没核对过」— never invent options.
+ * Empty array = honest「附近没有收录主张」— never invent options.
  */
 export function pickClaimsNear(
   points: KnowledgePoint[],
@@ -106,7 +106,9 @@ export function pickClaimsNear(
 ): KnowledgePoint[] {
   if (!points.length) return [];
   const nearWindow = opts?.nearWindowS ?? NEAR_WINDOW_S;
-  const max = opts?.max ?? MAX_CLAIMS;
+  // A cap counts whole items; zero/invalid caps must not leak a first result.
+  const max = Math.floor(opts?.max ?? MAX_CLAIMS);
+  if (!Number.isFinite(max) || max <= 0) return [];
   const time = Math.max(0, t);
 
   const scored = points
