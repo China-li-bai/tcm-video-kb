@@ -1,0 +1,89 @@
+[
+ {
+  "chapter_id": "jgy-008.c01",
+  "video_id": "jgy-008",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "肺痿成因·津伤与误滋阴",
+  "summary": "金匮第七篇肺痿肺痈咳嗽上气。肺痿为肺叶萎；多因汗吐消渴便难下利等津液亡失，肺与大肠表里。寸口数、咳吐浊唾为热痿；误以温病阴虚法治咳可造肺痿。",
+  "start_s": 0.25,
+  "end_s": 720.795,
+  "seg_from": 0,
+  "seg_to": 129,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "syndrome.fei_wei",
+   "concept.jin_ye"
+  ],
+  "citation": {
+   "youtube_id": "_DWK0iKYr3g",
+   "url": "https://www.youtube.com/watch?v=_DWK0iKYr3g&t=0s",
+   "series": "jgy",
+   "episode": 8,
+   "title": "倪海廈《金匱要略》細分版： 07肺痿肺癰咳嗽上氣病",
+   "start_s": 0.25,
+   "end_s": 720.79
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-008.c02",
+  "video_id": "jgy-008",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "肺中冷·甘草干姜汤",
+  "summary": "吐涎沫清稀非浓痰、不渴、小便数属肺中冷，甘草干姜汤温之；口燥渴则属消渴分上中下三消。",
+  "start_s": 721.11,
+  "end_s": 1443.085,
+  "seg_from": 130,
+  "seg_to": 271,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "formula.gan_cao_gan_jiang_tang",
+   "syndrome.fei_wei"
+  ],
+  "citation": {
+   "youtube_id": "_DWK0iKYr3g",
+   "url": "https://www.youtube.com/watch?v=_DWK0iKYr3g&t=721s",
+   "series": "jgy",
+   "episode": 8,
+   "title": "倪海廈《金匱要略》細分版： 07肺痿肺癰咳嗽上氣病",
+   "start_s": 721.11,
+   "end_s": 1443.09
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-008.c03",
+  "video_id": "jgy-008",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "肺痈咳嗽上气与麦门冬汤",
+  "summary": "肺气肿等久咳方有麻黄类、泽漆汤等；篇后麦门冬汤治火逆上气等。",
+  "start_s": 1443.57,
+  "end_s": 3011.067,
+  "seg_from": 272,
+  "seg_to": 569,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "formula.mai_men_dong_tang",
+   "formula.ma_huang_tang"
+  ],
+  "citation": {
+   "youtube_id": "_DWK0iKYr3g",
+   "url": "https://www.youtube.com/watch?v=_DWK0iKYr3g&t=1443s",
+   "series": "jgy",
+   "episode": 8,
+   "title": "倪海廈《金匱要略》細分版： 07肺痿肺癰咳嗽上氣病",
+   "start_s": 1443.57,
+   "end_s": 3011.07
+  },
+  "review_status": "llm_read"
+ }
+]
