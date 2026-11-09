@@ -1,6 +1,6 @@
 # 当前运行架构与发布契约
 
-公网审查基线：`main@cc4c7f6`（2026-11-09，Asia/Shanghai）。本文件同时记录 PR-1–6 开发栈；下表为当前分支资产，**不是公网已生效**。新增行为须审阅合并并另行授权部署后才影响公网。`ARCHITECTURE.md` 是目标设计稿，不是运行现状。
+公网审查基线：`main@cc4c7f6`（2026-11-09，Asia/Shanghai）。本文件同时记录 PR-1–7 开发栈；下表为当前分支资产，**不是公网已生效**。新增行为须审阅合并并另行授权部署后才影响公网。`ARCHITECTURE.md` 是目标设计稿，不是运行现状。
 
 ## 运行与数据流
 
@@ -34,7 +34,7 @@ python3 -m unittest discover -s tests/publish -v
 
 输入为 `lectures.json`、`data/knowledge` 的实际文件及四个发布目录，不依赖本机 artifacts。清单不是第二份手工名单：前端 `TRANSCRIPT_VIDEO_IDS` 和三份导出脚本的默认 id 都由清单派生，原来的重复名单已移除。新增切片应先显式 `--ids` 导出/准备四层，再生成清单。
 
-每条讲次记录目录/知识/公开层的布尔覆盖、知识点/章节/句子计数、播放来源；公开资产带相对路径、字节数、SHA-256 与条数。清单无生成时间、绝对路径或自引用 git SHA，生成可重复。`content_sha256` 是去掉该字段后的清单对象按 UTF-8、排序 key、紧凑 JSON 编码的 SHA-256；未来发布标识可组合 `git SHA + content_sha256`。`/health` 本 PR 仍只返回 status，修订号待 PR-7。
+每条讲次记录目录/知识/公开层的布尔覆盖、知识点/章节/句子计数、播放来源；公开资产带相对路径、字节数、SHA-256 与条数。清单无生成时间、绝对路径或自引用 git SHA，生成可重复。`content_sha256` 是去掉该字段后的清单对象按 UTF-8、排序 key、紧凑 JSON 编码的 SHA-256；未来发布标识可组合 `git SHA + content_sha256`。main 审查时 `/health` 仍只有 status；本开发栈 PR-7 已增加下述构建修订号，未部署。
 
 失败规则：
 
@@ -147,4 +147,34 @@ CI 增加清单检查、独立 Python 发布契约测试与 `npm test`，保留�
 
 完整本地严格离线 Python **148**、发布契约 **16**、前端 **128**（11 文件）、manifest 与 TS/Vite 均通过；命令/RED/重现见 TESTING.md。原 21 集 84 资产、原始知识 917 文件、catalog 逐字节保护通过。真实浏览器/手机PC视觉/YouTube 仍因先前 403 未验，不重试、不改成 pass；外部 iframe 无遥测，本次只是请求 URL 秒数。服务端真实404、缓存头/旧 bundle 行为未验证。保留合并前获准浏览器检查门槛；上线需另行授权。
 
-回滚为普通 revert 整个 PR-6（12 新文件、清单、源身份 guard 与配套测试/文档一起回滚）；无数据库或存储迁移。PR-7 health 修订号仍待后续任务安排，本次未开始。
+回滚为普通 revert 整个 PR-6（12 新文件、清单、源身份 guard 与配套测试/文档一起回滚）；无数据库或存储迁移。PR-6 交付时 PR-7 仍待办；随后新任务的 PR-7 结果见下节，不追认成 PR-6 已实现。
+
+
+## PR-7：构建身份与 health（开发栈，未合并 / 未部署）
+
+依赖 #20 / `90845dc`，head `feat/health-build-revision`；只改既有 Python Worker 的构建元信息和 health，不做 PR-8 或新资源。`services/worker/build_metadata.py` 是唯一生产者，读取实际生成清单并重算验证原资产/清单一致性；`build.sh` 完成原 vendor、graph snapshot/embed、npm ci、TS/Vite 后，验证 `web/dist` 三层公开JSON的字节hash，再生成 **忽略提交的 `services/worker/src/build_info.py`**。该模块只有 `BUILD_INFO` 固定primitive字典，随既有Python模块打包方式由entry导入，传入create_app一次校验/复制；请求时不查git、不读环境、不扫知识库。不写硬编码commit，不以时间戳代替hash，不改wrangler/生产配置。
+
+| health字段 | 含义与边界 |
+|---|---|
+| status | 保留 `ok`；只表示该health handler响应，不证明内容全可用、图/YouTube/网络/整站健康或部署成功 |
+| git_sha | 构建最终注入时该checkout的完整小写Git HEAD（40或64 hex）；无git、非本root仓库、检测失败、未注入或非法值为 `unknown`。不是最终部署回执；CI合并ref可能不同于PR head |
+| git_dirty | 标准git status含tracked改动/删除/未忽略untracked；true不是精确干净提交，false仅该次检测为干净，null为未知。无有效git_sha不宣称clean。保留eval删除/.superdesign，因此本box的真实采集会是true，绝不忽略它们造clean |
+| content_revision | 已校验 `publish-manifest.json.content_sha256`，同输入重复一致，公开资产变化须重生成清单并改变hash；缺失/非法运行注入为unknown。只覆盖该清单定义的发布层/覆盖/计数，不是全部源文件、JS/CSS、图快照或媒体的总hash |
+
+缺schema/形状错误按unknown；合法schema内仅允许上述字段、严格hash和bool，额外status/token/path全部丢弃，捕获后不受外部dict修改影响。构建清单缺失/过期、dist缺资产/字节不一致则非零，不注入假版本。脚本在虚拟环境检查之前清除旧生成模块，早期失败/前端失败不遗留上次“成功”身份；任何构建失败都不得部署。standalone生成CLI不代替完整构建；不承诺工作区并发修改时的事务快照，构建期间应冻结输入。
+
+无注入的本地API/Worker入口返回 `status=ok, git_sha=unknown, git_dirty=null, content_revision=unknown`。下例是**临时无git源码副本离线构建的测试契约输出，不是生产观测**：
+
+```json
+{"status":"ok","git_sha":"unknown","git_dirty":null,"content_revision":"129c0907a299f5018912f46de8de7f4482dca69cf1c84035b0a2e17a918e3d8e"}
+```
+
+本地173严格离线Python（148+25）/16发布/128前端/manifest/TS-Vite通过。临时源码树实际完整运行build.sh（npm离线缓存），重复生成身份一致；实际非editable API wheel包含新module/app相同源码。构建原有graph命令仅写临时副本，**本checkout的原知识、24集资产、清单、图快照/嵌入文本不改**。API vendor两源码同步，已有一致性测试通过。详细RED/fixture与CI边界见TESTING.md；远端以PR检查/实际job日志为准。
+
+本轮没有运行pywrangler部署、云端Python/Pyodide或真实浏览器；entry测试只替身workers.asgi包装，不冒称云端SDK实测。手机/PC视觉、YouTube与403门槛保持未验。回滚整个PR-7的构建/入口/API/vendor/测试文档，health回原status；旧生成模块应移除或从旧版本重新构建，无数据库/数据迁移。
+
+### PR-8仅评估测量前提，未实现
+
+本次只读清单测得24集句稿4,563,201字节，最大shl-003为602,420字节；未达原方案约15MB总量条件。未核验官方单文件限额；不能把旧runbook的25MiB当新查实事实。没有目标手机/网络/下载/渲染等待测量，也没有确认“只传40条、不传整集”的新产品需求，所以不能预设静态索引应做，更不能据总量小就证明手机体验良好。
+
+后续须在获准可访问环境记录目标手机/浏览器、真实网络、冷/热缓存：搜索提交→各请求/最后句稿→首次及完整结果时间，HTTP次数/传输与解压字节、TTFB/下载、JSON解析/匹配/渲染CPU与长任务/内存；分离首搜、复搜、不同关键词与最大40命中等场景，保存可复核测量，再按原条件决策是否生成静态索引。不绕过当前403，不加采集服务/索引/数据库；由后续任务安排。

@@ -16,3 +16,6 @@ services/worker/.venv-workers/
 services/worker/python_modules/
 services/worker/.wrangler/
 services/worker/node_modules/
+
+# Build-specific identity, imported by Worker; regenerate, never commit a stale SHA.
+/services/worker/src/build_info.py
