@@ -1,10 +1,11 @@
 import { useEffect, useMemo, useState, type ReactNode } from "react";
-import { Link, useOutletContext } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { ApiError, fetchPaths } from "../api/client";
+import { ToolFocusBar } from "../layout/ToolFocusBar";
+import { useToolFocus } from "../layout/useToolFocus";
 import { CiteLinks, formatT, watchHrefFromCite } from "../panel/format";
 import { ErrorState } from "../panel/ErrorState";
 import { HeldList } from "../panel/HeldList";
-import type { ShellContext } from "../layout/AppShell";
 import {
   buildPathsViewModel,
   evidenceCount,
@@ -16,10 +17,18 @@ import {
   type UiTrack,
 } from "./paths/model";
 
+const PATHS_FOCUS_DEFAULT = "syndrome.tai_yang_bing";
+
+const PATHS_PRESETS = [
+  { label: "太阳病", focus: "syndrome.tai_yang_bing" },
+  { label: "太阳中风", focus: "syndrome.tai_yang_zhong_feng" },
+  { label: "桂枝汤", focus: "formula.gui_zhi_tang" },
+] as const;
+
 type ViewMode = "cards" | "compare";
 
 export function PathsPage() {
-  const { focus } = useOutletContext<ShellContext>();
+  const { focus, setFocus } = useToolFocus(PATHS_FOCUS_DEFAULT);
   const [vm, setVm] = useState<PathsViewModel | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
@@ -74,9 +83,23 @@ export function PathsPage() {
   }
 
   return (
-    <div className="paths-page">
+    <div className="listen-tool-page listen-tool-page--scroll">
+      <ToolFocusBar
+        title="路径分轨"
+        lead="同权并列多条讲法 · 不是排行，也不是诊断"
+        focus={focus}
+        onFocus={setFocus}
+        presets={PATHS_PRESETS}
+        sibling={{
+          to: `/graph?focus=${encodeURIComponent(
+            focus.startsWith("formula.") ? focus : "formula.gui_zhi_tang",
+          )}`,
+          label: "看关系图 →",
+        }}
+      />
+      <div className="paths-page paths-page--in-desk">
       {loading && <p className="status">正在读取路径…</p>}
-      {error && <ErrorState title="路径接口不可用" detail={error} />}
+      {error && <ErrorState title="路径暂时打不开" detail={error} />}
       {vm && (
         <>
           <div className="paths-toolbar" role="region" aria-label="分轨与筛选">
@@ -132,13 +155,13 @@ export function PathsPage() {
             <p className="data-origin muted">
               {vm.usedDemoSupplement && (
                 <span>
-                  含原型演示补充（桂枝汤 tracks / hypotheses / 症芯片）· cite 来自 seed 真实 t=
+                  含演示补充路径 · 出处秒数来自讲课种子
                 </span>
               )}
               {vm.usedDemoSupplement && vm.usedApi && " · "}
-              {vm.usedApi && <span>含接口 GET /graph/paths 证轨卡</span>}
+              {vm.usedApi && <span>含接口返回的证轨</span>}
               {!vm.usedDemoSupplement && !vm.usedApi && (
-                <span>当前焦点下接口无证轨；无演示补充可合并</span>
+                <span>这一焦点下还没有可并列的路径</span>
               )}
               {vm.disclaimer ? ` · ${vm.disclaimer}` : null}
             </p>
@@ -205,6 +228,7 @@ export function PathsPage() {
           <HeldList held={vm.held} />
         </>
       )}
+      </div>
     </div>
   );
 }
