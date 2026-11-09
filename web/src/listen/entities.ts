@@ -1,3 +1,5 @@
+import { fetchPublishedRows, isNumber, isText } from "./publishAssets";
+
 export type EntityMention = {
   entity_id: string;
   label: string;
@@ -66,33 +68,6 @@ export const CHIP_NEAR_S = 6;
 /** Max chips on the active sentence. */
 export const MAX_CHIPS = 3;
 
-function normalize(videoId: string, data: EntitiesFile): EntitiesFile {
-  const mentions = (Array.isArray(data.mentions) ? data.mentions : [])
-    .filter(
-      (m) =>
-        m &&
-        typeof m.entity_id === "string" &&
-        m.entity_id &&
-        typeof m.label === "string" &&
-        m.label.trim(),
-    )
-    .map((m) => {
-      const start = Number(m.start_s) || 0;
-      let end = Number(m.end_s) || start;
-      if (end < start) end = start;
-      return {
-        entity_id: String(m.entity_id),
-        label: String(m.label).trim(),
-        type: String(m.type || ""),
-        start_s: start,
-        end_s: end,
-        seq: m.seq == null ? null : Number(m.seq),
-      };
-    })
-    .sort((a, b) => a.start_s - b.start_s || a.end_s - b.end_s);
-  return { video_id: data.video_id || videoId, mentions };
-}
-
 /** Fetch slim public entities JSON; caches success and 404. */
 export async function loadEntities(
   videoId: string,
@@ -104,17 +79,19 @@ export async function loadEntities(
 
   const job = (async () => {
     try {
-      const res = await fetch(`/entities/${encodeURIComponent(videoId)}.json`);
-      if (!res.ok) {
+      const rows = await fetchPublishedRows(
+        `/entities/${encodeURIComponent(videoId)}.json`, videoId, "mentions",
+        row => isText(row.entity_id) && isText(row.label) && isText(row.type) &&
+          (row.seq == null || (isNumber(row.seq) && Number.isInteger(row.seq) && row.seq >= 0)),
+      );
+      if (!rows || new Set(rows.map(r => `${r.entity_id}:${r.start_s}`)).size !== rows.length) {
         cache.set(videoId, null);
         return null;
       }
-      const data = (await res.json()) as EntitiesFile;
-      if (!data || !Array.isArray(data.mentions)) {
-        cache.set(videoId, null);
-        return null;
-      }
-      const normalized = normalize(videoId, data);
+      const normalized: EntitiesFile = {
+        video_id: videoId,
+        mentions: (rows as EntityMention[]).sort((a, b) => a.start_s - b.start_s || a.end_s - b.end_s),
+      };
       cache.set(videoId, normalized);
       return normalized;
     } catch {

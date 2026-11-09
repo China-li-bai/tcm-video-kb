@@ -1,3 +1,5 @@
+import { fetchPublishedRows, isNumber, isText } from "./publishAssets";
+
 export type Segment = {
   seq: number;
   start_s: number;
@@ -55,27 +57,16 @@ export async function loadTranscript(videoId: string): Promise<TranscriptFile | 
 
   const job = (async () => {
     try {
-      const res = await fetch(`/transcripts/${encodeURIComponent(videoId)}.json`);
-      if (!res.ok) {
+      const rows = await fetchPublishedRows(
+        `/transcripts/${encodeURIComponent(videoId)}.json`, videoId, "segments",
+        row => isNumber(row.seq) && Number.isInteger(row.seq) && row.seq >= 0 && isText(row.text),
+      );
+      if (!rows?.length || new Set(rows.map(r => r.seq)).size !== rows.length ||
+          rows.some((row, i) => i > 0 && Number(row.start_s) < Number(rows[i - 1].start_s))) {
         cache.set(videoId, null);
         return null;
       }
-      const data = (await res.json()) as TranscriptFile;
-      if (!data || !Array.isArray(data.segments)) {
-        cache.set(videoId, null);
-        return null;
-      }
-      const normalized: TranscriptFile = {
-        video_id: data.video_id || videoId,
-        segments: data.segments
-          .filter((s) => s && typeof s.text === "string" && s.text.trim())
-          .map((s, i) => ({
-            seq: typeof s.seq === "number" ? s.seq : i,
-            start_s: Number(s.start_s) || 0,
-            end_s: Number(s.end_s) || Number(s.start_s) || 0,
-            text: String(s.text).trim(),
-          })),
-      };
+      const normalized: TranscriptFile = { video_id: videoId, segments: rows as Segment[] };
       cache.set(videoId, normalized);
       return normalized;
     } catch {

@@ -10,34 +10,15 @@ from __future__ import annotations
 
 import argparse
 import json
+import sys
 from pathlib import Path
+
+from export_common import export_batch
+from publish_manifest import public_ids, require, validate_window
 
 ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_KNOWLEDGE = ROOT / "data" / "knowledge"
 DEFAULT_OUT = ROOT / "web" / "public" / "entities"
-DEFAULT_IDS = [
-    "shl-001",
-    "shl-002",
-    "shl-003",
-    "shl-004",
-    "shl-005",
-    "shl-006",
-    "shl-007",
-    "shl-008",
-    "jgy-001",
-    "jgy-002",
-    "jgy-003",
-    "jgy-004",
-    "jgy-005",
-    "jgy-006",
-    "jgy-007",
-    "jgy-008",
-    "jgy-009",
-    "jgy-010",
-    "jgy-011",
-    "jgy-012",
-    "bc-001",
-]
 
 # Entity.type values we surface as chips. Others (person/book/method/concept/…)
 # stay out — quiet beats noisy.
@@ -81,8 +62,7 @@ def export_one(vid: str, knowledge: Path, out_dir: Path) -> bool:
                 continue
             entity_id = str(row.get("entity_id") or "").strip()
             label = str(row.get("canonical") or "").strip()
-            if not entity_id or not label:
-                continue
+            require(bool(entity_id) and bool(label), "eligible entity missing identity/label")
             # Skip draft / non-lexicon ids even if flagged oddly.
             if entity_id.startswith("new."):
                 continue
@@ -92,13 +72,9 @@ def export_one(vid: str, knowledge: Path, out_dir: Path) -> bool:
                     continue
                 if m.get("asr_uncertain"):
                     continue
-                try:
-                    start_s = float(m["start_s"])
-                    end_s = float(m["end_s"])
-                except (KeyError, TypeError, ValueError):
-                    continue
-                if end_s < start_s:
-                    start_s, end_s = end_s, start_s
+                validate_window(m)
+                start_s = m["start_s"]
+                end_s = m["end_s"]
                 mentions.append(
                     {
                         "entity_id": entity_id,
@@ -130,18 +106,15 @@ def export_one(vid: str, knowledge: Path, out_dir: Path) -> bool:
     return True
 
 
-def main() -> None:
+def main() -> int:
     p = argparse.ArgumentParser()
     p.add_argument("--knowledge", type=Path, default=DEFAULT_KNOWLEDGE)
     p.add_argument("--out", type=Path, default=DEFAULT_OUT)
-    p.add_argument("--ids", nargs="*", default=DEFAULT_IDS)
+    p.add_argument("--ids", nargs="*", default=None)
     args = p.parse_args()
-    ok = 0
-    for vid in args.ids:
-        if export_one(vid, args.knowledge, args.out):
-            ok += 1
-    print(f"done: {ok}/{len(args.ids)}")
+    ids = args.ids if args.ids is not None else public_ids("entities")
+    return export_batch(ids, args.knowledge, args.out, "entities", export_one)
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

@@ -1,3 +1,5 @@
+import { fetchPublishedRows, isNumber, isText } from "./publishAssets";
+
 export type KnowledgePoint = {
   kp_id: string;
   video_id: string;
@@ -42,28 +44,6 @@ export const NEAR_WINDOW_S = 45;
 /** Max claims shown in「问这句」sheet. */
 export const MAX_CLAIMS = 3;
 
-function normalize(videoId: string, data: KnowledgeFile): KnowledgeFile {
-  const points = (Array.isArray(data.points) ? data.points : [])
-    .filter((p) => p && typeof p.statement === "string" && p.statement.trim())
-    .map((p, i) => {
-      const start = Number(p.start_s) || 0;
-      let end = Number(p.end_s) || start;
-      if (end < start) end = start;
-      return {
-        kp_id: String(p.kp_id || `${videoId}.kp${i}`),
-        video_id: String(p.video_id || videoId),
-        type: String(p.type || "claim"),
-        statement: String(p.statement).trim(),
-        evidence_quote: String(p.evidence_quote || "").trim(),
-        start_s: start,
-        end_s: end,
-        confidence: Number(p.confidence) || 0,
-      };
-    })
-    .sort((a, b) => a.start_s - b.start_s || a.end_s - b.end_s);
-  return { video_id: data.video_id || videoId, points };
-}
-
 /** Fetch slim public knowledge JSON; caches success and 404. */
 export async function loadKnowledgePoints(
   videoId: string,
@@ -75,17 +55,21 @@ export async function loadKnowledgePoints(
 
   const job = (async () => {
     try {
-      const res = await fetch(`/knowledge/${encodeURIComponent(videoId)}.json`);
-      if (!res.ok) {
+      const rows = await fetchPublishedRows(
+        `/knowledge/${encodeURIComponent(videoId)}.json`, videoId, "points",
+        row => isText(row.kp_id) && row.kp_id.startsWith(videoId + ".") &&
+          row.video_id === videoId && isText(row.type) && isText(row.statement) &&
+          typeof row.evidence_quote === "string" && isNumber(row.confidence) &&
+          row.confidence >= 0 && row.confidence <= 1,
+      );
+      if (!rows || new Set(rows.map(r => r.kp_id)).size !== rows.length) {
         cache.set(videoId, null);
         return null;
       }
-      const data = (await res.json()) as KnowledgeFile;
-      if (!data || !Array.isArray(data.points)) {
-        cache.set(videoId, null);
-        return null;
-      }
-      const normalized = normalize(videoId, data);
+      const normalized: KnowledgeFile = {
+        video_id: videoId,
+        points: (rows as KnowledgePoint[]).sort((a, b) => a.start_s - b.start_s || a.end_s - b.end_s),
+      };
       cache.set(videoId, normalized);
       return normalized;
     } catch {

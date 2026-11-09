@@ -11,6 +11,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v5
+      - run: python3 web/scripts/publish_manifest.py --check
+      - run: python3 -m unittest discover -s tests/publish -v
       - run: uv sync
       - run: uv run pytest -q tests/unit/test_draft_edges.py tests/unit/test_api_graph.py
 
@@ -24,6 +26,8 @@ jobs:
           cache: npm
           cache-dependency-path: web/package-lock.json
       - run: npm ci
+        working-directory: web
+      - run: npm test
         working-directory: web
       - run: npm run build
         working-directory: web

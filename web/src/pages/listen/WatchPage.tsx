@@ -1,3 +1,4 @@
+import { hasPublicTranscript } from "../../listen/transcriptCoverage";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Link, useNavigate, useParams, useSearchParams } from "react-router-dom";
 import { CheckSheet } from "../../listen/CheckSheet";
@@ -65,6 +66,7 @@ export function WatchPage() {
   const [kpPoints, setKpPoints] = useState<KnowledgePoint[] | null>(null);
   const [kpLoading, setKpLoading] = useState(true);
   const [entityMentions, setEntityMentions] = useState<EntityMention[] | null>(null);
+  const [entitiesLoading, setEntitiesLoading] = useState(true);
   const [chipEntity, setChipEntity] = useState<EntityMention | null>(null);
   /** True when the active sentence is scrolled out of view — show 「回到正在播放」. */
   const [awayFromActive, setAwayFromActive] = useState(false);
@@ -103,10 +105,12 @@ export function WatchPage() {
   useEffect(() => {
     let cancelled = false;
     setEntityMentions(null);
+    setEntitiesLoading(true);
     setChipEntity(null);
     loadEntities(videoId).then((file) => {
       if (cancelled) return;
       setEntityMentions(file?.mentions ?? null);
+      setEntitiesLoading(false);
     });
     return () => {
       cancelled = true;
@@ -437,6 +441,12 @@ export function WatchPage() {
 
         {tab === "script" && (
           <div className="utter-stream">
+            {!transcriptLoading && !hasRealScript && hasPublicTranscript(videoId) && (
+              <div className="empty-inline" role="status">这集的句级文稿暂时没能打开。先听原讲；稍后刷新再试。下面若有章节摘要，它不是逐句原文。</div>
+            )}
+            {!entitiesLoading && entityMentions === null && hasPublicTranscript(videoId) && (
+              <div className="empty-inline" role="status">这集的词条提示暂时没能打开，不影响听原讲。</div>
+            )}
             {transcriptLoading && <div className="empty-inline">文稿加载中…</div>}
 
             {showScriptEmpty && (
@@ -585,6 +595,7 @@ export function WatchPage() {
         t={askT}
         claims={nearbyClaims}
         claimsLoading={kpLoading}
+        claimsUnavailable={!kpLoading && kpPoints === null}
         onClose={() => setCheckOpen(false)}
         onListen={() => {
           setCheckOpen(false);
