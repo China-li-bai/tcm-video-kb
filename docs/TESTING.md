@@ -385,3 +385,59 @@ are not skipped or represented as new failures. No new dependency/lockfile edits
 These offline/jsdom tests do not prove visual/mobile layout, real File picker or
 download delivery, cross-process atomicity, browser eviction or actual YouTube
 playback. Those remain separate premerge checks in an authorized reachable browser.
+
+## PR-11: tracked QA schema/reference validation, NOT retrieval scoring
+
+Base `feat/local-learning-backup@566c0ed` (#22). Actual unchanged input is
+`eval/retrieval/qa.jsonl`:50 records/18429 bytes, SHA256
+`dc83fcc9cbf97c9ffd8d8bfb67e0480e2420dcdbad3684492d5b51515edf3097`.
+Contract, CLI/report/modes and limits: [QA_VALIDATION.md](QA_VALIDATION.md).
+
+Genuine pre-implementation RED:
+
+- `uv run --no-sync pytest -q tests/unit/test_qa_validation.py tests/ci/test_ci_contract.py`:
+  **4 failed /5 passed**, exit1. Existing CLI actually returned0 and printed OK
+  for empty, NaN and bool-second fixtures; CI had no QA gate. No code was broken
+  to manufacture these failures.
+- Later contract suite also failed primarily because the new `validate_qa`
+  report interface was absent; those are interface RED, not dozens of observed
+  baseline data defects. One reversed-interval fixture initially expected the
+  start field instead of the diagnosed end field; corrected as a test assertion,
+  not product RED. Missing lecture field diagnostics were completed.
+- Source review tests before fixes: **1 failed** self-consistent but wrong
+  YouTube ID/URL; then **2 failed** wrong/ambiguous URL seconds. Added catalog
+  comparison and source-second checks; real50 still pass with historical
+  0.05s rounding allowance. No original data rewritten to pass. One further genuine diagnostic RED exposed
+  CSV parse errors reported at line0; now reports the physical CSV parser line.
+  A final shared-source cache regression was genuinely RED (1 failed): a later
+  question could be counted valid after a malformed native file was cached.
+  Per-file integrity now invalidates every reference to that corrupt source.
+  Final focused suite: **70 passed** (64 QA cases +6 CI contract cases).
+
+Actual strict CLI ran twice, output byte-identical:
+`python3 scripts/eval/validate_qa.py --strict-kp --json` → exit0, **50/50 valid,
+0 errors,50 KP/50 unique KP/37 lectures/0 video-only**,40 hashed inputs. Series
+shl15/jgy13/zj12/nj5/bc5. This is declared schema/reference consistency ONLY;
+`answer_quality=not_evaluated`, `retrieval_metrics=null`.
+
+Full regression uses the unchanged offline gate and all old tests:
+
+```sh
+uv sync --locked
+uv run --no-sync pytest -q -ra --strict-offline --disable-socket --allow-unix-socket tests/unit tests/ci
+python3 -m unittest discover -s tests/publish -v
+python3 web/scripts/publish_manifest.py --check
+cd web && npm ci && npm test -- --reporter=verbose && npm run build
+```
+
+Local final result: **238 Python passed /0 skipped** (173 existing +64 QA +1 CI
+contract), **16 publish OK**, manifest checked, **193 frontend passed /13 files
+/0 skipped**, `tsc --noEmit` +Vite build passed. `uv sync --locked` checked35
+packages; clean `npm ci` installed234/audited235 packages, zero vulnerabilities.
+Warnings retained: FastAPI/httpx deprecations and existing Vite large-bundle warning.
+Remote CI evidence is recorded in the PR/Page after the actual jobs complete;
+local success alone is not a remote CI claim.
+
+No original knowledge/questions/public assets/graph or dependencies changed,
+no model/retrieval scoring/knowledge-build, no skipped tests/continue-on-error.
+Real browser/mobile/download/YouTube remain independent unverified gates.

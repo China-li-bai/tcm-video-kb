@@ -189,3 +189,7 @@ CI 增加清单检查、独立 Python 发布契约测试与 `npm test`，保留�
 - 写入前核对预览快照，先保存本机`renji.listen.importRecovery.v1`原始前后状态。失败尽力逐字节回滚；若恢复/清理失败保留原始journal，收获匣提供下载原记录、重试恢复或明确保留当前并清理。损坏/拒读/空间不足不静默导出空数据或清空原记录。
 - localStorage跨key不是原子事务，无跨标签CAS保证；关闭并行写入并先下载备份。浏览器清除/驱逐、设备故障、持久拒绝或并发更新仍可能妨碍恢复，不能承诺总能恢复。普通旧收下/提示行为不在本项重做。
 - 完整格式/合并/隐私/恢复/回滚合同见[LEARNING_STATE.md](LEARNING_STATE.md)，RED→GREEN与真实DOM边界见[TESTING.md](TESTING.md)。真实浏览器文件选择/下载、手机PC视觉与YouTube仍未验证；403不重试或绕过。未合main或部署，未开始PR-11。
+
+## PR-11：题集结构与出处校验（开发栈，不是问答成绩）
+
+依赖PR-10 #22/566c0ed，仅把原`eval/retrieval/qa.jsonl`50题及真实catalog/CSV/canonical KP引用接入离线CI；无运行时接口或模型。`python3 scripts/eval/validate_qa.py --strict-kp --json`独立输出稳定`qa-validation/1`报告，失败非零。实际原50题结构/引用50通过、0错误，不是检索或医学答案通过。完整模式/误差/字段/来源诊断与未覆盖见[QA_VALIDATION.md](QA_VALIDATION.md)。原问题/知识不重写，不读或恢复37份既有eval删除，PR-12只做只读输入准备；未合main/部署，浏览器403等独立门槛保留。
