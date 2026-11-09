@@ -1,6 +1,12 @@
 import { FormEvent, useState } from "react";
 import { Link, NavLink, Outlet, useLocation, useNavigate, useSearchParams } from "react-router-dom";
 
+const DESK_NAV = [
+  { to: "/", label: "听课", end: true },
+  { to: "/series", label: "系列", end: false },
+  { to: "/stash", label: "收获匣", end: false },
+] as const;
+
 export function ListenDeskShell() {
   const navigate = useNavigate();
   const location = useLocation();
@@ -34,9 +40,18 @@ export function ListenDeskShell() {
           />
         </form>
 
-        <Link to="/" className="listen-top-link hide-sm">
-          回首页
-        </Link>
+        <nav className="listen-desk-nav" aria-label="听课台导航">
+          {DESK_NAV.map((item) => (
+            <NavLink
+              key={item.to}
+              to={item.to}
+              end={item.end}
+              className={({ isActive }) => (isActive ? "desk-nav-link active" : "desk-nav-link")}
+            >
+              {item.label}
+            </NavLink>
+          ))}
+        </nav>
       </header>
 
       <main className="listen-main">
