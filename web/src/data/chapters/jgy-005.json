@@ -1,0 +1,61 @@
+[
+ {
+  "chapter_id": "jgy-005.c01",
+  "video_id": "jgy-005",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "疟病脉证·无痰不疟",
+  "summary": "金匮第四篇疟病。弦数多热、弦迟多寒，可温可汗可吐可针，辨证为要。谚云无痰不疟，治疟必兼祛痰；勿以温病阴虚法套往来寒热。",
+  "start_s": 2.13,
+  "end_s": 480.765,
+  "seg_from": 0,
+  "seg_to": 94,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "syndrome.nve_bing",
+   "formula.bai_hu_jia_gui_zhi_tang"
+  ],
+  "citation": {
+   "youtube_id": "PsH17RHo190",
+   "url": "https://www.youtube.com/watch?v=PsH17RHo190&t=2s",
+   "series": "jgy",
+   "episode": 5,
+   "title": "倪海廈《金匱要略》細分版： 04瘧疾",
+   "start_s": 2.13,
+   "end_s": 480.76
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-005.c02",
+  "video_id": "jgy-005",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "白虎加桂枝·牡蛎汤·柴胡治疟",
+  "summary": "温疟骨节烦疼恶心用白虎加桂枝汤。补充牡蛎汤治疟；劳疟往来寒热渴用小柴胡去半夏加瓜蒌根；寒疟可用柴胡姜桂类，配合曲池委中等针灸。",
+  "start_s": 481.21,
+  "end_s": 1277.501,
+  "seg_from": 95,
+  "seg_to": 245,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "formula.bai_hu_jia_gui_zhi_tang",
+   "formula.xiao_chai_hu_tang",
+   "herb.mu_li"
+  ],
+  "citation": {
+   "youtube_id": "PsH17RHo190",
+   "url": "https://www.youtube.com/watch?v=PsH17RHo190&t=481s",
+   "series": "jgy",
+   "episode": 5,
+   "title": "倪海廈《金匱要略》細分版： 04瘧疾",
+   "start_s": 481.21,
+   "end_s": 1277.5
+  },
+  "review_status": "llm_read"
+ }
+]

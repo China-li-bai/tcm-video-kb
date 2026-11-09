@@ -1,0 +1,1311 @@
+{
+  "source": "data/knowledge",
+  "generated": true,
+  "lectures": [
+    {
+      "id": "bc-001",
+      "title": "倪海廈精解 神農本草經之8 完整重製版 全68篇 完結篇",
+      "series": "bc",
+      "seriesLabel": "本草",
+      "chapters": 18,
+      "youtubeId": "IH3tubhWMOo",
+      "duration": "3:41:06"
+    },
+    {
+      "id": "bc-002",
+      "title": "倪海廈精解 神農本草經之7 完整重製版 全68篇",
+      "series": "bc",
+      "seriesLabel": "本草",
+      "chapters": 4,
+      "youtubeId": "_qJgBxPY0Jc",
+      "duration": "3:00:44"
+    },
+    {
+      "id": "bc-003",
+      "title": "倪海廈精解 神農本草經之6 完整重製版 全68篇",
+      "series": "bc",
+      "seriesLabel": "本草",
+      "chapters": 3,
+      "youtubeId": "xUYZpkVoOjs",
+      "duration": "3:02:54"
+    },
+    {
+      "id": "bc-004",
+      "title": "倪海廈精解 神農本草經之5 完整重製版 全68篇",
+      "series": "bc",
+      "seriesLabel": "本草",
+      "chapters": 6,
+      "youtubeId": "wHtt5w6Y2Uk",
+      "duration": "3:35:02"
+    },
+    {
+      "id": "bc-005",
+      "title": "倪海廈精解 神農本草經之4 完整重製版 全68篇",
+      "series": "bc",
+      "seriesLabel": "本草",
+      "chapters": 5,
+      "youtubeId": "zISIogXMuyE",
+      "duration": "3:32:58"
+    },
+    {
+      "id": "bc-006",
+      "title": "倪海廈精解 神農本草經之3 完整重製版 全68篇",
+      "series": "bc",
+      "seriesLabel": "本草",
+      "chapters": 8,
+      "youtubeId": "jMoDrrLb6CQ",
+      "duration": "3:56:20"
+    },
+    {
+      "id": "bc-007",
+      "title": "倪海廈精解 神農本草經之2 完整重製版 全68篇",
+      "series": "bc",
+      "seriesLabel": "本草",
+      "chapters": 13,
+      "youtubeId": "Bb5QMWnFGtI",
+      "duration": "3:56:28"
+    },
+    {
+      "id": "bc-008",
+      "title": "倪海廈精解 神農本草經之1 完整重製版 全68篇",
+      "series": "bc",
+      "seriesLabel": "本草",
+      "chapters": 6,
+      "youtubeId": "ZqdH7Gn8N7I",
+      "duration": "3:34:26"
+    },
+    {
+      "id": "jgy-001",
+      "title": "倪海廈《金匱要略》細分版： 0續傷寒篇",
+      "series": "jgy",
+      "seriesLabel": "金匮",
+      "chapters": 3,
+      "youtubeId": "J7zCN4czXuc",
+      "duration": "59:38"
+    },
+    {
+      "id": "jgy-002",
+      "title": "倪海廈《金匱要略》細分版： 01藏府經絡先後病",
+      "series": "jgy",
+      "seriesLabel": "金匮",
+      "chapters": 3,
+      "youtubeId": "NTn2Kv6abT8",
+      "duration": "1:26:07"
+    },
+    {
+      "id": "jgy-003",
+      "title": "倪海廈《金匱要略》細分版： 02痙濕暍病",
+      "series": "jgy",
+      "seriesLabel": "金匮",
+      "chapters": 3,
+      "youtubeId": "Ne05L2AshrA",
+      "duration": "2:12:50"
+    },
+    {
+      "id": "jgy-004",
+      "title": "倪海廈《金匱要略》細分版： 03百合狐惑陰陽毒",
+      "series": "jgy",
+      "seriesLabel": "金匮",
+      "chapters": 3,
+      "youtubeId": "vAD7sGJJOCg",
+      "duration": "58:14"
+    },
+    {
+      "id": "jgy-005",
+      "title": "倪海廈《金匱要略》細分版： 04瘧疾",
+      "series": "jgy",
+      "seriesLabel": "金匮",
+      "chapters": 2,
+      "youtubeId": "PsH17RHo190",
+      "duration": "21:17"
+    },
+    {
+      "id": "jgy-006",
+      "title": "倪海廈《金匱要略》細分版： 05中風歷節病",
+      "series": "jgy",
+      "seriesLabel": "金匮",
+      "chapters": 3,
+      "youtubeId": "uB_14-QUZxk",
+      "duration": "1:32:41"
+    },
+    {
+      "id": "jgy-007",
+      "title": "倪海廈《金匱要略》細分版： 06血痺虛勞病",
+      "series": "jgy",
+      "seriesLabel": "金匮",
+      "chapters": 3,
+      "youtubeId": "8kR7guh4l30",
+      "duration": "1:23:19"
+    },
+    {
+      "id": "jgy-008",
+      "title": "倪海廈《金匱要略》細分版： 07肺痿肺癰咳嗽上氣病",
+      "series": "jgy",
+      "seriesLabel": "金匮",
+      "chapters": 3,
+      "youtubeId": "_DWK0iKYr3g",
+      "duration": "50:12"
+    },
+    {
+      "id": "jgy-009",
+      "title": "倪海廈《金匱要略》細分版： 08奔豚氣病",
+      "series": "jgy",
+      "seriesLabel": "金匮",
+      "chapters": 3,
+      "youtubeId": "Za0XLdsWxGE",
+      "duration": "30:52"
+    },
+    {
+      "id": "jgy-010",
+      "title": "倪海廈《金匱要略》細分版： 09胸麻痺心痛短氣病",
+      "series": "jgy",
+      "seriesLabel": "金匮",
+      "chapters": 3,
+      "youtubeId": "6twecFxjSRQ",
+      "duration": "52:15"
+    },
+    {
+      "id": "jgy-011",
+      "title": "倪海廈《金匱要略》細分版： 10腹滿寒疝氣宿食病",
+      "series": "jgy",
+      "seriesLabel": "金匮",
+      "chapters": 3,
+      "youtubeId": "9fhn6KVoHFM",
+      "duration": "1:30:51"
+    },
+    {
+      "id": "jgy-012",
+      "title": "倪海廈《金匱要略》細分版： 11五藏風寒積聚病",
+      "series": "jgy",
+      "seriesLabel": "金匮",
+      "chapters": 3,
+      "youtubeId": "iXTNVFSIW4g",
+      "duration": "1:30:56"
+    },
+    {
+      "id": "jgy-013",
+      "title": "倪海廈《金匱要略》細分版： 12痰飲咳嗽病",
+      "series": "jgy",
+      "seriesLabel": "金匮",
+      "chapters": 3,
+      "youtubeId": "EHtUejsso1U",
+      "duration": "2:03:40"
+    },
+    {
+      "id": "jgy-014",
+      "title": "倪海廈《金匱要略》細分版： 13消渴小便不利淋病",
+      "series": "jgy",
+      "seriesLabel": "金匮",
+      "chapters": 3,
+      "youtubeId": "UeIn7yJQ5yQ",
+      "duration": "1:22:33"
+    },
+    {
+      "id": "jgy-015",
+      "title": "倪海廈《金匱要略》細分版： 14水氣病",
+      "series": "jgy",
+      "seriesLabel": "金匮",
+      "chapters": 3,
+      "youtubeId": "ix7nI1MAfoA",
+      "duration": "3:08:54"
+    },
+    {
+      "id": "jgy-016",
+      "title": "倪海廈《金匱要略》細分版： 15黃瘅病",
+      "series": "jgy",
+      "seriesLabel": "金匮",
+      "chapters": 3,
+      "youtubeId": "rt0S4kpiRF8",
+      "duration": "57:53"
+    },
+    {
+      "id": "jgy-017",
+      "title": "倪海廈《金匱要略》細分版： 16驚悸吐衄下血胸滿瘀血病",
+      "series": "jgy",
+      "seriesLabel": "金匮",
+      "chapters": 3,
+      "youtubeId": "mABsoFItvwo",
+      "duration": "1:09:56"
+    },
+    {
+      "id": "jgy-018",
+      "title": "倪海廈《金匱要略》細分版： 17嘔吐噦下利病",
+      "series": "jgy",
+      "seriesLabel": "金匮",
+      "chapters": 3,
+      "youtubeId": "nDlxrIOGArk",
+      "duration": "2:15:53"
+    },
+    {
+      "id": "jgy-019",
+      "title": "倪海廈《金匱要略》細分版： 18瘡癰腸癰浸淫病",
+      "series": "jgy",
+      "seriesLabel": "金匮",
+      "chapters": 3,
+      "youtubeId": "-a2KxWDrvB0",
+      "duration": "40:26"
+    },
+    {
+      "id": "jgy-020",
+      "title": "倪海廈《金匱要略》細分版： 19趺蹶手指臂腫轉筋狐疝蚘蟲病",
+      "series": "jgy",
+      "seriesLabel": "金匮",
+      "chapters": 3,
+      "youtubeId": "jMzdni2EB1Q",
+      "duration": "20:29"
+    },
+    {
+      "id": "jgy-021",
+      "title": "倪海廈《金匱要略》細分版： 20婦人妊娠病",
+      "series": "jgy",
+      "seriesLabel": "金匮",
+      "chapters": 10,
+      "youtubeId": "z4o9zRl7AUM",
+      "duration": "50:00"
+    },
+    {
+      "id": "jgy-022",
+      "title": "倪海廈《金匱要略》細分版： 21婦人產後病",
+      "series": "jgy",
+      "seriesLabel": "金匮",
+      "chapters": 5,
+      "youtubeId": "1C6RSxE27YY",
+      "duration": "30:44"
+    },
+    {
+      "id": "jgy-023",
+      "title": "倪海廈《金匱要略》細分版： 22婦人雜病",
+      "series": "jgy",
+      "seriesLabel": "金匮",
+      "chapters": 8,
+      "youtubeId": "IuidW1aav8U",
+      "duration": "1:27:10"
+    },
+    {
+      "id": "jgy-024",
+      "title": "倪海廈《金匱要略》細分版： 23陰陽易差後勞復",
+      "series": "jgy",
+      "seriesLabel": "金匮",
+      "chapters": 4,
+      "youtubeId": "hhJXXiE44I8",
+      "duration": "16:51"
+    },
+    {
+      "id": "jgy-025",
+      "title": "倪海廈《金匱要略》細分版： 24醫案（淋巴瘤與血癌）",
+      "series": "jgy",
+      "seriesLabel": "金匮",
+      "chapters": 3,
+      "youtubeId": "5z0vtfkjVSw",
+      "duration": "15:35"
+    },
+    {
+      "id": "jgy-026",
+      "title": "倪海廈《金匱要略》細分版： 25 醫案（漸凍人）",
+      "series": "jgy",
+      "seriesLabel": "金匮",
+      "chapters": 3,
+      "youtubeId": "y4i28HnGB1s",
+      "duration": "11:44"
+    },
+    {
+      "id": "jgy-027",
+      "title": "倪海廈《金匱要略》細分版： 26 醫案（肝硬化、糖尿病、膽結石、腎結石、食物中毒、腹水和《參同契》）",
+      "series": "jgy",
+      "seriesLabel": "金匮",
+      "chapters": 4,
+      "youtubeId": "MkCQVjCQma8",
+      "duration": "58:00"
+    },
+    {
+      "id": "jgy-028",
+      "title": "倪海廈《金匱要略》細分版： 27 醫案（心臟病）",
+      "series": "jgy",
+      "seriesLabel": "金匮",
+      "chapters": 3,
+      "youtubeId": "1VtrxKUEXmg",
+      "duration": "44:02"
+    },
+    {
+      "id": "jgy-029",
+      "title": "倪海廈《金匱要略》細分版： 28 醫案（肝癌）",
+      "series": "jgy",
+      "seriesLabel": "金匮",
+      "chapters": 3,
+      "youtubeId": "lP6uIh07rmc",
+      "duration": "34:22"
+    },
+    {
+      "id": "jgy-030",
+      "title": "倪海廈《金匱要略》細分版： 29醫案（乳癌）",
+      "series": "jgy",
+      "seriesLabel": "金匮",
+      "chapters": 3,
+      "youtubeId": "iUsY2SGJ2Qw",
+      "duration": "26:41"
+    },
+    {
+      "id": "jgy-031",
+      "title": "倪海廈《金匱要略》細分版： 30醫案（尿毒）",
+      "series": "jgy",
+      "seriesLabel": "金匮",
+      "chapters": 2,
+      "youtubeId": "B363X3T9VOg",
+      "duration": "33:45"
+    },
+    {
+      "id": "jgy-032",
+      "title": "倪海廈《金匱要略》細分版： 31 醫案（紅斑性狼瘡）",
+      "series": "jgy",
+      "seriesLabel": "金匮",
+      "chapters": 3,
+      "youtubeId": "jqt8fhESGs0",
+      "duration": "24:48"
+    },
+    {
+      "id": "jgy-033",
+      "title": "倪海廈《金匱要略》細分版： 32醫案（肺癌）",
+      "series": "jgy",
+      "seriesLabel": "金匮",
+      "chapters": 3,
+      "youtubeId": "btHuC52KXRE",
+      "duration": "29:43"
+    },
+    {
+      "id": "jgy-034",
+      "title": "倪海廈《金匱要略》細分版： 33醫案（肺炎）",
+      "series": "jgy",
+      "seriesLabel": "金匮",
+      "chapters": 2,
+      "youtubeId": "txGqeT4AnxY",
+      "duration": "17:01"
+    },
+    {
+      "id": "jgy-035",
+      "title": "倪海廈《金匱要略》細分版： 34醫案（子宮肌瘤）",
+      "series": "jgy",
+      "seriesLabel": "金匮",
+      "chapters": 2,
+      "youtubeId": "4K3L57kViyo",
+      "duration": "15:02"
+    },
+    {
+      "id": "jgy-036",
+      "title": "倪海廈《金匱要略》細分版： 35醫案（腎癌）",
+      "series": "jgy",
+      "seriesLabel": "金匮",
+      "chapters": 2,
+      "youtubeId": "U_oMvj94FL0",
+      "duration": "18:08"
+    },
+    {
+      "id": "jgy-037",
+      "title": "倪海廈《金匱要略》細分版： 36 醫案（紅斑性狼瘡）",
+      "series": "jgy",
+      "seriesLabel": "金匮",
+      "chapters": 3,
+      "youtubeId": "m6Awl_Jxh-o",
+      "duration": "28:39"
+    },
+    {
+      "id": "jgy-038",
+      "title": "倪海廈《金匱要略》細分版： 37五臟逼毒法、文式易筋經、武式易筋經",
+      "series": "jgy",
+      "seriesLabel": "金匮",
+      "chapters": 3,
+      "youtubeId": "O2Mz0h9CALI",
+      "duration": "30:55"
+    },
+    {
+      "id": "jgy-039",
+      "title": "倪海廈《金匱要略》細分版： 38醫案（腦瘤）",
+      "series": "jgy",
+      "seriesLabel": "金匮",
+      "chapters": 4,
+      "youtubeId": "WskhApLXXPc",
+      "duration": "50:38"
+    },
+    {
+      "id": "jgy-040",
+      "title": "倪海廈《金匱要略》細分版： 39醫案（肺癌）",
+      "series": "jgy",
+      "seriesLabel": "金匮",
+      "chapters": 1,
+      "youtubeId": "BjiMBb2k3QY",
+      "duration": "08:55"
+    },
+    {
+      "id": "nj-001",
+      "title": "01 倪海厦精讲《黄帝内经》高清字幕完整版",
+      "series": "nj",
+      "seriesLabel": "难经",
+      "chapters": 3,
+      "youtubeId": "i_roPY8AEHg",
+      "duration": "3:51:57"
+    },
+    {
+      "id": "nj-002",
+      "title": "02 倪海厦精讲《黄帝内经》高清字幕完整版",
+      "series": "nj",
+      "seriesLabel": "难经",
+      "chapters": 2,
+      "youtubeId": "ebxTOvVzR-g",
+      "duration": "3:57:07"
+    },
+    {
+      "id": "nj-003",
+      "title": "03 倪海厦精讲《黄帝内经》高清字幕完整版",
+      "series": "nj",
+      "seriesLabel": "难经",
+      "chapters": 2,
+      "youtubeId": "709xGKzTxuI",
+      "duration": "3:48:15"
+    },
+    {
+      "id": "nj-004",
+      "title": "04 倪海厦精讲《黄帝内经》高清字幕完整版",
+      "series": "nj",
+      "seriesLabel": "难经",
+      "chapters": 2,
+      "youtubeId": "fdFJMQdvk3k",
+      "duration": "3:48:23"
+    },
+    {
+      "id": "nj-005",
+      "title": "05 倪海厦精讲《黄帝内经》高清字幕完整版",
+      "series": "nj",
+      "seriesLabel": "难经",
+      "chapters": 3,
+      "youtubeId": "2AGKauCZ_bk",
+      "duration": "3:53:13"
+    },
+    {
+      "id": "nj-006",
+      "title": "06 倪海厦精讲《黄帝内经》高清字幕完整版",
+      "series": "nj",
+      "seriesLabel": "难经",
+      "chapters": 3,
+      "youtubeId": "-Xa3_qsCF3Q",
+      "duration": "3:53:13"
+    },
+    {
+      "id": "nj-007",
+      "title": "07 倪海厦精讲《黄帝内经》高清字幕完整版",
+      "series": "nj",
+      "seriesLabel": "难经",
+      "chapters": 3,
+      "youtubeId": "90CD-7gBaig",
+      "duration": "3:57:31"
+    },
+    {
+      "id": "nj-008",
+      "title": "08 倪海厦精讲《黄帝内经》高清字幕完整版",
+      "series": "nj",
+      "seriesLabel": "难经",
+      "chapters": 3,
+      "youtubeId": "RgoDwTXW5Os",
+      "duration": "3:48:05"
+    },
+    {
+      "id": "nj-009",
+      "title": "09 倪海厦精讲《黄帝内经》高清字幕完整版",
+      "series": "nj",
+      "seriesLabel": "难经",
+      "chapters": 3,
+      "youtubeId": "lqwNzysmE3k",
+      "duration": "4:47:02"
+    },
+    {
+      "id": "nj-010",
+      "title": "10 倪海厦精讲《黄帝内经》高清字幕完整版 完结",
+      "series": "nj",
+      "seriesLabel": "难经",
+      "chapters": 3,
+      "youtubeId": "TbI1TAMqpJ4",
+      "duration": "2:34:29"
+    },
+    {
+      "id": "shl-001",
+      "title": "倪海廈《傷寒論》細分版： 1太陽症（上）",
+      "series": "shl",
+      "seriesLabel": "伤寒",
+      "chapters": 91,
+      "youtubeId": "W-z7WGZXmp8",
+      "duration": "5:33:59"
+    },
+    {
+      "id": "shl-002",
+      "title": "倪海廈《傷寒論》細分版： 2 太陽症（中）",
+      "series": "shl",
+      "seriesLabel": "伤寒",
+      "chapters": 52,
+      "youtubeId": "7kYjtoBpU2Q",
+      "duration": "5:56:01"
+    },
+    {
+      "id": "shl-003",
+      "title": "倪海廈《傷寒論》細分版： 3太陽症（下）",
+      "series": "shl",
+      "seriesLabel": "伤寒",
+      "chapters": 26,
+      "youtubeId": "sXeC_aoJtKE",
+      "duration": "6:47:01"
+    },
+    {
+      "id": "shl-004",
+      "title": "倪海廈《傷寒論》細分版： 4陽明症",
+      "series": "shl",
+      "seriesLabel": "伤寒",
+      "chapters": 18,
+      "youtubeId": "nw-b_iqBXCg",
+      "duration": "4:44:20"
+    },
+    {
+      "id": "shl-005",
+      "title": "倪海廈《傷寒論》細分版： 5少陽症",
+      "series": "shl",
+      "seriesLabel": "伤寒",
+      "chapters": 4,
+      "youtubeId": "r8MEgenB2Fc",
+      "duration": "43:46"
+    },
+    {
+      "id": "shl-006",
+      "title": "倪海廈《傷寒論》細分版： 6太陰症",
+      "series": "shl",
+      "seriesLabel": "伤寒",
+      "chapters": 15,
+      "youtubeId": "9zCCln-3KaE",
+      "duration": "34:07"
+    },
+    {
+      "id": "shl-007",
+      "title": "倪海廈《傷寒論》細分版： 7少陰症",
+      "series": "shl",
+      "seriesLabel": "伤寒",
+      "chapters": 9,
+      "youtubeId": "jkXQmLyPxmE",
+      "duration": "2:05:07"
+    },
+    {
+      "id": "shl-008",
+      "title": "倪海廈《傷寒論》細分版： 8厥陰症",
+      "series": "shl",
+      "seriesLabel": "伤寒",
+      "chapters": 9,
+      "youtubeId": "7VK465ZyRMg",
+      "duration": "2:13:02"
+    },
+    {
+      "id": "zj-002",
+      "title": "Ni Hai-Hsia's \"The Human Record\": Acupuncture (Full 90-Episode Series) - Acupuncture 02",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 3,
+      "youtubeId": "DeJtMC80TeU",
+      "duration": "31:04"
+    },
+    {
+      "id": "zj-003",
+      "title": "Ni Haisha \"Humanity Series\": Acupuncture, Episode 03 (Total 90 Episodes)",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 3,
+      "youtubeId": "7Ir-nkXZOlE",
+      "duration": "28:38"
+    },
+    {
+      "id": "zj-004",
+      "title": "Ni Hai-hsia \"Human Records\" \"Acupuncture\" Complete 90 Episodes - Acupuncture 04",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 3,
+      "youtubeId": "fShKSE-oYZ4",
+      "duration": "31:19"
+    },
+    {
+      "id": "zj-005",
+      "title": "倪海厦《人纪》《针灸》全90集 之 针灸 05",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 3,
+      "youtubeId": "OyXQdYVOYek",
+      "duration": "29:32"
+    },
+    {
+      "id": "zj-006",
+      "title": "倪海厦《人纪》《针灸》全90集 之 针灸 06",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "Soxee0YjneA",
+      "duration": "31:29"
+    },
+    {
+      "id": "zj-007",
+      "title": "倪海厦《人纪》《针灸》全90集 之 针灸 07",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "JRRwpGikqw8",
+      "duration": "30:24"
+    },
+    {
+      "id": "zj-008",
+      "title": "倪海厦《人纪》《针灸》全90集 之 针灸 08",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "AEA5l6ymoO4",
+      "duration": "24:11"
+    },
+    {
+      "id": "zj-010",
+      "title": "倪海厦《人纪》《针灸》全90集 之 针灸 10",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "3uFJobrKy48",
+      "duration": "30:55"
+    },
+    {
+      "id": "zj-011",
+      "title": "倪海厦《人纪》《针灸》全90集 之 针灸 11",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "U3cEczrIZfQ",
+      "duration": "31:24"
+    },
+    {
+      "id": "zj-012",
+      "title": "倪海厦《人纪》《针灸》全90集 之 针灸 12",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "h6200X18oEg",
+      "duration": "29:25"
+    },
+    {
+      "id": "zj-013",
+      "title": "倪海厦《人纪》《针灸》全90集 之 针灸 13",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "2_xv0PSgnGA",
+      "duration": "30:30"
+    },
+    {
+      "id": "zj-014",
+      "title": "倪海厦《人纪》《针灸》全90集 之 针灸 14",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "cA2x-mawXGg",
+      "duration": "29:58"
+    },
+    {
+      "id": "zj-015",
+      "title": "倪海厦《人纪》《针灸》全90集 之 针灸 15",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "uVk3uAz6w0c",
+      "duration": "29:55"
+    },
+    {
+      "id": "zj-016",
+      "title": "倪海厦《人纪》《针灸》全90集 之 针灸 16",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "Bm4C22zxyD4",
+      "duration": "29:55"
+    },
+    {
+      "id": "zj-017",
+      "title": "倪海厦《人纪》《针灸》全90集 之 针灸 17",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "aBoNsXGlT6Q",
+      "duration": "19:25"
+    },
+    {
+      "id": "zj-019",
+      "title": "倪海厦《人纪》《针灸》全90集 之 针灸 19",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "OfgWKd6YErA",
+      "duration": "31:00"
+    },
+    {
+      "id": "zj-020",
+      "title": "倪海厦《人纪》《针灸》全90集 之 针灸 20",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "NOEhIxpi4Pw",
+      "duration": "29:29"
+    },
+    {
+      "id": "zj-021",
+      "title": "倪海厦《人纪》《针灸》全90集 之 针灸 21",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "HG6dvbRlGXc",
+      "duration": "32:00"
+    },
+    {
+      "id": "zj-022",
+      "title": "倪海厦《人纪》《针灸》全90集 之 针灸 22",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "iil61YJzV6c",
+      "duration": "28:16"
+    },
+    {
+      "id": "zj-023",
+      "title": "Ni Hai-sha \"Human Record\" - Acupuncture, Episode 23 of 90",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "UXaMALTo2BY",
+      "duration": "31:38"
+    },
+    {
+      "id": "zj-024",
+      "title": "Ni Hai-sha \"Human Record\": Acupuncture, 90-Part Series - Acupuncture 24",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "HTqpLJ-qLI8",
+      "duration": "30:34"
+    },
+    {
+      "id": "zj-025",
+      "title": "倪海厦《人纪》《针灸》全90集 之 针灸 25",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "PQ3MHojvV2s",
+      "duration": "29:40"
+    },
+    {
+      "id": "zj-026",
+      "title": "倪海厦《人纪》《针灸》全90集 之 针灸 26",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "VTXyFZZv064",
+      "duration": "22:27"
+    },
+    {
+      "id": "zj-028",
+      "title": "倪海厦《人纪》《针灸》全90集 之 针灸 28",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "nQ1Fyxd_q8o",
+      "duration": "31:23"
+    },
+    {
+      "id": "zj-029",
+      "title": "倪海厦《人纪》《针灸》全90集 之 针灸 29",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "CG2Dmx-XOFM",
+      "duration": "32:18"
+    },
+    {
+      "id": "zj-030",
+      "title": "倪海厦《人纪》《针灸》全90集 之 针灸 30",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "6nM0WY6HE0g",
+      "duration": "28:47"
+    },
+    {
+      "id": "zj-031",
+      "title": "倪海厦《人纪》《针灸》全90集 之 针灸 31",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "cYoIZLoUziQ",
+      "duration": "29:57"
+    },
+    {
+      "id": "zj-032",
+      "title": "倪海厦《人纪》《针灸》全90集 之 针灸 32",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "lDF3EoW9XA4",
+      "duration": "30:14"
+    },
+    {
+      "id": "zj-033",
+      "title": "倪海厦《人纪》《针灸》全90集 之 针灸 33",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "Z6_3ofY4-jE",
+      "duration": "31:00"
+    },
+    {
+      "id": "zj-034",
+      "title": "倪海厦《人纪》《针灸》全90集 之 针灸 34",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "u0YbzbA4C8E",
+      "duration": "23:36"
+    },
+    {
+      "id": "zj-036",
+      "title": "倪海厦《人纪》《针灸》全90集 之 针灸 36",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "Qfyl6ac7yWE",
+      "duration": "31:07"
+    },
+    {
+      "id": "zj-037",
+      "title": "Ni Hai-hsia \"Human Records\": Acupuncture, 90-Episode Series - Acupuncture 37",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "PWyzeMCBMZE",
+      "duration": "29:36"
+    },
+    {
+      "id": "zj-038",
+      "title": "Ni Hai-Hsia \"Human Chronicles\": Acupuncture, Episode 38 (Full 90-Episode Series)",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "nj6ywaKgfn4",
+      "duration": "30:40"
+    },
+    {
+      "id": "zj-039",
+      "title": "倪海厦《人纪》《针灸》全90集 之 针灸 39",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "37k0RDd2q3s",
+      "duration": "31:10"
+    },
+    {
+      "id": "zj-040",
+      "title": "Ni Hai-hsia \"Human Discipline\" \"Acupuncture\" Complete 90 Episodes - Acupuncture 40",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "ZXVjQwyr4Ho",
+      "duration": "29:24"
+    },
+    {
+      "id": "zj-041",
+      "title": "Ni Hai-hsia \"Humanity Series\" - \"Acupuncture\" (90 Episodes Total): Acupuncture 41",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "XYv0BTmUpvc",
+      "duration": "30:29"
+    },
+    {
+      "id": "zj-042",
+      "title": "Ni Hai-sha \"Human Record\": Acupuncture, 90-Episode Complete Series - Acupuncture 42",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "Uw4P_J74Rhs",
+      "duration": "29:11"
+    },
+    {
+      "id": "zj-043",
+      "title": "倪海厦《人纪》《针灸》全90集 之 针灸 43",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "6hYSqrST1NI",
+      "duration": "12:16"
+    },
+    {
+      "id": "zj-045",
+      "title": "Ni Hai-Hsia \"Human Discipline\" \"Acupuncture\" All 90 Episodes - Acupuncture 45",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "cv5hnRHcwDY",
+      "duration": "31:01"
+    },
+    {
+      "id": "zj-046",
+      "title": "倪海厦《人纪》《针灸》全90集 之 针灸 46",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "hn-vhrdJybA",
+      "duration": "29:30"
+    },
+    {
+      "id": "zj-047",
+      "title": "倪海厦《人纪》《针灸》全90集 之 针灸 47",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "V1XViySdzgY",
+      "duration": "30:22"
+    },
+    {
+      "id": "zj-048",
+      "title": "Ni Hai-hsia \"Humanity Series\" - \"Acupuncture\" (90 Episodes Total): Episode 48",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "z4eRK18Svho",
+      "duration": "30:38"
+    },
+    {
+      "id": "zj-049",
+      "title": "倪海厦《人纪》《针灸》全90集 之 针灸 49",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "cdn4Us0pTxQ",
+      "duration": "29:42"
+    },
+    {
+      "id": "zj-050",
+      "title": "Ni Hai-hsia: \"Humanity Series\" - Acupuncture, Episode 50 of 90",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 5,
+      "youtubeId": "qsnJodGr-5E",
+      "duration": "31:28"
+    },
+    {
+      "id": "zj-051",
+      "title": "Ni Hai-sha \"Human Disciplines\" \"Acupuncture\" Complete 90 Episodes - Acupuncture 51",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 4,
+      "youtubeId": "eJs10gOlE8w",
+      "duration": "29:04"
+    },
+    {
+      "id": "zj-052",
+      "title": "倪海厦《人纪》《针灸》全90集 之 针灸 52",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 4,
+      "youtubeId": "sxeOOuiZJt0",
+      "duration": "17:14"
+    },
+    {
+      "id": "zj-054",
+      "title": "Ni Hai-hsia \"Human Constitution\" \"Acupuncture\" Complete 90-Episode Series: Acupuncture 54",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 4,
+      "youtubeId": "z0K4mScuDaA",
+      "duration": "31:09"
+    },
+    {
+      "id": "zj-055",
+      "title": "Ni Hai-hsia: \"Humanity\" - \"Acupuncture\" (90-Episode Series) - Acupuncture 55",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 3,
+      "youtubeId": "0x3HxE1jkzE",
+      "duration": "28:29"
+    },
+    {
+      "id": "zj-056",
+      "title": "倪海厦《人纪》《针灸》全90集 之 针灸 56",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 4,
+      "youtubeId": "pnhGt1678cY",
+      "duration": "31:43"
+    },
+    {
+      "id": "zj-057",
+      "title": "倪海厦《人纪》《针灸》全90集 之 针灸 57",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 3,
+      "youtubeId": "HMQcxDE7B1k",
+      "duration": "29:01"
+    },
+    {
+      "id": "zj-058",
+      "title": "倪海厦《人纪》《针灸》全90集 之 针灸 58",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 4,
+      "youtubeId": "jDcQGFng2-Y",
+      "duration": "31:18"
+    },
+    {
+      "id": "zj-059",
+      "title": "倪海厦《人纪》《针灸》全90集 之 针灸 59",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 3,
+      "youtubeId": "AMzlxxtD1yE",
+      "duration": "28:34"
+    },
+    {
+      "id": "zj-060",
+      "title": "Ni Hai-sha \"Human Discipline\" \"Acupuncture\" Complete 90-Episode Series: Acupuncture 60",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 1,
+      "youtubeId": "C4BwItP6JHA",
+      "duration": "06:39"
+    },
+    {
+      "id": "zj-062",
+      "title": "倪海厦《人纪》《针灸》全90集 之 针灸 62",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 3,
+      "youtubeId": "fZ_mjY7H7Cc",
+      "duration": "31:16"
+    },
+    {
+      "id": "zj-063",
+      "title": "倪海厦《人纪》《针灸》全90集 之 针灸 63",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 3,
+      "youtubeId": "AKnl9NPWkP0",
+      "duration": "30:51"
+    },
+    {
+      "id": "zj-064",
+      "title": "倪海厦《人纪》《针灸》全90集 之 针灸 64",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 3,
+      "youtubeId": "I-l5R0TbgMo",
+      "duration": "29:26"
+    },
+    {
+      "id": "zj-065",
+      "title": "倪海厦《人纪》《针灸》全90集 之 针灸 65",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "cAJNxa5sdIk",
+      "duration": "30:46"
+    },
+    {
+      "id": "zj-066",
+      "title": "Ni Hai-Hsia \"Human Record\" \"Acupuncture\" Complete 90-Episode Series: Acupuncture 66",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 3,
+      "youtubeId": "xyjaZydy1as",
+      "duration": "29:05"
+    },
+    {
+      "id": "zj-067",
+      "title": "Ni Hai-hsia: \"Humanity Series\" - Acupuncture, Episode 67 of 90",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "C3MescsjBYQ",
+      "duration": "30:01"
+    },
+    {
+      "id": "zj-068",
+      "title": "倪海厦《人纪》《针灸》全90集 之 针灸 68",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "sEXZYco5tf4",
+      "duration": "29:27"
+    },
+    {
+      "id": "zj-069",
+      "title": "Ni Hai-hsia \"Humanity Series\" \"Acupuncture\" Complete 90-Episode Collection: Acupuncture 69",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "IcXjdiiNQw0",
+      "duration": "20:50"
+    },
+    {
+      "id": "zj-071",
+      "title": "Ni Hai-sha \"Human Record\": Acupuncture, 90-Episode Complete Series - Acupuncture 71",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "AuVHFR0z_y4",
+      "duration": "31:14"
+    },
+    {
+      "id": "zj-072",
+      "title": "Ni Hai-hsia: \"Human Chronicles\" - Acupuncture (90-Episode Series) - Episode 72",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "y-NDOWp_6O8",
+      "duration": "28:18"
+    },
+    {
+      "id": "zj-073",
+      "title": "Ni Hai-sha \"Human Constitution\" \"Acupuncture\" Complete 90-Episode Series: Acupuncture 73",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "Xflt8s3Orlk",
+      "duration": "30:55"
+    },
+    {
+      "id": "zj-074",
+      "title": "Ni Hai-Hsia's \"Human纪\" (Human Annals) - Acupuncture, 90-Episode Series: Acupuncture 74",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "Sep8j1ugNdk",
+      "duration": "30:03"
+    },
+    {
+      "id": "zj-075",
+      "title": "Ni Hai-Hsia \"Human Record\" Acupuncture Series: 90 Episodes, Episode 75",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "2qzebvyaQXc",
+      "duration": "29:55"
+    },
+    {
+      "id": "zj-076",
+      "title": "Ni Hai-sha \"Human Record\": Acupuncture, 90-Episode Complete Series - Acupuncture 76",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "159Ip9XVMoo",
+      "duration": "30:10"
+    },
+    {
+      "id": "zj-077",
+      "title": "Ni Hai-Hsia \"The Human Record\" - Acupuncture, Episode 77 (Full 90-Episode Series)",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "g4eXW0Reeqc",
+      "duration": "29:30"
+    },
+    {
+      "id": "zj-078",
+      "title": "Ni Hai-hsia: \"Humanity Series\" - Acupuncture, Episode 78 of 90",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 1,
+      "youtubeId": "T2OAg15L_Z4",
+      "duration": "08:17"
+    },
+    {
+      "id": "zj-080",
+      "title": "Ni Hai-Hsia \"Human Chronicles\" Acupuncture: 90-Part Series - Acupuncture 80",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "GP1_mJGRc98",
+      "duration": "30:02"
+    },
+    {
+      "id": "zj-081",
+      "title": "Ni Hai-Hsia \"Human Chronicles\" Acupuncture Complete 90-Episode Series: Acupuncture 81",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "6rikiO9XZMk",
+      "duration": "30:45"
+    },
+    {
+      "id": "zj-082",
+      "title": "Ni Hai-sha \"Human Constitution\" - Acupuncture Series, Episode 82 (Total 90 Episodes)",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "_4YMCRmhFiI",
+      "duration": "30:36"
+    },
+    {
+      "id": "zj-083",
+      "title": "Ni Hai-Xia \"Human Discipline\" \"Acupuncture\" Complete 90-Episode Series: Acupuncture 83",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "A6CaCR_L0Xs",
+      "duration": "29:28"
+    },
+    {
+      "id": "zj-084",
+      "title": "Ni Hai-hsia \"Human Records\" \"Acupuncture\" 90-Episode Series: Acupuncture 84",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "Xt_tvyrlNms",
+      "duration": "28:58"
+    },
+    {
+      "id": "zj-086",
+      "title": "Ni Hai-hsia \"Human Records\": Acupuncture, Episode 86 of 90",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "80Zk4csoHtk",
+      "duration": "29:16"
+    },
+    {
+      "id": "zj-087",
+      "title": "Ni Hai-sha \"Ren Ji\" \"Acupuncture\" Complete 90-Episode Series: Acupuncture 87",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "6U97Fbk6lIA",
+      "duration": "28:13"
+    },
+    {
+      "id": "zj-088",
+      "title": "Ni Hai-Hsia \"Human Chronicles\": Acupuncture - Episode 88 (90-Episode Series)",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "Lp9cve77Zzc",
+      "duration": "30:04"
+    },
+    {
+      "id": "zj-089",
+      "title": "Ni Hai-hsia \"Humanity Records\" \"Acupuncture\" Complete 90-Episode Series: Acupuncture 89",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "fxkJ0hInsGE",
+      "duration": "19:58"
+    },
+    {
+      "id": "zj-090",
+      "title": "Ni Hai-hsia: \"Humanity Series\" - Acupuncture, 90-Episode Complete Set: Acupuncture 90",
+      "series": "zj",
+      "seriesLabel": "针灸",
+      "chapters": 2,
+      "youtubeId": "5KeWYzd_fNk",
+      "duration": "59:33"
+    }
+  ]
+}
