@@ -1,10 +1,12 @@
 import { FormEvent, useState } from "react";
-import { Link, NavLink, Outlet, useNavigate, useSearchParams } from "react-router-dom";
+import { Link, NavLink, Outlet, useLocation, useNavigate, useSearchParams } from "react-router-dom";
 
 export function ListenDeskShell() {
   const navigate = useNavigate();
+  const location = useLocation();
   const [params] = useSearchParams();
   const [q, setQ] = useState(params.get("q") ?? "");
+  const isWatch = location.pathname.startsWith("/watch");
 
   function onSearch(e: FormEvent) {
     e.preventDefault();
@@ -13,7 +15,7 @@ export function ListenDeskShell() {
   }
 
   return (
-    <div className="listen-desk">
+    <div className={isWatch ? "listen-desk listen-desk--watch" : "listen-desk"}>
       <header className="listen-topbar">
         <Link to="/" className="listen-brand" aria-label="人纪首页">
           <span className="listen-brand-mark">人纪</span>

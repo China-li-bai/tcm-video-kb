@@ -53,6 +53,7 @@ export function WatchPage() {
   /** True when the active sentence is scrolled out of view — show 「回到正在播放」. */
   const [awayFromActive, setAwayFromActive] = useState(false);
   const activeRowRef = useRef<HTMLDivElement | null>(null);
+  const scriptScrollRef = useRef<HTMLDivElement | null>(null);
   const skipScrollRef = useRef(false);
 
   useEffect(() => {
@@ -156,7 +157,8 @@ export function WatchPage() {
       return;
     }
     const el = activeRowRef.current;
-    if (!el) {
+    const root = scriptScrollRef.current;
+    if (!el || !root) {
       setAwayFromActive(false);
       return;
     }
@@ -165,10 +167,10 @@ export function WatchPage() {
         setAwayFromActive(!entry.isIntersecting);
       },
       {
-        root: null,
-        // Treat "near center band" as following; leave that band → show return chip.
+        // Root = transcript pane (not the window), so FAB tracks pane scroll.
+        root,
         threshold: 0.35,
-        rootMargin: "-18% 0px -28% 0px",
+        rootMargin: "-12% 0px -18% 0px",
       },
     );
     io.observe(el);
@@ -271,6 +273,7 @@ export function WatchPage() {
 
   return (
     <div className="listen-stage listen-stage-watch">
+      <div className="watch-fixed">
       <div className="watch-nav-row">
         <Link to="/" className="listen-text-link">
           回首页
@@ -332,6 +335,7 @@ export function WatchPage() {
           </p>
         )}
       </section>
+      </div>
 
       <section className="script-section">
         <div className="script-tabs">
@@ -351,6 +355,7 @@ export function WatchPage() {
           </button>
         </div>
 
+        <div className="script-scroll" ref={scriptScrollRef}>
         {tab === "chapters" && (
           <ul className="chapter-list">
             {chapters.length === 0 && (
@@ -489,6 +494,13 @@ export function WatchPage() {
             )}
           </div>
         )}
+
+        {tab === "script" && awayFromActive && utterances.length > 0 && (
+          <button type="button" className="return-playing" onClick={returnToPlaying}>
+            回到正在播放
+          </button>
+        )}
+        </div>
       </section>
 
       <CheckSheet
@@ -506,12 +518,6 @@ export function WatchPage() {
           setCheckOpen(false);
         }}
       />
-
-      {tab === "script" && awayFromActive && utterances.length > 0 && (
-        <button type="button" className="return-playing" onClick={returnToPlaying}>
-          回到正在播放
-        </button>
-      )}
 
       {toast && <div className="listen-toast">{toast}</div>}
     </div>
