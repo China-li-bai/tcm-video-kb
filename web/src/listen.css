@@ -977,7 +977,8 @@ body:has(.listen-desk--watch),
   font-size: 14px;
 }
 
-.player-progress {
+.player-position {
+  flex-wrap: wrap;
   width: 100%;
   max-width: 520px;
   display: flex;
@@ -987,19 +988,6 @@ body:has(.listen-desk--watch),
   font-variant-numeric: tabular-nums;
   color: var(--text-secondary);
 }
-.progress-track {
-  flex: 1;
-  height: 8px;
-  border-radius: 999px;
-  background: #f0f2f5;
-  overflow: hidden;
-}
-.progress-fill {
-  height: 100%;
-  background: var(--primary);
-  border-radius: 999px;
-}
-
 .player-fallback {
   margin: 4px 0 0;
   font-size: 13px;
@@ -1557,7 +1545,7 @@ body:has(.listen-desk--watch),
   border-top: 1px solid #f0f2f5;
 }
 
-.return-playing {
+.return-selected {
   position: absolute;
   left: 50%;
   bottom: 16px;
@@ -1576,10 +1564,10 @@ body:has(.listen-desk--watch),
   backdrop-filter: blur(8px);
   animation: listen-sheet-in 0.22s ease-out;
 }
-.return-playing:hover {
+.return-selected:hover {
   background: #1f2329;
 }
-.return-playing:active {
+.return-selected:active {
   transform: translateX(-50%) scale(0.98);
 }
 

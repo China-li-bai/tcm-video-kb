@@ -39,6 +39,7 @@ export type StashItem = {
   savedAt: string;
 };
 
+/** Last opened/requested position in seconds; never a measured playback head. */
 export type LastWatch = {
   videoId: string;
   title: string;

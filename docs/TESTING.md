@@ -71,3 +71,37 @@ GitHub CI 状态以该 PR checks 为准；本地通过不代表已合并或已�
 ## 回滚
 
 普通 revert 本 PR 即恢复原 CI 选择与 fixture；不回滚/覆盖 PR-1 的发布清单和前端边界测试，无数据库或生产迁移。后续 PR-3 只有本 PR 测通后才安排；本轮不实施 PR-3。
+
+## PR-3 播放诚实化验证记录
+
+2026-11-09（Asia/Shanghai），box；依赖 #16，非部署验收。上文 PR-2 测试数为历史记录，以下为 PR-3 增量与实际回归。
+
+| 命令 / 阶段 | 实际结果 |
+|---|---|
+| 实现前 `cd web && npm test -- --reporter=verbose` | 真实 WatchPage / Home / CheckSheet SSR 契约 **8 failed / 40 passed，exit 1**：旧 28%、无请求定位说明、上次听到/核对过文案均被暴露 |
+| 实现前追加 `npm test` | 8 个相同断言失败，另有未实现 StaticYouTubePlayer 模块加载失败；不以缺模块代替上行真实 RED 证据 |
+| 小数句首选择补测 `npm test` | **1 failed / 62 passed，exit 1**，暴露 floor 秒使点击行错选；实现保留点击行身份后通过 |
+| 真实小数章节边界补测 `npm test` | **2 failed / 63 passed，exit 1**，使用已入库 shl-001 / jgy-001 第二章，暴露整秒入口退回上一章；对齐请求秒契约后通过 |
+| `cd web && npm ci` | 锁定安装成功，audit 0 漏洞；没有新增依赖 |
+| `cd web && npm test` | **65 passed / 4 文件，0 skipped**；原 40 项保留，新增 25 项 |
+| `cd web && npm run build` | `tsc --noEmit` + Vite 通过，保留既有大 bundle 提示 |
+| `uv run --no-sync pytest -q -ra --strict-offline --disable-socket --allow-unix-socket tests/unit tests/ci` | **94 passed / 0 skipped**；既有 FastAPI/httpx 弃用警告 1 条 |
+| `python3 web/scripts/publish_manifest.py --check` | 通过，公开清单/知识/句稿等数据没有变更 |
+| `python3 -m unittest discover -s tests/publish -v` | **14/14 OK**，全部 21 集切片往返/导出回归保持 |
+
+### 各层能证明什么
+
+- **单位/纯逻辑**：请求秒归一化、空/间隙句选择、小数句首显式行选择、iframe pending→responded/failed、失败不会被随后 load 冒充清除、状态文案不承诺播放或跳秒成功。
+- **真实组件 SSR**：MemoryRouter 中 WatchPage 的 URL t 与初始不开 iframe/无假条；真实小数章节入口；Home 从 localStorage fixture 读请求位置/深链；CheckSheet 不是人工审校措辞；StaticYouTubePlayer 生成不同 start 与原平台跳秒链接、请求未响应说明/重试、无片源不画假按钮。原发布测试还实际读取 63 份公开资产。
+- **没有运行 DOM 交互测试**：SSR 不执行 effects / 点击 / iframe load-error 回调 / IntersectionObserver。上述异步句稿到达后的 lastWatch 写入、路由来回切换、键盘/重试接线、滚动与焦点仅做代码审查，不将 reducer/SSR 的绿说成 DOM 已验证。
+- **没有真实浏览器/YouTube/视觉验证**：未验证第三方可访问性、跨源失败事件、自动播放限制、跳秒是否真正落地、手机/PC 高度与文稿内滚。测试不访问 YouTube，也不伪造媒体时间，不跑真实知识构建或付费调用。
+
+可交接预览（另开终端；不是生产部署）：
+
+```sh
+cd /workspace/tcm-video-kb-pr4/web
+npm run dev -- --host 0.0.0.0
+# 默认 http://localhost:5173/watch/shl-001?t=125 （端口占用以终端为准）
+```
+
+手验应覆盖手机/PC 定高和固定区、初开海报、点句/章与小数章边界、滚离所选句再返回、重试/备份链接、切集与返回首页的记录语义；iframe load 不能作为播放成功断言。CI 结果以 PR checks 及 job 日志为准，未合并/未部署；本轮不开始 PR-4。

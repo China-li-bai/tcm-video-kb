@@ -1,3 +1,5 @@
+import { StaticYouTubePlayer } from "../../listen/StaticYouTubePlayer";
+import { requestedSeconds, selectedPositionIndex } from "../../listen/staticPlayback";
 import { hasPublicTranscript } from "../../listen/transcriptCoverage";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Link, useNavigate, useParams, useSearchParams } from "react-router-dom";
@@ -23,8 +25,6 @@ import { EntitySheet } from "../../listen/EntitySheet";
 import {
   formatClock,
   getLecture,
-  youtubeEmbedUrl,
-  youtubeWatchUrl,
 } from "../../listen/lectures";
 import { saveStashItem, setLastWatch } from "../../listen/stash";
 import {
@@ -49,18 +49,27 @@ export function WatchPage() {
   const navigate = useNavigate();
   const lecture = getLecture(videoId);
   const chapters = useMemo(() => getChapters(videoId), [videoId]);
-  const startT = Number(params.get("t") || 0) || 0;
+  const requestedS = requestedSeconds(params.get("t"));
 
   const [tab, setTab] = useState<Tab>("script");
-  const [activeChapter, setActiveChapter] = useState<Chapter | null>(null);
-  const [activeUtterIdx, setActiveUtterIdx] = useState(0);
+  const [rowSelection, setRowSelection] = useState<{videoId: string; requestedS: number; key: string; chapterId?: string} | null>(null);
+  const selectedChapter = useMemo(() => {
+    if (!chapters.length) return null;
+    // A direct row click keeps its chapter, even across a fractional boundary.
+    if (rowSelection?.videoId === videoId && rowSelection.requestedS === requestedS) {
+      const explicit = chapters.find(c => c.chapter_id === rowSelection.chapterId);
+      if (explicit) return explicit;
+    }
+    // Chapter targets use the same whole-second contract as URL/iframe start.
+    return chapters.find(c => requestedS >= requestedSeconds(c.start_s) && requestedS < requestedSeconds(c.end_s))
+      ?? chapters.filter(c => requestedSeconds(c.start_s) <= requestedS).at(-1) ?? chapters[0];
+  }, [chapters, requestedS, videoId, rowSelection]);
   const [toast, setToast] = useState("");
   const [checkOpen, setCheckOpen] = useState(false);
-  /** Progressive disclosure: ⋯ on active line opens 问这句/收下 (first tap still seek-only). */
+  /** Progressive disclosure: ⋯ on selected line opens 问这句/收下 (first tap still seek-only). */
   const [moreOpen, setMoreOpen] = useState(false);
-  const [playing, setPlaying] = useState(false);
-  const [embedNonce, setEmbedNonce] = useState(0);
-  const [seekS, setSeekS] = useState(startT);
+  const [embedRequest, setEmbedRequest] = useState<{videoId: string; revision: number} | null>(null);
+  const embedRequested = embedRequest?.videoId === videoId;
   const [segments, setSegments] = useState<Segment[] | null>(null);
   const [transcriptLoading, setTranscriptLoading] = useState(true);
   const [kpPoints, setKpPoints] = useState<KnowledgePoint[] | null>(null);
@@ -68,11 +77,18 @@ export function WatchPage() {
   const [entityMentions, setEntityMentions] = useState<EntityMention[] | null>(null);
   const [entitiesLoading, setEntitiesLoading] = useState(true);
   const [chipEntity, setChipEntity] = useState<EntityMention | null>(null);
-  /** True when the active sentence is scrolled out of view — show 「回到正在播放」. */
-  const [awayFromActive, setAwayFromActive] = useState(false);
-  const activeRowRef = useRef<HTMLDivElement | null>(null);
+  /** Whether the selected navigation row is outside the transcript viewport. */
+  const [awayFromSelected, setAwayFromSelected] = useState(false);
+  const selectedRowRef = useRef<HTMLDivElement | null>(null);
   const scriptScrollRef = useRef<HTMLDivElement | null>(null);
-  const skipScrollRef = useRef(false);
+
+  useEffect(() => {
+    setEmbedRequest(null);
+  }, [videoId]);
+
+  useEffect(() => {
+    setRowSelection(previous => previous?.videoId === videoId && previous.requestedS === requestedS ? previous : null);
+  }, [videoId, requestedS]);
 
   useEffect(() => {
     let cancelled = false;
@@ -117,33 +133,15 @@ export function WatchPage() {
     };
   }, [videoId]);
 
-  useEffect(() => {
-    setSeekS(startT);
-  }, [startT, videoId]);
-
-  useEffect(() => {
-    if (!chapters.length) {
-      setActiveChapter(null);
-      return;
-    }
-    let pick = chapters[0];
-    const t = seekS > 0 ? seekS : startT;
-    if (t > 0) {
-      const hit = chapters.find((c) => t >= c.start_s && t < c.end_s);
-      if (hit) pick = hit;
-    }
-    setActiveChapter(pick);
-  }, [chapters, startT, seekS]);
-
   const hasRealScript = Boolean(segments && segments.length > 0);
 
   const utterances: DisplayUtter[] = useMemo(() => {
     if (hasRealScript && segments) {
       let list = segments;
       // 有章节时只展示当前章时间窗，避免整集数千句一次挂上 DOM。
-      if (activeChapter) {
-        const lo = activeChapter.start_s;
-        const hi = activeChapter.end_s;
+      if (selectedChapter) {
+        const lo = selectedChapter.start_s;
+        const hi = selectedChapter.end_s;
         const sliced = segments.filter((s) => s.start_s < hi && s.end_s > lo);
         if (sliced.length) list = sliced;
       }
@@ -155,63 +153,44 @@ export function WatchPage() {
         seq: s.seq,
       }));
     }
-    if (activeChapter) {
-      return chapterAsUtterances(activeChapter).map((u, i) => ({
-        key: `c-${activeChapter.chapter_id}-${i}`,
+    if (!transcriptLoading && selectedChapter) {
+      return chapterAsUtterances(selectedChapter).map((u, i) => ({
+        key: `c-${selectedChapter.chapter_id}-${i}`,
         t: u.t,
         text: u.text,
       }));
     }
     return [];
-  }, [hasRealScript, segments, activeChapter]);
+  }, [hasRealScript, segments, selectedChapter, transcriptLoading]);
+
+  const selectedKey = rowSelection?.videoId === videoId && rowSelection.requestedS === requestedS
+    ? rowSelection.key : undefined;
+  const selectedUtterIdx = selectedPositionIndex(utterances, requestedS, selectedKey);
 
   useEffect(() => {
-    if (!utterances.length) {
-      setActiveUtterIdx(0);
-      return;
-    }
-    const t = seekS > 0 ? seekS : startT || utterances[0].t;
-    let best = 0;
-    for (let i = 0; i < utterances.length; i += 1) {
-      const u = utterances[i];
-      if (u.end != null && t >= u.t && t < u.end) {
-        best = i;
-        break;
-      }
-      if (u.t <= t) best = i;
-      else break;
-    }
-    setActiveUtterIdx(best);
-  }, [utterances, seekS, startT]);
-
-  useEffect(() => {
-    if (skipScrollRef.current) {
-      skipScrollRef.current = false;
-      return;
-    }
-    const el = activeRowRef.current;
+    const el = selectedRowRef.current;
     if (!el) return;
     el.scrollIntoView({ block: "center", behavior: "smooth" });
-  }, [activeUtterIdx, tab, hasRealScript]);
+  }, [selectedUtterIdx, tab, hasRealScript, videoId, selectedChapter?.chapter_id]);
 
   useEffect(() => {
     setMoreOpen(false);
-  }, [activeUtterIdx, videoId]);
+  }, [selectedUtterIdx, videoId]);
 
   useEffect(() => {
     if (tab !== "script") {
-      setAwayFromActive(false);
+      setAwayFromSelected(false);
       return;
     }
-    const el = activeRowRef.current;
+    const el = selectedRowRef.current;
     const root = scriptScrollRef.current;
     if (!el || !root) {
-      setAwayFromActive(false);
+      setAwayFromSelected(false);
       return;
     }
     const io = new IntersectionObserver(
       ([entry]) => {
-        setAwayFromActive(!entry.isIntersecting);
+        setAwayFromSelected(!entry.isIntersecting);
       },
       {
         // Root = transcript pane (not the window), so FAB tracks pane scroll.
@@ -222,39 +201,38 @@ export function WatchPage() {
     );
     io.observe(el);
     return () => io.disconnect();
-  }, [activeUtterIdx, tab, utterances.length, hasRealScript, transcriptLoading]);
+  }, [selectedUtterIdx, tab, utterances.length, hasRealScript, transcriptLoading, videoId, selectedChapter?.chapter_id]);
 
   useEffect(() => {
     if (!lecture) return;
-    const active = utterances[activeUtterIdx];
     setLastWatch({
       videoId: lecture.id,
       title: lecture.title,
-      chapterId: activeChapter?.chapter_id,
-      chapterTitle: activeChapter?.title,
-      t: active?.t ?? activeChapter?.start_s ?? startT,
+      chapterId: selectedChapter?.chapter_id,
+      chapterTitle: selectedChapter?.title,
+      t: requestedS,
       updatedAt: new Date().toISOString(),
     });
-  }, [lecture, activeChapter, startT, utterances, activeUtterIdx]);
+  }, [lecture, selectedChapter, requestedS]);
 
-  const activeUtter = utterances[activeUtterIdx] ?? utterances[0];
-  const quote = activeUtter?.text || activeChapter?.summary || lecture?.title || "";
+  const selectedUtter = utterances[selectedUtterIdx] ?? utterances[0];
+  const quote = selectedUtter?.text || selectedChapter?.summary || lecture?.title || "";
   const where = lecture
-    ? `${lecture.seriesLabel} · ${lecture.id}${activeUtter ? ` · 约 ${formatClock(activeUtter.t)}` : ""}`
+    ? `${lecture.seriesLabel} · ${lecture.id}${selectedUtter ? ` · 约 ${formatClock(selectedUtter.t)}` : ""}`
     : "";
-  const askT = activeUtter?.t ?? seekS ?? startT ?? 0;
+  const askT = selectedUtter?.t ?? requestedS;
   const nearbyClaims = useMemo(
     () => pickClaimsNear(kpPoints ?? [], askT),
     [kpPoints, askT],
   );
   const activeChips = useMemo(() => {
-    if (!activeUtter) return [];
+    if (!selectedUtter) return [];
     return pickChipsNear(
       entityMentions ?? [],
-      activeUtter.t,
-      activeUtter.end,
+      selectedUtter.t,
+      selectedUtter.end,
     );
-  }, [entityMentions, activeUtter]);
+  }, [entityMentions, selectedUtter]);
 
   function flash(msg: string) {
     setToast(msg);
@@ -262,55 +240,52 @@ export function WatchPage() {
   }
 
   function writeTimeToUrl(t: number) {
-    const floorT = Math.max(0, Math.floor(t));
+    const floorT = requestedSeconds(t);
     const next = new URLSearchParams(params);
     if (floorT > 0) next.set("t", String(floorT));
     else next.delete("t");
     setSearchParams(next, { replace: true });
   }
 
-  function seekTo(t: number, opts?: { play?: boolean; scroll?: boolean }) {
-    const floorT = Math.max(0, t);
-    setSeekS(floorT);
-    writeTimeToUrl(floorT);
-    if (opts?.play !== false) {
-      setPlaying(true);
-      setEmbedNonce((n) => n + 1);
-    }
-    if (opts?.scroll === false) skipScrollRef.current = true;
+  function requestEmbed() {
+    setEmbedRequest(previous => ({videoId, revision: (previous?.revision ?? 0) + 1}));
   }
 
-  function onPickUtter(i: number, play = true) {
-    const u = utterances[i];
-    if (!u) return;
-    // First touch = seek/highlight only; secondary ⋯ reveals ask/stash.
-    if (i !== activeUtterIdx) setMoreOpen(false);
-    setActiveUtterIdx(i);
-    seekTo(u.t, { play });
+  function seekTo(t: number, selectedRowKey?: string) {
+    const seconds = requestedSeconds(t);
+    setRowSelection(selectedRowKey ? {videoId, requestedS: seconds, key: selectedRowKey, chapterId: selectedChapter?.chapter_id} : null);
+    writeTimeToUrl(seconds);
+    requestEmbed();
   }
 
-  function returnToPlaying() {
-    const el = activeRowRef.current;
+  function onPickUtter(i: number) {
+    const row = utterances[i];
+    if (!row) return;
+    if (i !== selectedUtterIdx) setMoreOpen(false);
+    seekTo(row.t, row.key);
+  }
+
+  function returnToSelected() {
+    const el = selectedRowRef.current;
     if (!el) return;
     el.scrollIntoView({ block: "center", behavior: "smooth" });
-    setAwayFromActive(false);
+    setAwayFromSelected(false);
   }
 
   function onStash(opts?: { text?: string; t?: number }) {
     if (!lecture) return;
     saveStashItem({
       videoId: lecture.id,
-      title: activeChapter?.title || lecture.title,
+      title: selectedChapter?.title || lecture.title,
       text: opts?.text || quote,
-      t: opts?.t ?? activeUtter?.t ?? activeChapter?.start_s,
+      t: opts?.t ?? selectedUtter?.t ?? selectedChapter?.start_s,
     });
     flash("已收下，放进收获匣了");
   }
 
   function jumpChapter(ch: Chapter) {
-    setActiveChapter(ch);
     setTab("script");
-    seekTo(ch.start_s, { play: true });
+    seekTo(ch.start_s);
   }
 
   if (!lecture) {
@@ -327,7 +302,6 @@ export function WatchPage() {
     );
   }
 
-  const embedStart = activeUtter?.t ?? (seekS || activeChapter?.start_s || startT);
   const hasChapters = hasBundledChapters(videoId);
   const showScriptEmpty = !transcriptLoading && !hasRealScript && !hasChapters;
 
@@ -344,56 +318,27 @@ export function WatchPage() {
       </div>
 
       <section className="player-card">
-        <h1 className="player-title">{activeChapter?.title || lecture.title}</h1>
-        {activeChapter && (
+        <h1 className="player-title">{selectedChapter?.title || lecture.title}</h1>
+        {selectedChapter && (
           <p className="player-sub">
-            将遇：约 {chapterApproxMin(activeChapter)} 分钟 · {formatClock(activeChapter.start_s)}–
-            {formatClock(activeChapter.end_s)}
+            将遇：约 {chapterApproxMin(selectedChapter)} 分钟 · {formatClock(selectedChapter.start_s)}–
+            {formatClock(selectedChapter.end_s)}
           </p>
         )}
 
-        {lecture.youtubeId ? (
-          <div className="yt-frame-wrap">
-            {playing ? (
-              <iframe
-                key={`${lecture.youtubeId}-${Math.floor(embedStart)}-${embedNonce}`}
-                title={lecture.title}
-                src={youtubeEmbedUrl(lecture.youtubeId, embedStart, { autoplay: true })}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
-            ) : (
-              <button type="button" className="yt-poster" onClick={() => setPlaying(true)}>
-                <span className="play-orb" aria-hidden>
-                  ▶
-                </span>
-                <span>点这里听</span>
-              </button>
-            )}
-          </div>
-        ) : (
-          <div className="audio-placeholder">
-            <button type="button" className="play-orb big" onClick={() => setPlaying((p) => !p)} aria-label="播放">
-              {playing ? "❚❚" : "▶"}
-            </button>
-            <p>本集暂无嵌入片源，有原平台链接时请到系列页听。</p>
-          </div>
-        )}
-
-        <div className="player-progress" aria-hidden>
-          <span>{formatClock(embedStart || 0)}</span>
-          <div className="progress-track">
-            <div className="progress-fill" style={{ width: "28%" }} />
-          </div>
-          <span>{lecture.duration || "—"}</span>
+        <StaticYouTubePlayer
+          key={`${videoId}:${requestedS}:${embedRequested ? embedRequest?.revision : "closed"}`}
+          youtubeId={lecture.youtubeId}
+          title={lecture.title}
+          requestedS={requestedS}
+          requested={embedRequested}
+          onRequest={requestEmbed}
+        />
+        <div className="player-position">
+          <span>请求定位 {formatClock(requestedS)}</span>
+          <span>目录时长 {lecture.duration || "未标注"}</span>
         </div>
-        {lecture.youtubeId && (
-          <p className="player-fallback">
-            <a href={youtubeWatchUrl(lecture.youtubeId, embedStart)} target="_blank" rel="noreferrer">
-              播不了？用原平台听
-            </a>
-          </p>
-        )}
+        <p className="player-fallback">文稿高亮只表示所选位置，不会跟着播放自动翻页。</p>
       </section>
       </div>
 
@@ -426,7 +371,7 @@ export function WatchPage() {
                 <button
                   type="button"
                   className={
-                    activeChapter?.chapter_id === ch.chapter_id ? "chapter-row active" : "chapter-row"
+                    selectedChapter?.chapter_id === ch.chapter_id ? "chapter-row active" : "chapter-row"
                   }
                   onClick={() => jumpChapter(ch)}
                 >
@@ -465,18 +410,19 @@ export function WatchPage() {
             )}
 
             {utterances.map((u, i) => {
-              const active = i === activeUtterIdx;
+              const active = i === selectedUtterIdx;
               const showMore = active && moreOpen;
               return (
                 <div
                   key={u.key}
-                  ref={active ? activeRowRef : undefined}
+                  ref={active ? selectedRowRef : undefined}
                   className={active ? "utter-row active" : "utter-row"}
-                  onClick={() => onPickUtter(i, true)}
+                  onClick={() => onPickUtter(i)}
                   role="button"
                   tabIndex={0}
+                  aria-pressed={active}
                   onKeyDown={(e) => {
-                    if (e.key === "Enter" || e.key === " ") onPickUtter(i, true);
+                    if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onPickUtter(i); }
                   }}
                 >
                   <span className="utter-t">{formatClock(u.t)}</span>
@@ -551,7 +497,7 @@ export function WatchPage() {
 
             {(hasRealScript || hasChapters) && (
               <div className="watch-end">
-                <span className="watch-end-label">本段可以告一段落</span>
+                <span className="watch-end-label">想停一会儿，可以先收下所选句</span>
                 <button
                   type="button"
                   className="listen-btn listen-btn-dark"
@@ -560,29 +506,29 @@ export function WatchPage() {
                     navigate("/");
                   }}
                 >
-                  收下并结束今日
+                  收下所选句并回首页
                 </button>
                 <button
                   type="button"
                   className="listen-text-link"
                   onClick={() => {
-                    if (!activeChapter || !chapters.length) return;
-                    const idx = chapters.findIndex((c) => c.chapter_id === activeChapter.chapter_id);
+                    if (!selectedChapter || !chapters.length) return;
+                    const idx = chapters.findIndex((c) => c.chapter_id === selectedChapter.chapter_id);
                     const next = chapters[idx + 1];
                     if (next) jumpChapter(next);
                     else flash("已经是最后一章了");
                   }}
                 >
-                  接着听下一段
+                  选下一章
                 </button>
               </div>
             )}
           </div>
         )}
 
-        {tab === "script" && awayFromActive && utterances.length > 0 && (
-          <button type="button" className="return-playing" onClick={returnToPlaying}>
-            回到正在播放
+        {tab === "script" && awayFromSelected && utterances.length > 0 && (
+          <button type="button" className="return-selected" onClick={returnToSelected}>
+            回到所选句
           </button>
         )}
         </div>
@@ -599,16 +545,16 @@ export function WatchPage() {
         onClose={() => setCheckOpen(false)}
         onListen={() => {
           setCheckOpen(false);
-          if (activeUtter) onPickUtter(activeUtterIdx, true);
-          else setPlaying(true);
+          if (selectedUtter) onPickUtter(selectedUtterIdx);
+          else requestEmbed();
         }}
         onStash={() => {
-          onStash({ text: quote, t: activeUtter?.t });
+          onStash({ text: quote, t: selectedUtter?.t });
           setCheckOpen(false);
         }}
         onListenClaim={(claim) => {
           setCheckOpen(false);
-          seekTo(claim.start_s, { play: true });
+          seekTo(claim.start_s);
         }}
       />
 
@@ -620,8 +566,8 @@ export function WatchPage() {
         onClose={() => setChipEntity(null)}
         onListen={() => {
           setChipEntity(null);
-          if (activeUtter) onPickUtter(activeUtterIdx, true);
-          else setPlaying(true);
+          if (selectedUtter) onPickUtter(selectedUtterIdx);
+          else requestEmbed();
         }}
       />
 
