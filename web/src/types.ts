@@ -1,6 +1,8 @@
 export const DEFAULT_FOCUS = "formula.gui_zhi_tang";
 
 export type Citation = {
+  url?: string | null;
+  youtube_id?: string | null;
   kind?: string;
   kp_id?: string | null;
   video_id?: string | null;

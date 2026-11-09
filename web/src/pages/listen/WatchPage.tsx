@@ -92,8 +92,12 @@ export function WatchPage() {
 
   useEffect(() => {
     let cancelled = false;
-    setTranscriptLoading(true);
     setSegments(null);
+    if (!hasPublicTranscript(videoId)) {
+      setTranscriptLoading(false);
+      return;
+    }
+    setTranscriptLoading(true);
     loadTranscript(videoId).then((file) => {
       if (cancelled) return;
       setSegments(file?.segments ?? null);

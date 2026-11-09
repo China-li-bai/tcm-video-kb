@@ -212,3 +212,93 @@ def test_worker_vendor_matches_source_packages():
     for src, dest in pairs:
         assert dest.is_dir(), f"missing {dest}; run bash services/worker/build.sh"
         assert _package_files(src) == _package_files(dest)
+
+
+def test_api_projects_untrusted_snapshot_citations_without_rewriting_snapshot(tmp_path):
+    """Exercise the actual snapshot/FastAPI boundary, not a fake standalone resolver."""
+    import copy
+    _write_repo(tmp_path)
+    payload = build_snapshot(tmp_path)
+    edge = payload['edges'][0]
+    edge['citation']['t_url'] = 'https://evil.test/path'
+    edge['citation']['youtube_t_url'] = 'javascript:alert(1)'
+    payload['edges'].append(copy.deepcopy(edge))
+    for held in payload['held']:
+        if held.get('citation'):
+            held['citation']['t_url'] = 'https://evil.test/held'
+            held['citation']['youtube_t_url'] = 'javascript:alert(1)'
+    for row in payload['mentions'].values():
+        row['first_url'] = 'https://youtube.com.evil.test/watch?v=BAD'
+    original = json.dumps(payload, sort_keys=True)
+    client = TestClient(create_app(snapshot_json=original))
+    body = client.get('/graph/subgraph', params={'focus': 'syndrome.tai_yang_bing'}).json()
+    lecture = [e for e in body['edges'] if e['source'] == 'lecture']
+    assert lecture
+    for e in lecture:
+        c = e['citation']
+        assert c['t_url'] == f"/watch/{e['video_id']}?t={int(c['start_s'])}"
+        assert c['youtube_t_url'].startswith('https://www.youtube.com/watch?v=')
+    for node in body['nodes']:
+        cites = [c for c in node['citations'] if c['kind'] == 'lecture']
+        assert len(cites) == len({(c['video_id'],c['kp_id'],c['start_s']) for c in cites})
+        assert all(c['t_url'].startswith('/watch/') for c in cites)
+    tracks = client.get('/graph/paths', params={'focus': 'syndrome.tai_yang_bing'}).json()['tracks']
+    assert tracks
+    assert all(c['t_url'].startswith('/watch/') and c['youtube_t_url'].startswith('https://www.youtube.com/') for c in tracks[0]['cards'])
+    for held in client.get('/graph/subgraph', params={'focus': 'formula.gui_zhi_tang'}).json()['held']:
+        assert held['citation']['t_url'].startswith('/watch/')
+        assert held['citation']['youtube_t_url'].startswith('https://www.youtube.com/')
+    assert json.dumps(payload, sort_keys=True) == original
+
+
+@pytest.mark.parametrize('url,backup', [
+    ('https://youtu.be/W-z7WGZXmp8?t=1', 'https://www.youtube.com/watch?v=W-z7WGZXmp8&t=1624s'),
+    ('https://youtube.com.evil.test/watch?v=BAD', None),
+    ('javascript:alert(1)', None),
+    ('/watch/shl-001?t=1624', None),
+])
+def test_api_mention_source_links_are_allowlisted(tmp_path, url, backup):
+    _write_repo(tmp_path)
+    p = tmp_path/'data/knowledge/shl-001/entities.jsonl'
+    row = json.loads(p.read_text()); row['first_url'] = url
+    p.write_text(json.dumps(row)+'\n')
+    body = TestClient(create_app(tmp_path)).get('/graph/subgraph', params={'focus': 'formula.gui_zhi_tang'}).json()
+    cites = next(n for n in body['nodes'] if n['id']=='formula.gui_zhi_tang')['citations']
+    mention = next(c for c in cites if c['kind']=='mention')
+    assert mention['t_url'] == '/watch/shl-001?t=1624'
+    assert mention['youtube_t_url'] == backup
+
+
+def test_paths_deduplicate_identical_reference_edges_without_merging_distinct_subjects(tmp_path):
+    import copy
+    _write_repo(tmp_path)
+    payload = build_snapshot(tmp_path)
+    payload['edges'].append(copy.deepcopy(payload['edges'][0]))
+    client = TestClient(create_app(snapshot_json=json.dumps(payload)))
+    cards = client.get('/graph/paths', params={'focus':'syndrome.tai_yang_bing'}).json()['tracks'][0]['cards']
+    keys = [(c['subj_id'],c['obj_id'],c['pred'],c['video_id'],c['kp_id']) for c in cards]
+    assert len(keys) == len(set(keys)) == 2
+
+
+def test_snapshot_rejects_conflicting_enclosing_citation_identity(tmp_path):
+    _write_repo(tmp_path)
+    payload = build_snapshot(tmp_path)
+    payload['edges'][0]['citation']['video_id'] = 'shl-002'
+    from tcmkb_graph.snapshot import loads_snapshot
+    with pytest.raises(ValueError, match='candidate gate') as error:
+        loads_snapshot(json.dumps(payload), origin=tmp_path)
+    assert 'video_id' in str(error.value.__cause__)
+
+
+@pytest.mark.parametrize('case', ['held_identity', 'unsafe_slug'])
+def test_snapshot_rejects_invalid_lecture_identity_before_api_projection(tmp_path, case):
+    _write_repo(tmp_path)
+    payload = build_snapshot(tmp_path)
+    if case == 'held_identity':
+        payload['held'][0]['citation']['video_id'] = 'shl-002'
+    else:
+        payload['edges'][0]['video_id'] = '../evil'
+        payload['edges'][0]['citation']['video_id'] = '../evil'
+    from tcmkb_graph.snapshot import loads_snapshot
+    with pytest.raises(ValueError):
+        loads_snapshot(json.dumps(payload), origin=tmp_path)

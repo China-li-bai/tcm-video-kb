@@ -13,7 +13,7 @@ from tcmkb_ingest.sources import cite
 
 def test_site_watch_and_youtube_backup():
     assert site_watch_url("shl-003", 125.9) == "/watch/shl-003?t=125"
-    assert site_watch_url("shl-003", 0, end=10.1) == "/watch/shl-003?t=0&end=10"
+    assert site_watch_url("shl-003", 0, end=10.1) == "/watch/shl-003?end=10"
     assert site_watch_url("shl-003", 1, base="https://kb.example.com") == \
         "https://kb.example.com/watch/shl-003?t=1"
     assert youtube_t_url("AbC", 61.2) == "https://www.youtube.com/watch?v=AbC&t=61s"
@@ -204,7 +204,7 @@ def test_backfill_rewrites_knowledge_outline(tmp_path):
     assert new_ch[0]["citation"]["video_id"] == "shl-099"
     outline = (kdir / "outline.md").read_text(encoding="utf-8")
     assert "/watch/shl-099?t=10" in outline
-    assert "/watch/shl-099?t=0" in outline  # header video link
+    assert "视频：/watch/shl-099\u3000" in outline  # header video link
     assert "youtube.com" not in outline
     assert "**c01 开篇**" in outline
 

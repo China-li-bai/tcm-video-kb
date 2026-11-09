@@ -121,9 +121,41 @@ class KCitation(_M):
     start_s: float
     end_s: float
 
+    @classmethod
+    def from_record(cls, record: dict) -> "KCitation":
+        """Enclosing identity/times win over legacy rounded nested timestamps."""
+        citation = record.get("citation")
+        if not isinstance(citation, dict):
+            raise ValueError("record requires a citation object")
+        return cls.from_legacy({**citation, "start_s": record.get("start_s"),
+                                "end_s": record.get("end_s")}, video_id=record.get("video_id"))
+
+    @classmethod
+    def from_legacy(cls, citation: dict, *, video_id: str) -> "KCitation":
+        """Project an old nested citation using its enclosing record's identity.
+
+        Raw files are untouched. Explicitly conflicting identities and absent/bad
+        times fail validation; untrusted saved URLs are never primary links.
+        Direct KCitation construction remains strict for newly produced records.
+        """
+        from tcmkb_core.play import citation_links, finite_seconds, valid_source_id
+        if not isinstance(citation, dict) or not valid_source_id(video_id):
+            raise ValueError("citation requires a valid enclosing video_id")
+        if citation.get("video_id") not in (None, video_id):
+            raise ValueError("citation video_id conflicts with enclosing record")
+        start, end = citation.get("start_s"), citation.get("end_s")
+        if not finite_seconds(start) or not finite_seconds(end) or end < max(start, 0):
+            raise ValueError("citation requires finite start/end seconds in order")
+        start = max(start, 0)
+        return cls.model_validate({**citation, "video_id": video_id, "start_s": start,
+                                   **citation_links(video_id, start, citation)})
+
     @model_validator(mode="after")
     def _url_matches(self) -> "KCitation":
         want = t_url(self.video_id, self.start_s)
+        from tcmkb_core.play import finite_seconds
+        if not want or not finite_seconds(self.end_s) or self.end_s < self.start_s:
+            raise ValueError("invalid citation identity/time window")
         if self.t_url != want:
             raise ValueError(f"citation t_url {self.t_url!r} != {want!r}")
         if self.youtube_id and self.youtube_t_url:
@@ -134,6 +166,13 @@ class KCitation(_M):
 
 
 class KChapter(_M):
+    @model_validator(mode="before")
+    @classmethod
+    def _read_citation(cls, data: Any) -> Any:
+        if isinstance(data, dict) and isinstance(data.get("citation"), dict):
+            return {**data, "citation": KCitation.from_record(data)}
+        return data
+
     chapter_id: str = Field(description="<video_id>.c<NN> or <video_id>.c<NN>.s<N> for sections")
     video_id: str
     level: Literal[1, 2] = 1
@@ -190,6 +229,13 @@ class KEntity(_M):
 
 
 class KnowledgePoint(_M):
+    @model_validator(mode="before")
+    @classmethod
+    def _read_citation(cls, data: Any) -> Any:
+        if isinstance(data, dict) and isinstance(data.get("citation"), dict):
+            return {**data, "citation": KCitation.from_record(data)}
+        return data
+
     kp_id: str = Field(description="<video_id>.kp<NNNN>")
     video_id: str
     type: KPType

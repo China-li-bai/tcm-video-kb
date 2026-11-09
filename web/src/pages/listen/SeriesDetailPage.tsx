@@ -1,3 +1,4 @@
+import { watchHref } from "../../listen/citationLinks";
 import { Link, useParams } from "react-router-dom";
 import { formatDurationLabel, getSeries } from "../../listen/lectures";
 
@@ -42,7 +43,7 @@ export function SeriesDetailPage() {
         <ul className="episode-list">
           {group.lectures.map((lec, i) => (
             <li key={lec.id}>
-              <Link to={`/watch/${lec.id}`} className="episode-row">
+              <Link to={watchHref(lec.id)!} className="episode-row">
                 <span className="ep-num">{String(i + 1).padStart(2, "0")}</span>
                 <div className="ep-body">
                   <h3>{lec.title}</h3>

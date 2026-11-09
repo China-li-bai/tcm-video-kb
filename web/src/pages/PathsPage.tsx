@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { ApiError, fetchPaths } from "../api/client";
 import { ToolFocusBar } from "../layout/ToolFocusBar";
 import { useToolFocus } from "../layout/useToolFocus";
-import { CiteLinks, formatT, watchHrefFromCite } from "../panel/format";
+import { CiteLinks, formatT } from "../panel/format";
 import { ErrorState } from "../panel/ErrorState";
 import { HeldList } from "../panel/HeldList";
 import {
@@ -429,9 +429,7 @@ function PathChain({ h }: { h: UiHypothesis }) {
 }
 
 function CiteCard({ cite }: { cite: CiteItem }) {
-  const when = cite.start_s != null ? formatT(cite.start_s) : "";
-  const watchHref = watchHrefFromCite(cite);
-  const yt = cite.youtube_t_url || cite.url || undefined;
+  const when = typeof cite.start_s === "number" && Number.isFinite(cite.start_s) ? formatT(cite.start_s) : "";
   return (
     <div className="cite-card">
       <div className="cite-meta">
@@ -439,31 +437,7 @@ function CiteCard({ cite }: { cite: CiteItem }) {
         {when && <span>t={when}</span>}
       </div>
       {cite.evidence && <p className="cite-quote">「{cite.evidence}」</p>}
-      {watchHref || yt ? (
-        <p className="cite-links">
-          {watchHref ? (
-            <Link className="cite-listen" to={watchHref}>
-              听原讲{when ? ` · ${when}` : ""}
-            </Link>
-          ) : null}
-          {yt ? (
-            <a className="cite-yt" href={yt} target="_blank" rel="noopener noreferrer">
-              YouTube{when ? ` · ${when}` : ""}
-            </a>
-          ) : null}
-        </p>
-      ) : (
-        <CiteLinks
-          cite={{
-            kp_id: cite.kp_id,
-            video_id: cite.video_id,
-            start_s: cite.start_s,
-            youtube_t_url: cite.youtube_t_url,
-            t_url: cite.t_url,
-            quote: cite.evidence,
-          }}
-        />
-      )}
+      <CiteLinks cite={cite} />
     </div>
   );
 }
@@ -520,46 +494,12 @@ function CompareTable({
       k: "可点 cite",
       fn: (h) => (
         <>
-          {(h.citations || []).map((c, i) => {
-            const watchHref = watchHrefFromCite(c);
-            const yt = c.youtube_t_url || c.url;
-            const when = c.start_s != null ? formatT(c.start_s) : "";
-            const label = `${c.kp_id || "cite"}${when ? ` @ ${when}` : ""}`;
-            if (watchHref) {
-              return (
-                <span key={i}>
-                  <Link className="cite-listen" to={watchHref}>
-                    听原讲 · {label}
-                  </Link>
-                  {yt ? (
-                    <>
-                      {" · "}
-                      <a className="cite-yt" href={yt} target="_blank" rel="noopener noreferrer">
-                        YouTube
-                      </a>
-                    </>
-                  ) : null}
-                  <br />
-                </span>
-              );
-            }
-            if (yt) {
-              return (
-                <span key={i}>
-                  <a className="cite-yt" href={yt} target="_blank" rel="noopener noreferrer">
-                    {label}
-                  </a>
-                  <br />
-                </span>
-              );
-            }
-            return (
-              <span key={i}>
-                {label}
-                <br />
-              </span>
-            );
-          })}
+          {(h.citations || []).map((c, i) => (
+            <div key={i}>
+              <span>{c.kp_id || "cite"}</span>
+              <CiteLinks cite={c} />
+            </div>
+          ))}
         </>
       ),
     },

@@ -118,3 +118,15 @@ CI 增加清单检查、独立 Python 发布契约测试与 `npm test`，保留�
 仅修复测试证实的边界：两类picker的max按整项上限处理（floor，非有限或≤0返回空）；摘要位置按真实章时长插值，仍是近似而非逐句时间；选中主张后的遗留「核对过」改成「已导出」。默认45秒/6秒窗口、最多3项与排序不变，不实现PR-5出处派生或PR-9跟读。
 
 测试命令、4项真实RED与15项新增直接绿、95项完整前端回归见TESTING.md末节。用户已单独授权串行接续本项，不表示真实浏览器403门槛已解除：手机/PC视觉与YouTube实际播放仍未验，保留合并前独立门槛，不访问预览或绕过网络控制；未合main/部署。普通revert回滚本项，不拆先前测试门槛。
+
+## PR-5：出处派生（开发栈，未合并 / 未部署）
+
+基于PR-4 #18 / `adf4165`，分支 `feat/derived-citation-links`。只读适配历史 citation，不回写原始知识、CSV、现行21集公开JSON、章节/catalog/manifest或图快照；无真实 knowledge-build/backfill。详细字段/时间优先级见 [KNOWLEDGE.md](KNOWLEDGE.md) 新节。
+
+- 站内链接由 `video_id + start_s` 生成，统一 floor/负数夹0/0省略t；未知讲次、非法或非有限秒不制造精确跳转。旧 `?t=0` 可打开。前端不相信外传 `t_url`，所有现行带秒的听课跳转共用生成函数；原平台链接只由安全YouTube id/allowlisted URL重建，已知讲次以catalog为准。
+- 图/路径出处使用共同组件说明已有/尚未公开句稿；打开后的真实加载失败仍如实提示。Watch不请求manifest未公开的句稿，保留原嵌入定位/原平台备份，不增加iframe API、遥测、跟读或假进度。布局/CSS/播放器策略没有改变。
+- Python真实KP/章节model读取、CSV导出和既有API读边界接入投影。CSV新导出url是站内起点，末尾新增source_url/youtube_t_url；历史CSV未重刷。end_s仍是证据元数据，不代表播放器会自动停止。重复相同API引用边去重，保持不同主语/讲次与candidate状态；Worker四个源码副本同步但未部署。
+
+先写测试真实RED后实现；全量本地144 Python、15发布契约、125前端、manifest/TS/Vite均通过。1575 KP + 624章全量模型读取，临时CSV两次一致，21份实际slim导出与现行公开文件字节相同；依赖/工作流不变。完整证据、直接绿的新增回归及未覆盖范围见TESTING.md末节，远端CI以PR checks/job日志记录为准。
+
+真实浏览器/手机/YouTube仍因403未验，保持合并前独立门槛，未尝试预览/网络绕过。PR-6只读核对：默认data/artifacts不存在、segments.jsonl为0，未公开124集无可用输入；没有扩展句稿。仅后续提供获准输入后再安排下一任务，不自动开始。普通revert回滚本PR，无数据/数据库迁移，不合main/生产部署。

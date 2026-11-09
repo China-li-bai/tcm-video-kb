@@ -8,9 +8,8 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
-from urllib.parse import parse_qs, urlparse
 
-from tcmkb_core.play import site_watch_url, youtube_t_url
+from tcmkb_core.play import citation_links, finite_seconds
 
 from tcmkb_graph.draft import Materialization
 from tcmkb_graph.lexicon_index import Ent
@@ -176,7 +175,7 @@ def _lecture_touching(focus: str, ent: Ent, mat: Materialization) -> list[dict]:
 
 def _held_for(focus: str, mat: Materialization) -> list[dict]:
     return [
-        h for h in mat.held
+        {**h, "citation": _project_citation(h.get("citation"), h.get("video_id"))} for h in mat.held
         if focus in h.get("subj_ids", []) or focus in h.get("obj_ids", [])
     ]
 
@@ -198,8 +197,15 @@ def _lexicon_edge(subj: str, obj: str) -> dict:
     }
 
 
+def _project_citation(citation: dict | None, video_id: str | None) -> dict | None:
+    if citation is None:
+        return None
+    return {**citation, "video_id": video_id,
+            **citation_links(video_id, citation.get("start_s"), citation)}
+
+
 def _with_id(edge: dict) -> dict:
-    out = dict(edge)
+    out = {**edge, "citation": _project_citation(edge.get("citation"), edge.get("video_id"))}
     out["id"] = f"{edge['pred']}:{edge['subj_id']}:{edge['obj_id']}:{edge.get('kp_id') or 'lexicon'}"
     return out
 
@@ -216,7 +222,7 @@ def _node(nid: str, index: dict[str, Ent], mentions: dict[str, dict], edges: lis
         if nid not in (edge.get("subj_id"), edge.get("obj_id")):
             continue
         cit = edge.get("citation") or {}
-        key = ("lecture", edge.get("kp_id"), cit.get("start_s"))
+        key = ("lecture", edge.get("video_id"), edge.get("kp_id"), cit.get("start_s"))
         if key in seen:
             continue
         seen.add(key)
@@ -246,11 +252,13 @@ def _track(syndrome_id: str, mat: Materialization, *, formula_id: str | None) ->
         if e["pred"] == "treats" and e["obj_id"] == syndrome_id
         and (formula_id is None or e["subj_id"] == formula_id)
     ]
+    treats = _unique_edges(treats)
     treats.sort(key=lambda e: (e["kp_id"], e["subj_id"]))
     cards = [
         e for e in mat.edges
         if e["pred"] == "indicates" and e["obj_id"] == syndrome_id
     ]
+    cards = _unique_edges(cards)
     cards.sort(key=lambda e: (e["subj_id"], e["kp_id"]))
     ent = mat.index.get(syndrome_id)
     return {
@@ -261,11 +269,22 @@ def _track(syndrome_id: str, mat: Materialization, *, formula_id: str | None) ->
     }
 
 
+def _unique_edges(edges: list[dict]) -> list[dict]:
+    seen: set[tuple] = set()
+    out: list[dict] = []
+    for edge in edges:
+        key = tuple(edge.get(k) for k in ("subj_id", "pred", "obj_id", "video_id", "kp_id"))
+        if key not in seen:
+            seen.add(key)
+            out.append(edge)
+    return out
+
+
 def _card(edge: dict, index: dict[str, Ent]) -> dict:
     """Equal-weight card. Confidence is intentionally omitted so it cannot be a rank."""
     sub = edge["subj_id"]
     ent = index.get(sub)
-    cit = edge.get("citation") or {}
+    cit = _project_citation(edge.get("citation"), edge.get("video_id")) or {}
     return {
         "subj_id": sub,
         "obj_id": edge["obj_id"],
@@ -290,8 +309,9 @@ def _mention_cite(row: dict) -> dict | None:
         start = float(row["first_start_s"])
     except (KeyError, TypeError, ValueError):
         return None
-    url = str(row.get("first_url") or "")
-    yt = _youtube_id(url)
+    if not finite_seconds(start):
+        return None
+    links = citation_links(video_id, start, {"url": row.get("first_url")})
     return {
         "kind": "mention",
         "kp_id": None,
@@ -301,13 +321,6 @@ def _mention_cite(row: dict) -> dict | None:
         "quote": None,
         "title": None,
         "statement": None,
-        "t_url": site_watch_url(str(video_id), start) if video_id else None,
-        "youtube_t_url": youtube_t_url(yt, start) if yt else (url or None),
+        "t_url": links["t_url"],
+        "youtube_t_url": links["youtube_t_url"],
     }
-
-
-def _youtube_id(url: str) -> str | None:
-    if "youtube" not in url and "youtu.be" not in url:
-        return None
-    vs = parse_qs(urlparse(url).query).get("v")
-    return vs[0] if vs else None

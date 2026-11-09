@@ -132,7 +132,7 @@ def _kp(**kw) -> dict:
 
 def test_t_url_floors_seconds():
     assert t_url("tv-001", 12.99) == "/watch/tv-001?t=12"
-    assert t_url("tv-001", 0) == "/watch/tv-001?t=0"
+    assert t_url("tv-001", 0) == "/watch/tv-001"
     assert youtube_t_url(YT, 12.99) == f"https://www.youtube.com/watch?v={YT}&t=12s"
 
 

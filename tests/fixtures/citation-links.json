@@ -1,0 +1,56 @@
+[
+  {
+    "id": "shl-001",
+    "t": 0,
+    "href": "/watch/shl-001"
+  },
+  {
+    "id": "shl-001",
+    "t": 0.9,
+    "href": "/watch/shl-001"
+  },
+  {
+    "id": "shl-001",
+    "t": 125.99,
+    "href": "/watch/shl-001?t=125"
+  },
+  {
+    "id": "shl-001",
+    "t": -1.2,
+    "href": "/watch/shl-001"
+  },
+  {
+    "id": "shl-001",
+    "href": "/watch/shl-001"
+  },
+  {
+    "id": null,
+    "t": 4,
+    "href": null
+  },
+  {
+    "id": "../shl-001",
+    "t": 4,
+    "href": null
+  },
+  {
+    "id": "shl-001?next=https://evil.test",
+    "t": 4,
+    "href": null
+  },
+  {
+    "id": "shl-001/../../x",
+    "t": 4,
+    "href": null
+  },
+  {
+    "id": "shl-001",
+    "t": "125",
+    "href": null
+  },
+  {
+    "id": "shl-001",
+    "t": true,
+    "href": null
+  }
+]

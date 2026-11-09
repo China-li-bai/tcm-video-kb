@@ -1,3 +1,4 @@
+import { watchHref } from "./citationLinks";
 import { Link } from "react-router-dom";
 import {
   entityTypeBadge,
@@ -33,7 +34,7 @@ export function EntitySheet({
 
   const badge = entityTypeBadge(mention.type);
   const graphable = isGraphableEntity(mention);
-  const watchBack = `/watch/${encodeURIComponent(videoId)}?t=${Math.max(0, Math.floor(t))}`;
+  const watchBack = watchHref(videoId, t);
   const graphHref = `/graph?focus=${encodeURIComponent(mention.entity_id)}`;
 
   return (
@@ -102,7 +103,7 @@ export function EntitySheet({
             </button>
           </div>
 
-          {graphable && (
+          {graphable && watchBack && (
             <p className="entity-back-hint">
               从图里回来：浏览器后退，或打开{" "}
               <Link to={watchBack} className="listen-text-link" onClick={onClose}>

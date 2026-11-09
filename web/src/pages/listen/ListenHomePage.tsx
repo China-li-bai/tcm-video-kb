@@ -2,7 +2,7 @@ import { useMemo } from "react";
 import { Link } from "react-router-dom";
 import { enrichTodayFromChapters } from "../../listen/chapters";
 import { getAllLectures, pickTodaySegment } from "../../listen/lectures";
-import { requestedSeconds } from "../../listen/staticPlayback";
+import { watchHref } from "../../listen/citationLinks";
 import { getLastWatch, listStash } from "../../listen/stash";
 
 export function ListenHomePage() {
@@ -27,7 +27,8 @@ export function ListenHomePage() {
     return all.slice(0, 2);
   }, [today.lecture.id, today.lecture.series]);
 
-  const watchTo = `/watch/${today.lecture.id}${today.startS ? `?t=${Math.floor(today.startS)}` : ""}`;
+  const watchTo = watchHref(today.lecture.id, today.startS)!;
+  const resumeHref = last ? watchHref(last.videoId, last.t) : null;
 
   return (
     <div className="listen-stage listen-stage-narrow">
@@ -54,7 +55,7 @@ export function ListenHomePage() {
       {last && (
         <section className="listen-block">
           <h3 className="listen-block-title">接着听</h3>
-          <Link to={`/watch/${last.videoId}${last.t ? `?t=${requestedSeconds(last.t)}` : ""}`} className="resume-bar">
+          {resumeHref ? <Link to={resumeHref} className="resume-bar">
             <div className="resume-ico" aria-hidden>
               ↻
             </div>
@@ -65,7 +66,7 @@ export function ListenHomePage() {
             <span className="resume-play" aria-hidden>
               ▶
             </span>
-          </Link>
+          </Link> : <p className="muted-sm">上次出处信息不完整，可从目录重新打开。</p>}
           <p className="muted-sm">这里只记打开或点选的位置，不是播放进度。</p>
         </section>
       )}
@@ -76,7 +77,7 @@ export function ListenHomePage() {
           <ul className="upnext-list">
             {upNext.map((lec) => (
               <li key={lec.id}>
-                <Link to={`/watch/${lec.id}`} className="upnext-row">
+                <Link to={watchHref(lec.id)!} className="upnext-row">
                   <div>
                     <h4>{lec.title.replace(/^倪海廈[^：:]*[：:]?\s*/u, "").slice(0, 28) || lec.title}</h4>
                     <span className="muted-sm">

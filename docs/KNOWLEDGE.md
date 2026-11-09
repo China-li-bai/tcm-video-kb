@@ -60,12 +60,25 @@ kps:
 
 | 字段 | 含义 |
 |---|---|
-| `citation.url` | 源视频 / YouTube **页面** URL（无时间戳） |
-| `citation.t_url` | **主链接**：站内 `/watch/{video_id}?t=<秒>` |
+| `citation.url` | 源平台 URL；新产物通常是页面 URL，历史文件常已带时间戳，读取投影保留原值 |
+| `citation.t_url` | **派生主链接**：站内 `/watch/{video_id}?t=<floor秒>`，零秒省略 `t` |
 | `citation.youtube_t_url` | YouTube 备份 `&t=<秒>s` |
 
-实体的 `first_url` / `mentions[].url` 是站内跳转（等同 `t_url`），不是 `citation.url`。
-CSV 汇总（`_index/*.csv`）的 `url` 列取 `t_url`（站内），便于点开。
+新构建约定中，实体的 `first_url` / `mentions[].url` 是站内跳转（等同 `t_url`）；**不能据此认定历史文件已迁移**。历史实体/CSV 仍可能是 YouTube URL。
+
+### PR-5：只读出处投影，历史产物尚未回写
+
+此节是开发栈实现，未合 main / 未部署。145 集原始知识中，1575 个 KP 的 citation 都缺 `video_id/t_url/youtube_t_url`，上下文在外层记录；旧 `_index/*.csv` 因而仍是此前回退 `citation.url` 的历史产物。本 PR **没有回写这些 JSON/JSONL/CSV**，也没有执行真实库 knowledge-build/backfill。公开 21 集的 63 份 JSON、21 份章节、catalog、发布清单和图快照/嵌入文本逐字节未改。
+
+- Python `KCitation.from_record(record)` 使用外层 `video_id/start_s/end_s`，复制并适配嵌套 citation；`KnowledgePoint` / `KChapter.model_validate` 在实际读取边界接入。单独读取一个旧 citation 时用 `KCitation.from_legacy(citation, video_id=已知上下文)`，不能凭任意 `t_url` 猜讲次。直接构造新 `KCitation` 仍校验完整规范字段，不能把缺上下文当成合法新产物。
+- 外层时间优先：旧 KP 中有 725 处外层秒与嵌套两位小数值不同，差值最大约 0.005 秒，其中 4 处跨越 floor 秒边界；章节有 269 处微小差异、无 floor 跨界。新读投影与前端 slim KP 使用同一外层起点，不进行二次 round；单独适配 citation 则使用它自身的秒。原值不写回。
+- `site_watch_url` 与前端唯一 `watchHref` 的站内规则由同一 JSON 契约 fixture 检查：有效 slug；有限数字（拒绝 bool/数字字符串/NaN/Infinity）；负数夹到 0；小数 floor；0/缺时间打开本集且不加 `t`。旧 `?t=0` 入口仍可打开。精确知识引用缺/坏起止秒、倒序区间或上下文身份冲突则失败，不伪造 0 秒引用。
+- 前端额外要求 catalog 中确有讲次，不要求已公开句稿才准听。`t_url` 从不作为跳转输入；`CiteLinks` 在图详情、路径卡/对比表共用，按发布清单说明「已有句稿（以加载结果为准）」/「暂未公开句稿，可先听原讲」，信息不全/坏时间给白话提示。Watch 不请求清单未公开的句稿，仍能使用原来的 YouTube 嵌入定位；不宣称实时播放、跟读或播放成功。
+- 原平台备份由有效 source id 或精确 HTTPS YouTube/youtu.be host+id 重建，不透传任意 `url/youtube_t_url`；已知前端讲次以 catalog 的 YouTube id 为准。历史 `citation.url` 原样保留为来源元数据，不把不可信原字符串直接做可点击链接。已知 0 秒的 YouTube 备份保留合法 `t=0s`；这不是已播放进度。
+- 文件型 `build_index(root, out=临时目录)` 实际接入同一投影：新导出 `url` 是站内起点，新增末尾 `source_url/youtube_t_url` 保留原始来源与安全备份。默认输出位置仍是 `_index`，但本 PR 仅向临时目录导出验证，**未重刷入库 CSV**。缺/坏引用先失败、非零退出，不替换已有索引文件；调用方若依赖 CSV 精确列数，需适配新增的两列。
+- API 在现有 graph/subgraph、paths、held/mention 读取边界派生链接，拒绝非有限秒/候选边身份冲突，精确重复边去重而不合并不同症/脉主语；没有新接口或检索/审核状态变化。`end_s` 保留为证据区间，点击链接只请求起点，不承诺自动停止。Worker 的四个变更源码副本同步，原图快照未重刷。
+
+全量历史模型兼容：1575 KP + 624 章均实际通过模型读取；临时 CSV 全量导出两次一致；21 份现行 slim KP CLI 导出与公开文件逐字节一致。完整命令和真实 RED/GREEN 见 [TESTING.md](TESTING.md)。这些是离线/DOM 合同验证，不是手机视觉或真实 YouTube 播放验收。
 
 ### 确定性部分（代码负责）
 

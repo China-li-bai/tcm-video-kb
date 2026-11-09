@@ -9,6 +9,7 @@ import { getChapters } from './chapters';
 let WatchPage: ComponentType;
 let ListenHomePage: ComponentType;
 let unavailable = false;
+let notFound = false;
 let deferred: Promise<Response> | null = null;
 const scrollIntoView = vi.fn();
 const intersectionCallbacks: IntersectionObserverCallback[] = [];
@@ -26,6 +27,7 @@ beforeEach(async () => {
   vi.resetModules();
   localStorage.clear();
   unavailable = false;
+  notFound = false;
   deferred = null;
   scrollIntoView.mockClear();
   intersectionCallbacks.length = 0;
@@ -42,6 +44,7 @@ beforeEach(async () => {
     const [,layer,videoId] = match;
     if (layer === 'transcripts') {
       if (deferred) return deferred;
+      if (notFound) return new Response('{}', {status:404,headers:{'content-type':'application/json'}});
       if (unavailable) return new Response('<html>SPA fallback</html>', {headers:{'content-type':'text/html'}});
       if (videoId === 'zj-002') return new Response('{}', {status:404,headers:{'content-type':'application/json'}});
       return json({video_id:videoId,segments});
@@ -129,9 +132,10 @@ it('keeps the exact URL request in storage when delayed transcript effects selec
   fireEvent.click(screen.getByRole('button',{name:'点这里听'}));
   expect(new URL(frame().src).searchParams.get('start')).toBe('128');
 });
-it('shows an uncovered transcript honestly after actual 404 without fabricating rows or playback', async () => {
+it('shows a manifest-uncovered lecture honestly without requesting nonexistent transcript data', async () => {
   open('/watch/zj-002?t=125');
   expect(await screen.findByText('这集还没有对齐好的文稿。')).toBeTruthy();
+  expect(vi.mocked(fetch).mock.calls.some(([url])=>String(url)==='/transcripts/zj-002.json')).toBe(false);
   expect(document.querySelector('.utter-row')).toBeNull();
   expect(frame()).toBeNull();
   expect(lastPosition().t).toBe(125);
@@ -207,5 +211,15 @@ it.each(['Enter',' '])('still activates the transcript row itself via keyboard %
   expect(new URL(frame().src).searchParams.get('start')).toBe('125');
   expect(row.getAttribute('aria-pressed')).toBe('true');
   expect(lastPosition().t).toBe(125);
+  noFakeProgress();
+});
+
+it('keeps a published transcript actual-404 failure honest after the manifest gate',async()=>{
+  notFound=true;
+  open();
+  expect(await screen.findByText(/这集的句级文稿暂时没能打开/)).toBeTruthy();
+  expect(screen.getByText(/本集暂用章节摘要作阅读稿/)).toBeTruthy();
+  expect(screen.queryByText('点击的小数句')).toBeNull();
+  expect(vi.mocked(fetch).mock.calls.some(([url])=>String(url)==='/transcripts/shl-001.json')).toBe(true);
   noFakeProgress();
 });

@@ -8,6 +8,7 @@ from __future__ import annotations
 from typing import Literal, Optional
 
 from pydantic import BaseModel, ConfigDict, Field, field_validator, model_validator
+from tcmkb_core.play import finite_seconds, valid_source_id
 
 PREDICATES_LECTURE = ("treats", "indicates")
 CONF_MIN = 0.90
@@ -26,6 +27,20 @@ class LectureCitation(BaseModel):
     t_url: Optional[str] = None
     youtube_t_url: Optional[str] = None
     youtube_id: Optional[str] = None
+
+    @field_validator("video_id", mode="before")
+    @classmethod
+    def _video_id(cls, value):
+        if not valid_source_id(value):
+            raise ValueError("citation requires a safe video_id slug")
+        return value
+
+    @field_validator("start_s", "end_s", mode="before")
+    @classmethod
+    def _finite_time(cls, value):
+        if not finite_seconds(value):
+            raise ValueError("citation seconds must be finite numbers")
+        return value
 
 
 class CandidateEdge(BaseModel):
@@ -55,6 +70,8 @@ class CandidateEdge(BaseModel):
 
     @model_validator(mode="after")
     def _window(self) -> "CandidateEdge":
+        if self.video_id != self.citation.video_id:
+            raise ValueError("citation video_id conflicts with enclosing edge")
         span = self.citation.end_s - self.citation.start_s
         if span < WINDOW_MIN_S:
             raise ValueError(f"window {span:.1f}s < {WINDOW_MIN_S:.0f}s")
@@ -79,6 +96,12 @@ class HeldKP(BaseModel):
     evidence_quote: str = ""
     statement: str = ""
     citation: Optional[LectureCitation] = None
+
+    @model_validator(mode="after")
+    def _citation_identity(self) -> "HeldKP":
+        if self.citation is not None and self.video_id != self.citation.video_id:
+            raise ValueError("held citation video_id conflicts with enclosing record")
+        return self
 
     @field_validator("reasons")
     @classmethod
