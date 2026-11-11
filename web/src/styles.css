@@ -37,6 +37,10 @@
   --desk-text-body: 16px;
   --desk-text-reading: 18px;
   --desk-text-heading: 24px;
+  --desk-text-selected: 24px;
+  --desk-text-tab: 17px;
+  --desk-text-reading-color: #646A73; /* 原型阅读色，仍属候选 A */
+  --desk-leading-selected: 1.7;
   --desk-text-title: 32px;
   --desk-text-display: 36px;
   --desk-leading-reading: 1.8;

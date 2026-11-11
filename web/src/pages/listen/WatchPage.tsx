@@ -72,8 +72,16 @@ export function WatchPage() {
   const [moreOpen, setMoreOpen] = useState(false);
   const [embedRequest, setEmbedRequest] = useState<{videoId: string; revision: number} | null>(null);
   const embedRequested = embedRequest?.videoId === videoId;
-  const [segments, setSegments] = useState<Segment[] | null>(null);
-  const [transcriptLoading, setTranscriptLoading] = useState(true);
+  // Data and phase settle together. A new route can never display the previous
+  // lecture's sentences, or a loading notice alongside already settled data.
+  const [transcript, setTranscript] = useState<{
+    videoId: string;
+    segments: Segment[] | null;
+    pending: boolean;
+  } | null>(null);
+  const segments = transcript?.videoId === videoId ? transcript.segments : null;
+  const transcriptLoading = hasPublicTranscript(videoId) &&
+    (transcript?.videoId !== videoId || transcript.pending);
   const [kpPoints, setKpPoints] = useState<KnowledgePoint[] | null>(null);
   const [kpLoading, setKpLoading] = useState(true);
   const [entityMentions, setEntityMentions] = useState<EntityMention[] | null>(null);
@@ -94,16 +102,13 @@ export function WatchPage() {
 
   useEffect(() => {
     let cancelled = false;
-    setSegments(null);
-    if (!hasPublicTranscript(videoId)) {
-      setTranscriptLoading(false);
-      return;
-    }
-    setTranscriptLoading(true);
+    if (!hasPublicTranscript(videoId)) return;
+    setTranscript({ videoId, segments: null, pending: true });
     loadTranscript(videoId).then((file) => {
       if (cancelled) return;
-      setSegments(file?.segments ?? null);
-      setTranscriptLoading(false);
+      setTranscript({ videoId, segments: file?.segments ?? null, pending: false });
+    }, () => {
+      if (!cancelled) setTranscript({ videoId, segments: null, pending: false });
     });
     return () => {
       cancelled = true;
@@ -319,33 +324,38 @@ export function WatchPage() {
             <Link to="/" className="listen-text-link">
               回首页
             </Link>
-            <Link to={`/series/${lecture.series}`} className="series-chip">
-              {lecture.seriesLabel} · {lecture.id}
-            </Link>
           </div>
 
           <section className="player-card">
-            <h1 className="player-title">{selectedChapter?.title || lecture.title}</h1>
-            {selectedChapter && (
-              <p className="player-sub">
-                将遇：约 {chapterApproxMin(selectedChapter)} 分钟 · {formatClock(selectedChapter.start_s)}–
-                {formatClock(selectedChapter.end_s)}
-              </p>
-            )}
-
-            <StaticYouTubePlayer
-              key={`${videoId}:${requestedS}:${embedRequested ? embedRequest?.revision : "closed"}`}
-              youtubeId={lecture.youtubeId}
-              title={lecture.title}
-              requestedS={requestedS}
-              requested={embedRequested}
-              onRequest={requestEmbed}
-            />
-            <div className="player-position">
-              <span>请求定位 {formatClock(requestedS)}</span>
-              <span>目录时长 {lecture.duration || "未标注"}</span>
+            <div className="watch-programme">
+              <Link to={`/series/${lecture.series}`} className="series-chip">
+                {lecture.seriesLabel} · {lecture.id}
+              </Link>
+              <h1 className="player-title">{selectedChapter?.title || lecture.title}</h1>
+              {selectedChapter && (
+                <p className="player-sub">
+                  将遇：约 {chapterApproxMin(selectedChapter)} 分钟 · {formatClock(selectedChapter.start_s)}–
+                  {formatClock(selectedChapter.end_s)}
+                </p>
+              )}
             </div>
-            <p className="player-fallback">文稿高亮只表示所选位置，不会跟着播放自动翻页。</p>
+            <div className="watch-media">
+              <StaticYouTubePlayer
+                key={`${videoId}:${requestedS}:${embedRequested ? embedRequest?.revision : "closed"}`}
+                youtubeId={lecture.youtubeId}
+                title={lecture.title}
+                requestedS={requestedS}
+                requested={embedRequested}
+                onRequest={requestEmbed}
+              />
+            </div>
+            <div className="watch-notes">
+              <div className="player-position">
+                <span>请求定位 {formatClock(requestedS)}</span>
+                <span>目录时长 {lecture.duration || "未标注"}</span>
+              </div>
+              <p className="player-fallback">文稿高亮只表示所选位置，不会跟着播放自动翻页。</p>
+            </div>
           </section>
         </>
       }
@@ -356,7 +366,7 @@ export function WatchPage() {
             className={tab === "script" ? "active" : ""}
             onClick={() => setTab("script")}
           >
-            文稿
+            转写
           </button>
           <button
             type="button"
@@ -442,7 +452,9 @@ export function WatchPage() {
             {!entitiesLoading && entityMentions === null && hasPublicTranscript(videoId) && (
               <div className="empty-inline" role="status">这集的词条提示暂时没能打开，不影响听原讲。</div>
             )}
-            {transcriptLoading && <div className="empty-inline">文稿加载中…</div>}
+            {transcriptLoading && utterances.length === 0 && (
+              <div className="empty-inline" role="status" aria-label="转写加载状态">文稿加载中…</div>
+            )}
 
             {showScriptEmpty && (
               <div className="empty-inline">
