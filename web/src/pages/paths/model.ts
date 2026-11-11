@@ -61,7 +61,7 @@ const KIND_ZH: Record<string, string> = {
 };
 
 export function kindZh(kind: string): string {
-  return KIND_ZH[kind] || kind;
+  return KIND_ZH[kind] || "条目";
 }
 
 function cardCite(card: PathCard): CiteItem {

@@ -51,7 +51,7 @@ export function ToolFocusBar({
 
       <div className="tool-bar-row">
         <span className="tool-looking">
-          正在看：<strong>{activePreset?.label ?? humanizeFocus(focus)}</strong>
+          正在看：<strong>{activePreset?.label ?? "当前条目"}</strong>
         </span>
         <div className="tool-presets" role="group" aria-label="换一个看">
           {presets.map((p) => (
@@ -91,9 +91,4 @@ export function ToolFocusBar({
       </details>
     </header>
   );
-}
-
-function humanizeFocus(id: string): string {
-  const tail = id.includes(".") ? id.slice(id.indexOf(".") + 1) : id;
-  return tail.replace(/_/g, " ") || id;
 }

@@ -1,10 +1,10 @@
 import { DeskStage } from "../layout/DeskStage";
 import { useEffect, useMemo, useState, type ReactNode } from "react";
 import { Link } from "react-router-dom";
-import { ApiError, fetchPaths } from "../api/client";
+import { fetchPaths } from "../api/client";
 import { ToolFocusBar } from "../layout/ToolFocusBar";
 import { useToolFocus } from "../layout/useToolFocus";
-import { CiteLinks, formatT } from "../panel/format";
+import { EvidenceExcerpt } from "../panel/EvidenceExcerpt";
 import { ErrorState } from "../panel/ErrorState";
 import { HeldList } from "../panel/HeldList";
 import {
@@ -50,9 +50,9 @@ export function PathsPage() {
         if (ac.signal.aborted) return;
         setVm(buildPathsViewModel(body));
       })
-      .catch((err: unknown) => {
+      .catch(() => {
         if (ac.signal.aborted) return;
-        setError(err instanceof ApiError ? err.message : "接口没有返回路径");
+        setError("暂时无法读取讲法，请稍后重试。");
       })
       .finally(() => {
         if (!ac.signal.aborted) setLoading(false);
@@ -87,7 +87,7 @@ export function PathsPage() {
     <DeskStage variant="tool" className="listen-tool-page listen-tool-page--scroll">
       <ToolFocusBar
         title="路径分轨"
-        lead="同权并列多条讲法 · 不是排行，也不是诊断"
+        lead="把几种讲法放在一起，回原讲对照。"
         focus={focus}
         onFocus={setFocus}
         presets={PATHS_PRESETS}
@@ -130,11 +130,11 @@ export function PathsPage() {
               )}
             </div>
             <p className="sym-hint">
-              点症组芯片仅高亮相关路径、淡化无关卡，<strong>不是</strong>诊断提交。
+              点症组，相关讲法会亮起；只是帮助对照，不作诊断。
             </p>
             <div className="toolbar-row toolbar-row-end">
               <span className="learn-bound">
-                学习讲法 · 路径同权并列 · 排序仅标证据条数 · 非诊疗
+                各条讲法平等并列，原讲出处多的在前，不代表更适合。
               </span>
               <div className="view-toggle" role="group" aria-label="主区视图">
                 <button
@@ -156,20 +156,19 @@ export function PathsPage() {
             <p className="data-origin muted">
               {vm.usedDemoSupplement && (
                 <span>
-                  含演示补充路径 · 出处秒数来自讲课种子
+                  含演示补充路径，请结合原讲核对
                 </span>
               )}
               {vm.usedDemoSupplement && vm.usedApi && " · "}
-              {vm.usedApi && <span>含接口返回的证轨</span>}
+              {vm.usedApi && <span>含已整理的讲课路径</span>}
               {!vm.usedDemoSupplement && !vm.usedApi && (
-                <span>这一焦点下还没有可并列的路径</span>
+                <span>这里还没有可并列的讲法</span>
               )}
-              {vm.disclaimer ? ` · ${vm.disclaimer}` : null}
             </p>
           </div>
 
           <div className="paths-stage">
-            <main className="paths-main" aria-label="同权假设路径">
+            <main className="paths-main" aria-label="并列讲法">
               {viewMode === "cards" ? (
                 <HypCardList
                   show={scoped.show}
@@ -194,9 +193,9 @@ export function PathsPage() {
               >
                 <summary>关系图摘要（辅）</summary>
                 <p className="mini-hint">
-                  简化链路示意；完整点选见{" "}
+                  先看关系梗概，点选出处请打开{" "}
                   <Link to={`/graph?focus=${encodeURIComponent(focus)}`}>关系图</Link>
-                  。不是仪表盘。
+                  。
                 </p>
                 <MiniChains
                   hypotheses={
@@ -216,11 +215,11 @@ export function PathsPage() {
                 />
               </details>
               <div className="side-note">
-                <p className="field-k">口径提醒</p>
+                <p className="field-k">怎样对照</p>
                 <ul className="side-ul">
-                  <li>无唯一证型结论、无匹配度排行、无完成态徽章</li>
-                  <li>不出现「确诊为××」或「最佳/推荐」</li>
-                  <li>边/badge 仅中文谓词；排序只标证据条数</li>
+                  <li>几种讲法并列阅读，不替你选结论。</li>
+                  <li>症组只帮助找线索，不能据此诊断。</li>
+                  <li>有疑问时，听原讲的上下文。</li>
                 </ul>
               </div>
             </aside>
@@ -270,12 +269,12 @@ function TrackTabs({
         >
           {t.label}
           {t.origin === "demo" ? (
-            <span className="tab-origin" title="原型演示补充">
-              ·演
+            <span className="tab-origin" title="演示补充">
+              ·演示
             </span>
           ) : (
-            <span className="tab-origin" title="接口证轨">
-              ·API
+            <span className="tab-origin" title="讲课整理">
+              ·讲课
             </span>
           )}
         </button>
@@ -294,7 +293,7 @@ function SymChips({
   onToggle: (id: string) => void;
 }) {
   if (!filters.length) {
-    return <span className="muted">暂无症组芯片（接口未提供 indicates 卡，且无演示补充）</span>;
+    return <span className="muted">这段讲法暂未整理症组。</span>;
   }
   return (
     <div
@@ -331,12 +330,12 @@ function HypCardList({
   selectedSyms: Set<string>;
   tracks: UiTrack[];
 }) {
-  const trackLabel = (id: string) => tracks.find((t) => t.id === id)?.label ?? id;
+  const trackLabel = (id: string) => tracks.find((t) => t.id === id)?.label ?? "其他讲法";
 
   if (!show.length) {
     return (
       <p className="paths-empty">
-        当前分轨 / 症组下无匹配路径（筛选仅高亮，不提交诊断）。
+        这里暂未整理出对应的讲法，可以换一轨或清除症组试试。
       </p>
     );
   }
@@ -360,15 +359,15 @@ function HypCardList({
                   <span className="hyp-track">
                     {trackLabel(h.track_id)}
                     <span className={`origin-tag is-${h.origin}`}>
-                      {h.origin === "demo" ? "演示补充" : "接口"}
+                      {h.origin === "demo" ? "演示补充" : "讲课整理"}
                     </span>
                   </span>
                   <h2 className="hyp-title">{h.title}</h2>
-                  <p className="hyp-target">目标：{h.target_label || "—"}</p>
+                  <p className="hyp-target">对照：{h.target_label || "—"}</p>
                 </div>
                 <div className="hyp-meta">
-                  <span className="evidence-stat" title="仅标证据条数，非诊断概率">
-                    证据 {evidenceCount(h)} 条
+                  <span className="evidence-stat" title="原讲出处数量，不代表诊断把握">
+                    出处 {evidenceCount(h)} 条
                   </span>
                   <div className="badge-row">
                     {(h.source_layers || []).map((L) => (
@@ -382,10 +381,10 @@ function HypCardList({
               <div className="hyp-body">
                 <p className="field-k">路径摘要</p>
                 <PathChain h={h} />
-                <p className="field-k">证据条目（可点到秒）</p>
+                <p className="field-k">原讲句子与出处</p>
                 <div className="cite-list hyp-cites">
                   {(h.citations || []).length === 0 && (
-                    <p className="muted">无 cite</p>
+                    <p className="muted">暂未找到原讲出处。</p>
                   )}
                   {(h.citations || []).map((c, i) => (
                     <CiteCard key={`${c.kp_id}-${i}`} cite={c} />
@@ -398,7 +397,7 @@ function HypCardList({
       </div>
       {noneHit && (
         <p className="paths-empty">
-          当前症组与已展示路径无交集（仅高亮/淡化，非诊断提交）。
+          当前症组暂未对应到这些讲法。可清除筛选，继续对照。
         </p>
       )}
     </>
@@ -430,17 +429,7 @@ function PathChain({ h }: { h: UiHypothesis }) {
 }
 
 function CiteCard({ cite }: { cite: CiteItem }) {
-  const when = typeof cite.start_s === "number" && Number.isFinite(cite.start_s) ? formatT(cite.start_s) : "";
-  return (
-    <div className="cite-card">
-      <div className="cite-meta">
-        <span>{cite.kp_id || "—"}</span>
-        {when && <span>t={when}</span>}
-      </div>
-      {cite.evidence && <p className="cite-quote">「{cite.evidence}」</p>}
-      <CiteLinks cite={cite} />
-    </div>
-  );
+  return <EvidenceExcerpt cite={cite} quote={cite.evidence} />;
 }
 
 function CompareTable({
@@ -474,32 +463,29 @@ function CompareTable({
   if (!cols.length) {
     return (
       <p className="paths-empty">
-        当前分轨 / 症组下无匹配路径（筛选仅高亮，不提交诊断）。
+        这里暂未整理出对应的讲法，可以换一轨或清除症组试试。
       </p>
     );
   }
 
-  const trackLabel = (id: string) => vm.tracks.find((t) => t.id === id)?.label ?? id;
+  const trackLabel = (id: string) => vm.tracks.find((t) => t.id === id)?.label ?? "其他讲法";
 
   const fields: { k: string; fn: (h: UiHypothesis) => ReactNode }[] = [
-    { k: "轨名", fn: (h) => trackLabel(h.track_id) },
-    { k: "来源", fn: (h) => (h.origin === "demo" ? "演示补充" : "接口") },
-    { k: "目标", fn: (h) => h.target_label || "—" },
+    { k: "讲法", fn: (h) => trackLabel(h.track_id) },
+    { k: "来源", fn: (h) => (h.origin === "demo" ? "演示补充" : "讲课整理") },
+    { k: "对照", fn: (h) => h.target_label || "—" },
     { k: "路径摘要", fn: (h) => h.path_summary },
-    { k: "来源层", fn: (h) => (h.source_layers || []).join(" · ") },
+    { k: "参考来源", fn: (h) => (h.source_layers || []).join(" · ") },
     {
-      k: "证据条数",
-      fn: (h) => `${evidenceCount(h)}（非诊断概率）`,
+      k: "出处数量",
+      fn: (h) => `${evidenceCount(h)} 条（不代表诊断把握）`,
     },
     {
-      k: "可点 cite",
+      k: "回听原讲",
       fn: (h) => (
         <>
           {(h.citations || []).map((c, i) => (
-            <div key={i}>
-              <span>{c.kp_id || "cite"}</span>
-              <CiteLinks cite={c} />
-            </div>
+            <CiteCard key={i} cite={c} />
           ))}
         </>
       ),
@@ -509,13 +495,13 @@ function CompareTable({
   return (
     <div className="compare-wrap">
       <p className="compare-note">
-        对比两条（或多条）路径字段，<strong>无赢家 / 无推荐</strong>文案。
+        把讲法和原句放在一起读，不分高下；有疑问就回听上下文。
       </p>
       <div className="compare-scroll">
-        <table className="compare-table">
+        <table className="compare-table" aria-label="讲法对照">
           <thead>
             <tr>
-              <th scope="col">字段</th>
+              <th scope="col">对照阅读</th>
               {cols.map((h) => (
                 <th key={h.id} scope="col">
                   {h.title}

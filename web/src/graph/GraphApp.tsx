@@ -38,7 +38,7 @@ function paint(subgraph: Subgraph) {
         lineWidth: spec.lineWidth,
         endArrow: true,
         labelText: spec.label,
-        labelFontSize: 11,
+        labelFontSize: 14,
         labelFill: "#8F959E",
         labelBackground: true,
         labelBackgroundFill: "#F5F6F8",
@@ -75,7 +75,7 @@ export function GraphApp({ subgraph, selection, onSelect }: Props) {
       },
       node: {
         state: {
-          selected: { lineWidth: 2.5, stroke: "#3370FF", fill: "#E8F0FF" }, // 候选待拍板 · soft 蓝选中
+          selected: { lineWidth: 2.5, stroke: "#3370FF", fill: "#E8F0FF", labelFill: "#1F2329" }, // 候选待拍板 · soft 蓝选中
         },
       },
       edge: {
