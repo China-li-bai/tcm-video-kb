@@ -1,4 +1,5 @@
 import { DeskStage } from "../../layout/DeskStage";
+import { SeriesCover, seriesTitle } from "../../listen/SeriesCover";
 import { watchHref } from "../../listen/citationLinks";
 import { Link, useParams } from "react-router-dom";
 import { formatDurationLabel, getSeries } from "../../listen/lectures";
@@ -9,7 +10,7 @@ export function SeriesDetailPage() {
 
   if (!group) {
     return (
-      <DeskStage>
+      <DeskStage className="listen-series listen-episodes">
         <div className="empty-card">
           <h2>没有这个系列</h2>
           <Link to="/series" className="listen-btn listen-btn-primary">
@@ -21,7 +22,7 @@ export function SeriesDetailPage() {
   }
 
   return (
-    <DeskStage>
+    <DeskStage className="listen-series listen-episodes">
       <div className="watch-nav-row">
         <Link to="/series" className="listen-text-link">
           ‹ 全部系列
@@ -29,18 +30,16 @@ export function SeriesDetailPage() {
       </div>
 
       <section className="series-hero-card">
-        <div className="series-cover lg" aria-hidden>
-          {group.label.slice(0, 1)}
-        </div>
+        <SeriesCover />
         <div>
-          <h1>{group.label}</h1>
+          <h1>{seriesTitle(group)}</h1>
           <p>{group.blurb}</p>
           <span className="muted-sm">共 {group.count} 集 · 播客分集</span>
         </div>
       </section>
 
       <section className="listen-block">
-        <h3 className="listen-block-title">分集节目单</h3>
+        <h2 className="listen-block-title">分集节目单</h2>
         <ul className="episode-list">
           {group.lectures.map((lec, i) => (
             <li key={lec.id}>

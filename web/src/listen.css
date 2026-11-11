@@ -412,14 +412,14 @@ body:has(.listen-desk--watch),
   overflow: hidden;
   background: var(--surface);
   border-radius: var(--desk-radius-hero);
-  padding: 40px 32px;
+  padding: var(--desk-space-10);
   text-align: center;
   border: 1px solid color-mix(in srgb, var(--border) 50%, transparent);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.03);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 18px;
+  gap: var(--desk-space-6);
 }
 .today-wash {
   position: absolute;
@@ -443,7 +443,7 @@ body:has(.listen-desk--watch),
 .today-title {
   position: relative;
   z-index: 1;
-  font-size: clamp(28px, 5vw, 36px);
+  font-size: clamp(var(--desk-text-title), 5vw, var(--desk-text-display));
   font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1.25;
@@ -458,7 +458,7 @@ body:has(.listen-desk--watch),
   justify-content: center;
   align-items: center;
   gap: 8px;
-  margin-bottom: 8px;
+  margin-bottom: var(--desk-space-4);
 }
 .today-topics-label {
   font-size: 14px;
@@ -553,13 +553,15 @@ body:has(.listen-desk--watch),
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: var(--desk-space-3);
 }
 .upnext-row {
-  display: block;
-  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  gap: var(--desk-space-4);
+  padding: var(--desk-space-6);
   background: var(--surface);
-  border-radius: 20px;
+  border-radius: var(--desk-radius-lg);
   text-decoration: none !important;
   color: inherit;
   border: 1px solid transparent;
@@ -570,7 +572,9 @@ body:has(.listen-desk--watch),
 }
 .upnext-row h4 {
   margin: 0 0 4px;
-  font-size: 16px;
+  font-size: var(--desk-text-reading);
+  line-height: 1.6;
+  overflow-wrap: anywhere;
   font-weight: 500;
 }
 .upnext-row:hover h4 {
@@ -714,14 +718,15 @@ body:has(.listen-desk--watch),
 .series-cards {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: var(--desk-space-6);
 }
 .series-card {
   display: flex;
-  gap: 20px;
+  gap: var(--desk-space-6);
+  align-items: center;
   background: var(--surface);
   border-radius: var(--desk-radius-card);
-  padding: 24px;
+  padding: var(--desk-space-8);
   border: 1px solid color-mix(in srgb, var(--border) 50%, transparent);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.03);
   text-decoration: none !important;
@@ -733,8 +738,8 @@ body:has(.listen-desk--watch),
   box-shadow: 0 12px 36px rgba(51, 112, 255, 0.08);
 }
 .series-cover {
-  width: 96px;
-  height: 96px;
+  width: var(--series-cover-size);
+  height: var(--series-cover-size);
   border-radius: var(--desk-radius-md);
   background: linear-gradient(135deg, #e8f0ff, #d4e2ff);
   color: var(--primary);
@@ -744,10 +749,6 @@ body:has(.listen-desk--watch),
   font-size: 32px;
   font-weight: 700;
   flex-shrink: 0;
-}
-.series-cover.lg {
-  width: 112px;
-  height: 112px;
 }
 .series-card.tone-1 .series-cover {
   background: linear-gradient(135deg, #f5f6f8, #e5e6eb);
@@ -772,7 +773,9 @@ body:has(.listen-desk--watch),
 }
 .series-card-head h2 {
   margin: 0;
-  font-size: 22px;
+  font-size: var(--desk-text-heading);
+  line-height: 1.4;
+  overflow-wrap: anywhere;
   font-weight: 700;
 }
 .series-card:hover .series-card-head h2 {
@@ -787,33 +790,36 @@ body:has(.listen-desk--watch),
 }
 .series-card-body > p {
   margin: 0;
-  font-size: 15px;
+  font-size: var(--desk-text-body);
   color: #646a73;
-  line-height: 1.55;
+  line-height: var(--desk-leading-reading);
 }
 .series-go {
-  font-size: 13px;
+  font-size: var(--desk-text-small);
   color: var(--primary);
   font-weight: 500;
 }
 
 .series-hero-card {
   display: flex;
-  gap: 20px;
+  gap: var(--desk-space-6);
   align-items: center;
   background: var(--surface);
   border-radius: var(--desk-radius-card);
-  padding: 28px;
+  padding: var(--desk-space-8);
   border: 1px solid color-mix(in srgb, var(--border) 50%, transparent);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.03);
 }
 .series-hero-card h1 {
-  font-size: clamp(24px, 4vw, 30px);
+  font-size: var(--desk-text-title);
+  line-height: 1.4;
+  overflow-wrap: anywhere;
   margin: 0 0 6px;
 }
 .series-hero-card p {
   margin: 0 0 6px;
-  font-size: 15px;
+  font-size: var(--desk-text-body);
+  line-height: var(--desk-leading-reading);
   color: #646a73;
 }
 
@@ -823,15 +829,15 @@ body:has(.listen-desk--watch),
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: var(--desk-space-3);
 }
 .episode-row {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: var(--desk-space-4);
   background: var(--surface);
-  border-radius: 20px;
-  padding: 16px 18px;
+  border-radius: var(--desk-radius-md);
+  padding: var(--desk-space-6);
   text-decoration: none !important;
   color: inherit;
   border: 1px solid transparent;
@@ -864,11 +870,10 @@ body:has(.listen-desk--watch),
 }
 .ep-body h3 {
   margin: 0 0 4px;
-  font-size: 15px;
+  font-size: var(--desk-text-reading);
+  line-height: 1.6;
   font-weight: 500;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  overflow-wrap: anywhere;
 }
 .episode-row:hover .ep-body h3 {
   color: var(--primary);
@@ -1598,17 +1603,124 @@ body:has(.listen-desk--watch),
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 560px) {
-  .today-card {
-    padding: 32px 20px;
-    border-radius: 24px;
+/* Home / playlist proportions. Existing accent remains candidate A, not a brand lock.
+   Scope shared typography overrides here so search/stash/watch/tools are untouched. */
+.listen-home {
+  gap: var(--desk-space-10);
+  padding-top: var(--desk-space-10);
+}
+.listen-series {
+  --series-cover-size: 112px;
+  padding-top: var(--desk-space-10);
+}
+.listen-home .listen-block-title,
+.listen-series .listen-block-title {
+  font-size: var(--desk-text-reading);
+}
+.listen-home .muted-sm,
+.listen-series .muted-sm {
+  font-size: var(--desk-text-small);
+  line-height: 1.6;
+}
+.home-play-icon {
+  font-size: var(--desk-text-heading);
+  line-height: 1;
+}
+.upnext-ico {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: var(--desk-radius-pill);
+  background: var(--bg);
+  color: var(--text-secondary);
+}
+.upnext-body {
+  min-width: 0;
+}
+.listen-home .resume-main {
+  font-size: var(--desk-text-reading);
+  white-space: normal;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+.listen-home .stash-entry {
+  padding: var(--desk-space-6);
+  border-radius: var(--desk-radius-lg);
+}
+.listen-home .stash-entry-ico {
+  width: 48px;
+  height: 48px;
+  font-size: var(--desk-text-reading);
+  flex-shrink: 0;
+}
+.listen-home .stash-entry strong {
+  font-size: var(--desk-text-reading);
+}
+.listen-home .stash-entry p {
+  font-size: var(--desk-text-small);
+  line-height: 1.6;
+}
+.home-footer {
+  flex-direction: column;
+  align-items: center;
+  gap: var(--desk-space-4);
+}
+.home-footer > a {
+  font-size: var(--desk-text-body);
+}
+.home-evidence-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--desk-space-4);
+  color: var(--text-secondary);
+  font-size: var(--desk-text-caption);
+}
+.home-evidence-links a {
+  font-size: inherit;
+}
+.listen-series .page-hero h1 {
+  font-size: var(--desk-text-title);
+}
+.series-cover svg {
+  width: 48px;
+  height: 48px;
+}
+.series-hero-card > div:last-child {
+  min-width: 0;
+}
+@media (min-width: 768px) {
+  .listen-home,
+  .listen-series {
+    padding-inline: 0;
   }
-  .series-card {
-    flex-direction: column;
-  }
+}
+@media (max-width: 400px) {
+  .series-card,
   .series-hero-card {
     flex-direction: column;
-    text-align: center;
+    align-items: flex-start;
+  }
+  .episode-row {
+    padding: var(--desk-space-4);
+    gap: var(--desk-space-3);
+  }
+}
+
+@media (max-width: 560px) {
+  .today-card {
+    padding: var(--desk-space-8) var(--desk-space-6);
+  }
+  .listen-series {
+    --series-cover-size: 96px;
+  }
+  .series-card,
+  .series-hero-card {
+    padding: var(--desk-space-6);
+    gap: var(--desk-space-4);
   }
   .player-card {
     padding: 22px 16px;
