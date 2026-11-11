@@ -1,3 +1,4 @@
+import { DeskStage } from "../../layout/DeskStage";
 import { Link } from "react-router-dom";
 import { getSeriesGroups } from "../../listen/lectures";
 
@@ -5,7 +6,7 @@ export function SeriesPage() {
   const groups = getSeriesGroups();
 
   return (
-    <div className="listen-stage">
+    <DeskStage>
       <div className="page-hero">
         <h1>课程系列</h1>
         <p>像播单一样挑一集听。点开就是分集节目单。</p>
@@ -32,6 +33,6 @@ export function SeriesPage() {
       <div className="listen-footer-links">
         <Link to="/">回首页听今日一小段</Link>
       </div>
-    </div>
+    </DeskStage>
   );
 }

@@ -1,3 +1,4 @@
+import { DeskStage } from "../../layout/DeskStage";
 import { watchHref } from "../../listen/citationLinks";
 import { Link, useParams } from "react-router-dom";
 import { formatDurationLabel, getSeries } from "../../listen/lectures";
@@ -8,19 +9,19 @@ export function SeriesDetailPage() {
 
   if (!group) {
     return (
-      <div className="listen-stage">
+      <DeskStage>
         <div className="empty-card">
           <h2>没有这个系列</h2>
           <Link to="/series" className="listen-btn listen-btn-primary">
             全部系列
           </Link>
         </div>
-      </div>
+      </DeskStage>
     );
   }
 
   return (
-    <div className="listen-stage">
+    <DeskStage>
       <div className="watch-nav-row">
         <Link to="/series" className="listen-text-link">
           ‹ 全部系列
@@ -66,6 +67,6 @@ export function SeriesDetailPage() {
         <Link to="/series">全部系列</Link>
         <Link to="/">回首页</Link>
       </div>
-    </div>
+    </DeskStage>
   );
 }

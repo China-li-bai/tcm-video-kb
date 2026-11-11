@@ -7,6 +7,7 @@ const DESK_NAV = [
   { to: "/stash", label: "收获匣", end: false },
 ] as const;
 
+/** Shared learner chrome. Watch owns a locked viewport; other stages retain page scrolling. */
 export function ListenDeskShell() {
   const navigate = useNavigate();
   const location = useLocation();

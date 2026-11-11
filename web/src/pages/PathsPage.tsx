@@ -1,3 +1,4 @@
+import { DeskStage } from "../layout/DeskStage";
 import { useEffect, useMemo, useState, type ReactNode } from "react";
 import { Link } from "react-router-dom";
 import { ApiError, fetchPaths } from "../api/client";
@@ -83,7 +84,7 @@ export function PathsPage() {
   }
 
   return (
-    <div className="listen-tool-page listen-tool-page--scroll">
+    <DeskStage variant="tool" className="listen-tool-page listen-tool-page--scroll">
       <ToolFocusBar
         title="路径分轨"
         lead="同权并列多条讲法 · 不是排行，也不是诊断"
@@ -229,7 +230,7 @@ export function PathsPage() {
         </>
       )}
       </div>
-    </div>
+    </DeskStage>
   );
 }
 

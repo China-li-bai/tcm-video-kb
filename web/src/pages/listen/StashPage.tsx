@@ -1,3 +1,4 @@
+import { DeskStage } from "../../layout/DeskStage";
 import { LearningBackupPanel } from "../../listen/LearningBackupPanel";
 import { watchHref } from "../../listen/citationLinks";
 import { useState } from "react";
@@ -13,7 +14,7 @@ export function StashPage() {
   }
 
   return (
-    <div className="listen-stage listen-stage-narrow">
+    <DeskStage variant="narrow">
       <div className="page-hero row">
         <span className="stash-entry-ico lg" aria-hidden>
           ▣
@@ -78,6 +79,6 @@ export function StashPage() {
       <div className="listen-footer-links">
         <Link to="/">回首页</Link>
       </div>
-    </div>
+    </DeskStage>
   );
 }
