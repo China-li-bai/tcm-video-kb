@@ -14,7 +14,7 @@ export function StashPage() {
   }
 
   return (
-    <DeskStage variant="narrow">
+    <DeskStage variant="narrow" className="listen-stash">
       <div className="page-hero row">
         <span className="stash-entry-ico lg" aria-hidden>
           ▣
@@ -26,16 +26,22 @@ export function StashPage() {
       </div>
 
       {items.length === 0 && (
-        <div className="empty-card">
-          <h2>匣子还是空的</h2>
-          <p>听的时候点「收下」，句子会落在这里。过几天回来先回想。</p>
+        <section className="empty-card desk-state-card" aria-labelledby="stash-empty-title">
+          <span className="stash-empty-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+              <path d="M4 4h16l2 11v5H2v-5L4 4Z" />
+              <path d="M2 15h6l2 3h4l2-3h6" />
+            </svg>
+          </span>
+          <h2 id="stash-empty-title">匣子还是空的</h2>
+          <p>听的时候可以收下几句。过几天回来先回想，忘了就听原讲。</p>
           <Link to="/" className="listen-btn listen-btn-primary">
             去听今日一小段
           </Link>
-        </div>
+        </section>
       )}
 
-      <ul className="stash-list">
+      {items.length > 0 && <ul className="stash-list">
         {items.map((item) => {
           const lec = getLecture(item.videoId);
           const replayHref = watchHref(item.videoId, item.t);
@@ -65,14 +71,14 @@ export function StashPage() {
                       refresh();
                     }}
                   >
-                    拿掉
+                    移出
                   </button>
                 </div>
               </article>
             </li>
           );
         })}
-      </ul>
+      </ul>}
 
       <LearningBackupPanel onChange={refresh} />
 

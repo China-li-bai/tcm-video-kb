@@ -2168,3 +2168,193 @@ body:has(.listen-desk--watch),
 .backup-file { display: flex; flex-wrap: wrap; gap: 8px; min-width: 0; }
 .backup-file input { max-width: 100%; min-width: 0; }
 .learning-backup { overflow-wrap: anywhere; }
+
+/* Search / saved sentences / recall: the same programme-card family as home.
+   Keep every override page-local; shared shell and other stages stay untouched. */
+.listen-search-page,
+.listen-stash,
+.listen-recall {
+  padding-top: var(--desk-space-10);
+}
+.source-search-card,
+.desk-state-card {
+  background: var(--surface);
+  border-radius: var(--desk-radius-hero);
+  padding: var(--desk-space-10);
+  border: 1px solid color-mix(in srgb, var(--border) 50%, transparent);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  gap: var(--desk-space-6);
+  min-width: 0;
+}
+.source-search-card .page-hero h1,
+.listen-stash .page-hero h1 {
+  font-size: var(--desk-text-title);
+  margin-bottom: var(--desk-space-3);
+}
+.source-search-card .page-hero p,
+.listen-stash .page-hero p {
+  font-size: var(--desk-text-body);
+  line-height: var(--desk-leading-reading);
+  color: var(--desk-text-reading-color);
+}
+.source-search-card .search-page-form {
+  gap: var(--desk-space-3);
+}
+.source-search-card .search-page-form input {
+  min-width: 0;
+  width: 100%;
+  font-size: var(--desk-text-body);
+  background: var(--bg);
+}
+.source-search-note,
+.source-search-status {
+  margin: 0;
+  font-size: var(--desk-text-small);
+  line-height: var(--desk-leading-reading);
+  color: var(--desk-text-reading-color);
+}
+.source-search-status { text-align: center; }
+.desk-state-card {
+  align-items: center;
+  text-align: center;
+}
+.desk-state-card h2 {
+  font-size: var(--desk-text-heading);
+  line-height: 1.5;
+}
+.desk-state-card p {
+  font-size: var(--desk-text-body);
+  line-height: var(--desk-leading-reading);
+  overflow-wrap: anywhere;
+}
+.listen-search-page .hit-card,
+.listen-stash .stash-card {
+  padding: var(--desk-space-8);
+  border-radius: var(--desk-radius-card);
+  gap: var(--desk-space-6);
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.listen-search-page .search-hits,
+.listen-stash .stash-list {
+  gap: var(--desk-space-6);
+}
+.listen-search-page .listen-block-title {
+  font-size: var(--desk-text-reading);
+}
+.listen-search-page .hit-card h3 {
+  font-size: var(--desk-text-heading);
+  line-height: 1.6;
+}
+.listen-search-page .hit-card .hit-source-title {
+  font-size: var(--desk-text-body);
+  font-weight: 500;
+  color: var(--desk-text-reading-color);
+}
+.hit-quote,
+.listen-stash .stash-quote {
+  margin: 0;
+  font-size: var(--desk-text-heading);
+  font-weight: 600;
+  line-height: var(--desk-leading-selected);
+}
+.listen-search-page .hit-snippet {
+  font-size: var(--desk-text-body);
+  line-height: var(--desk-leading-reading);
+}
+.listen-search-page .hit-card .muted-sm,
+.listen-stash .stash-where {
+  margin: 0;
+  font-size: var(--desk-text-small);
+  line-height: var(--desk-leading-reading);
+  color: var(--desk-text-reading-color);
+}
+.stash-empty-mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: var(--desk-radius-pill);
+  background: var(--bg);
+  color: var(--text-secondary);
+}
+.stash-empty-mark svg { width: 32px; height: 32px; }
+.listen-stash .page-hero .stash-entry-ico { flex-shrink: 0; }
+.listen-search-page .listen-btn,
+.listen-stash .listen-btn,
+.listen-recall .listen-btn {
+  min-height: 48px;
+  font-size: var(--desk-text-body);
+  padding: var(--desk-space-3) var(--desk-space-6);
+}
+/* Backup stays secondary and in normal flow. No import/export control changes. */
+.listen-stash .learning-backup {
+  border-top: 1px solid var(--border);
+  padding: var(--desk-space-6) var(--desk-space-2) 0;
+}
+.listen-stash .learning-backup h2 {
+  margin: 0 0 var(--desk-space-3);
+  font-size: var(--desk-text-reading);
+}
+.listen-stash .learning-backup .muted-sm {
+  font-size: var(--desk-text-small);
+  line-height: var(--desk-leading-reading);
+  color: var(--desk-text-reading-color);
+}
+.listen-stash .learning-backup .hit-actions { gap: var(--desk-space-4); }
+.listen-stash .backup-file {
+  flex-direction: column;
+  font-size: var(--desk-text-small);
+  color: var(--desk-text-reading-color);
+}
+.listen-stash .backup-preview {
+  margin-top: var(--desk-space-6);
+  padding: var(--desk-space-4);
+  background: var(--surface);
+  border-radius: var(--desk-radius-md);
+}
+.listen-recall .recall-hero { gap: var(--desk-space-3); }
+.listen-recall .recall-hero h1 { font-size: var(--desk-text-title); }
+.listen-recall .muted-sm {
+  margin: 0;
+  font-size: var(--desk-text-small);
+  line-height: var(--desk-leading-reading);
+  overflow-wrap: anywhere;
+  color: var(--desk-text-reading-color);
+}
+.listen-recall .recall-card {
+  border-radius: var(--desk-radius-card);
+  padding: var(--desk-space-10);
+  gap: var(--desk-space-8);
+  min-width: 0;
+}
+.recall-quote {
+  width: 100%;
+  justify-content: center;
+  font-size: var(--desk-text-selected);
+  line-height: var(--desk-leading-selected);
+  overflow-wrap: anywhere;
+}
+.listen-recall .recall-secondary-actions .listen-btn {
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+@media (max-width: 560px) {
+  .source-search-card,
+  .desk-state-card,
+  .listen-search-page .hit-card,
+  .listen-stash .stash-card,
+  .listen-recall .recall-card {
+    padding: var(--desk-space-8) var(--desk-space-6);
+  }
+  .source-search-card .search-page-form,
+  .listen-recall .recall-card .hit-actions {
+    flex-direction: column;
+    width: 100%;
+    align-items: stretch;
+  }
+  .source-search-card .search-page-form input { flex: auto; }
+}

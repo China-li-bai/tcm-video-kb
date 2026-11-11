@@ -44,31 +44,34 @@ export function SearchPage() {
   const anyHit = quoteHits.length > 0 || catalogHits.length > 0;
 
   return (
-    <DeskStage variant="narrow">
-      <div className="page-hero">
-        <h1>查出处</h1>
-        <p>别处听到的一句话、一个方名，先在这里找找是哪一集，点进去从那一秒听。</p>
-      </div>
+    <DeskStage variant="narrow" className="listen-search-page">
+      <section className="source-search-card" aria-labelledby="source-search-title">
+        <div className="page-hero">
+          <h1 id="source-search-title">查出处</h1>
+          <p>别处听到的一句话、一个方名，先在这里找找是哪一集，点进去从那一秒听。</p>
+        </div>
 
-      <form className="search-page-form" onSubmit={onSubmit}>
-        <input
-          value={draft}
-          onChange={(e) => setDraft(e.target.value)}
-          placeholder="比如：桂枝汤、太阳病、微似有汗…"
-          spellCheck={false}
-          autoFocus
-        />
-        <button type="submit" className="listen-btn listen-btn-primary">
-          搜索
-        </button>
-      </form>
+        <form className="search-page-form" onSubmit={onSubmit}>
+          <input
+            aria-label="想查的原句或关键词"
+            value={draft}
+            onChange={(e) => setDraft(e.target.value)}
+            placeholder="比如：桂枝汤、太阳病、微似有汗…"
+            spellCheck={false}
+            autoFocus
+          />
+          <button type="submit" className="listen-btn listen-btn-primary">
+            搜索
+          </button>
+        </form>
 
-      {!q && (
-        <p className="muted-sm center">输入关键词后回车。会搜讲次、章节和已挂的原文句子，不编造出处。</p>
-      )}
+        {!q && (
+          <p className="source-search-note">从讲次、章节和已挂的原文句子里找，不编造出处。</p>
+        )}
+      </section>
 
       {q && quotesLoading && (
-        <p className="muted-sm center">正在翻原文句子…</p>
+        <p className="source-search-status" role="status">正在翻原文句子…</p>
       )}
 
       {q && quoteHits.length > 0 && (
@@ -105,8 +108,8 @@ export function SearchPage() {
       )}
 
       {q && !quotesLoading && !anyHit && (
-        <section className="miss-card">
-          <h2>暂时找不到可靠出处</h2>
+        <section className="miss-card desk-state-card" aria-labelledby="search-miss-title">
+          <h2 id="search-miss-title">暂时找不到可靠出处</h2>
           <p>
             库里的讲次、章节和已挂原文里没有明显对上「{q}」。换个说法再搜试试——比如方名、病名、或系列名（伤寒、金匮）。
           </p>
@@ -123,7 +126,7 @@ export function SearchPage() {
               换说法
             </button>
             <Link to="/" className="listen-btn listen-btn-primary">
-              回首页
+              回听课台
             </Link>
           </div>
         </section>
@@ -146,12 +149,13 @@ function HitCard({ hit }: { hit: SearchHit }) {
           {hit.kind === "quote" ? "这一句" : hit.kind === "chapter" ? "这一段" : "这一集"}
           {time ? ` · ${time}` : ""}
         </p>
-        <h3>{hit.title}</h3>
+        {hit.kind === "quote" && <p className="hit-quote">{hit.snippet}</p>}
+        <h3 className={hit.kind === "quote" ? "hit-source-title" : undefined}>{hit.title}</h3>
         <p className="muted-sm">
           {hit.lecture.seriesLabel}
           {duration ? ` · ${duration}` : ""}
         </p>
-        {hit.snippet ? <p className="hit-snippet">{hit.snippet}</p> : null}
+        {hit.kind !== "quote" && hit.snippet ? <p className="hit-snippet">{hit.snippet}</p> : null}
         <div className="hit-actions">
           <Link to={hit.href} className="listen-btn listen-btn-primary">
             {time ? `从 ${time} 听` : "听原讲"}
