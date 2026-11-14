@@ -13,14 +13,14 @@ export function RecallPage() {
 
   if (!item) {
     return (
-      <DeskStage variant="narrow">
-        <div className="empty-card">
+      <DeskStage variant="narrow" className="listen-recall">
+        <section className="empty-card desk-state-card">
           <h2>找不到这句存货</h2>
           <p>可能已经拿掉了。回收获匣看看。</p>
           <Link to="/stash" className="listen-btn listen-btn-primary">
             回收获匣
           </Link>
-        </div>
+        </section>
       </DeskStage>
     );
   }
@@ -32,7 +32,7 @@ export function RecallPage() {
     : item.title;
 
   return (
-    <DeskStage variant="narrow">
+    <DeskStage variant="narrow" className="listen-recall">
       <div className="watch-nav-row">
         <Link to="/stash" className="listen-text-link">
           回收获匣
@@ -46,7 +46,7 @@ export function RecallPage() {
       </div>
 
       <section className={`recall-card${revealed ? " reveal" : ""}`}>
-        <p className="blur-line">{item.text}</p>
+        <p className="blur-line recall-quote">{item.text}</p>
         <p className="muted-sm">原句先遮着。想不起来就听原讲；想起来了可以再收下。</p>
         <div className="hit-actions center">
           {replayHref ? <Link to={replayHref} className="listen-btn listen-btn-primary">
@@ -62,7 +62,7 @@ export function RecallPage() {
         </div>
       </section>
 
-      <div className="hit-actions center">
+      <div className="hit-actions center recall-secondary-actions">
         <button
           type="button"
           className="listen-btn listen-btn-ghost"
