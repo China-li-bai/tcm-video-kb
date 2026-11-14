@@ -11,10 +11,21 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v5
+        with:
+          version: "0.13.7"
+          python-version: "3.12"
+      - name: Install local media test tools (no lecture downloads)
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes --no-install-recommends ffmpeg
+          ffmpeg -version
+          ffprobe -version
+          git --version
       - run: python3 web/scripts/publish_manifest.py --check
       - run: python3 -m unittest discover -s tests/publish -v
-      - run: uv sync
-      - run: uv run pytest -q tests/unit/test_draft_edges.py tests/unit/test_api_graph.py
+      - run: uv sync --locked
+      - name: Full offline Python suite (all files; zero skip/xfail)
+        run: uv run --no-sync pytest -q -ra --strict-offline --disable-socket --allow-unix-socket tests/unit tests/ci
 
   web:
     runs-on: ubuntu-latest

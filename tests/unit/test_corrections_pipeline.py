@@ -3,13 +3,17 @@ import json, pathlib
 import pytest
 from tcmkb_lexicon.correct import Corrector
 from tcmkb_core.config import repo_root
+from tcmkb_lexicon import load_lexicon
+from tcmkb_lexicon.build import build
 
 @pytest.fixture(scope="module")
-def corrector():
+def corrector(tmp_path_factory):
+    # Compile the real tracked lexicon into an isolated temporary destination.
+    # Never depend on (or refresh) a developer's in-repo lexicon/dist.
     root = repo_root()
-    p = root / "lexicon" / "dist" / "corrections.json"
-    if not p.exists():
-        pytest.skip("lexicon dist not built")
+    dist = tmp_path_factory.mktemp("corrections-dist")
+    build(load_lexicon(root / "lexicon"), dist, repo_root=dist)
+    p = dist / "corrections.json"
     data = json.loads(p.read_text(encoding="utf-8"))
     return Corrector(data["rules"], protected=set(data.get("protected_surfaces") or []))
 

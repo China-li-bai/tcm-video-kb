@@ -66,7 +66,7 @@ python3 web/scripts/export_entities.py
 
 ## 发布与回滚
 
-CI 增加清单检查、独立 Python 发布契约测试与 `npm test`，保留现有两份图测试与 `npm run build`。本 PR 为验证加载边界提前引入 Vitest；PR-4 仍负责其余听课纯函数测试，不重复装运行器。完整 Python 单测 CI 扩围仍待 PR-2。
+CI 增加清单检查、独立 Python 发布契约测试与 `npm test`，保留现有两份图测试与 `npm run build`。本 PR 为验证加载边界提前引入 Vitest；PR-4 仍负责其余听课纯函数测试，不重复装运行器。完整 Python 单测 CI 扩围已由后续 PR-2 在开发栈实现，尚未合 main/部署；全量定义、离线保护与验证记录见 [TESTING.md](TESTING.md)。
 
 本 PR 只提供开发分支/审阅 PR，不自动合 main、不部署生产。不改定高内滚布局/CSS、不扩句稿、不跑模型或 knowledge-build。回滚本 PR 用普通 revert；无数据库迁移。如日后部署，回滚为检出上一个已知 SHA，按现有 cloudflare_workers runbook 重建部署。
 
