@@ -1,3 +1,4 @@
+import { LearningBackupPanel } from "../../listen/LearningBackupPanel";
 import { watchHref } from "../../listen/citationLinks";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -71,6 +72,8 @@ export function StashPage() {
           );
         })}
       </ul>
+
+      <LearningBackupPanel onChange={refresh} />
 
       <div className="listen-footer-links">
         <Link to="/">回首页</Link>

@@ -1,7 +1,7 @@
 import type { LastWatch, StashItem } from "./types";
 
-const STASH_KEY = "renji.listen.stash.v1";
-const LAST_KEY = "renji.listen.lastWatch.v1";
+export const STASH_KEY = "renji.listen.stash.v1";
+export const LAST_KEY = "renji.listen.lastWatch.v1";
 
 function readJson<T>(key: string, fallback: T): T {
   try {
@@ -22,7 +22,10 @@ function writeJson(key: string, value: unknown) {
 }
 
 export function listStash(): StashItem[] {
-  return readJson<StashItem[]>(STASH_KEY, []);
+  const value = readJson<unknown>(STASH_KEY, []);
+  // Display safely without rewriting damaged storage; strict backup reports it.
+  return Array.isArray(value) ? value.filter((item): item is StashItem =>
+    item && typeof item === "object" && ["id", "videoId", "title", "text", "savedAt"].every(k => typeof item[k] === "string")) : [];
 }
 
 export function saveStashItem(item: Omit<StashItem, "id" | "savedAt"> & { id?: string }): StashItem {
@@ -54,7 +57,8 @@ export function removeStashItem(id: string) {
 }
 
 export function getLastWatch(): LastWatch | null {
-  return readJson<LastWatch | null>(LAST_KEY, null);
+  const value = readJson<LastWatch | null>(LAST_KEY, null);
+  return value && typeof value === "object" && typeof value.videoId === "string" && typeof value.title === "string" ? value : null;
 }
 
 export function setLastWatch(watch: LastWatch) {

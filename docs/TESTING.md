@@ -331,3 +331,57 @@ cd web && npm ci && npm test -- --reporter=dot && npm run build
 当前清单24句稿共4,563,201字节、最大602,420字节，仅为资产盘点，未达到原方案约15MB总量条件；官方单文件上限本轮没查。目标手机冷/热缓存下的端到端等待、请求数与传输/解压字节、TTFB/下载/解析/子串匹配/结果渲染CPU及长任务/内存均未测，不能断言体验已失败或良好。后续须在获准可访问环境指定目标设备/网络/缓存/代表关键词，分开首搜/复搜与完整结果延迟、记录是否确有只传最多40条而不下整集的产品需求，再按原5.2触发条件决定是否做静态索引。未启动预览/重试403或加测量服务，不实现PR-8。
 
 真实浏览器/手机PC定高、固定播放器/底栏、内滚、YouTube实际跳秒/播放/失败备份仍因先前403未验，是独立合并前门槛。health不是全功能可用证明。普通revert整个PR7并移除或重新生成版本模块回滚，无数据/数据库迁移。
+
+## PR-10: local learning backup/import (original plan number)
+
+Base `feat/health-build-revision@dc83928` (#21); PR-8 deferred, PR-9 research
+blocked without code. This feature does not start PR-11 or bypass the browser403.
+Contract, merge policy and non-atomic recovery limits: [LEARNING_STATE.md](LEARNING_STATE.md).
+
+RED evidence (before feature implementation):
+
+- `cd web && npm test -- --reporter=verbose src/listen/learningBackup.dom.test.tsx`:
+  **7 failed / 0 passed**, exit1 against real pre-feature StashPage. Missing
+  download/file/confirm controls; damaged object storage actually crashed
+  `items.map`. Log: development scratch `/workspace/pr10-dom-red.log` (not a CI
+  dependency). An earlier wrong working-directory/no-test-files invocation is
+  a harness error and **not** counted as RED.
+- Initial schema suite collection failed because `learningBackup.ts` did not yet
+  exist: **one failed suite, no executed tests**, not 43 discovered product bugs.
+  After implementation its first 43 contracts passed directly.
+- Additional contract-first review: **4 failed / 51 passed**, exit1: missing
+  actual quote/request preview, stale success message after blocked download,
+  and two invalid Date.parse rollover cases. All fixed minimally. Two later
+  FileReader tests initially used Element-only `fireEvent.load` on EventTarget;
+  corrected to native ProgressEvent dispatch inside `act`, not product RED.
+
+GREEN: **193 frontend tests / 13 files / 0 skipped** = previous128 + **65 new**
+(**50 schema/merge/storage/recovery + 15 real DOM**). No old tests removed/skipped.
+Actual StashPage, native FileReader, real router/storage/effects; only browser
+I/O failures, Blob URL/download click and intentionally controlled read completion
+are substituted. No mock of parser/merge/commit/recovery/components. New fixture
+quotes are synthetic; fetch is a throwing spy with zero calls in every DOM test.
+Covers allowlists/version/UTF-8 and record limits/calendar validity/legacy optional
+fields/zero/fractional time/prototype/path/URL rejection, existing-first/ID/content
+conflicts/capacity/no-op, denied read/journal/first/second writes, exact rollback,
+failed rollback/cleanup/reload/restore or keep-current, stale preview, genuine file
+selection/preview/no-write/confirm/cancel/download, read errors/races/unmount.
+
+Full local regression commands (no models or external services):
+
+```sh
+uv sync --locked
+uv run --no-sync pytest -q -ra --strict-offline --disable-socket --allow-unix-socket tests/unit tests/ci
+python3 -m unittest discover -s tests/publish -v
+python3 web/scripts/publish_manifest.py --check
+cd web && npm ci && npm test -- --reporter=verbose && npm run build
+```
+
+Local full regression passed: **173 Python / 0 skipped**, **16 publication
+contracts**, manifest check, clean `npm ci` (234 packages, audit0), and
+**193 frontend / 13 files / 0 skipped** plus full TypeScript/Vite build.
+These gates remain required in remote CI; PR body records its actual result. Existing FastAPI/httpx, Vite large-bundle and npm esbuild script warnings
+are not skipped or represented as new failures. No new dependency/lockfile edits.
+These offline/jsdom tests do not prove visual/mobile layout, real File picker or
+download delivery, cross-process atomicity, browser eviction or actual YouTube
+playback. Those remain separate premerge checks in an authorized reachable browser.
