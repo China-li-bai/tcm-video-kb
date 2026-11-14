@@ -4,34 +4,15 @@ from __future__ import annotations
 
 import argparse
 import json
+import sys
 from pathlib import Path
 
+from export_common import export_batch
+from publish_manifest import public_ids, require, validate_window
+
 ROOT = Path(__file__).resolve().parents[2]
-DEFAULT_ARTIFACTS = Path("/workspace/tcm-video-kb/data/artifacts")
+DEFAULT_ARTIFACTS = ROOT / "data" / "artifacts"
 DEFAULT_OUT = ROOT / "web" / "public" / "transcripts"
-DEFAULT_IDS = [
-    "shl-001",
-    "shl-002",
-    "shl-003",
-    "shl-004",
-    "shl-005",
-    "shl-006",
-    "shl-007",
-    "shl-008",
-    "jgy-001",
-    "jgy-002",
-    "jgy-003",
-    "jgy-004",
-    "jgy-005",
-    "jgy-006",
-    "jgy-007",
-    "jgy-008",
-    "jgy-009",
-    "jgy-010",
-    "jgy-011",
-    "jgy-012",
-    "bc-001",
-]
 
 
 def export_one(vid: str, artifacts: Path, out_dir: Path) -> bool:
@@ -47,11 +28,12 @@ def export_one(vid: str, artifacts: Path, out_dir: Path) -> bool:
                 continue
             row = json.loads(line)
             text = (row.get("text") or "").strip()
-            if not text:
-                continue
+            require(bool(text), "empty transcript text")
+            validate_window(row)
+            require(type(row.get("seq")) is int, "segment requires integer seq")
             segments.append(
                 {
-                    "seq": int(row.get("seq", len(segments))),
+                    "seq": row["seq"],
                     "start_s": float(row["start_s"]),
                     "end_s": float(row["end_s"]),
                     "text": text,
@@ -65,18 +47,15 @@ def export_one(vid: str, artifacts: Path, out_dir: Path) -> bool:
     return True
 
 
-def main() -> None:
+def main() -> int:
     p = argparse.ArgumentParser()
     p.add_argument("--artifacts", type=Path, default=DEFAULT_ARTIFACTS)
     p.add_argument("--out", type=Path, default=DEFAULT_OUT)
-    p.add_argument("--ids", nargs="*", default=DEFAULT_IDS)
+    p.add_argument("--ids", nargs="*", default=None)
     args = p.parse_args()
-    ok = 0
-    for vid in args.ids:
-        if export_one(vid, args.artifacts, args.out):
-            ok += 1
-    print(f"done: {ok}/{len(args.ids)}")
+    ids = args.ids if args.ids is not None else public_ids("transcript")
+    return export_batch(ids, args.artifacts, args.out, "transcript", export_one)
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

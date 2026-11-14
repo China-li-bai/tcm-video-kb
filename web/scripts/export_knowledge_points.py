@@ -9,35 +9,15 @@ from __future__ import annotations
 
 import argparse
 import json
+import sys
 from pathlib import Path
+
+from export_common import export_batch
+from publish_manifest import public_ids, require, validate_window
 
 ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_KNOWLEDGE = ROOT / "data" / "knowledge"
 DEFAULT_OUT = ROOT / "web" / "public" / "knowledge"
-# Same 7 videos that already ship public transcripts.
-DEFAULT_IDS = [
-    "shl-001",
-    "shl-002",
-    "shl-003",
-    "shl-004",
-    "shl-005",
-    "shl-006",
-    "shl-007",
-    "shl-008",
-    "jgy-001",
-    "jgy-002",
-    "jgy-003",
-    "jgy-004",
-    "jgy-005",
-    "jgy-006",
-    "jgy-007",
-    "jgy-008",
-    "jgy-009",
-    "jgy-010",
-    "jgy-011",
-    "jgy-012",
-    "bc-001",
-]
 
 # Keep payload small: only fields the CheckSheet needs.
 KEEP = (
@@ -65,18 +45,14 @@ def export_one(vid: str, knowledge: Path, out_dir: Path) -> bool:
                 continue
             row = json.loads(line)
             statement = (row.get("statement") or "").strip()
-            if not statement:
-                continue
-            try:
-                start_s = float(row["start_s"])
-                end_s = float(row["end_s"])
-            except (KeyError, TypeError, ValueError):
-                continue
-            if end_s < start_s:
-                start_s, end_s = end_s, start_s
+            require(bool(statement), "empty knowledge statement")
+            validate_window(row)
+            require(row.get("video_id") == vid and bool(row.get("kp_id")), "knowledge identity mismatch")
+            start_s = row["start_s"]
+            end_s = row["end_s"]
             slim = {
-                "kp_id": str(row.get("kp_id") or f"{vid}.kp{len(points):04d}"),
-                "video_id": str(row.get("video_id") or vid),
+                "kp_id": str(row["kp_id"]),
+                "video_id": str(row["video_id"]),
                 "type": str(row.get("type") or "claim"),
                 "statement": statement,
                 "evidence_quote": (row.get("evidence_quote") or "").strip(),
@@ -96,18 +72,15 @@ def export_one(vid: str, knowledge: Path, out_dir: Path) -> bool:
     return True
 
 
-def main() -> None:
+def main() -> int:
     p = argparse.ArgumentParser()
     p.add_argument("--knowledge", type=Path, default=DEFAULT_KNOWLEDGE)
     p.add_argument("--out", type=Path, default=DEFAULT_OUT)
-    p.add_argument("--ids", nargs="*", default=DEFAULT_IDS)
+    p.add_argument("--ids", nargs="*", default=None)
     args = p.parse_args()
-    ok = 0
-    for vid in args.ids:
-        if export_one(vid, args.knowledge, args.out):
-            ok += 1
-    print(f"done: {ok}/{len(args.ids)}")
+    ids = args.ids if args.ids is not None else public_ids("knowledge")
+    return export_batch(ids, args.knowledge, args.out, "knowledge", export_one)
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

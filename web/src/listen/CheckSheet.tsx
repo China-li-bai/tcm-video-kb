@@ -15,6 +15,8 @@ type Props = {
   claims: KnowledgePoint[];
   /** True while KP JSON is still loading for this video. */
   claimsLoading?: boolean;
+  /** Missing/unusable file, distinct from a valid file with no nearby claims. */
+  claimsUnavailable?: boolean;
   onClose: () => void;
   onListen: () => void;
   onStash: () => void;
@@ -33,6 +35,7 @@ export function CheckSheet({
   t,
   claims,
   claimsLoading = false,
+  claimsUnavailable = false,
   onClose,
   onListen,
   onStash,
@@ -47,7 +50,7 @@ export function CheckSheet({
   if (!open) return null;
 
   const picked = claims.find((c) => c.kp_id === pickedId) ?? null;
-  const empty = !claimsLoading && claims.length === 0;
+  const empty = !claimsLoading && !claimsUnavailable && claims.length === 0;
 
   return (
     <div className="check-overlay" role="dialog" aria-modal="true" aria-labelledby="check-title">
@@ -97,6 +100,13 @@ export function CheckSheet({
                   </button>
                 );
               })}
+            </div>
+          )}
+
+          {!claimsLoading && claimsUnavailable && (
+            <div className="check-empty" role="status">
+              <p className="check-empty-title">这集的知识点暂时没能打开</p>
+              <p className="check-empty-body">可能还没发布，或暂时加载不了。先听原讲，不把加载失败当成没有主张；稍后刷新再试。</p>
             </div>
           )}
 
