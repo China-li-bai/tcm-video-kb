@@ -82,7 +82,7 @@ def _write_repo(tmp: Path) -> None:
 def test_health_and_subgraph_fixture(tmp_path: Path):
     _write_repo(tmp_path)
     client = TestClient(create_app(tmp_path))
-    assert client.get("/health").json() == {"status": "ok"}
+    assert client.get("/health").json() == {"status": "ok", "git_sha": "unknown", "git_dirty": None, "content_revision": "unknown"}
     assert client.get("/graph/subgraph").status_code == 422
     missing = client.get("/graph/subgraph", params={"focus": "formula.missing"})
     assert missing.status_code == 404
@@ -135,7 +135,7 @@ _PUBLIC = (
 
 
 def _assert_same_graph(live: TestClient, served: TestClient) -> None:
-    assert live.get("/health").json() == served.get("/health").json() == {"status": "ok"}
+    assert live.get("/health").json() == served.get("/health").json() == {"status": "ok", "git_sha": "unknown", "git_dirty": None, "content_revision": "unknown"}
     for path, focus in _PUBLIC:
         left = live.get(path, params={"focus": focus})
         right = served.get(path, params={"focus": focus})
@@ -186,7 +186,7 @@ def test_checked_in_worker_snapshot_matches_live_api():
     assert isinstance(raw, str)
     assert raw == snap.read_text(encoding="utf-8")
     via_text = TestClient(create_app(snapshot_json=raw))
-    assert via_text.get("/health").json() == {"status": "ok"}
+    assert via_text.get("/health").json() == {"status": "ok", "git_sha": "unknown", "git_dirty": None, "content_revision": "unknown"}
     assert via_text.get("/graph/paths", params={"focus": "syndrome.tai_yang_bing"}).json()["tracks"]
 
 

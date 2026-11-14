@@ -4,10 +4,14 @@
 set -euo pipefail
 root="$(cd "$(dirname "$0")/../.." && pwd)"
 cd "$root"
+# Never leave a previous identity attached to any failed new build.
+rm -f services/worker/src/build_info.py
 if [[ ! -x .venv/bin/python ]]; then
   echo "missing .venv; from the repo root run: uv sync" >&2
   exit 1
 fi
+
+.venv/bin/python web/scripts/publish_manifest.py --check
 
 copy_pkg() {
   local src="$1" dest="$2"
@@ -29,3 +33,6 @@ copy_pkg services/api services/worker/vendor/tcmkb_api
 
 npm ci --prefix web
 npm run build --prefix web
+
+# Capture only after all existing packaging/front-end steps succeeded. No deploy.
+.venv/bin/python services/worker/build_metadata.py --root "$root" --dist "$root/web/dist"

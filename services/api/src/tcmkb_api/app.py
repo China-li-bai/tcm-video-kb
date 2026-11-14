@@ -20,6 +20,7 @@ from pathlib import Path
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from tcmkb_core.config import repo_root
+from tcmkb_api.build_info import normalize_build_info
 
 from tcmkb_graph.draft import Materialization, materialize
 from tcmkb_graph.subgraph import build_paths, build_subgraph
@@ -67,6 +68,7 @@ def create_app(
     *,
     snapshot: str | Path | None = None,
     snapshot_json: str | None = None,
+    build_info: object = None,
 ) -> FastAPI:
     if snapshot is not None and snapshot_json is not None:
         raise ValueError("pass snapshot or snapshot_json, not both")
@@ -78,6 +80,7 @@ def create_app(
     else:
         root_path = repo_root()
     service = GraphService(root_path, snapshot=snap, snapshot_json=snapshot_json)
+    identity = normalize_build_info(build_info)
     app = FastAPI(title="tcm-video-kb", version="0.1.0")
     app.add_middleware(
         CORSMiddleware,
@@ -88,7 +91,7 @@ def create_app(
 
     @app.get("/health")
     def health() -> dict:
-        return {"status": "ok"}
+        return {"status": "ok", **identity}
 
     @app.get("/graph/subgraph")
     def subgraph(focus: str = Query(..., min_length=1)) -> dict:

@@ -103,3 +103,23 @@ cd web && npm install && npm run dev
 ```
 
 本地 API 现算 `materialize()`。`npm run dev` 下接口失败时，页面提示先启动 `127.0.0.1:8000`。生产构建的失败文案只要求刷新重试。
+
+
+## PR-7开发栈：构建修订号（未部署，不是新的上线授权）
+
+既有 `bash services/worker/build.sh` 在全部原步骤成功后调用
+`build_metadata.py --root "$root" --dist "$root/web/dist"`。
+清单重算/实际built JSON hash一致后，生成忽略提交的 `src/build_info.py`；
+entry按既有Python模块方式导入其唯一BUILD_INFO并注入API，vendor与源码保持一致。
+不要提交某次构建的SHA或把生成文件长期复用。脚本先清旧模块，任何失败停止；
+未注入的本地API/入口返回unknown，而不是猜GITHUB_SHA或读运行环境秘密。
+
+health保留status并增加git_sha/git_dirty/content_revision，详细契约见RUNTIME.md。
+Git HEAD是构建采集的基线；dirty=true说明不等于精确提交，null未知。
+content_revision是已校验listen发布清单hash，不是构建时间，也不是整站/图/媒体hash。
+此接口不证明最新代码已成功部署或所有功能可用。
+
+本轮完整离线build只在临时源码副本运行（包含TS检查所需tests/fixtures、docs/releases），
+npm用本地缓存、API非editable wheel验证新module确实入包；没有pywrangler部署或云端SDK实测。
+原build仍会生成graph snapshot/embed；不要为了查版本在受保护checkout里重写图产物。
+生产操作仍须另行授权，真实浏览器/手机/YouTube403未验门槛不因这些测试解除。

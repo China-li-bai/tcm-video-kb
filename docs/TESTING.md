@@ -290,3 +290,44 @@ PY
 ```
 
 本批4,123句/33KP/1,522实体提及/9章，四层新增731,688字节，最大文件254,889字节；无对象存储迁移必要。总覆盖24/145，33,823句/4,563,201句稿字节；老21集84资产保持字节不变。知识1575KP/624章、CSV、catalog、图快照/嵌入文本未重写。37份既有eval删除与.superdesign保持未提交。没有knowledge-build/媒体/付费调用/云资源/新API/播放器策略/布局改变，不合main、不部署。普通revert整个PR连同清单与新增文件回滚，无数据库或存储迁移；PR-7仅为后续待办。
+
+## PR-7：health构建修订号 / 内容版本
+
+2026-11-09（Asia/Shanghai），base `feat/listen-jgy-013-015@90845dc`，依赖#20，head `feat/health-build-revision`。只做原方案PR-7；未实现PR-8、未合main/生产部署。
+
+### RED → GREEN（不混淆测试接线与产品边界）
+
+```sh
+uv run --no-sync pytest -q -ra --strict-offline --disable-socket --allow-unix-socket tests/unit/test_health_revision.py
+```
+
+初次 **22 failed / 1 passed**：真实默认health只有status，缺unknown语义/注入参数/生成CLI/构建接线。失败包含尚未实现接口或模块，不称为22个线上缺陷；缺manifest负例因CLI尚不存在先直接绿，实现后再真正执行验证仍绿。补实现后23通过。追加真实built文件验证合同，`--dist`尚未支持先失败1项；shell集成首次因fixture的venv解释器接线报错，修正wrapper后直接绿，不计产品RED。新增早期缺venv故障用例确实 **1 failed**：旧身份尚留在磁盘；把清理提前到venv检查前，最终 **25 passed**。
+
+25项覆盖：默认status兼容和unknown；缺/非法shape/schema、非法git/hash/时间戳/dirty类型、额外字段/环境不泄漏与输入不可变；真实临时Git仓库HEAD/clean/修改/删除/untracked、无Git/无git可执行文件；清单可重复/变化/缺失/过期、built字节变化/缺文件；生成模块→实际Worker entry→真实FastAPI/TestClient一致及缺注入；真实build.sh失败不留旧身份、成功仅最终注入。
+
+Entry仅替身`workers.asgi.entrypoint`平台包装，graph_data/业务API/normalizer/实际生成模块不替换。shell故障集成真实执行现有graph生成和元信息CLI，npm仅故障/顺序替身；**不以它冒称实际TS/Vite通过**。另有下述独立真实完整构建。所有发布fixture/Git repo/故障修改都在临时目录，没有下载媒体、模型或请求云资源。
+
+### 完整本地回归与实际离线打包
+
+```sh
+uv run --no-sync pytest -q -ra --strict-offline --disable-socket --allow-unix-socket tests/unit tests/ci
+python3 -m unittest discover -s tests/publish -v
+python3 web/scripts/publish_manifest.py --check
+cd web && npm ci && npm test -- --reporter=dot && npm run build
+```
+
+**173 Python passed/0 skipped**（148+25）；**16发布OK**；**128前端/11文件/0 skipped**；manifest、tsc/Vite、npm ci audit0通过。既有4处health精确断言更新为附加字段的完整unknown响应，status仍ok；旧功能测试保留。API vendor新增normalizer与app逐字节相同，既有vendor比较通过；无依赖/lock/生产配置改变。
+
+额外在临时源码树真实运行完整 `bash services/worker/build.sh`，拷贝仅所需已跟踪源码/知识/public/config/lexicon及本PR新module，排除eval/.superdesign、node_modules、python_modules、真实.git；复用本checkout已安装Python解释器，用PYTHONPATH指向临时源码。设置npm_config_offline=true/npm_config_audit=false仅让临时npm ci用已存在缓存，未改脚本生产策略或依赖。原命令真实完成vendor同步→graph snapshot/embed→npm ci→tsc/Vite→built JSON hash复核→新身份模块，重复生成字节一致。初次临时副本漏掉TS测试所import的tests/fixtures和docs/releases而失败；补齐后完整构建通过，**不算产品RED**。真实根目录TS/Vite始终通过。
+
+随后 `uv build <临时副本>/services/worker/vendor/tcmkb_api --wheel --offline --out-dir <临时输出>` 成功，wheel内tcmkb_api/app.py与build_info.py同源码，验证非editable安装包含新增模块。没有运行pywrangler/云端Pyodide/部署；这不是完整平台集成验证。临时graph生成未写回本checkout；原知识、24集public/chapters、manifest、图快照/graph_data与base的git diff为空，保留原37份eval删除/.superdesign。
+
+实际无git临时副本生成内容（**测试输出，不是生产观测**）：schema=tcm-build/1，git_sha=unknown，git_dirty=null，content_revision=`129c0907a299f5018912f46de8de7f4482dca69cf1c84035b0a2e17a918e3d8e`。真实checkout向临时out采集则是当时HEAD `90845dc...` 与dirty=true（包括既有删除/untracked），不是宣称该HEAD最终已部署；生成物不提交，最终构建必须重新采集。
+
+保持FastAPI/httpx弃用、esbuild allowScripts、大bundle警告；不减测试/skip/continue-on-error。远端CI实际job结果另记PR正文与主线Page，不把本地通过冒称远端已绿。CI完整跑此25新增合同与全部旧Python，以及独立实际前端build；临时完整Worker/npm离线构建及API wheel属于上述本地额外验证，未声称CI执行pywrangler。
+
+### PR-8测量前提（非实现或触发结论）
+
+当前清单24句稿共4,563,201字节、最大602,420字节，仅为资产盘点，未达到原方案约15MB总量条件；官方单文件上限本轮没查。目标手机冷/热缓存下的端到端等待、请求数与传输/解压字节、TTFB/下载/解析/子串匹配/结果渲染CPU及长任务/内存均未测，不能断言体验已失败或良好。后续须在获准可访问环境指定目标设备/网络/缓存/代表关键词，分开首搜/复搜与完整结果延迟、记录是否确有只传最多40条而不下整集的产品需求，再按原5.2触发条件决定是否做静态索引。未启动预览/重试403或加测量服务，不实现PR-8。
+
+真实浏览器/手机PC定高、固定播放器/底栏、内滚、YouTube实际跳秒/播放/失败备份仍因先前403未验，是独立合并前门槛。health不是全功能可用证明。普通revert整个PR7并移除或重新生成版本模块回滚，无数据/数据库迁移。
