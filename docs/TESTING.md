@@ -140,3 +140,39 @@ npm run dev -- --host 0.0.0.0
 只替换了外部 HTTP、jsdom 缺失的 scrollIntoView/IntersectionObserver 浏览器能力。后者验证调用接线，不证明真实几何、可见性或布局；没有自动化焦点遍历/屏幕阅读器验证。
 
 **合并前门槛仍未通过：** 必须在获准且可访问的真实浏览器环境完成手机/PC 定高、固定播放器/底栏、文稿内滚与所选句返回，以及实际 YouTube 自动播放限制/跳秒/失败与备份路径验收。当前仍因浏览器 403 未验证；Shell 200、jsdom 76 项和 CI 绿都不能替代它。不绕过网络控制，不自动开始 PR-4，不合 main、不部署。跨源 iframe 没有 error 时仍无法判定，load 不代表媒体成功；此次 capture 修复不消除该边界。
+
+## PR-4：其余听课函数 / 数据边界（依赖 #17）
+
+2026-11-09（Asia/Shanghai），基于 `fe3a904` 接栈，分支 `test/listen-function-boundaries`；只做方案 PR-4。先前真实浏览器 localhost 连接拒绝/网络地址 403 仍是**合并前独立门槛**，不等同 pass，本轮没有再次访问、启动预览或修改代理/隧道/网络控制。
+
+### 先核对覆盖，不重建测试栈
+
+原有 **76 项 / 5 文件**：发布加载器 38、CheckSheet SSR 2、静态播放逻辑/播放器 SSR 15、Watch/Home/文案 SSR 10、PR-3 DOM 交互 11。原有覆盖已包括 HTTP/结构与63份真实资产、请求秒/iframe事件、播放诚实语义、存储 effects；本 PR 不重复安装 Vitest/jsdom，也不复制这些测试凑数。
+
+方案 PR-4 尚缺的四条链路是 **pickClaimsNear、pickChipsNear、搜索空态、摘要插值**。新增 **19 项 / 3 文件**：
+
+| 文件 / 数量 | 实际契约 |
+|---|---|
+| `listenFunctions.test.ts` / 9 | KP 按区间距离 ≤45秒（不是仅句首距离）、重叠/置信度/起点排序、去重/上限/不改输入；芯片按句窗距离 ≤6秒、半秒最小窗/默认4秒窗、类型排序、同实体跨时间去重；空数组/NaN查询时间、max整项上限；摘要分句/空摘要/短章插值 |
+| `searchBoundaries.test.ts` / 3 | 空白不下载/未命中为空；目录 trim/大小写/章节优先且不重复讲次；真实加载器消费小 HTTP fixture，乱序响应仍按目录/时间排，限量及未匹配为空，部分404不混入假结果，仅清单公开范围被请求 |
+| `listenDataFlow.test.tsx` / 7 DOM | 真实 SearchPage 输入/空态/重搜；共享延迟请求时新查询不被旧查询覆盖；搜索命中→真实 WatchPage→既有秒定位；真实加载器→芯片去重/附近KP→点击证据/听主张；空或>45秒KP不造选项；跨讲次换源不保留上一集主张/证据 |
+
+新增用小 fixture，不再读一遍4MB句稿；目录/章元数据仍由实际模块提供。原有63份资产回归不删。DOM 直接挂载组件、Router、加载器/缓存、状态/effects/localStorage，未 mock 搜索、picker 或被验收的业务逻辑。
+
+### 真实 RED / 直接 GREEN / 最小修复
+
+- 新测试编写时先暴露了测试自身的错误（chips opts 误传为第三参 endS、DOM 错把 role=listitem 当 button、全局 listitem 查询不够窄），**先纠正测试**，不把这些误报称为产品缺陷。
+- 实现前，以修正后的 `cd web && npm test -- --reporter=verbose` 为证据：**4 failed / 91 passed（95项），exit 1**。原76项全绿；新增19项中 **15项直接绿、4项真实RED**，没有破坏正确实现造RED。
+- 真实缺陷①②：两个 picker 的 max=0/负数本来会泄漏第1项；max 为小数或非有限值也不符合整项上限。现在先 floor，非有限或≤0返回空；默认3/正常排序和去重不变。此选项虽非当前UI默认调用，也是导出函数的有效边界，不宣称线上已发生用户事故。
+- 真实缺陷③：摘要最少套30秒插值，合法的短章多片段会越过源章末尾。现在只用真实非负章跨度插值再 floor；首点可因取整早于小数章首不足1秒，不把近似定位称为逐句时间。公开数据本身未改，不声称发现了全库摘要错误。
+- 真实缺陷④：选择KP后的二级说明仍写「核对过」，原SSR只覆盖未选择态。DOM 点击选项后抓到它；改为「本集已导出的知识点」，不修改数据审校状态或生成主张。
+- 最终 `npm ci && npm test && npm run build`：**95 passed / 8文件 / 0 skipped**，TypeScript/Vite通过，audit 0；没有新增依赖或脚本/工作流改动。现有大 bundle/弃用提示保留。
+- `uv run --no-sync pytest -q -ra --strict-offline --disable-socket --allow-unix-socket tests/unit tests/ci`：**94 passed / 0 skipped**。`python3 web/scripts/publish_manifest.py --check`通过；`python3 -m unittest discover -s tests/publish -v`：**14/14 OK**。
+
+远端 CI 只以本次提交的 checks/job日志为准；本地绿不冒称远端绿。回滚用普通 revert PR-4，不移除 PR-1 的运行器/发布测试或 PR-3 的 DOM依赖。
+
+### 没有扩大到哪些能力
+
+没有做 PR-5 公共出处派生函数、历史 citation 回写、PR-9 iframe跟读、收藏导入导出/账号/数据库；未改21集JSON/原始知识/发布清单/媒体/样式或运行架构，不跑真实 knowledge-build/付费调用。搜索的部分切片加载失败仍只能返回其余有效结果，没有新增失败覆盖汇总，不把空态测试说成网络故障报告已完善。fixture模拟404不是线上路由已修复。
+
+fetch只返回预期相对资产路径的fixture，无live fallback；jsdom不加载外部iframe资源、不访问YouTube。scrollIntoView/IntersectionObserver为缺失API替身，只验接线，不验几何/视觉/焦点遍历/真机/实际播放。手机PC定高、固定区与文稿内滚、YouTube实际跳秒/自动播放/备份路径仍需获准可访问的真实浏览器在合并前独立验收；不绕过403，不合 main、不部署，本轮不开始 PR-5。

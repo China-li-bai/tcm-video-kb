@@ -36,7 +36,8 @@ export function chapterAsUtterances(ch: Chapter): { t: number; text: string }[] 
   if (parts.length === 0) {
     return [{ t: ch.start_s, text: ch.title }];
   }
-  const span = Math.max(30, (ch.end_s || ch.start_s + 60) - ch.start_s);
+  // A short summary still belongs inside its actual chapter, not a synthetic 30s window.
+  const span = Math.max(0, ch.end_s - ch.start_s);
   const step = span / parts.length;
   return parts.map((text, i) => ({
     t: Math.floor(ch.start_s + i * step),

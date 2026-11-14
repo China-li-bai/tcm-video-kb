@@ -123,7 +123,7 @@ export function CheckSheet({
             <div className="check-picked">
               <p className="check-label">白话对照</p>
               <p className="check-plain">
-                以倪老师原讲为准。上面这条是从本集核对过的知识点里挑出来的主张，不是考题答案。
+                以倪老师原讲为准。上面这条是从本集已导出的知识点里挑出来的主张，不是考题答案。
                 不确定就回到原句再听一遍。
               </p>
               {picked.evidence_quote ? (
