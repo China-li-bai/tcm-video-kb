@@ -32,7 +32,7 @@ export function ListenHomePage() {
   const resumeHref = last ? watchHref(last.videoId, last.t) : null;
 
   return (
-    <DeskStage variant="narrow">
+    <DeskStage variant="narrow" className="listen-home">
       <section className="today-card">
         <div className="today-wash" aria-hidden />
         <span className="today-chip">今日一小段 · 约 {today.approxMin} 分钟</span>
@@ -46,6 +46,7 @@ export function ListenHomePage() {
           ))}
         </div>
         <Link to={watchTo} className="listen-btn listen-btn-primary listen-btn-lg">
+          <span className="home-play-icon" aria-hidden="true">▶</span>
           开始听
         </Link>
         <p className="today-meta">
@@ -79,10 +80,11 @@ export function ListenHomePage() {
             {upNext.map((lec) => (
               <li key={lec.id}>
                 <Link to={watchHref(lec.id)!} className="upnext-row">
-                  <div>
+                  <span className="upnext-ico" aria-hidden="true">▶</span>
+                  <div className="upnext-body">
                     <h4>{lec.title.replace(/^倪海廈[^：:]*[：:]?\s*/u, "").slice(0, 28) || lec.title}</h4>
                     <span className="muted-sm">
-                      {lec.seriesLabel} · {lec.duration || lec.id}
+                      {lec.seriesLabel} · 整讲 · {lec.duration || lec.id}
                     </span>
                   </div>
                 </Link>
@@ -109,11 +111,14 @@ export function ListenHomePage() {
         <span aria-hidden>›</span>
       </Link>
 
-      <div className="listen-footer-links">
+      <footer className="listen-footer-links home-footer">
         <Link to="/series">全部课程系列</Link>
-        <Link to="/graph?focus=formula.gui_zhi_tang">方证图</Link>
-        <Link to="/paths?focus=syndrome.tai_yang_bing">路径</Link>
-      </div>
+        <div className="home-evidence-links">
+          <span>旁证入口</span>
+          <Link to="/graph?focus=formula.gui_zhi_tang">方证图</Link>
+          <Link to="/paths?focus=syndrome.tai_yang_bing">路径</Link>
+        </div>
+      </footer>
     </DeskStage>
   );
 }
