@@ -441,3 +441,63 @@ local success alone is not a remote CI claim.
 No original knowledge/questions/public assets/graph or dependencies changed,
 no model/retrieval scoring/knowledge-build, no skipped tests/continue-on-error.
 Real browser/mobile/download/YouTube remain independent unverified gates.
+
+## PR-12: source-backed series display alignment
+
+Base `test/qa-reference-validation@6776f04` (#23); box only. Source evidence and
+why this uses a runtime display projection rather than rewriting the protected
+raw catalog: [SERIES_DISPLAY.md](SERIES_DISPLAY.md). Only two runtime files.
+
+### Genuine RED → GREEN
+
+```sh
+uv run --no-sync pytest -q tests/unit/test_series_display_provenance.py
+# RED:1 failed /1 passed. Source evidence directly green; old legacy catalog
+# reader bypassed the common display boundary.
+npm test --prefix web -- --reporter=verbose src/listen/seriesDisplay.test.tsx
+# RED:8 failed, exit1. Old labels/blurb/search alias/actual rendered UI disagreed.
+```
+
+No code was broken to fabricate RED. After the minimal display fix, first DOM
+run6 passed/2 failed because of two test assumptions: Watch legitimately requests
+knowledge/entities even without a transcript; search metadata includes duration.
+Correct the synthetic HTTP allowlist/absence assertion and text matcher rather
+than changing correct product behavior. Final focused **2 Python +8 frontend**
+passed. Other-series/ID/title preservation and source-title search are directly
+correct baseline behavior, not claimed as newly discovered defects.
+
+### Complete local regression, all exit0
+
+```sh
+uv sync --locked
+uv run --no-sync pytest -q -ra --strict-offline --disable-socket --allow-unix-socket tests/unit tests/ci
+# 240 passed /0 skipped (238 existing +2 provenance/read-boundary contracts)
+python3 -m unittest discover -s tests/publish -v
+# 16 OK
+python3 web/scripts/publish_manifest.py --check
+# checked; no manifest regeneration
+python3 scripts/eval/validate_qa.py --strict-kp --json
+# actual unchanged50 questions:50 valid/0 invalid/0 errors, not retrieval scores
+cd web && npm ci && npm test -- --reporter=verbose && npm run build
+# 201 passed /14 files /0 skipped (193 existing +8); tsc --noEmit +Vite passed
+```
+
+uv checked35 locked packages; clean npm ci234 packages/audited235, zero
+vulnerabilities. FastAPI/httpx deprecation and existing large-bundle warnings
+retained. No old tests removed, no skip/xfail/continue-on-error added, no lock/deps
+or CI change. Remote actual job logs are recorded on the PR/Page once completed.
+
+The8 frontend cases run actual series→detail→Watch→breadcrumb, legacy directory
+select/list, search submission→hit→Watch, homepage resume and Stash→Recall→source
+DOM events/effects, plus shared-reader/search contracts. All145 runtime rows are
+compared to retained raw catalog, with only10 display labels differing; source
+fields/routes/YouTube IDs and raw historical stash bytes stay unchanged. Homepage
+normal today's/up-next selection remains shl, not artificially changed to nj.
+Companion HTTP returns controlled offline404; no live network or iframe resources.
+Missing-transcript UI stays honest; naming does not imply new transcript coverage.
+
+Protected source/knowledge/50QA/24public episodes/catalog/chapters/graph diff
+against6776f04 is empty.37 pre-existing eval deletions and .superdesign are not
+restored/staged. No knowledge-build/model/retrieval scoring/media/paid resource,
+main merge or deployment. Real browser/mobile/YouTube/file-picker/download delivery
+remain independent unverified premerge gates;403 is not retried or bypassed.
