@@ -2,6 +2,7 @@ import { useMemo } from "react";
 import { Link } from "react-router-dom";
 import { enrichTodayFromChapters } from "../../listen/chapters";
 import { getAllLectures, pickTodaySegment } from "../../listen/lectures";
+import { requestedSeconds } from "../../listen/staticPlayback";
 import { getLastWatch, listStash } from "../../listen/stash";
 
 export function ListenHomePage() {
@@ -53,24 +54,25 @@ export function ListenHomePage() {
       {last && (
         <section className="listen-block">
           <h3 className="listen-block-title">接着听</h3>
-          <Link to={`/watch/${last.videoId}${last.t ? `?t=${Math.floor(last.t)}` : ""}`} className="resume-bar">
+          <Link to={`/watch/${last.videoId}${last.t ? `?t=${requestedSeconds(last.t)}` : ""}`} className="resume-bar">
             <div className="resume-ico" aria-hidden>
               ↻
             </div>
             <div className="resume-text">
-              <span className="resume-sub">上次听到</span>
+              <span className="resume-sub">上次打开的位置</span>
               <span className="resume-main">{last.chapterTitle || last.title}</span>
             </div>
             <span className="resume-play" aria-hidden>
               ▶
             </span>
           </Link>
+          <p className="muted-sm">这里只记打开或点选的位置，不是播放进度。</p>
         </section>
       )}
 
       {upNext.length > 0 && (
         <section className="listen-block">
-          <h3 className="listen-block-title">稍后播放</h3>
+          <h3 className="listen-block-title">也可以选一集</h3>
           <ul className="upnext-list">
             {upNext.map((lec) => (
               <li key={lec.id}>

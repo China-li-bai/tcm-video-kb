@@ -6,7 +6,7 @@
 
 - 一个 Cloudflare Worker `tcm-fangzheng`：Vite/React 静态听课台 + FastAPI `/health`、`/graph/subgraph`、`/graph/paths`。图读已打包快照，不在请求里扫描知识库。
 - 浏览器从同源静态 JSON 读取句稿、知识点、实体。问这句只取附近 ±45 秒内最多 3 条已导出知识点；查出处仍是浏览器子串匹配，无生成模型。
-- 播放是 YouTube iframe；点句用 `start=` 跳秒。尚无连续播放跟读；28% 装饰进度、lastWatch 语义由 PR-3 单独修正。
+- 播放是 YouTube iframe；点句用 `start=` 跳秒。尚无连续播放跟读；旧 main 的 28% 装饰进度、lastWatch 语义在本开发栈 PR-3 修正（详见末节），不是公网已上线。
 - 收获匣和上次点到的位置留在浏览器 localStorage，没有账号、上传或跨设备同步。
 - 请求路径没有 Postgres、向量、LLM 或自有 R2 音频；Python 构建流水线是离线工具。`web/stub_server.py` 与 HMAC 播放 stub 不是线上媒体服务。
 
@@ -88,3 +88,25 @@ CI 增加清单检查、独立 Python 发布契约测试与 `npm test`，保留�
 | `uv run pytest -q -rs tests/unit` | 84 passed，2 skipped（lexicon dist 未构建的 corrections 测试），1 条既有 FastAPI/httpx 弃用警告 |
 
 未覆盖：真实浏览器/YouTube 播放、手机/PC 视觉复验、Cloudflare 路由/缓存行为、线上故障与生产部署；CSS/布局未改。未构建 lexicon dist 来消除那两项跳过，避免越过内容流水线边界。CI 远端结果以 PR 检查为准，本地绿不冒称远端已绿。
+
+## PR-3：播放与接着听说实话（开发栈，未合并 / 未部署）
+
+依赖 PR-2 #16，base `ci/full-offline-python@96b015c`。本节描述开发分支行为；上文 28% 为旧 main/公网基线，不再是此分支行为。
+
+- 移除固定 28% 条、假 play/pause、自动完成暗示。显示的是「请求定位 mm:ss」和目录时长，不是媒体播放头或已播放比例。没有新增 IFrame API、轮询或播放遥测；跟读仍留 PR-9。
+- 单位：URL `t` / iframe `start` / lastWatch.t 都是请求的**秒**，有限且非负后向下取整，无效值归 0；不是百分数、毫秒或播放器返回值。不擅自按未经媒体复核的目录时长截断。URL 请求 125 秒不会在句稿异步到达后被悄悄改记为句首。
+- `selected` / CSS `.active` 只指手工导航的章/句：URL 按请求整秒选覆盖/最近前一章句，早于首条用首条；点句优先保留该句与章的身份，避免小数句首取整选到上一句。换视频/换目标后旧行选择失效。它们不代表正在播放、已听过或完成；「回到所选句」只滚文稿，不跳播放器。
+- `requested` 只代表用户已请求挂载静态 iframe：初开页面仍先显示原有海报；点海报、句/章、听原讲才请求 iframe，保留原有 `autoplay=1` 与出处返回路径。换视频清除旧挂载意图，重试/新目标换 key 发起新请求。`pending` 是尚未收到页面 load/error；`responded` 仅收到 iframe load；`failed` 仅收到可见 error，下一次请求才清除，均不等于媒体 ready/playing/ended/跳秒成功。
+- 浏览器经常不会把跨源 iframe 失败交给 onError，load 也可能只是错误页；不设置假超时成功，不承诺能检测所有失败。始终给请求状态白话说明、已请求时的重试，以及带同一目标秒数的 YouTube 备份链接；无片源只提示，不做假播放按钮。
+- localStorage v1 保持兼容；「上次打开的位置」保存打开/点选请求秒，不是最后听到或播放结束位置。旧记录也不能追认成真实播放头。收下所选句/回首页是手工动作，不记完成；存储失败提示/迁移不在本 PR。
+- 问这句改为「从本集知识点里摘出的主张」，不把 llm_read 说成人工核对。知识/句稿/实体 JSON 未改，21 集范围不变。
+- 保持原定高 shell、固定播放器/底栏和文稿内滚结构；CSS 仅删假进度样式、重命名返回所选句选择器、定位标签允许换行。无视觉验证结果，不能据此宣称窄屏已手验。
+
+测试先行、复现命令与边界见 [TESTING.md 的 PR-3 记录](TESTING.md#pr-3-播放诚实化验证记录)。本 PR 不改服务端 JSON 404，不合 main、不部署；普通 revert 即回滚本项代码/文案，无内容或存储迁移。
+
+
+### PR-3 同 PR DOM 补测与合并前门槛
+
+同分支追加最小 jsdom/React Testing Library 11 项交互测试，真实组件 effects/router/storage 与事件链通过；此前仅有 SSR 的记录不追认成 DOM 已测。测试先 RED 3 失败，发现并修复原生非冒泡 iframe error 的 capture 接线、子按钮键盘冒泡导致意外 seek 两类问题；前端现 76 项。详见 TESTING.md 末节。
+
+真实浏览器/手机PC视觉仍未验证：浏览器 localhost 连接拒绝，网络地址浏览器 403（Shell 200 不代表可用）。本次未重试或改代理/隧道/网络控制，不使用浏览器自动化。jsdom 不运行 YouTube、不验证布局、真实滚动几何、焦点遍历或播放成功；外部 JSON 与浏览器缺失 API 使用受限 fixture/替身，业务组件逻辑不被替换。合并前必须在获准可访问的浏览器环境补完定高/固定区/文稿内滚、实际跳秒/播放限制/备份路径检查。自动测试绿不解除该未完成门槛；PR-4 暂不开始。

@@ -70,13 +70,13 @@ export function CheckSheet({
           </div>
 
           {claimsLoading && (
-            <p className="check-hint">正在找这段附近有没有核对过的主张…</p>
+            <p className="check-hint">正在找这段附近的知识点…</p>
           )}
 
           {!claimsLoading && claims.length > 0 && (
             <div className="check-options" role="list">
               <p className="check-hint">
-                这段附近，原讲里已经核对过的主张（不评分，只帮你对照）：
+                这段附近，从本集知识点里摘出的主张（不评分，以原讲为准）：
               </p>
               {claims.map((claim) => {
                 const active = pickedId === claim.kp_id;
@@ -112,9 +112,9 @@ export function CheckSheet({
 
           {empty && (
             <div className="check-empty" role="status">
-              <p className="check-empty-title">这段还没核对过主张</p>
+              <p className="check-empty-title">这段附近暂时没有收录主张</p>
               <p className="check-empty-body">
-                约 {formatClock(t)} 附近暂时没有可对照的知识点。先听原讲、或收下这句；等核对过再回来问。
+                约 {formatClock(t)} 附近暂时没有可对照的知识点。先听原讲，或收下这句；不会据此补出新的主张。
               </p>
             </div>
           )}
