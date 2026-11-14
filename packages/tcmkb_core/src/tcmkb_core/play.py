@@ -4,24 +4,40 @@ Domestic playback decision (2026-10): 64 kbps AAC/m4a on R2 (or data/r2-mirror),
 cite primary link is /watch/{video_id}?t=<sec>; YouTube id/url kept as backup.
 """
 from __future__ import annotations
-import hashlib, hmac, math, os, pathlib, time
+import hashlib, hmac, math, os, pathlib, re, time
 from typing import Any
-from urllib.parse import quote
+from urllib.parse import parse_qs, quote, urlsplit
 
 YT_WATCH = "https://www.youtube.com/watch?v="
 
 
+def valid_source_id(value: object) -> bool:
+    """A source-defined slug, never a URL/path/query. Catalog membership is a UI concern."""
+    return isinstance(value, str) and re.fullmatch(r"[A-Za-z0-9_-]{1,128}", value) is not None
+
+
+def finite_seconds(value: object) -> bool:
+    return isinstance(value, (int, float)) and not isinstance(value, bool) and math.isfinite(value)
+
+
 def site_watch_url(video_id: str | None, t: float | None = None, *,
                    end: float | None = None, base: str = "") -> str | None:
-    """In-site deep link: /watch/{video_id}?t=<floor sec>[&end=]. Relative unless base set."""
-    if not video_id:
+    """Canonical request location, NOT playback telemetry. Zero omits ``t``.
+
+    Missing time opens the lecture; malformed/nonfinite time fails closed. Finite
+    negative seconds clamp to zero. See the shared Python/TS contract fixture.
+    ``base``/TCMKB_SITE_BASE is trusted deployment configuration, not citation data.
+    """
+    if not valid_source_id(video_id):
+        return None
+    if any(value is not None and not finite_seconds(value) for value in (t, end)):
         return None
     path = f"/watch/{video_id}"
     qs: list[str] = []
-    if t is not None:
-        qs.append(f"t={max(int(math.floor(float(t))), 0)}")
+    if t is not None and t >= 1:
+        qs.append(f"t={math.floor(t)}")
     if end is not None:
-        qs.append(f"end={max(int(math.floor(float(end))), 0)}")
+        qs.append(f"end={max(math.floor(end), 0)}")
     if qs:
         path = f"{path}?{'&'.join(qs)}"
     base = (base or os.environ.get("TCMKB_SITE_BASE") or "").rstrip("/")
@@ -29,13 +45,42 @@ def site_watch_url(video_id: str | None, t: float | None = None, *,
 
 
 def youtube_t_url(youtube_id: str | None, t: float | None = None) -> str | None:
-    """YouTube watch URL, optional &t=<floor sec>s. Backup / source field only."""
-    if not youtube_id:
+    """Allowlisted source backup, never a passed-through arbitrary URL."""
+    if not valid_source_id(youtube_id) or (t is not None and not finite_seconds(t)):
         return None
     u = f"{YT_WATCH}{youtube_id}"
     if t is not None:
-        u += f"&t={max(int(math.floor(float(t))), 0)}s"
+        u += f"&t={max(math.floor(t), 0)}s"
     return u
+
+
+def youtube_id_from_url(value: object) -> str | None:
+    if not isinstance(value, str):
+        return None
+    try:
+        url = urlsplit(value)
+        if url.scheme != "https" or url.username or url.password or url.port not in (None, 443):
+            return None
+        if url.hostname == "youtu.be":
+            yid = url.path.removeprefix("/")
+        elif url.hostname in {"youtube.com", "www.youtube.com", "m.youtube.com"} and url.path == "/watch":
+            values = parse_qs(url.query).get("v", [])
+            yid = values[0] if len(values) == 1 else None
+        else:
+            return None
+        return yid if valid_source_id(yid) else None
+    except ValueError:
+        return None
+
+
+def citation_links(video_id: str | None, start_s: float | None, citation: dict) -> dict:
+    """Read-only derived links. Ignore stored t_url; retain original url on the caller's copy."""
+    yid = citation.get("youtube_id")
+    if not valid_source_id(yid):
+        yid = (youtube_id_from_url(citation.get("url"))
+               or youtube_id_from_url(citation.get("youtube_t_url")))
+    return {"t_url": site_watch_url(video_id, start_s), "youtube_id": yid,
+            "youtube_t_url": youtube_t_url(yid, start_s)}
 
 
 def play_audio_key(video_id: str) -> str:

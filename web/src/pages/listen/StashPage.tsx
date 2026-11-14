@@ -1,3 +1,4 @@
+import { watchHref } from "../../listen/citationLinks";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { formatClock, getLecture } from "../../listen/lectures";
@@ -35,6 +36,7 @@ export function StashPage() {
       <ul className="stash-list">
         {items.map((item) => {
           const lec = getLecture(item.videoId);
+          const replayHref = watchHref(item.videoId, item.t);
           const where = lec
             ? `${lec.seriesLabel} · ${item.videoId}${item.t != null ? ` · 约 ${formatClock(item.t)}` : ""}`
             : item.videoId;
@@ -50,12 +52,9 @@ export function StashPage() {
                   <Link to={`/recall/${item.id}`} className="listen-btn listen-btn-primary">
                     先回想
                   </Link>
-                  <Link
-                    to={`/watch/${item.videoId}${item.t != null ? `?t=${Math.floor(item.t)}` : ""}`}
-                    className="listen-btn listen-btn-ghost"
-                  >
+                  {replayHref ? <Link to={replayHref} className="listen-btn listen-btn-ghost">
                     听原讲
-                  </Link>
+                  </Link> : <span className="muted-sm">出处信息不完整，暂不能定位原讲。</span>}
                   <button
                     type="button"
                     className="listen-text-link"

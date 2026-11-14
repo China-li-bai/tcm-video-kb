@@ -1,3 +1,4 @@
+import { watchHref } from "./citationLinks";
 import { getAllLectures, getLecture } from "./lectures";
 import { getChapters } from "./chapters";
 import { loadTranscript } from "./transcript";
@@ -14,13 +15,6 @@ export type SearchHit = {
   snippet: string;
   startS?: number;
 };
-
-function watchHref(id: string, startS?: number): string {
-  if (startS != null && startS > 0) {
-    return `/watch/${id}?t=${Math.floor(startS)}`;
-  }
-  return `/watch/${id}`;
-}
 
 function includesNeedle(hay: string, needle: string): boolean {
   return hay.toLowerCase().includes(needle);
@@ -41,11 +35,13 @@ export function searchCatalog(q: string): SearchHit[] {
       const blob = `${ch.title}\n${ch.summary}`;
       if (!includesNeedle(blob, needle)) continue;
       const startS = Number(ch.start_s) || 0;
+      const href = watchHref(lec.id, startS);
+      if (!href) continue;
       chapterHits.push({
         key: `ch-${ch.chapter_id}`,
         kind: "chapter",
         lecture: lec,
-        href: watchHref(lec.id, startS),
+        href,
         title: ch.title,
         snippet: ch.summary.slice(0, 120),
         startS,
@@ -59,11 +55,13 @@ export function searchCatalog(q: string): SearchHit[] {
       includesNeedle(lec.seriesLabel, needle) ||
       includesNeedle(lec.series, needle);
     if (lecMatch && !seenLecture.has(lec.id)) {
+      const href = watchHref(lec.id);
+      if (!href) continue;
       lectureHits.push({
         key: `lec-${lec.id}`,
         kind: "lecture",
         lecture: lec,
-        href: watchHref(lec.id),
+        href,
         title: lec.title,
         snippet: `${lec.seriesLabel} · ${lec.id}`,
       });
@@ -90,11 +88,13 @@ export async function searchQuotes(q: string, limit = 40): Promise<SearchHit[]> 
       for (const seg of file.segments) {
         if (!includesNeedle(seg.text, needle)) continue;
         const startS = Number(seg.start_s) || 0;
+        const href = watchHref(lec.id, startS);
+        if (!href) continue;
         hits.push({
           key: `q-${lec.id}-${seg.seq}-${startS}`,
           kind: "quote",
           lecture: lec,
-          href: watchHref(lec.id, startS),
+          href,
           title: lec.title,
           snippet: seg.text,
           startS,

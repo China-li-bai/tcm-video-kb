@@ -176,3 +176,47 @@ npm run dev -- --host 0.0.0.0
 没有做 PR-5 公共出处派生函数、历史 citation 回写、PR-9 iframe跟读、收藏导入导出/账号/数据库；未改21集JSON/原始知识/发布清单/媒体/样式或运行架构，不跑真实 knowledge-build/付费调用。搜索的部分切片加载失败仍只能返回其余有效结果，没有新增失败覆盖汇总，不把空态测试说成网络故障报告已完善。fixture模拟404不是线上路由已修复。
 
 fetch只返回预期相对资产路径的fixture，无live fallback；jsdom不加载外部iframe资源、不访问YouTube。scrollIntoView/IntersectionObserver为缺失API替身，只验接线，不验几何/视觉/焦点遍历/真机/实际播放。手机PC定高、固定区与文稿内滚、YouTube实际跳秒/自动播放/备份路径仍需获准可访问的真实浏览器在合并前独立验收；不绕过403，不合 main、不部署，本轮不开始 PR-5。
+
+## PR-5：出处只读派生（依赖 #18，未合并 / 未部署）
+
+2026-11-09（Asia/Shanghai），基于 `adf41657521bf5c19cbb942da8ca1ca7e88b0f33` 接栈，head `feat/derived-citation-links`，base `test/listen-function-boundaries`。只完成本项；PR-6 仅检查输入文件清单，没有执行扩展。
+
+### 真实 RED → GREEN，而非修改数据迎合测试
+
+1. 在实现前写共享 Python/TS URL 契约、实际 model-read/CSV/API/真实组件 DOM 测试：
+   - `uv run --no-sync pytest -q -ra --strict-offline --disable-socket --allow-unix-socket tests/unit/test_citation_projection.py tests/unit/test_api_graph.py`：初次 **29 failed / 9 passed**；补 model/时间边界后 **41 failed / 9 passed**，均 exit 1。失败包括旧 `?t=0`、危险 id、NaN 抛异常、缺少历史适配、API 原样透传危险链接/弱 host 检查。新增中直接通过的基础行为诚实保留。
+   - `npm test --prefix web -- --reporter=verbose`：实现前 **24 failed / 95 passed / 10 文件**，exit 1，原95项全绿；失败真实暴露优先信任 `t_url`、非法秒/讲次可生成链接、来源缺覆盖说明、路径卡/对比表绕过安全组件等。
+2. 后续实际调查发现：相同引用重复出现在 paths、旧嵌套时间 round 与外层秒存在4处 floor 跨界，分别补测再实现。重复 paths 边用例先 **1项真实 RED**（3卡而非2），时间优先级先 **1 failed / 39 deselected**（尚无实际 from_record 读取适配）。身份冲突测试首跑遗漏 `loads_snapshot` 的 origin 参数，随后修正并直接绿；此测试错误不计为产品 RED。
+3. 逐一替换尚未接入的调用方前再次跑回归：修正测试自身的 recall 参数名/Watch CSS selector 后，**4 failed / 118 passed**：Stash 0 秒仍拼 `?t=0`、Recall 负数拼 `?t=-2`、resume 非法身份仍有链接，以及 Watch 仍请求未公开句稿。实现单一生成函数接线与 manifest 门槛。真实图详情父组件后来又测出时间标签显示 NaN/Infinity：**1 failed / 124 passed**，修复共享时间展示后全绿。测试不是只验复制出来的纯函数。随后补真实snapshot/API读边界的held身份冲突与危险slug，两项均先因未拒绝而RED，再补同一citation模型/held身份校验；不更改candidate审核状态。
+4. 额外新回归直接 GREEN，未虚构 RED：全目录已知 id、发布实际404与200HTML边界、真实 slim CLI 21资产逐字节比对、实际 `knowledge-index` CLI 对坏时间/跨讲次引用非零且保留旧输出。原95项都保留；原「未覆盖集实际404」DOM用例因现在不再请求未公开文件而改为验证不请求，同时新增已发布集真实404，保留失败语义覆盖。
+5. 原有零秒规范断言随明确合同变更更新（不删除旧测试、不减数量）：`test_play_and_cites` / `test_knowledge` 的 `?t=0` 改为省略；budget流水线将前缀断言强化为按实际起点完整匹配 canonical URL/Markdown链接。旧URL仍兼容打开；没有扩大 skip/xfail 或 continue-on-error。
+
+### 完整本地复现（均 exit 0）
+
+```sh
+uv run --no-sync pytest -q -ra --strict-offline --disable-socket --allow-unix-socket tests/unit tests/ci
+# 144 passed / 0 skipped（原94 + 50新增）
+python3 -m unittest discover -s tests/publish -v
+# 15 tests OK（原14 + 真实21份slim导出字节回归）
+python3 web/scripts/publish_manifest.py --check
+# publish manifest checked
+cd web && npm ci && npm test -- --reporter=verbose && npm run build
+# npm ci / audit 0；125 passed / 10文件 / 0 skipped（原95 + 30新增）；tsc --noEmit + Vite通过
+```
+
+未改依赖/锁文件/工作流。保留 FastAPI/httpx 弃用提示、npm esbuild install-scripts 提示及 Vite 大 bundle 提示，不隐藏警告。CI 使用原锁定 clean checkout + uv sync --locked / npm ci；远端状态与实际数量以本PR checks/job日志为准，不把本地绿冒称远端绿。
+
+### 真实数据 / 分层边界
+
+- 实际读取145集：**1575 个 KnowledgePoint + 624 个 KChapter** 都通过包含嵌套 citation 的真实 Pydantic 模型，原始1575条citation仍缺 t_url。上下文身份与外层时间用于只读投影，原始 source URL保留；精确引用缺失/非法时间或身份冲突明确失败。
+- 真实 CSV 索引全量导出到两个 pytest 临时目录，所有1575 KP/624章均有规范站内链接与YouTube备份，四个导出文件两次字节一致；哈希检查确认调用前后所有原知识文件/CSV与公开/bundled JSON未改。独立发布CLI将21份slim知识JSON导出到临时目录，与公开文件逐字节一致。未往真实 `_index` 或 `public` 写入投影。
+- `git diff adf4165 --quiet -- data/knowledge data/graph web/public web/src/data services/worker/src/graph_snapshot.json services/worker/src/graph_data.py` 通过；21集63资产、21章、catalog、manifest和图快照未变。37份既有eval删除与 `.superdesign`不恢复/提交。
+- API 用进程内 FastAPI TestClient + 真实 snapshot reader/materialization；没有新增API。四个 Worker vendor 源文件按现有 build.sh copy步骤同步，现有源码/副本一致与图快照/实时读取等价测试均执行；不运行完整 Worker build/snapshot 刷新或云部署。
+- DOM 覆盖真实 CiteLinks→router→Watch effects→iframe请求秒、已/未公开句稿、坏数据白话提示、YouTube-only历史来源、重复引用不突变、PathsPage卡/对比切换、Stash/Recall/Home接线及真实图详情元数据。只mock外部HTTP/缺失DOM API；不mock所验链接/读取/定位业务逻辑。jsdom默认不加载外部资源，无YouTube或live网络fallback。
+- Python socket保护仍非OS级沙箱；已有完整测试中的临时lexicon构建、MockEngine/短合成音频/ffmpeg不访问真实模型。没有运行真实库knowledge-build、媒体下载、在线LLM或付费/云产品操作。
+
+**真实浏览器 / 手机PC视觉 / YouTube仍未验，是合并前独立门槛。** 之前连接拒绝/浏览器403没有改成pass；本轮没有启动或访问预览，没有改host/proxy/隧道或绕过网络控制。jsdom/SSR/CI不证明定高/内滚几何、移动布局、真实跨源自动播放/跳秒/失败检测；iframe load仍不等于播放成功。合main/部署须另行批准。普通revert本PR即可回滚代码/导出新列，无原始数据/存储/数据库迁移。
+
+### PR-6 输入只读核对（不执行）
+
+`configs/pipeline.yaml` 和 `web/scripts/export_transcripts.py` 都要求 `data/artifacts/<video_id>/segments.jsonl`。本checkout的 `data/artifacts` **目录不存在**，匹配文件0；catalog145、现有公开句稿21、未公开124，未公开且具备输入的讲次为0。仅列文件/检查存在性，没有读取/扩展媒体、执行ASR或新导出。**PR-6当前不具备输入**；须先由后续任务提供获准的、待扩连续讲次的 segments.jsonl（保持时间/seq/身份契约），再决定该批。原21集公开JSON不能替代新讲次的原始segments输入，不擅自开始PR-6。

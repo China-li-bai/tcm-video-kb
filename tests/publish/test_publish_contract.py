@@ -153,5 +153,20 @@ class PublishContract(unittest.TestCase):
                 self.assertEqual(src.read_bytes(), (self.root/folder/src.name).read_bytes())
 
 
+class CitationPublicationCompatibility(unittest.TestCase):
+    def test_existing_21_knowledge_exports_remain_byte_identical(self):
+        """Exercise the actual slim exporter into a temp dir, never public/ itself."""
+        manifest = json.loads((ROOT/'web/src/data/publish-manifest.json').read_text())
+        rows = [r for r in manifest['lectures'] if r['has_public_knowledge']]
+        with tempfile.TemporaryDirectory() as tmp:
+            out = Path(tmp)/'knowledge'
+            result = run(ROOT/'web/scripts/export_knowledge_points.py', '--out', out)
+            self.assertEqual(result.returncode, 0, result.stdout+result.stderr)
+            self.assertEqual({p.stem for p in out.glob('*.json')}, {r['video_id'] for r in rows})
+            for row in rows:
+                name = row['video_id']+'.json'
+                self.assertEqual((out/name).read_bytes(), (ROOT/'web/public/knowledge'/name).read_bytes(), name)
+
+
 if __name__ == '__main__':
     unittest.main()

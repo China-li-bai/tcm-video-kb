@@ -8,13 +8,14 @@ import csv, io, json, pathlib
 from typing import Any
 
 from tcmkb_ingest import artifacts as art
+from tcmkb_core.knowledge import KCitation
 
 ENTITY_COLS = ["entity_id", "type", "canonical", "in_lexicon", "n_videos", "n_mentions", "videos",
                "surfaces", "dosages", "first_url", "asr_uncertain", "note"]
 KP_COLS = ["kp_id", "video_id", "series", "episode", "type", "statement", "entity_ids", "chapter_id",
-           "chapter_title", "evidence_quote", "start_s", "end_s", "url", "confidence", "asr_note", "title"]
+           "chapter_title", "evidence_quote", "start_s", "end_s", "url", "confidence", "asr_note", "title", "source_url", "youtube_t_url"]
 CHAPTER_COLS = ["chapter_id", "video_id", "level", "parent_id", "title", "summary", "start_s", "end_s",
-                "clause_refs", "six_channel", "url"]
+                "clause_refs", "six_channel", "url", "source_url", "youtube_t_url"]
 
 
 def _jsonl(p: pathlib.Path) -> list[dict[str, Any]]:
@@ -35,9 +36,9 @@ def _csv(rows: list[dict[str, Any]], cols: list[str]) -> str:
     return buf.getvalue()
 
 
-def build_index(root: pathlib.Path) -> dict[str, Any]:
+def build_index(root: pathlib.Path, *, out: pathlib.Path | None = None) -> dict[str, Any]:
     kroot = root / "data" / "knowledge"
-    out = kroot / "_index"
+    out = out if out is not None else kroot / "_index"
     ents: dict[str, dict[str, Any]] = {}
     kps: list[dict[str, Any]] = []
     chaps: list[dict[str, Any]] = []
@@ -48,8 +49,9 @@ def build_index(root: pathlib.Path) -> dict[str, Any]:
             if (d / "chapters.json").exists() else []
         ctitle = {c["chapter_id"]: c["title"] for c in chapters}
         for c in chapters:
+            cite = KCitation.from_record(c)
             chaps.append({**c, "clause_refs": " ".join(c.get("clause_refs") or []),
-                          "url": (c["citation"].get("t_url") or c["citation"].get("url"))})
+                          "url": cite.t_url, "source_url": cite.url, "youtube_t_url": cite.youtube_t_url})
         for e in _jsonl(d / "entities.jsonl"):
             g = ents.setdefault(e["entity_id"], {
                 "entity_id": e["entity_id"], "type": e["type"], "canonical": e["canonical"],
@@ -63,9 +65,10 @@ def build_index(root: pathlib.Path) -> dict[str, Any]:
             g["asr_uncertain"] = g["asr_uncertain"] and e.get("asr_uncertain", False)
             g["note"] = g["note"] or e.get("note", "")
         for k in _jsonl(d / "knowledge_points.jsonl"):
-            c = k["citation"]
-            kps.append({**k, "entity_ids": " ".join(k["entity_ids"]), "series": c["series"],
-                        "episode": c["episode"], "url": (c.get("t_url") or c.get("url")), "title": c["title"],
+            c = KCitation.from_record(k)
+            kps.append({**k, "entity_ids": " ".join(k["entity_ids"]), "series": c.series,
+                        "episode": c.episode, "url": c.t_url, "title": c.title,
+                        "source_url": c.url, "youtube_t_url": c.youtube_t_url,
                         "chapter_title": ctitle.get(k.get("chapter_id") or "", "")})
     erows = []
     for g in sorted(ents.values(), key=lambda g: (g["type"], -g["n_mentions"], g["entity_id"])):

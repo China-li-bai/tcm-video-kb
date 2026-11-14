@@ -1,3 +1,4 @@
+import { watchHref } from "../../listen/citationLinks";
 import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { getLecture } from "../../listen/lectures";
@@ -23,6 +24,7 @@ export function RecallPage() {
     );
   }
 
+  const replayHref = watchHref(item.videoId, item.t);
   const lec = getLecture(item.videoId);
   const where = lec
     ? `${lec.seriesLabel} · ${item.videoId}${item.title ? ` · ${item.title}` : ""}`
@@ -46,12 +48,9 @@ export function RecallPage() {
         <p className="blur-line">{item.text}</p>
         <p className="muted-sm">原句先遮着。想不起来就听原讲；想起来了可以再收下。</p>
         <div className="hit-actions center">
-          <Link
-            to={`/watch/${item.videoId}${item.t != null ? `?t=${Math.floor(item.t)}` : ""}`}
-            className="listen-btn listen-btn-primary"
-          >
+          {replayHref ? <Link to={replayHref} className="listen-btn listen-btn-primary">
             听原讲
-          </Link>
+          </Link> : <span className="muted-sm">出处信息不完整，暂不能定位原讲。</span>}
           <button
             type="button"
             className="listen-btn listen-btn-ghost"

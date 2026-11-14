@@ -138,16 +138,17 @@ def test_budgeted_run_verifies_purges_and_resumes(kb_root):
     assert play, "expected retained play/{id}.m4a after purge"
     assert not list((kb_root / "data" / "r2-mirror" / "source").glob("shl-001.*"))
     segs = [json.loads(x) for x in (art / "segments.jsonl").read_text(encoding="utf-8").splitlines()]
-    assert segs and all(s["cite"]["t_url"].startswith("/watch/shl-001?t=") for s in segs)
+    from tcmkb_core.play import site_watch_url
+    assert segs and all(s["cite"]["t_url"] == site_watch_url("shl-001", s["start_s"]) for s in segs)
     assert segs[0]["cite"]["youtube_t_url"].startswith("https://www.youtube.com/watch?v=YT001&t=")
     assert segs[0]["cite"]["title"] == "伤寒论 第1集" and segs[0]["cite"]["episode"] == 1
     chaps = json.loads((art / "chapters.json").read_text(encoding="utf-8"))
     assert chaps[0]["cite"]["youtube_id"] == "YT001"
-    assert chaps[0]["cite"]["t_url"].startswith("/watch/shl-001?t=")
+    assert chaps[0]["cite"]["t_url"] == site_watch_url("shl-001", chaps[0]["start_s"])
     asr = json.loads((art / "asr_raw.json").read_text(encoding="utf-8"))
     assert asr["source"]["url"] == "https://www.youtube.com/watch?v=YT001"
     lecture = (art / "lecture.md").read_text(encoding="utf-8")
-    assert "/watch/shl-001?t=" in lecture
+    assert f"]({site_watch_url('shl-001', chaps[0]['start_s'])})" in lecture
     # purge recorded in SQLite + media manifest, with the URL as the re-fetch reference
     db = StateDB(kb_root / "data" / "state.sqlite")
     rec = db.get_purge("shl-001")
