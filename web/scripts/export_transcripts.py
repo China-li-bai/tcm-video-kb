@@ -27,6 +27,7 @@ def export_one(vid: str, artifacts: Path, out_dir: Path) -> bool:
             if not line:
                 continue
             row = json.loads(line)
+            require(isinstance(row, dict) and row.get("video_id") == vid, f"{vid}: segment source video_id missing/mismatched")
             text = (row.get("text") or "").strip()
             require(bool(text), "empty transcript text")
             validate_window(row)

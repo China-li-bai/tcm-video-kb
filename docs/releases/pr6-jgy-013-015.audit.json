@@ -1,0 +1,88 @@
+{
+  "schema": "listen-batch-audit/1",
+  "plan_pr": 6,
+  "base_revision": "bb33958c17f09f504621c077555bd250fbbe0708",
+  "baseline": {
+    "video_ids": [
+      "bc-001",
+      "jgy-001",
+      "jgy-002",
+      "jgy-003",
+      "jgy-004",
+      "jgy-005",
+      "jgy-006",
+      "jgy-007",
+      "jgy-008",
+      "jgy-009",
+      "jgy-010",
+      "jgy-011",
+      "jgy-012",
+      "shl-001",
+      "shl-002",
+      "shl-003",
+      "shl-004",
+      "shl-005",
+      "shl-006",
+      "shl-007",
+      "shl-008"
+    ],
+    "asset_count": 84,
+    "asset_tree_sha256": "56c3a8ea58dba969981597568356dd849dba9e3f5c4105218ebde396477a7e5a",
+    "knowledge_file_count": 917,
+    "knowledge_tree_sha256": "f09271eb66697cc4f2e3a123c3a6ecdcf0d144e155702ffbe3d008aff51e628b",
+    "catalog_sha256": "b90a710b6fd8ffa39fb04eadd5d9a9f45e2ce67866ff9e86a450d2891689c861"
+  },
+  "episodes": [
+    {
+      "video_id": "jgy-013",
+      "source_segments_path": "data/artifacts/jgy-013/segments.jsonl",
+      "source_sha256": "20f0a3933e799838c1b53bb0760ccce6602fb3d1b543f1159845d246b2a45b79",
+      "source_bytes": 855446,
+      "segment_count": 1289,
+      "first_start_s": 1.84,
+      "last_end_s": 7419.95,
+      "projected_transcript_sha256": "00456c6c661e8713054c2ad0717c4e8e7f448f88fce47ca05980e95deb850a8d",
+      "knowledge_point_count": 10,
+      "chapter_count": 3,
+      "sample": {
+        "seq": 2,
+        "start_s": 10.94,
+        "text": "不记得我们在练金匮第七篇的时候，第七篇有谈到好这个肺萎肺庸咳嗽上气好，呼吸很短并脉症。"
+      }
+    },
+    {
+      "video_id": "jgy-014",
+      "source_segments_path": "data/artifacts/jgy-014/segments.jsonl",
+      "source_sha256": "a5b13e93f6d6d57c85a289eaac8a85b838033386b8cfd5d245f866e4fee2d5ad",
+      "source_bytes": 596112,
+      "segment_count": 903,
+      "first_start_s": 0.05,
+      "last_end_s": 4953.272,
+      "projected_transcript_sha256": "2146ee5e28d1b3401505c9610aecdf300263e4c157f819c8da37ffc82c91bfb8",
+      "knowledge_point_count": 15,
+      "chapter_count": 3,
+      "sample": {
+        "seq": 6,
+        "start_s": 36.82,
+        "text": "那这一篇学会呢，诸位糖尿病呢诸是不能治很好治，但在临床上看的时候，我们有西医分两种。"
+      }
+    },
+    {
+      "video_id": "jgy-015",
+      "source_segments_path": "data/artifacts/jgy-015/segments.jsonl",
+      "source_sha256": "945afefc06d2d184af1058c770c0c235592086dbe686fcb77b540e5eacf44dc3",
+      "source_bytes": 1258521,
+      "segment_count": 1931,
+      "first_start_s": 2.07,
+      "last_end_s": 11334.257,
+      "projected_transcript_sha256": "c00ad06e99a20b6551e8737cbd36855b17cc16bb4854662324893d8d25094ab1",
+      "knowledge_point_count": 8,
+      "chapter_count": 3,
+      "sample": {
+        "seq": 3,
+        "start_s": 14.32,
+        "text": "水病就是我们肿起来啦，身上出那个肚子变大啦、鼓胀啦、身上积水啦。"
+      }
+    }
+  ]
+}

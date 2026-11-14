@@ -1,0 +1,99 @@
+[
+ {
+  "chapter_id": "jgy-013.c01",
+  "video_id": "jgy-013",
+  "level": 1,
+  "parent_id": null,
+  "seq": 1,
+  "title": "痰饮咳嗽病与四饮概念",
+  "summary": "《金匮》痰饮咳嗽病第十二；与肺痿肺痈咳嗽上气相关。饮即水饮，人人或多或少；当运动出汗更新水液。四饮：痰饮（素盛今瘦、肠间沥沥有声）、悬饮（水流胁下咳唾引痛）、溢饮（水流四肢当汗不汗身疼重）、支饮。感冒屡重示内有伏饮，宜先排饮。",
+  "start_s": 1.84,
+  "end_s": 594.975,
+  "seg_from": 0,
+  "seg_to": 99,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "classic.jin_gui_yao_lve",
+   "classic.jgy_ch_tan_yin_ke_sou_bing_mai_zheng_bing_zhi",
+   "syndrome.tan_yin",
+   "syndrome.xuan_yin",
+   "syndrome.yi_yin",
+   "syndrome.zhi_yin"
+  ],
+  "citation": {
+   "youtube_id": "EHtUejsso1U",
+   "url": "https://www.youtube.com/watch?v=EHtUejsso1U&t=1s",
+   "series": "jgy",
+   "episode": 13,
+   "title": "倪海廈《金匱要略》細分版： 12痰飲咳嗽病",
+   "start_s": 1.84,
+   "end_s": 594.98
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-013.c02",
+  "video_id": "jgy-013",
+  "level": 1,
+  "parent_id": null,
+  "seq": 2,
+  "title": "小青龙与麻黄族排饮",
+  "summary": "小青龙汤证可见背冷如掌大。麻黄汤族发汗可排溢饮之水湿，兼利关节肌肉痛。杏仁与麻黄等量（秤不离砣）。留饮可见下利后心下仍满。",
+  "start_s": 595.58,
+  "end_s": 4021.691,
+  "seg_from": 100,
+  "seg_to": 699,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "formula.xiao_qing_long_tang",
+   "formula.ma_huang_tang",
+   "herb.ma_huang",
+   "herb.xing_ren",
+   "syndrome.liu_yin"
+  ],
+  "citation": {
+   "youtube_id": "EHtUejsso1U",
+   "url": "https://www.youtube.com/watch?v=EHtUejsso1U&t=595s",
+   "series": "jgy",
+   "episode": 13,
+   "title": "倪海廈《金匱要略》細分版： 12痰飲咳嗽病",
+   "start_s": 595.58,
+   "end_s": 4021.69
+  },
+  "review_status": "llm_read"
+ },
+ {
+  "chapter_id": "jgy-013.c03",
+  "video_id": "jgy-013",
+  "level": 1,
+  "parent_id": null,
+  "seq": 3,
+  "title": "呕家与发表排饮",
+  "summary": "久病吐下后加人参。呕家本渴；葛根汤、麻黄汤等发表可使饮随汗外解。亦及泽泻、茯苓、半夏等利水涤饮。",
+  "start_s": 4021.791,
+  "end_s": 7419.95,
+  "seg_from": 700,
+  "seg_to": 1288,
+  "six_channel": [],
+  "clause_refs": [],
+  "topics": [
+   "herb.ren_shen",
+   "formula.ge_gen_tang",
+   "formula.ma_huang_tang",
+   "herb.fu_ling",
+   "herb.ban_xia"
+  ],
+  "citation": {
+   "youtube_id": "EHtUejsso1U",
+   "url": "https://www.youtube.com/watch?v=EHtUejsso1U&t=4021s",
+   "series": "jgy",
+   "episode": 13,
+   "title": "倪海廈《金匱要略》細分版： 12痰飲咳嗽病",
+   "start_s": 4021.79,
+   "end_s": 7419.95
+  },
+  "review_status": "llm_read"
+ }
+]

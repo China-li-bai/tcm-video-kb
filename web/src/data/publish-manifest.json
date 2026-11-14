@@ -653,14 +653,39 @@
       "has_knowledge": true,
       "kp_count": 10,
       "chapter_count": 3,
-      "has_public_transcript": false,
-      "transcript_sha256": null,
-      "segment_count": 0,
-      "has_public_knowledge": false,
-      "has_public_entities": false,
-      "has_bundled_chapters": false,
+      "has_public_transcript": true,
+      "transcript_sha256": "00456c6c661e8713054c2ad0717c4e8e7f448f88fce47ca05980e95deb850a8d",
+      "segment_count": 1289,
+      "has_public_knowledge": true,
+      "has_public_entities": true,
+      "has_bundled_chapters": true,
       "playback": "youtube",
-      "assets": {}
+      "assets": {
+        "transcript": {
+          "path": "web/public/transcripts/jgy-013.json",
+          "sha256": "00456c6c661e8713054c2ad0717c4e8e7f448f88fce47ca05980e95deb850a8d",
+          "bytes": 173849,
+          "count": 1289
+        },
+        "knowledge": {
+          "path": "web/public/knowledge/jgy-013.json",
+          "sha256": "5becc75f39d5e7d56bf5840546c71ea47c66a2ec2b190f6e85dbc11aa0836dbf",
+          "bytes": 2376,
+          "count": 10
+        },
+        "entities": {
+          "path": "web/public/entities/jgy-013.json",
+          "sha256": "a7fa2715ad342faca5566450b330b7788fbe702427a6c0d854599052134b49bd",
+          "bytes": 56599,
+          "count": 509
+        },
+        "chapters": {
+          "path": "web/src/data/chapters/jgy-013.json",
+          "sha256": "ffaee003cdc7c01765d5592e85b1f439c8de6492f5f9e0e6aa273f6e276167be",
+          "bytes": 2899,
+          "count": 3
+        }
+      }
     },
     {
       "video_id": "jgy-014",
@@ -669,14 +694,39 @@
       "has_knowledge": true,
       "kp_count": 15,
       "chapter_count": 3,
-      "has_public_transcript": false,
-      "transcript_sha256": null,
-      "segment_count": 0,
-      "has_public_knowledge": false,
-      "has_public_entities": false,
-      "has_bundled_chapters": false,
+      "has_public_transcript": true,
+      "transcript_sha256": "2146ee5e28d1b3401505c9610aecdf300263e4c157f819c8da37ffc82c91bfb8",
+      "segment_count": 903,
+      "has_public_knowledge": true,
+      "has_public_entities": true,
+      "has_bundled_chapters": true,
       "playback": "youtube",
-      "assets": {}
+      "assets": {
+        "transcript": {
+          "path": "web/public/transcripts/jgy-014.json",
+          "sha256": "2146ee5e28d1b3401505c9610aecdf300263e4c157f819c8da37ffc82c91bfb8",
+          "bytes": 115927,
+          "count": 903
+        },
+        "knowledge": {
+          "path": "web/public/knowledge/jgy-014.json",
+          "sha256": "d73b52627170ac22735374e82c9d974cc0d0083aa065f638350490f689c4de98",
+          "bytes": 4053,
+          "count": 15
+        },
+        "entities": {
+          "path": "web/public/entities/jgy-014.json",
+          "sha256": "a4f9e2b2f37627c4c1cf823b96d44d1586045c78cca524fcc9e69426dd6b657f",
+          "bytes": 31409,
+          "count": 281
+        },
+        "chapters": {
+          "path": "web/src/data/chapters/jgy-014.json",
+          "sha256": "a89a33efc4c6906246e59ec0f442b1af883446645b7214a7918e6b7ce4f61319",
+          "bytes": 2911,
+          "count": 3
+        }
+      }
     },
     {
       "video_id": "jgy-015",
@@ -685,14 +735,39 @@
       "has_knowledge": true,
       "kp_count": 8,
       "chapter_count": 3,
-      "has_public_transcript": false,
-      "transcript_sha256": null,
-      "segment_count": 0,
-      "has_public_knowledge": false,
-      "has_public_entities": false,
-      "has_bundled_chapters": false,
+      "has_public_transcript": true,
+      "transcript_sha256": "c00ad06e99a20b6551e8737cbd36855b17cc16bb4854662324893d8d25094ab1",
+      "segment_count": 1931,
+      "has_public_knowledge": true,
+      "has_public_entities": true,
+      "has_bundled_chapters": true,
       "playback": "youtube",
-      "assets": {}
+      "assets": {
+        "transcript": {
+          "path": "web/public/transcripts/jgy-015.json",
+          "sha256": "c00ad06e99a20b6551e8737cbd36855b17cc16bb4854662324893d8d25094ab1",
+          "bytes": 254889,
+          "count": 1931
+        },
+        "knowledge": {
+          "path": "web/public/knowledge/jgy-015.json",
+          "sha256": "5a3121e2eadf3c6521934d0407a425c934ff572ac0523ac433e5f8aa243d6581",
+          "bytes": 2011,
+          "count": 8
+        },
+        "entities": {
+          "path": "web/public/entities/jgy-015.json",
+          "sha256": "e8a1a63a3f322711398fb0e4a8e11ae7b64a76968113f88ab087b0e1cadcf50f",
+          "bytes": 82050,
+          "count": 732
+        },
+        "chapters": {
+          "path": "web/src/data/chapters/jgy-015.json",
+          "sha256": "231038079b6862b023cacce59b3945795333db47d5077d237ad699a43eb3f3dd",
+          "bytes": 2715,
+          "count": 3
+        }
+      }
     },
     {
       "video_id": "jgy-016",
@@ -2847,5 +2922,5 @@
       "assets": {}
     }
   ],
-  "content_sha256": "d126ca298d80f8a070c57219dfdade331255d1c3f408c7e40eb450909dff3a0f"
+  "content_sha256": "129c0907a299f5018912f46de8de7f4482dca69cf1c84035b0a2e17a918e3d8e"
 }
