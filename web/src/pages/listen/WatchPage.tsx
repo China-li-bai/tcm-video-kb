@@ -1,3 +1,5 @@
+import { DeskStage } from "../../layout/DeskStage";
+import { WatchFrame } from "../../layout/WatchFrame";
 import { StaticYouTubePlayer } from "../../listen/StaticYouTubePlayer";
 import { requestedSeconds, selectedPositionIndex } from "../../listen/staticPlayback";
 import { hasPublicTranscript } from "../../listen/transcriptCoverage";
@@ -294,7 +296,7 @@ export function WatchPage() {
 
   if (!lecture) {
     return (
-      <div className="listen-stage">
+      <DeskStage variant="watch">
         <div className="empty-card">
           <h2>找不到这一集</h2>
           <p>可能 id 写错了。回系列里挑一集听听。</p>
@@ -302,7 +304,7 @@ export function WatchPage() {
             看系列
           </Link>
         </div>
-      </div>
+      </DeskStage>
     );
   }
 
@@ -310,44 +312,45 @@ export function WatchPage() {
   const showScriptEmpty = !transcriptLoading && !hasRealScript && !hasChapters;
 
   return (
-    <div className="listen-stage listen-stage-watch">
-      <div className="watch-fixed">
-      <div className="watch-nav-row">
-        <Link to="/" className="listen-text-link">
-          回首页
-        </Link>
-        <Link to={`/series/${lecture.series}`} className="series-chip">
-          {lecture.seriesLabel} · {lecture.id}
-        </Link>
-      </div>
+    <WatchFrame
+      fixed={
+        <>
+          <div className="watch-nav-row">
+            <Link to="/" className="listen-text-link">
+              回首页
+            </Link>
+            <Link to={`/series/${lecture.series}`} className="series-chip">
+              {lecture.seriesLabel} · {lecture.id}
+            </Link>
+          </div>
 
-      <section className="player-card">
-        <h1 className="player-title">{selectedChapter?.title || lecture.title}</h1>
-        {selectedChapter && (
-          <p className="player-sub">
-            将遇：约 {chapterApproxMin(selectedChapter)} 分钟 · {formatClock(selectedChapter.start_s)}–
-            {formatClock(selectedChapter.end_s)}
-          </p>
-        )}
+          <section className="player-card">
+            <h1 className="player-title">{selectedChapter?.title || lecture.title}</h1>
+            {selectedChapter && (
+              <p className="player-sub">
+                将遇：约 {chapterApproxMin(selectedChapter)} 分钟 · {formatClock(selectedChapter.start_s)}–
+                {formatClock(selectedChapter.end_s)}
+              </p>
+            )}
 
-        <StaticYouTubePlayer
-          key={`${videoId}:${requestedS}:${embedRequested ? embedRequest?.revision : "closed"}`}
-          youtubeId={lecture.youtubeId}
-          title={lecture.title}
-          requestedS={requestedS}
-          requested={embedRequested}
-          onRequest={requestEmbed}
-        />
-        <div className="player-position">
-          <span>请求定位 {formatClock(requestedS)}</span>
-          <span>目录时长 {lecture.duration || "未标注"}</span>
-        </div>
-        <p className="player-fallback">文稿高亮只表示所选位置，不会跟着播放自动翻页。</p>
-      </section>
-      </div>
-
-      <section className="script-section">
-        <div className="script-tabs">
+            <StaticYouTubePlayer
+              key={`${videoId}:${requestedS}:${embedRequested ? embedRequest?.revision : "closed"}`}
+              youtubeId={lecture.youtubeId}
+              title={lecture.title}
+              requestedS={requestedS}
+              requested={embedRequested}
+              onRequest={requestEmbed}
+            />
+            <div className="player-position">
+              <span>请求定位 {formatClock(requestedS)}</span>
+              <span>目录时长 {lecture.duration || "未标注"}</span>
+            </div>
+            <p className="player-fallback">文稿高亮只表示所选位置，不会跟着播放自动翻页。</p>
+          </section>
+        </>
+      }
+      tabs={
+        <>
           <button
             type="button"
             className={tab === "script" ? "active" : ""}
@@ -362,9 +365,52 @@ export function WatchPage() {
           >
             章
           </button>
-        </div>
+        </>
+      }
+      scriptScrollRef={scriptScrollRef}
+      overlays={
+        <>
+          <CheckSheet
+            open={checkOpen}
+            quote={quote}
+            where={where}
+            t={askT}
+            claims={nearbyClaims}
+            claimsLoading={kpLoading}
+            claimsUnavailable={!kpLoading && kpPoints === null}
+            onClose={() => setCheckOpen(false)}
+            onListen={() => {
+              setCheckOpen(false);
+              if (selectedUtter) onPickUtter(selectedUtterIdx);
+              else requestEmbed();
+            }}
+            onStash={() => {
+              onStash({ text: quote, t: selectedUtter?.t });
+              setCheckOpen(false);
+            }}
+            onListenClaim={(claim) => {
+              setCheckOpen(false);
+              seekTo(claim.start_s);
+            }}
+          />
 
-        <div className="script-scroll" ref={scriptScrollRef}>
+          <EntitySheet
+            open={Boolean(chipEntity)}
+            mention={chipEntity}
+            videoId={videoId}
+            t={askT}
+            onClose={() => setChipEntity(null)}
+            onListen={() => {
+              setChipEntity(null);
+              if (selectedUtter) onPickUtter(selectedUtterIdx);
+              else requestEmbed();
+            }}
+          />
+
+          {toast && <div className="listen-toast">{toast}</div>}
+        </>
+      }
+    >
         {tab === "chapters" && (
           <ul className="chapter-list">
             {chapters.length === 0 && (
@@ -537,47 +583,6 @@ export function WatchPage() {
             回到所选句
           </button>
         )}
-        </div>
-      </section>
-
-      <CheckSheet
-        open={checkOpen}
-        quote={quote}
-        where={where}
-        t={askT}
-        claims={nearbyClaims}
-        claimsLoading={kpLoading}
-        claimsUnavailable={!kpLoading && kpPoints === null}
-        onClose={() => setCheckOpen(false)}
-        onListen={() => {
-          setCheckOpen(false);
-          if (selectedUtter) onPickUtter(selectedUtterIdx);
-          else requestEmbed();
-        }}
-        onStash={() => {
-          onStash({ text: quote, t: selectedUtter?.t });
-          setCheckOpen(false);
-        }}
-        onListenClaim={(claim) => {
-          setCheckOpen(false);
-          seekTo(claim.start_s);
-        }}
-      />
-
-      <EntitySheet
-        open={Boolean(chipEntity)}
-        mention={chipEntity}
-        videoId={videoId}
-        t={askT}
-        onClose={() => setChipEntity(null)}
-        onListen={() => {
-          setChipEntity(null);
-          if (selectedUtter) onPickUtter(selectedUtterIdx);
-          else requestEmbed();
-        }}
-      />
-
-      {toast && <div className="listen-toast">{toast}</div>}
-    </div>
+    </WatchFrame>
   );
 }

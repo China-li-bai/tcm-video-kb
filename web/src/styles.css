@@ -13,6 +13,33 @@
   --topbar-h: 56px; /* 候选待拍板 */
   --sidebar-w: 200px;
   --panel-w: 320px;
+  /* 听课台布局尺度：不依赖旧中台 sidebar/panel 宽度。色板仍为上方候选 A，未拍板。 */
+  --desk-stage-narrow: 640px;
+  --desk-stage-default: 720px;
+  --desk-stage-watch: 800px;
+  --desk-search-max: 480px;
+  --desk-tool-detail-width: 320px;
+  --desk-space-1: 4px;
+  --desk-space-2: 8px;
+  --desk-space-3: 12px;
+  --desk-space-4: 16px;
+  --desk-space-6: 24px;
+  --desk-space-8: 32px;
+  --desk-space-10: 40px;
+  --desk-radius-sm: 10px;
+  --desk-radius-md: 20px;
+  --desk-radius-lg: 24px;
+  --desk-radius-card: 28px;
+  --desk-radius-hero: 32px;
+  --desk-radius-pill: 999px;
+  --desk-text-caption: 13px;
+  --desk-text-small: 14px;
+  --desk-text-body: 16px;
+  --desk-text-reading: 18px;
+  --desk-text-heading: 24px;
+  --desk-text-title: 32px;
+  --desk-text-display: 36px;
+  --desk-leading-reading: 1.8;
   --font: "Noto Sans SC", "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
 }
 

@@ -1,3 +1,4 @@
+import { DeskStage } from "../../layout/DeskStage";
 import { useMemo } from "react";
 import { Link } from "react-router-dom";
 import { enrichTodayFromChapters } from "../../listen/chapters";
@@ -31,7 +32,7 @@ export function ListenHomePage() {
   const resumeHref = last ? watchHref(last.videoId, last.t) : null;
 
   return (
-    <div className="listen-stage listen-stage-narrow">
+    <DeskStage variant="narrow">
       <section className="today-card">
         <div className="today-wash" aria-hidden />
         <span className="today-chip">今日一小段 · 约 {today.approxMin} 分钟</span>
@@ -113,7 +114,7 @@ export function ListenHomePage() {
         <Link to="/graph?focus=formula.gui_zhi_tang">方证图</Link>
         <Link to="/paths?focus=syndrome.tai_yang_bing">路径</Link>
       </div>
-    </div>
+    </DeskStage>
   );
 }
 

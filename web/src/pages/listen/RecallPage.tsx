@@ -1,3 +1,4 @@
+import { DeskStage } from "../../layout/DeskStage";
 import { watchHref } from "../../listen/citationLinks";
 import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
@@ -12,7 +13,7 @@ export function RecallPage() {
 
   if (!item) {
     return (
-      <div className="listen-stage listen-stage-narrow">
+      <DeskStage variant="narrow">
         <div className="empty-card">
           <h2>找不到这句存货</h2>
           <p>可能已经拿掉了。回收获匣看看。</p>
@@ -20,7 +21,7 @@ export function RecallPage() {
             回收获匣
           </Link>
         </div>
-      </div>
+      </DeskStage>
     );
   }
 
@@ -31,7 +32,7 @@ export function RecallPage() {
     : item.title;
 
   return (
-    <div className="listen-stage listen-stage-narrow">
+    <DeskStage variant="narrow">
       <div className="watch-nav-row">
         <Link to="/stash" className="listen-text-link">
           回收获匣
@@ -84,6 +85,6 @@ export function RecallPage() {
       </div>
 
       {toast && <div className="listen-toast">{toast}</div>}
-    </div>
+    </DeskStage>
   );
 }

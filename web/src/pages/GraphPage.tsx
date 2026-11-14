@@ -1,3 +1,4 @@
+import { DeskStage } from "../layout/DeskStage";
 import { useEffect, useState } from "react";
 import { GraphApp } from "../graph/GraphApp";
 import { styleForCategory, styleForPred } from "../graph/styleRegistry";
@@ -49,7 +50,7 @@ export function GraphPage() {
   }
 
   return (
-    <div className="listen-tool-page">
+    <DeskStage variant="tool" className="listen-tool-page">
       <ToolFocusBar
         title="方证关系图"
         lead="旁证对照 · 听才是主场；点出处「听原讲」回学一段"
@@ -93,7 +94,7 @@ export function GraphPage() {
           onClear={clearSelection}
         />
       </div>
-    </div>
+    </DeskStage>
   );
 }
 

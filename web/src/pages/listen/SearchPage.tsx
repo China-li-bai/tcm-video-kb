@@ -1,3 +1,4 @@
+import { DeskStage } from "../../layout/DeskStage";
 import { FormEvent, useEffect, useMemo, useState } from "react";
 import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import { formatClock, formatDurationLabel } from "../../listen/lectures";
@@ -43,7 +44,7 @@ export function SearchPage() {
   const anyHit = quoteHits.length > 0 || catalogHits.length > 0;
 
   return (
-    <div className="listen-stage listen-stage-narrow">
+    <DeskStage variant="narrow">
       <div className="page-hero">
         <h1>查出处</h1>
         <p>别处听到的一句话、一个方名，先在这里找找是哪一集，点进去从那一秒听。</p>
@@ -127,7 +128,7 @@ export function SearchPage() {
           </div>
         </section>
       )}
-    </div>
+    </DeskStage>
   );
 }
 
