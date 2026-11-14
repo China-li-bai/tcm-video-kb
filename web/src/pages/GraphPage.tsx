@@ -4,7 +4,7 @@ import { GraphApp } from "../graph/GraphApp";
 import { styleForCategory, styleForPred } from "../graph/styleRegistry";
 import { ToolFocusBar } from "../layout/ToolFocusBar";
 import { useToolFocus } from "../layout/useToolFocus";
-import { ApiError, fetchSubgraph } from "../api/client";
+import { fetchSubgraph } from "../api/client";
 import { DetailPanel } from "../panel/DetailPanel";
 import { ErrorState } from "../panel/ErrorState";
 import type { Selection, Subgraph } from "../types";
@@ -34,9 +34,9 @@ export function GraphPage() {
         setSubgraph(body);
         setSelection({ kind: "node", id: body.focus });
       })
-      .catch((err: unknown) => {
+      .catch(() => {
         if (ac.signal.aborted) return;
-        const message = err instanceof ApiError ? err.message : "接口没有返回子图";
+        const message = "暂时无法读取关系，请稍后重试。";
         setError(message);
       })
       .finally(() => {
@@ -53,7 +53,7 @@ export function GraphPage() {
     <DeskStage variant="tool" className="listen-tool-page">
       <ToolFocusBar
         title="方证关系图"
-        lead="旁证对照 · 听才是主场；点出处「听原讲」回学一段"
+        lead="图作旁证，有疑问就听原讲。"
         focus={focus}
         onFocus={setFocus}
         presets={GRAPH_PRESETS}
@@ -67,7 +67,7 @@ export function GraphPage() {
 
       <div className="shell shell--in-desk">
         <main className="graph-main">
-          {loading && <p className="status">正在读取子图…</p>}
+          {loading && <p className="status">正在读取关系…</p>}
           {error && <ErrorState title="关系图暂时打不开" detail={error} />}
           {subgraph && subgraph.nodes.length === 0 && (
             <p className="status">这里还没有可展开的关系。</p>
@@ -82,7 +82,7 @@ export function GraphPage() {
               <footer className="graph-foot">
                 <Legend />
                 <span className="foot-hint">
-                  点节点 / 边看详情；有讲课出处时优先「听原讲」
+                  点条目或连线看出处，再听原讲
                 </span>
               </footer>
             </>
@@ -104,7 +104,7 @@ function Legend() {
   return (
     <div className="legend" aria-label="图例">
       <div className="leg-group" aria-label="节点类型">
-        <span className="leg-k">节点</span>
+        <span className="leg-k">条目</span>
         {nodes.map((category) => {
           const spec = styleForCategory(category);
           return (
@@ -123,7 +123,7 @@ function Legend() {
         })}
       </div>
       <div className="leg-group" aria-label="关系谓词">
-        <span className="leg-k">边</span>
+        <span className="leg-k">关系</span>
         {edges.map((pred) => {
           const spec = styleForPred(pred);
           return (
