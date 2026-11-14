@@ -56,3 +56,8 @@ def test_publish_and_frontend_regression_gates_are_retained():
     assert 'python3 web/scripts/publish_manifest.py --check' in commands('python')
     assert 'python3 -m unittest discover -s tests/publish -v' in commands('python')
     assert {'npm ci', 'npm test', 'npm run build'} <= set(commands('web'))
+
+
+def test_real_question_validator_is_a_strict_offline_ci_gate():
+    runs = commands('python')
+    assert 'python3 scripts/eval/validate_qa.py --strict-kp --json' in runs

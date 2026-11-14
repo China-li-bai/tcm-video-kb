@@ -23,6 +23,8 @@ jobs:
           git --version
       - run: python3 web/scripts/publish_manifest.py --check
       - run: python3 -m unittest discover -s tests/publish -v
+      - name: Validate tracked QA schema and references (not retrieval scores)
+        run: python3 scripts/eval/validate_qa.py --strict-kp --json
       - run: uv sync --locked
       - name: Full offline Python suite (all files; zero skip/xfail)
         run: uv run --no-sync pytest -q -ra --strict-offline --disable-socket --allow-unix-socket tests/unit tests/ci
