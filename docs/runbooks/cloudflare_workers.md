@@ -105,7 +105,9 @@ cd web && npm install && npm run dev
 本地 API 现算 `materialize()`。`npm run dev` 下接口失败时，页面提示先启动 `127.0.0.1:8000`。生产构建的失败文案只要求刷新重试。
 
 
-## PR-7开发栈：构建修订号（未部署，不是新的上线授权）
+## 构建修订号
+
+`/health` 在 `status` 之外返回 `git_sha`、`git_dirty` 和 `content_revision`。字段含义以 [RUNTIME.md](../RUNTIME.md) 为准。2026-11-15 22:32（Asia/Shanghai）曾抽查到线上身份等于当时的 `main`；那是一次观察，不是以后每次部署的证明。下面是构建约定，不是新的上线授权。
 
 既有 `bash services/worker/build.sh` 在全部原步骤成功后调用
 `build_metadata.py --root "$root" --dist "$root/web/dist"`。

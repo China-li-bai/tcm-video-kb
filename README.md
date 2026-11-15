@@ -2,7 +2,7 @@
 
 倪海厦中医讲座视频知识库（monorepo）。把讲座视频转成带时间戳的结构化文本：ASR → 清洗 → 章节 →（后续）切块/实体/检索。
 
-设计见 [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)。本地 Demo 见 [`docs/runbooks/local_demo.md`](docs/runbooks/local_demo.md)。
+现行听课台、覆盖范围和发布契约见 [`docs/RUNTIME.md`](docs/RUNTIME.md)。目标设计稿见 [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)。本地 Demo 见 [`docs/runbooks/local_demo.md`](docs/runbooks/local_demo.md)。
 
 ## 结构
 
