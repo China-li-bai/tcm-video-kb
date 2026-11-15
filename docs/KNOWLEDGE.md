@@ -1,9 +1,10 @@
 # 知识层（s09_knowledge）
 
-把一集讲座转写变成可学习、可引用的结构：**章节大纲 → 实体 → 知识点**，每条都带
-站内跳转链接（`/watch/{video_id}?t=<秒>`；YouTube 为备份字段）。schema 版本 `knowledge/1`，模型定义在
+把一集讲座转写变成可学习、可引用的结构：**章节大纲 → 实体 → 知识点**。schema 版本 `knowledge/1`，模型定义在
 `packages/tcmkb_core/src/tcmkb_core/knowledge.py`（pydantic v2，`extra=forbid`；
 `python -m tcmkb_core.knowledge` 打印 JSON Schema）。
+
+新构建要写出站内 `/watch/{video_id}?t=<秒>`，YouTube 只做备份。已经入库的历史文件大多没有 `t_url`：1,575 条知识点的嵌套 citation 缺 `video_id`、`t_url` 和 `youtube_t_url`。读取时用 `KCitation.from_record`，用外层 `video_id` 和 `start_s` 投影出站内链接，不把结果写回 JSON。直接构造新的 `KCitation` 仍然要求 `t_url` 与现算结果一致。
 
 ## 产物（`data/knowledge/<video_id>/`，纳入 git）
 
@@ -12,8 +13,8 @@
 | `annotations/*.yaml` | **阅读产物**（语义部分）：按窗口组写的章节、实体修正、知识点，只引用转写句序号 `seq` |
 | `chapters.json` | `KChapter[]`：集 > 章（`<vid>.cNN`）> 节（`<vid>.cNN.sN`）；标题、1–2 句自述摘要、起止秒/句、条文 `clause_refs`（宋本编号）、六经、`citation` |
 | `entities.jsonl` | `KEntity`：规范 id（词典 id，或 `new.<type>.<name>`）、类型、全部表面形式（ASR 原文）与修正形、剂量、提及列表（每条带时间与链接）、`asr_uncertain` |
-| `knowledge_points.jsonl` | `KnowledgePoint`：`kp_id`、类型、中文转述 `statement`（≤160 字）、实体 id、章节 id、原文证据 `evidence_quote`（≤40 字，必须能在所引句中找到）、起止秒、`citation{video_id,url,t_url,youtube_id,youtube_t_url,series,episode,title}`、置信度、`asr_note` |
-| `outline.md` | 人读大纲：章节目录（站内 `/watch/{id}?t=` 时间戳链接）、按章知识点、实体索引 |
+| `knowledge_points.jsonl` | `KnowledgePoint`：`kp_id`、类型、中文转述 `statement`（≤160 字）、实体 id、章节 id、原文证据 `evidence_quote`（≤40 字，必须能在所引句中找到）、起止秒、citation、置信度、`asr_note`。新记录的 citation 带 `t_url`；历史记录靠读取投影，文件里常常只有带时间戳的 YouTube `url` |
+| `outline.md` | 人读大纲。新构建用站内 `/watch/{id}?t=`；历史大纲里的链接仍可能是 YouTube |
 | `build_report.json` | 计数、注释哈希、错误 |
 | `_work/`（不入 git） | 阅读窗口 `windows/wNN.txt`（`seq 时间 文本`，头部附词典候选、条文匹配、s08 启发式章节） |
 
@@ -68,7 +69,7 @@ kps:
 
 ### PR-5：只读出处投影，历史产物尚未回写
 
-此节是开发栈实现，未合 main / 未部署。145 集原始知识中，1575 个 KP 的 citation 都缺 `video_id/t_url/youtube_t_url`，上下文在外层记录；旧 `_index/*.csv` 因而仍是此前回退 `citation.url` 的历史产物。本 PR **没有回写这些 JSON/JSONL/CSV**，也没有执行真实库 knowledge-build/backfill。公开 21 集的 63 份 JSON、21 份章节、catalog、发布清单和图快照/嵌入文本逐字节未改。
+此节描述已经在 `main` 上的读取投影，不是待合并的草稿。145 集原始知识中，1575 个 KP 的 citation 都缺 `video_id/t_url/youtube_t_url`，上下文在外层记录；入库的 `_index/*.csv` 仍是此前回退到 `citation.url` 的历史产物。投影 **没有回写这些 JSON/JSONL/CSV**，也没有执行 `knowledge-build`。公开切片后来又增加了金匮 013–015，那是导出，不是这套 citation 的回写。
 
 - Python `KCitation.from_record(record)` 使用外层 `video_id/start_s/end_s`，复制并适配嵌套 citation；`KnowledgePoint` / `KChapter.model_validate` 在实际读取边界接入。单独读取一个旧 citation 时用 `KCitation.from_legacy(citation, video_id=已知上下文)`，不能凭任意 `t_url` 猜讲次。直接构造新 `KCitation` 仍校验完整规范字段，不能把缺上下文当成合法新产物。
 - 外层时间优先：旧 KP 中有 725 处外层秒与嵌套两位小数值不同，差值最大约 0.005 秒，其中 4 处跨越 floor 秒边界；章节有 269 处微小差异、无 floor 跨界。新读投影与前端 slim KP 使用同一外层起点，不进行二次 round；单独适配 citation 则使用它自身的秒。原值不写回。
